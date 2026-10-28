@@ -24,6 +24,18 @@ TASK_ID = f"daily-monitor-{date.today().isoformat()}"
 REPO_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+def _self_update():
+    """Pull latest code from GitHub before running."""
+    try:
+        result = subprocess.run(
+            ["git", "-C", REPO_DIR, "pull", "origin", "master"],
+            capture_output=True, text=True, timeout=30
+        )
+        print(f"[git] {result.stdout.strip() or 'Already up to date.'}")
+    except Exception as e:
+        print(f"[git] pull failed (continuing anyway): {e}")
+
+
 def _git_commit(message: str):
     try:
         subprocess.run(["git", "add", "-A"], cwd=REPO_DIR, check=True)
@@ -52,6 +64,8 @@ def _summarise_macro(snap: dict) -> str:
 
 
 def run():
+    _self_update()
+
     init_db()
     init_task_tables()
 

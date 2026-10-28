@@ -14,6 +14,21 @@ if _NSELIB_PATH not in sys.path:
 from datetime import date
 
 REPO_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def _self_update():
+    """Pull latest code from GitHub before running, so scheduled tasks always use current code."""
+    try:
+        result = subprocess.run(
+            ["git", "-C", REPO_DIR, "pull", "origin", "master"],
+            capture_output=True, text=True, timeout=30
+        )
+        if result.returncode == 0:
+            print(f"[git] {result.stdout.strip() or 'Already up to date.'}")
+        else:
+            print(f"[git] pull warning: {result.stderr.strip()}")
+    except Exception as e:
+        print(f"[git] pull failed (continuing anyway): {e}")
 UNIVERSE_PATH = os.path.join(REPO_DIR, "data", "tracked_universe.json")
 PROGRESS_PATH = os.path.join(REPO_DIR, "PROGRESS.md")
 
@@ -208,6 +223,8 @@ def _git_commit(message):
 
 
 def run():
+    _self_update()
+
     from nselib import NSE
 
     today = date.today().isoformat()

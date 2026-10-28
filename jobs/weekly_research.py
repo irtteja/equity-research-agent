@@ -15,6 +15,18 @@ from datetime import date, datetime
 
 REPO_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+
+def _self_update():
+    """Pull latest code from GitHub before running."""
+    try:
+        result = subprocess.run(
+            ["git", "-C", REPO_DIR, "pull", "origin", "master"],
+            capture_output=True, text=True, timeout=30
+        )
+        print(f"[git] {result.stdout.strip() or 'Already up to date.'}")
+    except Exception as e:
+        print(f"[git] pull failed (continuing anyway): {e}")
+
 def _load_tracked_universe():
     """Load full Nifty Total Market universe from data/tracked_universe.json."""
     universe_path = os.path.join(REPO_DIR, "data", "tracked_universe.json")
@@ -53,6 +65,8 @@ def _git_commit(message: str):
 
 
 def run():
+    _self_update()
+
     from memory.research_store import init_db
     from memory.task_log import init_task_tables, log_task, update_task_status, log_checkpoint
     from tools.macro import get_full_macro_snapshot
