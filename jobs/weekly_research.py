@@ -15,16 +15,28 @@ from datetime import date, datetime
 
 REPO_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# Starting tracked universe — expands as research surfaces names
-TRACKED = [
-    # Large caps
-    {"symbol": "RELIANCE", "bse": "500325", "name": "Reliance Industries"},
-    {"symbol": "TCS",      "bse": "532540", "name": "TCS"},
-    {"symbol": "HDFCBANK", "bse": "500180", "name": "HDFC Bank"},
-    {"symbol": "INFY",     "bse": "500209", "name": "Infosys"},
-    {"symbol": "ICICIBANK","bse": "532174", "name": "ICICI Bank"},
-    # Mid caps — add more as research surfaces
-]
+def _load_tracked_universe():
+    """Load full Nifty Total Market universe from data/tracked_universe.json."""
+    universe_path = os.path.join(REPO_DIR, "data", "tracked_universe.json")
+    try:
+        import json as _json
+        with open(universe_path) as f:
+            u = _json.load(f)
+        return [
+            {"symbol": s["symbol"], "name": s.get("company", s["symbol"]), "cap_tier": s.get("cap_tier", ""), "sector": s.get("sector", "")}
+            for s in u.get("universe", [])
+        ]
+    except Exception as e:
+        print(f"[warn] Could not load universe: {e}. Falling back to defaults.")
+        return [
+            {"symbol": "RELIANCE", "name": "Reliance Industries"},
+            {"symbol": "TCS",      "name": "TCS"},
+            {"symbol": "HDFCBANK", "name": "HDFC Bank"},
+            {"symbol": "INFY",     "name": "Infosys"},
+            {"symbol": "ICICIBANK","name": "ICICI Bank"},
+        ]
+
+TRACKED = _load_tracked_universe()
 
 INDICES_TO_WATCH = [
     "NIFTY 50", "NIFTY BANK", "NIFTY IT", "NIFTY MIDCAP 150", "NIFTY SMALLCAP 250"
