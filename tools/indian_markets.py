@@ -14,6 +14,18 @@ if _NSELIB_PATH not in sys.path:
 
 _BSE_DOWNLOAD_FOLDER = os.path.expanduser("~/.bse_cache")
 
+# SME platform identifiers — never surface these
+_NSE_SME_SERIES = {"SM", "ST"}          # NSE Emerge series codes
+_BSE_SME_GROUPS = {"M ", "MT", "XM"}   # BSE SME group codes
+
+
+def _is_sme_nse(row: dict) -> bool:
+    return str(row.get("series", "")).strip().upper() in _NSE_SME_SERIES
+
+
+def _is_sme_bse(row: dict) -> bool:
+    return str(row.get("Group", "") or row.get("group", "")).strip().upper() in _BSE_SME_GROUPS
+
 
 # ------------------------------------------------------------------ #
 #  NSE tools (via nselib)                                             #
@@ -201,28 +213,36 @@ def bse_advance_decline() -> dict:
 
 
 def bse_gainers(by: str = "all", name: str = None, pct_change: str = "all") -> dict:
-    """BSE top gainers. by: 'group'|'index'|'all'. pct_change: 'all'|'10'|'5'|'2'|'0'."""
+    """BSE top gainers (mainboard only, no SME). by: 'group'|'index'|'all'. pct_change: 'all'|'10'|'5'|'2'|'0'."""
     try:
         bse = _bse()
-        return {"gainers": bse.gainers(by=by, name=name, pct_change=pct_change)}
+        data = bse.gainers(by=by, name=name, pct_change=pct_change)
+        if isinstance(data, list):
+            data = [r for r in data if not _is_sme_bse(r)]
+        return {"gainers": data}
     except Exception as e:
         return {"error": str(e)}
 
 
 def bse_losers(by: str = "all", name: str = None, pct_change: str = "all") -> dict:
-    """BSE top losers. by: 'group'|'index'|'all'. pct_change: 'all'|'10'|'5'|'2'|'0'."""
+    """BSE top losers (mainboard only, no SME). by: 'group'|'index'|'all'. pct_change: 'all'|'10'|'5'|'2'|'0'."""
     try:
         bse = _bse()
-        return {"losers": bse.losers(by=by, name=name, pct_change=pct_change)}
+        data = bse.losers(by=by, name=name, pct_change=pct_change)
+        if isinstance(data, list):
+            data = [r for r in data if not _is_sme_bse(r)]
+        return {"losers": data}
     except Exception as e:
         return {"error": str(e)}
 
 
 def bse_bhav_copy(date_str: str = None) -> dict:
-    """BSE daily bhavcopy report. date_str format: 'DDMMYYYY'. Defaults to latest available."""
+    """BSE daily bhavcopy report (mainboard only, no SME). date_str format: 'DDMMYYYY'. Defaults to latest available."""
     try:
         bse = _bse()
         result = bse.bhavCopyReport(date_str) if date_str else bse.bhavCopyReport()
+        if isinstance(result, list):
+            result = [r for r in result if not _is_sme_bse(r)]
         return {"bhav_copy": result}
     except Exception as e:
         return {"error": str(e)}

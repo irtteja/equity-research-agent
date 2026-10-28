@@ -47,11 +47,17 @@ def get_bse_announcements(category: str = "Result", days_back: int = 1) -> dict:
         resp = requests.get(_BSE_ANNOUNCE_URL, params=params, headers=_BSE_HEADERS, timeout=15)
         data = resp.json()
         items = data.get("Table", [])
+        # Filter out SME platform companies (segment = "sme" in BSE API)
+        _SME_SEGMENTS = {"sme", "bse sme", "emerge"}
+        filtered = [
+            i for i in items
+            if str(i.get("Segment", "") or i.get("segment", "")).strip().lower() not in _SME_SEGMENTS
+        ]
         return {
             "category": category,
             "from": from_dt,
             "to": to_dt,
-            "count": len(items),
+            "count": len(filtered),
             "announcements": [
                 {
                     "scrip_code": str(i.get("SCRIP_CD", "")),
@@ -62,7 +68,7 @@ def get_bse_announcements(category: str = "Result", days_back: int = 1) -> dict:
                     "date": i.get("News_submission_dt", ""),
                     "attachment": i.get("ATTACHMENTNAME", ""),
                 }
-                for i in items
+                for i in filtered
             ],
         }
     except Exception as e:
