@@ -1,3 +1,4 @@
+import os
 import json
 import anthropic
 from rich.console import Console
@@ -9,6 +10,7 @@ from memory.research_store import (
     init_db, save_research, get_past_research,
     save_insight, get_insights
 )
+from memory.task_log import init_task_tables, log_task, update_task_status, log_checkpoint, get_incomplete_tasks
 
 console = Console()
 
@@ -60,6 +62,24 @@ class ResearchOrchestrator:
         self.client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
         self.registry = ToolsRegistry()
         init_db()
+        init_task_tables()
+        self._load_mission()
+
+    def _load_mission(self):
+        mission_path = os.path.join(os.path.dirname(__file__), "..", "MISSION.md")
+        try:
+            with open(mission_path) as f:
+                self.mission = f.read()
+        except Exception:
+            self.mission = ""
+
+    def resume(self):
+        """Print incomplete tasks from last session so work isn't lost."""
+        tasks = get_incomplete_tasks()
+        if tasks:
+            console.print("\n[bold yellow]Resuming incomplete tasks:[/bold yellow]")
+            for t in tasks:
+                console.print(f"  [{t['status']}] {t['task_id']}: {t['title']}")
 
     def research(self, query: str, ticker: str = None, improve: bool = True) -> str:
         """Run a full research session on a stock."""
@@ -79,10 +99,12 @@ class ResearchOrchestrator:
                 for ins in insights:
                     context += f"- {ins['insight']}\n"
 
+        mission_block = f"\n\n[MISSION]\n{self.mission}" if self.mission else ""
+
         messages = [
             {
                 "role": "user",
-                "content": query + (f"\n\n[Context]{context}" if context else "")
+                "content": query + (f"\n\n[Context]{context}" if context else "") + mission_block
             }
         ]
 
