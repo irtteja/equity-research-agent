@@ -12,7 +12,7 @@ _NSELIB_PATH = os.path.expanduser("~/irtteja/nselib")
 if _NSELIB_PATH not in sys.path:
     sys.path.insert(0, _NSELIB_PATH)
 
-_BSE_DOWNLOAD_FOLDER = os.path.expanduser("~/.bselib_cache")
+_BSE_DOWNLOAD_FOLDER = os.path.expanduser("~/.bse_cache")
 
 
 # ------------------------------------------------------------------ #
@@ -141,7 +141,7 @@ def nse_lookup(query: str) -> dict:
 # ------------------------------------------------------------------ #
 
 def _bse():
-    from bselib.bse import BSE
+    from bse import BSE
     os.makedirs(_BSE_DOWNLOAD_FOLDER, exist_ok=True)
     return BSE(download_folder=_BSE_DOWNLOAD_FOLDER)
 

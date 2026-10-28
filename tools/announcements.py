@@ -128,8 +128,8 @@ def get_insider_trades(days_back: int = 7) -> dict:
 def get_upcoming_results_calendar() -> dict:
     """BSE result calendar — companies scheduled to announce quarterly results."""
     try:
-        from bselib.bse import BSE
-        bse = BSE(download_folder=os.path.expanduser("~/.bselib_cache"))
+        from bse import BSE
+        bse = BSE(download_folder=os.path.expanduser("~/.bse_cache"))
         return {"result_calendar": bse.resultCalendar()}
     except Exception as e:
         return {"error": str(e)}
