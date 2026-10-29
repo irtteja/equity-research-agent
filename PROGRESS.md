@@ -152,3 +152,25 @@
 - Add Kuzu graph + LanceDB vector index (Phase 2) once facts accumulate
 - Build `tools/recall_tool.py` to expose memory to MCP server (so Claude can query it during analysis)
 - Consider adding RBI / macro data tools (CPI, IIP, policy rate)
+
+---
+
+## 2026-10-29 — Parallel Announcement Fetch
+
+### Done
+- **Benchmarked parallel announcement fetch**: 873 symbols, 5 workers, 179s, 216 symbols with announcements, 418 total records, 0 errors
+- **Built `jobs/fetch_announcements.py`**: `fetch_announcements_parallel()` — 5 workers, full universe, saves to `memory_store/announcements/YYYY-MM-DD.json`. CLI supports `--date`, `--days-back`, `--save`.
+- **Refactored daily_monitor.py step 3**: Parallel fetch first (fast, all symbols), then Claude ingestion only for the ~200 symbols that actually filed — avoids 873-symbol serial scan
+- **Key findings on NSE data sources**:
+  - NSE market-wide API hardcapped at 20 records (ignores date params) — useless for daily scan
+  - NSE RSS (`nsearchives.nseindia.com/content/RSS/Online_announcements.xml`): 1,498+ items/day, refreshes every 5 min, accessible from cloud IPs — good for intraday monitoring
+  - Per-symbol API (nselib): accurate, all fields, best for history and ingestion
+  - BSE wins only for category-specific short-window queries (server-side filtering); nselib wins overall
+- **Pushed**: commit 197b877
+
+### Next sessions should
+- Build `memory/recall.py` — fact retrieval by ticker + metric + period (Phase 1 JSON scan)
+- Wire NSE RSS feed as intraday announcement monitor (complement to daily parallel fetch)
+- Run first real ingestion test on 2-3 companies with results filings (check memory_store/announcements/ for today's batch)
+- Add Kuzu graph + LanceDB vector index (Phase 2) once facts accumulate
+- Build `tools/recall_tool.py` to expose memory to MCP server
