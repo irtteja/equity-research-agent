@@ -13,8 +13,10 @@ memory/__pycache__/
 # BSE cache
 ~/.bse_cache/
 
-# Temp PDF downloads
+# Temp PDF downloads and bhavcopy files
 /tmp/
+BhavCopy_*.csv
+*.zip
 
 # IDE
 .vscode/
