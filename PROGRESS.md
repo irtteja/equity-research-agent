@@ -87,6 +87,23 @@
 
 - **Pushed to GitHub**: commits b4f47b3, b89061a
 
+---
+
+## 2026-10-29 — Bhavcopy + Universe Enrichment
+
+### Done
+- **BSE scrip code mapping**: Used ISIN as key — nselib bhavcopy bulk → ISIN, `pip install bse` listSecurities → scrip code. Matched 745/748 companies (3 NSE-only: DIACABS, E2E, MBAPL)
+- **Removed REITs**: Dropped EMBASSY, BIRET, BAGMANE from universe (748 companies remain)
+- **Universe enriched**: `data/tracked_universe.json` now has `isin`, `bse_code`, `bse_group` per company
+- **jobs/save_bhavcopy.py**: Downloads NSE equity bhavcopy, filters EQ+BE (no SME), keeps tracked universe only, saves to `memory_store/bhavcopy/YYYY-MM-DD.csv`. CLI supports `--backfill N` and `--date YYYY-MM-DD`
+- **daily_monitor.py updated**: Bhavcopy save wired as step 4/5
+
+### Next sessions should
+- Run backfill for past ~1 year of trading days: `python jobs/save_bhavcopy.py --backfill 365`
+- Build `memory/recall.py` — simple fact retrieval by ticker + metric + period (Phase 1 JSON scan)
+- Run first real ingestion test on 1-2 companies with actual results filings
+- Add Kuzu graph + LanceDB vector index (Phase 2) once facts accumulate
+
 ### Known limitations (Phase 1)
 - No semantic recall yet (no Kuzu graph, no LanceDB vectors) — facts saved but not queryable beyond raw file reads
 - No BSE-to-NSE scrip code mapping (deferred, not needed since NSE works)
