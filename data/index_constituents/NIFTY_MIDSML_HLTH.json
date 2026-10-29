@@ -1,0 +1,100 @@
+{
+  "index": "NIFTY MIDSML HLTH",
+  "as_of": "2026-10-29",
+  "count": 31,
+  "constituents": [
+    {
+      "symbol": "NIFTY MIDSMALL HEALTHCARE"
+    },
+    {
+      "symbol": "ACUTAAS"
+    },
+    {
+      "symbol": "PPLPHARMA"
+    },
+    {
+      "symbol": "LAURUSLABS"
+    },
+    {
+      "symbol": "SYNGENE"
+    },
+    {
+      "symbol": "BIOCON"
+    },
+    {
+      "symbol": "WOCKPHARMA"
+    },
+    {
+      "symbol": "COHANCE"
+    },
+    {
+      "symbol": "LUPIN"
+    },
+    {
+      "symbol": "MANKIND"
+    },
+    {
+      "symbol": "AUROPHARMA"
+    },
+    {
+      "symbol": "ONESOURCE"
+    },
+    {
+      "symbol": "FORTIS"
+    },
+    {
+      "symbol": "ASTERDM"
+    },
+    {
+      "symbol": "GLENMARK"
+    },
+    {
+      "symbol": "NEULANDLAB"
+    },
+    {
+      "symbol": "LALPATHLAB"
+    },
+    {
+      "symbol": "GLAND"
+    },
+    {
+      "symbol": "SAILIFE"
+    },
+    {
+      "symbol": "ALKEM"
+    },
+    {
+      "symbol": "IPCALAB"
+    },
+    {
+      "symbol": "AJANTPHARM"
+    },
+    {
+      "symbol": "NATCOPHARM"
+    },
+    {
+      "symbol": "KIMS"
+    },
+    {
+      "symbol": "ANTHEM"
+    },
+    {
+      "symbol": "ABBOTINDIA"
+    },
+    {
+      "symbol": "NH"
+    },
+    {
+      "symbol": "GRANULES"
+    },
+    {
+      "symbol": "MEDANTA"
+    },
+    {
+      "symbol": "POLYMED"
+    },
+    {
+      "symbol": "GLAXO"
+    }
+  ]
+}

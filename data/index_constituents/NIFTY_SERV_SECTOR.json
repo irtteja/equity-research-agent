@@ -1,0 +1,100 @@
+{
+  "index": "NIFTY SERV SECTOR",
+  "as_of": "2026-10-29",
+  "count": 31,
+  "constituents": [
+    {
+      "symbol": "NIFTY SERVICES SECTOR"
+    },
+    {
+      "symbol": "ADANIPORTS"
+    },
+    {
+      "symbol": "BSE"
+    },
+    {
+      "symbol": "HDFCBANK"
+    },
+    {
+      "symbol": "TCS"
+    },
+    {
+      "symbol": "INFY"
+    },
+    {
+      "symbol": "BHARTIARTL"
+    },
+    {
+      "symbol": "ICICIBANK"
+    },
+    {
+      "symbol": "SBIN"
+    },
+    {
+      "symbol": "KOTAKBANK"
+    },
+    {
+      "symbol": "BAJFINANCE"
+    },
+    {
+      "symbol": "ETERNAL"
+    },
+    {
+      "symbol": "APOLLOHOSP"
+    },
+    {
+      "symbol": "SHRIRAMFIN"
+    },
+    {
+      "symbol": "WIPRO"
+    },
+    {
+      "symbol": "HCLTECH"
+    },
+    {
+      "symbol": "TECHM"
+    },
+    {
+      "symbol": "ADANIPOWER"
+    },
+    {
+      "symbol": "AXISBANK"
+    },
+    {
+      "symbol": "JIOFIN"
+    },
+    {
+      "symbol": "FEDERALBNK"
+    },
+    {
+      "symbol": "POWERGRID"
+    },
+    {
+      "symbol": "NTPC"
+    },
+    {
+      "symbol": "BAJAJFINSV"
+    },
+    {
+      "symbol": "MAXHEALTH"
+    },
+    {
+      "symbol": "INDIGO"
+    },
+    {
+      "symbol": "INDUSINDBK"
+    },
+    {
+      "symbol": "SBILIFE"
+    },
+    {
+      "symbol": "DMART"
+    },
+    {
+      "symbol": "TATAPOWER"
+    },
+    {
+      "symbol": "HDFCLIFE"
+    }
+  ]
+}

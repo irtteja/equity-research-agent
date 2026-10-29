@@ -1,0 +1,61 @@
+{
+  "index": "NIFTY RAILWAYSPSU",
+  "as_of": "2026-10-29",
+  "count": 18,
+  "constituents": [
+    {
+      "symbol": "NIFTY INDIA RAILWAYS PSU"
+    },
+    {
+      "symbol": "BEL"
+    },
+    {
+      "symbol": "MRPL"
+    },
+    {
+      "symbol": "BHEL"
+    },
+    {
+      "symbol": "SAIL"
+    },
+    {
+      "symbol": "NTPC"
+    },
+    {
+      "symbol": "RVNL"
+    },
+    {
+      "symbol": "IRFC"
+    },
+    {
+      "symbol": "ONGC"
+    },
+    {
+      "symbol": "HINDPETRO"
+    },
+    {
+      "symbol": "BPCL"
+    },
+    {
+      "symbol": "IRCON"
+    },
+    {
+      "symbol": "RAILTEL"
+    },
+    {
+      "symbol": "IRCTC"
+    },
+    {
+      "symbol": "BEML"
+    },
+    {
+      "symbol": "CONCOR"
+    },
+    {
+      "symbol": "RITES"
+    },
+    {
+      "symbol": "ITI"
+    }
+  ]
+}

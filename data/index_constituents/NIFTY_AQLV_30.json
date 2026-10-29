@@ -1,0 +1,100 @@
+{
+  "index": "NIFTY AQLV 30",
+  "as_of": "2026-10-29",
+  "count": 31,
+  "constituents": [
+    {
+      "symbol": "NIFTY ALPHA QUALITY VALUE LOW-VOLATILITY 30"
+    },
+    {
+      "symbol": "TCS"
+    },
+    {
+      "symbol": "ICICIBANK"
+    },
+    {
+      "symbol": "SBIN"
+    },
+    {
+      "symbol": "HEROMOTOCO"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "HINDALCO"
+    },
+    {
+      "symbol": "MARUTI"
+    },
+    {
+      "symbol": "EICHERMOT"
+    },
+    {
+      "symbol": "PFC"
+    },
+    {
+      "symbol": "HINDUNILVR"
+    },
+    {
+      "symbol": "DRREDDY"
+    },
+    {
+      "symbol": "ITC"
+    },
+    {
+      "symbol": "SUNPHARMA"
+    },
+    {
+      "symbol": "FEDERALBNK"
+    },
+    {
+      "symbol": "NTPC"
+    },
+    {
+      "symbol": "COALINDIA"
+    },
+    {
+      "symbol": "HINDZINC"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "LUPIN"
+    },
+    {
+      "symbol": "NESTLEIND"
+    },
+    {
+      "symbol": "CIPLA"
+    },
+    {
+      "symbol": "AUROPHARMA"
+    },
+    {
+      "symbol": "ONGC"
+    },
+    {
+      "symbol": "NMDC"
+    },
+    {
+      "symbol": "MARICO"
+    },
+    {
+      "symbol": "ZYDUSLIFE"
+    },
+    {
+      "symbol": "COLPAL"
+    },
+    {
+      "symbol": "BRITANNIA"
+    },
+    {
+      "symbol": "GRASIM"
+    },
+    {
+      "symbol": "ALKEM"
+    }
+  ]
+}

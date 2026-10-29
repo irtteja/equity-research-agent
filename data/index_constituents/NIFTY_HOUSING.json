@@ -1,0 +1,160 @@
+{
+  "index": "NIFTY HOUSING",
+  "as_of": "2026-10-29",
+  "count": 51,
+  "constituents": [
+    {
+      "symbol": "NIFTY HOUSING"
+    },
+    {
+      "symbol": "HDFCBANK"
+    },
+    {
+      "symbol": "JSWENERGY"
+    },
+    {
+      "symbol": "ICICIBANK"
+    },
+    {
+      "symbol": "SBIN"
+    },
+    {
+      "symbol": "KOTAKBANK"
+    },
+    {
+      "symbol": "LT"
+    },
+    {
+      "symbol": "UNIONBANK"
+    },
+    {
+      "symbol": "POLYCAB"
+    },
+    {
+      "symbol": "DIXON"
+    },
+    {
+      "symbol": "ADANIPOWER"
+    },
+    {
+      "symbol": "AXISBANK"
+    },
+    {
+      "symbol": "DLF"
+    },
+    {
+      "symbol": "CANBK"
+    },
+    {
+      "symbol": "ADANIGREEN"
+    },
+    {
+      "symbol": "PNB"
+    },
+    {
+      "symbol": "BANKBARODA"
+    },
+    {
+      "symbol": "ASIANPAINT"
+    },
+    {
+      "symbol": "YESBANK"
+    },
+    {
+      "symbol": "FEDERALBNK"
+    },
+    {
+      "symbol": "KEI"
+    },
+    {
+      "symbol": "SAIL"
+    },
+    {
+      "symbol": "NTPC"
+    },
+    {
+      "symbol": "TATASTEEL"
+    },
+    {
+      "symbol": "VOLTAS"
+    },
+    {
+      "symbol": "ADANIENSOL"
+    },
+    {
+      "symbol": "AMBUJACEM"
+    },
+    {
+      "symbol": "LODHA"
+    },
+    {
+      "symbol": "JSWSTEEL"
+    },
+    {
+      "symbol": "LICHSGFIN"
+    },
+    {
+      "symbol": "INDIANB"
+    },
+    {
+      "symbol": "NHPC"
+    },
+    {
+      "symbol": "INDUSINDBK"
+    },
+    {
+      "symbol": "JINDALSTEL"
+    },
+    {
+      "symbol": "BLUESTARCO"
+    },
+    {
+      "symbol": "IDFCFIRSTB"
+    },
+    {
+      "symbol": "TATAPOWER"
+    },
+    {
+      "symbol": "GODREJPROP"
+    },
+    {
+      "symbol": "ULTRACEMCO"
+    },
+    {
+      "symbol": "KARURVYSYA"
+    },
+    {
+      "symbol": "PETRONET"
+    },
+    {
+      "symbol": "CROMPTON"
+    },
+    {
+      "symbol": "PHOENIXLTD"
+    },
+    {
+      "symbol": "SHREECEM"
+    },
+    {
+      "symbol": "GRASIM"
+    },
+    {
+      "symbol": "HAVELLS"
+    },
+    {
+      "symbol": "OBEROIRLTY"
+    },
+    {
+      "symbol": "JSL"
+    },
+    {
+      "symbol": "PRESTIGE"
+    },
+    {
+      "symbol": "TORNTPOWER"
+    },
+    {
+      "symbol": "JKCEMENT"
+    }
+  ]
+}

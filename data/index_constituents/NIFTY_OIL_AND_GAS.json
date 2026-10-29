@@ -1,0 +1,55 @@
+{
+  "index": "NIFTY OIL AND GAS",
+  "as_of": "2026-10-29",
+  "count": 16,
+  "constituents": [
+    {
+      "symbol": "NIFTY OIL & GAS"
+    },
+    {
+      "symbol": "RELIANCE"
+    },
+    {
+      "symbol": "CHENNPETRO"
+    },
+    {
+      "symbol": "AEGISLOG"
+    },
+    {
+      "symbol": "IOC"
+    },
+    {
+      "symbol": "ONGC"
+    },
+    {
+      "symbol": "HINDPETRO"
+    },
+    {
+      "symbol": "GAIL"
+    },
+    {
+      "symbol": "BPCL"
+    },
+    {
+      "symbol": "PETRONET"
+    },
+    {
+      "symbol": "CASTROLIND"
+    },
+    {
+      "symbol": "ATGL"
+    },
+    {
+      "symbol": "OIL"
+    },
+    {
+      "symbol": "AEGISVOPAK"
+    },
+    {
+      "symbol": "IGL"
+    },
+    {
+      "symbol": "MGL"
+    }
+  ]
+}

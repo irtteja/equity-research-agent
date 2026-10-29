@@ -1,0 +1,52 @@
+{
+  "index": "NIFTY METAL",
+  "as_of": "2026-10-29",
+  "count": 15,
+  "constituents": [
+    {
+      "symbol": "APLAPOLLO"
+    },
+    {
+      "symbol": "ADANIENT"
+    },
+    {
+      "symbol": "HINDALCO"
+    },
+    {
+      "symbol": "HINDCOPPER"
+    },
+    {
+      "symbol": "HINDZINC"
+    },
+    {
+      "symbol": "JSWSTEEL"
+    },
+    {
+      "symbol": "JSL"
+    },
+    {
+      "symbol": "JINDALSTEL"
+    },
+    {
+      "symbol": "LLOYDSME"
+    },
+    {
+      "symbol": "NMDC"
+    },
+    {
+      "symbol": "NATIONALUM"
+    },
+    {
+      "symbol": "SAIL"
+    },
+    {
+      "symbol": "TATASTEEL"
+    },
+    {
+      "symbol": "VAML"
+    },
+    {
+      "symbol": "VEDL"
+    }
+  ]
+}

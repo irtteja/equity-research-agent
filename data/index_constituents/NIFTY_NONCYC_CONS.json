@@ -1,0 +1,100 @@
+{
+  "index": "NIFTY NONCYC CONS",
+  "as_of": "2026-10-29",
+  "count": 31,
+  "constituents": [
+    {
+      "symbol": "NIFTY NON-CYCLICAL CONSUMER"
+    },
+    {
+      "symbol": "BHARTIARTL"
+    },
+    {
+      "symbol": "ETERNAL"
+    },
+    {
+      "symbol": "IDEA"
+    },
+    {
+      "symbol": "TITAN"
+    },
+    {
+      "symbol": "UNITDSPR"
+    },
+    {
+      "symbol": "TRENT"
+    },
+    {
+      "symbol": "DIXON"
+    },
+    {
+      "symbol": "LENSKART"
+    },
+    {
+      "symbol": "HINDUNILVR"
+    },
+    {
+      "symbol": "SWIGGY"
+    },
+    {
+      "symbol": "ITC"
+    },
+    {
+      "symbol": "ASIANPAINT"
+    },
+    {
+      "symbol": "VOLTAS"
+    },
+    {
+      "symbol": "INDHOTEL"
+    },
+    {
+      "symbol": "NYKAA"
+    },
+    {
+      "symbol": "NESTLEIND"
+    },
+    {
+      "symbol": "INDIGO"
+    },
+    {
+      "symbol": "NAUKRI"
+    },
+    {
+      "symbol": "DMART"
+    },
+    {
+      "symbol": "TATACONSUM"
+    },
+    {
+      "symbol": "MARICO"
+    },
+    {
+      "symbol": "VMM"
+    },
+    {
+      "symbol": "VBL"
+    },
+    {
+      "symbol": "COLPAL"
+    },
+    {
+      "symbol": "GODREJCP"
+    },
+    {
+      "symbol": "DABUR"
+    },
+    {
+      "symbol": "TATACOMM"
+    },
+    {
+      "symbol": "PAGEIND"
+    },
+    {
+      "symbol": "BRITANNIA"
+    },
+    {
+      "symbol": "HAVELLS"
+    }
+  ]
+}

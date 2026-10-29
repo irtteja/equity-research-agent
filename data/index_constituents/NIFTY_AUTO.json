@@ -1,0 +1,52 @@
+{
+  "index": "NIFTY AUTO",
+  "as_of": "2026-10-29",
+  "count": 15,
+  "constituents": [
+    {
+      "symbol": "ASHOKLEY"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "BHARATFORG"
+    },
+    {
+      "symbol": "BOSCHLTD"
+    },
+    {
+      "symbol": "EICHERMOT"
+    },
+    {
+      "symbol": "HEROMOTOCO"
+    },
+    {
+      "symbol": "HYUNDAI"
+    },
+    {
+      "symbol": "M&M"
+    },
+    {
+      "symbol": "MARUTI"
+    },
+    {
+      "symbol": "MOTHERSON"
+    },
+    {
+      "symbol": "SONACOMS"
+    },
+    {
+      "symbol": "TVSMOTOR"
+    },
+    {
+      "symbol": "TMPV"
+    },
+    {
+      "symbol": "TIINDIA"
+    },
+    {
+      "symbol": "UNOMINDA"
+    }
+  ]
+}

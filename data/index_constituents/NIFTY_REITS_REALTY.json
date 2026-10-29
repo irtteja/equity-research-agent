@@ -1,0 +1,55 @@
+{
+  "index": "NIFTY REITS REALTY",
+  "as_of": "2026-10-29",
+  "count": 16,
+  "constituents": [
+    {
+      "symbol": "NIFTY REITS & REALTY"
+    },
+    {
+      "symbol": "DLF"
+    },
+    {
+      "symbol": "LODHA"
+    },
+    {
+      "symbol": "ANANTRAJ"
+    },
+    {
+      "symbol": "GODREJPROP"
+    },
+    {
+      "symbol": "PHOENIXLTD"
+    },
+    {
+      "symbol": "ABREL"
+    },
+    {
+      "symbol": "OBEROIRLTY"
+    },
+    {
+      "symbol": "PRESTIGE"
+    },
+    {
+      "symbol": "EMBASSY"
+    },
+    {
+      "symbol": "BRIGADE"
+    },
+    {
+      "symbol": "BIRET"
+    },
+    {
+      "symbol": "MINDSPACE"
+    },
+    {
+      "symbol": "KRT"
+    },
+    {
+      "symbol": "NXST"
+    },
+    {
+      "symbol": "BAGMANE"
+    }
+  ]
+}

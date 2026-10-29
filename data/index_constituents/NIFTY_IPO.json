@@ -1,0 +1,358 @@
+{
+  "index": "NIFTY IPO",
+  "as_of": "2026-10-29",
+  "count": 117,
+  "constituents": [
+    {
+      "symbol": "NIFTY IPO"
+    },
+    {
+      "symbol": "MONEYVIEW"
+    },
+    {
+      "symbol": "HEROMOTORS"
+    },
+    {
+      "symbol": "MEESHO"
+    },
+    {
+      "symbol": "GROWW"
+    },
+    {
+      "symbol": "SUDEEPPHRM"
+    },
+    {
+      "symbol": "LENSKART"
+    },
+    {
+      "symbol": "KISSHT"
+    },
+    {
+      "symbol": "KANOHAR"
+    },
+    {
+      "symbol": "AEQUS"
+    },
+    {
+      "symbol": "SHADOWFAX"
+    },
+    {
+      "symbol": "PINELABS"
+    },
+    {
+      "symbol": "SSRETAIL"
+    },
+    {
+      "symbol": "STEAMHOUSE"
+    },
+    {
+      "symbol": "ESDS"
+    },
+    {
+      "symbol": "ADROITIND"
+    },
+    {
+      "symbol": "LALITHAA"
+    },
+    {
+      "symbol": "OMNI"
+    },
+    {
+      "symbol": "SEDEMAC"
+    },
+    {
+      "symbol": "TENNIND"
+    },
+    {
+      "symbol": "INDOMIM"
+    },
+    {
+      "symbol": "MVELECTRO"
+    },
+    {
+      "symbol": "PWL"
+    },
+    {
+      "symbol": "SYMBIOTEC"
+    },
+    {
+      "symbol": "DHOOTTRANS"
+    },
+    {
+      "symbol": "DEEPA"
+    },
+    {
+      "symbol": "MOLBIO"
+    },
+    {
+      "symbol": "HORIZONIND"
+    },
+    {
+      "symbol": "MPIMANIPAL"
+    },
+    {
+      "symbol": "XTRANET"
+    },
+    {
+      "symbol": "RENTOMOJO"
+    },
+    {
+      "symbol": "PNGSREVA"
+    },
+    {
+      "symbol": "ICICIAMC"
+    },
+    {
+      "symbol": "PRANAV"
+    },
+    {
+      "symbol": "TEMPSENS"
+    },
+    {
+      "symbol": "EMMVEE"
+    },
+    {
+      "symbol": "SBIFUNDS"
+    },
+    {
+      "symbol": "TECHNOCRAF"
+    },
+    {
+      "symbol": "GLASSWALL"
+    },
+    {
+      "symbol": "RAMBHAJO"
+    },
+    {
+      "symbol": "KSHINTL"
+    },
+    {
+      "symbol": "KUSUMGAR"
+    },
+    {
+      "symbol": "MILKYMIST"
+    },
+    {
+      "symbol": "CAPILLARY"
+    },
+    {
+      "symbol": "MANIPALHOS"
+    },
+    {
+      "symbol": "ACEVECTOR"
+    },
+    {
+      "symbol": "CLEANMAX"
+    },
+    {
+      "symbol": "CMPDI"
+    },
+    {
+      "symbol": "SHIPROCKET"
+    },
+    {
+      "symbol": "LUMINO"
+    },
+    {
+      "symbol": "HDFIRE"
+    },
+    {
+      "symbol": "CMLL"
+    },
+    {
+      "symbol": "AUGMONT"
+    },
+    {
+      "symbol": "NITYAS"
+    },
+    {
+      "symbol": "SHANKESH"
+    },
+    {
+      "symbol": "KNACK"
+    },
+    {
+      "symbol": "LEAPIND"
+    },
+    {
+      "symbol": "KARAMTARA"
+    },
+    {
+      "symbol": "FRACTAL"
+    },
+    {
+      "symbol": "BHARATCOAL"
+    },
+    {
+      "symbol": "ORIENTCABL"
+    },
+    {
+      "symbol": "ARCIL"
+    },
+    {
+      "symbol": "LASERPOWER"
+    },
+    {
+      "symbol": "BLEL"
+    },
+    {
+      "symbol": "AYE"
+    },
+    {
+      "symbol": "GERMAN"
+    },
+    {
+      "symbol": "VIDYAWIRES"
+    },
+    {
+      "symbol": "VEEGALAND"
+    },
+    {
+      "symbol": "CORDELIA"
+    },
+    {
+      "symbol": "LCL"
+    },
+    {
+      "symbol": "AEROPLANE"
+    },
+    {
+      "symbol": "HTEL"
+    },
+    {
+      "symbol": "ARMEE"
+    },
+    {
+      "symbol": "POWERICA"
+    },
+    {
+      "symbol": "FUSIONCX"
+    },
+    {
+      "symbol": "CORONA"
+    },
+    {
+      "symbol": "RUNWALENTR"
+    },
+    {
+      "symbol": "SWASTIKAIN"
+    },
+    {
+      "symbol": "ELEVATE"
+    },
+    {
+      "symbol": "AMAGI"
+    },
+    {
+      "symbol": "SKYWAYS"
+    },
+    {
+      "symbol": "HEXAGON"
+    },
+    {
+      "symbol": "JNPR"
+    },
+    {
+      "symbol": "PRASOLCHEM"
+    },
+    {
+      "symbol": "VARMORA"
+    },
+    {
+      "symbol": "PARKHOSPS"
+    },
+    {
+      "symbol": "SRIT"
+    },
+    {
+      "symbol": "SUNSHINE"
+    },
+    {
+      "symbol": "ARDEE"
+    },
+    {
+      "symbol": "CMRGREEN"
+    },
+    {
+      "symbol": "UTLSOLAR"
+    },
+    {
+      "symbol": "AONESTEELS"
+    },
+    {
+      "symbol": "MIDWESTLTD"
+    },
+    {
+      "symbol": "NEPHROPLUS"
+    },
+    {
+      "symbol": "SAIPARENT"
+    },
+    {
+      "symbol": "GAJA"
+    },
+    {
+      "symbol": "GKSL"
+    },
+    {
+      "symbol": "GSPCROP"
+    },
+    {
+      "symbol": "LCCPROJECT"
+    },
+    {
+      "symbol": "TURTLEMINT"
+    },
+    {
+      "symbol": "VNL"
+    },
+    {
+      "symbol": "GAUDIUMIVF"
+    },
+    {
+      "symbol": "EXCELSOFT"
+    },
+    {
+      "symbol": "ANNU"
+    },
+    {
+      "symbol": "WAKEFIT"
+    },
+    {
+      "symbol": "ORKLAINDIA"
+    },
+    {
+      "symbol": "STUDDS"
+    },
+    {
+      "symbol": "PERNIASPOP"
+    },
+    {
+      "symbol": "CANHLIFE"
+    },
+    {
+      "symbol": "CSM"
+    },
+    {
+      "symbol": "OMPOWER"
+    },
+    {
+      "symbol": "AASTHA"
+    },
+    {
+      "symbol": "SONA"
+    },
+    {
+      "symbol": "RSL"
+    },
+    {
+      "symbol": "ALPINETEX"
+    },
+    {
+      "symbol": "JSIPL"
+    },
+    {
+      "symbol": "INNOVISION"
+    }
+  ]
+}

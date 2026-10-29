@@ -1,0 +1,160 @@
+{
+  "index": "NIFTY SMLCAP 50",
+  "as_of": "2026-10-29",
+  "count": 51,
+  "constituents": [
+    {
+      "symbol": "NIFTY SMALLCAP 50"
+    },
+    {
+      "symbol": "ACUTAAS"
+    },
+    {
+      "symbol": "PPLPHARMA"
+    },
+    {
+      "symbol": "BANDHANBNK"
+    },
+    {
+      "symbol": "PNBHOUSING"
+    },
+    {
+      "symbol": "CUB"
+    },
+    {
+      "symbol": "POONAWALLA"
+    },
+    {
+      "symbol": "SYNGENE"
+    },
+    {
+      "symbol": "CDSL"
+    },
+    {
+      "symbol": "KAYNES"
+    },
+    {
+      "symbol": "ATHERENERG"
+    },
+    {
+      "symbol": "GESHIP"
+    },
+    {
+      "symbol": "MANAPPURAM"
+    },
+    {
+      "symbol": "PGEL"
+    },
+    {
+      "symbol": "TDPOWERSYS"
+    },
+    {
+      "symbol": "WELCORP"
+    },
+    {
+      "symbol": "NAVINFLUOR"
+    },
+    {
+      "symbol": "WOCKPHARMA"
+    },
+    {
+      "symbol": "SONACOMS"
+    },
+    {
+      "symbol": "KPITTECH"
+    },
+    {
+      "symbol": "ANGELONE"
+    },
+    {
+      "symbol": "TATAELXSI"
+    },
+    {
+      "symbol": "MTARTECH"
+    },
+    {
+      "symbol": "AMBER"
+    },
+    {
+      "symbol": "AEGISLOG"
+    },
+    {
+      "symbol": "HFCL"
+    },
+    {
+      "symbol": "REDINGTON"
+    },
+    {
+      "symbol": "KFINTECH"
+    },
+    {
+      "symbol": "HSCL"
+    },
+    {
+      "symbol": "ARE&M"
+    },
+    {
+      "symbol": "ONESOURCE"
+    },
+    {
+      "symbol": "KARURVYSYA"
+    },
+    {
+      "symbol": "CAMS"
+    },
+    {
+      "symbol": "IIFL"
+    },
+    {
+      "symbol": "CROMPTON"
+    },
+    {
+      "symbol": "INOXWIND"
+    },
+    {
+      "symbol": "RBLBANK"
+    },
+    {
+      "symbol": "TATATECH"
+    },
+    {
+      "symbol": "NEULANDLAB"
+    },
+    {
+      "symbol": "KIRLOSENG"
+    },
+    {
+      "symbol": "LALPATHLAB"
+    },
+    {
+      "symbol": "GLAND"
+    },
+    {
+      "symbol": "SAILIFE"
+    },
+    {
+      "symbol": "NBCC"
+    },
+    {
+      "symbol": "DELHIVERY"
+    },
+    {
+      "symbol": "ANANDRATHI"
+    },
+    {
+      "symbol": "TATACHEM"
+    },
+    {
+      "symbol": "NATCOPHARM"
+    },
+    {
+      "symbol": "IGL"
+    },
+    {
+      "symbol": "AFFLE"
+    },
+    {
+      "symbol": "APOLLOTYRE"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "index": "NIFTY MIDCAP 50",
+  "as_of": "2026-10-29",
+  "count": 50,
+  "constituents": [
+    {
+      "symbol": "APLAPOLLO"
+    },
+    {
+      "symbol": "AUBANK"
+    },
+    {
+      "symbol": "ASHOKLEY"
+    },
+    {
+      "symbol": "AUROPHARMA"
+    },
+    {
+      "symbol": "BHARATFORG"
+    },
+    {
+      "symbol": "BHEL"
+    },
+    {
+      "symbol": "DABUR"
+    },
+    {
+      "symbol": "DIXON"
+    },
+    {
+      "symbol": "NYKAA"
+    },
+    {
+      "symbol": "FEDERALBNK"
+    },
+    {
+      "symbol": "FORTIS"
+    },
+    {
+      "symbol": "GVT&D"
+    },
+    {
+      "symbol": "GMRAIRPORT"
+    },
+    {
+      "symbol": "GLENMARK"
+    },
+    {
+      "symbol": "GODREJPROP"
+    },
+    {
+      "symbol": "HAVELLS"
+    },
+    {
+      "symbol": "HEROMOTOCO"
+    },
+    {
+      "symbol": "HINDPETRO"
+    },
+    {
+      "symbol": "ICICIGI"
+    },
+    {
+      "symbol": "IDFCFIRSTB"
+    },
+    {
+      "symbol": "INDHOTEL"
+    },
+    {
+      "symbol": "INDUSTOWER"
+    },
+    {
+      "symbol": "INDUSINDBK"
+    },
+    {
+      "symbol": "NAUKRI"
+    },
+    {
+      "symbol": "JSWENERGY"
+    },
+    {
+      "symbol": "LAURUSLABS"
+    },
+    {
+      "symbol": "LUPIN"
+    },
+    {
+      "symbol": "MANKIND"
+    },
+    {
+      "symbol": "MARICO"
+    },
+    {
+      "symbol": "MFSL"
+    },
+    {
+      "symbol": "MCX"
+    },
+    {
+      "symbol": "NHPC"
+    },
+    {
+      "symbol": "NMDC"
+    },
+    {
+      "symbol": "NATIONALUM"
+    },
+    {
+      "symbol": "OIL"
+    },
+    {
+      "symbol": "PAYTM"
+    },
+    {
+      "symbol": "POLICYBZR"
+    },
+    {
+      "symbol": "PERSISTENT"
+    },
+    {
+      "symbol": "PHOENIXLTD"
+    },
+    {
+      "symbol": "PRESTIGE"
+    },
+    {
+      "symbol": "RECLTD"
+    },
+    {
+      "symbol": "SRF"
+    },
+    {
+      "symbol": "SUZLON"
+    },
+    {
+      "symbol": "SWIGGY"
+    },
+    {
+      "symbol": "TIINDIA"
+    },
+    {
+      "symbol": "UPL"
+    },
+    {
+      "symbol": "UNITDSPR"
+    },
+    {
+      "symbol": "VMM"
+    },
+    {
+      "symbol": "WAAREEENER"
+    },
+    {
+      "symbol": "YESBANK"
+    }
+  ]
+}

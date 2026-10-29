@@ -1,0 +1,67 @@
+{
+  "index": "NIFTY HEALTHCARE",
+  "as_of": "2026-10-29",
+  "count": 20,
+  "constituents": [
+    {
+      "symbol": "ABBOTINDIA"
+    },
+    {
+      "symbol": "ALKEM"
+    },
+    {
+      "symbol": "APOLLOHOSP"
+    },
+    {
+      "symbol": "AUROPHARMA"
+    },
+    {
+      "symbol": "BIOCON"
+    },
+    {
+      "symbol": "CIPLA"
+    },
+    {
+      "symbol": "DIVISLAB"
+    },
+    {
+      "symbol": "DRREDDY"
+    },
+    {
+      "symbol": "FORTIS"
+    },
+    {
+      "symbol": "GLAND"
+    },
+    {
+      "symbol": "GLENMARK"
+    },
+    {
+      "symbol": "IPCALAB"
+    },
+    {
+      "symbol": "KIMS"
+    },
+    {
+      "symbol": "LAURUSLABS"
+    },
+    {
+      "symbol": "LUPIN"
+    },
+    {
+      "symbol": "MANKIND"
+    },
+    {
+      "symbol": "MAXHEALTH"
+    },
+    {
+      "symbol": "SUNPHARMA"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "ZYDUSLIFE"
+    }
+  ]
+}

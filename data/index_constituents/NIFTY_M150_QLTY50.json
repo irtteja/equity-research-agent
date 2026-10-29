@@ -1,0 +1,160 @@
+{
+  "index": "NIFTY M150 QLTY50",
+  "as_of": "2026-10-29",
+  "count": 51,
+  "constituents": [
+    {
+      "symbol": "NIFTY MIDCAP150 QUALITY 50"
+    },
+    {
+      "symbol": "BSE"
+    },
+    {
+      "symbol": "OFSS"
+    },
+    {
+      "symbol": "HEROMOTOCO"
+    },
+    {
+      "symbol": "COFORGE"
+    },
+    {
+      "symbol": "APLAPOLLO"
+    },
+    {
+      "symbol": "PERSISTENT"
+    },
+    {
+      "symbol": "POLYCAB"
+    },
+    {
+      "symbol": "DIXON"
+    },
+    {
+      "symbol": "POWERINDIA"
+    },
+    {
+      "symbol": "APARINDS"
+    },
+    {
+      "symbol": "KEI"
+    },
+    {
+      "symbol": "KPITTECH"
+    },
+    {
+      "symbol": "VOLTAS"
+    },
+    {
+      "symbol": "LTTS"
+    },
+    {
+      "symbol": "TATAELXSI"
+    },
+    {
+      "symbol": "INDIANB"
+    },
+    {
+      "symbol": "KPRMILL"
+    },
+    {
+      "symbol": "MAHABANK"
+    },
+    {
+      "symbol": "BDL"
+    },
+    {
+      "symbol": "360ONE"
+    },
+    {
+      "symbol": "TIINDIA"
+    },
+    {
+      "symbol": "MPHASIS"
+    },
+    {
+      "symbol": "NAM-INDIA"
+    },
+    {
+      "symbol": "NMDC"
+    },
+    {
+      "symbol": "MOTILALOFS"
+    },
+    {
+      "symbol": "MARICO"
+    },
+    {
+      "symbol": "PETRONET"
+    },
+    {
+      "symbol": "COLPAL"
+    },
+    {
+      "symbol": "DABUR"
+    },
+    {
+      "symbol": "PAGEIND"
+    },
+    {
+      "symbol": "SUPREMEIND"
+    },
+    {
+      "symbol": "PIIND"
+    },
+    {
+      "symbol": "SUNDARMFIN"
+    },
+    {
+      "symbol": "GODFRYPHLP"
+    },
+    {
+      "symbol": "IRCTC"
+    },
+    {
+      "symbol": "HAVELLS"
+    },
+    {
+      "symbol": "ALKEM"
+    },
+    {
+      "symbol": "ASTRAL"
+    },
+    {
+      "symbol": "AJANTPHARM"
+    },
+    {
+      "symbol": "BALKRISIND"
+    },
+    {
+      "symbol": "HONAUT"
+    },
+    {
+      "symbol": "SCHAEFFLER"
+    },
+    {
+      "symbol": "COROMANDEL"
+    },
+    {
+      "symbol": "ABBOTINDIA"
+    },
+    {
+      "symbol": "CRISIL"
+    },
+    {
+      "symbol": "3MINDIA"
+    },
+    {
+      "symbol": "ENDURANCE"
+    },
+    {
+      "symbol": "AIAENG"
+    },
+    {
+      "symbol": "GLAXO"
+    },
+    {
+      "symbol": "BERGEPAINT"
+    }
+  ]
+}

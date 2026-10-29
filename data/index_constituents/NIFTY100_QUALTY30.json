@@ -1,0 +1,100 @@
+{
+  "index": "NIFTY100 QUALTY30",
+  "as_of": "2026-10-29",
+  "count": 31,
+  "constituents": [
+    {
+      "symbol": "NIFTY100 QUALITY 30"
+    },
+    {
+      "symbol": "TCS"
+    },
+    {
+      "symbol": "INFY"
+    },
+    {
+      "symbol": "PIDILITIND"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "WIPRO"
+    },
+    {
+      "symbol": "MAZDOCK"
+    },
+    {
+      "symbol": "HCLTECH"
+    },
+    {
+      "symbol": "MARUTI"
+    },
+    {
+      "symbol": "DIVISLAB"
+    },
+    {
+      "symbol": "UNITDSPR"
+    },
+    {
+      "symbol": "BEL"
+    },
+    {
+      "symbol": "TECHM"
+    },
+    {
+      "symbol": "EICHERMOT"
+    },
+    {
+      "symbol": "HINDUNILVR"
+    },
+    {
+      "symbol": "DRREDDY"
+    },
+    {
+      "symbol": "HAL"
+    },
+    {
+      "symbol": "ITC"
+    },
+    {
+      "symbol": "ASIANPAINT"
+    },
+    {
+      "symbol": "SOLARINDS"
+    },
+    {
+      "symbol": "COALINDIA"
+    },
+    {
+      "symbol": "HINDZINC"
+    },
+    {
+      "symbol": "HDFCAMC"
+    },
+    {
+      "symbol": "LTM"
+    },
+    {
+      "symbol": "NESTLEIND"
+    },
+    {
+      "symbol": "BOSCHLTD"
+    },
+    {
+      "symbol": "ABB"
+    },
+    {
+      "symbol": "ZYDUSLIFE"
+    },
+    {
+      "symbol": "VBL"
+    },
+    {
+      "symbol": "GODREJCP"
+    },
+    {
+      "symbol": "BRITANNIA"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "index": "NIFTY COREHOUSING",
+  "as_of": "2026-10-29",
+  "count": 31,
+  "constituents": [
+    {
+      "symbol": "NIFTY CORE HOUSING"
+    },
+    {
+      "symbol": "PNBHOUSING"
+    },
+    {
+      "symbol": "POLYCAB"
+    },
+    {
+      "symbol": "DIXON"
+    },
+    {
+      "symbol": "PGEL"
+    },
+    {
+      "symbol": "DLF"
+    },
+    {
+      "symbol": "ASIANPAINT"
+    },
+    {
+      "symbol": "KEI"
+    },
+    {
+      "symbol": "VOLTAS"
+    },
+    {
+      "symbol": "AMBUJACEM"
+    },
+    {
+      "symbol": "LODHA"
+    },
+    {
+      "symbol": "DALBHARAT"
+    },
+    {
+      "symbol": "AMBER"
+    },
+    {
+      "symbol": "LICHSGFIN"
+    },
+    {
+      "symbol": "BLUESTARCO"
+    },
+    {
+      "symbol": "GODREJPROP"
+    },
+    {
+      "symbol": "ULTRACEMCO"
+    },
+    {
+      "symbol": "CROMPTON"
+    },
+    {
+      "symbol": "PHOENIXLTD"
+    },
+    {
+      "symbol": "SHREECEM"
+    },
+    {
+      "symbol": "GRASIM"
+    },
+    {
+      "symbol": "HAVELLS"
+    },
+    {
+      "symbol": "KAJARIACER"
+    },
+    {
+      "symbol": "OBEROIRLTY"
+    },
+    {
+      "symbol": "PRESTIGE"
+    },
+    {
+      "symbol": "LGEINDIA"
+    },
+    {
+      "symbol": "BAJAJHFL"
+    },
+    {
+      "symbol": "BRIGADE"
+    },
+    {
+      "symbol": "RAMCOCEM"
+    },
+    {
+      "symbol": "JKCEMENT"
+    },
+    {
+      "symbol": "BERGEPAINT"
+    }
+  ]
+}

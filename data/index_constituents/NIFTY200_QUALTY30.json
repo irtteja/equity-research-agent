@@ -1,0 +1,100 @@
+{
+  "index": "NIFTY200 QUALTY30",
+  "as_of": "2026-10-29",
+  "count": 31,
+  "constituents": [
+    {
+      "symbol": "NIFTY200 QUALITY 30"
+    },
+    {
+      "symbol": "TCS"
+    },
+    {
+      "symbol": "INFY"
+    },
+    {
+      "symbol": "OFSS"
+    },
+    {
+      "symbol": "HEROMOTOCO"
+    },
+    {
+      "symbol": "PIDILITIND"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "MAZDOCK"
+    },
+    {
+      "symbol": "HCLTECH"
+    },
+    {
+      "symbol": "PERSISTENT"
+    },
+    {
+      "symbol": "POLYCAB"
+    },
+    {
+      "symbol": "BEL"
+    },
+    {
+      "symbol": "DIXON"
+    },
+    {
+      "symbol": "CUMMINSIND"
+    },
+    {
+      "symbol": "HINDUNILVR"
+    },
+    {
+      "symbol": "HAL"
+    },
+    {
+      "symbol": "ITC"
+    },
+    {
+      "symbol": "ASIANPAINT"
+    },
+    {
+      "symbol": "KPITTECH"
+    },
+    {
+      "symbol": "SOLARINDS"
+    },
+    {
+      "symbol": "COALINDIA"
+    },
+    {
+      "symbol": "HINDZINC"
+    },
+    {
+      "symbol": "HDFCAMC"
+    },
+    {
+      "symbol": "LTM"
+    },
+    {
+      "symbol": "TATAELXSI"
+    },
+    {
+      "symbol": "NESTLEIND"
+    },
+    {
+      "symbol": "MARICO"
+    },
+    {
+      "symbol": "COLPAL"
+    },
+    {
+      "symbol": "PAGEIND"
+    },
+    {
+      "symbol": "BRITANNIA"
+    },
+    {
+      "symbol": "HAVELLS"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "index": "NIFTY EV",
+  "as_of": "2026-10-29",
+  "count": 38,
+  "constituents": [
+    {
+      "symbol": "NIFTY EV & NEW AGE AUTOMOTIVE"
+    },
+    {
+      "symbol": "RELIANCE"
+    },
+    {
+      "symbol": "TVSMOTOR"
+    },
+    {
+      "symbol": "JWL"
+    },
+    {
+      "symbol": "HYUNDAI"
+    },
+    {
+      "symbol": "HEROMOTOCO"
+    },
+    {
+      "symbol": "OLAELEC"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "FORCEMOT"
+    },
+    {
+      "symbol": "MARUTI"
+    },
+    {
+      "symbol": "ATHERENERG"
+    },
+    {
+      "symbol": "EICHERMOT"
+    },
+    {
+      "symbol": "M&M"
+    },
+    {
+      "symbol": "MOTHERSON"
+    },
+    {
+      "symbol": "TMCV"
+    },
+    {
+      "symbol": "SONACOMS"
+    },
+    {
+      "symbol": "KEI"
+    },
+    {
+      "symbol": "KPITTECH"
+    },
+    {
+      "symbol": "ASHOKLEY"
+    },
+    {
+      "symbol": "TMPV"
+    },
+    {
+      "symbol": "TATAELXSI"
+    },
+    {
+      "symbol": "CGPOWER"
+    },
+    {
+      "symbol": "BOSCHLTD"
+    },
+    {
+      "symbol": "BHARATFORG"
+    },
+    {
+      "symbol": "TIINDIA"
+    },
+    {
+      "symbol": "HSCL"
+    },
+    {
+      "symbol": "ARE&M"
+    },
+    {
+      "symbol": "EXIDEIND"
+    },
+    {
+      "symbol": "SANSERA"
+    },
+    {
+      "symbol": "TATATECH"
+    },
+    {
+      "symbol": "UNOMINDA"
+    },
+    {
+      "symbol": "FLUOROCHEM"
+    },
+    {
+      "symbol": "MSUMI"
+    },
+    {
+      "symbol": "OLECTRA"
+    },
+    {
+      "symbol": "TATACHEM"
+    },
+    {
+      "symbol": "JBMA"
+    },
+    {
+      "symbol": "SCHAEFFLER"
+    },
+    {
+      "symbol": "ZFCVINDIA"
+    }
+  ]
+}

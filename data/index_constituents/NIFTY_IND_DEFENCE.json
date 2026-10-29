@@ -1,0 +1,76 @@
+{
+  "index": "NIFTY IND DEFENCE",
+  "as_of": "2026-10-29",
+  "count": 23,
+  "constituents": [
+    {
+      "symbol": "NIFTY INDIA DEFENCE"
+    },
+    {
+      "symbol": "APOLLO"
+    },
+    {
+      "symbol": "MAZDOCK"
+    },
+    {
+      "symbol": "BEL"
+    },
+    {
+      "symbol": "HAL"
+    },
+    {
+      "symbol": "SOLARINDS"
+    },
+    {
+      "symbol": "PARAS"
+    },
+    {
+      "symbol": "DATAPATTNS"
+    },
+    {
+      "symbol": "AEQUS"
+    },
+    {
+      "symbol": "MTARTECH"
+    },
+    {
+      "symbol": "BHARATFORG"
+    },
+    {
+      "symbol": "GRSE"
+    },
+    {
+      "symbol": "BDL"
+    },
+    {
+      "symbol": "COCHINSHIP"
+    },
+    {
+      "symbol": "UNIMECH"
+    },
+    {
+      "symbol": "SIGMAADV"
+    },
+    {
+      "symbol": "ZENTEC"
+    },
+    {
+      "symbol": "BEML"
+    },
+    {
+      "symbol": "ASTRAMICRO"
+    },
+    {
+      "symbol": "AXISCADES"
+    },
+    {
+      "symbol": "CENTUM"
+    },
+    {
+      "symbol": "DYNAMATECH"
+    },
+    {
+      "symbol": "MIDHANI"
+    }
+  ]
+}

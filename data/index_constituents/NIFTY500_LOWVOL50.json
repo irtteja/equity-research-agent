@@ -1,0 +1,160 @@
+{
+  "index": "NIFTY500 LOWVOL50",
+  "as_of": "2026-10-29",
+  "count": 51,
+  "constituents": [
+    {
+      "symbol": "NIFTY500 LOW VOLATILITY 50"
+    },
+    {
+      "symbol": "TVSMOTOR"
+    },
+    {
+      "symbol": "TCS"
+    },
+    {
+      "symbol": "BHARTIARTL"
+    },
+    {
+      "symbol": "SBIN"
+    },
+    {
+      "symbol": "PIDILITIND"
+    },
+    {
+      "symbol": "APOLLOHOSP"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "WIPRO"
+    },
+    {
+      "symbol": "MARUTI"
+    },
+    {
+      "symbol": "DIVISLAB"
+    },
+    {
+      "symbol": "UNITDSPR"
+    },
+    {
+      "symbol": "TECHM"
+    },
+    {
+      "symbol": "EICHERMOT"
+    },
+    {
+      "symbol": "DRREDDY"
+    },
+    {
+      "symbol": "SUNPHARMA"
+    },
+    {
+      "symbol": "ASIANPAINT"
+    },
+    {
+      "symbol": "FEDERALBNK"
+    },
+    {
+      "symbol": "POWERGRID"
+    },
+    {
+      "symbol": "NTPC"
+    },
+    {
+      "symbol": "COALINDIA"
+    },
+    {
+      "symbol": "AMBUJACEM"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "LUPIN"
+    },
+    {
+      "symbol": "LICI"
+    },
+    {
+      "symbol": "MFSL"
+    },
+    {
+      "symbol": "CIPLA"
+    },
+    {
+      "symbol": "IOC"
+    },
+    {
+      "symbol": "ONGC"
+    },
+    {
+      "symbol": "TATAPOWER"
+    },
+    {
+      "symbol": "ULTRACEMCO"
+    },
+    {
+      "symbol": "MARICO"
+    },
+    {
+      "symbol": "ZYDUSLIFE"
+    },
+    {
+      "symbol": "COLPAL"
+    },
+    {
+      "symbol": "HDFCLIFE"
+    },
+    {
+      "symbol": "ICICIGI"
+    },
+    {
+      "symbol": "CASTROLIND"
+    },
+    {
+      "symbol": "GODREJCP"
+    },
+    {
+      "symbol": "TATATECH"
+    },
+    {
+      "symbol": "DABUR"
+    },
+    {
+      "symbol": "SBICARD"
+    },
+    {
+      "symbol": "PAGEIND"
+    },
+    {
+      "symbol": "STARHEALTH"
+    },
+    {
+      "symbol": "ICICILIFE"
+    },
+    {
+      "symbol": "BRITANNIA"
+    },
+    {
+      "symbol": "PIIND"
+    },
+    {
+      "symbol": "IRCTC"
+    },
+    {
+      "symbol": "HAVELLS"
+    },
+    {
+      "symbol": "MRF"
+    },
+    {
+      "symbol": "BAJAJHFL"
+    },
+    {
+      "symbol": "ACC"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "index": "NIFTY CAPITAL MKT",
+  "as_of": "2026-10-29",
+  "count": 18,
+  "constituents": [
+    {
+      "symbol": "NIFTY CAPITAL MARKETS"
+    },
+    {
+      "symbol": "BSE"
+    },
+    {
+      "symbol": "MCX"
+    },
+    {
+      "symbol": "CDSL"
+    },
+    {
+      "symbol": "GROWW"
+    },
+    {
+      "symbol": "ANGELONE"
+    },
+    {
+      "symbol": "HDFCAMC"
+    },
+    {
+      "symbol": "KFINTECH"
+    },
+    {
+      "symbol": "360ONE"
+    },
+    {
+      "symbol": "NAM-INDIA"
+    },
+    {
+      "symbol": "MOTILALOFS"
+    },
+    {
+      "symbol": "CAMS"
+    },
+    {
+      "symbol": "NUVAMA"
+    },
+    {
+      "symbol": "ICICIAMC"
+    },
+    {
+      "symbol": "ANANDRATHI"
+    },
+    {
+      "symbol": "IEX"
+    },
+    {
+      "symbol": "ABSLAMC"
+    },
+    {
+      "symbol": "UTIAMC"
+    }
+  ]
+}
