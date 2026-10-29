@@ -189,3 +189,44 @@
 - Run first real ingestion test — check tonight's 1 AM run output
 - Add Kuzu graph + LanceDB vector index (Phase 2) once facts accumulate
 - Build `tools/recall_tool.py` to expose memory to MCP server
+
+---
+
+## 2026-10-29 — Two-Pass Triage Validation
+
+### Done
+- **Two-pass in-session triage on today's 502 NSE announcements** (2026-10-29):
+  - Read all 502 items' attchmntText directly (no API calls, Claude reads in-session)
+  - Pass 1: rule-based attchmntText triage → deep=214, light=80, skip=208
+  - Pass 2: cross-check all items for errors → **98.8% accuracy (496/502 correct)**
+  - 6 errors identified: 5 × `Action(s) taken or orders passed` misclassified LIGHT→DEEP, 1 × newspaper publication with financial results text misclassified SKIP→DEEP
+  - All 6 errors fixed in the corrected rule set
+
+- **Key finding validated**: attchmntText catches 55 material items hidden in "General Updates"/"Updates" categories that pure category-label routing would miss:
+  - ASIANPAINT interim dividend Rs.5.75 (under "Updates")
+  - NTPC BESS 250MW commercial operation (under "Updates")
+  - MOTILALOFS NCD ₹3,000 Cr board approval (under "General Updates")
+  - LAURUSLABS acquisition of Galenvs Sciences (under "General Updates")
+  - JWL order ₹1,140 Cr wagons (under "General Updates")
+  - NBCC E-auction ₹5,191 Cr (under "Updates")
+  - NTPCGREEN commercial operation declaration (under "General Updates")
+  - ... and 48 more
+
+- **`memory/triage.py`**: New module with corrected attchmntText rules (validates at 98.8%)
+- **`memory/ingestion.py`**: Wired triage pre-filter — SKIP items now return early before PDF download
+  - Saves ~40% of PDF download cost (208/502 = 41% are skip)
+- **`reports/triage_test.json`**: Full triage validation report (502 items, all decisions, 6 errors)
+
+### Triage stats (2026-10-29)
+| Strategy | Count | % | What it means |
+|----------|-------|---|---------------|
+| deep     | 214   | 43%| Download PDF + full extraction |
+| light    | 80    | 16%| Key fact already in text, light extraction |
+| skip     | 208   | 41%| Zero analytical value, skip entirely |
+
+### Next sessions should
+- Build `memory/recall.py` — fact retrieval by ticker + metric + period (Phase 1 JSON scan)
+- Wire `ANTHROPIC_API_KEY` into environment secrets so scheduled ingestion tasks can call Claude API
+- Run first real ingestion test on 2-3 deep items (AMBUJACEM results, EQUITASBNK results)
+- Add `rationale` block to deep extraction prompt: significance, vs_expectations, key_takeaway, watch_for
+- Build `tools/recall_tool.py` to expose memory to MCP server
