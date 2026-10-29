@@ -2586,25 +2586,6 @@
       "bse_group": "A"
     },
     {
-      "symbol": "EMBASSY",
-      "company": "EMBASSY OFFICE PARKS REIT",
-      "series": "RR",
-      "ltp": 415.02,
-      "pchange": -0.9,
-      "pchange_365d": -2.42,
-      "year_high": 462,
-      "year_low": 410.15,
-      "ffmc": 362261012787.24,
-      "cap_tier": "Mid Cap",
-      "thematic_indices": [],
-      "sector": "Others \u2014 Diversified",
-      "nse_macro": "",
-      "nse_sector": "",
-      "nse_industry": "",
-      "isin": null,
-      "bse_code": null
-    },
-    {
       "symbol": "UNITDSPR",
       "company": "UNITED SPIRITS LIMITED",
       "series": "EQ",
@@ -4354,25 +4335,6 @@
       "isin": "INE491A01021",
       "bse_code": "532210",
       "bse_group": "A"
-    },
-    {
-      "symbol": "BIRET",
-      "company": "BROOKFIELD INDIA REAL ESTATE TRUST",
-      "series": "RR",
-      "ltp": 308,
-      "pchange": -0.07,
-      "pchange_365d": -10.46,
-      "year_high": 375.69,
-      "year_low": 300,
-      "ffmc": 205995995355.5,
-      "cap_tier": "Small Cap",
-      "thematic_indices": [],
-      "sector": "Others \u2014 Diversified",
-      "nse_macro": "",
-      "nse_sector": "",
-      "nse_industry": "",
-      "isin": null,
-      "bse_code": null
     },
     {
       "symbol": "SAILIFE",
@@ -8628,25 +8590,6 @@
       "isin": "INE065X01017",
       "bse_code": "544172",
       "bse_group": "A"
-    },
-    {
-      "symbol": "BAGMANE",
-      "company": "BAGMANE PRIME OFFICE REIT",
-      "series": "RR",
-      "ltp": 104.56,
-      "pchange": 0.3,
-      "pchange_365d": 0,
-      "year_high": 111.94,
-      "year_low": 102.25,
-      "ffmc": 61281343980,
-      "cap_tier": "Small Cap",
-      "thematic_indices": [],
-      "sector": "Others \u2014 Diversified",
-      "nse_macro": "",
-      "nse_sector": "",
-      "nse_industry": "",
-      "isin": null,
-      "bse_code": null
     },
     {
       "symbol": "LUMAXTECH",
