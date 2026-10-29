@@ -170,7 +170,22 @@
 
 ### Next sessions should
 - Build `memory/recall.py` — fact retrieval by ticker + metric + period (Phase 1 JSON scan)
-- Wire NSE RSS feed as intraday announcement monitor (complement to daily parallel fetch)
 - Run first real ingestion test on 2-3 companies with results filings (check memory_store/announcements/ for today's batch)
+- Add Kuzu graph + LanceDB vector index (Phase 2) once facts accumulate
+- Build `tools/recall_tool.py` to expose memory to MCP server
+
+---
+
+## 2026-10-29 — Daily Announcement Pipeline
+
+### Done
+- **Scheduled task**: `NSE Daily Announcement Fetch` — runs at 1:00 AM IST every day
+  - Step 1: parallel fetch (873 symbols, 5 workers, ~3 min) for yesterday → `memory_store/announcements/YYYY-MM-DD.json`
+  - Step 2: Claude ingestion on ~200 symbols that actually filed → facts saved to memory store
+- **Deleted**: hourly fetch (redundant), overnight fetch (merged into single 1 AM job), RSS monitor + loop files
+
+### Next sessions should
+- Build `memory/recall.py` — fact retrieval by ticker + metric + period (Phase 1 JSON scan)
+- Run first real ingestion test — check tonight's 1 AM run output
 - Add Kuzu graph + LanceDB vector index (Phase 2) once facts accumulate
 - Build `tools/recall_tool.py` to expose memory to MCP server
