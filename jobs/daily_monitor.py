@@ -80,7 +80,7 @@ def run():
     results = {}
 
     # 1. Macro snapshot
-    print("[1/4] Fetching macro snapshot...")
+    print("[1/5] Fetching macro snapshot...")
     try:
         snap = get_full_macro_snapshot()
         results["macro"] = snap
@@ -92,7 +92,7 @@ def run():
         results["macro"] = {"error": str(e)}
 
     # 2. FII/DII flows
-    print("\n[2/4] Fetching FII/DII flows...")
+    print("\n[2/5] Fetching FII/DII flows...")
     try:
         fii = get_fii_dii_flows()
         results["fii_dii"] = fii
@@ -135,6 +135,17 @@ def run():
         print(f"  ERROR: {e}")
         results["ingestion"] = {"error": str(e)}
 
+    # 4. Save bhavcopy
+    print("\n[4/5] Saving NSE bhavcopy for today...")
+    try:
+        from jobs.save_bhavcopy import fetch_and_save
+        bhav_result = fetch_and_save(date.today())
+        results["bhavcopy"] = bhav_result
+        print(f"  {bhav_result}")
+    except Exception as e:
+        print(f"  ERROR: {e}")
+        results["bhavcopy"] = {"error": str(e)}
+
     # 5. Block/Bulk deals
     print("\n[5/5] Fetching block/bulk deals...")
     try:
@@ -157,10 +168,11 @@ def run():
     errors = [k for k, v in results.items() if isinstance(v, dict) and "error" in v]
     status = "completed" if not errors else "completed_with_errors"
     facts_total = results.get("ingestion", {}).get("facts_saved", 0)
+    bhav_rows = results.get("bhavcopy", {}).get("rows", 0)
     log_checkpoint(
         TASK_ID,
         status=status,
-        progress=f"Macro, FII/DII, {facts_total} facts ingested, block/bulk deals",
+        progress=f"Macro, FII/DII, {facts_total} facts ingested, bhavcopy {bhav_rows} rows, block/bulk deals",
         next_steps="Review material announcements, update PROGRESS.md",
         blockers=", ".join(errors) if errors else "",
     )
