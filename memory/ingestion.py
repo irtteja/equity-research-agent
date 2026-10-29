@@ -138,6 +138,7 @@ def prepare_announcement(
     ticker: str,
     ann: dict,
     profile: dict,
+    force_deep: bool = False,
 ) -> dict:
     """
     Prepare a single announcement for Claude to analyze in-session.
@@ -145,8 +146,11 @@ def prepare_announcement(
     Returns a dict with:
       status = "ready"  → text extracted, prompt built, Claude should analyze
       status = "skip"   → attchmnt_triage said skip, no PDF needed
+      status = "light"  → key fact in attchmntText, light extraction only
       status = "ignore" → hard-ignore pattern matched
       status = "error"  → PDF download or extraction failed
+
+    force_deep=True: bypass triage and download PDF regardless (used for Claude escalations).
     """
     from tools.pdf_parser import download_and_extract
 
@@ -156,22 +160,35 @@ def prepare_announcement(
     attchmnt    = ann.get("attchmntText", "") or ann.get("text", "") or ""
     category    = ann.get("desc", "") or ann.get("category", "")
 
-    # 1. Hard-ignore
-    if _is_hard_ignore(headline):
+    # 1. Hard-ignore (never bypassed — genuinely zero value)
+    if not force_deep and _is_hard_ignore(headline):
         return {
             "status": "ignore", "ticker": ticker, "ann_date": ann_date[:10],
             "reason": "hard_ignore_pattern", "headline": headline[:150],
         }
 
-    # 2. attchmntText pre-filter
+    # 2. attchmntText pre-filter (bypassed when force_deep=True)
     strategy, triage_reason = attchmnt_triage(category, attchmnt)
-    if strategy == "skip":
-        return {
-            "status": "skip", "ticker": ticker, "ann_date": ann_date[:10],
-            "strategy": "skip", "reason": triage_reason,
-            "category": category, "attchmnt_text": attchmnt[:200],
-            "headline": headline[:150],
-        }
+    if not force_deep:
+        if strategy == "skip":
+            return {
+                "status": "skip", "ticker": ticker, "ann_date": ann_date[:10],
+                "strategy": "skip", "reason": triage_reason,
+                "category": category, "attchmnt_text": attchmnt[:200],
+                "headline": headline[:150],
+                "ann": ann,  # preserved so Claude can escalate with force_deep
+            }
+        if strategy == "light":
+            return {
+                "status": "light", "ticker": ticker, "ann_date": ann_date[:10],
+                "strategy": "light", "reason": triage_reason,
+                "category": category, "attchmnt_text": attchmnt[:200],
+                "headline": headline[:150],
+                "ann": ann,  # preserved so Claude can escalate with force_deep
+            }
+    else:
+        triage_reason = f"claude_escalated → was {strategy}: {triage_reason}"
+        strategy = "deep"
 
     # 3. Download PDF
     if not pdf_url:
@@ -223,6 +240,41 @@ def prepare_announcement(
         "pdf_pages": pdf_result.get("pages", 0),
         "prompt": prompt,
     }
+
+
+# ─── Escalation helper (called in-session by Claude after dynamic review) ─────
+
+def escalate_items(skip_light_list: list[dict], indices: list[int], reason: str = "") -> list[dict]:
+    """
+    Escalate skip/light items to deep by downloading their PDFs.
+
+    Claude calls this after reading the CLAUDE_DYNAMIC_REVIEW block:
+      from memory.ingestion import escalate_items
+      new_deep = escalate_items(_skip_light_combined, [3, 17, 42], "material order/results content")
+
+    Returns list of ready-status dicts (same format as prepare_announcement status=ready).
+    """
+    escalated = []
+    for idx in indices:
+        if idx < 0 or idx >= len(skip_light_list):
+            print(f"  [escalate] index {idx} out of range, skipping")
+            continue
+        item = skip_light_list[idx]
+        ticker  = item["ticker"]
+        ann     = item.get("ann", {})
+        if not ann:
+            print(f"  [escalate] {ticker} idx={idx}: no raw ann dict preserved, cannot re-prep")
+            continue
+
+        from memory.store import get_profile
+        profile = get_profile(ticker)
+        result  = prepare_announcement(ticker, ann, profile, force_deep=True)
+        if result["status"] == "ready":
+            print(f"  [escalate] {ticker} idx={idx} → deep (escalation: {reason})")
+        else:
+            print(f"  [escalate] {ticker} idx={idx} → {result['status']}: {result.get('reason','')}")
+        escalated.append(result)
+    return escalated
 
 
 # ─── Save ─────────────────────────────────────────────────────────────────────

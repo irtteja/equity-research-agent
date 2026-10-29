@@ -21,12 +21,21 @@ def triage(category: str, attchmnt_text: str) -> tuple[str, str]:
     t = (attchmnt_text or "").lower()
 
     # ── SKIP ─────────────────────────────────────────────────────────────────
+    # Transcripts of earnings/analyst calls are DEEP — management commentary + guidance.
+    # Only skip filings that are purely a URL/link to a recording, not the actual transcript.
+    if any(p in t for p in [
+        'transcript of earnings', 'transcript of conference call', 'transcript of analyst',
+        'transcript of results', 'transcript of q2', 'transcript of q1', 'transcript of q3',
+        'transcript of q4', 'transcript of the earnings', 'transcript of the conference',
+        'transcript of the analyst',
+    ]):
+        return 'deep', 'earnings/analyst transcript'
+
     skip_txt = [
         'schedule of meet', 'schedule of analyst', 'schedule of earnings', 'schedule of q',
         'schedule of investor', 'schedule of conference',
         'link of recording', 'audio recording', 'link of audio recording',
-        'transcript and link', 'transcript of audio', 'transcript of conference',
-        'informed the exchange about transcript',
+        'link to the recording', 'link to recording',
         'newspaper publication', 'newspaper advertisement',
         'monitoring agency report', 'monitoring agencies',
         'loss of share certificates',
@@ -42,7 +51,6 @@ def triage(category: str, attchmnt_text: str) -> tuple[str, str]:
             return 'skip', p
 
     skip_cats = [
-        'Analysts/Institutional Investor Meet/Con. Call Updates',
         'Monitoring Agency Report',
         'Loss of Share Certificates',
         'Certificate under SEBI (Depositories and Participants) Regulations, 2018',
@@ -50,6 +58,13 @@ def triage(category: str, attchmnt_text: str) -> tuple[str, str]:
     ]
     if cat in skip_cats:
         return 'skip', f'skip_category'
+
+    # Analysts/Institutional Investor Meet — skip if just a schedule/intimation,
+    # but DEEP if it's the actual transcript or notes
+    if cat == 'Analysts/Institutional Investor Meet/Con. Call Updates':
+        if any(p in t for p in ['transcript', 'notes of the', 'key highlights', 'presentation']):
+            return 'deep', 'analyst meet transcript/notes'
+        return 'skip', 'skip_category'
 
     # Copy of Newspaper Publication — SKIP unless it contains actual financial results
     if cat == 'Copy of Newspaper Publication':
@@ -206,3 +221,34 @@ def triage(category: str, attchmnt_text: str) -> tuple[str, str]:
         return 'deep', 'results presentation'
 
     return 'deep', 'default deep'
+
+
+def format_for_claude_review(items: list[dict], strategy_filter: tuple = ('skip', 'light')) -> str:
+    """
+    Format skip/light triage items compactly for Claude to review in-session.
+
+    Claude reads this output and flags any items that look material despite
+    being rule-classified as skip/light. Returns a plain text block.
+
+    Each line: IDX | TICKER | STRATEGY | CATEGORY | attchmntText
+    Claude outputs a list of indices to escalate to deep, with a one-line reason each.
+    """
+    filtered = [x for x in items if x.get('strategy') in strategy_filter or x.get('status') in strategy_filter]
+    if not filtered:
+        return "(no skip/light items to review)"
+
+    lines = [
+        f"[CLAUDE_DYNAMIC_REVIEW] {len(filtered)} skip/light items — scan for anything material.",
+        f"Format: IDX | TICKER | STRATEGY | CATEGORY | attchmntText",
+        f"Output escalations as: ESCALATE <idx> <idx> ... REASON: <one line>",
+        f"Output nothing if all look correct.",
+        "",
+    ]
+    for i, item in enumerate(filtered):
+        ticker   = item.get('ticker', '?')
+        strategy = item.get('strategy', item.get('status', '?'))
+        category = item.get('category', '')[:40]
+        text     = (item.get('attchmnt_text', '') or item.get('attchmntText', ''))[:200]
+        lines.append(f"{i:4d} | {ticker:<12} | {strategy:<5} | {category:<40} | {text}")
+
+    return "\n".join(lines)

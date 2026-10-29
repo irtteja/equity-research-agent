@@ -110,7 +110,6 @@ def run():
     print("\n[3/5] Fetching + preparing NSE announcements for tracked universe...")
     try:
         from jobs.fetch_announcements import fetch_announcements_parallel, save_announcements
-        from memory.ingestion import prepare_company
 
         # Phase A: fast parallel fetch across all 873 symbols
         fetch_result = fetch_announcements_parallel(
@@ -120,45 +119,73 @@ def run():
         )
         save_announcements(fetch_result)  # persist raw data to memory_store/announcements/
 
-        # Phase B: triage + PDF prep for symbols that filed something today
+        # Phase B: rule-based triage for all symbols that filed today
+        # Returns all items: ready(deep), light, skip, ignore, error
         active_symbols = list(fetch_result["announcements"].keys())
-        print(f"  {len(active_symbols)} symbols with filings today — running triage + PDF prep...")
+        print(f"  {len(active_symbols)} symbols with filings today — running rule triage...")
+
+        from memory.ingestion import prepare_announcement, escalate_items
+        from memory.store import get_profile
+        from memory.triage import format_for_claude_review
 
         all_prep = []
         prep_errors = 0
         for symbol in active_symbols:
             try:
-                items = prepare_company(symbol, days_back=1)
-                all_prep.extend(items)
+                anns = fetch_result["announcements"][symbol]
+                profile = get_profile(symbol)
+                for ann in anns:
+                    item = prepare_announcement(symbol, ann, profile)
+                    all_prep.append(item)
             except Exception as e:
                 prep_errors += 1
-                print(f"  {symbol}: prep ERROR {e}")
+                print(f"  {symbol}: triage ERROR {e}")
 
-        ready = [x for x in all_prep if x["status"] == "ready"]
-        skipped = sum(1 for x in all_prep if x["status"] == "skip")
-        ignored = sum(1 for x in all_prep if x["status"] in ("ignore", "error"))
+        by_status = {s: [x for x in all_prep if x.get("status") == s] for s in ("ready", "skip", "light", "ignore", "error")}
+        # "ready" = deep (PDF downloaded + text extracted), "light" = light triage items
+        deep_items  = by_status["ready"]
+        light_items = by_status["light"]
+        skip_items  = by_status["skip"]
+
+        print(f"  Rule triage: {len(deep_items)} deep, {len(light_items)} light, "
+              f"{len(skip_items)} skip, {len(by_status['ignore'])} ignore, {len(by_status['error'])} errors")
+
+        # Phase B.5: Dynamic review — Claude scans ALL skip+light attchmntTexts in-session
+        # and escalates anything that looks material to the deep pile.
+        # No PDFs downloaded yet for skip/light, so this costs zero extra fetches.
+        review_block = format_for_claude_review(skip_items + light_items)
+        print(f"\n{review_block}")
+        # Claude reads the above block and outputs:
+        #   ESCALATE <idx> <idx> ... REASON: <one line>
+        # for any items that should be re-triaged as deep.
+        # Claude then re-calls prepare_announcement with force_deep=True for those indices.
+        # (Escalation is handled in-session; indices reference the combined skip+light list above.)
+        _skip_light_combined = skip_items + light_items  # available for in-session escalation
+
+        ready = deep_items  # start with rule-identified deep items
 
         ingestion_summary = {
             "fetch_errors": fetch_result["errors"],
             "total_announcements": fetch_result["total_announcements"],
             "symbols_active": len(active_symbols),
+            "rule_deep": len(deep_items),
+            "rule_light": len(light_items),
+            "rule_skip": len(skip_items),
             "ready_for_analysis": len(ready),
-            "skipped": skipped,
-            "ignored": ignored,
             "prep_errors": prep_errors,
         }
         results["ingestion"] = ingestion_summary
-        results["ingestion"]["prep_items"] = ready  # Claude reads these in-session
+        results["ingestion"]["prep_items"] = ready
 
-        print(f"  {fetch_result['total_announcements']} announcements fetched; "
-              f"{len(ready)} ready for Claude analysis, {skipped} skipped, {ignored} ignored")
+        print(f"\n  {fetch_result['total_announcements']} announcements fetched; "
+              f"{len(ready)} deep (rule) + dynamic escalations pending Claude review")
 
-        # Print prepared items — Claude reads this output and does extraction in-session
+        # Print deep items for Claude to extract in-session
         if ready:
-            print(f"\n[CLAUDE_ANALYSIS] {len(ready)} items ready. Analyzing now...\n")
+            print(f"\n[CLAUDE_ANALYSIS] {len(ready)} deep items. Analyzing now...\n")
             for item in ready:
                 print(f"\n{'='*60}")
-                print(f"TICKER: {item['ticker']}  |  STRATEGY: {item['strategy'].upper()}")
+                print(f"TICKER: {item['ticker']}  |  STRATEGY: {item.get('strategy','deep').upper()}")
                 print(f"DATE: {item['ann_date']}  |  CATEGORY: {item['category']}")
                 print(f"attchmntText: {item['attchmnt_text']}")
                 print(f"PDF text ({len(item['text'])} chars, {item['pdf_pages']} pages):")
