@@ -115,3 +115,40 @@
 - Add Kuzu graph index (Phase 2) once facts start accumulating
 - Add LanceDB vector index (Phase 2) for semantic recall
 - Build `tools/recall_tool.py` to expose memory to the MCP server (so Claude can query it during analysis)
+
+---
+
+## 2026-10-29 — Index Constituents, Universe Expansion, Holiday Fix
+
+### Done
+
+- **Index constituent lists**: Built `jobs/save_index_constituents.py` — downloads constituent lists for 86 of 139 NSE indices (53 skipped: factor/strategy, ESG, leverage/inverse, bonds, SME, Tata-branded). Any new index NSE adds that doesn't match skip patterns is auto-included.
+  - `data/index_constituents/` — 86 JSON files, one per included index
+  - `data/symbol_to_indices.json` — reverse lookup: 944 symbols → index membership list
+  - `tracked_universe.json` enriched: every company now has `indices` field
+
+- **Universe expansion 748 → 873 companies** (+125):
+  - NIFTY IPO constituents (~100 recently listed stocks)
+  - NIFTY WAVES constituents (~30 media/entertainment stocks)
+  - PSB (public sector banks) — BANKBARODA, BANKINDIA, CANARABANK, UNIONBANK, etc.
+  - New entries have `isin`, `bse_code`, `bse_group`, `indices` — 2 NSE-only (CRESTO, GRADIENTE) noted with `bse_note`
+
+- **INDIA VIX in macro snapshot**: Added `get_india_vix()` to `tools/macro.py`, wired into `get_full_macro_snapshot()` return. Daily monitor prints VIX with 52-week range.
+
+- **NSE indices bhavcopy**: Built `jobs/save_indices_bhavcopy.py` — downloads OHLCV + P/E, P/B, DivYield for all 167 NSE indices per day. Saves to `memory_store/indices_bhavcopy/YYYY-MM-DD.csv`. Backfilled 245 trading days (2025-10-30 → 2026-10-28, holidays correctly absent).
+
+- **Holiday data quality fix**: NSE equity bhavcopy API serves previous day's data on market holidays. Deleted 16 stale holiday files from backfill. Added `TradDt` date-validation in `fetch_and_save()` — if downloaded data's trade date ≠ requested date, returns `{status: "holiday"}` and skips file creation. Both equity and indices bhavcopy now have 245 clean trading-day files.
+
+- **Bhavcopy counts**: equity bhavcopy 245 files, indices bhavcopy 245 files — aligned.
+
+### Key design decisions
+- Holiday detection: self-healing via `TradDt` validation (no static holiday calendar needed)
+- Skip patterns: regex-based auto-exclude for non-equity indices; new NSE indices auto-included
+- INDIA VIX: no equity constituents — kept as macro signal only (live quote via `index_quote`)
+
+### Next sessions should
+- Run first real ingestion test on 1-2 companies with actual results filings
+- Build `memory/recall.py` — fact retrieval by ticker + metric + period (Phase 1 JSON scan)
+- Add Kuzu graph + LanceDB vector index (Phase 2) once facts accumulate
+- Build `tools/recall_tool.py` to expose memory to MCP server (so Claude can query it during analysis)
+- Consider adding RBI / macro data tools (CPI, IIP, policy rate)
