@@ -1,11 +1,8 @@
 {
   "index": "NIFTY SMLCAP 250",
   "as_of": "2026-10-29",
-  "count": 251,
+  "count": 250,
   "constituents": [
-    {
-      "symbol": "NIFTY SMALLCAP 250"
-    },
     {
       "symbol": "BSOFT"
     },

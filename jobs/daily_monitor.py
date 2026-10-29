@@ -135,13 +135,17 @@ def run():
         print(f"  ERROR: {e}")
         results["ingestion"] = {"error": str(e)}
 
-    # 4. Save bhavcopy
-    print("\n[4/5] Saving NSE bhavcopy for today...")
+    # 4. Save bhavcopy (equity + indices)
+    print("\n[4/5] Saving NSE bhavcopy (equity + indices) for today...")
     try:
-        from jobs.save_bhavcopy import fetch_and_save
-        bhav_result = fetch_and_save(date.today())
+        from jobs.save_bhavcopy import fetch_and_save as save_equity_bhav
+        from jobs.save_indices_bhavcopy import fetch_and_save as save_index_bhav
+        bhav_result = save_equity_bhav(date.today())
+        idx_bhav_result = save_index_bhav(date.today())
         results["bhavcopy"] = bhav_result
-        print(f"  {bhav_result}")
+        results["indices_bhavcopy"] = idx_bhav_result
+        print(f"  equity: {bhav_result}")
+        print(f"  indices: {idx_bhav_result}")
     except Exception as e:
         print(f"  ERROR: {e}")
         results["bhavcopy"] = {"error": str(e)}

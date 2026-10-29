@@ -1,11 +1,8 @@
 {
   "index": "NIFTY500 EW",
   "as_of": "2026-10-29",
-  "count": 501,
+  "count": 500,
   "constituents": [
-    {
-      "symbol": "NIFTY500 EQUAL WEIGHT"
-    },
     {
       "symbol": "RELIANCE"
     },

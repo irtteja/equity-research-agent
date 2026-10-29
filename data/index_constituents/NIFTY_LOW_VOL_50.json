@@ -1,11 +1,8 @@
 {
   "index": "NIFTY LOW VOL 50",
   "as_of": "2026-10-29",
-  "count": 51,
+  "count": 50,
   "constituents": [
-    {
-      "symbol": "NIFTY LOW VOLATILITY 50"
-    },
     {
       "symbol": "RELIANCE"
     },

@@ -1,11 +1,8 @@
 {
   "index": "NIFTY PVT BANK",
   "as_of": "2026-10-29",
-  "count": 11,
+  "count": 10,
   "constituents": [
-    {
-      "symbol": "NIFTY PRIVATE BANK"
-    },
     {
       "symbol": "HDFCBANK"
     },

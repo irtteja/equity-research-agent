@@ -1,11 +1,8 @@
 {
   "index": "NIFTY MIDSMALL 50 50",
   "as_of": "2026-10-29",
-  "count": 401,
+  "count": 400,
   "constituents": [
-    {
-      "symbol": "NIFTY MIDSMALLCAP400 50:50"
-    },
     {
       "symbol": "BSOFT"
     },

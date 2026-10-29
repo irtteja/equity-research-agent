@@ -1,11 +1,8 @@
 {
   "index": "NIFTY RURAL",
   "as_of": "2026-10-29",
-  "count": 76,
+  "count": 75,
   "constituents": [
-    {
-      "symbol": "NIFTY RURAL"
-    },
     {
       "symbol": "TVSMOTOR"
     },

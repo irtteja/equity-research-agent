@@ -1,11 +1,8 @@
 {
   "index": "NIFTY IPO",
   "as_of": "2026-10-29",
-  "count": 117,
+  "count": 116,
   "constituents": [
-    {
-      "symbol": "NIFTY IPO"
-    },
     {
       "symbol": "MONEYVIEW"
     },

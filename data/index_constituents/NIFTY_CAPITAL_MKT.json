@@ -1,11 +1,8 @@
 {
   "index": "NIFTY CAPITAL MKT",
   "as_of": "2026-10-29",
-  "count": 18,
+  "count": 17,
   "constituents": [
-    {
-      "symbol": "NIFTY CAPITAL MARKETS"
-    },
     {
       "symbol": "BSE"
     },

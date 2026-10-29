@@ -23669,6 +23669,1254 @@
         "NIFTY TOTAL MKT",
         "NIFTY MICROCAP250"
       ]
+    },
+    {
+      "symbol": "AASTHA",
+      "isin": "INE2FMX01012",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544808",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "ACEVECTOR",
+      "isin": "INE580P01029",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544962",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "ADROITIND",
+      "isin": "INE505M01015",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544950",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "AEROPLANE",
+      "isin": "INE05TO01019",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544743",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "ALPINETEX",
+      "isin": "INE1JCQ01037",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544825",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "ANNU",
+      "isin": "INE103001017",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544893",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "AONESTEELS",
+      "isin": "INE0OTC01025",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544952",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "AQYLON",
+      "isin": "INE416A01051",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "530943",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "ARCIL",
+      "isin": "INE148G01016",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544921",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "ARDEE",
+      "isin": "INE0XNF01022",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544860",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "ARMEE",
+      "isin": "INE0TWE01016",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544951",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "AUGMONT",
+      "isin": "INE16W401027",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544888",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "AYE",
+      "isin": "INE501X01029",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544699",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "BAGFILMS",
+      "isin": "INE116D01028",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "532507",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "BALAJITELE",
+      "isin": "INE794B01026",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "532382",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "BLEL",
+      "isin": "INE1EEM01017",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544870",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "BTML",
+      "isin": "INE0EEJ01023",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "543767",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "CINELINE",
+      "isin": "INE704H01022",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "532807",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "CMLL",
+      "isin": "INE11XY01018",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544833",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "CORDELIA",
+      "isin": "INE0LZF01039",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544802",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "CORONA",
+      "isin": "INE02ZQ01018",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544644",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "CREATIVEYE",
+      "isin": "INE230B01021",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "532392",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "CRESTO",
+      "isin": "INE203Y01012",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_note": "NSE-only listed"
+    },
+    {
+      "symbol": "CSM",
+      "isin": "INE0ZK601013",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544806",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "CYBERMEDIA",
+      "isin": "INE278G01037",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "532640",
+      "bse_group": "T"
+    },
+    {
+      "symbol": "DEEPA",
+      "isin": "INE1M2N01020",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544903",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "DEN",
+      "isin": "INE947J01015",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "533137",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "DGCONTENT",
+      "isin": "INE03JI01017",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "542685",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "DHOOTTRANS",
+      "isin": "INE01NH01023",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544867",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "DISHTV",
+      "isin": "INE836F01026",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "532839",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "DNAMEDIA",
+      "isin": "INE016M01021",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "540789",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "ELEVATE",
+      "isin": "INE147X01013",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544945",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "ENIL",
+      "isin": "INE265F01028",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "532700",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "ESDS",
+      "isin": "INE0DRI01029",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544898",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "EXCELSOFT",
+      "isin": "INE606N01019",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544617",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "FUSIONCX",
+      "isin": "INE0N2201019",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544995",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "GAJA",
+      "isin": "INE18UN01038",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544885",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "GAUDIUMIVF",
+      "isin": "INE0P8B01020",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544709",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "GERMAN",
+      "isin": "INE0D4501011",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544957",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "GKSL",
+      "isin": "INE0V0W01025",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544666",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "GLASSWALL",
+      "isin": "INE644Q01039",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544913",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "GRADIENTE",
+      "isin": "INE361K01017",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_note": "NSE-only listed"
+    },
+    {
+      "symbol": "GSPCROP",
+      "isin": "INE713R01022",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544733",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "GTPL",
+      "isin": "INE869I01013",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "540602",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "HATHWAY",
+      "isin": "INE982F01036",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "533162",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "HDFIRE",
+      "isin": "INE18AK01028",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544994",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "HEROMOTORS",
+      "isin": "INE012G01022",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544936",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "HEXAGON",
+      "isin": "INE0JUI01012",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544785",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "HORIZONIND",
+      "isin": "INE685T01010",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544880",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "HTEL",
+      "isin": "INE0LEG01024",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544891",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "INDOMIM",
+      "isin": "INE084101034",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544837",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "INNOVISION",
+      "isin": "INE0ADB01012",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544732",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "JNPR",
+      "isin": "INE05C901015",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544853",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "JSIPL",
+      "isin": "INE1DLO01028",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544935",
+      "bse_group": "T"
+    },
+    {
+      "symbol": "KANOHAR",
+      "isin": "INE877D01025",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544911",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "KARAMTARA",
+      "isin": "INE590T01012",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544917",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "KNACK",
+      "isin": "INE17QZ01016",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544814",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "KSHINTL",
+      "isin": "INE987S01020",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544664",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "KUSUMGAR",
+      "isin": "INE0ISX01025",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544821",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "LALITHAA",
+      "isin": "INE0K9O01026",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544879",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "LASERPOWER",
+      "isin": "INE17IR01028",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544822",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "LCCPROJECT",
+      "isin": "INE1FPN01026",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544918",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "LCL",
+      "isin": "INE0QJW01029",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544839",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "LEAPIND",
+      "isin": "INE00GO01025",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544865",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "LUMINO",
+      "isin": "INE185Q01025",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544894",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "MANIPALHOS",
+      "isin": "INE459N01021",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544847",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "MIDWESTLTD",
+      "isin": "INE0XAD01024",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544587",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "MILKYMIST",
+      "isin": "INE00IT01020",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544868",
+      "bse_group": "T"
+    },
+    {
+      "symbol": "MMWL",
+      "isin": "INE200D01020",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "512267",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "MOLBIO",
+      "isin": "INE869T01028",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544866",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "MONEYVIEW",
+      "isin": "INE0PTN01011",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544953",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "MPIMANIPAL",
+      "isin": "INE241U01028",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544916",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "MUKTAARTS",
+      "isin": "INE374B01019",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "532357",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "MVELECTRO",
+      "isin": "INE0OWZ01020",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544851",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "NDTV",
+      "isin": "INE155G01029",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "532529",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "NEXTMEDIA",
+      "isin": "INE747B01016",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "532416",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "NITYAS",
+      "isin": "INE211501023",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544974",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "OMPOWER",
+      "isin": "INE25E901019",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544750",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "ONMOBILE",
+      "isin": "INE809I01019",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "532944",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "ORIENTCABL",
+      "isin": "INE0J1N01028",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544960",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "ORKLAINDIA",
+      "isin": "INE16NZ01023",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544595",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "PERNIASPOP",
+      "isin": "INE0I1B01016",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544901",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "PNC",
+      "isin": "INE392B01011",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "532387",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "PNGSREVA",
+      "isin": "INE1RDG01013",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544718",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "PRANAV",
+      "isin": "INE0H4201019",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544909",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "PRASOLCHEM",
+      "isin": "INE455U01024",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544912",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "PSB",
+      "isin": "INE608A01012",
+      "sector": "Banking",
+      "indices": [
+        "NIFTY PSU BANK"
+      ],
+      "bse_code": "533295",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "QUINT",
+      "isin": "INE641R01017",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "539515",
+      "bse_group": "T"
+    },
+    {
+      "symbol": "RADAAN",
+      "isin": "INE874F01027",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "590070",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "RADIOCITY",
+      "isin": "INE919I01024",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "540366",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "RAJTV",
+      "isin": "INE952H01027",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "532826",
+      "bse_group": "T"
+    },
+    {
+      "symbol": "RAMBHAJO",
+      "isin": "INE1SJO01012",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544803",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "RENTOMOJO",
+      "isin": "INE08T701025",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544915",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "RKSWAMY",
+      "isin": "INE0NQ801033",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "544136",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "RSL",
+      "isin": "INE313L01016",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544731",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "RUNWALENTR",
+      "isin": "INE804W01029",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544959",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "SAIPARENT",
+      "isin": "INE0H9F01037",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544742",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "SAMBHAAV",
+      "isin": "INE699B01027",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "511630",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "SBIFUNDS",
+      "isin": "INE640G01020",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544829",
+      "bse_group": "A"
+    },
+    {
+      "symbol": "SHANKESH",
+      "isin": "INE1WFC01025",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544882",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "SHEMAROO",
+      "isin": "INE363M01019",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "538685",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "SHIPROCKET",
+      "isin": "INE0FOO01011",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544871",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "SIGNPOST",
+      "isin": "INE0KGZ01021",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "544117",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "SKYWAYS",
+      "isin": "INE0PX301025",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544890",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "SONA",
+      "isin": "INE0LLZ01011",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544938",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "SRIT",
+      "isin": "INE307K01028",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544965",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "SSRETAIL",
+      "isin": "INE1EQW01028",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544934",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "STEAMHOUSE",
+      "isin": "INE0FRO01022",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544914",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "STUDDS",
+      "isin": "INE00Q601028",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544599",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "SUNSHINE",
+      "isin": "INE1B3O01011",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544881",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "SWASTIKAIN",
+      "isin": "INE1QJA01015",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544949",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "SYMBIOTEC",
+      "isin": "INE899I01028",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544889",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "TECHNOCRAF",
+      "isin": "INE1D0W01018",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544864",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "TEMPSENS",
+      "isin": "INE1KZI01025",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544886",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "TIPSFILMS",
+      "isin": "INE0LQS01015",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "543614",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "TURTLEMINT",
+      "isin": "INE0OC301013",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544799",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "TVTODAY",
+      "isin": "INE038F01029",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "532515",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "TVVISION",
+      "isin": "INE871L01013",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "540083",
+      "bse_group": "T"
+    },
+    {
+      "symbol": "UFO",
+      "isin": "INE527H01019",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "539141",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "VARMORA",
+      "isin": "INE0M5301040",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544942",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "VEEGALAND",
+      "isin": "INE1JTV01015",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544923",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "VIDYAWIRES",
+      "isin": "INE14UN01029",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544633",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "VNL",
+      "isin": "INE1O5L01025",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544973",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "XTRANET",
+      "isin": "INE0NG701011",
+      "sector": "IPO",
+      "indices": [
+        "NIFTY IPO"
+      ],
+      "bse_code": "544838",
+      "bse_group": "B"
+    },
+    {
+      "symbol": "ZEEMEDIA",
+      "isin": "INE966H01019",
+      "sector": "Media",
+      "indices": [
+        "NIFTY WAVES"
+      ],
+      "bse_code": "532794",
+      "bse_group": "B"
     }
   ],
   "thematic_index_members": {
@@ -27488,5 +28736,6 @@
       "industry": "Industrial Products",
       "macro": "Industrials"
     }
-  }
+  },
+  "count": 873
 }
