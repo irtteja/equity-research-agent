@@ -1,11 +1,8 @@
 {
   "index": "NIFTY OIL AND GAS",
   "as_of": "2026-10-29",
-  "count": 16,
+  "count": 15,
   "constituents": [
-    {
-      "symbol": "NIFTY OIL & GAS"
-    },
     {
       "symbol": "RELIANCE"
     },

@@ -1,11 +1,8 @@
 {
   "index": "NIFTY100ESGSECLDR",
   "as_of": "2026-10-29",
-  "count": 61,
+  "count": 60,
   "constituents": [
-    {
-      "symbol": "NIFTY100 ESG SECTOR LEADERS"
-    },
     {
       "symbol": "RELIANCE"
     },

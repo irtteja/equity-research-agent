@@ -1,11 +1,8 @@
 {
   "index": "NIFTY IND TOURISM",
   "as_of": "2026-10-29",
-  "count": 12,
+  "count": 11,
   "constituents": [
-    {
-      "symbol": "NIFTY INDIA TOURISM"
-    },
     {
       "symbol": "GMRAIRPORT"
     },

@@ -1,11 +1,8 @@
 {
   "index": "NIFTY CONSUMPTION",
   "as_of": "2026-10-29",
-  "count": 31,
+  "count": 30,
   "constituents": [
-    {
-      "symbol": "NIFTY INDIA CONSUMPTION"
-    },
     {
       "symbol": "TVSMOTOR"
     },

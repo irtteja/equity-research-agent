@@ -1,11 +1,8 @@
 {
   "index": "NIFTY INTERNET",
   "as_of": "2026-10-29",
-  "count": 24,
+  "count": 23,
   "constituents": [
-    {
-      "symbol": "NIFTY INDIA INTERNET"
-    },
     {
       "symbol": "IIFLCAPS"
     },

@@ -1,11 +1,8 @@
 {
   "index": "NIFTYCONGLOMERATE",
   "as_of": "2026-10-29",
-  "count": 51,
+  "count": 50,
   "constituents": [
-    {
-      "symbol": "NIFTY CONGLOMERATE 50"
-    },
     {
       "symbol": "ADANIPORTS"
     },

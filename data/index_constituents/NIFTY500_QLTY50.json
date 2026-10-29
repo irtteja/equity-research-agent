@@ -1,11 +1,8 @@
 {
   "index": "NIFTY500 QLTY50",
   "as_of": "2026-10-29",
-  "count": 51,
+  "count": 50,
   "constituents": [
-    {
-      "symbol": "NIFTY500 QUALITY 50"
-    },
     {
       "symbol": "BSE"
     },

@@ -1,11 +1,8 @@
 {
   "index": "NIFTY IND DIGITAL",
   "as_of": "2026-10-29",
-  "count": 51,
+  "count": 50,
   "constituents": [
-    {
-      "symbol": "NIFTY INDIA DIGITAL"
-    },
     {
       "symbol": "BSOFT"
     },

@@ -1,11 +1,8 @@
 {
   "index": "NIFTY MID SELECT",
   "as_of": "2026-10-29",
-  "count": 26,
+  "count": 25,
   "constituents": [
-    {
-      "symbol": "NIFTY MIDCAP SELECT"
-    },
     {
       "symbol": "HEROMOTOCO"
     },
