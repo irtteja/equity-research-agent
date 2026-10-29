@@ -58,3 +58,43 @@
 - Start tracked universe build: at minimum 1-2 quality names per sector
 - Investigate Natural Gas price spike and downstream stock impact
 - Add RBI / macro data tools (CPI, IIP, policy rate)
+
+---
+
+## 2026-10-29 — Phase 1 Memory System
+
+### Done
+- **Investigated announcement sources**:
+  - BSE website API (`api.bseindia.com`): Blocked from cloud IPs (Akamai 403)
+  - `pip install bse` library: Works — `bse.announcements(scripcode=)` returns filings, `bse.session.get()` can download PDFs
+  - NSE via nselib (`nse.announcements(symbol=)`): Works — returns full history with PDF URLs, `nse.download_document()` downloads PDFs reliably
+  - **Decision**: NSE as primary source (we have symbols, no scrip code mapping needed)
+
+- **Built Phase 1 memory system**:
+  - `tools/pdf_parser.py`: NSE announcement fetch (date-filtered) + PDF download via nselib + pymupdf text extraction
+  - `memory/store.py`: Append-only JSONL fact store under `memory_store/`, git-committed as durable truth
+  - `memory/ingestion.py`: Full pipeline — hard-ignore list → PDF download → text extract → Claude triage + extraction → batch save
+  - `memory_store/index/`: Initialized companies, events, contradictions indexes
+  - Added pymupdf to requirements.txt
+
+- **Key design decisions**:
+  - Triage happens **after** PDF parse — never on headline alone (per design doc)
+  - Hard-ignore only for provably-noise filings (trading window, compliance certs, etc.)
+  - All facts append-only JSONL, never deleted
+  - `memory/research.db` (SQLite) excluded from git — binary breaks on `git pull`
+
+- **Daily monitor updated**: NSE announcement ingestion step wired in (step 3 of 5)
+
+- **Pushed to GitHub**: commits b4f47b3, b89061a
+
+### Known limitations (Phase 1)
+- No semantic recall yet (no Kuzu graph, no LanceDB vectors) — facts saved but not queryable beyond raw file reads
+- No BSE-to-NSE scrip code mapping (deferred, not needed since NSE works)
+- `weekly_research.py` trigger still paused (analysis layer not ready)
+
+### Next sessions should
+- Run first real ingestion test on 1-2 companies with actual results filings
+- Build `memory/recall.py` — simple fact retrieval by ticker + metric + period (Phase 1 can use JSON scan)
+- Add Kuzu graph index (Phase 2) once facts start accumulating
+- Add LanceDB vector index (Phase 2) for semantic recall
+- Build `tools/recall_tool.py` to expose memory to the MCP server (so Claude can query it during analysis)
