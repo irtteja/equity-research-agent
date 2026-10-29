@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Daily monitoring job — runs at market close.
-Captures macro snapshot, FII/DII flows, BSE announcements, block/bulk deals.
-Saves everything to memory DB, logs checkpoint, commits to GitHub.
+Captures macro snapshot, FII/DII flows, NSE announcements + PDF ingestion, block/bulk deals.
+Saves everything to memory_store/ (GitHub-backed JSONL), logs checkpoint, commits to GitHub.
 """
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -16,7 +16,7 @@ import subprocess
 from datetime import date, datetime
 
 from tools.macro import get_full_macro_snapshot, get_fii_dii_flows, get_block_bulk_deals
-from tools.announcements import get_all_bse_announcements_today, get_upcoming_results_calendar
+from tools.announcements import get_upcoming_results_calendar
 from memory.research_store import init_db, save_insight
 from memory.task_log import init_task_tables, log_task, update_task_status, log_checkpoint, save_macro_snapshot
 
@@ -101,21 +101,42 @@ def run():
         print(f"  ERROR: {e}")
         results["fii_dii"] = {"error": str(e)}
 
-    # 3. BSE announcements
-    print("\n[3/4] Fetching BSE announcements...")
+    # 3. NSE announcement ingestion for tracked universe
+    print("\n[3/5] Ingesting NSE announcements for tracked universe...")
     try:
-        announces = get_all_bse_announcements_today()
-        results["announcements"] = announces
-        count = announces.get("total", 0)
-        print(f"  Found {count} announcements today")
-        for a in announces.get("announcements", [])[:10]:
-            print(f"  [{a.get('category','')}] {a.get('company','')} — {a.get('headline','')[:80]}")
+        from memory.ingestion import ingest_company
+        import anthropic
+
+        # Load tracked symbols
+        universe_path = os.path.join(REPO_DIR, "data", "tracked_universe.json")
+        with open(universe_path) as f:
+            universe_data = json.load(f)
+        symbols = [s["symbol"] for s in universe_data.get("universe", [])]
+
+        client = anthropic.Anthropic()
+        ingestion_summary = {"processed": 0, "facts_saved": 0, "errors": 0}
+
+        for symbol in symbols:
+            try:
+                result = ingest_company(symbol, days_back=1, anthropic_client=client)
+                ingestion_summary["processed"] += 1
+                ingestion_summary["facts_saved"] += result.get("facts_saved", 0)
+                if result.get("facts_saved", 0) > 0:
+                    print(f"  {symbol}: {result['facts_saved']} facts from {result.get('announcements_processed',0)} announcements")
+            except Exception as e:
+                ingestion_summary["errors"] += 1
+                print(f"  {symbol}: ERROR {e}")
+
+        results["ingestion"] = ingestion_summary
+        print(f"  Processed {ingestion_summary['processed']} companies, "
+              f"{ingestion_summary['facts_saved']} facts saved, "
+              f"{ingestion_summary['errors']} errors")
     except Exception as e:
         print(f"  ERROR: {e}")
-        results["announcements"] = {"error": str(e)}
+        results["ingestion"] = {"error": str(e)}
 
-    # 4. Block/Bulk deals
-    print("\n[4/4] Fetching block/bulk deals...")
+    # 5. Block/Bulk deals
+    print("\n[5/5] Fetching block/bulk deals...")
     try:
         deals = get_block_bulk_deals()
         results["deals"] = deals
@@ -135,17 +156,18 @@ def run():
     # Checkpoint
     errors = [k for k, v in results.items() if isinstance(v, dict) and "error" in v]
     status = "completed" if not errors else "completed_with_errors"
+    facts_total = results.get("ingestion", {}).get("facts_saved", 0)
     log_checkpoint(
         TASK_ID,
         status=status,
-        progress=f"Macro, FII/DII, {results.get('announcements', {}).get('total', 0)} announcements, block/bulk deals",
+        progress=f"Macro, FII/DII, {facts_total} facts ingested, block/bulk deals",
         next_steps="Review material announcements, update PROGRESS.md",
         blockers=", ".join(errors) if errors else "",
     )
     update_task_status(TASK_ID, "completed")
 
     # Commit to GitHub
-    _git_commit(f"chore: daily monitor {date.today().isoformat()} — {results.get('announcements', {}).get('total', 0)} announcements")
+    _git_commit(f"chore: daily monitor {date.today().isoformat()} — {facts_total} facts ingested")
 
     print(f"\nDone. Status: {status}")
 

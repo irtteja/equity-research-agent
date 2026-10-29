@@ -10,4 +10,6 @@ pandas-ta>=0.3.14b
 duckdb>=0.10.0
 bse>=0.0.1
 mcp>=1.0.0
+pymupdf>=2.0.0
+anthropic>=0.40.0
 # nselib: pip install -e ~/irtteja/nselib (local clone)
