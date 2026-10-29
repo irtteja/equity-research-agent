@@ -1,13 +1,14 @@
 """
-Announcement ingestion pipeline.
+Announcement ingestion pipeline — data preparation only.
 
-Flow:
-  1. Fetch NSE announcements for a symbol (last N days)
-  2. Hard-ignore headlines that are always noise
-  3. For everything else: download PDF + extract text
-  4. Claude triages based on actual content (ignore / light / deep)
-  5. Claude extracts atomic facts (light or deep)
-  6. Batch save to memory_store/
+Claude (running in-session) does the extraction. This module handles:
+  1. Hard-ignore headlines that are always noise
+  2. attchmntText pre-filter via memory.triage (skip/light/deep)
+  3. PDF download + text extraction for non-skip items
+  4. Saving Claude's extraction output to memory_store/
+
+No API calls here. Claude reads the prepared text in-session and calls
+save_extraction() with its results.
 """
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -22,7 +23,6 @@ from memory.triage import triage as attchmnt_triage
 
 
 # ─── Hard-ignore patterns (never worth parsing) ───────────────────────────────
-# These are routine compliance filings with zero analytical value.
 _HARD_IGNORE = [
     r"trading window",
     r"closure of trading window",
@@ -32,7 +32,7 @@ _HARD_IGNORE = [
     r"reconciliation of share capital",
     r"intimation of record date.*only",
     r"submission of .*certificate",
-    r"board meeting.*to consider.*date",  # just setting the date, not results
+    r"board meeting.*to consider.*date",
     r"loss of share certificate",
     r"transfer.*physical.*shares",
     r"demat.*remat",
@@ -49,230 +49,221 @@ def _is_hard_ignore(headline: str) -> bool:
     return any(p.search(h) for p in _HARD_IGNORE_RE)
 
 
-# ─── Claude extraction prompt ─────────────────────────────────────────────────
+# ─── Extraction prompt (reference for Claude in-session) ─────────────────────
+# Claude reads this template and the prepared text, then extracts facts directly.
+# No API call — Claude IS the session.
 
-_EXTRACTION_PROMPT = """You are an equity memory agent for {ticker}.
+EXTRACTION_PROMPT_TEMPLATE = """You are an equity memory agent for {ticker}.
 
-Company profile loaded:
+Company profile:
 {profile_json}
 
 Document metadata:
-- Description: {description}
+- Category: {category}
+- attchmntText: {attchmnt_text}
 - Date: {ann_date}
-- Source: NSE filing
+- Pre-triage strategy: {strategy} ({triage_reason})
 
 Document text:
 ---
 {text}
 ---
 
-Instructions:
-1. TRIAGE: Classify this document as one of:
-   - "ignore"  → routine compliance, no analytical value
-   - "light"   → some useful metadata but no material numbers
-   - "deep"    → financial results, guidance, material event, analyst call
-
-2. If "ignore": output only {"triage": "ignore", "reason": "<one line>"}
-
-3. If "light" or "deep": extract ALL atomic facts as a JSON array.
-   Each fact must follow this schema exactly:
-   {{
-     "fact_id": "<TICKER>-<METRIC>-<PERIOD>-<seq>",
-     "raw": {{
-       "company": "{ticker}",
-       "ticker": "{ticker}",
-       "doc_type": "<name it yourself>",
-       "doc_name": "<description truncated to 60 chars>",
-       "date_accessed": "{today}",
-       "source": "<where in doc>",
-       "period": "<e.g. Q2-2027 or null>",
-       "period_date": "<YYYY-MM-DD or null>",
-       "metric": "<name it yourself>",
-       "value": <number or null>,
-       "unit": "<percent / crore / million / count / etc or null>",
-       "speaker": "<name or null>",
-       "speaker_role": "<role or null>",
-       "context": "<verbatim or near-verbatim excerpt>"
-     }},
-     "derived": {{
-       "previous_value": <from profile or null>,
-       "delta": <calculated or null>,
-       "delta_direction": "improving/deteriorating/stable/null",
-       "anomaly": <true/false>,
-       "anomaly_note": "<or null>",
-       "first_appearance": <true if metric never seen before>,
-       "contradiction": false,
-       "event_links": []
-     }},
-     "tone": {{
-       "sentiment": "positive/negative/neutral",
-       "tone_shift": null
-     }},
-     "missing": null,
-     "revision": {{"revision_of": null, "revision_type": null, "revision_delta": null}},
-     "confidence": {{
-       "source_type": "management_stated/disclosed/calculated/estimated",
-       "current_assessment": "high/medium/low",
-       "reasoning": "<one line>",
-       "last_assessed": "{today}",
-       "assessed_by": "claude-ingestion",
-       "trigger": null
-     }},
-     "event_links": [],
-     "extended": {{}}
-   }}
+Extract ALL atomic facts as a JSON object:
+{{
+  "triage": "light|deep|ignore",
+  "reason": "<one line if ignore>",
+  "summary": "<2 sentences>",
+  "facts": [
+    {{
+      "fact_id": "{ticker}-<METRIC>-<PERIOD>-<seq>",
+      "raw": {{
+        "company": "{ticker}",
+        "ticker": "{ticker}",
+        "doc_type": "<financial_results|order_win|appointment|dividend|acquisition|...>",
+        "doc_name": "<description truncated to 60 chars>",
+        "date_accessed": "{today}",
+        "source": "<where in doc>",
+        "period": "<e.g. Q2-FY27 or null>",
+        "period_date": "<YYYY-MM-DD or null>",
+        "metric": "<revenue|pat|ebitda|order_value|dividend_per_share|...>",
+        "value": <number or null>,
+        "unit": "<crore|percent|rs|count|mw|...>",
+        "speaker": "<name or null>",
+        "speaker_role": "<role or null>",
+        "context": "<verbatim excerpt>"
+      }},
+      "derived": {{
+        "previous_value": null,
+        "delta": null,
+        "delta_direction": "improving|deteriorating|stable|null",
+        "anomaly": false,
+        "anomaly_note": null,
+        "first_appearance": true,
+        "contradiction": false,
+        "event_links": []
+      }},
+      "tone": {{"sentiment": "positive|negative|neutral", "tone_shift": null}},
+      "rationale": {{
+        "significance": "<why this fact matters>",
+        "vs_expectations": "<beat/miss/in-line/unknown>",
+        "key_takeaway": "<one sentence>",
+        "watch_for": "<what to track next>"
+      }},
+      "confidence": {{
+        "source_type": "management_stated|disclosed|calculated|estimated",
+        "current_assessment": "high|medium|low",
+        "reasoning": "<one line>",
+        "last_assessed": "{today}",
+        "assessed_by": "claude-ingestion"
+      }},
+      "event_links": [],
+      "extended": {{}}
+    }}
+  ],
+  "events": []
+}}
 
 Rules:
-- raw.context must be a verbatim or near-verbatim quote, never a paraphrase
-- Never skip numbers — every quantitative statement is a fact
-- Flag anomalies (unusual values, sharp changes, first appearances, missing metrics)
-- If a metric was tracked before (in profile) but is now absent, add a separate "missing" fact
-- Attribute every statement to its speaker if identifiable
-- Create new event objects if you spot a cross-company or macro pattern
-- Output a single JSON object: {{"triage": "light|deep", "facts": [...], "events": [...], "summary": "<2 sentences>"}}
-- No markdown, no code fences, just valid JSON
+- context must be verbatim or near-verbatim, never a paraphrase
+- Every number is a fact — don't skip any quantitative statement
+- If triage=ignore, output only {{"triage":"ignore","reason":"..."}}
+- Output valid JSON only, no markdown fences
 """
 
 
-def ingest_announcement(
+# ─── Prepare ─────────────────────────────────────────────────────────────────
+
+def prepare_announcement(
     ticker: str,
     ann: dict,
     profile: dict,
-    anthropic_client=None,
 ) -> dict:
     """
-    Ingest a single announcement dict (from fetch_nse_announcements).
-    Returns: { "triage": ..., "facts_saved": N, "summary": ..., "error": ... }
+    Prepare a single announcement for Claude to analyze in-session.
+
+    Returns a dict with:
+      status = "ready"  → text extracted, prompt built, Claude should analyze
+      status = "skip"   → attchmnt_triage said skip, no PDF needed
+      status = "ignore" → hard-ignore pattern matched
+      status = "error"  → PDF download or extraction failed
     """
     from tools.pdf_parser import download_and_extract
-    from memory.store import save_facts, save_triage_log, save_event, update_company_index
 
-    headline = ann.get("headline", "") or ann.get("description", "")
-    pdf_url = ann.get("pdf_url", "")
-    ann_date = ann.get("date", date.today().isoformat())
+    headline    = ann.get("headline", "") or ann.get("description", "")
+    pdf_url     = ann.get("pdf_url", "") or ann.get("attchmntFile", "")
+    ann_date    = ann.get("date", "") or ann.get("sort_date", date.today().isoformat())
+    attchmnt    = ann.get("attchmntText", "") or ann.get("text", "") or ""
+    category    = ann.get("desc", "") or ann.get("category", "")
 
-    # Hard-ignore check (no PDF download needed)
+    # 1. Hard-ignore
     if _is_hard_ignore(headline):
-        save_triage_log(ticker, [{
-            "date": ann_date,
-            "decision": "ignore",
-            "reason": "hard_ignore_pattern",
-            "headline": headline[:150],
-            "pdf_url": pdf_url,
-        }])
-        return {"triage": "ignore", "reason": "hard_ignore_pattern", "facts_saved": 0}
+        return {
+            "status": "ignore", "ticker": ticker, "ann_date": ann_date[:10],
+            "reason": "hard_ignore_pattern", "headline": headline[:150],
+        }
 
-    # attchmntText pre-filter — skip provably-noise items before PDF download
-    attchmnt_text = ann.get("attchmntText", "") or ann.get("text", "") or ""
-    category = ann.get("desc", "") or ann.get("category", "")
-    pre_strategy, pre_reason = attchmnt_triage(category, attchmnt_text)
-    if pre_strategy == "skip":
-        save_triage_log(ticker, [{
-            "date": ann_date,
-            "decision": "skip",
-            "reason": f"attchmnt_triage: {pre_reason}",
+    # 2. attchmntText pre-filter
+    strategy, triage_reason = attchmnt_triage(category, attchmnt)
+    if strategy == "skip":
+        return {
+            "status": "skip", "ticker": ticker, "ann_date": ann_date[:10],
+            "strategy": "skip", "reason": triage_reason,
+            "category": category, "attchmnt_text": attchmnt[:200],
             "headline": headline[:150],
-            "pdf_url": pdf_url,
-        }])
-        return {"triage": "skip", "reason": pre_reason, "facts_saved": 0}
+        }
 
-    # Download and extract PDF
+    # 3. Download PDF
     if not pdf_url:
-        save_triage_log(ticker, [{
-            "date": ann_date,
-            "decision": "ignore",
-            "reason": "no_pdf_attachment",
-            "headline": headline[:150],
-        }])
-        return {"triage": "ignore", "reason": "no_pdf_attachment", "facts_saved": 0}
+        return {
+            "status": "ignore", "ticker": ticker, "ann_date": ann_date[:10],
+            "reason": "no_pdf_attachment", "headline": headline[:150],
+        }
 
     pdf_result = download_and_extract(pdf_url, symbol=ticker)
     if "error" in pdf_result:
-        save_triage_log(ticker, [{
-            "date": ann_date,
-            "decision": "error",
+        return {
+            "status": "error", "ticker": ticker, "ann_date": ann_date[:10],
             "reason": f"pdf_download_failed: {pdf_result['error']}",
-            "headline": headline[:150],
-            "pdf_url": pdf_url,
-        }])
-        return {"triage": "error", "error": pdf_result["error"], "facts_saved": 0}
+            "headline": headline[:150], "pdf_url": pdf_url,
+        }
 
     text = pdf_result.get("text", "")
     if len(text) < 50:
-        save_triage_log(ticker, [{
-            "date": ann_date,
-            "decision": "ignore",
-            "reason": "pdf_empty_or_image_only",
-            "headline": headline[:150],
-            "pdf_url": pdf_url,
-        }])
-        return {"triage": "ignore", "reason": "pdf_empty_or_image_only", "facts_saved": 0}
+        return {
+            "status": "ignore", "ticker": ticker, "ann_date": ann_date[:10],
+            "reason": "pdf_empty_or_image_only", "headline": headline[:150],
+        }
 
-    # Build Claude prompt
-    prompt = _EXTRACTION_PROMPT.format(
+    # 4. Build extraction prompt for Claude to use in-session
+    profile_json = json.dumps(profile, indent=2, default=str)[:2000]
+    prompt = EXTRACTION_PROMPT_TEMPLATE.format(
         ticker=ticker,
-        profile_json=json.dumps(profile, indent=2, default=str)[:2000],
-        description=(ann.get("description") or headline)[:200],
+        profile_json=profile_json,
+        category=category,
+        attchmnt_text=attchmnt[:200],
         ann_date=ann_date[:10],
+        strategy=strategy,
+        triage_reason=triage_reason,
         text=text[:30000],
         today=date.today().isoformat(),
     )
 
-    # Call Claude
-    if anthropic_client is None:
-        import anthropic
-        anthropic_client = anthropic.Anthropic()
+    return {
+        "status": "ready",
+        "ticker": ticker,
+        "ann_date": ann_date[:10],
+        "strategy": strategy,
+        "triage_reason": triage_reason,
+        "category": category,
+        "attchmnt_text": attchmnt[:200],
+        "headline": headline[:150],
+        "pdf_url": pdf_url,
+        "text": text[:30000],
+        "pdf_pages": pdf_result.get("pages", 0),
+        "prompt": prompt,
+    }
 
-    try:
-        message = anthropic_client.messages.create(
-            model="claude-sonnet-4-6",
-            max_tokens=8000,
-            messages=[{"role": "user", "content": prompt}],
-        )
-        raw_response = message.content[0].text
-    except Exception as e:
-        return {"triage": "error", "error": f"claude_api_failed: {e}", "facts_saved": 0}
 
-    # Parse response
-    try:
-        # Strip any accidental markdown fences
-        clean = re.sub(r'^```json\s*|\s*```$', '', raw_response.strip(), flags=re.MULTILINE)
-        result = json.loads(clean)
-    except json.JSONDecodeError as e:
-        return {
-            "triage": "error",
-            "error": f"json_parse_failed: {e}",
-            "raw_response": raw_response[:500],
-            "facts_saved": 0,
-        }
+# ─── Save ─────────────────────────────────────────────────────────────────────
 
-    triage = result.get("triage", "ignore")
-    facts = result.get("facts", [])
-    events = result.get("events", [])
-    summary = result.get("summary", "")
+def save_extraction(ticker: str, prep: dict, claude_output: dict) -> dict:
+    """
+    Save Claude's extraction results to memory store.
 
-    # Log triage
+    claude_output: the dict Claude returned after analyzing prep["text"].
+    Expected keys: triage, facts (list), events (list), summary.
+    """
+    from memory.store import save_facts, save_triage_log, save_event, update_company_index
+
+    triage   = claude_output.get("triage", "ignore")
+    facts    = claude_output.get("facts", [])
+    events   = claude_output.get("events", [])
+    summary  = claude_output.get("summary", "")
+    ann_date = prep.get("ann_date", date.today().isoformat())
+
     save_triage_log(ticker, [{
         "date": ann_date,
         "decision": triage,
-        "reason": result.get("reason", ""),
-        "headline": headline[:150],
-        "pdf_url": pdf_url,
+        "reason": claude_output.get("reason", prep.get("triage_reason", "")),
+        "headline": prep.get("headline", "")[:150],
+        "pdf_url": prep.get("pdf_url", ""),
         "facts_extracted": len(facts),
         "summary": summary,
     }])
 
     if triage == "ignore":
-        return {"triage": "ignore", "reason": result.get("reason", ""), "facts_saved": 0}
+        return {"triage": "ignore", "facts_saved": 0}
 
-    # Save facts
     saved = 0
     if facts:
-        save_result = save_facts(ticker, facts)
-        saved = save_result.get("saved", 0)
-        update_company_index(ticker, {"last_filing": ann_date[:10], "last_ingested": date.today().isoformat()})
+        result = save_facts(ticker, facts)
+        saved  = result.get("saved", 0)
+        update_company_index(ticker, {
+            "last_filing": ann_date,
+            "last_ingested": date.today().isoformat(),
+        })
 
-    # Save new events
     for ev in events:
         if ev.get("event_id"):
             save_event(ev)
@@ -282,35 +273,45 @@ def ingest_announcement(
         "facts_saved": saved,
         "events_created": len(events),
         "summary": summary,
-        "pdf_pages": pdf_result.get("pages", 0),
-        "text_chars": len(text),
     }
 
 
-def ingest_company(ticker: str, days_back: int = 1, anthropic_client=None) -> dict:
+# ─── Company-level helpers ────────────────────────────────────────────────────
+
+def prepare_company(ticker: str, days_back: int = 1) -> list[dict]:
     """
-    Ingest all recent announcements for a company.
-    Returns summary of what was processed.
+    Prepare all recent announcements for a company.
+    Returns list of prep dicts (status=ready|skip|ignore|error).
+    Claude iterates these, calls save_extraction() for each ready item.
     """
     from tools.pdf_parser import fetch_nse_announcements
     from memory.store import get_profile
 
-    profile = get_profile(ticker)
+    profile       = get_profile(ticker)
     announcements = fetch_nse_announcements(ticker, days_back=days_back)
 
     if not announcements:
-        return {"ticker": ticker, "announcements": 0, "facts_saved": 0, "message": "no new announcements"}
+        return []
 
-    results = []
-    total_facts = 0
-    for ann in announcements:
-        r = ingest_announcement(ticker, ann, profile, anthropic_client=anthropic_client)
-        results.append(r)
-        total_facts += r.get("facts_saved", 0)
+    return [prepare_announcement(ticker, ann, profile) for ann in announcements]
 
+
+# ─── Backwards compatibility alias ───────────────────────────────────────────
+# Old callers that used ingest_company() now get prepare_company().
+# No anthropic_client param — Claude analyzes the returned prep dicts in-session.
+
+def ingest_company(ticker: str, days_back: int = 1, anthropic_client=None) -> dict:
+    """Deprecated wrapper — returns prep list. Ignores anthropic_client."""
+    items = prepare_company(ticker, days_back=days_back)
+    ready = sum(1 for x in items if x["status"] == "ready")
+    skip  = sum(1 for x in items if x["status"] == "skip")
+    ignore = sum(1 for x in items if x["status"] in ("ignore", "error"))
     return {
         "ticker": ticker,
-        "announcements_processed": len(announcements),
-        "facts_saved": total_facts,
-        "breakdown": results,
+        "announcements_processed": len(items),
+        "ready_for_analysis": ready,
+        "skipped": skip,
+        "ignored": ignore,
+        "facts_saved": 0,  # Claude hasn't analyzed yet
+        "prep_items": items,
     }

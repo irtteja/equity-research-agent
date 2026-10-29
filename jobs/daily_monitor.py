@@ -105,11 +105,12 @@ def run():
         results["fii_dii"] = {"error": str(e)}
 
     # 3. NSE announcement ingestion for tracked universe
-    print("\n[3/5] Ingesting NSE announcements for tracked universe...")
+    # Phase A: parallel fetch. Phase B: prepare items for Claude to analyze in-session.
+    # No API key needed — Claude reads the prep output and does extraction directly.
+    print("\n[3/5] Fetching + preparing NSE announcements for tracked universe...")
     try:
         from jobs.fetch_announcements import fetch_announcements_parallel, save_announcements
-        from memory.ingestion import ingest_company
-        import anthropic
+        from memory.ingestion import prepare_company
 
         # Phase A: fast parallel fetch across all 873 symbols
         fetch_result = fetch_announcements_parallel(
@@ -119,33 +120,51 @@ def run():
         )
         save_announcements(fetch_result)  # persist raw data to memory_store/announcements/
 
-        # Phase B: Claude ingestion only for symbols that actually filed something today
+        # Phase B: triage + PDF prep for symbols that filed something today
         active_symbols = list(fetch_result["announcements"].keys())
-        print(f"  {len(active_symbols)} symbols with filings today — running ingestion...")
+        print(f"  {len(active_symbols)} symbols with filings today — running triage + PDF prep...")
 
-        client = anthropic.Anthropic()
-        ingestion_summary = {
-            "fetch_errors": fetch_result["errors"],
-            "processed": 0,
-            "facts_saved": 0,
-            "errors": 0,
-        }
-
+        all_prep = []
+        prep_errors = 0
         for symbol in active_symbols:
             try:
-                result = ingest_company(symbol, days_back=1, anthropic_client=client)
-                ingestion_summary["processed"] += 1
-                ingestion_summary["facts_saved"] += result.get("facts_saved", 0)
-                if result.get("facts_saved", 0) > 0:
-                    print(f"  {symbol}: {result['facts_saved']} facts from {result.get('announcements_processed',0)} announcements")
+                items = prepare_company(symbol, days_back=1)
+                all_prep.extend(items)
             except Exception as e:
-                ingestion_summary["errors"] += 1
-                print(f"  {symbol}: ERROR {e}")
+                prep_errors += 1
+                print(f"  {symbol}: prep ERROR {e}")
 
+        ready = [x for x in all_prep if x["status"] == "ready"]
+        skipped = sum(1 for x in all_prep if x["status"] == "skip")
+        ignored = sum(1 for x in all_prep if x["status"] in ("ignore", "error"))
+
+        ingestion_summary = {
+            "fetch_errors": fetch_result["errors"],
+            "total_announcements": fetch_result["total_announcements"],
+            "symbols_active": len(active_symbols),
+            "ready_for_analysis": len(ready),
+            "skipped": skipped,
+            "ignored": ignored,
+            "prep_errors": prep_errors,
+        }
         results["ingestion"] = ingestion_summary
-        print(f"  Fetched {fetch_result['total_announcements']} announcements across {len(active_symbols)} symbols; "
-              f"{ingestion_summary['facts_saved']} facts saved, "
-              f"{ingestion_summary['errors']} ingestion errors")
+        results["ingestion"]["prep_items"] = ready  # Claude reads these in-session
+
+        print(f"  {fetch_result['total_announcements']} announcements fetched; "
+              f"{len(ready)} ready for Claude analysis, {skipped} skipped, {ignored} ignored")
+
+        # Print prepared items — Claude reads this output and does extraction in-session
+        if ready:
+            print(f"\n[CLAUDE_ANALYSIS] {len(ready)} items ready. Analyzing now...\n")
+            for item in ready:
+                print(f"\n{'='*60}")
+                print(f"TICKER: {item['ticker']}  |  STRATEGY: {item['strategy'].upper()}")
+                print(f"DATE: {item['ann_date']}  |  CATEGORY: {item['category']}")
+                print(f"attchmntText: {item['attchmnt_text']}")
+                print(f"PDF text ({len(item['text'])} chars, {item['pdf_pages']} pages):")
+                print(item['text'][:8000])
+                print(f"{'='*60}\n")
+
     except Exception as e:
         print(f"  ERROR: {e}")
         results["ingestion"] = {"error": str(e)}
