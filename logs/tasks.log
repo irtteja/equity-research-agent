@@ -14,3 +14,11 @@ Progress: Macro, FII/DII, 0 announcements, block/bulk deals
 Next: Review material announcements, update PROGRESS.md
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-10-29 02:38
+Task: daily-monitor-2026-10-29
+Status: completed
+Progress: Macro snapshot, FII/DII, 0 announcements, block deal STLTECH. Push pending (repo not in session sources)
+Next: Push to GitHub when repo is added to session; build announcement classifier; insider trading tracker
+Blockers: irtteja/equity-research-agent not in session authorized repos
+============================================================

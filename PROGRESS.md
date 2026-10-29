@@ -29,3 +29,32 @@
 - Block deal / bulk deal monitor
 - Promoter pledge tracker
 - Sector rotation monitor
+
+---
+
+## 2026-10-29 — Daily Monitor
+
+### Done
+- Ran daily monitor job for 2026-10-29
+- Macro snapshot captured (global indices, commodities, currencies)
+- FII/DII flows for Oct 28: FII net +₹871.83 Cr, DII net +₹643.35 Cr — both net buyers
+- Block deals: STLTECH — 6.02L shares at ₹887 (Session 2)
+- 0 BSE announcements today
+- Report saved to reports/daily/2026-10-29.json
+- Git commit created (push pending — repo not in session's authorized set)
+
+### Key observations
+- Natural Gas spiked +12.24% — watch downstream impact on fertilisers, city gas distrib (IGL, MGL, Gujarat Gas)
+- Crude Brent fell -3.11% to $110.34 — positive for India macro (current account, OMCs)
+- USD/INR at 95.21, DXY -0.23% — slight INR stability
+- Both FII and DII net buyers on Oct 28 — positive market breadth signal
+- NIFTY BANK +0.54%, SENSEX -0.48% — banking outperforming broader market
+
+### Next sessions should
+- Push pending commit to GitHub (need repo added to session sources)
+- Build BSE announcement impact classifier (NLP-based: positive/negative/neutral)
+- Add insider trading tracker
+- Build sector rotation monitor using NIFTY sectoral indices
+- Start tracked universe build: at minimum 1-2 quality names per sector
+- Investigate Natural Gas price spike and downstream stock impact
+- Add RBI / macro data tools (CPI, IIP, policy rate)
