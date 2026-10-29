@@ -61,6 +61,8 @@ def backfill(days: int = 30) -> list[dict]:
             print(f"  {dt}: {r['rows']} indices saved")
         elif r["status"] == "already_exists":
             print(f"  {dt}: already exists")
+        elif r["status"] == "download_failed":
+            print(f"  {dt}: market holiday (skipped)")
         else:
             print(f"  {dt}: {r['status']} — {r.get('error','')}")
     return results
