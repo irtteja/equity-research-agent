@@ -53,6 +53,13 @@ def fetch_and_save(dt: date = None) -> dict:
 
         df = pd.read_csv(csv_path)
 
+    # Validate: NSE serves previous day's data on market holidays.
+    # Check TradDt matches requested date; if not, it's a holiday — skip.
+    if "TradDt" in df.columns and not df.empty:
+        trade_dates = pd.to_datetime(df["TradDt"].iloc[0], errors="coerce")
+        if trade_dates is not pd.NaT and trade_dates.date() != dt:
+            return {"date": dt.isoformat(), "status": "holiday", "data_date": str(trade_dates.date())}
+
     # Filter: main board only (EQ + BE), no SME
     df = df[df["SctySrs"].isin(["EQ", "BE"])].copy()
 
@@ -91,6 +98,8 @@ def backfill(days: int = 30) -> list[dict]:
             print(f"  {dt}: {r['rows']} rows saved")
         elif r["status"] == "already_exists":
             print(f"  {dt}: already exists")
+        elif r["status"] == "holiday":
+            print(f"  {dt}: market holiday (skipped)")
         else:
             print(f"  {dt}: {r['status']} — {r.get('error','')}")
     return results
