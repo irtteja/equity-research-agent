@@ -1,0 +1,1016 @@
+{
+  "macro": {
+    "date": "2026-10-29",
+    "timestamp": "2026-10-29T02:37:51.149521",
+    "global_indices": {
+      "S&P 500": {
+        "symbol": "^GSPC",
+        "last": 7743.98,
+        "prev_close": 7722.6,
+        "change": 21.38,
+        "change_pct": 0.28
+      },
+      "Nasdaq": {
+        "symbol": "^IXIC",
+        "last": 26549.85,
+        "prev_close": 26477.81,
+        "change": 72.04,
+        "change_pct": 0.27
+      },
+      "Dow Jones": {
+        "symbol": "^DJI",
+        "last": 52475.1,
+        "prev_close": 52377.57,
+        "change": 97.53,
+        "change_pct": 0.19
+      },
+      "Nikkei 225": {
+        "symbol": "^N225",
+        "last": 64071.37,
+        "prev_close": 63954.19,
+        "change": 117.18,
+        "change_pct": 0.18
+      },
+      "Hang Seng": {
+        "symbol": "^HSI",
+        "last": 23069.96,
+        "prev_close": 23094.83,
+        "change": -24.87,
+        "change_pct": -0.11
+      },
+      "DAX": {
+        "symbol": "^GDAXI",
+        "last": 25704.02,
+        "prev_close": 25590.77,
+        "change": 113.25,
+        "change_pct": 0.44
+      },
+      "FTSE 100": {
+        "symbol": "^FTSE",
+        "last": 10694.5,
+        "prev_close": 10686.5,
+        "change": 8.0,
+        "change_pct": 0.07
+      },
+      "Shanghai": {
+        "symbol": "000001.SS",
+        "last": 3656.52,
+        "prev_close": 3681.47,
+        "change": -24.95,
+        "change_pct": -0.68
+      },
+      "NIFTY 50": {
+        "symbol": "^NSEI",
+        "last": 22698.85,
+        "prev_close": 22749.75,
+        "change": -50.9,
+        "change_pct": -0.22
+      },
+      "SENSEX": {
+        "symbol": "^BSESN",
+        "last": 73246.03,
+        "prev_close": 73598.67,
+        "change": -352.64,
+        "change_pct": -0.48
+      },
+      "NIFTY BANK": {
+        "symbol": "^NSEBANK",
+        "last": 54267.4,
+        "prev_close": 53974.9,
+        "change": 292.5,
+        "change_pct": 0.54
+      }
+    },
+    "commodities": {
+      "Crude WTI": {
+        "symbol": "CL=F",
+        "last": 101.55,
+        "prev_close": 99.9,
+        "change": 1.65,
+        "change_pct": 1.65
+      },
+      "Crude Brent": {
+        "symbol": "BZ=F",
+        "last": 110.34,
+        "prev_close": 113.88,
+        "change": -3.54,
+        "change_pct": -3.11
+      },
+      "Gold": {
+        "symbol": "GC=F",
+        "last": 4061.9,
+        "prev_close": 4074.6,
+        "change": -12.7,
+        "change_pct": -0.31
+      },
+      "Silver": {
+        "symbol": "SI=F",
+        "last": 53.69,
+        "prev_close": 54.29,
+        "change": -0.6,
+        "change_pct": -1.11
+      },
+      "Natural Gas": {
+        "symbol": "NG=F",
+        "last": 3.03,
+        "prev_close": 2.7,
+        "change": 0.33,
+        "change_pct": 12.24
+      },
+      "Copper": {
+        "symbol": "HG=F",
+        "last": 6.65,
+        "prev_close": 6.62,
+        "change": 0.03,
+        "change_pct": 0.45
+      }
+    },
+    "currencies": {
+      "USD/INR": {
+        "symbol": "USDINR=X",
+        "last": 95.21,
+        "prev_close": 95.18,
+        "change": 0.03,
+        "change_pct": 0.03
+      },
+      "EUR/INR": {
+        "symbol": "EURINR=X",
+        "last": 106.22,
+        "prev_close": 105.76,
+        "change": 0.46,
+        "change_pct": 0.43
+      },
+      "GBP/INR": {
+        "symbol": "GBPINR=X",
+        "last": 126.88,
+        "prev_close": 126.64,
+        "change": 0.24,
+        "change_pct": 0.19
+      },
+      "JPY/INR": {
+        "symbol": "JPYINR=X",
+        "last": 0.6,
+        "prev_close": 0.6,
+        "change": 0.0,
+        "change_pct": 0.0
+      },
+      "DXY": {
+        "symbol": "DX-Y.NYB",
+        "last": 102.08,
+        "prev_close": 102.32,
+        "change": -0.24,
+        "change_pct": -0.23
+      },
+      "EUR/USD": {
+        "symbol": "EURUSD=X",
+        "last": 1.12,
+        "prev_close": 1.11,
+        "change": 0.0,
+        "change_pct": 0.0
+      }
+    }
+  },
+  "fii_dii": {
+    "timestamp": "2026-10-29T02:37:58.608434",
+    "fii_dii": [
+      {
+        "buyValue": "17240.9",
+        "category": "DII",
+        "date": "28-Oct-2026",
+        "netValue": "643.35",
+        "sellValue": "16597.55"
+      },
+      {
+        "buyValue": "16834.53",
+        "category": "FII/FPI",
+        "date": "28-Oct-2026",
+        "netValue": "871.83",
+        "sellValue": "15962.7"
+      }
+    ]
+  },
+  "announcements": {
+    "date": "2026-10-29",
+    "total": 0,
+    "announcements": [],
+    "errors": []
+  },
+  "deals": {
+    "timestamp": "2026-10-29T02:38:01.597386",
+    "block_deals": {
+      "timestamp": "28-Oct-2026 14:07:20",
+      "data": [
+        {
+          "session": "Session 2",
+          "symbol": "STLTECH",
+          "series": "BL",
+          "open": 887,
+          "dayHigh": 887,
+          "dayLow": 887,
+          "lastPrice": 887,
+          "previousClose": 879.4,
+          "change": 7.6,
+          "pchange": 0.86,
+          "totalTradedVolume": 601900,
+          "totalTradedValue": 533885300,
+          "lastUpdateTime": "28-Oct-2026 14:07:20",
+          "exDate": "24-Apr-2025"
+        }
+      ],
+      "totalTradedValue": 533885300,
+      "totalTradedVolume": 601900,
+      "Session 2": {
+        "advances": 0,
+        "declines": 0,
+        "unchanged": 1
+      },
+      "Session 1": {
+        "advances": 0,
+        "declines": 0,
+        "unchanged": 0
+      },
+      "marketStatus": {
+        "market": "Capital Market",
+        "marketStatus": "Open",
+        "tradeDate": "28-Oct-2026 15:30",
+        "index": "NIFTY 50",
+        "last": 22698.85,
+        "variation": -50.900000000001455,
+        "percentChange": -0.22,
+        "marketStatusMessage": "Normal Market has Closed"
+      }
+    },
+    "bulk_deals": [
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "AISL",
+        "BD_SCRIP_NAME": "ANI Integrated Serv Ltd.",
+        "BD_CLIENT_NAME": "DIPAKKUMAR BABALBHAI PATEL",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 166800,
+        "BD_TP_WATP": 29,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "AISL",
+        "BD_SCRIP_NAME": "ANI Integrated Serv Ltd.",
+        "BD_CLIENT_NAME": "KAILASHBEN ASHOKKUMAR PATEL",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 166800,
+        "BD_TP_WATP": 29,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "CAPINVIT",
+        "BD_SCRIP_NAME": "Capital Infra Trust",
+        "BD_CLIENT_NAME": "A.K. CAPITAL FINANCE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 6644519,
+        "BD_TP_WATP": 75.59,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "CAPINVIT",
+        "BD_SCRIP_NAME": "Capital Infra Trust",
+        "BD_CLIENT_NAME": "LARSEN & TOUBRO LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 6644519,
+        "BD_TP_WATP": 75.59,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "COMFINTE",
+        "BD_SCRIP_NAME": "Comfort Intech Ltd.",
+        "BD_CLIENT_NAME": "HJS SECURITIES PRIVATE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 2323414,
+        "BD_TP_WATP": 11.01,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "COMFINTE",
+        "BD_SCRIP_NAME": "Comfort Intech Ltd.",
+        "BD_CLIENT_NAME": "HJS SECURITIES PRIVATE LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 3304867,
+        "BD_TP_WATP": 11,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "COMFINTE",
+        "BD_SCRIP_NAME": "Comfort Intech Ltd.",
+        "BD_CLIENT_NAME": "MULTIPLIER SHARE & STOCK ADVISORS PRIVATE LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 1459828,
+        "BD_TP_WATP": 11.11,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "COMFINTE",
+        "BD_SCRIP_NAME": "Comfort Intech Ltd.",
+        "BD_CLIENT_NAME": "MULTIPLIER SHARE & STOCK ADVISORS PRIVATE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 2009828,
+        "BD_TP_WATP": 11.14,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "COMFINTE",
+        "BD_SCRIP_NAME": "Comfort Intech Ltd.",
+        "BD_CLIENT_NAME": "NIKUNJ JAGADISHCHANDRA PUROHIT",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 20000,
+        "BD_TP_WATP": 11.02,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "COMFINTE",
+        "BD_SCRIP_NAME": "Comfort Intech Ltd.",
+        "BD_CLIENT_NAME": "NIKUNJ JAGADISHCHANDRA PUROHIT",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 2734570,
+        "BD_TP_WATP": 11.01,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 2434910,
+        "BD_TP_WATP": 50.89,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 2434910,
+        "BD_TP_WATP": 50.98,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "CLT RESEARCH TECH PRIVATE LTD",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 559876,
+        "BD_TP_WATP": 50.54,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "CLT RESEARCH TECH PRIVATE LTD",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 559876,
+        "BD_TP_WATP": 50.52,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "IMC INDIA SECURITIES PRIVATE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 723981,
+        "BD_TP_WATP": 50.9,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "IMC INDIA SECURITIES PRIVATE LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 745636,
+        "BD_TP_WATP": 50.82,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "IRAGE BROKING SERVICES LLP",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 591749,
+        "BD_TP_WATP": 51.84,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "IRAGE BROKING SERVICES LLP",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 823459,
+        "BD_TP_WATP": 51.55,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "JUNOMONETA FINSOL PRIVATE LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 1131778,
+        "BD_TP_WATP": 50.46,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "JUNOMONETA FINSOL PRIVATE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 1139725,
+        "BD_TP_WATP": 50.44,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "MARWADI SHARES AND FINANCE LTD.",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 456837,
+        "BD_TP_WATP": 50.52,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "MARWADI SHARES AND FINANCE LTD.",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 456837,
+        "BD_TP_WATP": 50.74,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "MICROCURVES TRADING PRIVATE LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 1146580,
+        "BD_TP_WATP": 51.13,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "MICROCURVES TRADING PRIVATE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 1146580,
+        "BD_TP_WATP": 51.17,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 766561,
+        "BD_TP_WATP": 51.82,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 766561,
+        "BD_TP_WATP": 51.85,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "PLUTUS WEALTH MANAGEMENT LLP",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 603503,
+        "BD_TP_WATP": 52.28,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "PLUTUS WEALTH MANAGEMENT LLP",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 603503,
+        "BD_TP_WATP": 52.41,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "QE SECURITIES LLP",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 1075889,
+        "BD_TP_WATP": 51.02,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "QE SECURITIES LLP",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 1076990,
+        "BD_TP_WATP": 51.7,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "QICAP MARKETS LLP",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 574550,
+        "BD_TP_WATP": 50.36,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "QICAP MARKETS LLP",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 582361,
+        "BD_TP_WATP": 50.37,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "SILVERLEAF CAPITAL SERVICES PRIVATE LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 868714,
+        "BD_TP_WATP": 51.28,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "DCMSRIND",
+        "BD_SCRIP_NAME": "DCM Shriram Ind Ltd",
+        "BD_CLIENT_NAME": "SILVERLEAF CAPITAL SERVICES PRIVATE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 868714,
+        "BD_TP_WATP": 51.28,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "EMUDHRA",
+        "BD_SCRIP_NAME": "eMudhra Limited",
+        "BD_CLIENT_NAME": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 480173,
+        "BD_TP_WATP": 374.65,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "EMUDHRA",
+        "BD_SCRIP_NAME": "eMudhra Limited",
+        "BD_CLIENT_NAME": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 480173,
+        "BD_TP_WATP": 374.25,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "FUSIONCX",
+        "BD_SCRIP_NAME": "Fusion CX Limited",
+        "BD_CLIENT_NAME": "BNP PARIBAS FINANCIAL MARKETS",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 738670,
+        "BD_TP_WATP": 303.91,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "FUSIONCX",
+        "BD_SCRIP_NAME": "Fusion CX Limited",
+        "BD_CLIENT_NAME": "BNP PARIBAS FINANCIAL MARKETS",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 1268541,
+        "BD_TP_WATP": 304.81,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "GALLANTT",
+        "BD_SCRIP_NAME": "Gallantt Ispat Limited",
+        "BD_CLIENT_NAME": "GALLANTT INDUSTRY PRIVATE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 2651975,
+        "BD_TP_WATP": 565,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "GALLANTT",
+        "BD_SCRIP_NAME": "Gallantt Ispat Limited",
+        "BD_CLIENT_NAME": "SURYALAXMI INFRACON PRIVATE LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 2651975,
+        "BD_TP_WATP": 565,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "HEROMOTORS",
+        "BD_SCRIP_NAME": "Hero Motors Limited",
+        "BD_CLIENT_NAME": "MANSI SHARE AND STOCK BROKING PRIVATE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 2413254,
+        "BD_TP_WATP": 116.66,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "HEROMOTORS",
+        "BD_SCRIP_NAME": "Hero Motors Limited",
+        "BD_CLIENT_NAME": "MANSI SHARE AND STOCK BROKING PRIVATE LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 2653130,
+        "BD_TP_WATP": 116.91,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "INDIACEM",
+        "BD_SCRIP_NAME": "The India Cements Limited",
+        "BD_CLIENT_NAME": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 1964092,
+        "BD_TP_WATP": 341.7,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "INDIACEM",
+        "BD_SCRIP_NAME": "The India Cements Limited",
+        "BD_CLIENT_NAME": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 1964092,
+        "BD_TP_WATP": 341.59,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "INDIACEM",
+        "BD_SCRIP_NAME": "The India Cements Limited",
+        "BD_CLIENT_NAME": "MICROCURVES TRADING PRIVATE LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 2417444,
+        "BD_TP_WATP": 340.85,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "INDIACEM",
+        "BD_SCRIP_NAME": "The India Cements Limited",
+        "BD_CLIENT_NAME": "MICROCURVES TRADING PRIVATE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 2417444,
+        "BD_TP_WATP": 341.01,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "INDIACEM",
+        "BD_SCRIP_NAME": "The India Cements Limited",
+        "BD_CLIENT_NAME": "QE SECURITIES LLP",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 2095589,
+        "BD_TP_WATP": 343.49,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "INDIACEM",
+        "BD_SCRIP_NAME": "The India Cements Limited",
+        "BD_CLIENT_NAME": "QE SECURITIES LLP",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 2141447,
+        "BD_TP_WATP": 342.44,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "KHERIAAUTO",
+        "BD_SCRIP_NAME": "Kheria Autocomp Limited",
+        "BD_CLIENT_NAME": "MONEYWISE FINANCIAL SERVICES PRIVATE LTD",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 121200,
+        "BD_TP_WATP": 101.17,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "KHERIAAUTO",
+        "BD_SCRIP_NAME": "Kheria Autocomp Limited",
+        "BD_CLIENT_NAME": "SMC GLOBAL SECURITIES LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 28800,
+        "BD_TP_WATP": 97.51,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "KHERIAAUTO",
+        "BD_SCRIP_NAME": "Kheria Autocomp Limited",
+        "BD_CLIENT_NAME": "SMC GLOBAL SECURITIES LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 82800,
+        "BD_TP_WATP": 100.99,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "KROSS",
+        "BD_SCRIP_NAME": "Kross Limited",
+        "BD_CLIENT_NAME": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 350296,
+        "BD_TP_WATP": 290.33,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "KROSS",
+        "BD_SCRIP_NAME": "Kross Limited",
+        "BD_CLIENT_NAME": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 350296,
+        "BD_TP_WATP": 290.25,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "KROSS",
+        "BD_SCRIP_NAME": "Kross Limited",
+        "BD_CLIENT_NAME": "HRTI PRIVATE LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 247784,
+        "BD_TP_WATP": 287.93,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "KROSS",
+        "BD_SCRIP_NAME": "Kross Limited",
+        "BD_CLIENT_NAME": "HRTI PRIVATE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 371268,
+        "BD_TP_WATP": 287.56,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "KROSS",
+        "BD_SCRIP_NAME": "Kross Limited",
+        "BD_CLIENT_NAME": "QE SECURITIES LLP",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 334073,
+        "BD_TP_WATP": 290.21,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "KROSS",
+        "BD_SCRIP_NAME": "Kross Limited",
+        "BD_CLIENT_NAME": "QE SECURITIES LLP",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 336144,
+        "BD_TP_WATP": 288.46,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "MANOMAY",
+        "BD_SCRIP_NAME": "Manomay Tex India Ltd",
+        "BD_CLIENT_NAME": "PAWAN KUMAR MITTAL",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 133028,
+        "BD_TP_WATP": 240.73,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "MANOMAY",
+        "BD_SCRIP_NAME": "Manomay Tex India Ltd",
+        "BD_CLIENT_NAME": "PAWAN KUMAR MITTAL",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 133138,
+        "BD_TP_WATP": 240.97,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "MARSONS",
+        "BD_SCRIP_NAME": "Marsons Limited",
+        "BD_CLIENT_NAME": "PROGNOSIS SECURITIES PVT. LTD",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 263812,
+        "BD_TP_WATP": 122.24,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "MARSONS",
+        "BD_SCRIP_NAME": "Marsons Limited",
+        "BD_CLIENT_NAME": "PROGNOSIS SECURITIES PVT. LTD",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 928812,
+        "BD_TP_WATP": 122.18,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "MOMSBELIEF",
+        "BD_SCRIP_NAME": "Rays of Belief Limited",
+        "BD_CLIENT_NAME": "MKJ ENTERPRISES LTD.",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 165000,
+        "BD_TP_WATP": 264.77,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "MOMSBELIEF",
+        "BD_SCRIP_NAME": "Rays of Belief Limited",
+        "BD_CLIENT_NAME": "PROGNOSIS SECURITIES PVT. LTD",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 10427,
+        "BD_TP_WATP": 273.62,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "MOMSBELIEF",
+        "BD_SCRIP_NAME": "Rays of Belief Limited",
+        "BD_CLIENT_NAME": "PROGNOSIS SECURITIES PVT. LTD",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 182530,
+        "BD_TP_WATP": 264.03,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "MVELECTRO",
+        "BD_SCRIP_NAME": "MV Electrosystems Limited",
+        "BD_CLIENT_NAME": "HRTI PRIVATE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 154771,
+        "BD_TP_WATP": 855.02,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "MVELECTRO",
+        "BD_SCRIP_NAME": "MV Electrosystems Limited",
+        "BD_CLIENT_NAME": "HRTI PRIVATE LIMITED",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 161692,
+        "BD_TP_WATP": 846.32,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "NKIND",
+        "BD_SCRIP_NAME": "Nk Industries Ltd",
+        "BD_CLIENT_NAME": "PUNEET MITTAL HUF",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 25527,
+        "BD_TP_WATP": 66.11,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "NKIND",
+        "BD_SCRIP_NAME": "Nk Industries Ltd",
+        "BD_CLIENT_NAME": "PUNEET MITTAL HUF",
+        "BD_BUY_SELL": "BUY",
+        "BD_QTY_TRD": 52527,
+        "BD_TP_WATP": 66.82,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "OLAELEC-RE",
+        "BD_SCRIP_NAME": "Ola Electric Mobility Ltd",
+        "BD_CLIENT_NAME": "SVF II OSTRICH (DE) LLC",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 8292876,
+        "BD_TP_WATP": 3.64,
+        "BD_REMARKS": "-"
+      },
+      {
+        "BD_DT_DATE": "22-OCT-2026",
+        "BD_DT_ORDER": "2026-10-21T18:30:00.000Z",
+        "BD_SYMBOL": "OMNI",
+        "BD_SCRIP_NAME": "Omnitech Engineering Ltd",
+        "BD_CLIENT_NAME": "JUNOMONETA FINSOL PRIVATE LIMITED",
+        "BD_BUY_SELL": "SELL",
+        "BD_QTY_TRD": 831153,
+        "BD_TP_WATP": 662,
+        "BD_REMARKS": "-"
+      }
+    ]
+  }
+}
