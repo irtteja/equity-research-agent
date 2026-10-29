@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.egg-info/
+
+# SQLite binary — not tracked (gets overwritten by git pull, causes merge conflicts)
+memory/research.db
+memory/__pycache__/
+
+# BSE cache
+~/.bse_cache/
+
+# Temp PDF downloads
+/tmp/
+
+# IDE
+.vscode/
+.idea/
