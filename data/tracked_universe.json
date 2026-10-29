@@ -492,7 +492,8 @@
       ],
       "sector": "Financial Services",
       "isin": "INE118H01025",
-      "bse_code": null
+      "bse_code": "543217",
+      "bse_group": "A"
     },
     {
       "symbol": "TATASTEEL",
@@ -3484,8 +3485,9 @@
         "NIFTY INDIA INFRASTRUCTURE & LOGISTICS"
       ],
       "sector": "Technology \u2014 Digital & Internet",
-      "isin": null,
-      "bse_code": null
+      "isin": "INE089C01029",
+      "bse_code": "532374",
+      "bse_group": "T"
     },
     {
       "symbol": "MUTHOOTFIN",
@@ -3544,8 +3546,9 @@
         "NIFTY INDIA INFRASTRUCTURE & LOGISTICS"
       ],
       "sector": "Infrastructure & Logistics",
-      "isin": null,
-      "bse_code": null
+      "isin": "INE548A01028",
+      "bse_code": "500183",
+      "bse_group": "T"
     },
     {
       "symbol": "VMM",
@@ -3929,7 +3932,8 @@
       ],
       "sector": "Financial Services \u2014 Capital Markets",
       "isin": "INE736A01011",
-      "bse_code": null
+      "bse_code": "543673",
+      "bse_group": "A"
     },
     {
       "symbol": "AMBUJACEM",
@@ -9404,8 +9408,9 @@
       "nse_macro": "",
       "nse_sector": "",
       "nse_industry": "",
-      "isin": null,
-      "bse_code": null
+      "isin": "INE989C01020",
+      "bse_code": null,
+      "bse_note": "NSE-only listed"
     },
     {
       "symbol": "RPOWER",
@@ -9859,8 +9864,9 @@
       "nse_macro": "",
       "nse_sector": "",
       "nse_industry": "",
-      "isin": null,
-      "bse_code": null
+      "isin": "INE255Z01019",
+      "bse_code": null,
+      "bse_note": "NSE-only listed"
     },
     {
       "symbol": "NIVABUPA",
@@ -9996,8 +10002,9 @@
         "NIFTY INDIA DEFENCE"
       ],
       "sector": "Defence & Aerospace",
-      "isin": null,
-      "bse_code": null
+      "isin": "INE933B01012",
+      "bse_code": "532408",
+      "bse_group": "T"
     },
     {
       "symbol": "NSLNISP",
@@ -13366,8 +13373,9 @@
       "nse_macro": "",
       "nse_sector": "",
       "nse_industry": "",
-      "isin": null,
-      "bse_code": null
+      "isin": "INE0V9Q01010",
+      "bse_code": "544469",
+      "bse_group": "T"
     },
     {
       "symbol": "BALAMINES",
@@ -13920,8 +13928,9 @@
       "nse_macro": "Commodities",
       "nse_sector": "Chemicals",
       "nse_industry": "Fertilizers & Agrochemicals",
-      "isin": "INE900L01028",
-      "bse_code": null
+      "isin": "INE900L01010",
+      "bse_code": null,
+      "bse_note": "NSE-only listed"
     },
     {
       "symbol": "EBGNG",
