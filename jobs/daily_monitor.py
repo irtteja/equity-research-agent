@@ -107,19 +107,31 @@ def run():
     # 3. NSE announcement ingestion for tracked universe
     print("\n[3/5] Ingesting NSE announcements for tracked universe...")
     try:
+        from jobs.fetch_announcements import fetch_announcements_parallel, save_announcements
         from memory.ingestion import ingest_company
         import anthropic
 
-        # Load tracked symbols
-        universe_path = os.path.join(REPO_DIR, "data", "tracked_universe.json")
-        with open(universe_path) as f:
-            universe_data = json.load(f)
-        symbols = [s["symbol"] for s in universe_data.get("universe", [])]
+        # Phase A: fast parallel fetch across all 873 symbols
+        fetch_result = fetch_announcements_parallel(
+            to_date=date.today(),
+            days_back=1,
+            verbose=True,
+        )
+        save_announcements(fetch_result)  # persist raw data to memory_store/announcements/
+
+        # Phase B: Claude ingestion only for symbols that actually filed something today
+        active_symbols = list(fetch_result["announcements"].keys())
+        print(f"  {len(active_symbols)} symbols with filings today — running ingestion...")
 
         client = anthropic.Anthropic()
-        ingestion_summary = {"processed": 0, "facts_saved": 0, "errors": 0}
+        ingestion_summary = {
+            "fetch_errors": fetch_result["errors"],
+            "processed": 0,
+            "facts_saved": 0,
+            "errors": 0,
+        }
 
-        for symbol in symbols:
+        for symbol in active_symbols:
             try:
                 result = ingest_company(symbol, days_back=1, anthropic_client=client)
                 ingestion_summary["processed"] += 1
@@ -131,9 +143,9 @@ def run():
                 print(f"  {symbol}: ERROR {e}")
 
         results["ingestion"] = ingestion_summary
-        print(f"  Processed {ingestion_summary['processed']} companies, "
+        print(f"  Fetched {fetch_result['total_announcements']} announcements across {len(active_symbols)} symbols; "
               f"{ingestion_summary['facts_saved']} facts saved, "
-              f"{ingestion_summary['errors']} errors")
+              f"{ingestion_summary['errors']} ingestion errors")
     except Exception as e:
         print(f"  ERROR: {e}")
         results["ingestion"] = {"error": str(e)}
