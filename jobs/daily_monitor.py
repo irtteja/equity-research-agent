@@ -85,6 +85,9 @@ def run():
         snap = get_full_macro_snapshot()
         results["macro"] = snap
         summary = _summarise_macro(snap)
+        vix = snap.get("india_vix", {})
+        if vix and not vix.get("error"):
+            summary += f"\n\nINDIA VIX: {vix.get('last')} ({vix.get('change_pct'):+.2f}%)  [52w: {vix.get('year_low')}–{vix.get('year_high')}]"
         save_macro_snapshot(date.today().isoformat(), snap, summary)
         print(summary)
     except Exception as e:

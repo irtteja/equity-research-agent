@@ -123,12 +123,30 @@ def get_market_status() -> dict:
         return {"error": str(e)}
 
 
+def get_india_vix() -> dict:
+    """INDIA VIX — NSE volatility index derived from NIFTY 50 options."""
+    try:
+        from nselib import NSE
+        with NSE() as nse:
+            q = nse.index_quote("INDIA VIX")
+        return {
+            "last": q.get("last"),
+            "change_pct": q.get("percentChange"),
+            "prev_close": q.get("previousClose"),
+            "year_high": q.get("yearHigh"),
+            "year_low": q.get("yearLow"),
+        }
+    except Exception as e:
+        return {"error": str(e)}
+
+
 def get_full_macro_snapshot() -> dict:
-    """Complete macro snapshot: global indices + commodities + currencies + FII/DII. Use for daily monitoring."""
+    """Complete macro snapshot: global indices + commodities + currencies + INDIA VIX. Use for daily monitoring."""
     return {
         "date": date.today().isoformat(),
         "timestamp": datetime.now().isoformat(),
         "global_indices": _yf_snapshot(_GLOBAL_INDICES),
         "commodities": _yf_snapshot(_COMMODITIES),
         "currencies": _yf_snapshot(_CURRENCIES),
+        "india_vix": get_india_vix(),
     }
