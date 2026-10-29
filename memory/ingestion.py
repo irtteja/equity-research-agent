@@ -18,6 +18,8 @@ import re
 from datetime import date
 from pathlib import Path
 
+from memory.triage import triage as attchmnt_triage
+
 
 # ─── Hard-ignore patterns (never worth parsing) ───────────────────────────────
 # These are routine compliance filings with zero analytical value.
@@ -159,6 +161,20 @@ def ingest_announcement(
             "pdf_url": pdf_url,
         }])
         return {"triage": "ignore", "reason": "hard_ignore_pattern", "facts_saved": 0}
+
+    # attchmntText pre-filter — skip provably-noise items before PDF download
+    attchmnt_text = ann.get("attchmntText", "") or ann.get("text", "") or ""
+    category = ann.get("desc", "") or ann.get("category", "")
+    pre_strategy, pre_reason = attchmnt_triage(category, attchmnt_text)
+    if pre_strategy == "skip":
+        save_triage_log(ticker, [{
+            "date": ann_date,
+            "decision": "skip",
+            "reason": f"attchmnt_triage: {pre_reason}",
+            "headline": headline[:150],
+            "pdf_url": pdf_url,
+        }])
+        return {"triage": "skip", "reason": pre_reason, "facts_saved": 0}
 
     # Download and extract PDF
     if not pdf_url:

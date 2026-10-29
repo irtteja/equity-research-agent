@@ -1,0 +1,4090 @@
+{
+  "date": "2026-10-29",
+  "total": 502,
+  "correct": 496,
+  "accuracy_pct": 98.8,
+  "pass1_by_strategy": {
+    "deep": 214,
+    "light": 80,
+    "skip": 208
+  },
+  "pass2_errors": [
+    {
+      "id": "BHARTIARTL__106834064",
+      "symbol": "BHARTIARTL",
+      "category": "Action(s) taken or orders passed",
+      "text": "Bharti Airtel Limited has informed the Exchange about Action(s) taken or orders passed",
+      "was": "light",
+      "should": "deep",
+      "note": "Regulatory/enforcement order received \u2014 material event, PDF needed for full context"
+    },
+    {
+      "id": "CANBK__106835287",
+      "symbol": "CANBK",
+      "category": "Action(s) taken or orders passed",
+      "text": "Canara Bank has informed the Exchange about Action(s) taken or orders passed",
+      "was": "light",
+      "should": "deep",
+      "note": "Regulatory/enforcement order received \u2014 material event, PDF needed for full context"
+    },
+    {
+      "id": "DELHIVERY__106834835",
+      "symbol": "DELHIVERY",
+      "category": "Action(s) taken or orders passed",
+      "text": "Ecom Express Limited, wholly owned subsidiary of Delhivery Limited has received an order under the Uttar Pradesh Goods a",
+      "was": "light",
+      "should": "deep",
+      "note": "Regulatory/enforcement order received \u2014 material event, PDF needed for full context"
+    },
+    {
+      "id": "KPIL__106833980",
+      "symbol": "KPIL",
+      "category": "Action(s) taken or orders passed",
+      "text": "Kalpataru Projects International Limited has informed the Exchange about Action(s) taken or orders passed",
+      "was": "light",
+      "should": "deep",
+      "note": "Regulatory/enforcement order received \u2014 material event, PDF needed for full context"
+    },
+    {
+      "id": "JUSTDIAL__106835101",
+      "symbol": "JUSTDIAL",
+      "category": "Action(s) taken or orders passed",
+      "text": "Disclosure under Regulation 30 of the Securities and Exchange Board of India (Listing Obligations and Disclosure Require",
+      "was": "light",
+      "should": "deep",
+      "note": "Regulatory/enforcement order received \u2014 material event, PDF needed for full context"
+    },
+    {
+      "id": "REFEX__106834949",
+      "symbol": "REFEX",
+      "category": "Copy of Newspaper Publication",
+      "text": "Publication of extracts of the Unaudited Financial Results, both Standalone & Consolidated basis, for the 2nd Quarter an",
+      "was": "skip",
+      "should": "deep",
+      "note": "Financial metric found in text, may need deep"
+    }
+  ],
+  "methodology": {
+    "pass1": "Rule-based attchmntText triage (skip/light/deep)",
+    "pass2": "Cross-check by re-reading all non-skip items + skip spot-checks",
+    "key_finding": "attchmntText catches ~15-20 material items hidden in General Updates/Updates categories that pure category-label routing misses"
+  },
+  "items": [
+    {
+      "id": "RELIANCE__106833561",
+      "symbol": "RELIANCE",
+      "category": "Other Restructuring",
+      "text": "Disclosure under Regulation 30 of the Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015   Voluntary strike off of Hamleys (Franchising) Limited",
+      "strategy": "deep",
+      "reason": "restructuring"
+    },
+    {
+      "id": "BHARTIARTL__106834064",
+      "symbol": "BHARTIARTL",
+      "category": "Action(s) taken or orders passed",
+      "text": "Bharti Airtel Limited has informed the Exchange about Action(s) taken or orders passed",
+      "strategy": "light",
+      "reason": "compliance order"
+    },
+    {
+      "id": "INFY__106834249",
+      "symbol": "INFY",
+      "category": "Copy of Newspaper Publication",
+      "text": "Infosys Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "INFY__106834219",
+      "symbol": "INFY",
+      "category": "Updates",
+      "text": "Infosys Limited has informed the Exchange regarding 'Winners of Qorus-Infosys Finacle Banking Innovation Awards 2026 Announced'.",
+      "strategy": "skip",
+      "reason": "awards fluff"
+    },
+    {
+      "id": "SBIN__106835011",
+      "symbol": "SBIN",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "State Bank Of India has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "M&M__106835405",
+      "symbol": "M&M",
+      "category": "Updates",
+      "text": "Mahindra & Mahindra Limited has informed the Exchange regarding 'Transfer of Equity Shares by Mahindra & Mahindra Employees Stock Option Trust to the Stock Option Grantees.'.",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "MARUTI__106833712",
+      "symbol": "MARUTI",
+      "category": "Press Release",
+      "text": "Maruti Suzuki India Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Maruti Suzuki, India s No. 1 Electric Vehicle exporter, crosses EV exports of 50,000 units\".",
+      "strategy": "deep",
+      "reason": "press release (default deep)"
+    },
+    {
+      "id": "NTPC__106834923",
+      "symbol": "NTPC",
+      "category": "Updates",
+      "text": "NTPC Limited has informed the Exchange regarding 'NVVN s First BESS Project (250 MW / 500 MWh) Declared Commercial'.",
+      "strategy": "deep",
+      "reason": "capacity/commissioning"
+    },
+    {
+      "id": "BSE__106833932",
+      "symbol": "BSE",
+      "category": "Copy of Newspaper Publication",
+      "text": "BSE Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "ADANIPORTS__106834570",
+      "symbol": "ADANIPORTS",
+      "category": "Credit Rating",
+      "text": "Adani Ports and Special Economic Zone Limited has informed the Exchange about Credit Rating",
+      "strategy": "light",
+      "reason": "credit rating"
+    },
+    {
+      "id": "HINDALCO__106834131",
+      "symbol": "HINDALCO",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Intimation of Q2 FY27 Earnings Conference Call of Novelis Inc., wholly owned subsidiary of the Company",
+      "strategy": "skip",
+      "reason": "intimation of q2"
+    },
+    {
+      "id": "JSWSTEEL__106834683",
+      "symbol": "JSWSTEEL",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "JSW Steel Limited has informed the Exchange about Transcript and Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "JSWSTEEL__106834265",
+      "symbol": "JSWSTEEL",
+      "category": "Copy of Newspaper Publication",
+      "text": "JSW Steel Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "BAJAJ-AUTO__106834723",
+      "symbol": "BAJAJ-AUTO",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Bajaj Auto Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "BAJAJ-AUTO__106834725",
+      "symbol": "BAJAJ-AUTO",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Bajaj Auto Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "BAJAJ-AUTO__106834724",
+      "symbol": "BAJAJ-AUTO",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Bajaj Auto Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "INDIGO__106835396",
+      "symbol": "INDIGO",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "InterGlobe Aviation Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "INDIGO__106834429",
+      "symbol": "INDIGO",
+      "category": "Press Release",
+      "text": "InterGlobe Aviation Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Press Release on financial results for the quarter and Half Year ended September 30, 2026\".",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "INDIGO__106834416",
+      "symbol": "INDIGO",
+      "category": "Investor Presentation",
+      "text": "InterGlobe Aviation Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "INDIGO__106834360",
+      "symbol": "INDIGO",
+      "category": "Outcome of Board Meeting",
+      "text": "InterGlobe Aviation Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "ASIANPAINT__106835385",
+      "symbol": "ASIANPAINT",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Asian Paints Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "ASIANPAINT__106834553",
+      "symbol": "ASIANPAINT",
+      "category": "Investor Presentation",
+      "text": "Asian Paints Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "ASIANPAINT__106834102",
+      "symbol": "ASIANPAINT",
+      "category": "Press Release",
+      "text": "Please find enclosed the Press Release on the performance of the Company for the quarter and half year ended 30th September 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "ASIANPAINT__106834098",
+      "symbol": "ASIANPAINT",
+      "category": "Updates",
+      "text": "The Board of Directors at their meeting held today i.e., 29th October 2026, has, inter alia, approved the payment of interim dividend of Rs. 5.75 (Rupees five and paise seventy-five only) per equity share of the face value of Re. 1 each for the financial year ending 31st March 2027",
+      "strategy": "light",
+      "reason": "dividend: dividend of rs. 5.75 "
+    },
+    {
+      "id": "ASIANPAINT__106834096",
+      "symbol": "ASIANPAINT",
+      "category": "Outcome of Board Meeting",
+      "text": "The Board of Directors at its meeting held today i.e., 29th October 2026, has, inter alia, approved the audited standalone and unaudited consolidated financial results of the Company for the quarter and half year ended 30th September 2026 and payment of interim dividend of Rs. 5.75 (Rupees five and ",
+      "strategy": "light",
+      "reason": "dividend: dividend of rs. 5.75 "
+    },
+    {
+      "id": "ASIANPAINT__106834090",
+      "symbol": "ASIANPAINT",
+      "category": "Dividend",
+      "text": "The Board of Directors at its meeting held today i.e., 29th October 2026, has, inter alia, approved the audited standalone and unaudited consolidated financial results of the Company for the quarter and half year ended 30th September 2026 and payment of interim dividend of Rs. 5.75 (Rupees five and ",
+      "strategy": "light",
+      "reason": "dividend: dividend of rs. 5.75 "
+    },
+    {
+      "id": "ASIANPAINT__106834087",
+      "symbol": "ASIANPAINT",
+      "category": "Outcome of Board Meeting",
+      "text": "Asian Paints Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "TVSMOTOR__106834573",
+      "symbol": "TVSMOTOR",
+      "category": "Press Release",
+      "text": "TVS Motor Company Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"TVS STRENGTHENS ITS MODERN-RETRO LINE WITH THE LAUNCH OF THE LATEST RONIN SERIES, INSPIRED BY AGONDA BEACH\".",
+      "strategy": "deep",
+      "reason": "press release (default deep)"
+    },
+    {
+      "id": "TRENT__106834505",
+      "symbol": "TRENT",
+      "category": "Retirement",
+      "text": "Trent Limited has informed the Exchange about Retirement of Mr. Noel N Tata as the Chairman",
+      "strategy": "deep",
+      "reason": "senior leadership change"
+    },
+    {
+      "id": "TRENT__106834504",
+      "symbol": "TRENT",
+      "category": "Change in Director(s)",
+      "text": "Trent Limited has informed the Exchange regarding Change in Director(s) of the company.",
+      "strategy": "light",
+      "reason": "director change (generic)"
+    },
+    {
+      "id": "TRENT__106834503",
+      "symbol": "TRENT",
+      "category": "Appointment",
+      "text": "Trent Limited has informed the Exchange regarding Appointment of Mr Rajiv Dube as Non- Executive Director of the company w.e.f. October 30, 2026.",
+      "strategy": "light",
+      "reason": "appointment name+role"
+    },
+    {
+      "id": "TRENT__106834506",
+      "symbol": "TRENT",
+      "category": "Appointment",
+      "text": "Trent Limited has informed the Exchange regarding Appointment of Mrs Kalpana Merchant as Non- Executive Independent Director of the company w.e.f. October 30, 2026.",
+      "strategy": "light",
+      "reason": "appointment name+role"
+    },
+    {
+      "id": "TRENT__106834466",
+      "symbol": "TRENT",
+      "category": "Press Release",
+      "text": "Trent Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Press Release on Unaudited Financial Results (Standalone and Consolidated) for thesecond quarter and half-year ended 30th September 2026\".",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "TRENT__106834446",
+      "symbol": "TRENT",
+      "category": "Investor Presentation",
+      "text": "Trent Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "TRENT__106834418",
+      "symbol": "TRENT",
+      "category": "Outcome of Board Meeting",
+      "text": "Trent Limited has submitted to the Exchange about Outcome of Board Meeting held today i.e. 29th October 2026",
+      "strategy": "deep",
+      "reason": "board meeting outcome"
+    },
+    {
+      "id": "COALINDIA__106835076",
+      "symbol": "COALINDIA",
+      "category": "General Updates",
+      "text": "Coal India Limited has informed the Exchange about shareholder Communication on Tax on 2nd Interim Dividend for TY 2026-27.",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "COALINDIA__106835008",
+      "symbol": "COALINDIA",
+      "category": "General Updates",
+      "text": "Investor Presentation made by Company on the Unaudited Financial Results of Coal India Limited (Standalone & Consolidated) for the 2nd Quarter and half year ended 30th Sep 26",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "COALINDIA__106834930",
+      "symbol": "COALINDIA",
+      "category": "Record Date",
+      "text": "Coal India Limited has informed the Exchange that Record date for the purpose of Dividend  is 04-Nov-2026.",
+      "strategy": "light",
+      "reason": "record date"
+    },
+    {
+      "id": "COALINDIA__106834917",
+      "symbol": "COALINDIA",
+      "category": "Outcome of Board Meeting",
+      "text": "Unaudited Financial Results of Coal India Limited (Standalone & Consolidated) for the 2nd Quarter and half year ended 30th Sep 26 and declaration of 2nd Interim Dividend for FY 2026-27",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "LAURUSLABS__106835367",
+      "symbol": "LAURUSLABS",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Laurus Labs Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "LAURUSLABS__106834315",
+      "symbol": "LAURUSLABS",
+      "category": "Press Release",
+      "text": "Laurus Labs Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Press Release on the Financial Results for the quarter and half-year ended September 30, 2026 along with the acquisition of Galenvs Sciences.\".",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "LAURUSLABS__106834256",
+      "symbol": "LAURUSLABS",
+      "category": "Investor Presentation",
+      "text": "Laurus Labs Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "LAURUSLABS__106834247",
+      "symbol": "LAURUSLABS",
+      "category": "Record Date",
+      "text": "Laurus Labs Limited has informed the Exchange that Record date for the purpose of Dividend  is 06-Nov-2026.",
+      "strategy": "light",
+      "reason": "record date"
+    },
+    {
+      "id": "LAURUSLABS__106834235",
+      "symbol": "LAURUSLABS",
+      "category": "General Updates",
+      "text": "Laurus Labs Limited has informed the Exchange about appointment of Mr. Kundan Kumar Jha as Joint Company Secretary of the Company w.e.f. November 1, 2026",
+      "strategy": "light",
+      "reason": "appointment name+role"
+    },
+    {
+      "id": "LAURUSLABS__106834223",
+      "symbol": "LAURUSLABS",
+      "category": "General Updates",
+      "text": "Laurus Labs Limited has informed the Exchange about Acquisition",
+      "strategy": "deep",
+      "reason": "acquisition"
+    },
+    {
+      "id": "LAURUSLABS__106834205",
+      "symbol": "LAURUSLABS",
+      "category": "General Updates",
+      "text": "Laurus Labs Limited has informed the Exchange about General Updates",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "LAURUSLABS__106834184",
+      "symbol": "LAURUSLABS",
+      "category": "Outcome of Board Meeting",
+      "text": "Laurus Labs Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "ADANIENT__106834052",
+      "symbol": "ADANIENT",
+      "category": "Monitoring Agency Report",
+      "text": "Monitoring Agency Report for the quarter and half year ended on September 30, 2026 - Funds raised through issue of Qualified Institutional Placement ( QIP )",
+      "strategy": "skip",
+      "reason": "monitoring agency report"
+    },
+    {
+      "id": "ADANIENT__106834049",
+      "symbol": "ADANIENT",
+      "category": "Monitoring Agency Report",
+      "text": "Monitoring Agency Report for the quarter and half year ended on September 30, 2026 - Funds raised through issue of equity shares on Rights basis",
+      "strategy": "skip",
+      "reason": "monitoring agency report"
+    },
+    {
+      "id": "CIPLA__106835318",
+      "symbol": "CIPLA",
+      "category": "ESOP/ESOS/ESPS",
+      "text": "Cipla Limited has informed the Exchange regarding Allotment of 17453  Shares.",
+      "strategy": "light",
+      "reason": "esop allotment: 17453 shares"
+    },
+    {
+      "id": "MOTHERSON__106835032",
+      "symbol": "MOTHERSON",
+      "category": "General Updates",
+      "text": "Samvardhana Motherson International Limited has agreed to issue corporate guarantee for Term Facility to be availed by wholly owned subsidiary, namely, Motherson Global Investments B.V.",
+      "strategy": "light",
+      "reason": "corporate guarantee"
+    },
+    {
+      "id": "HEROMOTOCO__106834484",
+      "symbol": "HEROMOTOCO",
+      "category": "Copy of Newspaper Publication",
+      "text": "Pursuant to Regulations 30 and 47 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, please find attached copies of the newspaper advertisement pertaining to financial results of the Company for the quarter and half year ended September 30, 2026.",
+      "strategy": "skip",
+      "reason": "newspaper advertisement"
+    },
+    {
+      "id": "HEROMOTOCO__106834286",
+      "symbol": "HEROMOTOCO",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Pursuant to Regulation 30 read with Schedule III of the SEBI (Listing Obligations and Disclosure Requirements), Regulations 2015, we wish to inform you that the audio recording of the earnings call for the quarter and half year ended September 30, 2026 is available on the Company s website at:https:",
+      "strategy": "skip",
+      "reason": "audio recording"
+    },
+    {
+      "id": "COFORGE__106834560",
+      "symbol": "COFORGE",
+      "category": "ESOP/ESOS/ESPS",
+      "text": "Coforge Limited has informed the Exchange regarding Allotment of 24242  Shares.",
+      "strategy": "light",
+      "reason": "esop allotment: 24242 shares"
+    },
+    {
+      "id": "COFORGE__106833671",
+      "symbol": "COFORGE",
+      "category": "Press Release",
+      "text": "Coforge Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \" Coforge Introduces Autonomous Software Factory for the Era of Agentic Software Development. \".",
+      "strategy": "deep",
+      "reason": "press release (default deep)"
+    },
+    {
+      "id": "CHOLAFIN__106835435",
+      "symbol": "CHOLAFIN",
+      "category": "ESOP/ESOS/ESPS",
+      "text": "Cholamandalam Investment and Finance Company Limited has informed the Exchange regarding the allotment of 120202  equity Shares pursuant to exercise of ESOPs",
+      "strategy": "light",
+      "reason": "debt issuance/allotment"
+    },
+    {
+      "id": "TORNTPHARM__106833657",
+      "symbol": "TORNTPHARM",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Torrent Pharmaceuticals Limited has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "TATACONSUM__106835012",
+      "symbol": "TATACONSUM",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "TATA CONSUMER PRODUCTS LIMITED has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "TATACONSUM__106834284",
+      "symbol": "TATACONSUM",
+      "category": "ESOP/ESOS/ESPS",
+      "text": "TATA CONSUMER PRODUCTS LIMITED has informed the Exchange regarding Allotment of 551  Shares.",
+      "strategy": "light",
+      "reason": "esop allotment: 551 shares"
+    },
+    {
+      "id": "MAXHEALTH__106835393",
+      "symbol": "MAXHEALTH",
+      "category": "Pendency of Litigation(s)/dispute(s) or the outcome impacting the Company",
+      "text": "Max Healthcare Institute Limited has informed the Exchange about disclosure under regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "VAML__106834222",
+      "symbol": "VAML",
+      "category": "Copy of Newspaper Publication",
+      "text": "Vedanta Aluminium Metal Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "BHEL__106834154",
+      "symbol": "BHEL",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Bharat Heavy Electricals Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "CGPOWER__106835199",
+      "symbol": "CGPOWER",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "CG Power and Industrial Solutions Limited has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "CGPOWER__106833906",
+      "symbol": "CGPOWER",
+      "category": "Press Release",
+      "text": "CG Power and Industrial Solutions Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Axiro Semiconductor Invests in ThinSiC to Strengthen Position in Next-Generation Silicon Carbide Power Semiconductors\".",
+      "strategy": "deep",
+      "reason": "press release (default deep)"
+    },
+    {
+      "id": "DMART__106834762",
+      "symbol": "DMART",
+      "category": "General Updates",
+      "text": "Avenue Supermarts Limited has informed the Exchange about allotment of Commercial Paper of Rs. 200 crores",
+      "strategy": "light",
+      "reason": "debt issuance/allotment"
+    },
+    {
+      "id": "WIPRO__106835369",
+      "symbol": "WIPRO",
+      "category": "Updates",
+      "text": "Wipro Limited has informed the Exchange regarding 'Grant of ADS-RSUs'.",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "WIPRO__106834348",
+      "symbol": "WIPRO",
+      "category": "General Updates",
+      "text": "Wipro Limited has informed the Exchange to please refer to our earlier letter dated October 16, 2026, informing that Wipro Limited through its step-down subsidiary - Wipro IT Services, LLC had signed a definitive agreement to acquire 20% shareholding in FLARRE.AI, Inc. and that the transaction was e",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "BHARATFORG__106834656",
+      "symbol": "BHARATFORG",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Bharat Forge Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "NAUKRI__106833983",
+      "symbol": "NAUKRI",
+      "category": "Copy of Newspaper Publication",
+      "text": "Info Edge (India) Limited has informed the Exchange about Intimation of Publication of un-audited Standalone & Consolidated Financial Results for the Quarter and Half year ended September 30, 2026.",
+      "strategy": "skip",
+      "reason": "skip_category"
+    },
+    {
+      "id": "PFC__106834007",
+      "symbol": "PFC",
+      "category": "General Updates",
+      "text": "Incorporation of wholly owned Subsidiary of PFC Consulting Limited (a wholly owned subsidiary of Power Finance Corporation Limited)- RUNDH GIDAWARA TRANSMISSION LIMITED",
+      "strategy": "light",
+      "reason": "subsidiary incorporation"
+    },
+    {
+      "id": "SUZLON__106835327",
+      "symbol": "SUZLON",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Suzlon Energy Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "SUZLON__106834353",
+      "symbol": "SUZLON",
+      "category": "Outcome of Board Meeting",
+      "text": "Suzlon Energy Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "PIDILITIND__106835068",
+      "symbol": "PIDILITIND",
+      "category": "Updates",
+      "text": "Pidilite Industries Limited has informed the Exchange regarding 'Audio Recording Q2FY27 Earnings Call'.",
+      "strategy": "skip",
+      "reason": "audio recording"
+    },
+    {
+      "id": "BANKBARODA__106835315",
+      "symbol": "BANKBARODA",
+      "category": "General Updates",
+      "text": "Bank Of Baroda has informed the Exchange about Disclosure under Regulation 30",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "PNB__106835160",
+      "symbol": "PNB",
+      "category": "General Updates",
+      "text": "Punjab National Bank has informed the Exchange about General Updates",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "VEDL__106834755",
+      "symbol": "VEDL",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Vedanta Limited has informed the Exchange about Earnings Call Transcript for the Second Quarter and Half Year ended September 30, 2026",
+      "strategy": "skip",
+      "reason": "skip_category"
+    },
+    {
+      "id": "VEDL__106833743",
+      "symbol": "VEDL",
+      "category": "Copy of Newspaper Publication",
+      "text": "Vedanta Limited has informed the Exchange about the Copy of Newspaper publication in relation to Unaudited Financial Results of the Company for the Second Quarter and Half Year ended September 30, 2026",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "CANBK__106835287",
+      "symbol": "CANBK",
+      "category": "Action(s) taken or orders passed",
+      "text": "Canara Bank has informed the Exchange about Action(s) taken or orders passed",
+      "strategy": "light",
+      "reason": "compliance order"
+    },
+    {
+      "id": "FORTIS__106834557",
+      "symbol": "FORTIS",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Fortis Healthcare Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "APLAPOLLO__106835298",
+      "symbol": "APLAPOLLO",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "APL Apollo Tubes Limited has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "UNITDSPR__106835343",
+      "symbol": "UNITDSPR",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "United Spirits Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "UNITDSPR__106834562",
+      "symbol": "UNITDSPR",
+      "category": "Copy of Newspaper Publication",
+      "text": "United Spirits Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "RECLTD__106835015",
+      "symbol": "RECLTD",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Intimation of audio recording of Investors Conference Call.",
+      "strategy": "skip",
+      "reason": "audio recording"
+    },
+    {
+      "id": "UNIONBANK__106833909",
+      "symbol": "UNIONBANK",
+      "category": "Copy of Newspaper Publication",
+      "text": "Union Bank of India has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "ABB__106834586",
+      "symbol": "ABB",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "ABB India Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "WELCORP__106834499",
+      "symbol": "WELCORP",
+      "category": "Press Release",
+      "text": "Welspun Corp Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Press Release for the quarter and half year ended 30th September, 2026\".",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "WELCORP__106834178",
+      "symbol": "WELCORP",
+      "category": "Investor Presentation",
+      "text": "Welspun Corp Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "WELCORP__106834156",
+      "symbol": "WELCORP",
+      "category": "General Updates",
+      "text": "Welspun Corp Limited has informed the Exchange about the Setting up of Additional Spiral Facility in US and Perma-Pipe and Welspun Corp Announce Partnership in Jordan to Establish Pipe Manufacturing and Coating Facilities.",
+      "strategy": "deep",
+      "reason": "capacity/commissioning"
+    },
+    {
+      "id": "WELCORP__106834144",
+      "symbol": "WELCORP",
+      "category": "Acquisition",
+      "text": "Welspun Corp Limited has informed the Exchange about Acquisition",
+      "strategy": "deep",
+      "reason": "acquisition"
+    },
+    {
+      "id": "WELCORP__106834139",
+      "symbol": "WELCORP",
+      "category": "Appointment",
+      "text": "Welspun Corp Limited has informed the Exchange regarding Appointment of Mr Anjani Kumar Agrawal as Non- Executive Independent Director of the company w.e.f. April 01, 2027.",
+      "strategy": "light",
+      "reason": "appointment name+role"
+    },
+    {
+      "id": "WELCORP__106834140",
+      "symbol": "WELCORP",
+      "category": "Appointment",
+      "text": "Welspun Corp Limited has informed the Exchange regarding Re-Appointment of Mr Manish Chokhani as Non- Executive Independent Director of the company for 4 consecutive years w.e.f. February 02, 2027.",
+      "strategy": "light",
+      "reason": "appointment name+role"
+    },
+    {
+      "id": "WELCORP__106834128",
+      "symbol": "WELCORP",
+      "category": "Outcome of Board Meeting",
+      "text": "Welspun Corp Limited has submitted to the Exchange, the financial results of the Company for the quarter and half year ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "GODREJCP__106835375",
+      "symbol": "GODREJCP",
+      "category": "General Updates",
+      "text": "Godrej Consumer Products Limited has informed the Exchange about General Updates",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "GODREJCP__106835001",
+      "symbol": "GODREJCP",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Godrej Consumer Products Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "GODREJCP__106834377",
+      "symbol": "GODREJCP",
+      "category": "General Updates",
+      "text": "Godrej Consumer Products Limited has informed the Exchange about General Updates",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "GODREJCP__106834357",
+      "symbol": "GODREJCP",
+      "category": "Press Release",
+      "text": "Godrej Consumer Products Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Double Digit Revenue and Profit Growth\".",
+      "strategy": "deep",
+      "reason": "results press release"
+    },
+    {
+      "id": "GODREJCP__106834344",
+      "symbol": "GODREJCP",
+      "category": "Record Date",
+      "text": "Godrej Consumer Products Limited has informed the Exchange that Record date for the purpose of Dividend  is 04-Nov-2026.",
+      "strategy": "light",
+      "reason": "record date"
+    },
+    {
+      "id": "GODREJCP__106834337",
+      "symbol": "GODREJCP",
+      "category": "Dividend",
+      "text": "Godrej Consumer Products Limited has informed the Exchange that Board of Directors at its meeting held on October 29, 2026, declared Interim Dividend of Rs. 5 per equity share.",
+      "strategy": "light",
+      "reason": "dividend: dividend of rs. 5 "
+    },
+    {
+      "id": "GODREJCP__106834328",
+      "symbol": "GODREJCP",
+      "category": "Outcome of Board Meeting",
+      "text": "Godrej Consumer Products Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "MFSL__106833745",
+      "symbol": "MFSL",
+      "category": "Copy of Newspaper Publication",
+      "text": "Max Financial Services Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "RADICO__106833942",
+      "symbol": "RADICO",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Radico Khaitan Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "GMRAIRPORT__106834967",
+      "symbol": "GMRAIRPORT",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "GMR AIRPORTS LIMITED has informed the Exchange about Audio Recording of the Presentation on the Un-audited Financial Results (standalone and consolidated) for the quarter and half year ended September 30, 2026",
+      "strategy": "skip",
+      "reason": "audio recording"
+    },
+    {
+      "id": "GMRAIRPORT__106833469",
+      "symbol": "GMRAIRPORT",
+      "category": "Press Release",
+      "text": "GMR AIRPORTS LIMITED has informed the Exchange regarding a press release dated October 29, 2026, titled \"Press Release on Un-audited Financial Results (Standalone and Consolidated) for the quarter ended and half year ended September 30, 2026\".",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "NAVINFLUOR__106833470",
+      "symbol": "NAVINFLUOR",
+      "category": "General Updates",
+      "text": "Navin Fluorine International Limited has informed the Exchange about General Updates",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "SHREECEM__106834442",
+      "symbol": "SHREECEM",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "SHREE CEMENT LIMITED has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "JSWENERGY__106834017",
+      "symbol": "JSWENERGY",
+      "category": "Monitoring Agency Report",
+      "text": "Reports issued by the Monitoring Agencies for the quarter ended 30th September 2026",
+      "strategy": "skip",
+      "reason": "monitoring agencies"
+    },
+    {
+      "id": "APARINDS__106835203",
+      "symbol": "APARINDS",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Apar Industries Limited has informed the Exchange about Link of Recording.",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "APARINDS__106834945",
+      "symbol": "APARINDS",
+      "category": "Monitoring Agency Report",
+      "text": "Monitoring Agency Report for the quarter ended September 30, 2026.",
+      "strategy": "skip",
+      "reason": "monitoring agency report"
+    },
+    {
+      "id": "APARINDS__106834106",
+      "symbol": "APARINDS",
+      "category": "General Updates",
+      "text": "Apar Industries Limited has informed the Exchange about Corporate Prersentation - October, 26,",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "APARINDS__106834100",
+      "symbol": "APARINDS",
+      "category": "Investor Presentation",
+      "text": "Apar Industries Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "APARINDS__106834083",
+      "symbol": "APARINDS",
+      "category": "Acquisition",
+      "text": "Apar Industries Limited has informed the Exchange about Approval for further investment in Petroleum Specialties Pte Ltd., Singapore.",
+      "strategy": "deep",
+      "reason": "acquisition"
+    },
+    {
+      "id": "APARINDS__106834080",
+      "symbol": "APARINDS",
+      "category": "Appointment",
+      "text": "Apar Industries Limited has informed the Exchange regarding Re-appointment of Mr Kaushal J Sampat as Non- Executive Independent Director of the company w.e.f. January 31, 2027.",
+      "strategy": "light",
+      "reason": "appointment name+role"
+    },
+    {
+      "id": "APARINDS__106834073",
+      "symbol": "APARINDS",
+      "category": "ESOP/ESOS/ESPS",
+      "text": "Apar Industries Limited has informed the Exchange regarding Allotment of 2720  Shares.",
+      "strategy": "light",
+      "reason": "esop allotment: 2720 shares"
+    },
+    {
+      "id": "APARINDS__106834070",
+      "symbol": "APARINDS",
+      "category": "Press Release",
+      "text": "Apar Industries Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Press release on the Un-audited Financial Results of the Company for the Second Quarter and Half-year ended September 30, 2026 of the Current Financial Year 2026-27.\".",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "APARINDS__106834067",
+      "symbol": "APARINDS",
+      "category": "Outcome of Board Meeting",
+      "text": "Apar Industries Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "MANKIND__106835317",
+      "symbol": "MANKIND",
+      "category": "Credit Rating",
+      "text": "Mankind Pharma Limited has informed the Exchange about Credit Rating",
+      "strategy": "light",
+      "reason": "credit rating"
+    },
+    {
+      "id": "SWIGGY__106834588",
+      "symbol": "SWIGGY",
+      "category": "Copy of Newspaper Publication",
+      "text": "Swiggy Limited has informed the Exchange about Copy of Newspaper Publication of Postal Ballot Notice and E-Voting intimation to Members.",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "SWIGGY__106834316",
+      "symbol": "SWIGGY",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Swiggy Limited has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "YESBANK__106833817",
+      "symbol": "YESBANK",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Schedule of Analyst/ Institutional Investors Meet(s) / Call(s) / VC(s)   Kotak Midcap Conference 2026",
+      "strategy": "skip",
+      "reason": "schedule of analyst"
+    },
+    {
+      "id": "YESBANK__106833812",
+      "symbol": "YESBANK",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Schedule of Analyst/ Institutional Investors Meet(s) / Call(s) / VC(s)    JM Financial - India Xchange 2026",
+      "strategy": "skip",
+      "reason": "schedule of analyst"
+    },
+    {
+      "id": "YESBANK__106833805",
+      "symbol": "YESBANK",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Schedule of Analyst/ Institutional Investors Meet(s) / Call(s) / VC(s)   Avendus Spark INDX 2026",
+      "strategy": "skip",
+      "reason": "schedule of analyst"
+    },
+    {
+      "id": "SUNDARMFIN__106834897",
+      "symbol": "SUNDARMFIN",
+      "category": "Updates",
+      "text": "Sundaram Finance Limited has informed the Exchange regarding ''Exercise of 93 options\".'.",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "STLTECH__106834001",
+      "symbol": "STLTECH",
+      "category": "ESOP/ESOS/ESPS",
+      "text": "STLTECH: Sterlite Technologies Limited has informed the Exchange regarding Allotment of 153058 Shares.",
+      "strategy": "light",
+      "reason": "esop allotment: 153058 shares"
+    },
+    {
+      "id": "BIOCON__106833535",
+      "symbol": "BIOCON",
+      "category": "Press Release",
+      "text": "Biocon Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Biocon Named Among Science Magazine s Best Employers in Global Biotech and Pharma for 2026\".",
+      "strategy": "skip",
+      "reason": "awards fluff"
+    },
+    {
+      "id": "LLOYDSME__106835234",
+      "symbol": "LLOYDSME",
+      "category": "Credit Rating- New",
+      "text": "Intimation regarding Credit Rating",
+      "strategy": "light",
+      "reason": "credit rating"
+    },
+    {
+      "id": "LLOYDSME__106835220",
+      "symbol": "LLOYDSME",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Intimation of Earnings Conference Call for investors and analysts for Q2 & H1FY27",
+      "strategy": "skip",
+      "reason": "intimation of earnings conference call"
+    },
+    {
+      "id": "LLOYDSME__106834472",
+      "symbol": "LLOYDSME",
+      "category": "Allotment of Securities",
+      "text": "Intimation for Allotment of U. S. Dollar Denominated Notes.",
+      "strategy": "light",
+      "reason": "debt issuance/allotment"
+    },
+    {
+      "id": "PIRAMALFIN__106833933",
+      "symbol": "PIRAMALFIN",
+      "category": "Copy of Newspaper Publication",
+      "text": "Newspaper Advertisement confirming dispatch of the Notice of Postal Ballot",
+      "strategy": "skip",
+      "reason": "newspaper advertisement"
+    },
+    {
+      "id": "KEI__106834660",
+      "symbol": "KEI",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "KEI Industries Limited has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "DELHIVERY__106834835",
+      "symbol": "DELHIVERY",
+      "category": "Action(s) taken or orders passed",
+      "text": "Ecom Express Limited, wholly owned subsidiary of Delhivery Limited has received an order under the Uttar Pradesh Goods and Services Tax Act, 2017",
+      "strategy": "light",
+      "reason": "compliance order"
+    },
+    {
+      "id": "TORNTPOWER__106834958",
+      "symbol": "TORNTPOWER",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Torrent Power Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "AMBUJACEM__106835197",
+      "symbol": "AMBUJACEM",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Ambuja Cements Limited has informed the exchange regarding the link of Audio Recording of Investor /Analysts call held on October 29, 2026.",
+      "strategy": "skip",
+      "reason": "audio recording"
+    },
+    {
+      "id": "AMBUJACEM__106834142",
+      "symbol": "AMBUJACEM",
+      "category": "Investor Presentation",
+      "text": "Ambuja Cements Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "AMBUJACEM__106834137",
+      "symbol": "AMBUJACEM",
+      "category": "Press Release",
+      "text": "Ambuja Cements Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Ambuja Strengthens Trade and Premium Mix in Q2 amid Seasonal & External Headwinds\".",
+      "strategy": "deep",
+      "reason": "results press release"
+    },
+    {
+      "id": "AMBUJACEM__106834125",
+      "symbol": "AMBUJACEM",
+      "category": "Acquisition",
+      "text": "Ambuja Cements Limited has informed the Exchange about acquisition of 26% equity shares of SWE Renewables Limited.",
+      "strategy": "deep",
+      "reason": "acquisition"
+    },
+    {
+      "id": "AMBUJACEM__106834118",
+      "symbol": "AMBUJACEM",
+      "category": "Outcome of Board Meeting",
+      "text": "Ambuja Cements Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "RBLBANK__106834093",
+      "symbol": "RBLBANK",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "RBL Bank Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "PNBHOUSING__106834211",
+      "symbol": "PNBHOUSING",
+      "category": "Copy of Newspaper Publication",
+      "text": "PNB Housing Finance Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "LTF__106833801",
+      "symbol": "LTF",
+      "category": "Updates",
+      "text": "L&T Finance Limited has informed the Exchange regarding 'Disclosure under Regulation 31A of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 '.",
+      "strategy": "skip",
+      "reason": "disclosure under regulation 31a"
+    },
+    {
+      "id": "MEESHO__106835372",
+      "symbol": "MEESHO",
+      "category": "Copy of Newspaper Publication",
+      "text": "Meesho Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "BLUESTARCO__106834523",
+      "symbol": "BLUESTARCO",
+      "category": "Appointment",
+      "text": "Blue Star Limited has informed the Exchange regarding Appointment of Mr Nithianand S as Group President, Supply Chain & Procurement of the company w.e.f. November 01, 2026.",
+      "strategy": "light",
+      "reason": "appointment name+role"
+    },
+    {
+      "id": "BLUESTARCO__106834524",
+      "symbol": "BLUESTARCO",
+      "category": "Appointment",
+      "text": "Blue Star Limited has informed the Exchange regarding Appointment of  Mr Senthil Thangam as President, Air Conditioning & Refrigeration Solutions Group of the company w.e.f. November 01, 2026.",
+      "strategy": "light",
+      "reason": "appointment name+role"
+    },
+    {
+      "id": "BLUESTARCO__106834467",
+      "symbol": "BLUESTARCO",
+      "category": "Press Release",
+      "text": "Blue Star Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Blue Star s Q2FY27 consolidated revenue grows 21% to Rs 2930.95 crores; Operating Profit grows by 10.5% to Rs 202.58 crores\".",
+      "strategy": "light",
+      "reason": "key metrics in text"
+    },
+    {
+      "id": "BLUESTARCO__106834441",
+      "symbol": "BLUESTARCO",
+      "category": "Outcome of Board Meeting",
+      "text": "Blue Star Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "CUB__106834274",
+      "symbol": "CUB",
+      "category": "Copy of Newspaper Publication",
+      "text": "City Union Bank Limited has informed the Exchange about Copy of Newspaper Publication  on Standalone Un Audited Financial Results for Q2 and H1 FY 2027",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "KIMS__106835106",
+      "symbol": "KIMS",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Krishna Institute of Medical Sciences Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "NEULANDLAB__106833934",
+      "symbol": "NEULANDLAB",
+      "category": "Loss of Share Certificates",
+      "text": "Neuland Laboratories Limited has informed the Exchange about Loss of Share Certificates",
+      "strategy": "skip",
+      "reason": "loss of share certificates"
+    },
+    {
+      "id": "PIIND__106834987",
+      "symbol": "PIIND",
+      "category": "Press Release",
+      "text": "PI Industries Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Unveiling of Pioxaniliprole, India's first indigenously discovered insecticide molecule.\".",
+      "strategy": "deep",
+      "reason": "press release (default deep)"
+    },
+    {
+      "id": "CRAFTSMAN__106834898",
+      "symbol": "CRAFTSMAN",
+      "category": "Copy of Newspaper Publication",
+      "text": "Craftsman Automation Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "CRAFTSMAN__106834892",
+      "symbol": "CRAFTSMAN",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Craftsman Automation Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "CRAFTSMAN__106833750",
+      "symbol": "CRAFTSMAN",
+      "category": "Investor Presentation",
+      "text": "Craftsman Automation Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "CAMS__106835257",
+      "symbol": "CAMS",
+      "category": "Investor Presentation",
+      "text": "Computer Age Management Services Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "CAMS__106835233",
+      "symbol": "CAMS",
+      "category": "Press Release",
+      "text": "Computer Age Management Services Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"CAMS Q2 FY27 CONSOLIDATED PROFIT UP BY 14.4% Y-o-Y,RECOMMENDS INTERIM DIVIDEND OF Rs. 3.25/- PER SHARE\".",
+      "strategy": "light",
+      "reason": "dividend: dividend of rs. "
+    },
+    {
+      "id": "CAMS__106834817",
+      "symbol": "CAMS",
+      "category": "Record Date",
+      "text": "Computer Age Management Services Limited has informed the Exchange that Record date for the purpose of Interim Dividend is 13-Nov-2026.",
+      "strategy": "light",
+      "reason": "record date"
+    },
+    {
+      "id": "CAMS__106834691",
+      "symbol": "CAMS",
+      "category": "Outcome of Board Meeting",
+      "text": "Computer Age Management Services Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "CAMS__106834692",
+      "symbol": "CAMS",
+      "category": "Dividend",
+      "text": "Computer Age Management Services Limited has informed the Exchange that Board of Directors at its meeting held on October 29, 2026, declared Interim Dividend of Rs. 3.25 per equity share.",
+      "strategy": "light",
+      "reason": "dividend: dividend of rs. 3.25 "
+    },
+    {
+      "id": "BANKINDIA__106835188",
+      "symbol": "BANKINDIA",
+      "category": "Updates",
+      "text": "Bank Of India has informed the Exchange regarding 'change in MCLR w.e.f.01.11.2026'.",
+      "strategy": "light",
+      "reason": "mclr change"
+    },
+    {
+      "id": "MAHABANK__106833744",
+      "symbol": "MAHABANK",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Bank of Maharashtra has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "SBICARD__106834585",
+      "symbol": "SBICARD",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "SBI Cards and Payment Services Limited has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "SBICARD__106833939",
+      "symbol": "SBICARD",
+      "category": "ESOP/ESOS/ESPS",
+      "text": "SBI Cards and Payment Services Limited has informed the Exchange regarding Allotment of 5560  Shares.",
+      "strategy": "light",
+      "reason": "esop allotment: 5560 shares"
+    },
+    {
+      "id": "MOTILALOFS__106834986",
+      "symbol": "MOTILALOFS",
+      "category": "ESOP/ESOS/ESPS",
+      "text": "Motilal Oswal Financial Services Limited has informed the Exchange regarding Grant of Employee Stock Options",
+      "strategy": "light",
+      "reason": "esop (category)"
+    },
+    {
+      "id": "MOTILALOFS__106834907",
+      "symbol": "MOTILALOFS",
+      "category": "General Updates",
+      "text": "The Board  at its Meeting held on Thursday, October 29, 2026 has, inter-alia, considered and approved the  Issuance of Non-Convertible Debentures ( NCDs\") not exceeding Rs. 3000,00,00,000/- (Rupees Three Thousand Crore Only) by way of Public Issue/Private Placement in one or more series/tranches",
+      "strategy": "deep",
+      "reason": "NCD/capital raise"
+    },
+    {
+      "id": "MOTILALOFS__106834850",
+      "symbol": "MOTILALOFS",
+      "category": "Appointment",
+      "text": "Motilal Oswal Financial Services Limited has informed the Exchange regarding Appointment of Mr. Janak Dalal as Senior Management Personnel of the Company w.e.f. October 29, 2026.",
+      "strategy": "light",
+      "reason": "appointment name+role"
+    },
+    {
+      "id": "MOTILALOFS__106834827",
+      "symbol": "MOTILALOFS",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Please find enclosed herewith the Investor(s)/ Analyst(s) Presentation on the FinancialPerformance of the Company for the quarter and half year ended September 30, 2026.",
+      "strategy": "skip",
+      "reason": "skip_category"
+    },
+    {
+      "id": "MOTILALOFS__106834803",
+      "symbol": "MOTILALOFS",
+      "category": "Press Release",
+      "text": "Please find enclosed herewith the Press Release  on the Financial Performance of the Company for the quarter and half year ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "MOTILALOFS__106834735",
+      "symbol": "MOTILALOFS",
+      "category": "General Updates",
+      "text": "Please find enclosed herewith the Outcome of the Meeting of Board of Directors of the Company held on October 29, 2026.",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "MOTILALOFS__106834686",
+      "symbol": "MOTILALOFS",
+      "category": "Outcome of Board Meeting",
+      "text": "Motilal Oswal Financial Services Limited has submitted to the Exchange, the financial results for the quarter and half year ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "BANDHANBNK__106835062",
+      "symbol": "BANDHANBNK",
+      "category": "Copy of Newspaper Publication",
+      "text": "Bandhan Bank Limited has informed the Exchange about copies of Newspaper Publications with respect to Unaudited Financial Results of the Bank, for the quarter (Q2) and half-year ended September 30, 2026.",
+      "strategy": "skip",
+      "reason": "newspaper publication"
+    },
+    {
+      "id": "MTARTECH__106834753",
+      "symbol": "MTARTECH",
+      "category": "Press Release",
+      "text": "Investors Press Release on the Unaudited financial results for the Quarter and     Half- Year ended 30.09.2026",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "MTARTECH__106834554",
+      "symbol": "MTARTECH",
+      "category": "General Updates",
+      "text": "Mtar Technologies Limited has informed the Exchange about General Updates",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "MTARTECH__106834465",
+      "symbol": "MTARTECH",
+      "category": "Outcome of Board Meeting",
+      "text": "Mtar Technologies Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "KPIL__106835336",
+      "symbol": "KPIL",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Kalpataru Projects International Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "KPIL__106833980",
+      "symbol": "KPIL",
+      "category": "Action(s) taken or orders passed",
+      "text": "Kalpataru Projects International Limited has informed the Exchange about Action(s) taken or orders passed",
+      "strategy": "light",
+      "reason": "compliance order"
+    },
+    {
+      "id": "AEGISLOG__106835425",
+      "symbol": "AEGISLOG",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Aegis Logistics Limited has informed the Exchange about Schedule of Q2 Earnings Call",
+      "strategy": "skip",
+      "reason": "schedule of q"
+    },
+    {
+      "id": "SCHAEFFLER__106835263",
+      "symbol": "SCHAEFFLER",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Schaeffler India Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "SCHAEFFLER__106833673",
+      "symbol": "SCHAEFFLER",
+      "category": "Investor Presentation",
+      "text": "Schaeffler India Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "CONCOR__106834042",
+      "symbol": "CONCOR",
+      "category": "Awarding of order(s)/contract(s)",
+      "text": "Container Corporation Of India Limited has informed the Exchange about Awarding of order(s)/contract(s)",
+      "strategy": "deep",
+      "reason": "order (no size in text)"
+    },
+    {
+      "id": "CONCOR__106834037",
+      "symbol": "CONCOR",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Container Corporation Of India Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "POONAWALLA__106833924",
+      "symbol": "POONAWALLA",
+      "category": "Allotment of Securities",
+      "text": "Poonawalla Fincorp Limited has informed the Exchange regarding allotment of 131800 securities pursuant to Non Convertible Securities at its meeting held on October 29, 2026",
+      "strategy": "light",
+      "reason": "debt issuance/allotment"
+    },
+    {
+      "id": "SOUTHBANK__106834186",
+      "symbol": "SOUTHBANK",
+      "category": "Commencement of commercial production/operations",
+      "text": "The South Indian Bank Limited has informed the Exchange about Opening of New Branch - Intimation under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "ASTRAMICRO__106834546",
+      "symbol": "ASTRAMICRO",
+      "category": "Scheme of Arrangement",
+      "text": "Receipt of Observation letter with no adverse observations/No Objection letter from the Stock Exchanges on the Scheme of Demerger.",
+      "strategy": "deep",
+      "reason": "scheme of arrangement"
+    },
+    {
+      "id": "PATANJALI__106834868",
+      "symbol": "PATANJALI",
+      "category": "General Updates",
+      "text": "Patanjali Foods Limited has informed the Exchange about General Updates",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "STARHEALTH__106835045",
+      "symbol": "STARHEALTH",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Star Health And Allied Insurance Company Limited has informed the Exchange about Schedule of meet dated November 03,2026.",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "STARHEALTH__106834705",
+      "symbol": "STARHEALTH",
+      "category": "Copy of Newspaper Publication",
+      "text": "Star Health And Allied Insurance Company Limited has informed the Exchange about Copy of Newspaper Publication dated October 29,2026.",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "KPRMILL__106834529",
+      "symbol": "KPRMILL",
+      "category": "Copy of Newspaper Publication",
+      "text": "K.P.R. Mill Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "KPRMILL__106834509",
+      "symbol": "KPRMILL",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "K.P.R. Mill Limited has informed the Exchange about Schedule of meet with PL Capital Group.",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "KPRMILL__106833969",
+      "symbol": "KPRMILL",
+      "category": "Investor Presentation",
+      "text": "K.P.R. Mill Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "SUNDRMFAST__106834896",
+      "symbol": "SUNDRMFAST",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Sundram Fasteners Limited has informed the Exchange about Link of Audio Recording for the Analyst / Investor Meet held On October 29, 2026.",
+      "strategy": "skip",
+      "reason": "audio recording"
+    },
+    {
+      "id": "SUNDRMFAST__106834599",
+      "symbol": "SUNDRMFAST",
+      "category": "Copy of Newspaper Publication",
+      "text": "Sundram Fasteners Limited has informed the Exchange about Copy of Newspaper Publication on Unaudited Financial Results for the quarter and half year ended September 30, 2026.",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "KTKBANK__106834890",
+      "symbol": "KTKBANK",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "The Karnataka Bank Limited has informed the Exchange about the outcome of Analysts/ Investors call",
+      "strategy": "skip",
+      "reason": "skip_category"
+    },
+    {
+      "id": "SHILPAMED__106834041",
+      "symbol": "SHILPAMED",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Shilpa Medicare Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "VOLTAMP__106834040",
+      "symbol": "VOLTAMP",
+      "category": "Press Release",
+      "text": "Voltamp Transformers Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Press Release issued in connection with the financial results for the quarter and half year ended September 30, 2026\".",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "VOLTAMP__106834008",
+      "symbol": "VOLTAMP",
+      "category": "Outcome of Board Meeting",
+      "text": "Voltamp Transformers Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "CARTRADE__106834839",
+      "symbol": "CARTRADE",
+      "category": "Updates",
+      "text": "Cartrade Tech Limited has informed the Exchange regarding 'Corrigendum to the intimation filed for Allotment of 1,000 equity shares under ESOP 2021(I) of CarTrade Tech Limited ( the Company ) dated October 28, 2026'.",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "SAGILITY__106833658",
+      "symbol": "SAGILITY",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "SAGILITY LIMITED has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "RVNL__106835312",
+      "symbol": "RVNL",
+      "category": "Bagging/Receiving of orders/contracts",
+      "text": "Disclosure under Regulation 30 of SEBI (LODR) Regulations, 2015- Letter of Award from Ministry of External Affairs",
+      "strategy": "deep",
+      "reason": "order (no size in text)"
+    },
+    {
+      "id": "DEEPAKNTR__106835437",
+      "symbol": "DEEPAKNTR",
+      "category": "General Updates",
+      "text": "Deepak Nitrite Limited has informed the Exchange about General Updates- Q2 & H1 FY2027 Results Presentation",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "DEEPAKNTR__106835025",
+      "symbol": "DEEPAKNTR",
+      "category": "Outcome of Board Meeting",
+      "text": "Deepak Nitrite Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "TIMKEN__106835221",
+      "symbol": "TIMKEN",
+      "category": "Outcome of Board Meeting",
+      "text": "Timken India Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "BRIGADE__106834942",
+      "symbol": "BRIGADE",
+      "category": "Investor Presentation",
+      "text": "Brigade Enterprises Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "BRIGADE__106834881",
+      "symbol": "BRIGADE",
+      "category": "Press Release",
+      "text": "Brigade Enterprises Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Brigade Group Reports Revenue of Rs. 1250 Cr in Q2 FY27; Profit Before Tax grows 47% YoY\".",
+      "strategy": "light",
+      "reason": "key metrics in text"
+    },
+    {
+      "id": "BRIGADE__106834855",
+      "symbol": "BRIGADE",
+      "category": "Outcome of Board Meeting",
+      "text": "Brigade Enterprises Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "BRIGADE__106833957",
+      "symbol": "BRIGADE",
+      "category": "ESOP/ESOS/ESPS",
+      "text": "Brigade Enterprises Limited has informed the Exchange regarding Grant of 1484344  Options.",
+      "strategy": "light",
+      "reason": "esop grant: 1484344"
+    },
+    {
+      "id": "BRIGADE__106833941",
+      "symbol": "BRIGADE",
+      "category": "Allotment of Securities",
+      "text": "Brigade Enterprises Limited has informed the Exchange regarding allotment of 39094 securities pursuant to ESOP/ESPS at its meeting held on October 29, 2026",
+      "strategy": "light",
+      "reason": "debt issuance/allotment"
+    },
+    {
+      "id": "IGL__106834468",
+      "symbol": "IGL",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Indraprastha Gas Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "FSL__106835247",
+      "symbol": "FSL",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Firstsource Solutions Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "FSL__106834525",
+      "symbol": "FSL",
+      "category": "ESOP/ESOS/ESPS",
+      "text": "Firstsource Solutions Limited has informed the Exchange regarding Grant of 587750  Options.",
+      "strategy": "light",
+      "reason": "esop grant: 587750"
+    },
+    {
+      "id": "FSL__106834500",
+      "symbol": "FSL",
+      "category": "Investor Presentation",
+      "text": "Firstsource Solutions Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "FSL__106834494",
+      "symbol": "FSL",
+      "category": "Investor Presentation",
+      "text": "Firstsource Solutions Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "FSL__106834471",
+      "symbol": "FSL",
+      "category": "Outcome of Board Meeting",
+      "text": "Firstsource Solutions Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "TMB__106835161",
+      "symbol": "TMB",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Tamilnad Mercantile Bank Limited has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "TMB__106833919",
+      "symbol": "TMB",
+      "category": "General Updates",
+      "text": "Tamilnad Mercantile Bank Limited has informed the Exchange about the Intimation under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015   Awards bagged at Oracle Excellence Awards 2026",
+      "strategy": "skip",
+      "reason": "awards fluff"
+    },
+    {
+      "id": "KPITTECH__106834291",
+      "symbol": "KPITTECH",
+      "category": "Copy of Newspaper Publication",
+      "text": "KPIT Technologies Limited has informed the Exchange about Copy of Newspaper Publication of Unaudited Consolidated Financial Results for the quarter and half year ended September 30, 2026.",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "PINELABS__106835433",
+      "symbol": "PINELABS",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Pine Labs Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "PINELABS__106834815",
+      "symbol": "PINELABS",
+      "category": "Monitoring Agency Report",
+      "text": "Monitoring Agency Report for the quarter ended September 30, 2026",
+      "strategy": "skip",
+      "reason": "monitoring agency report"
+    },
+    {
+      "id": "PINELABS__106834034",
+      "symbol": "PINELABS",
+      "category": "Investor Presentation",
+      "text": "Pine Labs Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "PINELABS__106834029",
+      "symbol": "PINELABS",
+      "category": "Press Release",
+      "text": "Pine Labs Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Q2 FY27 Performance\".",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "PINELABS__106834015",
+      "symbol": "PINELABS",
+      "category": "Outcome of Board Meeting",
+      "text": "Pine Labs Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "KAJARIACER__106835042",
+      "symbol": "KAJARIACER",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Transcript of Conference Call",
+      "strategy": "skip",
+      "reason": "transcript of conference"
+    },
+    {
+      "id": "KAJARIACER__106834918",
+      "symbol": "KAJARIACER",
+      "category": "General Updates",
+      "text": "Pursuant to the provisions of the Listing Regulations, we wish to inform you that the Company has subscribed 4,50,00,000 Non-Convertible Redeemable Preference Shares of Kerovit Global Private Limited ( KGPL ), step-down wholly-owned subsidiary on October 29, 2026. Accordingly, KGPL will continue to ",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "CASTROLIND__106834713",
+      "symbol": "CASTROLIND",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Transcript of audio recording of the Post Earnings Call for 3Q & 9M FY 2026.",
+      "strategy": "skip",
+      "reason": "audio recording"
+    },
+    {
+      "id": "CGCL__106835358",
+      "symbol": "CGCL",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Capri Global Capital Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "CGCL__106835326",
+      "symbol": "CGCL",
+      "category": "Updates",
+      "text": "Capri Global Capital Limited has informed the Exchange regarding 'Certificate for Payment of Interest (BSE Listed)'.",
+      "strategy": "skip",
+      "reason": "certificate for payment of interest"
+    },
+    {
+      "id": "CGCL__106834722",
+      "symbol": "CGCL",
+      "category": "Copy of Newspaper Publication",
+      "text": "Capri Global Capital Limited has informed the Exchange about Copy of Newspaper Publication for Financial results for the quarter ended September 30, 2026",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "CGCL__106834192",
+      "symbol": "CGCL",
+      "category": "Credit Rating",
+      "text": "Capri Global Capital Limited has informed the Exchange about Credit Rating",
+      "strategy": "light",
+      "reason": "credit rating"
+    },
+    {
+      "id": "CGCL__106833834",
+      "symbol": "CGCL",
+      "category": "Investor Presentation",
+      "text": "Capri Global Capital Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "NETWEB__106834406",
+      "symbol": "NETWEB",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Netweb Technologies India Limited has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "UBL__106833708",
+      "symbol": "UBL",
+      "category": "Copy of Newspaper Publication",
+      "text": "United Breweries Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "GRINDWELL__106834113",
+      "symbol": "GRINDWELL",
+      "category": "Outcome of Board Meeting",
+      "text": "Please find attached Unaudited Financial Results for the quarter and half year ended September 30, 2026",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "GRINDWELL__106834109",
+      "symbol": "GRINDWELL",
+      "category": "Outcome of Board Meeting",
+      "text": "Please find attached the outcome of the board meeting held today i.e. October 29, 2026",
+      "strategy": "deep",
+      "reason": "board meeting outcome"
+    },
+    {
+      "id": "ATUL__106834094",
+      "symbol": "ATUL",
+      "category": "General Updates",
+      "text": "Atul Limited has informed the Exchange about General Updates",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "SHAILY__106835116",
+      "symbol": "SHAILY",
+      "category": "Investor Presentation",
+      "text": "Shaily Engineering Plastics Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "SHAILY__106835024",
+      "symbol": "SHAILY",
+      "category": "Disclosure of material issue",
+      "text": "Shaily Engineering Plastics Limited has informed regarding Disclosure of material issue",
+      "strategy": "deep",
+      "reason": "material disclosure"
+    },
+    {
+      "id": "SHAILY__106834929",
+      "symbol": "SHAILY",
+      "category": "Outcome of Board Meeting",
+      "text": "Shaily Engineering Plastics Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "ACMESOLAR__106834463",
+      "symbol": "ACMESOLAR",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Acme Solar Holdings Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "ACMESOLAR__106833479",
+      "symbol": "ACMESOLAR",
+      "category": "Bagging/Receiving of orders/contracts",
+      "text": "ACME Solar Holdings Limited has informed the Exchange about execution of Power Purchase Agreement",
+      "strategy": "deep",
+      "reason": "order (no size in text)"
+    },
+    {
+      "id": "FORCEMOT__106834469",
+      "symbol": "FORCEMOT",
+      "category": "Copy of Newspaper Publication",
+      "text": "FORCE MOTORS LTD has informed the Exchange about Copy of Newspaper Publication of Unaudited Financial Results for the quarter and half year ended on 30.09.2026",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "IEX__106834628",
+      "symbol": "IEX",
+      "category": "Investor Presentation",
+      "text": "Indian Energy Exchange Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "IEX__106834620",
+      "symbol": "IEX",
+      "category": "Press Release",
+      "text": "Indian Energy Exchange Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Indian Energy Exchange Limited (IEX) Announces Unaudited Financial Results For the Half year and Second Quarter ended September 30, 2026.\".",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "IEX__106834594",
+      "symbol": "IEX",
+      "category": "Outcome of Board Meeting",
+      "text": "Indian Energy Exchange Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "EDELWEISS__106835209",
+      "symbol": "EDELWEISS",
+      "category": "General Updates",
+      "text": "Edelweiss Financial Services Limited has informed the Exchange about Allotment of Equity Shares under Edelweiss Employees Stock Incentive Plan, 2011 and Edelweiss Employees Stock Appreciation Rights Plan, 2019",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "EDELWEISS__106834150",
+      "symbol": "EDELWEISS",
+      "category": "Updates",
+      "text": "Edelweiss Financial Services Limited has informed the Exchange regarding IPO of EAAA India Alternatives Limited",
+      "strategy": "deep",
+      "reason": "subsidiary ipo"
+    },
+    {
+      "id": "JYOTICNC__106835431",
+      "symbol": "JYOTICNC",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Jyoti CNC Automation Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "NATCOPHARM__106834655",
+      "symbol": "NATCOPHARM",
+      "category": "Copy of Newspaper Publication",
+      "text": "Natco Pharma Limited has informed the Exchange about Copy of News Paper Publication of  Basis of Allotment for Rights Issue",
+      "strategy": "skip",
+      "reason": "skip_category"
+    },
+    {
+      "id": "SYNGENE__106835126",
+      "symbol": "SYNGENE",
+      "category": "Copy of Newspaper Publication",
+      "text": "Syngene International Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "NTPCGREEN__106835406",
+      "symbol": "NTPCGREEN",
+      "category": "General Updates",
+      "text": "Declaration of Commercial Operation of NTPC Renewable Energy Limited, a wholly owned subsidiary of NTPC Green Energy Limited w.e.f. 00:00 hrs of 30.10.2026.",
+      "strategy": "deep",
+      "reason": "capacity/commissioning"
+    },
+    {
+      "id": "ECLERX__106835282",
+      "symbol": "ECLERX",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "eClerx Services Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "ECLERX__106834714",
+      "symbol": "ECLERX",
+      "category": "Copy of Newspaper Publication",
+      "text": "eClerx Services Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "EQUITASBNK__106835204",
+      "symbol": "EQUITASBNK",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Equitas Small Finance Bank Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "EQUITASBNK__106834960",
+      "symbol": "EQUITASBNK",
+      "category": "Updates",
+      "text": "Equitas Small Finance Bank Limited has informed the Exchange regarding 'Unaudited Financial results for the quarter and half year ended 30.09.2026.'.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "EQUITASBNK__106834450",
+      "symbol": "EQUITASBNK",
+      "category": "Investor Presentation",
+      "text": "Equitas Small Finance Bank Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "EQUITASBNK__106834361",
+      "symbol": "EQUITASBNK",
+      "category": "Press Release",
+      "text": "Equitas Small Finance Bank Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Press Release on the unaudited financial results for the quarter and half year ended September 30, 2026.\".",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "EQUITASBNK__106834292",
+      "symbol": "EQUITASBNK",
+      "category": "Resignation of Director/KMP/SMP",
+      "text": "Equitas Small Finance Bank Limited has informed the Exchange about Resignation of Director/KMP/SMP",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "EQUITASBNK__106834201",
+      "symbol": "EQUITASBNK",
+      "category": "Resignation",
+      "text": "Equitas Small Finance Bank Limited has informed the Exchange regarding Resignation of  Mr. P N Vasudevan as Managing Director & CEO of the company w.e.f. October 29, 2026.",
+      "strategy": "deep",
+      "reason": "senior leadership change"
+    },
+    {
+      "id": "EQUITASBNK__106834171",
+      "symbol": "EQUITASBNK",
+      "category": "Outcome of Board Meeting",
+      "text": "Equitas Small Finance Bank Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "RRKABEL__106834670",
+      "symbol": "RRKABEL",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "RRKABEL: R R Kabel Limited has submitted the audio recording link of the Earnings Conference Call for the quarter and half-year ended 30 September 2026.",
+      "strategy": "skip",
+      "reason": "audio recording"
+    },
+    {
+      "id": "NBCC__106833991",
+      "symbol": "NBCC",
+      "category": "Updates",
+      "text": "NBCC (India) Limited has informed the Exchange regarding 'NBCC Successfully concludes E-auction of residential apartments at Avenue Towers for approx. Rs. 5191 crores, at Africa Avenue Marg Sarojini Nagar, New Delhi.'.",
+      "strategy": "deep",
+      "reason": "major transaction"
+    },
+    {
+      "id": "STAR__106835105",
+      "symbol": "STAR",
+      "category": "Appointment",
+      "text": "Strides Pharma Science Limited has informed the Exchange regarding Appointment of  Biren Gabhawala as Non- Executive Independent Director of the company w.e.f. November 01, 2026.",
+      "strategy": "light",
+      "reason": "appointment name+role"
+    },
+    {
+      "id": "STAR__106835097",
+      "symbol": "STAR",
+      "category": "ESOP/ESOS/ESPS",
+      "text": "Strides Pharma Science Limited has informed the Exchange regarding Allotment of 7500  Shares.",
+      "strategy": "light",
+      "reason": "esop allotment: 7500 shares"
+    },
+    {
+      "id": "STAR__106835088",
+      "symbol": "STAR",
+      "category": "General Updates",
+      "text": "Strides Pharma Science Limited has informed the Exchange about Earnings Presentation for the quarter and half year ended September 30, 2026",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "STAR__106835051",
+      "symbol": "STAR",
+      "category": "Press Release",
+      "text": "Strides Pharma Science Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Strides Delivers Strong Performance with Q2FY27 Revenue at &#8377;14,297m, Grew 17% YoYEx-US Markets Up 31% YoY; EBITDA Up 8% YoY to &#8377;2,509m, Crossing &#8377;2,500m in a Quarter f",
+      "strategy": "light",
+      "reason": "key metrics in text"
+    },
+    {
+      "id": "STAR__106835036",
+      "symbol": "STAR",
+      "category": "Outcome of Board Meeting",
+      "text": "Strides Pharma Science Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "ANANTRAJ__106834021",
+      "symbol": "ANANTRAJ",
+      "category": "Copy of Newspaper Publication",
+      "text": "Anant Raj Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "ACC__106835137",
+      "symbol": "ACC",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "ACC Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "ACC__106834173",
+      "symbol": "ACC",
+      "category": "Investor Presentation",
+      "text": "ACC Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "ACC__106833833",
+      "symbol": "ACC",
+      "category": "Shareholders meeting",
+      "text": "ACC Limited has informed the Exchange regarding Notice of Postal Ballot",
+      "strategy": "skip",
+      "reason": "notice of postal ballot"
+    },
+    {
+      "id": "SCHNEIDER__106834283",
+      "symbol": "SCHNEIDER",
+      "category": "Capacity addition",
+      "text": "Schneider Electric Infrastructure Limited has informed the Exchange about Capacity addition",
+      "strategy": "deep",
+      "reason": "capacity/commissioning"
+    },
+    {
+      "id": "SCHNEIDER__106834270",
+      "symbol": "SCHNEIDER",
+      "category": "Outcome of Board Meeting",
+      "text": "Schneider Electric Infrastructure Limited has informed the Exchange regarding Outcome of Board Meeting held on October 29, 2026.",
+      "strategy": "deep",
+      "reason": "board meeting outcome"
+    },
+    {
+      "id": "RKFORGE__106834261",
+      "symbol": "RKFORGE",
+      "category": "General Updates",
+      "text": "Ramkrishna Forgings Limited has informed the Exchange about Grant of 5,50,000 Employee Stock Options (ESOPs) to the eligible employees of the Company under the \"RKF Limited Employee Stock Option Scheme 2023''.",
+      "strategy": "light",
+      "reason": "esop grant: 5,50,000"
+    },
+    {
+      "id": "HONASA__106834124",
+      "symbol": "HONASA",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Schedule of Q2 FY 2027 Earnings Conference Call - November 06, 2026",
+      "strategy": "skip",
+      "reason": "schedule of q"
+    },
+    {
+      "id": "ERIS__106834690",
+      "symbol": "ERIS",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Eris Lifesciences Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "ERIS__106834668",
+      "symbol": "ERIS",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Eris Lifesciences Limited has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "AVALON__106835153",
+      "symbol": "AVALON",
+      "category": "Copy of Newspaper Publication",
+      "text": "Avalon Technologies Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "CHOICEIN__106835278",
+      "symbol": "CHOICEIN",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Choice International Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "INDGN__106835289",
+      "symbol": "INDGN",
+      "category": "Resignation of Director/KMP/SMP",
+      "text": "Indegene Limited has informed the Exchange about Resignation of Director/KMP/SMP",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "INDGN__106835275",
+      "symbol": "INDGN",
+      "category": "Investor Presentation",
+      "text": "Indegene Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "INDGN__106835268",
+      "symbol": "INDGN",
+      "category": "Press Release",
+      "text": "Indegene Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Indegene Delivers Strong Q2 FY27 Performance, H1 USD Revenue Growth Reaches a Four-Year High\".",
+      "strategy": "light",
+      "reason": "key metrics in text"
+    },
+    {
+      "id": "INDGN__106835245",
+      "symbol": "INDGN",
+      "category": "Resignation",
+      "text": "Indegene Limited has informed the Exchange regarding Resignation of Ms Srishti Ramesh Kaushik as Company Secretary & Compliance Officer of the company w.e.f. December 02, 2026.",
+      "strategy": "light",
+      "reason": "resignation name+role"
+    },
+    {
+      "id": "INDGN__106835231",
+      "symbol": "INDGN",
+      "category": "Allotment of Securities",
+      "text": "Indegene Limited has informed the Exchange regarding allotment of 52194 securities pursuant to ESOP/ESPS at its meeting held on October 29, 2026",
+      "strategy": "light",
+      "reason": "debt issuance/allotment"
+    },
+    {
+      "id": "INDGN__106835200",
+      "symbol": "INDGN",
+      "category": "Outcome of Board Meeting",
+      "text": "Indegene Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "BLACKBUCK__106835214",
+      "symbol": "BLACKBUCK",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "BLACKBUCK LIMITED has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "BLACKBUCK__106834225",
+      "symbol": "BLACKBUCK",
+      "category": "General Updates",
+      "text": "BLACKBUCK LIMITED has informed the Exchange about Statement of Deviation and Variation",
+      "strategy": "skip",
+      "reason": "statement of deviation"
+    },
+    {
+      "id": "BLACKBUCK__106834182",
+      "symbol": "BLACKBUCK",
+      "category": "Monitoring Agency Report",
+      "text": "Monitoring Agency Report",
+      "strategy": "skip",
+      "reason": "monitoring agency report"
+    },
+    {
+      "id": "BLACKBUCK__106834129",
+      "symbol": "BLACKBUCK",
+      "category": "Investor Presentation",
+      "text": "BLACKBUCK LIMITED has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "BLACKBUCK__106834116",
+      "symbol": "BLACKBUCK",
+      "category": "Outcome of Board Meeting",
+      "text": "BLACKBUCK LIMITED has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "PARADEEP__106834886",
+      "symbol": "PARADEEP",
+      "category": "Outcome of Board Meeting",
+      "text": "Paradeep Phosphates Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "SHADOWFAX__106835229",
+      "symbol": "SHADOWFAX",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Shadowfax Technologies Limited has informed the Exchange about Link of Recording held on October 29, 2026",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "SHADOWFAX__106834550",
+      "symbol": "SHADOWFAX",
+      "category": "Monitoring Agency Report",
+      "text": "Monitoring Agency Report for the quarter and half year ended September 30, 2026",
+      "strategy": "skip",
+      "reason": "monitoring agency report"
+    },
+    {
+      "id": "SHADOWFAX__106834179",
+      "symbol": "SHADOWFAX",
+      "category": "Investor Presentation",
+      "text": "Shadowfax Technologies Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "SHADOWFAX__106834117",
+      "symbol": "SHADOWFAX",
+      "category": "Press Release",
+      "text": "Shadowfax Technologies Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Shadowfax Crosses &#8377;1,500 Cr Quarterly Revenue in Q2 FY27 Revenue Grows 57% YoY to &#8377;1,538 Cr, Adj. EBITDA Margin, Expands to 5.0% and PAT at &#8377;68 Cr\".",
+      "strategy": "light",
+      "reason": "key metrics in text"
+    },
+    {
+      "id": "SHADOWFAX__106834074",
+      "symbol": "SHADOWFAX",
+      "category": "Outcome of Board Meeting",
+      "text": "Shadowfax Technologies Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "CHALET__106835146",
+      "symbol": "CHALET",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Chalet Hotels Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "ZENSARTECH__106834654",
+      "symbol": "ZENSARTECH",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Zensar Technologies Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "J&KBANK__106834218",
+      "symbol": "J&KBANK",
+      "category": "General Updates",
+      "text": "The Jammu & Kashmir Bank Limited has informed the Exchange about General Updates",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "INTELLECT__106835248",
+      "symbol": "INTELLECT",
+      "category": "ESOP/ESOS/ESPS",
+      "text": "Intellect Design Arena Limited has informed the Exchange regarding Grant of 183500  Options.",
+      "strategy": "light",
+      "reason": "esop grant: 183500"
+    },
+    {
+      "id": "LTFOODS__106834740",
+      "symbol": "LTFOODS",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "LT Foods Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "LTFOODS__106834163",
+      "symbol": "LTFOODS",
+      "category": "Copy of Newspaper Publication",
+      "text": "LT Foods Limited has informed the Exchange about Copy of Newspaper Publication  of Un-Audited financial results of the Company for the quarter and half year ended September 30, 2026.",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "LTFOODS__106833526",
+      "symbol": "LTFOODS",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "LT Foods Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "BSOFT__106834537",
+      "symbol": "BSOFT",
+      "category": "Copy of Newspaper Publication",
+      "text": "BIRLASOFT LIMITED has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "DIACABS__106834240",
+      "symbol": "DIACABS",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Diamond Power Infrastructure Limited has informed the Exchange about Schedule of meet on 4 November, 2026 at 10:00 A.M.",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "VGUARD__106835389",
+      "symbol": "VGUARD",
+      "category": "Investor Presentation",
+      "text": "V-Guard Industries Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "VGUARD__106834013",
+      "symbol": "VGUARD",
+      "category": "Press Release",
+      "text": "V-Guard Industries Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Financial Results for Q2FY27\".",
+      "strategy": "deep",
+      "reason": "results press release"
+    },
+    {
+      "id": "VGUARD__106833997",
+      "symbol": "VGUARD",
+      "category": "Outcome of Board Meeting",
+      "text": "V-Guard Industries Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "VGUARD__106833999",
+      "symbol": "VGUARD",
+      "category": "Allotment of Securities",
+      "text": "V-Guard Industries Limited has informed the Exchange regarding allotment of 163183 securities pursuant to ESOP/ESPS at its meeting held on October 29, 2026",
+      "strategy": "light",
+      "reason": "debt issuance/allotment"
+    },
+    {
+      "id": "VGUARD__106833998",
+      "symbol": "VGUARD",
+      "category": "Appointment",
+      "text": "V-Guard Industries Limited has informed the Exchange regarding Appointment of Mr Kurian Puthenpurayil John as Independent Director of the company w.e.f. October 29, 2026.",
+      "strategy": "light",
+      "reason": "appointment name+role"
+    },
+    {
+      "id": "CENTRALBK__106834845",
+      "symbol": "CENTRALBK",
+      "category": "General Updates",
+      "text": "Central Bank of India has informed the Exchange about General Updates on Analyst/Investor meet held on 29th October, 2026",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "RATEGAIN__106833525",
+      "symbol": "RATEGAIN",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Rategain Travel Technologies Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "RATEGAIN__106833522",
+      "symbol": "RATEGAIN",
+      "category": "ESOP/ESOS/ESPS",
+      "text": "Rategain Travel Technologies Limited has informed the Exchange regarding Grant of 53021  Options.",
+      "strategy": "light",
+      "reason": "esop grant: 53021"
+    },
+    {
+      "id": "RBA__106835308",
+      "symbol": "RBA",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Restaurant Brands Asia Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "RBA__106835250",
+      "symbol": "RBA",
+      "category": "Monitoring Agency Report",
+      "text": "Monitoring Agency Report w.r.t. utilisation of proceeds from Qualified Institutions Placement and Preferential issue on private placement basis.",
+      "strategy": "skip",
+      "reason": "monitoring agency report"
+    },
+    {
+      "id": "RBA__106834745",
+      "symbol": "RBA",
+      "category": "Acquisition",
+      "text": "Restaurant Brands Asia Limited has informed the Exchange about Acquisition of OCPS, Conversion of Loan into OCPS and change in terms of NCPS of PT Sari Burger Indonesia (Subsidiary).",
+      "strategy": "deep",
+      "reason": "acquisition"
+    },
+    {
+      "id": "RBA__106834719",
+      "symbol": "RBA",
+      "category": "Change in Management",
+      "text": "Restaurant Brands Asia Limited has informed the Exchange about designating the officials of the Company as Senior Management Personnel.",
+      "strategy": "deep",
+      "reason": "management change"
+    },
+    {
+      "id": "RBA__106834702",
+      "symbol": "RBA",
+      "category": "Change in Management",
+      "text": "Restaurant Brands Asia Limited has informed the Exchange about appointment of Chief Executive Officer - India Business.",
+      "strategy": "deep",
+      "reason": "senior leadership change"
+    },
+    {
+      "id": "RBA__106834678",
+      "symbol": "RBA",
+      "category": "Change in Director(s)",
+      "text": "Restaurant Brands Asia Limited has informed the Exchange regarding Change in Director(s) of the company.",
+      "strategy": "light",
+      "reason": "director change (generic)"
+    },
+    {
+      "id": "RBA__106834658",
+      "symbol": "RBA",
+      "category": "Press Release",
+      "text": "Press Release on the Unaudited Financial Results for the quarter ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "RBA__106834644",
+      "symbol": "RBA",
+      "category": "Investor Presentation",
+      "text": "Restaurant Brands Asia Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "RBA__106834629",
+      "symbol": "RBA",
+      "category": "Outcome of Board Meeting",
+      "text": "Restaurant Brands Asia Limited has informed the Exchange regarding Outcome of Board Meeting held on October 29, 2026.",
+      "strategy": "deep",
+      "reason": "board meeting outcome"
+    },
+    {
+      "id": "RBA__106834618",
+      "symbol": "RBA",
+      "category": "Outcome of Board Meeting",
+      "text": "Restaurant Brands Asia Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "RBA__106833791",
+      "symbol": "RBA",
+      "category": "ESOP/ESOS/ESPS",
+      "text": "Restaurant Brands Asia Limited has informed the Exchange regarding allotment of 9,259 securities pursuant to ESOP/ESPS..",
+      "strategy": "light",
+      "reason": "debt issuance/allotment"
+    },
+    {
+      "id": "VEDPOWER__106835391",
+      "symbol": "VEDPOWER",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Please refer the enclosed file.",
+      "strategy": "skip",
+      "reason": "please refer the enclosed file"
+    },
+    {
+      "id": "VEDPOWER__106834708",
+      "symbol": "VEDPOWER",
+      "category": "Investor Presentation",
+      "text": "Vedanta Power Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "VEDPOWER__106834709",
+      "symbol": "VEDPOWER",
+      "category": "Press Release",
+      "text": "Vedanta Power Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Vedanta Power Reports Highest-Ever Quarterly Performance in Q2 FY27, Backed by Strong Operational Excellence; EBITDA Soars 122% and Revenue Rises 38% YoY\".",
+      "strategy": "light",
+      "reason": "key metrics in text"
+    },
+    {
+      "id": "VEDPOWER__106834679",
+      "symbol": "VEDPOWER",
+      "category": "Outcome of Board Meeting",
+      "text": "Vedanta Power Limited has submitted to the Exchange, the unaudited financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "VEDPOWER__106834498",
+      "symbol": "VEDPOWER",
+      "category": "Options to purchase securities",
+      "text": "Vedanta Power Limited has informed the Exchange about Options to purchase securities",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "VOGL__106835254",
+      "symbol": "VOGL",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Vedanta Oil and Gas Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "VOGL__106834696",
+      "symbol": "VOGL",
+      "category": "Resignation of Director/KMP/SMP",
+      "text": "Vedanta Oil and Gas Limited has informed the Exchange about Resignation of Director/KMP/SMP",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "VOGL__106834556",
+      "symbol": "VOGL",
+      "category": "Cessation",
+      "text": "Vedanta Oil and Gas Limited has informed the Exchange regarding Cessation of Ms Shivangi Dhanuka as Company Secretary & Compliance Officer of the company w.e.f. October 31, 2026.",
+      "strategy": "light",
+      "reason": "director change (generic)"
+    },
+    {
+      "id": "VOGL__106834551",
+      "symbol": "VOGL",
+      "category": "Appointment",
+      "text": "Vedanta Oil and Gas Limited has informed the Exchange regarding Appointment of Mr Rupesh Kumar as Company Secretary & Compliance Officer of the company w.e.f. November 01, 2026.",
+      "strategy": "light",
+      "reason": "appointment name+role"
+    },
+    {
+      "id": "VOGL__106834545",
+      "symbol": "VOGL",
+      "category": "Press Release",
+      "text": "Vedanta Oil and Gas Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Press Release in respect of the Financial Results;\".",
+      "strategy": "deep",
+      "reason": "results press release"
+    },
+    {
+      "id": "VOGL__106834544",
+      "symbol": "VOGL",
+      "category": "Investor Presentation",
+      "text": "Vedanta Oil and Gas Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "VOGL__106834513",
+      "symbol": "VOGL",
+      "category": "Change in Company Secretary/Compliance Officer",
+      "text": "Vedanta Oil and Gas Limited has informed the Exchange about Change in Company Secretary/Compliance Officer",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "VOGL__106834492",
+      "symbol": "VOGL",
+      "category": "Outcome of Board Meeting",
+      "text": "Vedanta Oil and Gas Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "NCC__106834639",
+      "symbol": "NCC",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "NCC Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "PRIVISCL__106834065",
+      "symbol": "PRIVISCL",
+      "category": "General Updates",
+      "text": "Privi Speciality Chemicals Limited has informed the Exchange about outcome of the board meeting , declaration of financial results Q2 FY 27, interim dividend and proposed investment in solar power project.",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "PRIVISCL__106834051",
+      "symbol": "PRIVISCL",
+      "category": "Record Date",
+      "text": "Privi Speciality Chemicals Limited has informed the Exchange that Record date for the purpose of Dividend  is 04-Nov-2026.",
+      "strategy": "light",
+      "reason": "record date"
+    },
+    {
+      "id": "PRIVISCL__106834027",
+      "symbol": "PRIVISCL",
+      "category": "Dividend",
+      "text": "Privi Speciality Chemicals Limited has informed the Exchange that Board of Directors at its meeting held on October 29, 2026, declared Interim Dividend of Rs. 05 per equity share.",
+      "strategy": "light",
+      "reason": "dividend: dividend of rs. 05 "
+    },
+    {
+      "id": "PRIVISCL__106834005",
+      "symbol": "PRIVISCL",
+      "category": "Outcome of Board Meeting",
+      "text": "Privi Speciality Chemicals Limited has submitted to the Exchange, the outcome of the Board Meeting held on October 29,2026.",
+      "strategy": "deep",
+      "reason": "board meeting outcome"
+    },
+    {
+      "id": "PARAS__106834023",
+      "symbol": "PARAS",
+      "category": "Outcome of Board Meeting",
+      "text": "Paras Defence And Space Technologies Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "AARTIPHARM__106835047",
+      "symbol": "AARTIPHARM",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Aarti Pharmalabs Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "AARTIPHARM__106834043",
+      "symbol": "AARTIPHARM",
+      "category": "Investor Presentation",
+      "text": "Aarti Pharmalabs Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "VISL__106833852",
+      "symbol": "VISL",
+      "category": "Resignation of Director/KMP/SMP",
+      "text": "Vedanta Iron and Steel Limited has informed the Exchange about Resignation of Director/KMP/SMP",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "VISL__106833737",
+      "symbol": "VISL",
+      "category": "Copy of Newspaper Publication",
+      "text": "Please refer the enclosed intimation of newspaper publication by the Company.",
+      "strategy": "skip",
+      "reason": "newspaper publication"
+    },
+    {
+      "id": "TENNIND__106834200",
+      "symbol": "TENNIND",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Tenneco Clean Air India Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "JMFINANCIL__106834988",
+      "symbol": "JMFINANCIL",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "JM Financial Limited has informed the Exchange about the Earnings Conference Call - Financial Performance for the second quarter and half year ended September 30, 2026.",
+      "strategy": "skip",
+      "reason": "skip_category"
+    },
+    {
+      "id": "IDBI__106834123",
+      "symbol": "IDBI",
+      "category": "Copy of Newspaper Publication",
+      "text": "IDBI Bank Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "INOXINDIA__106835026",
+      "symbol": "INOXINDIA",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "INOX India Limited has informed the Exchange about Intimation of Q2 FY27 Results Conference Call.",
+      "strategy": "skip",
+      "reason": "intimation of q2"
+    },
+    {
+      "id": "SGMART__106834675",
+      "symbol": "SGMART",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "SG Mart Limited has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "GRAVITA__106834970",
+      "symbol": "GRAVITA",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Gravita India Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "ACE__106834133",
+      "symbol": "ACE",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Action Construction Equipment Limited has informed the Exchange about ntimation of scheduled Conference Call meeting",
+      "strategy": "skip",
+      "reason": "skip_category"
+    },
+    {
+      "id": "IIFLCAPS__106834364",
+      "symbol": "IIFLCAPS",
+      "category": "Copy of Newspaper Publication",
+      "text": "IIFL Capital Services Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "IIFLCAPS__106834254",
+      "symbol": "IIFLCAPS",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "IIFL Capital Services Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "IIFLCAPS__106834246",
+      "symbol": "IIFLCAPS",
+      "category": "Copy of Newspaper Publication",
+      "text": "IIFL Capital Services Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "IIFLCAPS__106834058",
+      "symbol": "IIFLCAPS",
+      "category": "ESOP/ESOS/ESPS",
+      "text": "IIFL Capital Services Limited has informed the Exchange regarding Allotment of 180499  Shares.",
+      "strategy": "light",
+      "reason": "esop allotment: 180499 shares"
+    },
+    {
+      "id": "IIFLCAPS__106834054",
+      "symbol": "IIFLCAPS",
+      "category": "ESOP/ESOS/ESPS",
+      "text": "IIFL Capital Services Limited has informed the Exchange regarding Grant of 29713  Options.",
+      "strategy": "light",
+      "reason": "esop grant: 29713"
+    },
+    {
+      "id": "IIFLCAPS__106833899",
+      "symbol": "IIFLCAPS",
+      "category": "Updates",
+      "text": "ICICI Securities Limited has Submitted to the Exchange a copy of Letter of Offer.",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "YATHARTH__106834347",
+      "symbol": "YATHARTH",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "We hereby submit Schedule of Earnings Conference Call Q2FY27.",
+      "strategy": "skip",
+      "reason": "schedule of earnings"
+    },
+    {
+      "id": "KIRLOSBROS__106833912",
+      "symbol": "KIRLOSBROS",
+      "category": "Change in Director(s)",
+      "text": "Kirloskar Brothers Limited has informed the Exchange regarding Change in Director(s) of the company.",
+      "strategy": "light",
+      "reason": "director change (generic)"
+    },
+    {
+      "id": "AVL__106835210",
+      "symbol": "AVL",
+      "category": "General Updates",
+      "text": "Aditya Vision Limited has informed the Exchange about General Updates-Opening of Showroom",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "ABDL__106833826",
+      "symbol": "ABDL",
+      "category": "Copy of Newspaper Publication",
+      "text": "Newspaper advertisement, pertaining to Unaudited Financial Results (Standalone and Consolidated) of the Company for the Quarter and Half Year ended on September 30, 2026",
+      "strategy": "skip",
+      "reason": "newspaper advertisement"
+    },
+    {
+      "id": "CLEAN__106835124",
+      "symbol": "CLEAN",
+      "category": "General Updates",
+      "text": "Disclosure under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 for intimation of successful conduct and completion of product trials by Clean Fino-Chem Limited, Wholly Owned Subsidiary of the Company.",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "AEQUS__106834843",
+      "symbol": "AEQUS",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Aequs Limited has informed the Exchange about Transcript of Earnings Conference Call pertaining to the Un-audited Financial Results of the Company for the quarter and half year ended September 30, 2026",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "NUVOCO__106834158",
+      "symbol": "NUVOCO",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Nuvoco Vistas Corporation Limited has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "AEGISVOPAK__106835434",
+      "symbol": "AEGISVOPAK",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Aegis Vopak Terminals Limited has informed the Exchange about Schedule of Q2 Earnings Call",
+      "strategy": "skip",
+      "reason": "schedule of q"
+    },
+    {
+      "id": "AFCONS__106835037",
+      "symbol": "AFCONS",
+      "category": "Bagging/Receiving of orders/contracts",
+      "text": "Afcons Infrastructure Limited has informed the Exchange about copy of Press Release titled  Afcons to build connecting Expressway for Jewar Airport & Underground Lucknow Metro Secures EPC orders worth &#8377;3,469 crores",
+      "strategy": "deep",
+      "reason": "order (no size in text)"
+    },
+    {
+      "id": "AFCONS__106834978",
+      "symbol": "AFCONS",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Afcons Infrastructure Limited has informed the Exchange about Intimation of  Q2 & H1 FY27 Earnings Conference Call  on Unaudited Financial Results of the Company for the Quarter and Half Year Ended September 30, 2026",
+      "strategy": "skip",
+      "reason": "skip_category"
+    },
+    {
+      "id": "ARVINDFASN__106834203",
+      "symbol": "ARVINDFASN",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Arvind Fashions Limited has informed the Exchange about Schedule of meet.",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "HCG__106835091",
+      "symbol": "HCG",
+      "category": "Copy of Newspaper Publication",
+      "text": "Healthcare Global Enterprises Limited has informed the Exchange about Copy of Newspaper Publication in respect of Special Window for transfer and dematerialisation of Physical Securities of the Company.",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "PRAJIND__106834681",
+      "symbol": "PRAJIND",
+      "category": "Press Release",
+      "text": "Praj Industries Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Praj announces Q2 FY27 results\".",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "PRAJIND__106834568",
+      "symbol": "PRAJIND",
+      "category": "Resignation of Director/KMP/SMP",
+      "text": "Praj Industries Limited has informed the Exchange about Resignation of Director/KMP/SMP",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "PRAJIND__106834508",
+      "symbol": "PRAJIND",
+      "category": "Outcome of Board Meeting",
+      "text": "Praj Industries Limited has informed the Exchange regarding Outcome of Board Meeting held on October 29, 2026.",
+      "strategy": "deep",
+      "reason": "board meeting outcome"
+    },
+    {
+      "id": "PRAJIND__106834482",
+      "symbol": "PRAJIND",
+      "category": "Outcome of Board Meeting",
+      "text": "Praj Industries Limited has informed the Exchange regarding Outcome of Board Meeting held on October 29, 2026.",
+      "strategy": "deep",
+      "reason": "board meeting outcome"
+    },
+    {
+      "id": "PRAJIND__106834438",
+      "symbol": "PRAJIND",
+      "category": "Outcome of Board Meeting",
+      "text": "Praj Industries Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "THYROCARE__106835418",
+      "symbol": "THYROCARE",
+      "category": "Shareholders meeting",
+      "text": "Thyrocare Technologies Limited has submitted the Exchange a copy of Scrutinizers report of Postal Ballot and Voting results.",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "THYROCARE__106835370",
+      "symbol": "THYROCARE",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Thyrocare Technologies Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "THYROCARE__106834443",
+      "symbol": "THYROCARE",
+      "category": "Investor Presentation",
+      "text": "Thyrocare Technologies Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "THYROCARE__106834423",
+      "symbol": "THYROCARE",
+      "category": "Press Release",
+      "text": "Thyrocare Technologies Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Press Release on Unaudited Financial Results (Standalone and Consolidated) for the quarter and half year ended September 30, 2026\".",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "THYROCARE__106834355",
+      "symbol": "THYROCARE",
+      "category": "Outcome of Board Meeting",
+      "text": "Thyrocare Technologies Limited has submitted to the Exchange, outcome of board meeting held on October 29, 2026, inter-alia  considered and approved the un-audited financial results for the quarter and half year ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "PRECWIRE__106833815",
+      "symbol": "PRECWIRE",
+      "category": "General Updates",
+      "text": "Precision Wires India Limited has informed the Exchange about Commencement of CommercialProduction at Copper Refining/Recycling Facility at Zaroli, Gujarat",
+      "strategy": "deep",
+      "reason": "capacity/commissioning"
+    },
+    {
+      "id": "SENORES__106834989",
+      "symbol": "SENORES",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Senores Pharmaceuticals Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "SENORES__106834699",
+      "symbol": "SENORES",
+      "category": "Monitoring Agency Report",
+      "text": "Senores Pharmaceuticals Limited has informed the exchange regarding Monitoring Agency report for the quarter ended September 30, 2026",
+      "strategy": "skip",
+      "reason": "monitoring agency report"
+    },
+    {
+      "id": "SENORES__106834701",
+      "symbol": "SENORES",
+      "category": "Statement of deviation(s) or variation(s) under Reg. 32",
+      "text": "Senores Pharmaceuticals Limited has informed the Exchange about statement of deviation(s) or variation(s) under Reg. 32",
+      "strategy": "skip",
+      "reason": "statement of deviation"
+    },
+    {
+      "id": "SENORES__106834700",
+      "symbol": "SENORES",
+      "category": "Statement of deviation(s) or variation(s) under Reg. 32",
+      "text": "Senores Pharmaceuticals Limited has informed the Exchange about statement of deviation(s) or variation(s) under Reg. 32",
+      "strategy": "skip",
+      "reason": "statement of deviation"
+    },
+    {
+      "id": "SENORES__106834165",
+      "symbol": "SENORES",
+      "category": "Investor Presentation",
+      "text": "Senores Pharmaceuticals Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "SENORES__106834095",
+      "symbol": "SENORES",
+      "category": "Change in Auditors",
+      "text": "Senores Pharmaceuticals Limited has informed the Exchange regarding Change in Auditors of the company.",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "SENORES__106834088",
+      "symbol": "SENORES",
+      "category": "Press Release",
+      "text": "Senores Pharmaceuticals Limited has informed the Exchange regarding a Media release dated October 29, 2026",
+      "strategy": "deep",
+      "reason": "press release (default deep)"
+    },
+    {
+      "id": "SENORES__106834078",
+      "symbol": "SENORES",
+      "category": "Capacity addition",
+      "text": "Senores Pharmaceuticals Limited has informed the Exchange about Capacity expansion",
+      "strategy": "deep",
+      "reason": "capacity/commissioning"
+    },
+    {
+      "id": "SENORES__106834075",
+      "symbol": "SENORES",
+      "category": "Outcome of Board Meeting",
+      "text": "Senores Pharmaceuticals Limited has submitted to the Exchange Outcome of board Meeting held on October 29, 2026",
+      "strategy": "deep",
+      "reason": "board meeting outcome"
+    },
+    {
+      "id": "SUDEEPPHRM__106834962",
+      "symbol": "SUDEEPPHRM",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Sudeep Pharma Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "SUDEEPPHRM__106833689",
+      "symbol": "SUDEEPPHRM",
+      "category": "Copy of Newspaper Publication",
+      "text": "Sudeep Pharma Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "HEGAM__106835424",
+      "symbol": "HEGAM",
+      "category": "Copy of Newspaper Publication",
+      "text": "HEG Advanced Materials Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "HEGAM__106835419",
+      "symbol": "HEGAM",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "HEG Advanced Materials Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "HEGAM__106835412",
+      "symbol": "HEGAM",
+      "category": "Updates",
+      "text": "HEG Advanced Materials Limited has informed the Exchange regarding 'change of Corporate Identification Number (CIN) of the Company'.",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "NEWGEN__106835314",
+      "symbol": "NEWGEN",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Newgen Software Technologies Limited has informed the Exchange about Transcript -Conference Call   Q2 FY 27",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "EMBDL__106834694",
+      "symbol": "EMBDL",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Earnings conference call - Intimation under Regulation 30 of SEBI (LODR) Regulations, 2015",
+      "strategy": "skip",
+      "reason": "skip_category"
+    },
+    {
+      "id": "EMBDL__106833710",
+      "symbol": "EMBDL",
+      "category": "Acquisition",
+      "text": "Execution of Share Purchase Agreement for acquisition of balance equity stake in Embassy Columbia Pacific ASL Private Limited.",
+      "strategy": "deep",
+      "reason": "acquisition"
+    },
+    {
+      "id": "EMBDL__106833672",
+      "symbol": "EMBDL",
+      "category": "General Updates",
+      "text": "Execution of Share Purchase Agreement for acquisition of balance equity stake in Embassy Columbia Pacific ASL Private Limited.",
+      "strategy": "deep",
+      "reason": "acquisition"
+    },
+    {
+      "id": "IONEXCHANG__106834148",
+      "symbol": "IONEXCHANG",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "ION Exchange (India) Limited has informed the Exchange about the revised Intimation of Earnings Conference Call",
+      "strategy": "skip",
+      "reason": "intimation of earnings conference call"
+    },
+    {
+      "id": "BAJAJCON__106833922",
+      "symbol": "BAJAJCON",
+      "category": "Copy of Newspaper Publication",
+      "text": "Bajaj Consumer Care Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "SAMHI__106835333",
+      "symbol": "SAMHI",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Samhi Hotels Limited has informed the Exchange about Schedule of meet of Earnings Call (group) with the Investors or Analysts on the Unaudited Financial Results for the quarter and six months ended 30th September 2026 is scheduled for Wednesday, 04th November 2026 at 09:30 a.m. (IST). The necessary ",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "KRN__106834885",
+      "symbol": "KRN",
+      "category": "Monitoring Agency Report",
+      "text": "Monitoring Agency Report",
+      "strategy": "skip",
+      "reason": "monitoring agency report"
+    },
+    {
+      "id": "KRN__106834806",
+      "symbol": "KRN",
+      "category": "Updates",
+      "text": "KRN Heat Exchanger and Refrigeration Limited has informed the Exchange regarding 'Financial Results for the period ended September30,  2026'.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "KRN__106834741",
+      "symbol": "KRN",
+      "category": "Statement of deviation(s) or variation(s) under Reg. 32",
+      "text": "KRN Heat Exchanger and Refrigeration Limited has informed the Exchange about statement of deviation(s) or variation(s) under Reg. 32",
+      "strategy": "skip",
+      "reason": "statement of deviation"
+    },
+    {
+      "id": "KRN__106834552",
+      "symbol": "KRN",
+      "category": "Outcome of Board Meeting",
+      "text": "KRN Heat Exchanger and Refrigeration Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "BLUEJET__106834031",
+      "symbol": "BLUEJET",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Blue Jet Healthcare Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "ACI__106835235",
+      "symbol": "ACI",
+      "category": "ESOP/ESOS/ESPS",
+      "text": "Archean Chemical Industries Limited has informed the Exchange regarding Allotment of 6143  Shares.",
+      "strategy": "light",
+      "reason": "esop allotment: 6143 shares"
+    },
+    {
+      "id": "ACI__106834984",
+      "symbol": "ACI",
+      "category": "Outcome of Board Meeting",
+      "text": "Archean Chemical Industries Limited has submitted to the Exchange, the unaudited financial results for the  quarter ended & half year ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "BLS__106834575",
+      "symbol": "BLS",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "BLS International Services Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "JSFB__106834305",
+      "symbol": "JSFB",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Jana Small Finance Bank Limited has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "JWL__106833564",
+      "symbol": "JWL",
+      "category": "Press Release",
+      "text": "Jupiter Wagons Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Jupiter Wagons secures order for 2,583 BOXNHL and BOXNS wagons worth INR 1,140 crore from the Ministry of Railways\".",
+      "strategy": "light",
+      "reason": "order with amount: order for 2,583 boxnhl and boxns wagons worth inr 1,140 cror"
+    },
+    {
+      "id": "JWL__106833562",
+      "symbol": "JWL",
+      "category": "General Updates",
+      "text": "Jupiter Wagons Limited has informed the Exchange about securing order for 2,583 BOXNHL and BOXNS wagons worth INR 1,140 crore from the Ministry of Railways.",
+      "strategy": "light",
+      "reason": "order with amount: order for 2,583 boxnhl and boxns wagons worth inr 1,140 cror"
+    },
+    {
+      "id": "DBL__106833713",
+      "symbol": "DBL",
+      "category": "Bagging/Receiving of orders/contracts",
+      "text": "Dilip Buildcon Limited has informed the Exchange about Bagging/Receiving of orders/contracts",
+      "strategy": "deep",
+      "reason": "order (no size in text)"
+    },
+    {
+      "id": "STYLAMIND__106834829",
+      "symbol": "STYLAMIND",
+      "category": "Copy of Newspaper Publication",
+      "text": "Newspaper Publication - Financial Results.",
+      "strategy": "skip",
+      "reason": "newspaper publication"
+    },
+    {
+      "id": "STYLAMIND__106834565",
+      "symbol": "STYLAMIND",
+      "category": "Updates",
+      "text": "Investor Presentation on Unaudited Financial Results of the Company for Second Quarter (Q2) and Half Year Ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "EMIL__106834797",
+      "symbol": "EMIL",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Electronics Mart India Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "NORTHARC__106834703",
+      "symbol": "NORTHARC",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Northern Arc Capital Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "TEXRAIL__106834056",
+      "symbol": "TEXRAIL",
+      "category": "Bagging/Receiving of orders/contracts",
+      "text": "Texmaco Rail & Engineering Limited has informed the Exchange about Amendment in Contract from Ministry of Railways",
+      "strategy": "deep",
+      "reason": "order (no size in text)"
+    },
+    {
+      "id": "KISSHT__106835039",
+      "symbol": "KISSHT",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "OnEMI Technology Solutions Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "KISSHT__106833472",
+      "symbol": "KISSHT",
+      "category": "Press Release",
+      "text": "OnEMI Technology Solutions Limited has informed the Exchange regarding a press release dated October 28, 2026, titled \"Kissht delivers strong Q2FY27 performance; AUM reached &#8377;9,317 Cr, PAT doubles YoY to &#8377;125 Cr\".",
+      "strategy": "deep",
+      "reason": "results press release"
+    },
+    {
+      "id": "KISSHT__106833471",
+      "symbol": "KISSHT",
+      "category": "Investor Presentation",
+      "text": "OnEMI Technology Solutions Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "GAEL__106833894",
+      "symbol": "GAEL",
+      "category": "Credit Rating",
+      "text": "Gujarat Ambuja Exports Limited has informed the Exchange about Credit Rating",
+      "strategy": "light",
+      "reason": "credit rating"
+    },
+    {
+      "id": "RAILTEL__106835401",
+      "symbol": "RAILTEL",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Railtel Corporation Of India Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "RAILTEL__106833842",
+      "symbol": "RAILTEL",
+      "category": "Bagging/Receiving of orders/contracts",
+      "text": "Railtel Corporation Of India Limited has informed the Exchange about Bagging/Receiving of orders/contracts",
+      "strategy": "deep",
+      "reason": "order (no size in text)"
+    },
+    {
+      "id": "PNGJL__106835205",
+      "symbol": "PNGJL",
+      "category": "Investor Presentation",
+      "text": "P N Gadgil Jewellers Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "PNGJL__106834547",
+      "symbol": "PNGJL",
+      "category": "Monitoring Agency Report",
+      "text": "Monitoring Agency Report for the Quarter ended September 30, 2026",
+      "strategy": "skip",
+      "reason": "monitoring agency report"
+    },
+    {
+      "id": "PNGJL__106834335",
+      "symbol": "PNGJL",
+      "category": "Press Release",
+      "text": "P N Gadgil Jewellers Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"P N Gadgil Jewellers Delivers Q2 FY27 Revenue of 26,663.8 Mn; with 22.4% Revenue Growth, 57.1% EBITDA Growth & 52.7% PAT Growth; YoY\".",
+      "strategy": "light",
+      "reason": "key metrics in text"
+    },
+    {
+      "id": "PNGJL__106834277",
+      "symbol": "PNGJL",
+      "category": "Outcome of Board Meeting",
+      "text": "P N Gadgil Jewellers Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "AEROFLEX__106834748",
+      "symbol": "AEROFLEX",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Aeroflex Industries Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "AEROFLEX__106833853",
+      "symbol": "AEROFLEX",
+      "category": "Copy of Newspaper Publication",
+      "text": "Newspaper advertisement of extract of Un-audited Standalone and Consolidated Financial Results for the quarter and half year ended September 30, 2026.",
+      "strategy": "skip",
+      "reason": "newspaper advertisement"
+    },
+    {
+      "id": "GREAVESCOT__106835371",
+      "symbol": "GREAVESCOT",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Greaves Cotton Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "GREAVESCOT__106834576",
+      "symbol": "GREAVESCOT",
+      "category": "Press Release",
+      "text": "Greaves Cotton Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Press Release   Q2FY27\".",
+      "strategy": "deep",
+      "reason": "results press release"
+    },
+    {
+      "id": "GREAVESCOT__106834495",
+      "symbol": "GREAVESCOT",
+      "category": "Investor Presentation",
+      "text": "Greaves Cotton Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "GREAVESCOT__106834373",
+      "symbol": "GREAVESCOT",
+      "category": "Outcome of Board Meeting",
+      "text": "Greaves Cotton Limited has informed the Exchange regarding Outcome of Board Meeting held on October 29, 2026.",
+      "strategy": "deep",
+      "reason": "board meeting outcome"
+    },
+    {
+      "id": "GREAVESCOT__106834152",
+      "symbol": "GREAVESCOT",
+      "category": "Outcome of Board Meeting",
+      "text": "Greaves Cotton Limited has submitted to the Exchange, the financial results for the quarter and half year ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "GOLDIAM__106834479",
+      "symbol": "GOLDIAM",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Goldiam International Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "EBGNG__106835256",
+      "symbol": "EBGNG",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "GNG Electronics Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "TRANSRAILL__106833746",
+      "symbol": "TRANSRAILL",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Transrail Lighting Limited has informed the Exchange about Schedule of Earnings call on Wednesday, November 4, 2026, at 12:30 P.M. IST, for Unaudited Financial Results for the quarter and half ended September 30, 2026",
+      "strategy": "skip",
+      "reason": "schedule of earnings"
+    },
+    {
+      "id": "SHILCTECH__106835302",
+      "symbol": "SHILCTECH",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Shilchar Technologies Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "SURYAROSNI__106834476",
+      "symbol": "SURYAROSNI",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Surya Roshni Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "GOKULAGRO__106834421",
+      "symbol": "GOKULAGRO",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Gokul Agro Resources Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "GOKULAGRO__106833977",
+      "symbol": "GOKULAGRO",
+      "category": "Investor Presentation",
+      "text": "Gokul Agro Resources Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "PNCINFRA__106834910",
+      "symbol": "PNCINFRA",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "PNC Infratech Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "PNCINFRA__106834019",
+      "symbol": "PNCINFRA",
+      "category": "Investor Presentation",
+      "text": "PNC Infratech Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "JUSTDIAL__106835101",
+      "symbol": "JUSTDIAL",
+      "category": "Action(s) taken or orders passed",
+      "text": "Disclosure under Regulation 30 of the Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015.",
+      "strategy": "light",
+      "reason": "compliance order"
+    },
+    {
+      "id": "UNIMECH__106835089",
+      "symbol": "UNIMECH",
+      "category": "General Updates",
+      "text": "In continuation of the disclosure submitted by the Company on October 27, 2026, regarding the acquisition of shares of Hobel Bellows Private Limited, and pursuant to Regulation 30 read with Part A of Schedule III of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 ( SEBI ",
+      "strategy": "deep",
+      "reason": "acquisition"
+    },
+    {
+      "id": "UNIMECH__106834849",
+      "symbol": "UNIMECH",
+      "category": "Copy of Newspaper Publication",
+      "text": "Unimech Aerospace and Manufacturing Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "DATAMATICS__106834332",
+      "symbol": "DATAMATICS",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Datamatics Global Services Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "THOMASCOOK__106833566",
+      "symbol": "THOMASCOOK",
+      "category": "Credit Rating",
+      "text": "Thomas Cook  (India)  Limited has informed the Exchange about Credit Rating",
+      "strategy": "light",
+      "reason": "credit rating"
+    },
+    {
+      "id": "KSCL__106834798",
+      "symbol": "KSCL",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Kaveri Seed Company Limited has informed the Exchange about Link of Recording Management Commentary on Un-audited Standalone and Consolidated Financial Results of the Company for the quarter ended September 30, 2026.",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "KSCL__106833917",
+      "symbol": "KSCL",
+      "category": "Copy of Newspaper Publication",
+      "text": "Kaveri Seed Company Limited has informed the Exchange about Copy of Newspaper Publication of the Un-audited Financial Results of the company for the quarter ended 30th September, 2026 published in Business Standard (English) and Nava Telangana (Telugu) on 29th October, 2026.",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "KSCL__106833907",
+      "symbol": "KSCL",
+      "category": "Press Release",
+      "text": "Kaveri Seed Company Limited has informed the Exchange regarding a press release dated October 28, 2026, titled \"Press Release \". Press Release dated 28th October, 2026 on the Un-audited Standalone and Consolidated Financial Results of the Company for the quarter ended 30th September, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "KSCL__106833892",
+      "symbol": "KSCL",
+      "category": "Investor Presentation",
+      "text": "Kaveri Seed Company Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "REFEX__106834990",
+      "symbol": "REFEX",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Audio recording for the Earnings Call held for the 2nd quarter and half year ended September 30, 2026 for FY27",
+      "strategy": "skip",
+      "reason": "audio recording"
+    },
+    {
+      "id": "REFEX__106834949",
+      "symbol": "REFEX",
+      "category": "Copy of Newspaper Publication",
+      "text": "Publication of extracts of the Unaudited Financial Results, both Standalone & Consolidated basis, for the 2nd Quarter and half year ended September 30, 2026 of FY27  in Newspapers",
+      "strategy": "skip",
+      "reason": "skip_category"
+    },
+    {
+      "id": "CAPILLARY__106834099",
+      "symbol": "CAPILLARY",
+      "category": "Press Release",
+      "text": "Capillary Technologies India Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Press Release - Capillary Strengthens US Leadership, Names Bill Swift as President, Americas.\".",
+      "strategy": "deep",
+      "reason": "press release (default deep)"
+    },
+    {
+      "id": "RAYMONDLSL__106834956",
+      "symbol": "RAYMONDLSL",
+      "category": "Copy of Newspaper Publication",
+      "text": "Raymond Lifestyle Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "VAIBHAVGBL__106835320",
+      "symbol": "VAIBHAVGBL",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Vaibhav Global Limited has informed the Exchange about Link of Recording",
+      "strategy": "skip",
+      "reason": "link of recording"
+    },
+    {
+      "id": "VAIBHAVGBL__106833521",
+      "symbol": "VAIBHAVGBL",
+      "category": "Press Release",
+      "text": "Vaibhav Global Limited has informed the Exchange regarding a press release dated October 28, 2026, titled \"H1 & Q2 FY27 Financial Results\".",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "VAIBHAVGBL__106833519",
+      "symbol": "VAIBHAVGBL",
+      "category": "Investor Presentation",
+      "text": "Vaibhav Global Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "VAIBHAVGBL__106833480",
+      "symbol": "VAIBHAVGBL",
+      "category": "Record Date",
+      "text": "Vaibhav Global Limited has informed the Exchange that Record date for the purpose of Dividend  is 04-Nov-2026.",
+      "strategy": "light",
+      "reason": "record date"
+    },
+    {
+      "id": "VAIBHAVGBL__106833476",
+      "symbol": "VAIBHAVGBL",
+      "category": "Outcome of Board Meeting",
+      "text": "Vaibhav Global Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "VAIBHAVGBL__106833478",
+      "symbol": "VAIBHAVGBL",
+      "category": "Outcome of Board Meeting",
+      "text": "Vaibhav Global Limited has informed the Exchange regarding Outcome of Board Meeting held on October 28, 2026.",
+      "strategy": "deep",
+      "reason": "board meeting outcome"
+    },
+    {
+      "id": "VAIBHAVGBL__106833477",
+      "symbol": "VAIBHAVGBL",
+      "category": "Dividend",
+      "text": "Vaibhav Global Limited has informed the Exchange that Board of Directors at its meeting held on October 28, 2026, declared Interim Dividend of Rs. 1.50 per equity share.",
+      "strategy": "light",
+      "reason": "dividend: dividend of rs. 1.50 "
+    },
+    {
+      "id": "ELLEN__106834584",
+      "symbol": "ELLEN",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Ellenbarrie Industrial Gases Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "GUJALKALI__106835208",
+      "symbol": "GUJALKALI",
+      "category": "General Updates",
+      "text": "Gujarat Alkalies and Chemicals Limited has informed the Exchange about General Updates. We would like to inform that out of total capacity of 75.9 MW (Phase-1: 16.5 MW and Phase-2: 59.4 MW) of Clean Max Renewable Hybrid Power Project, 6.6 MW Hybrid Power installation (Out of Phase-1: 16.5 MW) has be",
+      "strategy": "deep",
+      "reason": "capacity/commissioning"
+    },
+    {
+      "id": "ROUTE__106834202",
+      "symbol": "ROUTE",
+      "category": "Copy of Newspaper Publication",
+      "text": "ROUTE MOBILE LIMITED has informed the Exchange about Copy of Newspaper Publication for Unaudited Financial Results for the quarter and half year ended September 30, 2026.",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "ADROITIND__106834750",
+      "symbol": "ADROITIND",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Adroit Industries (India) Limited has informed the Exchange about Link of Audio Recording",
+      "strategy": "skip",
+      "reason": "audio recording"
+    },
+    {
+      "id": "ADROITIND__106834334",
+      "symbol": "ADROITIND",
+      "category": "Copy of Newspaper Publication",
+      "text": "Adroit Industries (India) Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "ARCIL__106835167",
+      "symbol": "ARCIL",
+      "category": "General Updates",
+      "text": "Asset Reconstruction Company (India) Limited has informed the Exchange regarding Investor Presentation along with performance highlights of the Company for the quarter (Q2) and half year ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "ARCIL__106835127",
+      "symbol": "ARCIL",
+      "category": "Press Release",
+      "text": "Asset Reconstruction Company (India) Limited has informed the Exchange regarding a press release dated October 29, 2026, with respect to Financial Results for the quarter (Q2) and half year ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "ARCIL__106835060",
+      "symbol": "ARCIL",
+      "category": "Outcome of Board Meeting",
+      "text": "Asset Reconstruction Company (India) Limited has submitted to the Exchange, inter alia approved the financial results for the quarter and half year ended September 30, 2026, re-appointment of Independent Director and Internal Auditor, and appointment of Senior Management Personnel.",
+      "strategy": "light",
+      "reason": "appointment name+role"
+    },
+    {
+      "id": "ARDEE__106834146",
+      "symbol": "ARDEE",
+      "category": "Copy of Newspaper Publication",
+      "text": "Ardee Industries Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "AYE__106835098",
+      "symbol": "AYE",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Aye Finance Limited has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "BAGFILMS__106834252",
+      "symbol": "BAGFILMS",
+      "category": "Copy of Newspaper Publication",
+      "text": "B.A.G Films and Media Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "BTML__106834632",
+      "symbol": "BTML",
+      "category": "Shareholders meeting",
+      "text": "Bodhi Tree Multimedia Limited has submitted the Exchange a copy Srutinizers report of  Extraordinary General Meeting held on October 28, 2026. Further, the company has informed the Exchange regarding voting results.",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "DEEPA__106835043",
+      "symbol": "DEEPA",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Deepa Jewellers Limited has informed the Exchange about Transcript for the earnings investor conference call for un-audited financial results for the quarter and half year ended September 30, 2026.",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "ELEVATE__106834269",
+      "symbol": "ELEVATE",
+      "category": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+      "text": "Intimation regarding Reconciliation of Share Capital Audit Report for the quarter ended September 30, 2026 under SEBI (Depositories and Participants) Regulations, 2018",
+      "strategy": "skip",
+      "reason": "reconciliation of share capital"
+    },
+    {
+      "id": "GTPL__106833937",
+      "symbol": "GTPL",
+      "category": "Copy of Newspaper Publication",
+      "text": "GTPL Hathway Limited has informed the Exchange about Copy of Newspaper Publication - Postal Ballot notice and other related information",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "HORIZONIND__106835354",
+      "symbol": "HORIZONIND",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Horizon Industrial Parks Limited has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "HORIZONIND__106834590",
+      "symbol": "HORIZONIND",
+      "category": "Press Release",
+      "text": "Horizon Industrial Parks Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Press Release and Presentation on the Unaudited Financial Results for the quarter ended September 30, 2026\".",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "HORIZONIND__106834512",
+      "symbol": "HORIZONIND",
+      "category": "Outcome of Board Meeting",
+      "text": "Horizon Industrial Parks Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "LALITHAA__106834645",
+      "symbol": "LALITHAA",
+      "category": "Allotment of Securities",
+      "text": "Lalithaa Jewellery Mart Limited has informed the Exchange regarding allotment of  securities pursuant to Other at its meeting held on 0 ,",
+      "strategy": "light",
+      "reason": "debt issuance/allotment"
+    },
+    {
+      "id": "MILKYMIST__106834579",
+      "symbol": "MILKYMIST",
+      "category": "Investor Presentation",
+      "text": "Milky Mist Dairy Food Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "MILKYMIST__106834542",
+      "symbol": "MILKYMIST",
+      "category": "Change in Management",
+      "text": "Milky Mist Dairy Food Limited has informed the Exchange about change in Management",
+      "strategy": "deep",
+      "reason": "management change"
+    },
+    {
+      "id": "MILKYMIST__106834475",
+      "symbol": "MILKYMIST",
+      "category": "Outcome of Board Meeting",
+      "text": "Milky Mist Dairy Food Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "MONEYVIEW__106835169",
+      "symbol": "MONEYVIEW",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Intimation of schedule of Earnings Conference Call for Q2 and H1 FY27",
+      "strategy": "skip",
+      "reason": "schedule of earnings"
+    },
+    {
+      "id": "NITYAS__106833829",
+      "symbol": "NITYAS",
+      "category": "Copy of Newspaper Publication",
+      "text": "Nityas Gems and Jewellery Limited has informed the Exchange about Copy of Newspaper Publication",
+      "strategy": "skip",
+      "reason": "copy of newspaper publication"
+    },
+    {
+      "id": "ONMOBILE__106833945",
+      "symbol": "ONMOBILE",
+      "category": "Press Release",
+      "text": "This is to inform you that OnMobile Global Limited is issuing a press release titled  OnMobile Partners with Savex Technologies to Expand ONMO+ Smart Console Distribution Across India , a copy of which is enclosed herewith.",
+      "strategy": "deep",
+      "reason": "press release (default deep)"
+    },
+    {
+      "id": "ONMOBILE__106833518",
+      "symbol": "ONMOBILE",
+      "category": "Arrangements for strategic, technical, manufacturing, or marketing tie up",
+      "text": "Pursuant to Regulation 30 read with Part B of Schedule III of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, we would like to inform you that the Company has entered into a Distribution Agreement with Savex Technologies Private Limited on 28th October 2026 for the distribu",
+      "strategy": "deep",
+      "reason": "strategic tie-up"
+    },
+    {
+      "id": "ONMOBILE__106833475",
+      "symbol": "ONMOBILE",
+      "category": "Investor Presentation",
+      "text": "OnMobile Global Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "ONMOBILE__106833474",
+      "symbol": "ONMOBILE",
+      "category": "Press Release",
+      "text": "OnMobile Global Limited has informed the Exchange regarding a press release dated October 28, 2026, titled \"OnMobile Reports Second Quarter of Fiscal Year 2027 Results\".",
+      "strategy": "deep",
+      "reason": "results press release"
+    },
+    {
+      "id": "PRASOLCHEM__106834478",
+      "symbol": "PRASOLCHEM",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "Prasol Chemicals Limited has informed the Exchange about Schedule of meet",
+      "strategy": "skip",
+      "reason": "schedule of meet"
+    },
+    {
+      "id": "RENTOMOJO__106835279",
+      "symbol": "RENTOMOJO",
+      "category": "General Updates",
+      "text": "Rentomojo Limited has informed the Exchange about General Updates",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "RSL__106834352",
+      "symbol": "RSL",
+      "category": "General Updates",
+      "text": "Rajputana Stainless Limited has informed the Exchange about hosting Earnings Conference call for analysts and investors on Tuesday, November 03, 2026.",
+      "strategy": "deep",
+      "reason": "default deep"
+    },
+    {
+      "id": "SBIFUNDS__106834199",
+      "symbol": "SBIFUNDS",
+      "category": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "text": "SBI Funds Management Limited has informed the Exchange about Transcript",
+      "strategy": "skip",
+      "reason": "informed the exchange about transcript"
+    },
+    {
+      "id": "SKYWAYS__106835239",
+      "symbol": "SKYWAYS",
+      "category": "Acquisition",
+      "text": "Skyways Air Services Limited has informed the Exchange about Acquisition",
+      "strategy": "deep",
+      "reason": "acquisition"
+    },
+    {
+      "id": "STEAMHOUSE__106835057",
+      "symbol": "STEAMHOUSE",
+      "category": "Investor Presentation",
+      "text": "Steamhouse India Limited has informed the Exchange about Investor Presentation",
+      "strategy": "deep",
+      "reason": "investor presentation"
+    },
+    {
+      "id": "STEAMHOUSE__106834820",
+      "symbol": "STEAMHOUSE",
+      "category": "Statement of deviation(s) or variation(s) under Reg. 32",
+      "text": "Steamhouse India Limited has informed the Exchange about statement of deviation(s) or variation(s) under Reg. 32",
+      "strategy": "skip",
+      "reason": "statement of deviation"
+    },
+    {
+      "id": "STEAMHOUSE__106834732",
+      "symbol": "STEAMHOUSE",
+      "category": "Press Release",
+      "text": "Steamhouse India Limited has informed the Exchange regarding a press release dated October 29, 2026, titled \"Press release on the financial performance of the Company for the quarter ended 30th September 2026.\".",
+      "strategy": "deep",
+      "reason": "results press release"
+    },
+    {
+      "id": "STEAMHOUSE__106834595",
+      "symbol": "STEAMHOUSE",
+      "category": "Integrated Filing- Financial",
+      "text": "Pursuant to Regulation 30 read with Regulation 33 of the Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015, as amended (\"SEBI Listing Regulations\"), we hereby inform you that the Board of Directors (\"Board\") of Steamhouse India Limited (\"Compa",
+      "strategy": "deep",
+      "reason": "financial filing"
+    },
+    {
+      "id": "STEAMHOUSE__106834483",
+      "symbol": "STEAMHOUSE",
+      "category": "Outcome of Board Meeting",
+      "text": "Steamhouse India Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "TIPSFILMS__106834085",
+      "symbol": "TIPSFILMS",
+      "category": "Outcome of Board Meeting",
+      "text": "Tips Films Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+      "strategy": "deep",
+      "reason": "financial results"
+    },
+    {
+      "id": "VNL__106834134",
+      "symbol": "VNL",
+      "category": "Updates",
+      "text": "Vishal Nirmiti Limited has informed the Exchange regarding 'Press Release as per Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements)Regulations, 2015'.",
+      "strategy": "deep",
+      "reason": "default deep"
+    }
+  ]
+}
