@@ -1,0 +1,160 @@
+{
+  "index": "NIFTY500 MQVLV50",
+  "as_of": "2026-10-29",
+  "count": 51,
+  "constituents": [
+    {
+      "symbol": "NIFTY500 MULTIFACTOR MQVLV 50"
+    },
+    {
+      "symbol": "TCS"
+    },
+    {
+      "symbol": "SBIN"
+    },
+    {
+      "symbol": "PIDILITIND"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "UNIONBANK"
+    },
+    {
+      "symbol": "HINDALCO"
+    },
+    {
+      "symbol": "POLYCAB"
+    },
+    {
+      "symbol": "CHENNPETRO"
+    },
+    {
+      "symbol": "CUMMINSIND"
+    },
+    {
+      "symbol": "PFC"
+    },
+    {
+      "symbol": "CANBK"
+    },
+    {
+      "symbol": "ITC"
+    },
+    {
+      "symbol": "SUNPHARMA"
+    },
+    {
+      "symbol": "BANKBARODA"
+    },
+    {
+      "symbol": "RECLTD"
+    },
+    {
+      "symbol": "POWERGRID"
+    },
+    {
+      "symbol": "COALINDIA"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "LUPIN"
+    },
+    {
+      "symbol": "HDFCAMC"
+    },
+    {
+      "symbol": "TMPV"
+    },
+    {
+      "symbol": "LICHSGFIN"
+    },
+    {
+      "symbol": "CIPLA"
+    },
+    {
+      "symbol": "NATIONALUM"
+    },
+    {
+      "symbol": "IOC"
+    },
+    {
+      "symbol": "REDINGTON"
+    },
+    {
+      "symbol": "ONGC"
+    },
+    {
+      "symbol": "HINDPETRO"
+    },
+    {
+      "symbol": "GAIL"
+    },
+    {
+      "symbol": "BPCL"
+    },
+    {
+      "symbol": "MARICO"
+    },
+    {
+      "symbol": "CAMS"
+    },
+    {
+      "symbol": "ZYDUSLIFE"
+    },
+    {
+      "symbol": "COLPAL"
+    },
+    {
+      "symbol": "CASTROLIND"
+    },
+    {
+      "symbol": "ASTERDM"
+    },
+    {
+      "symbol": "DABUR"
+    },
+    {
+      "symbol": "MSUMI"
+    },
+    {
+      "symbol": "PAGEIND"
+    },
+    {
+      "symbol": "BRITANNIA"
+    },
+    {
+      "symbol": "IRCTC"
+    },
+    {
+      "symbol": "ANANDRATHI"
+    },
+    {
+      "symbol": "IEX"
+    },
+    {
+      "symbol": "IRB"
+    },
+    {
+      "symbol": "ABSLAMC"
+    },
+    {
+      "symbol": "INDIAMART"
+    },
+    {
+      "symbol": "EMAMILTD"
+    },
+    {
+      "symbol": "ACC"
+    },
+    {
+      "symbol": "JSWDULUX"
+    },
+    {
+      "symbol": "GILLETTE"
+    }
+  ]
+}

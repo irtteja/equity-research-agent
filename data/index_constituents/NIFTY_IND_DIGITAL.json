@@ -1,0 +1,160 @@
+{
+  "index": "NIFTY IND DIGITAL",
+  "as_of": "2026-10-29",
+  "count": 51,
+  "constituents": [
+    {
+      "symbol": "NIFTY INDIA DIGITAL"
+    },
+    {
+      "symbol": "BSOFT"
+    },
+    {
+      "symbol": "TCS"
+    },
+    {
+      "symbol": "INFY"
+    },
+    {
+      "symbol": "BHARTIARTL"
+    },
+    {
+      "symbol": "OFSS"
+    },
+    {
+      "symbol": "CARTRADE"
+    },
+    {
+      "symbol": "MEESHO"
+    },
+    {
+      "symbol": "ETERNAL"
+    },
+    {
+      "symbol": "NETWEB"
+    },
+    {
+      "symbol": "PAYTM"
+    },
+    {
+      "symbol": "COFORGE"
+    },
+    {
+      "symbol": "WIPRO"
+    },
+    {
+      "symbol": "HCLTECH"
+    },
+    {
+      "symbol": "PERSISTENT"
+    },
+    {
+      "symbol": "IDEA"
+    },
+    {
+      "symbol": "TECHM"
+    },
+    {
+      "symbol": "SWIGGY"
+    },
+    {
+      "symbol": "KPITTECH"
+    },
+    {
+      "symbol": "POLICYBZR"
+    },
+    {
+      "symbol": "STLTECH"
+    },
+    {
+      "symbol": "LTTS"
+    },
+    {
+      "symbol": "NYKAA"
+    },
+    {
+      "symbol": "LTM"
+    },
+    {
+      "symbol": "TATAELXSI"
+    },
+    {
+      "symbol": "PINELABS"
+    },
+    {
+      "symbol": "NAUKRI"
+    },
+    {
+      "symbol": "ZENSARTECH"
+    },
+    {
+      "symbol": "TTML"
+    },
+    {
+      "symbol": "SAGILITY"
+    },
+    {
+      "symbol": "URBANCO"
+    },
+    {
+      "symbol": "MPHASIS"
+    },
+    {
+      "symbol": "PWL"
+    },
+    {
+      "symbol": "HEXT"
+    },
+    {
+      "symbol": "CYIENT"
+    },
+    {
+      "symbol": "TEJASNET"
+    },
+    {
+      "symbol": "TATATECH"
+    },
+    {
+      "symbol": "TATACOMM"
+    },
+    {
+      "symbol": "BBOX"
+    },
+    {
+      "symbol": "RAILTEL"
+    },
+    {
+      "symbol": "BLS"
+    },
+    {
+      "symbol": "IRCTC"
+    },
+    {
+      "symbol": "FRACTAL"
+    },
+    {
+      "symbol": "AFFLE"
+    },
+    {
+      "symbol": "INDIAMART"
+    },
+    {
+      "symbol": "BHARTIHEXA"
+    },
+    {
+      "symbol": "FIRSTCRY"
+    },
+    {
+      "symbol": "IKS"
+    },
+    {
+      "symbol": "INTELLECT"
+    },
+    {
+      "symbol": "TBOTEK"
+    },
+    {
+      "symbol": "ITI"
+    }
+  ]
+}

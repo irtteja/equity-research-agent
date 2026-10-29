@@ -1,0 +1,100 @@
+{
+  "index": "NIFTY200MOMENTM30",
+  "as_of": "2026-10-29",
+  "count": 31,
+  "constituents": [
+    {
+      "symbol": "NIFTY200 MOMENTUM 30"
+    },
+    {
+      "symbol": "BSE"
+    },
+    {
+      "symbol": "LAURUSLABS"
+    },
+    {
+      "symbol": "MCX"
+    },
+    {
+      "symbol": "SHRIRAMFIN"
+    },
+    {
+      "symbol": "HINDALCO"
+    },
+    {
+      "symbol": "VEDL"
+    },
+    {
+      "symbol": "IDEA"
+    },
+    {
+      "symbol": "POLYCAB"
+    },
+    {
+      "symbol": "ADANIPOWER"
+    },
+    {
+      "symbol": "BHEL"
+    },
+    {
+      "symbol": "CUMMINSIND"
+    },
+    {
+      "symbol": "POWERINDIA"
+    },
+    {
+      "symbol": "ADANIGREEN"
+    },
+    {
+      "symbol": "LTF"
+    },
+    {
+      "symbol": "GVT&D"
+    },
+    {
+      "symbol": "MOTHERSON"
+    },
+    {
+      "symbol": "FEDERALBNK"
+    },
+    {
+      "symbol": "KEI"
+    },
+    {
+      "symbol": "SAIL"
+    },
+    {
+      "symbol": "ABCAPITAL"
+    },
+    {
+      "symbol": "NTPC"
+    },
+    {
+      "symbol": "SOLARINDS"
+    },
+    {
+      "symbol": "TATASTEEL"
+    },
+    {
+      "symbol": "ADANIENSOL"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "CGPOWER"
+    },
+    {
+      "symbol": "NATIONALUM"
+    },
+    {
+      "symbol": "BHARATFORG"
+    },
+    {
+      "symbol": "ABB"
+    },
+    {
+      "symbol": "GLENMARK"
+    }
+  ]
+}

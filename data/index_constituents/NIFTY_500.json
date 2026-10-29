@@ -1,0 +1,1510 @@
+{
+  "index": "NIFTY 500",
+  "as_of": "2026-10-29",
+  "count": 501,
+  "constituents": [
+    {
+      "symbol": "360ONE"
+    },
+    {
+      "symbol": "ABB"
+    },
+    {
+      "symbol": "ACC"
+    },
+    {
+      "symbol": "ACMESOLAR"
+    },
+    {
+      "symbol": "AIAENG"
+    },
+    {
+      "symbol": "APLAPOLLO"
+    },
+    {
+      "symbol": "AUBANK"
+    },
+    {
+      "symbol": "AWL"
+    },
+    {
+      "symbol": "AADHARHFC"
+    },
+    {
+      "symbol": "AARTIIND"
+    },
+    {
+      "symbol": "AAVAS"
+    },
+    {
+      "symbol": "ABBOTINDIA"
+    },
+    {
+      "symbol": "ACE"
+    },
+    {
+      "symbol": "ACUTAAS"
+    },
+    {
+      "symbol": "ADANIENSOL"
+    },
+    {
+      "symbol": "ADANIENT"
+    },
+    {
+      "symbol": "ADANIGREEN"
+    },
+    {
+      "symbol": "ADANIPORTS"
+    },
+    {
+      "symbol": "ADANIPOWER"
+    },
+    {
+      "symbol": "ATGL"
+    },
+    {
+      "symbol": "ABCAPITAL"
+    },
+    {
+      "symbol": "ABREL"
+    },
+    {
+      "symbol": "ABSLAMC"
+    },
+    {
+      "symbol": "CPPLUS"
+    },
+    {
+      "symbol": "AEGISLOG"
+    },
+    {
+      "symbol": "AEGISVOPAK"
+    },
+    {
+      "symbol": "AETHER"
+    },
+    {
+      "symbol": "AFCONS"
+    },
+    {
+      "symbol": "AFFLE"
+    },
+    {
+      "symbol": "AJANTPHARM"
+    },
+    {
+      "symbol": "ALKEM"
+    },
+    {
+      "symbol": "ABDL"
+    },
+    {
+      "symbol": "ARE&M"
+    },
+    {
+      "symbol": "AMBER"
+    },
+    {
+      "symbol": "AMBUJACEM"
+    },
+    {
+      "symbol": "ANANDRATHI"
+    },
+    {
+      "symbol": "ANANTRAJ"
+    },
+    {
+      "symbol": "ANGELONE"
+    },
+    {
+      "symbol": "ANTHEM"
+    },
+    {
+      "symbol": "ANURAS"
+    },
+    {
+      "symbol": "APARINDS"
+    },
+    {
+      "symbol": "APOLLOHOSP"
+    },
+    {
+      "symbol": "APOLLOTYRE"
+    },
+    {
+      "symbol": "APTUS"
+    },
+    {
+      "symbol": "ASAHIINDIA"
+    },
+    {
+      "symbol": "ASHOKLEY"
+    },
+    {
+      "symbol": "ASIANPAINT"
+    },
+    {
+      "symbol": "ASTERDM"
+    },
+    {
+      "symbol": "ASTRAL"
+    },
+    {
+      "symbol": "ATHERENERG"
+    },
+    {
+      "symbol": "ATUL"
+    },
+    {
+      "symbol": "AUROPHARMA"
+    },
+    {
+      "symbol": "AIIL"
+    },
+    {
+      "symbol": "AVANTIFEED"
+    },
+    {
+      "symbol": "DMART"
+    },
+    {
+      "symbol": "AXISBANK"
+    },
+    {
+      "symbol": "AZAD"
+    },
+    {
+      "symbol": "BEML"
+    },
+    {
+      "symbol": "BLS"
+    },
+    {
+      "symbol": "BSE"
+    },
+    {
+      "symbol": "BAGMANE"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "BAJFINANCE"
+    },
+    {
+      "symbol": "BAJAJFINSV"
+    },
+    {
+      "symbol": "BAJAJHLDNG"
+    },
+    {
+      "symbol": "BAJAJHFL"
+    },
+    {
+      "symbol": "BALKRISIND"
+    },
+    {
+      "symbol": "BALRAMCHIN"
+    },
+    {
+      "symbol": "BANDHANBNK"
+    },
+    {
+      "symbol": "BANKBARODA"
+    },
+    {
+      "symbol": "BANKINDIA"
+    },
+    {
+      "symbol": "MAHABANK"
+    },
+    {
+      "symbol": "BATAINDIA"
+    },
+    {
+      "symbol": "BELRISE"
+    },
+    {
+      "symbol": "BERGEPAINT"
+    },
+    {
+      "symbol": "BHARATCOAL"
+    },
+    {
+      "symbol": "BDL"
+    },
+    {
+      "symbol": "BEL"
+    },
+    {
+      "symbol": "BHARATFORG"
+    },
+    {
+      "symbol": "BHEL"
+    },
+    {
+      "symbol": "BPCL"
+    },
+    {
+      "symbol": "BHARTIARTL"
+    },
+    {
+      "symbol": "BHARTIHEXA"
+    },
+    {
+      "symbol": "GROWW"
+    },
+    {
+      "symbol": "BIOCON"
+    },
+    {
+      "symbol": "BSOFT"
+    },
+    {
+      "symbol": "BBOX"
+    },
+    {
+      "symbol": "BLUESTARCO"
+    },
+    {
+      "symbol": "BOSCHLTD"
+    },
+    {
+      "symbol": "FIRSTCRY"
+    },
+    {
+      "symbol": "BRIGADE"
+    },
+    {
+      "symbol": "BRITANNIA"
+    },
+    {
+      "symbol": "BIRET"
+    },
+    {
+      "symbol": "CCL"
+    },
+    {
+      "symbol": "CESC"
+    },
+    {
+      "symbol": "CGPOWER"
+    },
+    {
+      "symbol": "CIEINDIA"
+    },
+    {
+      "symbol": "CRISIL"
+    },
+    {
+      "symbol": "CANFINHOME"
+    },
+    {
+      "symbol": "CANBK"
+    },
+    {
+      "symbol": "CANHLIFE"
+    },
+    {
+      "symbol": "CAPLIPOINT"
+    },
+    {
+      "symbol": "CGCL"
+    },
+    {
+      "symbol": "CARBORUNIV"
+    },
+    {
+      "symbol": "CARTRADE"
+    },
+    {
+      "symbol": "CASTROLIND"
+    },
+    {
+      "symbol": "CEATLTD"
+    },
+    {
+      "symbol": "CEMPRO"
+    },
+    {
+      "symbol": "CENTRALBK"
+    },
+    {
+      "symbol": "CDSL"
+    },
+    {
+      "symbol": "CMPDI"
+    },
+    {
+      "symbol": "CHAMBLFERT"
+    },
+    {
+      "symbol": "CHENNPETRO"
+    },
+    {
+      "symbol": "CHOICEIN"
+    },
+    {
+      "symbol": "CHOLAHLDNG"
+    },
+    {
+      "symbol": "CHOLAFIN"
+    },
+    {
+      "symbol": "CIPLA"
+    },
+    {
+      "symbol": "CUB"
+    },
+    {
+      "symbol": "CLEANMAX"
+    },
+    {
+      "symbol": "CLEAN"
+    },
+    {
+      "symbol": "COALINDIA"
+    },
+    {
+      "symbol": "COCHINSHIP"
+    },
+    {
+      "symbol": "COFORGE"
+    },
+    {
+      "symbol": "COHANCE"
+    },
+    {
+      "symbol": "COLPAL"
+    },
+    {
+      "symbol": "CAMS"
+    },
+    {
+      "symbol": "CONCORDBIO"
+    },
+    {
+      "symbol": "CONCOR"
+    },
+    {
+      "symbol": "COROMANDEL"
+    },
+    {
+      "symbol": "CRAFTSMAN"
+    },
+    {
+      "symbol": "CREDITACC"
+    },
+    {
+      "symbol": "CROMPTON"
+    },
+    {
+      "symbol": "CUMMINSIND"
+    },
+    {
+      "symbol": "CUPID"
+    },
+    {
+      "symbol": "CYIENT"
+    },
+    {
+      "symbol": "DLF"
+    },
+    {
+      "symbol": "DOMS"
+    },
+    {
+      "symbol": "DABUR"
+    },
+    {
+      "symbol": "DALBHARAT"
+    },
+    {
+      "symbol": "DATAPATTNS"
+    },
+    {
+      "symbol": "DEEPAKFERT"
+    },
+    {
+      "symbol": "DEEPAKNTR"
+    },
+    {
+      "symbol": "DELHIVERY"
+    },
+    {
+      "symbol": "DEVYANI"
+    },
+    {
+      "symbol": "DIVISLAB"
+    },
+    {
+      "symbol": "DIXON"
+    },
+    {
+      "symbol": "LALPATHLAB"
+    },
+    {
+      "symbol": "DRREDDY"
+    },
+    {
+      "symbol": "DUMMYHEG"
+    },
+    {
+      "symbol": "EIDPARRY"
+    },
+    {
+      "symbol": "EIHOTEL"
+    },
+    {
+      "symbol": "EMBASSY"
+    },
+    {
+      "symbol": "EICHERMOT"
+    },
+    {
+      "symbol": "ELECON"
+    },
+    {
+      "symbol": "ELGIEQUIP"
+    },
+    {
+      "symbol": "EMAMILTD"
+    },
+    {
+      "symbol": "EMCURE"
+    },
+    {
+      "symbol": "EMMVEE"
+    },
+    {
+      "symbol": "ENDURANCE"
+    },
+    {
+      "symbol": "ENGINERSIN"
+    },
+    {
+      "symbol": "ESCORTS"
+    },
+    {
+      "symbol": "ETERNAL"
+    },
+    {
+      "symbol": "EXIDEIND"
+    },
+    {
+      "symbol": "NYKAA"
+    },
+    {
+      "symbol": "FEDERALBNK"
+    },
+    {
+      "symbol": "FACT"
+    },
+    {
+      "symbol": "FINCABLES"
+    },
+    {
+      "symbol": "FSL"
+    },
+    {
+      "symbol": "FIVESTAR"
+    },
+    {
+      "symbol": "FORCEMOT"
+    },
+    {
+      "symbol": "FORTIS"
+    },
+    {
+      "symbol": "FRACTAL"
+    },
+    {
+      "symbol": "GAIL"
+    },
+    {
+      "symbol": "GVT&D"
+    },
+    {
+      "symbol": "GMRAIRPORT"
+    },
+    {
+      "symbol": "GABRIEL"
+    },
+    {
+      "symbol": "GALLANTT"
+    },
+    {
+      "symbol": "GRSE"
+    },
+    {
+      "symbol": "GICRE"
+    },
+    {
+      "symbol": "GILLETTE"
+    },
+    {
+      "symbol": "GLAND"
+    },
+    {
+      "symbol": "GLAXO"
+    },
+    {
+      "symbol": "GLENMARK"
+    },
+    {
+      "symbol": "MEDANTA"
+    },
+    {
+      "symbol": "GPIL"
+    },
+    {
+      "symbol": "GODFRYPHLP"
+    },
+    {
+      "symbol": "GODREJCP"
+    },
+    {
+      "symbol": "GODREJIND"
+    },
+    {
+      "symbol": "GODREJPROP"
+    },
+    {
+      "symbol": "GRANULES"
+    },
+    {
+      "symbol": "GRAPHITE"
+    },
+    {
+      "symbol": "GRASIM"
+    },
+    {
+      "symbol": "GRAVITA"
+    },
+    {
+      "symbol": "GESHIP"
+    },
+    {
+      "symbol": "FLUOROCHEM"
+    },
+    {
+      "symbol": "GMDCLTD"
+    },
+    {
+      "symbol": "HBLENGINE"
+    },
+    {
+      "symbol": "HCLTECH"
+    },
+    {
+      "symbol": "HDBFS"
+    },
+    {
+      "symbol": "HDFCAMC"
+    },
+    {
+      "symbol": "HDFCBANK"
+    },
+    {
+      "symbol": "HDFCLIFE"
+    },
+    {
+      "symbol": "HEGAM"
+    },
+    {
+      "symbol": "HFCL"
+    },
+    {
+      "symbol": "HAVELLS"
+    },
+    {
+      "symbol": "HEROMOTOCO"
+    },
+    {
+      "symbol": "HEXT"
+    },
+    {
+      "symbol": "HSCL"
+    },
+    {
+      "symbol": "HINDALCO"
+    },
+    {
+      "symbol": "HAL"
+    },
+    {
+      "symbol": "HINDCOPPER"
+    },
+    {
+      "symbol": "HINDPETRO"
+    },
+    {
+      "symbol": "HINDUNILVR"
+    },
+    {
+      "symbol": "HINDZINC"
+    },
+    {
+      "symbol": "POWERINDIA"
+    },
+    {
+      "symbol": "HOMEFIRST"
+    },
+    {
+      "symbol": "HONASA"
+    },
+    {
+      "symbol": "HONAUT"
+    },
+    {
+      "symbol": "HUDCO"
+    },
+    {
+      "symbol": "HYUNDAI"
+    },
+    {
+      "symbol": "ICICIBANK"
+    },
+    {
+      "symbol": "ICICILIFE"
+    },
+    {
+      "symbol": "ICICIGI"
+    },
+    {
+      "symbol": "ICICIAMC"
+    },
+    {
+      "symbol": "IDBI"
+    },
+    {
+      "symbol": "IDFCFIRSTB"
+    },
+    {
+      "symbol": "IFCI"
+    },
+    {
+      "symbol": "IIFL"
+    },
+    {
+      "symbol": "INOXINDIA"
+    },
+    {
+      "symbol": "IRB"
+    },
+    {
+      "symbol": "IRCON"
+    },
+    {
+      "symbol": "ITCHOTELS"
+    },
+    {
+      "symbol": "ITC"
+    },
+    {
+      "symbol": "ITI"
+    },
+    {
+      "symbol": "INDIACEM"
+    },
+    {
+      "symbol": "INDIAMART"
+    },
+    {
+      "symbol": "INDIANB"
+    },
+    {
+      "symbol": "IEX"
+    },
+    {
+      "symbol": "INDHOTEL"
+    },
+    {
+      "symbol": "IOC"
+    },
+    {
+      "symbol": "IOB"
+    },
+    {
+      "symbol": "IRCTC"
+    },
+    {
+      "symbol": "IRFC"
+    },
+    {
+      "symbol": "IREDA"
+    },
+    {
+      "symbol": "IGL"
+    },
+    {
+      "symbol": "INDUSTOWER"
+    },
+    {
+      "symbol": "INDUSINDBK"
+    },
+    {
+      "symbol": "NAUKRI"
+    },
+    {
+      "symbol": "INFY"
+    },
+    {
+      "symbol": "INOXWIND"
+    },
+    {
+      "symbol": "INTELLECT"
+    },
+    {
+      "symbol": "INDIGO"
+    },
+    {
+      "symbol": "IGIL"
+    },
+    {
+      "symbol": "IKS"
+    },
+    {
+      "symbol": "IPCALAB"
+    },
+    {
+      "symbol": "JKCEMENT"
+    },
+    {
+      "symbol": "JBMA"
+    },
+    {
+      "symbol": "JKTYRE"
+    },
+    {
+      "symbol": "JMFINANCIL"
+    },
+    {
+      "symbol": "JSWCEMENT"
+    },
+    {
+      "symbol": "JSWENERGY"
+    },
+    {
+      "symbol": "JSWINFRA"
+    },
+    {
+      "symbol": "JSWSTEEL"
+    },
+    {
+      "symbol": "JAINREC"
+    },
+    {
+      "symbol": "JPPOWER"
+    },
+    {
+      "symbol": "J&KBANK"
+    },
+    {
+      "symbol": "JINDALSAW"
+    },
+    {
+      "symbol": "JSL"
+    },
+    {
+      "symbol": "JINDALSTEL"
+    },
+    {
+      "symbol": "JIOFIN"
+    },
+    {
+      "symbol": "JUBLFOOD"
+    },
+    {
+      "symbol": "JUBLINGREA"
+    },
+    {
+      "symbol": "JWL"
+    },
+    {
+      "symbol": "JYOTICNC"
+    },
+    {
+      "symbol": "KPRMILL"
+    },
+    {
+      "symbol": "KEI"
+    },
+    {
+      "symbol": "KPITTECH"
+    },
+    {
+      "symbol": "KSB"
+    },
+    {
+      "symbol": "KAJARIACER"
+    },
+    {
+      "symbol": "KPIL"
+    },
+    {
+      "symbol": "KALYANKJIL"
+    },
+    {
+      "symbol": "KARURVYSYA"
+    },
+    {
+      "symbol": "KAYNES"
+    },
+    {
+      "symbol": "KEC"
+    },
+    {
+      "symbol": "KFINTECH"
+    },
+    {
+      "symbol": "KIRLOSBROS"
+    },
+    {
+      "symbol": "KIRLOSENG"
+    },
+    {
+      "symbol": "KOTAKBANK"
+    },
+    {
+      "symbol": "KIMS"
+    },
+    {
+      "symbol": "LTF"
+    },
+    {
+      "symbol": "LTTS"
+    },
+    {
+      "symbol": "LGEINDIA"
+    },
+    {
+      "symbol": "LICHSGFIN"
+    },
+    {
+      "symbol": "LTFOODS"
+    },
+    {
+      "symbol": "LTM"
+    },
+    {
+      "symbol": "LT"
+    },
+    {
+      "symbol": "LAURUSLABS"
+    },
+    {
+      "symbol": "LEMONTREE"
+    },
+    {
+      "symbol": "LENSKART"
+    },
+    {
+      "symbol": "LICI"
+    },
+    {
+      "symbol": "LINDEINDIA"
+    },
+    {
+      "symbol": "LLOYDSME"
+    },
+    {
+      "symbol": "LODHA"
+    },
+    {
+      "symbol": "LUPIN"
+    },
+    {
+      "symbol": "MMTC"
+    },
+    {
+      "symbol": "MRF"
+    },
+    {
+      "symbol": "MTARTECH"
+    },
+    {
+      "symbol": "MGL"
+    },
+    {
+      "symbol": "M&MFIN"
+    },
+    {
+      "symbol": "M&M"
+    },
+    {
+      "symbol": "MANAPPURAM"
+    },
+    {
+      "symbol": "MRPL"
+    },
+    {
+      "symbol": "MANKIND"
+    },
+    {
+      "symbol": "MARICO"
+    },
+    {
+      "symbol": "MARUTI"
+    },
+    {
+      "symbol": "MFSL"
+    },
+    {
+      "symbol": "MAXHEALTH"
+    },
+    {
+      "symbol": "MAZDOCK"
+    },
+    {
+      "symbol": "MEESHO"
+    },
+    {
+      "symbol": "MINDACORP"
+    },
+    {
+      "symbol": "MSUMI"
+    },
+    {
+      "symbol": "MOTILALOFS"
+    },
+    {
+      "symbol": "MPHASIS"
+    },
+    {
+      "symbol": "MCX"
+    },
+    {
+      "symbol": "MUTHOOTFIN"
+    },
+    {
+      "symbol": "NATCOPHARM"
+    },
+    {
+      "symbol": "NBCC"
+    },
+    {
+      "symbol": "NCC"
+    },
+    {
+      "symbol": "NHPC"
+    },
+    {
+      "symbol": "NLCINDIA"
+    },
+    {
+      "symbol": "NMDC"
+    },
+    {
+      "symbol": "NSLNISP"
+    },
+    {
+      "symbol": "NTPCGREEN"
+    },
+    {
+      "symbol": "NTPC"
+    },
+    {
+      "symbol": "NH"
+    },
+    {
+      "symbol": "NATIONALUM"
+    },
+    {
+      "symbol": "NAVA"
+    },
+    {
+      "symbol": "NAVINFLUOR"
+    },
+    {
+      "symbol": "NESTLEIND"
+    },
+    {
+      "symbol": "NETWEB"
+    },
+    {
+      "symbol": "NEULANDLAB"
+    },
+    {
+      "symbol": "NAM-INDIA"
+    },
+    {
+      "symbol": "NUVAMA"
+    },
+    {
+      "symbol": "NUVOCO"
+    },
+    {
+      "symbol": "OBEROIRLTY"
+    },
+    {
+      "symbol": "ONGC"
+    },
+    {
+      "symbol": "OIL"
+    },
+    {
+      "symbol": "OLAELEC"
+    },
+    {
+      "symbol": "OLECTRA"
+    },
+    {
+      "symbol": "PAYTM"
+    },
+    {
+      "symbol": "ONESOURCE"
+    },
+    {
+      "symbol": "OFSS"
+    },
+    {
+      "symbol": "POLICYBZR"
+    },
+    {
+      "symbol": "PCBL"
+    },
+    {
+      "symbol": "PGEL"
+    },
+    {
+      "symbol": "PIIND"
+    },
+    {
+      "symbol": "PNBHOUSING"
+    },
+    {
+      "symbol": "PTCIL"
+    },
+    {
+      "symbol": "PVRINOX"
+    },
+    {
+      "symbol": "PAGEIND"
+    },
+    {
+      "symbol": "PARADEEP"
+    },
+    {
+      "symbol": "PATANJALI"
+    },
+    {
+      "symbol": "PERSISTENT"
+    },
+    {
+      "symbol": "PETRONET"
+    },
+    {
+      "symbol": "PHOENIXLTD"
+    },
+    {
+      "symbol": "PWL"
+    },
+    {
+      "symbol": "PIDILITIND"
+    },
+    {
+      "symbol": "PINELABS"
+    },
+    {
+      "symbol": "PIRAMALFIN"
+    },
+    {
+      "symbol": "PPLPHARMA"
+    },
+    {
+      "symbol": "POLYMED"
+    },
+    {
+      "symbol": "POLYCAB"
+    },
+    {
+      "symbol": "POONAWALLA"
+    },
+    {
+      "symbol": "PFC"
+    },
+    {
+      "symbol": "POWERGRID"
+    },
+    {
+      "symbol": "PREMIERENE"
+    },
+    {
+      "symbol": "PRESTIGE"
+    },
+    {
+      "symbol": "PFOCUS"
+    },
+    {
+      "symbol": "PRIVISCL"
+    },
+    {
+      "symbol": "PNB"
+    },
+    {
+      "symbol": "RRKABEL"
+    },
+    {
+      "symbol": "RBLBANK"
+    },
+    {
+      "symbol": "RECLTD"
+    },
+    {
+      "symbol": "RHIM"
+    },
+    {
+      "symbol": "RITES"
+    },
+    {
+      "symbol": "RADICO"
+    },
+    {
+      "symbol": "RVNL"
+    },
+    {
+      "symbol": "RAILTEL"
+    },
+    {
+      "symbol": "RAINBOW"
+    },
+    {
+      "symbol": "RKFORGE"
+    },
+    {
+      "symbol": "REDINGTON"
+    },
+    {
+      "symbol": "RELIANCE"
+    },
+    {
+      "symbol": "RPOWER"
+    },
+    {
+      "symbol": "RUBICON"
+    },
+    {
+      "symbol": "SBICARD"
+    },
+    {
+      "symbol": "SBILIFE"
+    },
+    {
+      "symbol": "SJVN"
+    },
+    {
+      "symbol": "SHRIPISTON"
+    },
+    {
+      "symbol": "SRF"
+    },
+    {
+      "symbol": "SAGILITY"
+    },
+    {
+      "symbol": "SAILIFE"
+    },
+    {
+      "symbol": "SAMMAANCAP"
+    },
+    {
+      "symbol": "MOTHERSON"
+    },
+    {
+      "symbol": "SANSERA"
+    },
+    {
+      "symbol": "SARDAEN"
+    },
+    {
+      "symbol": "SCHAEFFLER"
+    },
+    {
+      "symbol": "SCHNEIDER"
+    },
+    {
+      "symbol": "SCI"
+    },
+    {
+      "symbol": "SHREECEM"
+    },
+    {
+      "symbol": "SHRIRAMFIN"
+    },
+    {
+      "symbol": "SHYAMMETL"
+    },
+    {
+      "symbol": "ENRIN"
+    },
+    {
+      "symbol": "SIEMENS"
+    },
+    {
+      "symbol": "SIGNATURE"
+    },
+    {
+      "symbol": "SOBHA"
+    },
+    {
+      "symbol": "SOLARINDS"
+    },
+    {
+      "symbol": "SONACOMS"
+    },
+    {
+      "symbol": "STARHEALTH"
+    },
+    {
+      "symbol": "SBIN"
+    },
+    {
+      "symbol": "SAIL"
+    },
+    {
+      "symbol": "STLTECH"
+    },
+    {
+      "symbol": "SUMICHEM"
+    },
+    {
+      "symbol": "SUNPHARMA"
+    },
+    {
+      "symbol": "SUNTV"
+    },
+    {
+      "symbol": "SUNDARMFIN"
+    },
+    {
+      "symbol": "SUPREMEIND"
+    },
+    {
+      "symbol": "SUZLON"
+    },
+    {
+      "symbol": "SWANCORP"
+    },
+    {
+      "symbol": "SWIGGY"
+    },
+    {
+      "symbol": "SYNGENE"
+    },
+    {
+      "symbol": "SYRMA"
+    },
+    {
+      "symbol": "TBOTEK"
+    },
+    {
+      "symbol": "TDPOWERSYS"
+    },
+    {
+      "symbol": "TVSMOTOR"
+    },
+    {
+      "symbol": "TATACAP"
+    },
+    {
+      "symbol": "TATACHEM"
+    },
+    {
+      "symbol": "TATACOMM"
+    },
+    {
+      "symbol": "TCS"
+    },
+    {
+      "symbol": "TATACONSUM"
+    },
+    {
+      "symbol": "TATAELXSI"
+    },
+    {
+      "symbol": "TATAINVEST"
+    },
+    {
+      "symbol": "TMCV"
+    },
+    {
+      "symbol": "TMPV"
+    },
+    {
+      "symbol": "TATAPOWER"
+    },
+    {
+      "symbol": "TATASTEEL"
+    },
+    {
+      "symbol": "TATATECH"
+    },
+    {
+      "symbol": "TTML"
+    },
+    {
+      "symbol": "TECHM"
+    },
+    {
+      "symbol": "TECHNOE"
+    },
+    {
+      "symbol": "TEGA"
+    },
+    {
+      "symbol": "TEJASNET"
+    },
+    {
+      "symbol": "TENNIND"
+    },
+    {
+      "symbol": "THANGAMAYL"
+    },
+    {
+      "symbol": "NIACL"
+    },
+    {
+      "symbol": "RAMCOCEM"
+    },
+    {
+      "symbol": "THERMAX"
+    },
+    {
+      "symbol": "TIMKEN"
+    },
+    {
+      "symbol": "TITAGARH"
+    },
+    {
+      "symbol": "TITAN"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "TORNTPOWER"
+    },
+    {
+      "symbol": "TARIL"
+    },
+    {
+      "symbol": "TRENT"
+    },
+    {
+      "symbol": "TRIDENT"
+    },
+    {
+      "symbol": "TRITURBINE"
+    },
+    {
+      "symbol": "TIINDIA"
+    },
+    {
+      "symbol": "UCOBANK"
+    },
+    {
+      "symbol": "UNOMINDA"
+    },
+    {
+      "symbol": "UPL"
+    },
+    {
+      "symbol": "UTIAMC"
+    },
+    {
+      "symbol": "ULTRACEMCO"
+    },
+    {
+      "symbol": "UNIONBANK"
+    },
+    {
+      "symbol": "UBL"
+    },
+    {
+      "symbol": "UNITDSPR"
+    },
+    {
+      "symbol": "URBANCO"
+    },
+    {
+      "symbol": "USHAMART"
+    },
+    {
+      "symbol": "VTL"
+    },
+    {
+      "symbol": "VBL"
+    },
+    {
+      "symbol": "VAML"
+    },
+    {
+      "symbol": "VISL"
+    },
+    {
+      "symbol": "VEDL"
+    },
+    {
+      "symbol": "VOGL"
+    },
+    {
+      "symbol": "VEDPOWER"
+    },
+    {
+      "symbol": "VIJAYA"
+    },
+    {
+      "symbol": "VMM"
+    },
+    {
+      "symbol": "IDEA"
+    },
+    {
+      "symbol": "VOLTAS"
+    },
+    {
+      "symbol": "WAAREEENER"
+    },
+    {
+      "symbol": "WELCORP"
+    },
+    {
+      "symbol": "WELSPUNLIV"
+    },
+    {
+      "symbol": "WHIRLPOOL"
+    },
+    {
+      "symbol": "WIPRO"
+    },
+    {
+      "symbol": "WOCKPHARMA"
+    },
+    {
+      "symbol": "YESBANK"
+    },
+    {
+      "symbol": "ZFCVINDIA"
+    },
+    {
+      "symbol": "ZEEL"
+    },
+    {
+      "symbol": "ZENTEC"
+    },
+    {
+      "symbol": "ZENSARTECH"
+    },
+    {
+      "symbol": "ZYDUSLIFE"
+    },
+    {
+      "symbol": "ZYDUSWELL"
+    },
+    {
+      "symbol": "ECLERX"
+    }
+  ]
+}

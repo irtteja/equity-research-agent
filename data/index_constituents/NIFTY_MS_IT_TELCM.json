@@ -1,0 +1,70 @@
+{
+  "index": "NIFTY MS IT TELCM",
+  "as_of": "2026-10-29",
+  "count": 21,
+  "constituents": [
+    {
+      "symbol": "NIFTY MIDSMALL IT & TELECOM"
+    },
+    {
+      "symbol": "OFSS"
+    },
+    {
+      "symbol": "NETWEB"
+    },
+    {
+      "symbol": "COFORGE"
+    },
+    {
+      "symbol": "PERSISTENT"
+    },
+    {
+      "symbol": "KPITTECH"
+    },
+    {
+      "symbol": "LTTS"
+    },
+    {
+      "symbol": "INDUSTOWER"
+    },
+    {
+      "symbol": "TATAELXSI"
+    },
+    {
+      "symbol": "HFCL"
+    },
+    {
+      "symbol": "ZENSARTECH"
+    },
+    {
+      "symbol": "SAGILITY"
+    },
+    {
+      "symbol": "MPHASIS"
+    },
+    {
+      "symbol": "HEXT"
+    },
+    {
+      "symbol": "CYIENT"
+    },
+    {
+      "symbol": "TATATECH"
+    },
+    {
+      "symbol": "TATACOMM"
+    },
+    {
+      "symbol": "AFFLE"
+    },
+    {
+      "symbol": "BHARTIHEXA"
+    },
+    {
+      "symbol": "IKS"
+    },
+    {
+      "symbol": "INTELLECT"
+    }
+  ]
+}

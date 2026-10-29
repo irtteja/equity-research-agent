@@ -1,0 +1,100 @@
+{
+  "index": "NIFTY CONSUMPTION",
+  "as_of": "2026-10-29",
+  "count": 31,
+  "constituents": [
+    {
+      "symbol": "NIFTY INDIA CONSUMPTION"
+    },
+    {
+      "symbol": "TVSMOTOR"
+    },
+    {
+      "symbol": "BHARTIARTL"
+    },
+    {
+      "symbol": "HEROMOTOCO"
+    },
+    {
+      "symbol": "ETERNAL"
+    },
+    {
+      "symbol": "APOLLOHOSP"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "MARUTI"
+    },
+    {
+      "symbol": "TITAN"
+    },
+    {
+      "symbol": "UNITDSPR"
+    },
+    {
+      "symbol": "TRENT"
+    },
+    {
+      "symbol": "DIXON"
+    },
+    {
+      "symbol": "EICHERMOT"
+    },
+    {
+      "symbol": "M&M"
+    },
+    {
+      "symbol": "HINDUNILVR"
+    },
+    {
+      "symbol": "DLF"
+    },
+    {
+      "symbol": "ITC"
+    },
+    {
+      "symbol": "ASIANPAINT"
+    },
+    {
+      "symbol": "INDHOTEL"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "MAXHEALTH"
+    },
+    {
+      "symbol": "NESTLEIND"
+    },
+    {
+      "symbol": "INDIGO"
+    },
+    {
+      "symbol": "NAUKRI"
+    },
+    {
+      "symbol": "DMART"
+    },
+    {
+      "symbol": "TATACONSUM"
+    },
+    {
+      "symbol": "TATAPOWER"
+    },
+    {
+      "symbol": "VBL"
+    },
+    {
+      "symbol": "GODREJCP"
+    },
+    {
+      "symbol": "FORTIS"
+    },
+    {
+      "symbol": "BRITANNIA"
+    }
+  ]
+}

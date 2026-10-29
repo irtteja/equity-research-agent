@@ -1,0 +1,142 @@
+{
+  "index": "NIFTY500 HEALTH",
+  "as_of": "2026-10-29",
+  "count": 45,
+  "constituents": [
+    {
+      "symbol": "NIFTY500 HEALTHCARE"
+    },
+    {
+      "symbol": "ACUTAAS"
+    },
+    {
+      "symbol": "PPLPHARMA"
+    },
+    {
+      "symbol": "LAURUSLABS"
+    },
+    {
+      "symbol": "APOLLOHOSP"
+    },
+    {
+      "symbol": "SYNGENE"
+    },
+    {
+      "symbol": "DIVISLAB"
+    },
+    {
+      "symbol": "DRREDDY"
+    },
+    {
+      "symbol": "BIOCON"
+    },
+    {
+      "symbol": "SUNPHARMA"
+    },
+    {
+      "symbol": "WOCKPHARMA"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "COHANCE"
+    },
+    {
+      "symbol": "LUPIN"
+    },
+    {
+      "symbol": "MAXHEALTH"
+    },
+    {
+      "symbol": "CIPLA"
+    },
+    {
+      "symbol": "MANKIND"
+    },
+    {
+      "symbol": "AUROPHARMA"
+    },
+    {
+      "symbol": "ONESOURCE"
+    },
+    {
+      "symbol": "ZYDUSLIFE"
+    },
+    {
+      "symbol": "FORTIS"
+    },
+    {
+      "symbol": "ASTERDM"
+    },
+    {
+      "symbol": "GLENMARK"
+    },
+    {
+      "symbol": "NEULANDLAB"
+    },
+    {
+      "symbol": "LALPATHLAB"
+    },
+    {
+      "symbol": "GLAND"
+    },
+    {
+      "symbol": "SAILIFE"
+    },
+    {
+      "symbol": "CONCORDBIO"
+    },
+    {
+      "symbol": "ALKEM"
+    },
+    {
+      "symbol": "IPCALAB"
+    },
+    {
+      "symbol": "AJANTPHARM"
+    },
+    {
+      "symbol": "NATCOPHARM"
+    },
+    {
+      "symbol": "KIMS"
+    },
+    {
+      "symbol": "RAINBOW"
+    },
+    {
+      "symbol": "ANTHEM"
+    },
+    {
+      "symbol": "CAPLIPOINT"
+    },
+    {
+      "symbol": "ABBOTINDIA"
+    },
+    {
+      "symbol": "NH"
+    },
+    {
+      "symbol": "RUBICON"
+    },
+    {
+      "symbol": "GRANULES"
+    },
+    {
+      "symbol": "MEDANTA"
+    },
+    {
+      "symbol": "EMCURE"
+    },
+    {
+      "symbol": "POLYMED"
+    },
+    {
+      "symbol": "VIJAYA"
+    },
+    {
+      "symbol": "GLAXO"
+    }
+  ]
+}

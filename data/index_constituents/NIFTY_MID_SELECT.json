@@ -1,0 +1,85 @@
+{
+  "index": "NIFTY MID SELECT",
+  "as_of": "2026-10-29",
+  "count": 26,
+  "constituents": [
+    {
+      "symbol": "NIFTY MIDCAP SELECT"
+    },
+    {
+      "symbol": "HEROMOTOCO"
+    },
+    {
+      "symbol": "MCX"
+    },
+    {
+      "symbol": "PAYTM"
+    },
+    {
+      "symbol": "PERSISTENT"
+    },
+    {
+      "symbol": "DIXON"
+    },
+    {
+      "symbol": "BHEL"
+    },
+    {
+      "symbol": "SUZLON"
+    },
+    {
+      "symbol": "SWIGGY"
+    },
+    {
+      "symbol": "GVT&D"
+    },
+    {
+      "symbol": "YESBANK"
+    },
+    {
+      "symbol": "FEDERALBNK"
+    },
+    {
+      "symbol": "POLICYBZR"
+    },
+    {
+      "symbol": "INDHOTEL"
+    },
+    {
+      "symbol": "ASHOKLEY"
+    },
+    {
+      "symbol": "LUPIN"
+    },
+    {
+      "symbol": "LICI"
+    },
+    {
+      "symbol": "INDUSTOWER"
+    },
+    {
+      "symbol": "AUBANK"
+    },
+    {
+      "symbol": "INDIANB"
+    },
+    {
+      "symbol": "INDUSINDBK"
+    },
+    {
+      "symbol": "NAUKRI"
+    },
+    {
+      "symbol": "SRF"
+    },
+    {
+      "symbol": "BHARATFORG"
+    },
+    {
+      "symbol": "AUROPHARMA"
+    },
+    {
+      "symbol": "MARICO"
+    }
+  ]
+}

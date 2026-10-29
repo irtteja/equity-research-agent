@@ -1,0 +1,100 @@
+{
+  "index": "NIFTY100 LOWVOL30",
+  "as_of": "2026-10-29",
+  "count": 31,
+  "constituents": [
+    {
+      "symbol": "NIFTY100 LOW VOLATILITY 30"
+    },
+    {
+      "symbol": "RELIANCE"
+    },
+    {
+      "symbol": "HDFCBANK"
+    },
+    {
+      "symbol": "TCS"
+    },
+    {
+      "symbol": "BHARTIARTL"
+    },
+    {
+      "symbol": "ICICIBANK"
+    },
+    {
+      "symbol": "SBIN"
+    },
+    {
+      "symbol": "KOTAKBANK"
+    },
+    {
+      "symbol": "PIDILITIND"
+    },
+    {
+      "symbol": "APOLLOHOSP"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "LT"
+    },
+    {
+      "symbol": "WIPRO"
+    },
+    {
+      "symbol": "MARUTI"
+    },
+    {
+      "symbol": "TITAN"
+    },
+    {
+      "symbol": "HINDUNILVR"
+    },
+    {
+      "symbol": "DRREDDY"
+    },
+    {
+      "symbol": "ITC"
+    },
+    {
+      "symbol": "SUNPHARMA"
+    },
+    {
+      "symbol": "ASIANPAINT"
+    },
+    {
+      "symbol": "POWERGRID"
+    },
+    {
+      "symbol": "NTPC"
+    },
+    {
+      "symbol": "BAJAJFINSV"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "NESTLEIND"
+    },
+    {
+      "symbol": "CIPLA"
+    },
+    {
+      "symbol": "SBILIFE"
+    },
+    {
+      "symbol": "TATAPOWER"
+    },
+    {
+      "symbol": "ULTRACEMCO"
+    },
+    {
+      "symbol": "HDFCLIFE"
+    },
+    {
+      "symbol": "BRITANNIA"
+    }
+  ]
+}

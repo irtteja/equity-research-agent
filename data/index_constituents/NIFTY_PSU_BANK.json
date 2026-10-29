@@ -1,0 +1,43 @@
+{
+  "index": "NIFTY PSU BANK",
+  "as_of": "2026-10-29",
+  "count": 12,
+  "constituents": [
+    {
+      "symbol": "BANKBARODA"
+    },
+    {
+      "symbol": "BANKINDIA"
+    },
+    {
+      "symbol": "MAHABANK"
+    },
+    {
+      "symbol": "CANBK"
+    },
+    {
+      "symbol": "CENTRALBK"
+    },
+    {
+      "symbol": "INDIANB"
+    },
+    {
+      "symbol": "IOB"
+    },
+    {
+      "symbol": "PSB"
+    },
+    {
+      "symbol": "PNB"
+    },
+    {
+      "symbol": "SBIN"
+    },
+    {
+      "symbol": "UCOBANK"
+    },
+    {
+      "symbol": "UNIONBANK"
+    }
+  ]
+}

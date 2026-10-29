@@ -1,0 +1,310 @@
+{
+  "index": "NIFTY INFRALOG",
+  "as_of": "2026-10-29",
+  "count": 101,
+  "constituents": [
+    {
+      "symbol": "NIFTY INDIA INFRASTRUCTURE & LOGISTICS"
+    },
+    {
+      "symbol": "ADANIPORTS"
+    },
+    {
+      "symbol": "JWL"
+    },
+    {
+      "symbol": "BHARTIARTL"
+    },
+    {
+      "symbol": "JSWENERGY"
+    },
+    {
+      "symbol": "LT"
+    },
+    {
+      "symbol": "MAZDOCK"
+    },
+    {
+      "symbol": "IDEA"
+    },
+    {
+      "symbol": "BEL"
+    },
+    {
+      "symbol": "GESHIP"
+    },
+    {
+      "symbol": "ADANIPOWER"
+    },
+    {
+      "symbol": "BHEL"
+    },
+    {
+      "symbol": "SUZLON"
+    },
+    {
+      "symbol": "TITAGARH"
+    },
+    {
+      "symbol": "CUMMINSIND"
+    },
+    {
+      "symbol": "TDPOWERSYS"
+    },
+    {
+      "symbol": "POWERINDIA"
+    },
+    {
+      "symbol": "DLF"
+    },
+    {
+      "symbol": "GMRAIRPORT"
+    },
+    {
+      "symbol": "HAL"
+    },
+    {
+      "symbol": "ADANIGREEN"
+    },
+    {
+      "symbol": "RPOWER"
+    },
+    {
+      "symbol": "GVT&D"
+    },
+    {
+      "symbol": "TMCV"
+    },
+    {
+      "symbol": "POWERGRID"
+    },
+    {
+      "symbol": "NTPC"
+    },
+    {
+      "symbol": "DATAPATTNS"
+    },
+    {
+      "symbol": "ADANIENSOL"
+    },
+    {
+      "symbol": "ENGINERSIN"
+    },
+    {
+      "symbol": "STLTECH"
+    },
+    {
+      "symbol": "AMBUJACEM"
+    },
+    {
+      "symbol": "ASHOKLEY"
+    },
+    {
+      "symbol": "LODHA"
+    },
+    {
+      "symbol": "DALBHARAT"
+    },
+    {
+      "symbol": "JPPOWER"
+    },
+    {
+      "symbol": "INDUSTOWER"
+    },
+    {
+      "symbol": "CGPOWER"
+    },
+    {
+      "symbol": "ANANTRAJ"
+    },
+    {
+      "symbol": "ENRIN"
+    },
+    {
+      "symbol": "AEGISLOG"
+    },
+    {
+      "symbol": "NHPC"
+    },
+    {
+      "symbol": "INDIGO"
+    },
+    {
+      "symbol": "SIEMENS"
+    },
+    {
+      "symbol": "HFCL"
+    },
+    {
+      "symbol": "JSWINFRA"
+    },
+    {
+      "symbol": "GRSE"
+    },
+    {
+      "symbol": "RVNL"
+    },
+    {
+      "symbol": "KEC"
+    },
+    {
+      "symbol": "BDL"
+    },
+    {
+      "symbol": "SJVN"
+    },
+    {
+      "symbol": "ABB"
+    },
+    {
+      "symbol": "AZAD"
+    },
+    {
+      "symbol": "COCHINSHIP"
+    },
+    {
+      "symbol": "TATAPOWER"
+    },
+    {
+      "symbol": "GODREJPROP"
+    },
+    {
+      "symbol": "ULTRACEMCO"
+    },
+    {
+      "symbol": "GAIL"
+    },
+    {
+      "symbol": "ZENTEC"
+    },
+    {
+      "symbol": "PETRONET"
+    },
+    {
+      "symbol": "PHOENIXLTD"
+    },
+    {
+      "symbol": "INOXWIND"
+    },
+    {
+      "symbol": "TEJASNET"
+    },
+    {
+      "symbol": "SCI"
+    },
+    {
+      "symbol": "TATACOMM"
+    },
+    {
+      "symbol": "SHREECEM"
+    },
+    {
+      "symbol": "CESC"
+    },
+    {
+      "symbol": "KIRLOSENG"
+    },
+    {
+      "symbol": "ACE"
+    },
+    {
+      "symbol": "NBCC"
+    },
+    {
+      "symbol": "VEDPOWER"
+    },
+    {
+      "symbol": "ATGL"
+    },
+    {
+      "symbol": "IRCON"
+    },
+    {
+      "symbol": "DELHIVERY"
+    },
+    {
+      "symbol": "ABREL"
+    },
+    {
+      "symbol": "GRASIM"
+    },
+    {
+      "symbol": "OBEROIRLTY"
+    },
+    {
+      "symbol": "BEML"
+    },
+    {
+      "symbol": "CONCOR"
+    },
+    {
+      "symbol": "NCC"
+    },
+    {
+      "symbol": "PRESTIGE"
+    },
+    {
+      "symbol": "KPIL"
+    },
+    {
+      "symbol": "NLCINDIA"
+    },
+    {
+      "symbol": "NTPCGREEN"
+    },
+    {
+      "symbol": "ELGIEQUIP"
+    },
+    {
+      "symbol": "IRB"
+    },
+    {
+      "symbol": "TORNTPOWER"
+    },
+    {
+      "symbol": "IGL"
+    },
+    {
+      "symbol": "NAVA"
+    },
+    {
+      "symbol": "AFCONS"
+    },
+    {
+      "symbol": "THERMAX"
+    },
+    {
+      "symbol": "TRITURBINE"
+    },
+    {
+      "symbol": "BRIGADE"
+    },
+    {
+      "symbol": "TECHNOE"
+    },
+    {
+      "symbol": "SCHNEIDER"
+    },
+    {
+      "symbol": "ELECON"
+    },
+    {
+      "symbol": "BHARTIHEXA"
+    },
+    {
+      "symbol": "ACC"
+    },
+    {
+      "symbol": "RAMCOCEM"
+    },
+    {
+      "symbol": "MGL"
+    },
+    {
+      "symbol": "JKCEMENT"
+    },
+    {
+      "symbol": "SOBHA"
+    }
+  ]
+}

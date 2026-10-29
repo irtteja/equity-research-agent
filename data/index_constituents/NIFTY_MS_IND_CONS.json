@@ -1,0 +1,100 @@
+{
+  "index": "NIFTY MS IND CONS",
+  "as_of": "2026-10-29",
+  "count": 31,
+  "constituents": [
+    {
+      "symbol": "NIFTY MIDSMALL INDIA CONSUMPTION"
+    },
+    {
+      "symbol": "HEROMOTOCO"
+    },
+    {
+      "symbol": "UNITDSPR"
+    },
+    {
+      "symbol": "DIXON"
+    },
+    {
+      "symbol": "LENSKART"
+    },
+    {
+      "symbol": "SWIGGY"
+    },
+    {
+      "symbol": "RADICO"
+    },
+    {
+      "symbol": "VOLTAS"
+    },
+    {
+      "symbol": "INDHOTEL"
+    },
+    {
+      "symbol": "LODHA"
+    },
+    {
+      "symbol": "NYKAA"
+    },
+    {
+      "symbol": "NAUKRI"
+    },
+    {
+      "symbol": "MANKIND"
+    },
+    {
+      "symbol": "BLUESTARCO"
+    },
+    {
+      "symbol": "GODREJPROP"
+    },
+    {
+      "symbol": "MARICO"
+    },
+    {
+      "symbol": "VMM"
+    },
+    {
+      "symbol": "COLPAL"
+    },
+    {
+      "symbol": "CROMPTON"
+    },
+    {
+      "symbol": "PHOENIXLTD"
+    },
+    {
+      "symbol": "ITCHOTELS"
+    },
+    {
+      "symbol": "FORTIS"
+    },
+    {
+      "symbol": "DABUR"
+    },
+    {
+      "symbol": "PAGEIND"
+    },
+    {
+      "symbol": "IRCTC"
+    },
+    {
+      "symbol": "HAVELLS"
+    },
+    {
+      "symbol": "OBEROIRLTY"
+    },
+    {
+      "symbol": "ALKEM"
+    },
+    {
+      "symbol": "PRESTIGE"
+    },
+    {
+      "symbol": "JUBLFOOD"
+    },
+    {
+      "symbol": "TORNTPOWER"
+    }
+  ]
+}

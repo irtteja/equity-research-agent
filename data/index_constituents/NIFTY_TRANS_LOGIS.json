@@ -1,0 +1,100 @@
+{
+  "index": "NIFTY TRANS LOGIS",
+  "as_of": "2026-10-29",
+  "count": 31,
+  "constituents": [
+    {
+      "symbol": "NIFTY TRANSPORTATION & LOGISTICS"
+    },
+    {
+      "symbol": "TVSMOTOR"
+    },
+    {
+      "symbol": "ADANIPORTS"
+    },
+    {
+      "symbol": "HYUNDAI"
+    },
+    {
+      "symbol": "HEROMOTOCO"
+    },
+    {
+      "symbol": "ETERNAL"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "MAZDOCK"
+    },
+    {
+      "symbol": "MARUTI"
+    },
+    {
+      "symbol": "EICHERMOT"
+    },
+    {
+      "symbol": "M&M"
+    },
+    {
+      "symbol": "GMRAIRPORT"
+    },
+    {
+      "symbol": "SWIGGY"
+    },
+    {
+      "symbol": "MOTHERSON"
+    },
+    {
+      "symbol": "TMCV"
+    },
+    {
+      "symbol": "SONACOMS"
+    },
+    {
+      "symbol": "ASHOKLEY"
+    },
+    {
+      "symbol": "TMPV"
+    },
+    {
+      "symbol": "BOSCHLTD"
+    },
+    {
+      "symbol": "INDIGO"
+    },
+    {
+      "symbol": "BHARATFORG"
+    },
+    {
+      "symbol": "TIINDIA"
+    },
+    {
+      "symbol": "EXIDEIND"
+    },
+    {
+      "symbol": "UNOMINDA"
+    },
+    {
+      "symbol": "DELHIVERY"
+    },
+    {
+      "symbol": "IRCTC"
+    },
+    {
+      "symbol": "MRF"
+    },
+    {
+      "symbol": "CONCOR"
+    },
+    {
+      "symbol": "BALKRISIND"
+    },
+    {
+      "symbol": "SCHAEFFLER"
+    },
+    {
+      "symbol": "APOLLOTYRE"
+    }
+  ]
+}

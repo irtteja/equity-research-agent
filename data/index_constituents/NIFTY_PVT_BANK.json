@@ -1,0 +1,40 @@
+{
+  "index": "NIFTY PVT BANK",
+  "as_of": "2026-10-29",
+  "count": 11,
+  "constituents": [
+    {
+      "symbol": "NIFTY PRIVATE BANK"
+    },
+    {
+      "symbol": "HDFCBANK"
+    },
+    {
+      "symbol": "BANDHANBNK"
+    },
+    {
+      "symbol": "ICICIBANK"
+    },
+    {
+      "symbol": "KOTAKBANK"
+    },
+    {
+      "symbol": "AXISBANK"
+    },
+    {
+      "symbol": "YESBANK"
+    },
+    {
+      "symbol": "FEDERALBNK"
+    },
+    {
+      "symbol": "INDUSINDBK"
+    },
+    {
+      "symbol": "IDFCFIRSTB"
+    },
+    {
+      "symbol": "RBLBANK"
+    }
+  ]
+}

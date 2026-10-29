@@ -1,0 +1,127 @@
+{
+  "index": "NIFTY ENERGY",
+  "as_of": "2026-10-29",
+  "count": 40,
+  "constituents": [
+    {
+      "symbol": "ABB"
+    },
+    {
+      "symbol": "ADANIENSOL"
+    },
+    {
+      "symbol": "ADANIGREEN"
+    },
+    {
+      "symbol": "ADANIPOWER"
+    },
+    {
+      "symbol": "ATGL"
+    },
+    {
+      "symbol": "AEGISLOG"
+    },
+    {
+      "symbol": "BHEL"
+    },
+    {
+      "symbol": "BPCL"
+    },
+    {
+      "symbol": "CESC"
+    },
+    {
+      "symbol": "CGPOWER"
+    },
+    {
+      "symbol": "CASTROLIND"
+    },
+    {
+      "symbol": "COALINDIA"
+    },
+    {
+      "symbol": "GAIL"
+    },
+    {
+      "symbol": "GVT&D"
+    },
+    {
+      "symbol": "HINDPETRO"
+    },
+    {
+      "symbol": "POWERINDIA"
+    },
+    {
+      "symbol": "IOC"
+    },
+    {
+      "symbol": "IGL"
+    },
+    {
+      "symbol": "INOXWIND"
+    },
+    {
+      "symbol": "JSWENERGY"
+    },
+    {
+      "symbol": "JPPOWER"
+    },
+    {
+      "symbol": "MGL"
+    },
+    {
+      "symbol": "NHPC"
+    },
+    {
+      "symbol": "NLCINDIA"
+    },
+    {
+      "symbol": "NTPCGREEN"
+    },
+    {
+      "symbol": "NTPC"
+    },
+    {
+      "symbol": "NAVA"
+    },
+    {
+      "symbol": "ONGC"
+    },
+    {
+      "symbol": "OIL"
+    },
+    {
+      "symbol": "PETRONET"
+    },
+    {
+      "symbol": "POWERGRID"
+    },
+    {
+      "symbol": "RELIANCE"
+    },
+    {
+      "symbol": "RPOWER"
+    },
+    {
+      "symbol": "ENRIN"
+    },
+    {
+      "symbol": "SIEMENS"
+    },
+    {
+      "symbol": "SUZLON"
+    },
+    {
+      "symbol": "TDPOWERSYS"
+    },
+    {
+      "symbol": "TATAPOWER"
+    },
+    {
+      "symbol": "THERMAX"
+    },
+    {
+      "symbol": "TORNTPOWER"
+    }
+  ]
+}

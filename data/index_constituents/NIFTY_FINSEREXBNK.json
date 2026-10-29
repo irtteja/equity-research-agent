@@ -1,0 +1,100 @@
+{
+  "index": "NIFTY FINSEREXBNK",
+  "as_of": "2026-10-29",
+  "count": 31,
+  "constituents": [
+    {
+      "symbol": "NIFTY FINANCIAL SERVICES EX-BANK"
+    },
+    {
+      "symbol": "BSE"
+    },
+    {
+      "symbol": "PNBHOUSING"
+    },
+    {
+      "symbol": "BAJFINANCE"
+    },
+    {
+      "symbol": "CHOLAFIN"
+    },
+    {
+      "symbol": "MCX"
+    },
+    {
+      "symbol": "PAYTM"
+    },
+    {
+      "symbol": "SHRIRAMFIN"
+    },
+    {
+      "symbol": "CDSL"
+    },
+    {
+      "symbol": "PFC"
+    },
+    {
+      "symbol": "LTF"
+    },
+    {
+      "symbol": "JIOFIN"
+    },
+    {
+      "symbol": "MUTHOOTFIN"
+    },
+    {
+      "symbol": "RECLTD"
+    },
+    {
+      "symbol": "ANGELONE"
+    },
+    {
+      "symbol": "ABCAPITAL"
+    },
+    {
+      "symbol": "POLICYBZR"
+    },
+    {
+      "symbol": "BAJAJFINSV"
+    },
+    {
+      "symbol": "LICI"
+    },
+    {
+      "symbol": "HDFCAMC"
+    },
+    {
+      "symbol": "MFSL"
+    },
+    {
+      "symbol": "LICHSGFIN"
+    },
+    {
+      "symbol": "SBILIFE"
+    },
+    {
+      "symbol": "IRFC"
+    },
+    {
+      "symbol": "BAJAJHLDNG"
+    },
+    {
+      "symbol": "360ONE"
+    },
+    {
+      "symbol": "CAMS"
+    },
+    {
+      "symbol": "HDFCLIFE"
+    },
+    {
+      "symbol": "ICICIGI"
+    },
+    {
+      "symbol": "SBICARD"
+    },
+    {
+      "symbol": "ICICILIFE"
+    }
+  ]
+}

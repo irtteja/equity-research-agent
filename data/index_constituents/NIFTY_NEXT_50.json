@@ -1,0 +1,157 @@
+{
+  "index": "NIFTY NEXT 50",
+  "as_of": "2026-10-29",
+  "count": 50,
+  "constituents": [
+    {
+      "symbol": "ABB"
+    },
+    {
+      "symbol": "ADANIENSOL"
+    },
+    {
+      "symbol": "ADANIGREEN"
+    },
+    {
+      "symbol": "ADANIPOWER"
+    },
+    {
+      "symbol": "AMBUJACEM"
+    },
+    {
+      "symbol": "DMART"
+    },
+    {
+      "symbol": "BAJAJHLDNG"
+    },
+    {
+      "symbol": "BANKBARODA"
+    },
+    {
+      "symbol": "BPCL"
+    },
+    {
+      "symbol": "BOSCHLTD"
+    },
+    {
+      "symbol": "BRITANNIA"
+    },
+    {
+      "symbol": "CGPOWER"
+    },
+    {
+      "symbol": "CANBK"
+    },
+    {
+      "symbol": "CHOLAFIN"
+    },
+    {
+      "symbol": "CUMMINSIND"
+    },
+    {
+      "symbol": "DLF"
+    },
+    {
+      "symbol": "DIVISLAB"
+    },
+    {
+      "symbol": "GAIL"
+    },
+    {
+      "symbol": "GODREJCP"
+    },
+    {
+      "symbol": "HDFCAMC"
+    },
+    {
+      "symbol": "HAL"
+    },
+    {
+      "symbol": "HINDZINC"
+    },
+    {
+      "symbol": "POWERINDIA"
+    },
+    {
+      "symbol": "HYUNDAI"
+    },
+    {
+      "symbol": "IOC"
+    },
+    {
+      "symbol": "IRFC"
+    },
+    {
+      "symbol": "JINDALSTEL"
+    },
+    {
+      "symbol": "LTM"
+    },
+    {
+      "symbol": "MAZDOCK"
+    },
+    {
+      "symbol": "MUTHOOTFIN"
+    },
+    {
+      "symbol": "PIDILITIND"
+    },
+    {
+      "symbol": "POLYCAB"
+    },
+    {
+      "symbol": "PFC"
+    },
+    {
+      "symbol": "PNB"
+    },
+    {
+      "symbol": "MOTHERSON"
+    },
+    {
+      "symbol": "ENRIN"
+    },
+    {
+      "symbol": "SIEMENS"
+    },
+    {
+      "symbol": "SOLARINDS"
+    },
+    {
+      "symbol": "TVSMOTOR"
+    },
+    {
+      "symbol": "TATACAP"
+    },
+    {
+      "symbol": "TMCV"
+    },
+    {
+      "symbol": "TATAPOWER"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "UNIONBANK"
+    },
+    {
+      "symbol": "VBL"
+    },
+    {
+      "symbol": "VAML"
+    },
+    {
+      "symbol": "VEDL"
+    },
+    {
+      "symbol": "IDEA"
+    },
+    {
+      "symbol": "WIPRO"
+    },
+    {
+      "symbol": "ZYDUSLIFE"
+    }
+  ]
+}

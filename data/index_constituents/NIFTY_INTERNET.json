@@ -1,0 +1,79 @@
+{
+  "index": "NIFTY INTERNET",
+  "as_of": "2026-10-29",
+  "count": 24,
+  "constituents": [
+    {
+      "symbol": "NIFTY INDIA INTERNET"
+    },
+    {
+      "symbol": "IIFLCAPS"
+    },
+    {
+      "symbol": "CARTRADE"
+    },
+    {
+      "symbol": "MEESHO"
+    },
+    {
+      "symbol": "ETERNAL"
+    },
+    {
+      "symbol": "PAYTM"
+    },
+    {
+      "symbol": "GROWW"
+    },
+    {
+      "symbol": "SWIGGY"
+    },
+    {
+      "symbol": "ANGELONE"
+    },
+    {
+      "symbol": "POLICYBZR"
+    },
+    {
+      "symbol": "NYKAA"
+    },
+    {
+      "symbol": "PINELABS"
+    },
+    {
+      "symbol": "NAUKRI"
+    },
+    {
+      "symbol": "URBANCO"
+    },
+    {
+      "symbol": "PWL"
+    },
+    {
+      "symbol": "MOTILALOFS"
+    },
+    {
+      "symbol": "IRCTC"
+    },
+    {
+      "symbol": "NAZARA"
+    },
+    {
+      "symbol": "JUSTDIAL"
+    },
+    {
+      "symbol": "IXIGO"
+    },
+    {
+      "symbol": "INDIAMART"
+    },
+    {
+      "symbol": "FIRSTCRY"
+    },
+    {
+      "symbol": "TBOTEK"
+    },
+    {
+      "symbol": "THOMASCOOK"
+    }
+  ]
+}

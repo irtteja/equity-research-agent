@@ -1,0 +1,160 @@
+{
+  "index": "NIFTY500MOMENTM50",
+  "as_of": "2026-10-29",
+  "count": 51,
+  "constituents": [
+    {
+      "symbol": "NIFTY500 MOMENTUM 50"
+    },
+    {
+      "symbol": "ACUTAAS"
+    },
+    {
+      "symbol": "BSE"
+    },
+    {
+      "symbol": "SYRMA"
+    },
+    {
+      "symbol": "RRKABEL"
+    },
+    {
+      "symbol": "LAURUSLABS"
+    },
+    {
+      "symbol": "MCX"
+    },
+    {
+      "symbol": "NETWEB"
+    },
+    {
+      "symbol": "SHRIRAMFIN"
+    },
+    {
+      "symbol": "HINDALCO"
+    },
+    {
+      "symbol": "IDEA"
+    },
+    {
+      "symbol": "POLYCAB"
+    },
+    {
+      "symbol": "ATHERENERG"
+    },
+    {
+      "symbol": "GESHIP"
+    },
+    {
+      "symbol": "ADANIPOWER"
+    },
+    {
+      "symbol": "BHEL"
+    },
+    {
+      "symbol": "CUMMINSIND"
+    },
+    {
+      "symbol": "POWERINDIA"
+    },
+    {
+      "symbol": "GVT&D"
+    },
+    {
+      "symbol": "WELCORP"
+    },
+    {
+      "symbol": "NAVINFLUOR"
+    },
+    {
+      "symbol": "APARINDS"
+    },
+    {
+      "symbol": "FEDERALBNK"
+    },
+    {
+      "symbol": "KEI"
+    },
+    {
+      "symbol": "SAIL"
+    },
+    {
+      "symbol": "ABCAPITAL"
+    },
+    {
+      "symbol": "ADANIENSOL"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "HINDCOPPER"
+    },
+    {
+      "symbol": "CGPOWER"
+    },
+    {
+      "symbol": "NATIONALUM"
+    },
+    {
+      "symbol": "CRAFTSMAN"
+    },
+    {
+      "symbol": "HFCL"
+    },
+    {
+      "symbol": "BHARATFORG"
+    },
+    {
+      "symbol": "MAHABANK"
+    },
+    {
+      "symbol": "ABB"
+    },
+    {
+      "symbol": "KARURVYSYA"
+    },
+    {
+      "symbol": "BELRISE"
+    },
+    {
+      "symbol": "RBLBANK"
+    },
+    {
+      "symbol": "GLENMARK"
+    },
+    {
+      "symbol": "KIRLOSENG"
+    },
+    {
+      "symbol": "SAILIFE"
+    },
+    {
+      "symbol": "GMDCLTD"
+    },
+    {
+      "symbol": "FINCABLES"
+    },
+    {
+      "symbol": "ANANDRATHI"
+    },
+    {
+      "symbol": "HONASA"
+    },
+    {
+      "symbol": "NLCINDIA"
+    },
+    {
+      "symbol": "ABSLAMC"
+    },
+    {
+      "symbol": "THERMAX"
+    },
+    {
+      "symbol": "SCHNEIDER"
+    },
+    {
+      "symbol": "GRANULES"
+    }
+  ]
+}

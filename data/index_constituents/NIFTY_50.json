@@ -1,0 +1,157 @@
+{
+  "index": "NIFTY 50",
+  "as_of": "2026-10-29",
+  "count": 50,
+  "constituents": [
+    {
+      "symbol": "ADANIENT"
+    },
+    {
+      "symbol": "ADANIPORTS"
+    },
+    {
+      "symbol": "APOLLOHOSP"
+    },
+    {
+      "symbol": "ASIANPAINT"
+    },
+    {
+      "symbol": "AXISBANK"
+    },
+    {
+      "symbol": "BSE"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "BAJFINANCE"
+    },
+    {
+      "symbol": "BAJAJFINSV"
+    },
+    {
+      "symbol": "BEL"
+    },
+    {
+      "symbol": "BHARTIARTL"
+    },
+    {
+      "symbol": "CIPLA"
+    },
+    {
+      "symbol": "COALINDIA"
+    },
+    {
+      "symbol": "DRREDDY"
+    },
+    {
+      "symbol": "EICHERMOT"
+    },
+    {
+      "symbol": "ETERNAL"
+    },
+    {
+      "symbol": "GRASIM"
+    },
+    {
+      "symbol": "HCLTECH"
+    },
+    {
+      "symbol": "HDFCBANK"
+    },
+    {
+      "symbol": "HDFCLIFE"
+    },
+    {
+      "symbol": "HINDALCO"
+    },
+    {
+      "symbol": "HINDUNILVR"
+    },
+    {
+      "symbol": "ICICIBANK"
+    },
+    {
+      "symbol": "ITC"
+    },
+    {
+      "symbol": "INFY"
+    },
+    {
+      "symbol": "INDIGO"
+    },
+    {
+      "symbol": "JSWSTEEL"
+    },
+    {
+      "symbol": "JIOFIN"
+    },
+    {
+      "symbol": "KOTAKBANK"
+    },
+    {
+      "symbol": "LT"
+    },
+    {
+      "symbol": "M&M"
+    },
+    {
+      "symbol": "MARUTI"
+    },
+    {
+      "symbol": "MAXHEALTH"
+    },
+    {
+      "symbol": "NTPC"
+    },
+    {
+      "symbol": "NESTLEIND"
+    },
+    {
+      "symbol": "ONGC"
+    },
+    {
+      "symbol": "POWERGRID"
+    },
+    {
+      "symbol": "RELIANCE"
+    },
+    {
+      "symbol": "SBILIFE"
+    },
+    {
+      "symbol": "SHRIRAMFIN"
+    },
+    {
+      "symbol": "SBIN"
+    },
+    {
+      "symbol": "SUNPHARMA"
+    },
+    {
+      "symbol": "TCS"
+    },
+    {
+      "symbol": "TATACONSUM"
+    },
+    {
+      "symbol": "TMPV"
+    },
+    {
+      "symbol": "TATASTEEL"
+    },
+    {
+      "symbol": "TECHM"
+    },
+    {
+      "symbol": "TITAN"
+    },
+    {
+      "symbol": "TRENT"
+    },
+    {
+      "symbol": "ULTRACEMCO"
+    }
+  ]
+}

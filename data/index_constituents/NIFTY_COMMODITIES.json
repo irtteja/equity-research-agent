@@ -1,0 +1,97 @@
+{
+  "index": "NIFTY COMMODITIES",
+  "as_of": "2026-10-29",
+  "count": 30,
+  "constituents": [
+    {
+      "symbol": "APLAPOLLO"
+    },
+    {
+      "symbol": "ADANIENSOL"
+    },
+    {
+      "symbol": "ADANIGREEN"
+    },
+    {
+      "symbol": "ADANIPOWER"
+    },
+    {
+      "symbol": "AMBUJACEM"
+    },
+    {
+      "symbol": "BPCL"
+    },
+    {
+      "symbol": "COALINDIA"
+    },
+    {
+      "symbol": "GRASIM"
+    },
+    {
+      "symbol": "HINDALCO"
+    },
+    {
+      "symbol": "HINDPETRO"
+    },
+    {
+      "symbol": "IOC"
+    },
+    {
+      "symbol": "JSWENERGY"
+    },
+    {
+      "symbol": "JSWSTEEL"
+    },
+    {
+      "symbol": "JINDALSTEL"
+    },
+    {
+      "symbol": "NHPC"
+    },
+    {
+      "symbol": "NMDC"
+    },
+    {
+      "symbol": "NTPC"
+    },
+    {
+      "symbol": "ONGC"
+    },
+    {
+      "symbol": "OIL"
+    },
+    {
+      "symbol": "PIDILITIND"
+    },
+    {
+      "symbol": "RELIANCE"
+    },
+    {
+      "symbol": "SRF"
+    },
+    {
+      "symbol": "SHREECEM"
+    },
+    {
+      "symbol": "TATAPOWER"
+    },
+    {
+      "symbol": "TATASTEEL"
+    },
+    {
+      "symbol": "TORNTPOWER"
+    },
+    {
+      "symbol": "UPL"
+    },
+    {
+      "symbol": "ULTRACEMCO"
+    },
+    {
+      "symbol": "VAML"
+    },
+    {
+      "symbol": "VEDL"
+    }
+  ]
+}

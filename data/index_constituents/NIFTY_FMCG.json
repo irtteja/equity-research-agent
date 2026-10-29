@@ -1,0 +1,52 @@
+{
+  "index": "NIFTY FMCG",
+  "as_of": "2026-10-29",
+  "count": 15,
+  "constituents": [
+    {
+      "symbol": "BRITANNIA"
+    },
+    {
+      "symbol": "COLPAL"
+    },
+    {
+      "symbol": "DABUR"
+    },
+    {
+      "symbol": "GODFRYPHLP"
+    },
+    {
+      "symbol": "GODREJCP"
+    },
+    {
+      "symbol": "HINDUNILVR"
+    },
+    {
+      "symbol": "ITC"
+    },
+    {
+      "symbol": "MARICO"
+    },
+    {
+      "symbol": "NESTLEIND"
+    },
+    {
+      "symbol": "PATANJALI"
+    },
+    {
+      "symbol": "RADICO"
+    },
+    {
+      "symbol": "TATACONSUM"
+    },
+    {
+      "symbol": "UBL"
+    },
+    {
+      "symbol": "UNITDSPR"
+    },
+    {
+      "symbol": "VBL"
+    }
+  ]
+}

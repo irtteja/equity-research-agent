@@ -1,0 +1,97 @@
+{
+  "index": "NIFTY MNC",
+  "as_of": "2026-10-29",
+  "count": 30,
+  "constituents": [
+    {
+      "symbol": "ABB"
+    },
+    {
+      "symbol": "AWL"
+    },
+    {
+      "symbol": "ABBOTINDIA"
+    },
+    {
+      "symbol": "AMBUJACEM"
+    },
+    {
+      "symbol": "ASHOKLEY"
+    },
+    {
+      "symbol": "BOSCHLTD"
+    },
+    {
+      "symbol": "BRITANNIA"
+    },
+    {
+      "symbol": "CRISIL"
+    },
+    {
+      "symbol": "CASTROLIND"
+    },
+    {
+      "symbol": "COLPAL"
+    },
+    {
+      "symbol": "CUMMINSIND"
+    },
+    {
+      "symbol": "ESCORTS"
+    },
+    {
+      "symbol": "GLAND"
+    },
+    {
+      "symbol": "HINDUNILVR"
+    },
+    {
+      "symbol": "POWERINDIA"
+    },
+    {
+      "symbol": "HYUNDAI"
+    },
+    {
+      "symbol": "LGEINDIA"
+    },
+    {
+      "symbol": "LINDEINDIA"
+    },
+    {
+      "symbol": "MARUTI"
+    },
+    {
+      "symbol": "NESTLEIND"
+    },
+    {
+      "symbol": "NAM-INDIA"
+    },
+    {
+      "symbol": "OFSS"
+    },
+    {
+      "symbol": "SCHAEFFLER"
+    },
+    {
+      "symbol": "ENRIN"
+    },
+    {
+      "symbol": "SIEMENS"
+    },
+    {
+      "symbol": "TIMKEN"
+    },
+    {
+      "symbol": "UBL"
+    },
+    {
+      "symbol": "UNITDSPR"
+    },
+    {
+      "symbol": "VAML"
+    },
+    {
+      "symbol": "VEDL"
+    }
+  ]
+}

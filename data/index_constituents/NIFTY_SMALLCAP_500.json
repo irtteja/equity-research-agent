@@ -1,0 +1,157 @@
+{
+  "index": "NIFTY SMALLCAP 500",
+  "as_of": "2026-10-29",
+  "count": 50,
+  "constituents": [
+    {
+      "symbol": "ACUTAAS"
+    },
+    {
+      "symbol": "AEGISLOG"
+    },
+    {
+      "symbol": "AFFLE"
+    },
+    {
+      "symbol": "ARE&M"
+    },
+    {
+      "symbol": "AMBER"
+    },
+    {
+      "symbol": "ANANDRATHI"
+    },
+    {
+      "symbol": "ANGELONE"
+    },
+    {
+      "symbol": "APOLLOTYRE"
+    },
+    {
+      "symbol": "ATHERENERG"
+    },
+    {
+      "symbol": "BANDHANBNK"
+    },
+    {
+      "symbol": "CDSL"
+    },
+    {
+      "symbol": "CUB"
+    },
+    {
+      "symbol": "CAMS"
+    },
+    {
+      "symbol": "CROMPTON"
+    },
+    {
+      "symbol": "DELHIVERY"
+    },
+    {
+      "symbol": "LALPATHLAB"
+    },
+    {
+      "symbol": "GLAND"
+    },
+    {
+      "symbol": "GESHIP"
+    },
+    {
+      "symbol": "HFCL"
+    },
+    {
+      "symbol": "HSCL"
+    },
+    {
+      "symbol": "IIFL"
+    },
+    {
+      "symbol": "IGL"
+    },
+    {
+      "symbol": "INOXWIND"
+    },
+    {
+      "symbol": "KPITTECH"
+    },
+    {
+      "symbol": "KARURVYSYA"
+    },
+    {
+      "symbol": "KAYNES"
+    },
+    {
+      "symbol": "KFINTECH"
+    },
+    {
+      "symbol": "KIRLOSENG"
+    },
+    {
+      "symbol": "MTARTECH"
+    },
+    {
+      "symbol": "MANAPPURAM"
+    },
+    {
+      "symbol": "NATCOPHARM"
+    },
+    {
+      "symbol": "NBCC"
+    },
+    {
+      "symbol": "NAVINFLUOR"
+    },
+    {
+      "symbol": "NEULANDLAB"
+    },
+    {
+      "symbol": "ONESOURCE"
+    },
+    {
+      "symbol": "PGEL"
+    },
+    {
+      "symbol": "PNBHOUSING"
+    },
+    {
+      "symbol": "PPLPHARMA"
+    },
+    {
+      "symbol": "POONAWALLA"
+    },
+    {
+      "symbol": "RBLBANK"
+    },
+    {
+      "symbol": "REDINGTON"
+    },
+    {
+      "symbol": "SAILIFE"
+    },
+    {
+      "symbol": "SONACOMS"
+    },
+    {
+      "symbol": "SYNGENE"
+    },
+    {
+      "symbol": "TDPOWERSYS"
+    },
+    {
+      "symbol": "TATACHEM"
+    },
+    {
+      "symbol": "TATAELXSI"
+    },
+    {
+      "symbol": "TATATECH"
+    },
+    {
+      "symbol": "WELCORP"
+    },
+    {
+      "symbol": "WOCKPHARMA"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "index": "NIFTY BANK",
+  "as_of": "2026-10-29",
+  "count": 14,
+  "constituents": [
+    {
+      "symbol": "AUBANK"
+    },
+    {
+      "symbol": "AXISBANK"
+    },
+    {
+      "symbol": "BANKBARODA"
+    },
+    {
+      "symbol": "CANBK"
+    },
+    {
+      "symbol": "FEDERALBNK"
+    },
+    {
+      "symbol": "HDFCBANK"
+    },
+    {
+      "symbol": "ICICIBANK"
+    },
+    {
+      "symbol": "IDFCFIRSTB"
+    },
+    {
+      "symbol": "INDUSINDBK"
+    },
+    {
+      "symbol": "KOTAKBANK"
+    },
+    {
+      "symbol": "PNB"
+    },
+    {
+      "symbol": "SBIN"
+    },
+    {
+      "symbol": "UNIONBANK"
+    },
+    {
+      "symbol": "YESBANK"
+    }
+  ]
+}
