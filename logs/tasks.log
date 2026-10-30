@@ -22,3 +22,11 @@ Progress: Macro snapshot, FII/DII, 0 announcements, block deal STLTECH. Push pen
 Next: Push to GitHub when repo is added to session; build announcement classifier; insider trading tracker
 Blockers: irtteja/equity-research-agent not in session authorized repos
 ============================================================
+
+[CHECKPOINT] 2026-10-30 15:30
+Task: session-20261030
+Status: completed
+Progress: hardened CLAUDE.md with mandatory logging/documentation/self-improvement rules; committed 2bbc733
+Next: outcome logging (memory/outcome_log.py), BSE announcements, enable scheduled tasks when live
+Blockers: none
+============================================================
