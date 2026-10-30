@@ -278,3 +278,100 @@ fetch_results --retry (7:40 AM IST) → retries not-yet-filed companies
 - Build `tools/recall_tool.py` — expose memory to MCP so Claude can query during analysis
 - Test: run `python jobs/fetch_results.py` manually against a day with known results
 - Add Kuzu graph + LanceDB vector index (Phase 2) once facts accumulate
+
+---
+
+## 2026-10-30 — Recall, Ingestion Wiring, Self-Model, Doc Swarm, E2E Test
+
+### Done
+
+#### Retrieval layer — `memory/recall.py` (commit bfba60c)
+Every function returns `{data, text}` — text is pre-formatted for direct Claude injection.
+- `get_price_series(symbol, days)` — reads bhavcopy CSVs, last N trading days
+- `get_results(symbol, n)` — reads `memory_store/results/<TICKER>.jsonl`, last N quarters
+- `get_announcements(symbol, days)` — SQLite first, raw JSON fallback
+- `get_insights(symbol)` — knowledge_base table in research.db
+- `get_documents(symbol, doc_type)` — doc_store search_index
+- `search_documents(symbol, query)` — keyword regex across chunks
+- `get_macro(date)` — macro_snapshots table
+- `search_facts(query, symbol)` — cross-source: announcements + knowledge_base
+- `company_snapshot(symbol)` — assembles all of above into one formatted block
+
+#### Context-aware analysis — `memory/ingestion.py` (commit 31c119b)
+Before building the extraction prompt, now injects:
+- `_build_company_context(ticker)` — last 30d prices + last 4 quarters results + prior insights
+- `_get_self_model_context()` — agent's accumulated patterns from self_model
+Both fail gracefully and never break the pipeline.
+Extraction prompt template now leads with `{self_model_context}` and `What we already know about {ticker}`.
+
+#### Document ingestion swarm — `agents/document_swarm.py` + `memory/doc_store.py` (commit 4630307)
+Multi-format parallel worker pool. Supported: PDF, XLSX/CSV, DOCX, TXT/MD/HTML.
+- `agents/workers/classifier.py` — rule-based symbol + doc_type + period detection (no LLM)
+- `agents/workers/pdf_worker.py` — pymupdf direct + tesseract OCR fallback
+- `agents/workers/excel_worker.py` — openpyxl + csv
+- `agents/workers/docx_worker.py` — python-docx
+- `agents/workers/text_worker.py` — plain text + HTML strip
+- SHA-256 content dedup: same file ingested twice = silently skipped
+- Storage: `memory_store/documents/{SYMBOL}/{doc_type}/YYYY-MM-DD_{slug}_{hash}.json`
+- `_doc_index.jsonl` as master index; `search_index()`, `load_document()`, `summary()`
+- CLI: `python agents/document_swarm.py /path/ --workers 16 --symbol RELIANCE`
+
+#### Self-model layer — `memory/self_model.py` + `jobs/daily_monitor.py` + `MISSION.md` (commit b987771)
+Persistent context layer: agent writes observations → injected into every future session.
+- Storage: `memory_store/self_model.json` — confirmed/uncertain patterns, calibration, watch list, sector notes, session log (last 30)
+- `apply_reflection(reflection_dict)` — merges Claude's post-run JSON into model
+- `as_context()` — formatted block for system prompt injection
+- `build_reflection_prompt(session_results)` — end-of-day prompt that tells Claude what to output
+- `daily_monitor.py` step 6 now prints reflection prompt + current model after every run
+- `MISSION.md` updated: load self-model at session start, apply reflection at end of daily run
+
+#### E2E test suite — `tests/test_e2e.py` (commit c35e6ad)
+4-layer smoke test using real data already in memory_store — no live API calls.
+- Layer 1 (Recall): prices, results, announcements, snapshot
+- Layer 2 (Ingestion): real announcement + PDF download + context-injected prompt
+- Layer 3 (Self-model): apply_reflection, as_context, cleanup
+- Layer 4 (Doc Swarm): ingest, dedup, search, retrieve
+- All 4 layers pass on RELIANCE
+- Run: `python tests/test_e2e.py --symbol RELIANCE --verbose`
+
+#### Bug fix — `tools/__init__.py` lazy import (commit c35e6ad)
+`pandas_ta` imports `numba` which requires NumPy ≤ 2.2 (system has 2.5).
+Wrapped `run_technical_analysis` in a lazy loader to defer the import until actual call.
+
+### Architecture state (as of 2026-10-30)
+
+```
+Data fetch layer (complete)
+  daily_monitor.py → macro, FII/DII, announcements, bhavcopy, block/bulk deals
+  fetch_results.py → XBRL quarterly results (1:15 AM + 7:40 AM retry)
+  fetch_announcements.py → parallel NSE announcement fetch (873 symbols)
+
+Storage layer (complete)
+  memory_store/bhavcopy/        — daily equity prices (CSV)
+  memory_store/results/         — XBRL quarterly results (JSONL per symbol)
+  memory_store/announcements/   — raw daily announcement JSON
+  memory_store/documents/       — doc swarm output (PDF/XLSX/DOCX/TXT)
+  memory_store/self_model.json  — agent self-model
+  memory/research.db            — SQLite: insights, tasks, macro snapshots
+
+Retrieval layer (complete)
+  memory/recall.py              — unified query interface, {data, text} responses
+
+Analysis layer (wired, but Claude does extraction in-session)
+  memory/ingestion.py           — prepare_announcement() with context injection
+  memory/triage.py              — rule-based deep/light/skip pre-filter
+  memory/self_model.py          — accumulated agent patterns
+
+Document ingestion (complete)
+  agents/document_swarm.py      — parallel multi-format ingestor
+  memory/doc_store.py           — storage + retrieval + dedup
+```
+
+### Pending / next sessions
+- Run `fetch_results.py` manually against a day with known results — verify XBRL pipeline end-to-end
+- BSE announcements integration — currently NSE-only
+- Annual reports auto-fetch — URL pattern known, pipeline not yet built
+- `tools/recall_tool.py` — expose recall as MCP tool for in-session queries
+- Phase 2 memory: Kuzu graph + LanceDB vector index (once facts accumulate)
+- Weekly research job (`jobs/weekly_research.py`) — still disabled
+- Re-enable all scheduled tasks when ready to go live (14 tasks currently disabled)
