@@ -281,8 +281,12 @@ def _resolved_gaps(current_areas: set, history: list[dict]) -> list[str]:
 def _signal_triage_health() -> list[dict]:
     """
     Read outcome_log.jsonl and surface triage calibration issues.
-    Flags: categories that are always skipped (>90%) or always deep (>90%),
-    and accuracy below threshold for scored decisions.
+
+    Two layers:
+      Layer 1 — distribution checks: categories with >90% skip or >90% deep rate,
+                accuracy below threshold for scored decisions.
+      Layer 2 — deep diagnosis via _diagnose_triage(): re-runs triage() on stored
+                inputs, finds anomaly patterns, generates + applies patches.
     """
     gaps = []
     path = STORE / "outcome_log.jsonl"
@@ -292,6 +296,7 @@ def _signal_triage_health() -> list[dict]:
     from collections import defaultdict
     by_category: dict = defaultdict(lambda: defaultdict(int))
     scored, score_sum, total = 0, 0.0, 0
+    all_entries: list[dict] = []
 
     for line in path.read_text().splitlines():
         line = line.strip()
@@ -302,34 +307,31 @@ def _signal_triage_health() -> list[dict]:
             if e.get("event_type") != "triage":
                 continue
             total += 1
-            # source field often contains "category" info via input text
-            decision = e.get("decision", "unknown")
-            # use first word of rationale as a rough category label
+            decision  = e.get("decision", "unknown")
             rationale = (e.get("rationale") or "unknown").split(":")[0].strip()[:40]
             by_category[rationale][decision] += 1
             if e.get("score") is not None:
                 scored += 1
                 score_sum += float(e["score"])
+            all_entries.append(e)
         except (json.JSONDecodeError, ValueError):
             pass
 
     if total < 20:
-        # not enough data to draw conclusions yet
         return gaps
 
-    # Check accuracy on scored decisions
+    # ── Layer 1: distribution checks ──────────────────────────────────────────
     if scored >= 10:
         mean_acc = score_sum / scored
         if mean_acc < 0.70:
             gaps.append({
                 "area": "triage_accuracy",
                 "finding": f"Triage mean accuracy {mean_acc:.0%} across {scored} scored decisions — below 70% threshold",
-                "action": "Review triage.py rules for categories with lowest accuracy; check outcome_log for patterns",
+                "action": "Run: python jobs/self_improve.py --diagnose-triage for specific rule patches",
                 "priority": "high",
                 "metric": {"accuracy": round(mean_acc, 3), "scored": scored},
             })
 
-    # Check per-category skew
     for cat, decisions in by_category.items():
         cat_total = sum(decisions.values())
         if cat_total < 10:
@@ -339,21 +341,287 @@ def _signal_triage_health() -> list[dict]:
         if skip_rate > 0.90:
             gaps.append({
                 "area": f"triage_skew:{cat[:30]}",
-                "finding": f"Category '{cat}' is skipped {skip_rate:.0%} of the time ({cat_total} decisions) — possible over-filtering",
-                "action": f"Review triage.py rule for '{cat}'; check if valuable signals are being missed",
+                "finding": f"Rule '{cat}' fires skip {skip_rate:.0%} of the time ({cat_total} decisions)",
+                "action": "Run: python jobs/self_improve.py --diagnose-triage",
                 "priority": "medium",
                 "metric": {"skip_rate": round(skip_rate, 3), "n": cat_total},
             })
-        elif deep_rate > 0.90:
+        elif deep_rate > 0.90 and cat == "default deep":
+            # default deep firing too often = missing specific rules above it
             gaps.append({
-                "area": f"triage_deep_flood:{cat[:30]}",
-                "finding": f"Category '{cat}' triggers deep {deep_rate:.0%} of the time — may be over-processing noise",
-                "action": f"Review triage.py rule for '{cat}'; tighten conditions if category includes noise",
-                "priority": "low",
-                "metric": {"deep_rate": round(deep_rate, 3), "n": cat_total},
+                "area": "triage_default_deep_flood",
+                "finding": f"'default deep' fallback firing {deep_rate:.0%} of the time ({cat_total}/{total} decisions) — too few specific rules",
+                "action": "Run: python jobs/self_improve.py --diagnose-triage to mine patterns + generate rules",
+                "priority": "medium" if deep_rate < 0.95 else "high",
+                "metric": {"deep_rate": round(deep_rate, 3), "n": cat_total, "total": total},
+            })
+
+    # ── Layer 2: deep diagnosis (runs when enough data) ───────────────────────
+    if total >= 50:
+        diag = _diagnose_triage(all_entries)
+        if diag["patches_applied"] > 0:
+            gaps.append({
+                "area": "triage_auto_patched",
+                "finding": f"Auto-patched {diag['patches_applied']} triage rules from {len(diag['anomalies'])} anomalies",
+                "action": "Verify patches in memory/triage.py — check git diff",
+                "priority": "low",  # already fixed — just FYI
+                "metric": {"patches": diag["patches_applied"], "anomalies": len(diag["anomalies"])},
+            })
+        # Surface skip leaks as a gap (risky — needs human review before patching)
+        leaks = [a for a in diag["anomalies"] if a["type"] == "skip_financial_leak"]
+        if leaks:
+            total_leaks = sum(a["count"] for a in leaks)
+            rules = ", ".join(a["pattern"][:30] for a in leaks[:3])
+            gaps.append({
+                "area": "triage_skip_financial_leak",
+                "finding": f"{total_leaks} skip decisions contain strong financial keywords — possible false negatives (rules: {rules})",
+                "action": f"Review memory_store/triage_patch_candidates.jsonl; escalate rules to deep if confirmed",
+                "priority": "high" if total_leaks >= 10 else "medium",
+                "metric": {"leak_count": total_leaks, "rules": [a["pattern"] for a in leaks]},
             })
 
     return gaps
+
+
+def _diagnose_triage(entries: list[dict]) -> dict:
+    """
+    Deep-diagnose triage miscalibration by re-running triage() on stored inputs,
+    comparing the rule that fired against what the decision should have been,
+    and generating concrete patch candidates for memory/triage.py.
+
+    Three anomaly classes:
+      A. default_deep_flood  — entries where rationale='default deep', grouped by
+                               common text patterns → candidates for new specific rules
+      B. skip_financial_leak — entries where decision=skip but input contains strong
+                               financial keywords → potential false negatives
+      C. scored_rule_misfire — rules with low accuracy on scored entries (future)
+
+    Returns {
+        'anomalies': list of {type, pattern, count, evidence, patch, confidence},
+        'patches_applied': int,
+        'patches_staged': list of patch dicts,
+        'summary': str,
+    }
+    """
+    import re as _re
+    from collections import Counter, defaultdict
+
+    # ── Re-run triage() on each stored input ──────────────────────────────────
+    try:
+        from memory.triage import triage as _triage
+    except ImportError:
+        return {"anomalies": [], "patches_applied": 0, "patches_staged": [], "summary": "triage import failed"}
+
+    # Rebuild entries with actual rule that fires
+    enriched = []
+    for e in entries:
+        inp     = e.get("input", "")
+        # category is not stored in outcome_log — extract from rationale context or leave blank
+        rationale_stored = e.get("rationale", "")
+        decision_stored  = e.get("decision", "")
+        # Re-run with empty category (we don't have it) — gives text-based rule only
+        rule_fired, rule_reason = _triage("", inp)
+        enriched.append({
+            "input":            inp,
+            "decision_stored":  decision_stored,
+            "rationale_stored": rationale_stored,
+            "rule_fired":       rule_fired,
+            "rule_reason":      rule_reason,
+            "score":            e.get("score"),
+            "symbol":           e.get("symbol", ""),
+        })
+
+    anomalies = []
+    patches_staged = []
+
+    # ── Anomaly A: default_deep_flood ─────────────────────────────────────────
+    # Entries that fell through all rules to 'default deep' — text has no specific pattern.
+    # Mine for common 2–4 word phrases; if a phrase appears in 5+ entries, it's a rule candidate.
+    default_deep = [e for e in enriched if e["rule_reason"] == "default deep"]
+    if len(default_deep) >= 5:
+        phrase_counter: Counter = Counter()
+        # Extract lowercase 2–3 grams from input text
+        for e in default_deep:
+            words = _re.findall(r'[a-z]{3,}', e["input"].lower())
+            for n in (2, 3):
+                for i in range(len(words) - n + 1):
+                    phrase_counter[" ".join(words[i:i+n])] += 1
+
+        # Candidate phrases: appear in ≥20% of default_deep entries, min 5 hits
+        threshold = max(5, int(len(default_deep) * 0.20))
+        candidates = [(ph, cnt) for ph, cnt in phrase_counter.items() if cnt >= threshold]
+        # Filter out generic stop-phrases
+        _STOP = {"the company", "the board", "with reference", "please find", "in terms",
+                 "for the", "of the", "to the", "in the", "and the", "on the", "at the",
+                 "this is", "that the", "as per", "as at", "as on"}
+        candidates = [(ph, cnt) for ph, cnt in candidates if ph not in _STOP]
+        candidates.sort(key=lambda x: -x[1])
+
+        for phrase, cnt in candidates[:5]:
+            # Determine what triage label these entries *should* have
+            # Heuristic: if phrase contains results/financial keywords → deep (already is)
+            #            if phrase contains schedule/intimation → skip candidate
+            _FINANCIAL = {"results", "quarterly", "quarter", "revenue", "profit", "ebitda",
+                          "pat", "unaudited", "audited", "financial"}
+            _SCHEDULE  = {"schedule", "intimation", "notice", "invite", "invitation"}
+            ph_words = set(phrase.split())
+            if ph_words & _SCHEDULE:
+                suggested = "skip"
+                suggested_reason = f"schedule/intimation pattern: '{phrase}'"
+                rule_section = "SKIP"
+            elif len(ph_words & _FINANCIAL) >= 1:
+                # already going to deep, but we can add a specific rule so rationale is cleaner
+                suggested = "deep"
+                suggested_reason = f"financial keyword pattern: '{phrase}'"
+                rule_section = "DEEP_SPECIFIC"
+            else:
+                continue  # unknown intent — don't generate a rule
+
+            evidence = [e["input"][:120] for e in default_deep
+                        if phrase in e["input"].lower()][:3]
+
+            patch = None
+            if suggested == "skip" and cnt >= 8:
+                # Add phrase to skip_txt list in triage.py
+                patch = {
+                    "file": "memory/triage.py",
+                    "description": f"Add '{phrase}' to skip_txt (found in {cnt} default_deep entries)",
+                    "old_str": f"    skip_txt = [",
+                    "new_str": f"    skip_txt = [\n        '{phrase}',  # auto-added: {cnt} default_deep entries",
+                    "confidence": "medium",
+                }
+
+            anomalies.append({
+                "type":      "default_deep_flood",
+                "pattern":   phrase,
+                "count":     cnt,
+                "suggested": suggested,
+                "evidence":  evidence,
+                "patch":     patch,
+                "confidence": "high" if cnt >= 10 else "medium",
+            })
+
+    # ── Anomaly B: skip_financial_leak ────────────────────────────────────────
+    # Entries stored as skip where the input text contains strong financial signal.
+    # These are potential false negatives — the skip rule fired on content that
+    # actually contained extractable facts.
+    _FIN_KEYWORDS = [
+        "unaudited", "audited", "quarterly results", "financial results",
+        "revenue of", "net profit", "ebitda of", "pat of", "crore",
+        "q2 fy", "q1 fy", "h1 fy", "quarter ended",
+    ]
+    skip_entries = [e for e in enriched if e["decision_stored"] == "skip"]
+    leaks = []
+    for e in skip_entries:
+        inp_low = e["input"].lower()
+        hits = [kw for kw in _FIN_KEYWORDS if kw in inp_low]
+        if len(hits) >= 2:  # 2+ financial keywords in a skipped entry = suspicious
+            leaks.append({"input": e["input"][:200], "rule_reason": e["rule_reason"],
+                          "keywords": hits, "symbol": e["symbol"]})
+
+    if len(leaks) >= 3:
+        # Group by the rule that caused the skip
+        by_rule: defaultdict = defaultdict(list)
+        for lk in leaks:
+            by_rule[lk["rule_reason"]].append(lk)
+
+        for rule, group in sorted(by_rule.items(), key=lambda x: -len(x[1])):
+            anomalies.append({
+                "type":      "skip_financial_leak",
+                "pattern":   rule,
+                "count":     len(group),
+                "suggested": "deep",
+                "evidence":  [g["input"][:120] for g in group[:3]],
+                "patch":     None,  # too risky to auto-patch skip rules — surface for review
+                "confidence": "medium",
+            })
+
+    # ── Anomaly C: scored rule misfires (only when scores exist) ──────────────
+    scored = [e for e in enriched if e.get("score") is not None]
+    if len(scored) >= 10:
+        by_rule_acc: defaultdict = defaultdict(list)
+        for e in scored:
+            by_rule_acc[e["rule_reason"]].append(float(e["score"]))
+        for rule, scores in by_rule_acc.items():
+            if len(scores) < 5:
+                continue
+            acc = sum(scores) / len(scores)
+            if acc < 0.60:
+                anomalies.append({
+                    "type":      "scored_rule_misfire",
+                    "pattern":   rule,
+                    "count":     len(scores),
+                    "accuracy":  round(acc, 3),
+                    "suggested": "review",
+                    "evidence":  [],
+                    "patch":     None,
+                    "confidence": "high",
+                })
+
+    # ── Apply high-confidence patches ─────────────────────────────────────────
+    patches_applied = 0
+    triage_path = REPO / "memory" / "triage.py"
+    triage_src = triage_path.read_text()
+
+    for anomaly in anomalies:
+        patch = anomaly.get("patch")
+        if not patch or anomaly["confidence"] != "high":
+            if patch:
+                patches_staged.append(patch)
+            continue
+
+        old_str = patch["old_str"]
+        new_str = patch["new_str"]
+        if old_str not in triage_src:
+            patches_staged.append({**patch, "note": "old_str not found — staged for review"})
+            continue
+
+        # Apply the patch
+        triage_src = triage_src.replace(old_str, new_str, 1)
+        patches_applied += 1
+
+    if patches_applied > 0:
+        triage_path.write_text(triage_src)
+        try:
+            subprocess.run(["git", "add", str(triage_path)], cwd=str(REPO), check=True)
+            subprocess.run(
+                ["git", "commit", "-m",
+                 f"fix(triage): auto-patch {patches_applied} miscalibrations from diagnose_triage\n\n"
+                 f"Patterns: {', '.join(a['pattern'] for a in anomalies if a.get('patch') and a['confidence']=='high')}\n\n"
+                 f"Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n"
+                 f"Claude-Session: https://claude.ai/code/session_01G28r1gAsugprj2KxqH9L5D"],
+                cwd=str(REPO), check=True,
+            )
+        except subprocess.CalledProcessError:
+            pass  # patch applied to file even if commit fails
+
+    # ── Write staged patches to a review file ────────────────────────────────
+    if patches_staged:
+        staged_path = STORE / "triage_patch_candidates.jsonl"
+        with open(staged_path, "a") as f:
+            for p in patches_staged:
+                f.write(json.dumps({**p, "ts": datetime.now().isoformat()}, default=str) + "\n")
+
+    n_anomalies = len(anomalies)
+    summary = (
+        f"{n_anomalies} anomalies found: "
+        f"{sum(1 for a in anomalies if a['type']=='default_deep_flood')} default-deep floods, "
+        f"{sum(1 for a in anomalies if a['type']=='skip_financial_leak')} skip leaks, "
+        f"{sum(1 for a in anomalies if a['type']=='scored_rule_misfire')} scored misfires. "
+        f"{patches_applied} patches applied, {len(patches_staged)} staged for review."
+    )
+
+    _log({"type": "triage_diagnosis", "anomaly_count": n_anomalies,
+          "patches_applied": patches_applied, "patches_staged": len(patches_staged),
+          "anomalies": [{k: v for k, v in a.items() if k != "evidence"} for a in anomalies],
+          "summary": summary})
+
+    return {
+        "anomalies":       anomalies,
+        "patches_applied": patches_applied,
+        "patches_staged":  patches_staged,
+        "summary":         summary,
+    }
 
 
 def _signal_test_failures(history: list[dict]) -> list[dict]:
@@ -942,11 +1210,48 @@ def run(test: bool = True, heal: bool = True, improve: bool = True, symbol: str 
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("--test",    action="store_true")
-    parser.add_argument("--heal",    action="store_true")
-    parser.add_argument("--improve", action="store_true")
-    parser.add_argument("--symbol",  default="RELIANCE")
+    parser.add_argument("--test",            action="store_true")
+    parser.add_argument("--heal",            action="store_true")
+    parser.add_argument("--improve",         action="store_true")
+    parser.add_argument("--diagnose-triage", action="store_true",
+                        help="Run triage diagnosis directly: re-run rules on outcome_log, find anomalies, generate patches")
+    parser.add_argument("--symbol",          default="RELIANCE")
     args = parser.parse_args()
+
+    if args.diagnose_triage:
+        print(f"\n{'='*60}")
+        print(f"  Triage Diagnosis — {date.today().isoformat()}")
+        print(f"{'='*60}\n")
+        path = STORE / "outcome_log.jsonl"
+        entries = []
+        if path.exists():
+            for line in path.read_text().splitlines():
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    e = json.loads(line)
+                    if e.get("event_type") == "triage":
+                        entries.append(e)
+                except json.JSONDecodeError:
+                    pass
+        print(f"  {len(entries)} triage entries in outcome_log")
+        if len(entries) < 10:
+            print("  Not enough data yet (need 10+). Run fetch_announcements.py --save first.")
+        else:
+            result = _diagnose_triage(entries)
+            print(f"\n  {result['summary']}")
+            for a in result["anomalies"]:
+                print(f"\n  [{a['type']}] pattern='{a['pattern']}' count={a['count']} confidence={a['confidence']}")
+                for ev in a.get("evidence", [])[:2]:
+                    print(f"    └ {ev[:100]}")
+                if a.get("patch"):
+                    print(f"    patch: {a['patch']['description']}")
+            if result["patches_applied"]:
+                print(f"\n  ✓ {result['patches_applied']} patches applied to memory/triage.py")
+            if result["patches_staged"]:
+                print(f"  ~ {len(result['patches_staged'])} patches staged in memory_store/triage_patch_candidates.jsonl")
+        import sys; sys.exit(0)
 
     # if no flags, run all
     all_mode = not (args.test or args.heal or args.improve)
