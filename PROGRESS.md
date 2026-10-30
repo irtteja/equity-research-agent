@@ -230,3 +230,51 @@
 - Run first real ingestion test on 2-3 deep items (AMBUJACEM results, EQUITASBNK results)
 - Add `rationale` block to deep extraction prompt: significance, vs_expectations, key_takeaway, watch_for
 - Build `tools/recall_tool.py` to expose memory to MCP server
+
+---
+
+## 2026-10-30 — XBRL Results Pipeline
+
+### Done
+
+- **Tesseract OCR fallback in `tools/pdf_parser.py`** (commit aacd1f7):
+  - `_extract_text_tesseract()`: renders each page at 2x resolution (pymupdf.Matrix), runs pytesseract
+  - Auto-triggers when pymupdf returns <50 chars (scanned PDF detection)
+  - Graceful degradation if pytesseract not installed; returns `ocr_error` key
+  - `memory/ingestion.py` updated to distinguish `scanned_pdf_ocr_failed` (retryable) from `pdf_empty_or_image_only` (skip)
+
+- **`memory/results_store.py`** — JSONL-backed XBRL quarterly results store (commit f38e6bb):
+  - `STORE_DIR = memory_store/results/`; one `<TICKER>.jsonl` per company, one line per quarter
+  - `save_results(symbol, quarters)` — idempotent (period_end as unique key), appends, updates `_index.json`
+  - `get_results(symbol)` — all quarters oldest-first
+  - `get_latest(symbol)` — most recent quarter
+  - `get_deltas(symbol)` — QoQ deltas for revenue_from_operations, pat, ebit, total_income, total_expenses, eps_basic
+  - `get_index()` / `list_symbols()` — summary index helpers
+
+- **`jobs/fetch_results.py`** — nightly parallel results fetch (commit f38e6bb):
+  - Reads `memory_store/event_calendar/YYYY-MM-DD.json` → filters financial results events
+  - Parallel `financial_results_detail()` at 10 workers (~5s for 50 companies)
+  - Saves via `results_store.save_results()`
+  - Writes `_pending_retry.json` for companies that haven't filed by 1 AM
+  - `--retry` flag for 8 AM pass (reads retry file, cleans up after)
+
+- **`jobs/daily_monitor.py` step 0** — event_calendar save (commit f38e6bb):
+  - New step 0/5: fetches `nse.event_calendar()`, saves to `memory_store/event_calendar/YYYY-MM-DD.json`
+  - Counts upcoming results events — gives full results season visibility 2-3 weeks ahead
+
+- **Two scheduled tasks created**:
+  - `Results Fetch — Nightly XBRL` (trig_01FuxqGR8MtthLn6fgdtB6Pc): 1:15 AM IST Mon-Sat
+  - `Results Fetch — 8 AM Retry` (trig_011qbj3PujDhjKBz11wx5tom): 7:40 AM IST Mon-Sat
+
+### Data flow
+```
+daily_monitor (4:31 PM IST) → memory_store/event_calendar/YYYY-MM-DD.json
+fetch_results (1:15 AM IST) → reads calendar → parallel XBRL fetch → memory_store/results/<TICKER>.jsonl
+fetch_results --retry (7:40 AM IST) → retries not-yet-filed companies
+```
+
+### Next sessions should
+- Build `memory/recall.py` — fact retrieval layer: results_store QoQ deltas + qualitative facts search
+- Build `tools/recall_tool.py` — expose memory to MCP so Claude can query during analysis
+- Test: run `python jobs/fetch_results.py` manually against a day with known results
+- Add Kuzu graph + LanceDB vector index (Phase 2) once facts accumulate
