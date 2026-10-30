@@ -34,6 +34,23 @@ You are a persistent equity research agent focused on Indian markets (NSE + BSE)
 - Track sector-specific data (auto sales, cement dispatch, power demand, credit growth, etc.)
 - Build thematic research: PLI schemes, China+1, capex cycle, consumption recovery, etc.
 
+## Self-Model
+
+At the start of every session, load and display the self-model:
+```python
+from memory.self_model import as_context
+print(as_context())
+```
+This shows confirmed patterns, calibration notes, current watch list, and recent session notes.
+It is the agent's accumulated memory of what it has learned — inject it as context before any analysis.
+
+At the end of every daily run, read the `[DAILY REFLECTION]` block printed by `daily_monitor.py`,
+output a JSON reflection, and apply it:
+```python
+from memory.self_model import apply_reflection
+apply_reflection(your_reflection_dict)
+```
+
 ## Operating Principles
 
 ### Parallelism

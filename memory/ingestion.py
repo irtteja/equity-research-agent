@@ -53,6 +53,16 @@ def _build_company_context(ticker: str) -> str:
         return f"(recall unavailable: {e})"
 
 
+def _get_self_model_context() -> str:
+    """Load agent self-model patterns for injection into extraction prompt."""
+    try:
+        from memory.self_model import as_context
+        ctx = as_context()
+        return ctx if ctx else ""
+    except Exception:
+        return ""
+
+
 # ─── Hard-ignore patterns (never worth parsing) ───────────────────────────────
 _HARD_IGNORE = [
     r"trading window",
@@ -86,6 +96,7 @@ def _is_hard_ignore(headline: str) -> bool:
 
 EXTRACTION_PROMPT_TEMPLATE = """You are an equity memory agent for {ticker}.
 
+{self_model_context}
 Company profile:
 {profile_json}
 
@@ -253,12 +264,14 @@ def prepare_announcement(
         }
 
     # 4. Build extraction prompt for Claude to use in-session
-    profile_json    = json.dumps(profile, indent=2, default=str)[:2000]
-    company_context = _build_company_context(ticker)
+    profile_json       = json.dumps(profile, indent=2, default=str)[:2000]
+    company_context    = _build_company_context(ticker)
+    self_model_context = _get_self_model_context()
     prompt = EXTRACTION_PROMPT_TEMPLATE.format(
         ticker=ticker,
         profile_json=profile_json,
         company_context=company_context,
+        self_model_context=self_model_context,
         category=category,
         attchmnt_text=attchmnt[:200],
         ann_date=ann_date[:10],

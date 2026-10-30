@@ -1,0 +1,52 @@
+{
+  "last_updated": "2026-10-30",
+  "version": 1,
+  "patterns": {
+    "confirmed": [],
+    "uncertain": [
+      {
+        "pattern": "FMCG stocks: management guidance upgrade + block deal within 7 days = outperformer",
+        "first_seen": "2026-10-30",
+        "last_seen": "2026-10-30",
+        "count": 1
+      }
+    ],
+    "rejected": []
+  },
+  "calibration": {
+    "works": [
+      {
+        "signal": "XBRL delta computation reliable for earnings beat/miss detection",
+        "added": "2026-10-30"
+      }
+    ],
+    "gaps": [
+      {
+        "gap": "Global macro spillover to IT stocks under-weighted",
+        "added": "2026-10-30"
+      }
+    ]
+  },
+  "watch_list": [
+    {
+      "ticker": "BHARTIARTL",
+      "theme": "capex cycle",
+      "note": "rising capex, margin compression watch",
+      "added": "2026-10-30"
+    }
+  ],
+  "sector_notes": {
+    "FMCG": [
+      {
+        "note": "Rural recovery signals in Q2 results — watch volume growth",
+        "date": "2026-10-30"
+      }
+    ]
+  },
+  "session_log": [
+    {
+      "date": "2026-10-30",
+      "note": "First live run — 214 deep items, XBRL deltas working cleanly"
+    }
+  ]
+}
