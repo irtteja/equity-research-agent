@@ -367,6 +367,27 @@ Document ingestion (complete)
   memory/doc_store.py           — storage + retrieval + dedup
 ```
 
+#### Recall MCP tools — `tools/recall_tool.py` (commit 866808c)
+10 recall functions registered as MCP tools in `mcp_server.py`:
+`recall_company_snapshot`, `recall_prices`, `recall_results`, `recall_announcements`,
+`recall_insights`, `recall_documents`, `recall_search_documents`, `recall_macro`,
+`recall_search_facts`, `recall_self_model`.
+Claude can now pull any fact from memory mid-session on demand — not just pre-loaded context at prompt-build time. Pull vs push.
+
+#### Self-improvement module — `jobs/self_improve.py` (commit 866808c)
+Three-phase cycle: **HEAL → TEST → IMPROVE**
+- HEAL: 5 auto-healers (missing dirs, broken doc index, stale results index, empty logs, self-model schema repair)
+- TEST: runs e2e suite, logs pass/fail counts to `memory_store/self_improve_log.jsonl`
+- IMPROVE: scans for real gaps, writes high-priority findings directly into self-model as calibration gaps
+- Scheduled: every Sunday 9 AM IST (trig_01Tzzrex6wf75k5fti7ec9ZP)
+- Run anytime: `python jobs/self_improve.py`
+
+#### Retention cleanup — `jobs/cleanup_store.py` (commit b2e94ab)
+Monthly pruner (1st of month, 2 AM IST). Enforces:
+- bhavcopy/ + indices_bhavcopy/ + announcements/ → 365-day rolling window
+- documents/ → 3-year rolling window
+- results/, self_model.json, research.db → permanent
+
 ### Pending / next sessions
 - Run `fetch_results.py` manually against a day with known results — verify XBRL pipeline end-to-end
 - BSE announcements integration — currently NSE-only
