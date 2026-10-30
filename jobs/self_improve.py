@@ -296,13 +296,8 @@ def run_improvement_scan() -> dict:
         "priority": "high",
     })
 
-    # Check: BSE integration
-    gaps.append({
-        "area": "bse_integration",
-        "finding": "Announcement pipeline is NSE-only; BSE filings not tracked",
-        "action": "Build jobs/fetch_bse_announcements.py mirroring fetch_announcements.py",
-        "priority": "medium",
-    })
+    # BSE integration: deliberately deprioritised — universe is NSE mainboard,
+    # companies cross-list the same filings on both exchanges (duplicate data).
 
     # Check: recall_tool in MCP
     # (we just built it — this gap should resolve itself after next restart)
