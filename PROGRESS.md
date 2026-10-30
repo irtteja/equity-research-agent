@@ -1,5 +1,27 @@
 # Progress Log
 
+## 2026-10-30 — Metacognitive self_improve scan: data-driven with persistence tracking
+
+### Done
+- `jobs/self_improve.py`: replaced hardcoded gap list with 6 data-driven signal readers:
+  - `_signal_triage_health()` — reads outcome_log.jsonl; flags if >90% skip/deep rate or accuracy <70%
+  - `_signal_test_failures()` — reads self_improve_log.jsonl; flags tests failing in 2+ of last 5 runs
+  - `_signal_task_errors()` — reads tasks.log; flags jobs with ≥50% failure rate
+  - `_signal_pipeline_freshness()` — checks staleness of bhavcopy/indices/announcements/event_calendar
+  - `_signal_data_coverage()` — XBRL coverage: flags if <30% of tracked symbols have results
+  - `_gap_persistence()` — compares against last 5 scans; medium→high after 3 consecutive; "STUCK" at 5+
+- Gap resolution detection: areas in last scan absent from current scan logged as resolved → self_model `new_confirmed`
+- First run: 3 gaps resolved (bse_integration, document_swarm, scheduled_tasks), 2 remaining (pipeline_never_run:event_calendar, xbrl_coverage)
+
+### Architecture changes
+- Self-improve scan is now fully metacognitive: runtime data drives gap discovery, persistence tracking
+  escalates chronic issues, resolved gaps reinforce the self-model. No hardcoded assertions remain.
+
+### Pending / next sessions
+- Enable 14 scheduled tasks (highest priority — system not live; event_calendar pipeline has never run)
+- XBRL coverage: 2/873 symbols (0%) — needs `fetch_results.py` to run live to accumulate data
+- Document swarm: only 2 docs ingested — will grow as daily concall ingestion runs
+
 ## 2026-10-30 — Self-iterate: results pipeline fix + outcome logging
 
 ### Done

@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-30",
-  "version": 16,
+  "version": 18,
   "patterns": {
     "confirmed": [
       {
@@ -26,11 +26,53 @@
         "first_seen": "2026-10-30",
         "last_seen": "2026-10-30",
         "count": 1
+      },
+      {
+        "pattern": "resolved gap: bse_integration",
+        "first_seen": "2026-10-30",
+        "last_seen": "2026-10-30",
+        "count": 1
+      },
+      {
+        "pattern": "resolved gap: document_swarm",
+        "first_seen": "2026-10-30",
+        "last_seen": "2026-10-30",
+        "count": 1
+      },
+      {
+        "pattern": "resolved gap: scheduled_tasks",
+        "first_seen": "2026-10-30",
+        "last_seen": "2026-10-30",
+        "count": 1
+      },
+      {
+        "pattern": "data-driven gap detection via runtime signals",
+        "first_seen": "2026-10-30",
+        "last_seen": "2026-10-30",
+        "count": 1
+      },
+      {
+        "pattern": "gap persistence tracking catches chronic issues",
+        "first_seen": "2026-10-30",
+        "last_seen": "2026-10-30",
+        "count": 1
+      },
+      {
+        "pattern": "metacognitive scan loop closes: data → gaps → self_model → acts → new data",
+        "first_seen": "2026-10-30",
+        "last_seen": "2026-10-30",
+        "count": 1
       }
     ],
     "uncertain": [
       {
         "pattern": "FMCG stocks: management guidance upgrade + block deal within 7 days = outperformer",
+        "first_seen": "2026-10-30",
+        "last_seen": "2026-10-30",
+        "count": 1
+      },
+      {
+        "pattern": "outcome_log triage health signals will be sparse until more ingestion runs",
         "first_seen": "2026-10-30",
         "last_seen": "2026-10-30",
         "count": 1
@@ -62,6 +104,10 @@
       },
       {
         "signal": "fetch_results XBRL pipeline: CDSL 7q, BIRLACORPN 6q fetched+stored correctly",
+        "added": "2026-10-30"
+      },
+      {
+        "signal": "signal readers reading actual files catches real gaps (event_calendar never run, xbrl coverage 0%)",
         "added": "2026-10-30"
       }
     ],
@@ -100,6 +146,22 @@
       },
       {
         "gap": "BSE announcements not tracked",
+        "added": "2026-10-30"
+      },
+      {
+        "gap": "Pipeline 'event_calendar' has never produced output in event_calendar/",
+        "added": "2026-10-30"
+      },
+      {
+        "gap": "Only 2/873 tracked symbols have XBRL results (0% coverage)",
+        "added": "2026-10-30"
+      },
+      {
+        "gap": "event_calendar pipeline has never produced output",
+        "added": "2026-10-30"
+      },
+      {
+        "gap": "xbrl_coverage 0% of tracked universe",
         "added": "2026-10-30"
       }
     ]
@@ -168,6 +230,14 @@
     {
       "date": "2026-10-30",
       "note": "self-iterate: fixed results date-parse bug; built outcome_log; wired triage logging; 5 gaps → 3"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "self_improve scan: resolved: bse_integration, document_swarm, scheduled_tasks; 2 high-priority gaps"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "upgraded self_improve scan to data-driven with persistence tracking; resolved 3 prior gaps"
     }
   ]
 }

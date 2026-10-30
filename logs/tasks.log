@@ -54,3 +54,11 @@ Progress: fixed fetch_results date parsing; built outcome_log.py; wired into ing
 Next: enable scheduled tasks; BSE announcements; document swarm needs more docs
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-10-30 17:01
+Task: None
+Status: completed
+Progress: 6 signal readers, persistence tracking, gap resolution detection
+Next: monitor first live runs to validate signal quality
+Blockers: none
+============================================================
