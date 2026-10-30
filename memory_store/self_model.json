@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-30",
-  "version": 10,
+  "version": 11,
   "patterns": {
     "confirmed": [
       {
@@ -11,6 +11,12 @@
       },
       {
         "pattern": "nselib.announcements() with concall category returns PDF URLs directly",
+        "first_seen": "2026-10-30",
+        "last_seen": "2026-10-30",
+        "count": 1
+      },
+      {
+        "pattern": "NSE concall filings spike 90+ during results season — expected",
         "first_seen": "2026-10-30",
         "last_seen": "2026-10-30",
         "count": 1
@@ -42,6 +48,10 @@
       },
       {
         "signal": "get_concall_transcripts: 8 filings for RELIANCE in 90d, all with valid PDF URLs",
+        "added": "2026-10-30"
+      },
+      {
+        "signal": "_is_content_pdf filter cuts schedule intimations; tracked-universe filter scopes to mainboard",
         "added": "2026-10-30"
       }
     ],
@@ -120,6 +130,10 @@
     {
       "date": "2026-10-30",
       "note": "added concall transcript discovery tool (get_concall_transcripts); prune_memory.py for log/db compaction"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "wired concall auto-ingestion: fetch_announcements --save now downloads+indexes transcripts automatically"
     }
   ]
 }

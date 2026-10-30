@@ -38,3 +38,11 @@ Progress: added get_concall_transcripts tool; prune_memory.py; PROGRESS.md updat
 Next: wire concall auto-ingestion into fetch_announcements; outcome_log.py
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-10-30 16:32
+Task: concall-ingestion
+Status: completed
+Progress: built ingest_concalls.py; wired into fetch_announcements.py --save path
+Next: monitor first live run; consider headline-based schedule filter if volume too high
+Blockers: none
+============================================================
