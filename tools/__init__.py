@@ -1,8 +1,13 @@
 from .price_data import get_price_history, get_current_quote
 from .fundamentals import get_financial_statements, get_key_ratios
-from .technical import run_technical_analysis
 from .news_sentiment import get_news_sentiment
 from .valuation import run_dcf_valuation, get_peer_comparison
+
+
+def run_technical_analysis(*args, **kwargs):
+    """Lazy wrapper — imports pandas_ta only when called (avoids numba/numpy conflict at import time)."""
+    from .technical import run_technical_analysis as _fn
+    return _fn(*args, **kwargs)
 from .indian_markets import (
     nse_equity_quote, nse_price_history, nse_option_chain,
     nse_corporate_actions, nse_financial_results, nse_shareholding,
