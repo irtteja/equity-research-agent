@@ -252,6 +252,25 @@ def run():
         json.dump(results, f, indent=2, default=str)
     print(f"\n[output] saved to {out_file}")
 
+    # 6. Self-model reflection
+    # Claude reads this block, outputs a JSON reflection, which gets applied to self_model.json.
+    print("\n[6/6] Self-model reflection...")
+    try:
+        from memory.self_model import build_reflection_prompt, apply_reflection, as_context
+
+        results["macro_summary"] = results.get("macro", {}).get("summary", "")
+        reflection_prompt = build_reflection_prompt(results)
+        print(reflection_prompt)
+        # Claude reads the above block and outputs JSON.
+        # In-session: parse Claude's output and call apply_reflection(parsed_json).
+        # Example (Claude does this after reading the block):
+        #   reflection = { "session_note": "...", "new_confirmed": [...], ... }
+        #   apply_reflection(reflection)
+        print("\n[self-model] Current model:")
+        print(as_context() or "  (no model yet — will be populated after first reflection)")
+    except Exception as e:
+        print(f"  ERROR: {e}")
+
     # Checkpoint
     errors = [k for k, v in results.items() if isinstance(v, dict) and "error" in v]
     status = "completed" if not errors else "completed_with_errors"
