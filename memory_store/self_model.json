@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-30",
-  "version": 5,
+  "version": 8,
   "patterns": {
     "confirmed": [],
     "uncertain": [
@@ -23,6 +23,14 @@
     "gaps": [
       {
         "gap": "Global macro spillover to IT stocks under-weighted",
+        "added": "2026-10-30"
+      },
+      {
+        "gap": "No XBRL results stored yet — fetch_results.py may not have run",
+        "added": "2026-10-30"
+      },
+      {
+        "gap": "14 scheduled tasks still disabled — system not running live",
         "added": "2026-10-30"
       }
     ]
@@ -55,6 +63,14 @@
     {
       "date": "2026-10-30",
       "note": "E2E test run"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "E2E test run"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "self_improve scan: 6 gaps found, 2 high priority"
     }
   ]
 }
