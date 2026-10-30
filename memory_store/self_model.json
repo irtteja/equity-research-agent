@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-30",
-  "version": 1,
+  "version": 5,
   "patterns": {
     "confirmed": [],
     "uncertain": [
@@ -47,6 +47,14 @@
     {
       "date": "2026-10-30",
       "note": "First live run — 214 deep items, XBRL deltas working cleanly"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "E2E test run"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "E2E test run"
     }
   ]
 }

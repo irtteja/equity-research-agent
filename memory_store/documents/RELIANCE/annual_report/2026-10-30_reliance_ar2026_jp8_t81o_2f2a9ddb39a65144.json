@@ -1,0 +1,17 @@
+{
+  "doc_id": "2f2a9ddb39a65144",
+  "source_file": "/tmp/RELIANCE_AR2026_jp8_t81o.txt",
+  "source_name": "RELIANCE_AR2026_jp8_t81o.txt",
+  "ingested_at": "2026-10-30",
+  "symbol": "RELIANCE",
+  "doc_type": "annual_report",
+  "period": "Q4 FY2026",
+  "confidence": "high",
+  "pages": 1,
+  "extract_method": "plaintext",
+  "char_count": 359,
+  "text": "\nRELIANCE Annual Report FY2026\nNSE: RELIANCE\n\nFinancial Highlights Q4 FY2026:\nRevenue from Operations: ₹95,000 crore (up 12% YoY)\nEBITDA: ₹18,500 crore (margin 19.5%)\nPAT: ₹11,200 crore (up 8% YoY)\n\nManagement Commentary:\nCEO stated: \"We expect sustained growth driven by strong order book of ₹2.1 lakh crore.\"\nCFO guided for 14-16% revenue growth in FY2027.\n",
+  "chunks": [
+    "\nRELIANCE Annual Report FY2026\nNSE: RELIANCE\n\nFinancial Highlights Q4 FY2026:\nRevenue from Operations: ₹95,000 crore (up 12% YoY)\nEBITDA: ₹18,500 crore (margin 19.5%)\nPAT: ₹11,200 crore (up 8% YoY)\n\nManagement Commentary:\nCEO stated: \"We expect sustained growth driven by strong order book of ₹2.1 lakh crore.\"\nCFO guided for 14-16% revenue growth in FY2027.\n"
+  ]
+}
