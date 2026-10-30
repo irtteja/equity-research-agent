@@ -1,5 +1,28 @@
 # Progress Log
 
+## 2026-10-30 — Concall auto-ingestion wired end-to-end
+
+### Done
+- `jobs/ingest_concalls.py`: reads saved announcement JSON, finds concall PDFs
+  (category "Analysts/Institutional Investor Meet/Con. Call Updates"), filters to
+  tracked-universe symbols and actual content PDFs (transcripts/recordings vs schedule
+  notices), downloads, and feeds to document_swarm. Dedup by content hash — safe to re-run.
+- `jobs/fetch_announcements.py`: wired to call `ingest_concalls()` automatically after
+  `--save` — every daily run now ingests concall transcripts with zero manual steps.
+- Two-stage filter: (1) content keywords (transcript/recording/audio/concall) vs schedule
+  keywords (intimation/invite/schedule); (2) tracked-universe only (873 mainboard symbols).
+  Results-season days: ~90 PDFs. Normal days: 5–15 PDFs.
+
+### Architecture changes
+- Daily flow: fetch_announcements --save → save JSON → ingest_concalls → download PDFs
+  → document_swarm → memory_store/documents/ → searchable via recall_search_documents
+
+### Pending / next sessions
+- Monitor first live run to validate ingest quality
+- `memory/outcome_log.py` — log triage decisions for ground-truth reconciliation
+- BSE announcements integration
+- Enable 14 scheduled tasks when ready to go live
+
 ## 2026-10-30 — Concall transcript access + memory compaction
 
 ### Done

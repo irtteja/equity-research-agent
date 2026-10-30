@@ -151,6 +151,9 @@ if __name__ == "__main__":
     if args.save:
         path = save_announcements(result)
         print(f"Saved to      : {path}")
+        # auto-ingest concall transcript PDFs found in today's announcements
+        from jobs.ingest_concalls import ingest_concalls
+        ingest_concalls(ann_date=to_dt, verbose=True)
     else:
         # Pretty-print first 20 announcements as a sample
         print("\nSample (first 20 announcements):")
