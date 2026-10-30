@@ -18,6 +18,7 @@ from mcp.types import Tool, TextContent
 import mcp.types as types
 
 from tools import CORE_TOOLS
+from tools.recall_tool import RECALL_TOOLS
 
 app = Server("equity-research")
 
@@ -50,13 +51,14 @@ def _build_schema(func) -> dict:
         **({"required": required} if required else {}),
     }
 
-_REGISTRY = {fn.__name__: fn for fn in CORE_TOOLS}
+_ALL_TOOLS = CORE_TOOLS + RECALL_TOOLS
+_REGISTRY = {fn.__name__: fn for fn in _ALL_TOOLS}
 
 
 @app.list_tools()
 async def list_tools() -> list[Tool]:
     tools = []
-    for fn in CORE_TOOLS:
+    for fn in _ALL_TOOLS:
         tools.append(Tool(
             name=fn.__name__,
             description=fn.__doc__ or fn.__name__,
