@@ -96,12 +96,13 @@ def get_fii_dii_flows() -> dict:
 
 
 def get_block_bulk_deals() -> dict:
-    """NSE block deals and bulk deals — large institutional trades reported today."""
+    """NSE block deals and bulk deals — large institutional trades reported today.
+    Uses nsearchives.nseindia.com (cloud-safe)."""
     try:
         from nselib import NSE
         with NSE() as nse:
-            blocks = nse.block_deals()
-            bulks = nse.bulk_deals()
+            blocks = nse.block_deals_archive()
+            bulks  = nse.bulk_deals_archive()
         return {
             "timestamp": datetime.now().isoformat(),
             "block_deals": blocks,
