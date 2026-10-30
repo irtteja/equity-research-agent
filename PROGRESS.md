@@ -1,5 +1,28 @@
 # Progress Log
 
+## 2026-10-30 — Self-iterate: results pipeline fix + outcome logging
+
+### Done
+- `jobs/fetch_results.py`: fixed date-parsing bug — NSE event_calendar returns "31-Oct-2026"
+  not ISO "2026-10-31". `date.fromisoformat()` silently failed on every event, so no results
+  were ever fetched. Fixed with `strptime("%d-%b-%Y")` fallback. Verified: CDSL 7q, BIRLACORPN
+  6q fetched and stored correctly.
+- `memory/outcome_log.py`: new module — logs every triage decision (skip/light/deep) with
+  timestamp, symbol, rationale, confidence. `reconcile()` and `summary()` for Phase 2 scoring.
+  Storage: `memory_store/outcome_log.jsonl`.
+- `memory/ingestion.py`: wired `log_outcome()` into `prepare_announcement()` (skip + light
+  paths) and `save_extraction()` (Claude's final triage call). Every decision now logged.
+- Self-improve scan: 5 gaps → 3. `results_pipeline` and `outcome_logging` resolved.
+
+### Architecture changes
+- Triage decisions are now persistent: every skip/light/deep call writes to outcome_log.jsonl
+  with timestamp. Future: reconcile against price moves to score accuracy.
+
+### Pending / next sessions
+- Enable 14 scheduled tasks (highest priority — system not live)
+- BSE announcements integration
+- Document swarm: only 2 docs ingested — needs annual reports or more concall runs
+
 ## 2026-10-30 — Concall auto-ingestion wired end-to-end
 
 ### Done

@@ -216,6 +216,13 @@ def prepare_announcement(
     strategy, triage_reason = attchmnt_triage(category, attchmnt)
     if not force_deep:
         if strategy == "skip":
+            try:
+                from memory.outcome_log import log_outcome
+                log_outcome("triage", "skip", "memory/ingestion.py",
+                            symbol=ticker, input_desc=attchmnt[:200],
+                            confidence="high", rationale=triage_reason)
+            except Exception:
+                pass
             return {
                 "status": "skip", "ticker": ticker, "ann_date": ann_date[:10],
                 "strategy": "skip", "reason": triage_reason,
@@ -224,6 +231,13 @@ def prepare_announcement(
                 "ann": ann,  # preserved so Claude can escalate with force_deep
             }
         if strategy == "light":
+            try:
+                from memory.outcome_log import log_outcome
+                log_outcome("triage", "light", "memory/ingestion.py",
+                            symbol=ticker, input_desc=attchmnt[:200],
+                            confidence="medium", rationale=triage_reason)
+            except Exception:
+                pass
             return {
                 "status": "light", "ticker": ticker, "ann_date": ann_date[:10],
                 "strategy": "light", "reason": triage_reason,
@@ -348,6 +362,16 @@ def save_extraction(ticker: str, prep: dict, claude_output: dict) -> dict:
     events   = claude_output.get("events", [])
     summary  = claude_output.get("summary", "")
     ann_date = prep.get("ann_date", date.today().isoformat())
+
+    try:
+        from memory.outcome_log import log_outcome
+        log_outcome("triage", triage, "memory/ingestion.py:save_extraction",
+                    symbol=ticker,
+                    input_desc=prep.get("headline", prep.get("attchmnt_text", ""))[:200],
+                    confidence="high",
+                    rationale=claude_output.get("reason", prep.get("triage_reason", "")))
+    except Exception:
+        pass
 
     save_triage_log(ticker, [{
         "date": ann_date,

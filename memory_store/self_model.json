@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-30",
-  "version": 11,
+  "version": 16,
   "patterns": {
     "confirmed": [
       {
@@ -17,6 +17,12 @@
       },
       {
         "pattern": "NSE concall filings spike 90+ during results season — expected",
+        "first_seen": "2026-10-30",
+        "last_seen": "2026-10-30",
+        "count": 1
+      },
+      {
+        "pattern": "NSE event_calendar returns DD-Mon-YYYY not ISO — date parse must handle both",
         "first_seen": "2026-10-30",
         "last_seen": "2026-10-30",
         "count": 1
@@ -53,6 +59,10 @@
       {
         "signal": "_is_content_pdf filter cuts schedule intimations; tracked-universe filter scopes to mainboard",
         "added": "2026-10-30"
+      },
+      {
+        "signal": "fetch_results XBRL pipeline: CDSL 7q, BIRLACORPN 6q fetched+stored correctly",
+        "added": "2026-10-30"
       }
     ],
     "gaps": [
@@ -82,6 +92,14 @@
       },
       {
         "gap": "concall auto-ingestion not yet wired into fetch_announcements pipeline",
+        "added": "2026-10-30"
+      },
+      {
+        "gap": "14 scheduled tasks still disabled — system not live yet",
+        "added": "2026-10-30"
+      },
+      {
+        "gap": "BSE announcements not tracked",
         "added": "2026-10-30"
       }
     ]
@@ -134,6 +152,22 @@
     {
       "date": "2026-10-30",
       "note": "wired concall auto-ingestion: fetch_announcements --save now downloads+indexes transcripts automatically"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "E2E test run"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "self_improve scan: 5 gaps found, 2 high priority"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "self_improve scan: 3 gaps found, 1 high priority"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "self-iterate: fixed results date-parse bug; built outcome_log; wired triage logging; 5 gaps → 3"
     }
   ]
 }

@@ -1,1 +1,14 @@
-{}
+{
+  "CDSL": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 7,
+    "last_updated": "2026-10-30"
+  },
+  "BIRLACORPN": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 6,
+    "last_updated": "2026-10-30"
+  }
+}

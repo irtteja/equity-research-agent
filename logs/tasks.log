@@ -46,3 +46,11 @@ Progress: built ingest_concalls.py; wired into fetch_announcements.py --save pat
 Next: monitor first live run; consider headline-based schedule filter if volume too high
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-10-30 16:39
+Task: self-iterate-20261030
+Status: completed
+Progress: fixed fetch_results date parsing; built outcome_log.py; wired into ingestion.py; 5 gaps → 3
+Next: enable scheduled tasks; BSE announcements; document swarm needs more docs
+Blockers: none
+============================================================
