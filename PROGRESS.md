@@ -20,8 +20,8 @@
 
 ### Pending / next sessions
 - Enable 14 scheduled tasks (highest priority — system not live)
-- BSE announcements integration
 - Document swarm: only 2 docs ingested — needs annual reports or more concall runs
+- BSE announcements: not necessary — universe is NSE mainboard, same filings cross-listed on both exchanges (duplicate data). Deprioritised permanently.
 
 ## 2026-10-30 — Concall auto-ingestion wired end-to-end
 
