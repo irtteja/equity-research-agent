@@ -22,6 +22,37 @@ from pathlib import Path
 from memory.triage import triage as attchmnt_triage
 
 
+# ─── Company context (injected from recall before analysis) ──────────────────
+
+def _build_company_context(ticker: str) -> str:
+    """
+    Pull everything we know about a company via recall.py and format it
+    as a compact context block for injection into the extraction prompt.
+    Fails gracefully — never breaks the pipeline.
+    """
+    try:
+        from memory.recall import get_price_series, get_results, get_insights
+        parts = []
+
+        prices = get_price_series(ticker, days=30)
+        if prices["data"]:
+            parts.append(prices["text"].strip())
+
+        results = get_results(ticker, n=4)
+        if results["data"]:
+            parts.append(results["text"].strip())
+
+        insights = get_insights(ticker)
+        if insights["data"]:
+            parts.append(insights["text"].strip())
+
+        if not parts:
+            return "No prior data available for this company."
+        return "\n\n".join(parts)
+    except Exception as e:
+        return f"(recall unavailable: {e})"
+
+
 # ─── Hard-ignore patterns (never worth parsing) ───────────────────────────────
 _HARD_IGNORE = [
     r"trading window",
@@ -57,6 +88,9 @@ EXTRACTION_PROMPT_TEMPLATE = """You are an equity memory agent for {ticker}.
 
 Company profile:
 {profile_json}
+
+What we already know about {ticker}:
+{company_context}
 
 Document metadata:
 - Category: {category}
@@ -219,10 +253,12 @@ def prepare_announcement(
         }
 
     # 4. Build extraction prompt for Claude to use in-session
-    profile_json = json.dumps(profile, indent=2, default=str)[:2000]
+    profile_json    = json.dumps(profile, indent=2, default=str)[:2000]
+    company_context = _build_company_context(ticker)
     prompt = EXTRACTION_PROMPT_TEMPLATE.format(
         ticker=ticker,
         profile_json=profile_json,
+        company_context=company_context,
         category=category,
         attchmnt_text=attchmnt[:200],
         ann_date=ann_date[:10],
