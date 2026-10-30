@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-30",
-  "version": 19,
+  "version": 20,
   "patterns": {
     "confirmed": [
       {
@@ -238,6 +238,10 @@
     {
       "date": "2026-10-30",
       "note": "upgraded self_improve scan to data-driven with persistence tracking; resolved 3 prior gaps"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "self_improve scan: 2 high-priority gaps"
     },
     {
       "date": "2026-10-30",
