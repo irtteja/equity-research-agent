@@ -79,6 +79,29 @@ def run():
 
     results = {}
 
+    # 0. Event calendar — upcoming board meetings + results schedule
+    print("[0/5] Saving event calendar (upcoming board meetings)...")
+    try:
+        from nselib import NSE
+        cal_dir = os.path.join(REPO_DIR, "memory_store", "event_calendar")
+        os.makedirs(cal_dir, exist_ok=True)
+        cal_file = os.path.join(cal_dir, f"{date.today().isoformat()}.json")
+        with NSE() as nse:
+            events = nse.event_calendar() or []
+        with open(cal_file, "w") as f:
+            json.dump(events, f, indent=2, default=str)
+        results_events = sum(
+            1 for e in events
+            if any(kw in (e.get("purpose", "") or e.get("bm_desc", "") or "").lower()
+                   for kw in ("financial result", "quarterly result", "half year", "annual result"))
+        )
+        print(f"  {len(events)} events saved → {cal_file}")
+        print(f"  {results_events} results events in calendar")
+        results["event_calendar"] = {"total": len(events), "results_events": results_events, "file": cal_file}
+    except Exception as e:
+        print(f"  ERROR: {e}")
+        results["event_calendar"] = {"error": str(e)}
+
     # 1. Macro snapshot
     print("[1/5] Fetching macro snapshot...")
     try:
