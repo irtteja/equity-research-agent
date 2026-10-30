@@ -206,6 +206,12 @@ def prepare_announcement(
         }
 
     text = pdf_result.get("text", "")
+    # OCR was attempted but failed (tesseract not installed or crashed)
+    if len(text) < 50 and pdf_result.get("ocr_error"):
+        return {
+            "status": "error", "ticker": ticker, "ann_date": ann_date[:10],
+            "reason": f"scanned_pdf_ocr_failed: {pdf_result['ocr_error']}", "headline": headline[:150],
+        }
     if len(text) < 50:
         return {
             "status": "ignore", "ticker": ticker, "ann_date": ann_date[:10],
