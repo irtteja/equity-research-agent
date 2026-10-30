@@ -1,10 +1,16 @@
 {
   "last_updated": "2026-10-30",
-  "version": 9,
+  "version": 10,
   "patterns": {
     "confirmed": [
       {
         "pattern": "mandatory logging enforced in CLAUDE.md",
+        "first_seen": "2026-10-30",
+        "last_seen": "2026-10-30",
+        "count": 1
+      },
+      {
+        "pattern": "nselib.announcements() with concall category returns PDF URLs directly",
         "first_seen": "2026-10-30",
         "last_seen": "2026-10-30",
         "count": 1
@@ -33,6 +39,10 @@
       {
         "signal": "self_improve.py HEAL+TEST+IMPROVE cycle operational",
         "added": "2026-10-30"
+      },
+      {
+        "signal": "get_concall_transcripts: 8 filings for RELIANCE in 90d, all with valid PDF URLs",
+        "added": "2026-10-30"
       }
     ],
     "gaps": [
@@ -58,6 +68,10 @@
       },
       {
         "gap": "14 scheduled tasks still disabled",
+        "added": "2026-10-30"
+      },
+      {
+        "gap": "concall auto-ingestion not yet wired into fetch_announcements pipeline",
         "added": "2026-10-30"
       }
     ]
@@ -102,6 +116,10 @@
     {
       "date": "2026-10-30",
       "note": "hardened CLAUDE.md: logging/docs/self-improvement now non-negotiable rules; recall tools, self-improve module, cleanup job all committed"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "added concall transcript discovery tool (get_concall_transcripts); prune_memory.py for log/db compaction"
     }
   ]
 }
