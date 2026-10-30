@@ -126,6 +126,47 @@ def get_all_bse_announcements_today() -> dict:
     }
 
 
+def get_concall_transcripts(symbol: str, days_back: int = 180) -> dict:
+    """
+    Fetch NSE concall/analyst-meet filings for a symbol.
+    Returns announcements with category 'Analysts/Institutional Investor Meet/Con. Call Updates',
+    each carrying attchmntFile (PDF URL of the transcript or investor presentation).
+
+    Use this to discover available concall PDFs before feeding them to the document swarm.
+    days_back: how far back to search (default 180 = ~2 quarters).
+    """
+    try:
+        from nselib import NSE
+        with NSE() as nse:
+            rows = nse.announcements(
+                symbol=symbol.upper(),
+                from_date=date.today() - timedelta(days=days_back),
+                to_date=date.today(),
+                category="Analysts/Institutional Investor Meet/Con. Call Updates",
+            )
+        filings = [
+            {
+                "symbol":       r.get("symbol", ""),
+                "company":      r.get("sm_name", ""),
+                "date":         r.get("sort_date", "")[:10],
+                "headline":     r.get("attchmntText", "")[:200],
+                "pdf_url":      r.get("attchmntFile", ""),
+                "file_size":    r.get("attFileSize", ""),
+                "seq_id":       r.get("seq_id", ""),
+            }
+            for r in rows
+            if r.get("attchmntFile", "").endswith(".pdf")
+        ]
+        return {
+            "symbol":   symbol.upper(),
+            "days_back": days_back,
+            "count":    len(filings),
+            "filings":  filings,
+        }
+    except Exception as e:
+        return {"error": str(e), "symbol": symbol}
+
+
 def get_insider_trades(days_back: int = 7) -> dict:
     """BSE insider trading disclosures (SAST/PIT) for the past N days."""
     return get_bse_announcements(category="Insider Trading / SAST", days_back=days_back)

@@ -30,3 +30,11 @@ Progress: hardened CLAUDE.md with mandatory logging/documentation/self-improveme
 Next: outcome logging (memory/outcome_log.py), BSE announcements, enable scheduled tasks when live
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-10-30 16:28
+Task: session-20261030b
+Status: completed
+Progress: added get_concall_transcripts tool; prune_memory.py; PROGRESS.md updated
+Next: wire concall auto-ingestion into fetch_announcements; outcome_log.py
+Blockers: none
+============================================================

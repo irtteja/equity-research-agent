@@ -25,7 +25,7 @@ from .macro import (
 from .announcements import (
     get_bse_announcements, get_nse_corporate_announcements,
     get_all_bse_announcements_today, get_insider_trades,
-    get_upcoming_results_calendar,
+    get_upcoming_results_calendar, get_concall_transcripts,
 )
 
 CORE_TOOLS = [
@@ -46,8 +46,8 @@ CORE_TOOLS = [
     get_global_indices, get_commodity_prices, get_currency_rates,
     get_fii_dii_flows, get_block_bulk_deals, get_market_status,
     get_full_macro_snapshot,
-    # Announcements
+    # Announcements + concall transcripts
     get_bse_announcements, get_nse_corporate_announcements,
     get_all_bse_announcements_today, get_insider_trades,
-    get_upcoming_results_calendar,
+    get_upcoming_results_calendar, get_concall_transcripts,
 ]

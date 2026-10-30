@@ -1,5 +1,32 @@
 # Progress Log
 
+## 2026-10-30 — Concall transcript access + memory compaction
+
+### Done
+- `tools/announcements.py`: added `get_concall_transcripts(symbol, days_back)` — fetches NSE
+  announcements with category "Analysts/Institutional Investor Meet/Con. Call Updates"; each
+  filing carries `pdf_url` pointing to the actual transcript/presentation PDF on NSE archives.
+  Confirmed 8 filings for RELIANCE in last 90 days alone.
+- `tools/__init__.py`: exported `get_concall_transcripts`; registered in `CORE_TOOLS` (now 44 tools)
+- `jobs/prune_memory.py` (af6da42): operational memory compaction — prunes tasks.log, self_improve_log,
+  research.db rows (tasks/checkpoints/macro >90d, knowledge_base >365d), reports/daily >90d,
+  stale index files. Scheduled monthly 1st of month 01:47 IST (trig_01QityzjMGJM8PGBuS5JZ5bs).
+- `CLAUDE.md` (2bbc733): hardened — logging/documentation/self-improvement now mandatory rules,
+  not aspirational. Steps 6–9 explicitly non-negotiable.
+
+### Architecture changes
+- `get_concall_transcripts` is the discovery layer. Use it to find PDFs, then pass URLs to
+  `document_swarm.py` to ingest, chunk, and index them into memory_store/documents/.
+- Two retention jobs now run monthly: `cleanup_store.py` (market data) + `prune_memory.py` (operational)
+
+### Pending / next sessions
+- Wire concall auto-ingestion into `jobs/fetch_announcements.py` — when a new concall filing
+  appears, auto-download PDF and feed to document_swarm (currently manual)
+- `memory/outcome_log.py` — log triage decisions + timestamps for ground-truth reconciliation
+- BSE announcements integration (currently NSE-only pipeline)
+- Enable 14 scheduled tasks when ready to go live
+- Run `fetch_results.py` against a day with known results to verify XBRL pipeline end-to-end
+
 ## 2026-10-28 — Initial Build
 
 ### Done
