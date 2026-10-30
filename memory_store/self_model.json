@@ -1,8 +1,15 @@
 {
   "last_updated": "2026-10-30",
-  "version": 8,
+  "version": 9,
   "patterns": {
-    "confirmed": [],
+    "confirmed": [
+      {
+        "pattern": "mandatory logging enforced in CLAUDE.md",
+        "first_seen": "2026-10-30",
+        "last_seen": "2026-10-30",
+        "count": 1
+      }
+    ],
     "uncertain": [
       {
         "pattern": "FMCG stocks: management guidance upgrade + block deal within 7 days = outperformer",
@@ -18,6 +25,14 @@
       {
         "signal": "XBRL delta computation reliable for earnings beat/miss detection",
         "added": "2026-10-30"
+      },
+      {
+        "signal": "e2e test suite passes all 4 layers",
+        "added": "2026-10-30"
+      },
+      {
+        "signal": "self_improve.py HEAL+TEST+IMPROVE cycle operational",
+        "added": "2026-10-30"
       }
     ],
     "gaps": [
@@ -31,6 +46,18 @@
       },
       {
         "gap": "14 scheduled tasks still disabled — system not running live",
+        "added": "2026-10-30"
+      },
+      {
+        "gap": "outcome logging not yet built",
+        "added": "2026-10-30"
+      },
+      {
+        "gap": "BSE announcements NSE-only gap",
+        "added": "2026-10-30"
+      },
+      {
+        "gap": "14 scheduled tasks still disabled",
         "added": "2026-10-30"
       }
     ]
@@ -71,6 +98,10 @@
     {
       "date": "2026-10-30",
       "note": "self_improve scan: 6 gaps found, 2 high priority"
+    },
+    {
+      "date": "2026-10-30",
+      "note": "hardened CLAUDE.md: logging/docs/self-improvement now non-negotiable rules; recall tools, self-improve module, cleanup job all committed"
     }
   ]
 }
