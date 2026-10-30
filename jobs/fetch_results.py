@@ -78,7 +78,13 @@ def filter_results_events(events: list[dict], target_date: date) -> list[str]:
             continue
 
         try:
-            ev_date = date.fromisoformat(ev_date_str[:10])
+            # NSE calendar returns dates as "31-Oct-2026" or ISO "2026-10-31"
+            from datetime import datetime
+            raw = ev_date_str.strip()
+            if raw and raw[2:3] == "-":
+                ev_date = datetime.strptime(raw[:11], "%d-%b-%Y").date()
+            else:
+                ev_date = date.fromisoformat(raw[:10])
         except Exception:
             continue
 
