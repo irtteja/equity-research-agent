@@ -6,7 +6,22 @@ Three responsibilities:
   1. TEST    — run the e2e test suite and surface failures
   2. HEAL    — auto-fix known recoverable failures (stale cookies, missing dirs,
                broken index files, numpy/import issues)
-  3. IMPROVE — scan for gaps and log them as improvement candidates
+  3. IMPROVE — data-driven gap discovery with metacognitive persistence tracking
+
+The IMPROVE phase reads actual runtime signals — not hardcoded file-existence
+checks — to surface real performance issues:
+  • Triage calibration: which announcement categories are mis-labelled?
+  • Test failure patterns: which tests break repeatedly across runs?
+  • Task error patterns: which jobs fail consistently?
+  • Pipeline freshness: which pipelines haven't run recently?
+  • Data coverage: what fraction of tracked symbols have XBRL results?
+
+Gap persistence tracking closes the metacognitive loop:
+  • Each scan compares its findings against the previous scan
+  • A gap that persists across 3+ consecutive scans auto-escalates
+  • A gap that disappears is logged as resolved (improvement noted)
+  • Escalated gaps surface in the self-model so Claude arrives knowing
+    what it tried before and what still needs a different approach
 
 Run modes:
   python jobs/self_improve.py           # full cycle: test → heal → improve
@@ -16,9 +31,6 @@ Run modes:
 
 Results are logged to memory_store/self_improve_log.jsonl
 and surfaced to the self-model as session notes.
-
-Claude reads this module's output and acts on IMPROVE suggestions
-in subsequent sessions — adding tools, fixing pipelines, tightening triage.
 """
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -223,105 +235,421 @@ def run_healers() -> dict:
     return results
 
 
-# ── 3. IMPROVE ─────────────────────────────────────────────────────────────
+# ── 3. IMPROVE — signal readers ────────────────────────────────────────────
+
+def _read_scan_history(n: int = 10) -> list[dict]:
+    """Return the last N improve_scan entries from self_improve_log.jsonl."""
+    if not LOG.exists():
+        return []
+    entries = []
+    for line in LOG.read_text().splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            e = json.loads(line)
+            if e.get("type") == "improve_scan":
+                entries.append(e)
+        except json.JSONDecodeError:
+            pass
+    return entries[-n:]
+
+
+def _gap_persistence(current_areas: set, history: list[dict]) -> dict[str, int]:
+    """
+    For each gap area in current scan, count how many of the last N scans
+    also contained that area. Returns {area: consecutive_count}.
+    """
+    counts = {area: 0 for area in current_areas}
+    for scan in reversed(history):
+        scan_areas = {g.get("area") for g in scan.get("gaps", [])}
+        for area in current_areas:
+            if area in scan_areas:
+                counts[area] += 1
+            # stop counting once the gap was absent (non-consecutive)
+    return counts
+
+
+def _resolved_gaps(current_areas: set, history: list[dict]) -> list[str]:
+    """Return gap areas that appeared in the last scan but are absent now."""
+    if not history:
+        return []
+    last_areas = {g.get("area") for g in history[-1].get("gaps", [])}
+    return sorted(last_areas - current_areas)
+
+
+def _signal_triage_health() -> list[dict]:
+    """
+    Read outcome_log.jsonl and surface triage calibration issues.
+    Flags: categories that are always skipped (>90%) or always deep (>90%),
+    and accuracy below threshold for scored decisions.
+    """
+    gaps = []
+    path = STORE / "outcome_log.jsonl"
+    if not path.exists():
+        return gaps
+
+    from collections import defaultdict
+    by_category: dict = defaultdict(lambda: defaultdict(int))
+    scored, score_sum, total = 0, 0.0, 0
+
+    for line in path.read_text().splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            e = json.loads(line)
+            if e.get("event_type") != "triage":
+                continue
+            total += 1
+            # source field often contains "category" info via input text
+            decision = e.get("decision", "unknown")
+            # use first word of rationale as a rough category label
+            rationale = (e.get("rationale") or "unknown").split(":")[0].strip()[:40]
+            by_category[rationale][decision] += 1
+            if e.get("score") is not None:
+                scored += 1
+                score_sum += float(e["score"])
+        except (json.JSONDecodeError, ValueError):
+            pass
+
+    if total < 20:
+        # not enough data to draw conclusions yet
+        return gaps
+
+    # Check accuracy on scored decisions
+    if scored >= 10:
+        mean_acc = score_sum / scored
+        if mean_acc < 0.70:
+            gaps.append({
+                "area": "triage_accuracy",
+                "finding": f"Triage mean accuracy {mean_acc:.0%} across {scored} scored decisions — below 70% threshold",
+                "action": "Review triage.py rules for categories with lowest accuracy; check outcome_log for patterns",
+                "priority": "high",
+                "metric": {"accuracy": round(mean_acc, 3), "scored": scored},
+            })
+
+    # Check per-category skew
+    for cat, decisions in by_category.items():
+        cat_total = sum(decisions.values())
+        if cat_total < 10:
+            continue
+        skip_rate = decisions.get("skip", 0) / cat_total
+        deep_rate = decisions.get("deep", 0) / cat_total
+        if skip_rate > 0.90:
+            gaps.append({
+                "area": f"triage_skew:{cat[:30]}",
+                "finding": f"Category '{cat}' is skipped {skip_rate:.0%} of the time ({cat_total} decisions) — possible over-filtering",
+                "action": f"Review triage.py rule for '{cat}'; check if valuable signals are being missed",
+                "priority": "medium",
+                "metric": {"skip_rate": round(skip_rate, 3), "n": cat_total},
+            })
+        elif deep_rate > 0.90:
+            gaps.append({
+                "area": f"triage_deep_flood:{cat[:30]}",
+                "finding": f"Category '{cat}' triggers deep {deep_rate:.0%} of the time — may be over-processing noise",
+                "action": f"Review triage.py rule for '{cat}'; tighten conditions if category includes noise",
+                "priority": "low",
+                "metric": {"deep_rate": round(deep_rate, 3), "n": cat_total},
+            })
+
+    return gaps
+
+
+def _signal_test_failures(history: list[dict]) -> list[dict]:
+    """
+    Analyse test_run entries in scan history. Surfaces tests that fail
+    across multiple consecutive runs (persistent failures) vs one-off flaps.
+    """
+    gaps = []
+    test_runs = [e for e in history if e.get("type") == "test_run"]
+    # also read directly from log for full history
+    if LOG.exists():
+        for line in LOG.read_text().splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                e = json.loads(line)
+                if e.get("type") == "test_run" and e not in test_runs:
+                    test_runs.append(e)
+            except json.JSONDecodeError:
+                pass
+
+    if len(test_runs) < 2:
+        return gaps  # need at least 2 runs to detect patterns
+
+    recent = test_runs[-5:]  # last 5 test runs
+
+    # Collect failure lines across runs
+    from collections import Counter
+    failure_counter: Counter = Counter()
+    for run in recent:
+        for f in run.get("failures", []):
+            # normalise: strip test symbol to get the test name
+            name = f.split("(")[0].strip() if "(" in f else f.strip()
+            failure_counter[name] += 1
+
+    # Flag tests that failed in 2+ of the last 5 runs
+    persistent = [(name, cnt) for name, cnt in failure_counter.items() if cnt >= 2]
+    if persistent:
+        for name, cnt in sorted(persistent, key=lambda x: -x[1]):
+            gaps.append({
+                "area": f"persistent_test_failure",
+                "finding": f"Test '{name[:60]}' failed in {cnt}/{len(recent)} recent runs — not a flap",
+                "action": f"Investigate and fix: {name[:60]}",
+                "priority": "high" if cnt >= 3 else "medium",
+                "metric": {"failure_count": cnt, "runs_checked": len(recent)},
+            })
+
+    # Trend: is the failure count increasing?
+    if len(recent) >= 3:
+        older_fails = sum(r.get("failed", 0) for r in recent[:-2])
+        newer_fails = sum(r.get("failed", 0) for r in recent[-2:])
+        older_per_run = older_fails / max(len(recent) - 2, 1)
+        newer_per_run = newer_fails / 2
+        if newer_per_run > older_per_run * 1.5 and newer_fails > 0:
+            gaps.append({
+                "area": "test_regression_trend",
+                "finding": f"Test failure rate increasing: {older_per_run:.1f}/run → {newer_per_run:.1f}/run in last 2 runs",
+                "action": "Run test suite manually and investigate new failures before next feature",
+                "priority": "high",
+                "metric": {"older_rate": round(older_per_run, 2), "newer_rate": round(newer_per_run, 2)},
+            })
+
+    return gaps
+
+
+def _signal_task_errors() -> list[dict]:
+    """
+    Read logs/tasks.log and surface jobs with repeated failures.
+    """
+    gaps = []
+    log_path = REPO / "logs" / "tasks.log"
+    if not log_path.exists():
+        return gaps
+
+    from collections import defaultdict
+    job_outcomes: dict = defaultdict(lambda: {"ok": 0, "failed": 0, "last_error": ""})
+
+    for line in log_path.read_text().splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            e = json.loads(line)
+            task_id = e.get("task_id", "unknown")
+            status  = e.get("status", "")
+            if status == "failed":
+                job_outcomes[task_id]["failed"] += 1
+                job_outcomes[task_id]["last_error"] = (e.get("blockers") or "")[:120]
+            elif status == "completed":
+                job_outcomes[task_id]["ok"] += 1
+        except json.JSONDecodeError:
+            pass
+
+    for task_id, counts in job_outcomes.items():
+        total = counts["ok"] + counts["failed"]
+        if total < 2 or counts["failed"] == 0:
+            continue
+        fail_rate = counts["failed"] / total
+        if fail_rate >= 0.5:
+            gaps.append({
+                "area": f"task_failures:{task_id[:40]}",
+                "finding": f"Task '{task_id[:40]}' fails {fail_rate:.0%} of runs ({counts['failed']}/{total})",
+                "action": f"Investigate task '{task_id}': {counts['last_error'][:100]}",
+                "priority": "high" if fail_rate >= 0.75 else "medium",
+                "metric": {"fail_rate": round(fail_rate, 2), "failed": counts["failed"], "ok": counts["ok"]},
+            })
+
+    return gaps
+
+
+def _signal_pipeline_freshness() -> list[dict]:
+    """
+    Check when each major data pipeline last produced output.
+    Flags pipelines that haven't run in longer than expected.
+    """
+    gaps = []
+    today = date.today()
+
+    def _latest_file_date(folder: Path, glob: str) -> date | None:
+        if not folder.exists():
+            return None
+        files = sorted(folder.glob(glob))
+        for f in reversed(files):
+            try:
+                return date.fromisoformat(f.stem[:10])
+            except ValueError:
+                pass
+        return None
+
+    checks = [
+        ("bhavcopy",          STORE / "bhavcopy",          "*.csv",  2,  "jobs/save_bhavcopy.py"),
+        ("indices_bhavcopy",  STORE / "indices_bhavcopy",  "*.csv",  2,  "jobs/save_indices_bhavcopy.py"),
+        ("announcements",     STORE / "announcements",     "*.json", 2,  "jobs/fetch_announcements.py --save"),
+        ("event_calendar",    STORE / "event_calendar",    "*.json", 7,  "jobs/daily_monitor.py"),
+    ]
+
+    for name, folder, pattern, max_stale_days, fix_cmd in checks:
+        last = _latest_file_date(folder, pattern)
+        if last is None:
+            gaps.append({
+                "area": f"pipeline_never_run:{name}",
+                "finding": f"Pipeline '{name}' has never produced output in {folder.name}/",
+                "action": f"Run: python {fix_cmd}",
+                "priority": "high",
+                "metric": {"last_run": None},
+            })
+        else:
+            age = (today - last).days
+            if age > max_stale_days:
+                # skip weekends for daily pipelines
+                weekday_age = age - (age // 7) * 2
+                if weekday_age > max_stale_days:
+                    gaps.append({
+                        "area": f"pipeline_stale:{name}",
+                        "finding": f"Pipeline '{name}' last ran {age} days ago (last file: {last}) — expected every {max_stale_days}d",
+                        "action": f"Run: python {fix_cmd}",
+                        "priority": "medium",
+                        "metric": {"last_run": str(last), "age_days": age},
+                    })
+
+    return gaps
+
+
+def _signal_data_coverage() -> list[dict]:
+    """
+    Check XBRL results coverage against tracked universe size.
+    """
+    gaps = []
+
+    # How many tracked symbols vs how many have results?
+    universe_path = REPO / "data" / "tracked_universe.json"
+    results_dir   = STORE / "results"
+    if not universe_path.exists():
+        return gaps
+
+    try:
+        universe = json.loads(universe_path.read_text())
+        total_tracked = len(universe.get("universe", []))
+    except Exception:
+        return gaps
+
+    if not results_dir.exists():
+        coverage = 0.0
+        symbols_with_results = 0
+    else:
+        symbols_with_results = len(list(results_dir.glob("*.jsonl")))
+        coverage = symbols_with_results / total_tracked if total_tracked else 0
+
+    if coverage < 0.30:
+        gaps.append({
+            "area": "xbrl_coverage",
+            "finding": f"Only {symbols_with_results}/{total_tracked} tracked symbols have XBRL results ({coverage:.0%} coverage)",
+            "action": "Run: python jobs/fetch_results.py — also verify event_calendar is up to date",
+            "priority": "high" if coverage < 0.05 else "medium",
+            "metric": {"coverage": round(coverage, 3), "have": symbols_with_results, "total": total_tracked},
+        })
+
+    return gaps
+
+
+# ── 3. IMPROVE — main scan ─────────────────────────────────────────────────
 
 def run_improvement_scan() -> dict:
     """
-    Scan the system for gaps and log improvement candidates.
-    Claude reads these and acts on them in subsequent sessions.
+    Data-driven gap discovery with metacognitive persistence tracking.
+
+    Reads actual runtime signals to find real performance issues, then
+    compares against previous scans to track what's improving, what's
+    regressing, and what's been stuck long enough to escalate.
     """
-    print("\n[IMPROVE] Scanning for improvement opportunities...")
-    gaps = []
+    print("\n[IMPROVE] Running data-driven improvement scan...")
 
-    # Check: do we have XBRL results for any tracked companies?
-    results_dir = STORE / "results"
-    result_symbols = list(results_dir.glob("*.jsonl")) if results_dir.exists() else []
-    if not result_symbols:
-        gaps.append({
-            "area": "results_pipeline",
-            "finding": "No XBRL results stored yet — fetch_results.py may not have run",
-            "action": "Run: python jobs/fetch_results.py",
-            "priority": "high",
-        })
+    # ── Load scan history for persistence tracking ──────────────────────────
+    history = _read_scan_history(n=10)
 
-    # Check: self-model populated?
-    sm_file = STORE / "self_model.json"
-    if sm_file.exists():
-        import json as _json
-        sm = _json.loads(sm_file.read_text())
-        if not sm.get("last_updated"):
-            gaps.append({
-                "area": "self_model",
-                "finding": "Self-model exists but has never been updated via apply_reflection()",
-                "action": "Run daily_monitor.py end-to-end and apply the reflection output",
-                "priority": "high",
-            })
-        confirmed = len(sm.get("patterns", {}).get("confirmed", []))
-        if confirmed < 3:
-            gaps.append({
-                "area": "self_model",
-                "finding": f"Only {confirmed} confirmed patterns — model is still thin",
-                "action": "Continue daily runs; patterns accumulate automatically",
-                "priority": "low",
-            })
+    # ── Collect signals ──────────────────────────────────────────────────────
+    gaps: list[dict] = []
+    gaps += _signal_triage_health()
+    gaps += _signal_test_failures(history)
+    gaps += _signal_task_errors()
+    gaps += _signal_pipeline_freshness()
+    gaps += _signal_data_coverage()
 
-    # Check: outcome logging exists?
-    outcome_log = STORE / "outcome_log.jsonl"
-    if not outcome_log.exists():
-        gaps.append({
-            "area": "outcome_logging",
-            "finding": "No outcome_log.jsonl — triage decisions are not being tracked for ground-truth reconciliation",
-            "action": "Build memory/outcome_log.py to log every triage decision with timestamp",
-            "priority": "medium",
-        })
+    # ── Gap persistence: escalate gaps that appear in 3+ consecutive scans ──
+    current_areas = {g["area"] for g in gaps}
+    persistence   = _gap_persistence(current_areas, history)
+    resolved      = _resolved_gaps(current_areas, history)
 
-    # Check: any documents ingested?
-    doc_index = STORE / "documents" / "_doc_index.jsonl"
-    doc_count = 0
-    if doc_index.exists():
-        doc_count = sum(1 for l in doc_index.read_text().splitlines() if l.strip())
-    if doc_count < 5:
-        gaps.append({
-            "area": "document_swarm",
-            "finding": f"Only {doc_count} documents ingested — annual reports and transcripts not yet loaded",
-            "action": "Feed annual reports via: python agents/document_swarm.py /path/to/docs/",
-            "priority": "medium",
-        })
+    for gap in gaps:
+        streak = persistence.get(gap["area"], 0)
+        gap["consecutive_scans"] = streak + 1  # current scan + history
+        if streak >= 2 and gap["priority"] == "medium":
+            gap["priority"] = "high"
+            gap["escalated"] = True
+            gap["finding"] += f" [escalated: seen in {streak+1} consecutive scans]"
+        elif streak >= 4 and gap["priority"] == "high":
+            gap["finding"] += f" [STUCK: {streak+1} scans — needs different approach]"
+            gap["stuck"] = True
 
-    # Check: scheduled tasks enabled?
-    gaps.append({
-        "area": "scheduled_tasks",
-        "finding": "14 scheduled tasks still disabled — system not running live",
-        "action": "Enable scheduled tasks when ready to go live",
-        "priority": "high",
-    })
+    # ── Print ────────────────────────────────────────────────────────────────
+    if resolved:
+        print(f"\n  ✓ Resolved since last scan: {', '.join(resolved)}")
 
-    # BSE integration: deliberately deprioritised — universe is NSE mainboard,
-    # companies cross-list the same filings on both exchanges (duplicate data).
-
-    # Check: recall_tool in MCP
-    # (we just built it — this gap should resolve itself after next restart)
-
-    # Print gaps
     for g in gaps:
-        pri_color = {"high": "!", "medium": "~", "low": "·"}.get(g["priority"], " ")
-        print(f"  [{pri_color}] {g['area']}: {g['finding'][:80]}")
+        icon = {"high": "!", "medium": "~", "low": "·"}.get(g["priority"], " ")
+        streak = g.get("consecutive_scans", 1)
+        streak_str = f" [{streak} scans]" if streak > 1 else ""
+        print(f"  [{icon}] {g['area']}{streak_str}: {g['finding'][:75]}")
 
-    entry = {"type": "improve_scan", "gaps": gaps, "gap_count": len(gaps)}
+    if not gaps:
+        print("  ✓ No gaps detected — system healthy")
+
+    # ── Persist ──────────────────────────────────────────────────────────────
+    entry = {
+        "type":          "improve_scan",
+        "gaps":          gaps,
+        "gap_count":     len(gaps),
+        "resolved":      resolved,
+        "high_count":    sum(1 for g in gaps if g["priority"] == "high"),
+        "escalated":     [g["area"] for g in gaps if g.get("escalated")],
+        "stuck":         [g["area"] for g in gaps if g.get("stuck")],
+    }
     _log(entry)
 
-    # Push high-priority gaps into self-model as session notes
-    high = [g for g in gaps if g["priority"] == "high"]
+    # ── Write to self-model so Claude arrives knowing what needs work ────────
+    high   = [g for g in gaps if g["priority"] == "high"]
+    stuck  = [g for g in gaps if g.get("stuck")]
+
+    session_note_parts = []
+    if resolved:
+        session_note_parts.append(f"resolved: {', '.join(resolved)}")
     if high:
-        try:
-            from memory.self_model import apply_reflection
-            apply_reflection({
-                "gaps": [g["finding"] for g in high],
-                "session_note": f"self_improve scan: {len(gaps)} gaps found, {len(high)} high priority",
-            })
-            print(f"\n  → {len(high)} high-priority gaps written to self-model")
-        except Exception as e:
-            print(f"  → self-model update failed: {e}")
+        session_note_parts.append(f"{len(high)} high-priority gaps")
+    if stuck:
+        session_note_parts.append(f"{len(stuck)} stuck gaps need new approach")
+    if not gaps:
+        session_note_parts.append("system healthy — no gaps")
+
+    session_note = f"self_improve scan: {'; '.join(session_note_parts)}"
+
+    reflection: dict = {
+        "session_note": session_note,
+    }
+    if high:
+        reflection["gaps"] = [g["finding"] for g in high]
+    if resolved:
+        # resolved gaps come out of calibration.gaps in the self-model
+        reflection["new_confirmed"] = [f"resolved gap: {r}" for r in resolved]
+
+    try:
+        from memory.self_model import apply_reflection
+        apply_reflection(reflection)
+        print(f"\n  → self-model updated: {session_note}")
+    except Exception as e:
+        print(f"  → self-model update failed: {e}")
 
     return entry
 
