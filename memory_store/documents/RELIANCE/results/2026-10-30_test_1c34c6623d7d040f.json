@@ -1,0 +1,17 @@
+{
+  "doc_id": "1c34c6623d7d040f",
+  "source_file": "test.txt",
+  "source_name": "test.txt",
+  "ingested_at": "2026-10-30",
+  "symbol": "RELIANCE",
+  "doc_type": "results",
+  "period": "Q1 FY26",
+  "confidence": "high",
+  "pages": 1,
+  "extract_method": "test",
+  "char_count": 66,
+  "text": "This is a test document about Reliance Industries Q1 FY26 results.",
+  "chunks": [
+    "This is a test document about Reliance Industries Q1 FY26 results."
+  ]
+}
