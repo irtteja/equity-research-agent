@@ -786,6 +786,101 @@ def _signal_pipeline_freshness() -> list[dict]:
     return gaps
 
 
+def _signal_agent_quality() -> list[dict]:
+    """
+    Score agent output quality by checking:
+      1. ContextAgent edge coverage — how many MetricValue nodes lack PRECEDED_BY edges?
+      2. TrendAgent coverage — how many (ticker, metric) pairs have TrendSummary nodes?
+      3. CORROBORATES/CONTRADICTS edge accuracy — sampled against outcome_log sentiment scores.
+
+    Surfaces gaps when quality falls below thresholds, closing the recursive
+    self-improvement loop for agents (not just the data pipeline).
+    """
+    gaps = []
+
+    try:
+        from memory.graph_store import get_store
+        gs = get_store()
+        stats = gs.stats()
+        by_type = stats.get("by_type", {})
+
+        # ── 1. ContextAgent edge coverage ─────────────────────────────────────
+        total_mv   = by_type.get("MetricValue", 0)
+        enriched   = total_mv - stats.get("pending_enrichment", 0)
+
+        if total_mv > 0:
+            enrichment_rate = enriched / total_mv
+            if enrichment_rate < 0.5 and total_mv >= 5:
+                gaps.append({
+                    "area": "context_agent:low_enrichment_rate",
+                    "finding": f"ContextAgent has only enriched {enriched}/{total_mv} MetricValue nodes ({enrichment_rate:.0%}) — run context_agent_runner.py",
+                    "action": "python jobs/context_agent_runner.py",
+                    "priority": "high" if enrichment_rate < 0.2 else "medium",
+                    "metric": {"enriched": enriched, "total": total_mv, "rate": round(enrichment_rate, 3)},
+                })
+
+        # ── 2. TrendAgent coverage ─────────────────────────────────────────────
+        total_trends = by_type.get("TrendSummary", 0)
+        total_cos    = by_type.get("Company", 0)
+
+        if total_cos > 0 and total_trends == 0 and total_mv >= 10:
+            gaps.append({
+                "area": "trend_agent:no_trends_computed",
+                "finding": f"TrendAgent has never run — {total_mv} MetricValue nodes but 0 TrendSummary nodes",
+                "action": "python -m agents.trend_agent",
+                "priority": "medium",
+                "metric": {"metric_nodes": total_mv, "trend_nodes": 0},
+            })
+        elif total_cos > 0 and total_trends > 0:
+            # Check if trends are stale (last update > 7 days ago)
+            with gs._conn() as conn:
+                stale = conn.execute(
+                    "SELECT COUNT(*) FROM nodes WHERE node_type='TrendSummary' "
+                    "AND json_extract(properties,'$.updated_at') < datetime('now', '-7 days')"
+                ).fetchone()[0]
+            if stale > 0:
+                gaps.append({
+                    "area": "trend_agent:stale_trends",
+                    "finding": f"{stale}/{total_trends} TrendSummary nodes are >7 days old — TrendAgent needs a refresh run",
+                    "action": "python -m agents.trend_agent",
+                    "priority": "medium" if stale < total_trends else "high",
+                    "metric": {"stale": stale, "total": total_trends},
+                })
+
+        # ── 3. CORROBORATES/CONTRADICTS accuracy via outcome_log ──────────────
+        outcome_path = STORE / "outcome_log.jsonl"
+        if outcome_path.exists():
+            lines = [l for l in outcome_path.read_text().splitlines() if l.strip()]
+            sentiment_outcomes = [
+                json.loads(l) for l in lines
+                if json.loads(l).get("decision_type") == "sentiment_edge"
+            ]
+            if len(sentiment_outcomes) >= 10:
+                correct = sum(1 for o in sentiment_outcomes if o.get("outcome_correct") is True)
+                rate    = correct / len(sentiment_outcomes)
+                if rate < 0.60:
+                    gaps.append({
+                        "area": "context_agent:sentiment_edge_accuracy",
+                        "finding": (
+                            f"ContextAgent CORROBORATES/CONTRADICTS edges are {rate:.0%} accurate "
+                            f"({correct}/{len(sentiment_outcomes)} scored) — below 60% threshold"
+                        ),
+                        "action": "Review sentiment scoring logic in agents/context_agent.py:_sentiment_consistent()",
+                        "priority": "high",
+                        "metric": {"accuracy": round(rate, 3), "scored": len(sentiment_outcomes)},
+                    })
+
+    except Exception as exc:
+        gaps.append({
+            "area": "agent_quality:signal_error",
+            "finding": f"Could not read graph for agent quality check: {exc}",
+            "action": "Check memory/graph_store.py and memory_store/graph.db",
+            "priority": "medium",
+        })
+
+    return gaps
+
+
 def _signal_data_coverage() -> list[dict]:
     """
     Check XBRL results coverage against tracked universe size.
@@ -1086,6 +1181,7 @@ def run_improvement_scan() -> dict:
     gaps += _signal_task_errors()
     gaps += _signal_pipeline_freshness()
     gaps += _signal_data_coverage()
+    gaps += _signal_agent_quality()
 
     # ── Gap persistence: escalate gaps that appear in 3+ consecutive scans ──
     current_areas = {g["area"] for g in gaps}
