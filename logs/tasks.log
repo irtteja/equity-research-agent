@@ -94,3 +94,27 @@ Progress: pairs=20 trends=20 strong=5 | top: CDSL depreciation (improving, 5p), 
 Next: 
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-10-31 08:25
+Task: None
+Status: completed
+Progress: xbrl=13 quarters, docs=0 facts; graph=144n/249e
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-10-31 08:26
+Task: None
+Status: completed
+Progress: processed=12 edges_created=10 skipped=0
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-10-31 08:26
+Task: None
+Status: completed
+Progress: pairs=20 trends=20 strong=5 | top: CDSL depreciation (improving, 5p), CDSL finance_costs (stable, 3p), CDSL total_expenses (improving, 2p), BIRLACORPN finance_costs (improving, 1p), CDSL revenue (improving, 1p)
+Next: 
+Blockers: none
+============================================================
