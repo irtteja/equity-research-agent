@@ -88,6 +88,13 @@ def save_results(symbol: str, quarters: list[dict]) -> dict:
         }
         _save_index(index)
 
+        try:
+            from memory.episode_bridge import result_to_graph
+            for q in new_quarters:
+                result_to_graph(symbol, q)
+        except Exception:
+            pass
+
     return {"saved": saved, "skipped": skipped}
 
 
