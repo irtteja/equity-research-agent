@@ -21,3 +21,4 @@ BhavCopy_*.csv
 # IDE
 .vscode/
 .idea/
+memory_store/graph.db
