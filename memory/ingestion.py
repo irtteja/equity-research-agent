@@ -394,6 +394,15 @@ def save_extraction(ticker: str, prep: dict, claude_output: dict) -> dict:
             "last_filing": ann_date,
             "last_ingested": date.today().isoformat(),
         })
+        try:
+            from memory.episode_bridge import facts_to_graph, statement_to_graph
+            numeric_facts = [f for f in facts if f.get("raw", {}).get("value") is not None]
+            facts_to_graph(ticker, numeric_facts)
+            for f in facts:
+                if f.get("raw", {}).get("speaker"):
+                    statement_to_graph(ticker, f)
+        except Exception:
+            pass
 
     for ev in events:
         if ev.get("event_id"):

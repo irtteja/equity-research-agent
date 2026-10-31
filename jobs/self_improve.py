@@ -1140,6 +1140,14 @@ def run_improvement_scan() -> dict:
     }
     _log(entry)
 
+    # ── Write gaps to knowledge graph ────────────────────────────────────────
+    try:
+        from memory.episode_bridge import gap_to_graph
+        for gap in gaps:
+            gap_to_graph(gap)
+    except Exception:
+        pass
+
     # ── Write to self-model so Claude arrives knowing what needs work ────────
     high   = [g for g in gaps if g["priority"] == "high"]
     stuck  = [g for g in gaps if g.get("stuck")]
