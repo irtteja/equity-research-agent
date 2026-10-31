@@ -1,5 +1,23 @@
 # Progress Log
 
+## 2026-10-31 — ebit/ebitda fix + graph re-backfill
+
+### Done
+- **Fix ebit/ebitda mismatch** (`memory/episode_bridge.py` dc56018): stored XBRL has `ebit` not
+  `ebitda`; old code silently labeled ebit values as "ebitda". Split into two separate metric
+  entries so each maps to its correct name.
+- **Graph cleanup + re-backfill**: deleted 12 stale ebitda MetricValue nodes + 2 stale ebitda
+  TrendSummary nodes; re-ran backfill to create 12 correct ebit nodes; re-ran ContextAgent
+  (12 processed, 10 PRECEDED_BY edges) and TrendAgent (20 trends, 5 strong).
+- Graph state: 144 nodes, 249 edges. All ebit/ebitda trend signals now accurate.
+
+### Pending / next sessions
+- Expand tracked universe (Nifty 50 / Midcap 150 seed list — 20–50 tickers)
+- Research query interface (`research_query.py`)
+- Outcome scoring (prediction ledger) — after universe is larger
+
+---
+
 ## 2026-10-31 — Recursive self-improvement loop closed; all 4 gaps addressed
 
 ### Done
