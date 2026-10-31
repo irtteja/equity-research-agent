@@ -62,3 +62,35 @@ Progress: 6 signal readers, persistence tracking, gap resolution detection
 Next: monitor first live runs to validate signal quality
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-10-31 07:19
+Task: None
+Status: completed
+Progress: xbrl=13 quarters, docs=0 facts; graph=2n/1e
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-10-31 07:19
+Task: None
+Status: completed
+Progress: xbrl=13 quarters, docs=0 facts; graph=124n/121e
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-10-31 07:20
+Task: None
+Status: completed
+Progress: processed=120 edges_created=100 skipped=0
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-10-31 07:20
+Task: None
+Status: completed
+Progress: pairs=20 trends=20 strong=5 | top: CDSL depreciation (improving, 5p), CDSL finance_costs (stable, 3p), CDSL total_expenses (improving, 2p), BIRLACORPN finance_costs (improving, 1p), CDSL revenue (improving, 1p)
+Next: 
+Blockers: none
+============================================================

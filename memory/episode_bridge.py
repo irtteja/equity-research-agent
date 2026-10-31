@@ -153,23 +153,24 @@ def result_to_graph(ticker: str, quarter: dict) -> list[str]:
     except Exception:
         period = period_end
 
-    # Numeric fields to graph
-    metric_fields = {
-        "revenue":           ("revenue", "crore"),
-        "totalIncome":       ("total_income", "crore"),
-        "netProfit":         ("pat", "crore"),
-        "profitBeforeTax":   ("pbt", "crore"),
-        "ebitda":            ("ebitda", "crore"),
-        "eps":               ("eps", "rs"),
-        "totalExpenses":     ("total_expenses", "crore"),
-        "finCost":           ("finance_costs", "crore"),
-        "depreciationAmortization": ("depreciation", "crore"),
-        "taxExpense":        ("tax_expense", "crore"),
-    }
+    # Numeric fields to graph — each entry: list of possible raw keys → (metric_name, unit)
+    # Handles both nselib API format and stored JSONL format
+    metric_fields = [
+        (["revenue", "revenue_from_operations"],       "revenue",        "crore"),
+        (["totalIncome", "total_income"],               "total_income",   "crore"),
+        (["netProfit", "pat"],                          "pat",            "crore"),
+        (["profitBeforeTax", "pbt"],                    "pbt",            "crore"),
+        (["ebitda", "ebit"],                            "ebitda",         "crore"),
+        (["eps", "eps_basic"],                          "eps",            "rs"),
+        (["totalExpenses", "total_expenses"],           "total_expenses", "crore"),
+        (["finCost", "finance_costs"],                  "finance_costs",  "crore"),
+        (["depreciationAmortization", "depreciation"],  "depreciation",   "crore"),
+        (["taxExpense", "tax"],                         "tax_expense",    "crore"),
+    ]
 
     node_ids = []
-    for raw_key, (metric_name, unit) in metric_fields.items():
-        val = quarter.get(raw_key)
+    for raw_keys, metric_name, unit in metric_fields:
+        val = next((quarter.get(k) for k in raw_keys if quarter.get(k) is not None), None)
         if val is None:
             continue
         try:
