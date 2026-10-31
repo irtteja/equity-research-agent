@@ -1,5 +1,44 @@
 # Progress Log
 
+## 2026-10-31 — Recursive self-improvement loop closed; all 4 gaps addressed
+
+### Done
+- **Task 1 — 5 core scheduled tasks enabled**: equity-daily-monitor, NSE Daily Announcement Fetch,
+  Results Fetch Nightly XBRL, Results Fetch 8 AM Retry, equity-watchdog. Also created new
+  "ContextAgent Nightly Enrichment" task (2:30 AM IST Mon-Sat) running context_agent_runner + trend_agent_runner.
+- **Task 2 — Graph backfill**: `jobs/backfill_graph.py` loads all stored XBRL results into graph.
+  Fixed `episode_bridge.result_to_graph()` to handle both nselib API field names and stored JSONL
+  field names (revenue_from_operations, pat, eps_basic vs revenue, netProfit, eps).
+  Result: 121 MetricValue nodes, 121 HAS_VALUE edges, 2 tickers (BIRLACORPN, CDSL), 13 quarters.
+- **Task 3 — TrendAgent**: `agents/trend_agent.py` walks PRECEDED_BY edge chains, computes
+  momentum score [-1,1], direction streak, and acceleration (accelerating/decelerating/steady).
+  Writes TrendSummary nodes with HAS_TREND + TREND_OF edges.
+  `jobs/trend_agent_runner.py` — scheduled runner.
+  First run: 20 (ticker,metric) pairs → 20 TrendSummary nodes → 5 strong trends.
+  Strong signals: CDSL revenue +11.4% (steady), CDSL total_expenses +6.2% (accelerating).
+- **Task 4 — Agent quality loop closed**: `_signal_agent_quality()` in self_improve.py scores
+  the agents themselves, not just the data pipeline:
+  - ContextAgent enrichment rate < 50% → gap
+  - TrendSummary nodes absent or stale > 7 days → gap
+  - CORROBORATES/CONTRADICTS accuracy < 60% → gap
+- Commit: 60658a9
+
+### Architecture changes
+- **Recursive loop fully closed**: data → graph → ContextAgent → TrendAgent → self_improve
+  scores agent quality → patches if degraded → repeat. Every layer now self-improves.
+- **Pipeline verified end-to-end**: backfill → 100 PRECEDED_BY edges → 20 trend summaries →
+  self_improve scan detects agent gaps → corrects.
+- **New node types**: TrendSummary (momentum, streak, acceleration)
+- **New edge types**: HAS_TREND (Company → TrendSummary), TREND_OF (TrendSummary → MetricValue)
+- **Graph state**: 144 nodes, 261 edges, 251 episodes
+
+### Pending / next sessions
+- AlertAgent — reads TrendSummary nodes, decides what to surface to user (material signals)
+- Outcome scoring wired to ContextAgent sentiment edges (accuracy feedback)
+- Expand tracked universe beyond BIRLACORPN + CDSL (XBRL fetch nightly now running)
+
+---
+
 ## 2026-10-31 — Knowledge graph layer + ContextAgent (MiroFish-inspired ripple architecture)
 
 ### Done

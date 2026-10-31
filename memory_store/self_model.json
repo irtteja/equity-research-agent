@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-10-31",
-  "version": 21,
+  "version": 22,
   "patterns": {
     "confirmed": [
       {
@@ -80,6 +80,24 @@
         "first_seen": "2026-10-31",
         "last_seen": "2026-10-31",
         "count": 1
+      },
+      {
+        "pattern": "TrendAgent momentum score works on real data — CDSL revenue +11.4% streak confirmed",
+        "first_seen": "2026-10-31",
+        "last_seen": "2026-10-31",
+        "count": 1
+      },
+      {
+        "pattern": "episode_bridge needs dual-format field mapping — live API vs stored JSONL use different names",
+        "first_seen": "2026-10-31",
+        "last_seen": "2026-10-31",
+        "count": 1
+      },
+      {
+        "pattern": "agent quality loop: self_improve scan can score agents, not just pipeline",
+        "first_seen": "2026-10-31",
+        "last_seen": "2026-10-31",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -151,6 +169,14 @@
       {
         "signal": "graph_store CLI: --metric-history TICKER:METRIC useful for quick trajectory checks",
         "added": "2026-10-31"
+      },
+      {
+        "signal": "backfill + context + trend pipeline: 121 nodes → 100 PRECEDED_BY edges → 20 trends in one pass",
+        "added": "2026-10-31"
+      },
+      {
+        "signal": "scheduled task chain: XBRL fetch (1:15 AM) → ContextAgent (2:30 AM) → trends ready by morning",
+        "added": "2026-10-31"
       }
     ],
     "gaps": [
@@ -220,6 +246,18 @@
       },
       {
         "gap": "5 core scheduled tasks still disabled",
+        "added": "2026-10-31"
+      },
+      {
+        "gap": "AlertAgent not yet built — trends exist but nothing surfaces them to user",
+        "added": "2026-10-31"
+      },
+      {
+        "gap": "only 2 tickers backfilled — XBRL fetch must run nightly to grow the graph",
+        "added": "2026-10-31"
+      },
+      {
+        "gap": "sentiment edge accuracy not yet tracked in outcome_log — check fires but finds 0 scored entries",
         "added": "2026-10-31"
       }
     ]
@@ -308,6 +346,10 @@
     {
       "date": "2026-10-31",
       "note": "built knowledge graph layer (graph_store + episode_bridge + ContextAgent); wired into ingestion, results_store, self_improve; all facts/XBRL/gaps now auto-write to graph; ripple architecture active"
+    },
+    {
+      "date": "2026-10-31",
+      "note": "closed recursive self-improvement loop for agents: backfill graph, TrendAgent, _signal_agent_quality; 5 core scheduled tasks re-enabled; pipeline verified end-to-end on real CDSL/BIRLACORPN data"
     }
   ]
 }
