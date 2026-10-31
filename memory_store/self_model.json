@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-30",
-  "version": 20,
+  "last_updated": "2026-10-31",
+  "version": 21,
   "patterns": {
     "confirmed": [
       {
@@ -62,6 +62,24 @@
         "first_seen": "2026-10-30",
         "last_seen": "2026-10-30",
         "count": 1
+      },
+      {
+        "pattern": "ripple architecture: shared graph as agent communication layer (vs direct calls)",
+        "first_seen": "2026-10-31",
+        "last_seen": "2026-10-31",
+        "count": 1
+      },
+      {
+        "pattern": "SQLite sufficient for local knowledge graph — no external Zep dependency needed",
+        "first_seen": "2026-10-31",
+        "last_seen": "2026-10-31",
+        "count": 1
+      },
+      {
+        "pattern": "episode bridge pattern: every event writes human-readable episode + typed node",
+        "first_seen": "2026-10-31",
+        "last_seen": "2026-10-31",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -75,6 +93,18 @@
         "pattern": "outcome_log triage health signals will be sparse until more ingestion runs",
         "first_seen": "2026-10-30",
         "last_seen": "2026-10-30",
+        "count": 1
+      },
+      {
+        "pattern": "CORROBORATES/CONTRADICTS edge quality depends on sentiment field being populated",
+        "first_seen": "2026-10-31",
+        "last_seen": "2026-10-31",
+        "count": 1
+      },
+      {
+        "pattern": "ContextAgent delta accuracy: period_date ordering may miss fiscal year boundary cases",
+        "first_seen": "2026-10-31",
+        "last_seen": "2026-10-31",
         "count": 1
       }
     ],
@@ -109,6 +139,18 @@
       {
         "signal": "signal readers reading actual files catches real gaps (event_calendar never run, xbrl coverage 0%)",
         "added": "2026-10-30"
+      },
+      {
+        "signal": "upsert semantics on nodes: safe to call fact_to_graph multiple times for same filing",
+        "added": "2026-10-31"
+      },
+      {
+        "signal": "idempotent edges: (edge_type, source_id, target_id) uniqueness prevents duplicate edges",
+        "added": "2026-10-31"
+      },
+      {
+        "signal": "graph_store CLI: --metric-history TICKER:METRIC useful for quick trajectory checks",
+        "added": "2026-10-31"
       }
     ],
     "gaps": [
@@ -163,6 +205,22 @@
       {
         "gap": "xbrl_coverage 0% of tracked universe",
         "added": "2026-10-30"
+      },
+      {
+        "gap": "graph not yet backfilled with existing XBRL results and facts in memory_store/",
+        "added": "2026-10-31"
+      },
+      {
+        "gap": "TrendAgent not yet built — PRECEDED_BY edges exist but nothing reads them for signals",
+        "added": "2026-10-31"
+      },
+      {
+        "gap": "AlertAgent not yet built — no layer between graph and user-facing output",
+        "added": "2026-10-31"
+      },
+      {
+        "gap": "5 core scheduled tasks still disabled",
+        "added": "2026-10-31"
       }
     ]
   },
@@ -246,6 +304,10 @@
     {
       "date": "2026-10-30",
       "note": "self_improve scan: 2 high-priority gaps"
+    },
+    {
+      "date": "2026-10-31",
+      "note": "built knowledge graph layer (graph_store + episode_bridge + ContextAgent); wired into ingestion, results_store, self_improve; all facts/XBRL/gaps now auto-write to graph; ripple architecture active"
     }
   ]
 }

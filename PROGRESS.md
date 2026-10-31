@@ -1,5 +1,46 @@
 # Progress Log
 
+## 2026-10-31 — Knowledge graph layer + ContextAgent (MiroFish-inspired ripple architecture)
+
+### Done
+- `memory/graph_store.py` (NEW): SQLite knowledge graph — nodes, edges, episodes tables.
+  GraphStore with upsert/idempotent semantics, `get_metric_history()`, CLI interface.
+  DB: `memory_store/graph.db`. Module-level singleton `get_store()`.
+- `memory/episode_bridge.py` (NEW): converts facts, XBRL results, management statements,
+  gaps, patches, and task events into graph nodes + episodes. Entry point for all writes.
+  `fact_to_graph()`, `result_to_graph()`, `statement_to_graph()`, `gap_to_graph()`, `patch_to_graph()`.
+- `agents/__init__.py` (NEW): agents package.
+- `agents/context_agent.py` (NEW): enriches MetricValue nodes with PRECEDED_BY edges
+  (delta + direction between consecutive periods). Links ManagementStatement nodes via
+  CORROBORATES/CONTRADICTS. Marks nodes enriched after processing.
+- `jobs/context_agent_runner.py` (NEW): scheduled runner — `python jobs/context_agent_runner.py`.
+- `memory/ingestion.py`: wired `facts_to_graph()` + `statement_to_graph()` into `save_extraction()`.
+  Every new numeric fact and management statement auto-writes to graph on ingestion.
+- `memory/results_store.py`: wired `result_to_graph()` into `save_results()`.
+  Every new XBRL quarter auto-writes MetricValue nodes to graph.
+- `jobs/self_improve.py`: wired `gap_to_graph()` into `run_improvement_scan()`.
+  Every detected gap becomes a Gap node in the graph.
+- Commit: cf66343
+
+### Architecture changes
+- **Ripple architecture**: every significant event (fact ingested, XBRL result saved, gap detected)
+  now writes to the shared knowledge graph as an episode. Agents interact via the graph, not
+  direct calls. ContextAgent reads unenriched MetricValue nodes → adds temporal edges → future
+  agents (TrendAgent, AlertAgent) traverse edge chains for acceleration/deceleration signals.
+- **Recursive self-improvement**: graph grows → agents see more context → better analysis →
+  more precise gaps → more precise patches → repeat. Modeled on MiroFish ripple propagation.
+- **Node types active**: Company, MetricValue, ManagementStatement, Gap, Patch
+- **Edge types active**: HAS_VALUE, PRECEDED_BY, CORROBORATES, CONTRADICTS, FIXED_BY
+
+### Pending / next sessions
+- Enable 5 core scheduled tasks (equity-daily-monitor, NSE fetch, XBRL fetch, watchdog)
+- TrendAgent: detect metric acceleration/deceleration from PRECEDED_BY edge chains
+- AlertAgent: surface high-delta + management statement confirmation signals
+- Outcome scoring Phase 2: reconcile triage decisions against price moves
+- Backfill graph with existing stored XBRL results + facts (one-shot script)
+
+---
+
 ## 2026-10-30 — Metacognitive self_improve scan: data-driven with persistence tracking
 
 ### Done
