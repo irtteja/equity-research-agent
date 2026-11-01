@@ -70,7 +70,6 @@ THEMATIC_INDICES = {
     "NIFTY RURAL":          "NIFTY RURAL",
     "NIFTY TRANS LOGIS":    "NIFTY TRANSPORTATION & LOGISTICS",
     "NIFTY RAILWAYSPSU":    "NIFTY INDIA RAILWAYS PSU",
-    "NIFTYCONGLOMERATE":    "NIFTY CONGLOMERATE 50",
     "NIFTY IPO":            "NIFTY IPO",
     "NIFTY INTERNET":       "NIFTY INDIA INTERNET",
     "NIFTY MOBILITY":       "NIFTY MOBILITY",
@@ -127,7 +126,6 @@ SECTOR_RULES = [
     ({"NIFTY SERVICES SECTOR"},                       "Services — Broad"),
     ({"NIFTY CPSE", "NIFTY PSE"},                     "PSU — Government Enterprise"),
     ({"NIFTY MNC"},                                   "MNC"),
-    ({"NIFTY CONGLOMERATE 50"},                       "Conglomerate"),
     ({"NIFTY IPO"},                                   "Recent IPO"),
 ]
 
