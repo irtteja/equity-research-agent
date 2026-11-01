@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-31",
-  "version": 23,
+  "last_updated": "2026-11-01",
+  "version": 26,
   "patterns": {
     "confirmed": [
       {
@@ -273,6 +273,10 @@
       {
         "gap": "stale wrongly-labeled nodes persist until explicitly deleted; backfill alone does not clean them",
         "added": "2026-10-31"
+      },
+      {
+        "gap": "Only 2/751 tracked symbols have XBRL results (0% coverage)",
+        "added": "2026-11-01"
       }
     ]
   },
@@ -368,6 +372,14 @@
     {
       "date": "2026-10-31",
       "note": "fixed ebit/ebitda mismatch in episode_bridge; cleaned stale nodes; re-ran agents"
+    },
+    {
+      "date": "2026-11-01",
+      "note": "E2E test run"
+    },
+    {
+      "date": "2026-11-01",
+      "note": "self_improve scan: 2 high-priority gaps"
     }
   ]
 }
