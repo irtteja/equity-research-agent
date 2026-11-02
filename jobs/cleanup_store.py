@@ -5,7 +5,7 @@ memory_store cleanup — enforce data retention policy.
 Retention rules:
   bhavcopy/             365 days  (raw price CSVs — reconstructable from NSE archives)
   indices_bhavcopy/     365 days  (index OHLCV — same)
-  announcements/        365 days  (raw announcement JSON)
+  announcements/        90 days   (raw announcement JSON — context extracted to KB)
   documents/            90 days   (PDFs — facts extracted to KB before deletion; 90-day safety window)
 
 Never deleted:
@@ -26,7 +26,7 @@ STORE = REPO / "memory_store"
 RULES = [
     ("bhavcopy",          365,  "*.csv"),
     ("indices_bhavcopy",  365,  "*.csv"),
-    ("announcements",     365,  "*.json"),
+    ("announcements",     90,   "*.json"),
 ]
 DOCUMENT_RETENTION_DAYS = 90  # 90-day safety window; facts already extracted to KB
 
