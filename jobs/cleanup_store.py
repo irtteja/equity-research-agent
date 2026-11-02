@@ -6,7 +6,7 @@ Retention rules:
   bhavcopy/             365 days  (raw price CSVs — reconstructable from NSE archives)
   indices_bhavcopy/     365 days  (index OHLCV — same)
   announcements/        365 days  (raw announcement JSON)
-  documents/            1095 days (annual reports, transcripts — 3 years)
+  documents/            90 days   (PDFs — facts extracted to KB before deletion; 90-day safety window)
 
 Never deleted:
   results/              XBRL quarterly results — permanent, structured, small
@@ -28,7 +28,7 @@ RULES = [
     ("indices_bhavcopy",  365,  "*.csv"),
     ("announcements",     365,  "*.json"),
 ]
-DOCUMENT_RETENTION_DAYS = 1095  # 3 years
+DOCUMENT_RETENTION_DAYS = 90  # 90-day safety window; facts already extracted to KB
 
 
 def _prune_flat(folder: str, days: int, glob: str, dry_run: bool) -> dict:
