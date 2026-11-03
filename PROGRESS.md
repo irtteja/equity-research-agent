@@ -1,5 +1,33 @@
 # Progress Log
 
+## 2026-11-03 (session 5) — AlertAgent built, full pipeline running end-to-end
+
+### Done
+- Built `agents/alert_agent.py` — AlertAgent class: reads TrendSummary nodes from graph, formats sector pulse, inflection points, strong momentum signals into daily brief
+- Built `jobs/alert_agent_runner.py` — CLI runner with task logging
+- Ran full pipeline end-to-end for the first time: backfill → ContextAgent → TrendAgent → AlertAgent
+  - Graph: 37,931 nodes · 65,781 edges
+  - Trends: 7,872 total, 295 strong↑, 47 strong↓, 695 inflections
+  - First live brief saved to `reports/daily/alert-2026-11-03.json`
+- Created daily scheduled trigger `trig_01GYn52oQnTwtQv8jLuhqw8U`: 4 PM IST weekdays (CRON_TZ=Asia/Kolkata 0 16 * * 1-5), next run 2026-11-04
+- Refined AlertAgent filtering: growth metrics only (revenue/PAT/EBIT/EPS), streak≥2, dedup by ticker (best |momentum|×streak), cost metrics separated from growth signals
+- All changes pushed to origin/master (commit 97a00c2)
+
+### Architecture changes
+- `agents/alert_agent.py`: new — AlertAgent, GROWTH_METRICS/COST_METRICS filter sets, sector pulse, inflection detection
+- `jobs/alert_agent_runner.py`: new — daily brief runner with task logging
+- `reports/daily/alert-2026-11-03.json`: first live brief output
+- `memory_store/self_model.json`: updated with session reflection
+- Scheduled trigger: daily pipeline automation firing at 4 PM IST on weekdays
+
+### Pending / next session
+- Expand SECTOR_MAP in alert_agent.py — currently covers ~60 tickers; most of 873 fall into "Other"
+- Wire D3.js living graph artifact to real graph data via ArtifactData capability
+- Document analysis pipeline: concall/AR documents not yet flowing into graph (shows 0 facts)
+- Investigate LIVE_MARKET + NSE_BHAV_COPY MCP instability (404s this session)
+
+---
+
 ## 2026-11-03 (session 3) — KB build COMPLETE: 888/888 symbols done
 
 ### Done
