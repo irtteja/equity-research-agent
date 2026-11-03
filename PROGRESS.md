@@ -1,5 +1,46 @@
 # Progress Log
 
+## 2026-11-03 (sessions 6–7) — Interactive dashboard, repo hygiene, self-description
+
+### Done
+- **Interactive SPA dashboard** — full rewrite of market-brief.html as single-page app:
+  - 5 tabs: Overview | Momentum | Value Signals | Sectors | Movers
+  - Real-time search filtering all sections simultaneously
+  - Sortable columns (click header arrows) on improving/deteriorating/value-signals tables
+  - Click-to-expand rows showing price range bar, % from 52w low, management quote
+  - Sector drill-down panel with per-sector metrics
+  - Theme toggle (dark/light) persisted to localStorage
+  - Published to artifact `https://claude.ai/artifact/56wF7LYVveY76QHahUuCqY` (v3)
+- **Scheduled task cleanup** — 20 tasks → 11 active (deleted 9 stale/redundant)
+  - Removed: disabled guardian/healthchecker tasks, old "Master Equity Analyst" web-search approach, stale one-shot reminders
+  - Kept: daily pipeline (4 PM IST), KB builder, price agent, document ingestion, weekly job
+- **Repo hygiene** — untracked large data dirs from git:
+  - `memory_store/documents/` (877 MB) — raw PDFs already extracted into graph
+  - `memory_store/bhavcopy/` (18 MB) — regenerated daily
+  - `memory_store/indices_bhavcopy/` (4.3 MB) — regenerated daily
+  - Removed 3,728 files from git tracking; repo ~995 MB → ~135 MB tracked
+  - Updated `.gitignore` with 3 new rules
+- **Document JSON stripping** — removed `text`/`chunks` from 3,236 JSON files (860 MB freed)
+  - Metadata preserved: doc_id, source_file, symbol, doc_type, period, confidence, etc.
+- **Graph state** (2026-11-03): 45,982 nodes · 89,486 edges across 885 tickers
+  - MetricValue: 29,192 | TrendSummary: 7,872 | ManagementStatement: 7,176 | PriceSnapshot: 875 | Company: 867
+
+### Architecture changes
+- `market-brief.html` (scratchpad): full SPA rewrite — state object, tab routing, search/sort/filter/expand
+- `.gitignore`: added 3 ignore rules for large regenerated data directories
+- `memory_store/documents/**/*.json`: `text`/`chunks` fields stripped from 3,236 files
+
+### Pending / next session
+- Expand SECTOR_MAP in alert_agent.py — still covers only ~60 of 885 tickers; most show as "Other"
+- BSE announcements integration (currently NSE-only)
+- Annual report auto-fetch pipeline
+- `tools/recall_tool.py` as MCP tool for in-session graph queries
+- Phase 2 memory: Kuzu graph + LanceDB vector index
+- Wire NSE_BHAV_COPY MCP live data to dashboard (replace hardcoded DATA)
+- Investigate LIVE_MARKET MCP 404 instability
+
+---
+
 ## 2026-11-03 (session 5) — AlertAgent built, full pipeline running end-to-end
 
 ### Done
