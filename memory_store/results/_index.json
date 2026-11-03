@@ -4984,5 +4984,23 @@
     "latest_quarter": "Second quarter",
     "quarters": 4,
     "last_updated": "2026-11-03"
+  },
+  "TIMETECHNO": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "THYROCARE": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "TI": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Half yearly",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
   }
 }
