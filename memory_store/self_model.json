@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-03",
-  "version": 29,
+  "version": 30,
   "patterns": {
     "confirmed": [
       {
@@ -146,6 +146,12 @@
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
+      },
+      {
+        "pattern": "trend_agent surfaces finance_cost vs revenue divergence as early margin signal",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -193,6 +199,12 @@
       },
       {
         "pattern": "graph backfill (context+trend agents) not yet run on full 888-symbol universe",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "BAJAJ-AUTO finance_costs +21% with revenue +15.8% — watch if sustained into Q3",
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
@@ -276,6 +288,10 @@
       },
       {
         "signal": "checkpoint-based resumability after container idle",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "context_agent PRECEDED_BY edges: 148 edges from 200 nodes in one pass (~74% density)",
         "added": "2026-11-03"
       }
     ],
@@ -379,6 +395,10 @@
       {
         "gap": "No automated trigger to start graph build when KB build completes",
         "added": "2026-11-03"
+      },
+      {
+        "gap": "LIVE_MARKET MCP unstable — session expires mid-run; need reconnect retry logic",
+        "added": "2026-11-03"
       }
     ]
   },
@@ -388,6 +408,11 @@
       "theme": "capex cycle",
       "note": "rising capex, margin compression watch",
       "added": "2026-10-30"
+    },
+    {
+      "ticker": "BAJAJ-AUTO",
+      "reason": "finance_costs +21% diverging from revenue +15.8%; leverage building",
+      "added": "2026-11-03"
     }
   ],
   "sector_notes": {
@@ -395,6 +420,12 @@
       {
         "note": "Rural recovery signals in Q2 results — watch volume growth",
         "date": "2026-10-30"
+      }
+    ],
+    "auto": [
+      {
+        "note": "BAJAJ-AUTO Q-on-Q: revenue +15.8%, PAT +6.1%, but finance_costs +21% — leverage building",
+        "date": "2026-11-03"
       }
     ]
   },
@@ -494,6 +525,10 @@
     {
       "date": "2026-11-03",
       "note": "KB build completed 888/888 NSE mainboard symbols — 2851 concalls, 354 ARs, 3278 XBRL quarters ingested"
+    },
+    {
+      "date": "2026-11-03",
+      "note": "2026-11-03: built full system architecture artifact; ran context+trend agents; 148 PRECEDED_BY edges, 82 trend summaries, 49 strong trends across KB"
     }
   ]
 }
