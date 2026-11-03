@@ -4960,5 +4960,29 @@
     "latest_quarter": "First quarter",
     "quarters": 2,
     "last_updated": "2026-11-03"
+  },
+  "TEMPSENS": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Half yearly",
+    "quarters": 2,
+    "last_updated": "2026-11-03"
+  },
+  "TEXRAIL": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "THELEELA": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "THOMASCOOK": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
   }
 }
