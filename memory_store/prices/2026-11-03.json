@@ -1,21 +1,12 @@
 {
   "date": "2026-11-03",
-  "generated_at": "2026-11-03T11:51:10.181534",
+  "generated_at": "2026-11-03T11:56:43.076118",
   "stats": {
     "prices_written": 875,
-    "value_signals": 183,
+    "value_signals": 57,
     "date": "2026-11-03"
   },
   "value_signals": [
-    {
-      "ticker": "CSBBANK",
-      "close": 295.25,
-      "near_low_pct": 0.41,
-      "trend_metric": "total_income",
-      "trend_delta": 6.36,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
     {
       "ticker": "JSWDULUX",
       "close": 260.25,
@@ -26,102 +17,12 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "SIGNATURE",
-      "close": 700.0,
-      "near_low_pct": 0.72,
-      "trend_metric": "finance_costs",
-      "trend_delta": 68.28,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "CLEAN",
       "close": 656.9,
       "near_low_pct": 0.75,
       "trend_metric": "revenue",
       "trend_delta": 11.53,
       "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "VIPIND",
-      "close": 244.75,
-      "near_low_pct": 1.05,
-      "trend_metric": "ebit",
-      "trend_delta": 64.77,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "MFSL",
-      "close": 1185.1,
-      "near_low_pct": 1.07,
-      "trend_metric": "depreciation",
-      "trend_delta": 2.0,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "ACI",
-      "close": 439.9,
-      "near_low_pct": 1.1,
-      "trend_metric": "pat",
-      "trend_delta": 3.23,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "ZEEL",
-      "close": 61.6,
-      "near_low_pct": 1.13,
-      "trend_metric": "tax_expense",
-      "trend_delta": 8850.0,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "LEAPIND",
-      "close": 112.92,
-      "near_low_pct": 1.23,
-      "trend_metric": "revenue",
-      "trend_delta": 3.82,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "ARVINDFASN",
-      "close": 351.15,
-      "near_low_pct": 1.25,
-      "trend_metric": "finance_costs",
-      "trend_delta": 3.23,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "POLICYBZR",
-      "close": 928.0,
-      "near_low_pct": 1.31,
-      "trend_metric": "finance_costs",
-      "trend_delta": 4.85,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "KEC",
-      "close": 315.35,
-      "near_low_pct": 1.4,
-      "trend_metric": "depreciation",
-      "trend_delta": 4.31,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "3MINDIA",
-      "close": 28885.0,
-      "near_low_pct": 1.4,
-      "trend_metric": "total_expenses",
-      "trend_delta": 3.74,
-      "streak": 2,
       "price_zone": "near_low"
     },
     {
@@ -143,56 +44,11 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "SARDAEN",
-      "close": 430.5,
-      "near_low_pct": 1.52,
-      "trend_metric": "depreciation",
-      "trend_delta": 3.91,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "HDBFS",
-      "close": 502.55,
-      "near_low_pct": 1.7,
-      "trend_metric": "depreciation",
-      "trend_delta": 4.73,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "YESBANK",
       "close": 15.38,
       "near_low_pct": 1.85,
       "trend_metric": "total_income",
       "trend_delta": 6.82,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "MRF",
-      "close": 117400.0,
-      "near_low_pct": 1.92,
-      "trend_metric": "total_income",
-      "trend_delta": 5.22,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "ICICILIFE",
-      "close": 409.7,
-      "near_low_pct": 2.0,
-      "trend_metric": "ebit",
-      "trend_delta": 5323.01,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "VAIBHAVGBL",
-      "close": 157.73,
-      "near_low_pct": 2.1,
-      "trend_metric": "finance_costs",
-      "trend_delta": 7.93,
       "streak": 3,
       "price_zone": "near_low"
     },
@@ -206,48 +62,12 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "AADHARHFC",
-      "close": 424.9,
-      "near_low_pct": 2.13,
-      "trend_metric": "total_expenses",
-      "trend_delta": 6.61,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "GPIL",
-      "close": 193.2,
-      "near_low_pct": 2.14,
-      "trend_metric": "finance_costs",
-      "trend_delta": 4.52,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "SOBHA",
-      "close": 1138.5,
-      "near_low_pct": 2.37,
-      "trend_metric": "depreciation",
-      "trend_delta": 11.46,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "FRACTAL",
       "close": 713.3,
       "near_low_pct": 2.44,
       "trend_metric": "revenue",
       "trend_delta": 2.96,
       "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "STUDDS",
-      "close": 389.3,
-      "near_low_pct": 2.45,
-      "trend_metric": "revenue",
-      "trend_delta": 7.91,
-      "streak": 1,
       "price_zone": "near_low"
     },
     {
@@ -269,47 +89,11 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "THOMASCOOK",
-      "close": 87.51,
-      "near_low_pct": 2.65,
-      "trend_metric": "tax_expense",
-      "trend_delta": 22.55,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "CIEINDIA",
-      "close": 350.45,
-      "near_low_pct": 2.77,
-      "trend_metric": "pbt",
-      "trend_delta": 3.17,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "TATAINVEST",
-      "close": 553.95,
-      "near_low_pct": 2.8,
-      "trend_metric": "depreciation",
-      "trend_delta": 2.08,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "GSFC",
       "close": 136.18,
       "near_low_pct": 2.97,
       "trend_metric": "revenue",
       "trend_delta": 132.31,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "AWL",
-      "close": 164.4,
-      "near_low_pct": 2.98,
-      "trend_metric": "finance_costs",
-      "trend_delta": 29.63,
       "streak": 2,
       "price_zone": "near_low"
     },
@@ -323,15 +107,6 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "CROMPTON",
-      "close": 198.0,
-      "near_low_pct": 3.37,
-      "trend_metric": "total_expenses",
-      "trend_delta": 2.34,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "SBICARD",
       "close": 537.05,
       "near_low_pct": 3.47,
@@ -341,30 +116,12 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "NCC",
-      "close": 117.44,
-      "near_low_pct": 3.47,
-      "trend_metric": "pat",
-      "trend_delta": 5.6,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "IREDA",
       "close": 102.3,
       "near_low_pct": 3.56,
       "trend_metric": "revenue",
       "trend_delta": 4.29,
       "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "RVNL",
-      "close": 184.24,
-      "near_low_pct": 3.59,
-      "trend_metric": "depreciation",
-      "trend_delta": 7.53,
-      "streak": 2,
       "price_zone": "near_low"
     },
     {
@@ -431,39 +188,12 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "JSL",
-      "close": 678.0,
-      "near_low_pct": 3.95,
-      "trend_metric": "total_expenses",
-      "trend_delta": 15.05,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "PTC",
       "close": 136.74,
       "near_low_pct": 3.98,
       "trend_metric": "revenue",
       "trend_delta": 21.75,
       "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "CSM",
-      "close": 79.35,
-      "near_low_pct": 4.05,
-      "trend_metric": "total_expenses",
-      "trend_delta": 13.68,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "HORIZONIND",
-      "close": 43.14,
-      "near_low_pct": 4.1,
-      "trend_metric": "revenue",
-      "trend_delta": 7.2,
-      "streak": 1,
       "price_zone": "near_low"
     },
     {
@@ -476,183 +206,12 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "ARE&M",
-      "close": 698.0,
-      "near_low_pct": 4.18,
-      "trend_metric": "finance_costs",
-      "trend_delta": 23.41,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "HGINFRA",
-      "close": 389.4,
-      "near_low_pct": 4.19,
-      "trend_metric": "tax_expense",
-      "trend_delta": 55.92,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "IRCON",
-      "close": 99.8,
-      "near_low_pct": 4.22,
-      "trend_metric": "finance_costs",
-      "trend_delta": 9.9,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "HATHWAY",
-      "close": 9.13,
-      "near_low_pct": 4.22,
-      "trend_metric": "total_expenses",
-      "trend_delta": 3.12,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "OSWALPUMPS",
-      "close": 209.54,
-      "near_low_pct": 4.25,
-      "trend_metric": "depreciation",
-      "trend_delta": 27.25,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "SWASTIKAIN",
-      "close": 196.09,
-      "near_low_pct": 4.31,
-      "trend_metric": "revenue",
-      "trend_delta": 251.79,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "NTPCGREEN",
-      "close": 82.41,
-      "near_low_pct": 4.32,
-      "trend_metric": "total_expenses",
-      "trend_delta": 11.97,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "RALLIS",
-      "close": 189.98,
-      "near_low_pct": 4.33,
-      "trend_metric": "depreciation",
-      "trend_delta": 6.67,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "COLPAL",
-      "close": 1631.7,
-      "near_low_pct": 4.34,
-      "trend_metric": "revenue",
-      "trend_delta": 6.39,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "FIRSTCRY",
-      "close": 163.2,
-      "near_low_pct": 4.35,
-      "trend_metric": "ebit",
-      "trend_delta": 80.24,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "BDL",
-      "close": 1017.0,
-      "near_low_pct": 4.41,
-      "trend_metric": "depreciation",
-      "trend_delta": 2.02,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "TORNTPOWER",
-      "close": 1199.5,
-      "near_low_pct": 4.53,
-      "trend_metric": "finance_costs",
-      "trend_delta": 16.33,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "JSLL",
-      "close": 343.7,
-      "near_low_pct": 4.53,
-      "trend_metric": "total_income",
-      "trend_delta": 9.02,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "TURTLEMINT",
-      "close": 54.17,
-      "near_low_pct": 4.56,
-      "trend_metric": "finance_costs",
-      "trend_delta": 408.16,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "RCF",
-      "close": 97.37,
-      "near_low_pct": 4.58,
-      "trend_metric": "depreciation",
-      "trend_delta": 2.85,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "IMFA",
       "close": 1099.4,
       "near_low_pct": 4.6,
-      "trend_metric": "finance_costs",
-      "trend_delta": 10.36,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "LINDEINDIA",
-      "close": 5800.0,
-      "near_low_pct": 4.62,
-      "trend_metric": "total_expenses",
-      "trend_delta": 11.35,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "SWSOLAR",
-      "close": 141.26,
-      "near_low_pct": 4.62,
-      "trend_metric": "depreciation",
-      "trend_delta": 11.48,
+      "trend_metric": "total_income",
+      "trend_delta": 26.54,
       "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "RAILTEL",
-      "close": 230.25,
-      "near_low_pct": 4.63,
-      "trend_metric": "depreciation",
-      "trend_delta": 5.12,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "ACC",
-      "close": 1167.0,
-      "near_low_pct": 4.66,
-      "trend_metric": "finance_costs",
-      "trend_delta": 48.15,
-      "streak": 1,
       "price_zone": "near_low"
     },
     {
@@ -674,75 +233,12 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "VARMORA",
-      "close": 123.27,
-      "near_low_pct": 4.98,
-      "trend_metric": "revenue",
-      "trend_delta": 26.55,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "PERNIASPOP",
-      "close": 498.75,
-      "near_low_pct": 5.07,
-      "trend_metric": "revenue",
-      "trend_delta": 18.98,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "JUBLINGREA",
       "close": 564.85,
       "near_low_pct": 5.13,
       "trend_metric": "revenue",
       "trend_delta": 7.23,
       "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "JBMA",
-      "close": 489.0,
-      "near_low_pct": 5.16,
-      "trend_metric": "depreciation",
-      "trend_delta": 3.02,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "HAVELLS",
-      "close": 1051.4,
-      "near_low_pct": 5.22,
-      "trend_metric": "depreciation",
-      "trend_delta": 6.64,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "MEDPLUS",
-      "close": 595.25,
-      "near_low_pct": 5.24,
-      "trend_metric": "revenue",
-      "trend_delta": 8.38,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "KPIGREEN",
-      "close": 286.2,
-      "near_low_pct": 5.26,
-      "trend_metric": "finance_costs",
-      "trend_delta": 51.59,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "ASHOKA",
-      "close": 100.45,
-      "near_low_pct": 5.39,
-      "trend_metric": "pbt",
-      "trend_delta": 4.87,
-      "streak": 1,
       "price_zone": "near_low"
     },
     {
@@ -755,57 +251,12 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "UBL",
-      "close": 1190.0,
-      "near_low_pct": 5.44,
-      "trend_metric": "depreciation",
-      "trend_delta": 4.05,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "MMTC",
-      "close": 52.1,
-      "near_low_pct": 5.44,
-      "trend_metric": "revenue",
-      "trend_delta": 11.48,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "AQYLON",
-      "close": 13.18,
-      "near_low_pct": 5.44,
-      "trend_metric": "total_expenses",
-      "trend_delta": 100.9,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "HAPPSTMNDS",
       "close": 311.25,
       "near_low_pct": 5.47,
       "trend_metric": "revenue",
       "trend_delta": 2.69,
       "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "SUPREMEIND",
-      "close": 3300.0,
-      "near_low_pct": 5.53,
-      "trend_metric": "pbt",
-      "trend_delta": 12.02,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "ARCIL",
-      "close": 121.62,
-      "near_low_pct": 5.57,
-      "trend_metric": "revenue",
-      "trend_delta": 17.79,
-      "streak": 1,
       "price_zone": "near_low"
     },
     {
@@ -854,57 +305,12 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "NDTV",
-      "close": 61.33,
-      "near_low_pct": 5.74,
-      "trend_metric": "depreciation",
-      "trend_delta": 10.21,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "MAZDOCK",
-      "close": 1785.1,
-      "near_low_pct": 5.78,
-      "trend_metric": "depreciation",
-      "trend_delta": 3.0,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "JIOFIN",
-      "close": 214.27,
-      "near_low_pct": 5.81,
-      "trend_metric": "total_expenses",
-      "trend_delta": 14.79,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "AUBANK",
       "close": 880.0,
       "near_low_pct": 5.81,
       "trend_metric": "total_income",
       "trend_delta": 6.51,
       "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "KEI",
-      "close": 3881.4,
-      "near_low_pct": 5.87,
-      "trend_metric": "depreciation",
-      "trend_delta": 7.04,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "DGCONTENT",
-      "close": 22.47,
-      "near_low_pct": 5.89,
-      "trend_metric": "tax_expense",
-      "trend_delta": 3171.43,
-      "streak": 1,
       "price_zone": "near_low"
     },
     {
@@ -926,21 +332,12 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "ZAGGLE",
-      "close": 155.4,
-      "near_low_pct": 5.97,
-      "trend_metric": "finance_costs",
-      "trend_delta": 3.75,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "PRAJIND",
       "close": 254.63,
       "near_low_pct": 6.05,
-      "trend_metric": "pat",
-      "trend_delta": 99.57,
-      "streak": 1,
+      "trend_metric": "ebit",
+      "trend_delta": 59.52,
+      "streak": 2,
       "price_zone": "near_low"
     },
     {
@@ -949,24 +346,6 @@
       "near_low_pct": 6.08,
       "trend_metric": "revenue",
       "trend_delta": 2.81,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "AAVAS",
-      "close": 1120.1,
-      "near_low_pct": 6.14,
-      "trend_metric": "ebit",
-      "trend_delta": 5.5,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "EIDPARRY",
-      "close": 631.0,
-      "near_low_pct": 6.17,
-      "trend_metric": "depreciation",
-      "trend_delta": 7.71,
       "streak": 3,
       "price_zone": "near_low"
     },
@@ -983,9 +362,9 @@
       "ticker": "GTPL",
       "close": 54.02,
       "near_low_pct": 6.23,
-      "trend_metric": "total_expenses",
-      "trend_delta": 13.11,
-      "streak": 3,
+      "trend_metric": "total_income",
+      "trend_delta": 12.41,
+      "streak": 2,
       "price_zone": "near_low"
     },
     {
@@ -995,15 +374,6 @@
       "trend_metric": "revenue",
       "trend_delta": 17.94,
       "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "TECHNOE",
-      "close": 853.0,
-      "near_low_pct": 6.36,
-      "trend_metric": "depreciation",
-      "trend_delta": 102.89,
-      "streak": 1,
       "price_zone": "near_low"
     },
     {
@@ -1019,18 +389,9 @@
       "ticker": "SUNDARMFIN",
       "close": 4065.1,
       "near_low_pct": 6.53,
-      "trend_metric": "revenue",
-      "trend_delta": 3.27,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "NFL",
-      "close": 59.73,
-      "near_low_pct": 6.64,
-      "trend_metric": "finance_costs",
-      "trend_delta": 3.42,
-      "streak": 3,
+      "trend_metric": "total_income",
+      "trend_delta": 2.47,
+      "streak": 2,
       "price_zone": "near_low"
     },
     {
@@ -1039,78 +400,6 @@
       "near_low_pct": 6.65,
       "trend_metric": "revenue",
       "trend_delta": 6.74,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "WAAREERTL",
-      "close": 697.5,
-      "near_low_pct": 6.69,
-      "trend_metric": "depreciation",
-      "trend_delta": 366.61,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "TMPV",
-      "close": 276.7,
-      "near_low_pct": 6.79,
-      "trend_metric": "finance_costs",
-      "trend_delta": 8.87,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "GODREJCP",
-      "close": 830.0,
-      "near_low_pct": 6.79,
-      "trend_metric": "depreciation",
-      "trend_delta": 3.58,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "CMRGREEN",
-      "close": 204.36,
-      "near_low_pct": 6.8,
-      "trend_metric": "revenue",
-      "trend_delta": 32.06,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "EMAMILTD",
-      "close": 382.0,
-      "near_low_pct": 7.0,
-      "trend_metric": "finance_costs",
-      "trend_delta": 78.1,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "AASTHA",
-      "close": 22.8,
-      "near_low_pct": 7.04,
-      "trend_metric": "depreciation",
-      "trend_delta": 5.98,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "LATENTVIEW",
-      "close": 195.95,
-      "near_low_pct": 7.08,
-      "trend_metric": "revenue",
-      "trend_delta": 2.51,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "VBL",
-      "close": 408.15,
-      "near_low_pct": 7.13,
-      "trend_metric": "finance_costs",
-      "trend_delta": 25.95,
       "streak": 3,
       "price_zone": "near_low"
     },
@@ -1124,42 +413,6 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "TVTODAY",
-      "close": 100.22,
-      "near_low_pct": 7.19,
-      "trend_metric": "depreciation",
-      "trend_delta": 7.99,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "BEL",
-      "close": 380.1,
-      "near_low_pct": 7.21,
-      "trend_metric": "depreciation",
-      "trend_delta": 6.69,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "WAAREEENER",
-      "close": 2318.0,
-      "near_low_pct": 7.24,
-      "trend_metric": "depreciation",
-      "trend_delta": 5.24,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "ANURAS",
-      "close": 1130.0,
-      "near_low_pct": 7.25,
-      "trend_metric": "depreciation",
-      "trend_delta": 31.35,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "BAGFILMS",
       "close": 3.88,
       "near_low_pct": 7.48,
@@ -1169,29 +422,11 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "CMSINFO",
-      "close": 212.25,
-      "near_low_pct": 7.57,
-      "trend_metric": "depreciation",
-      "trend_delta": 22.66,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "BAJAJFINSV",
       "close": 1718.1,
       "near_low_pct": 7.58,
-      "trend_metric": "finance_costs",
-      "trend_delta": 7.45,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "PNCINFRA",
-      "close": 125.22,
-      "near_low_pct": 7.58,
-      "trend_metric": "depreciation",
-      "trend_delta": 2.53,
+      "trend_metric": "eps",
+      "trend_delta": 23.27,
       "streak": 2,
       "price_zone": "near_low"
     },
@@ -1205,75 +440,12 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "PRANAV",
-      "close": 89.6,
-      "near_low_pct": 7.69,
-      "trend_metric": "revenue",
-      "trend_delta": 6.03,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "BANKINDIA",
-      "close": 133.17,
-      "near_low_pct": 7.71,
-      "trend_metric": "total_income",
-      "trend_delta": 6.27,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "BIOCON",
-      "close": 343.0,
-      "near_low_pct": 7.73,
-      "trend_metric": "depreciation",
-      "trend_delta": 6.62,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "VMM",
-      "close": 90.7,
-      "near_low_pct": 7.77,
-      "trend_metric": "depreciation",
-      "trend_delta": 3.48,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "DBL",
       "close": 380.3,
       "near_low_pct": 7.79,
       "trend_metric": "revenue",
       "trend_delta": 3.39,
       "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "SUZLON",
-      "close": 35.75,
-      "near_low_pct": 7.84,
-      "trend_metric": "depreciation",
-      "trend_delta": 5.47,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "INOXWIND",
-      "close": 59.42,
-      "near_low_pct": 7.84,
-      "trend_metric": "depreciation",
-      "trend_delta": 12.6,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "VAML",
-      "close": 360.3,
-      "near_low_pct": 7.87,
-      "trend_metric": "revenue",
-      "trend_delta": 4.35,
-      "streak": 1,
       "price_zone": "near_low"
     },
     {
@@ -1286,33 +458,6 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "DOMS",
-      "close": 1916.0,
-      "near_low_pct": 7.94,
-      "trend_metric": "depreciation",
-      "trend_delta": 3.16,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "MARUTI",
-      "close": 11869.0,
-      "near_low_pct": 8.05,
-      "trend_metric": "depreciation",
-      "trend_delta": 10.09,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "APOLLOTYRE",
-      "close": 395.15,
-      "near_low_pct": 8.17,
-      "trend_metric": "total_expenses",
-      "trend_delta": 3.83,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "BLACKBUCK",
       "close": 536.75,
       "near_low_pct": 8.22,
@@ -1322,65 +467,11 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "DMART",
-      "close": 3359.0,
-      "near_low_pct": 8.27,
-      "trend_metric": "finance_costs",
-      "trend_delta": 17.72,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "IONEXCHANG",
-      "close": 338.6,
-      "near_low_pct": 8.28,
-      "trend_metric": "depreciation",
-      "trend_delta": 10.97,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "GMRAIRPORT",
-      "close": 91.1,
-      "near_low_pct": 8.31,
-      "trend_metric": "total_expenses",
-      "trend_delta": 5.0,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "ITC",
       "close": 273.9,
       "near_low_pct": 8.35,
       "trend_metric": "revenue",
       "trend_delta": 3.57,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "INTELLECT",
-      "close": 518.15,
-      "near_low_pct": 8.4,
-      "trend_metric": "pbt",
-      "trend_delta": 2.0,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "TIMETECHNO",
-      "close": 166.5,
-      "near_low_pct": 8.4,
-      "trend_metric": "total_expenses",
-      "trend_delta": 2.4,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "HDFCBANK",
-      "close": 725.5,
-      "near_low_pct": 8.41,
-      "trend_metric": "tax_expense",
-      "trend_delta": 4.62,
       "streak": 3,
       "price_zone": "near_low"
     },
@@ -1394,129 +485,12 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "UPL",
-      "close": 517.85,
-      "near_low_pct": 8.69,
-      "trend_metric": "eps",
-      "trend_delta": 4058.33,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "BANKBARODA",
       "close": 243.3,
       "near_low_pct": 8.7,
       "trend_metric": "total_income",
       "trend_delta": 10.81,
       "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "BATAINDIA",
-      "close": 652.0,
-      "near_low_pct": 8.74,
-      "trend_metric": "eps",
-      "trend_delta": 2829.41,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "NESTLEIND",
-      "close": 1248.4,
-      "near_low_pct": 8.8,
-      "trend_metric": "tax_expense",
-      "trend_delta": 6.68,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "SENCO",
-      "close": 300.35,
-      "near_low_pct": 8.82,
-      "trend_metric": "finance_costs",
-      "trend_delta": 21.15,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "ALKEM",
-      "close": 5236.0,
-      "near_low_pct": 8.83,
-      "trend_metric": "tax_expense",
-      "trend_delta": 46.35,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "ACEVECTOR",
-      "close": 19.06,
-      "near_low_pct": 8.85,
-      "trend_metric": "revenue",
-      "trend_delta": 12.57,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "PIIND",
-      "close": 2185.0,
-      "near_low_pct": 8.97,
-      "trend_metric": "finance_costs",
-      "trend_delta": 113.51,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "JMFINANCIL",
-      "close": 112.3,
-      "near_low_pct": 9.03,
-      "trend_metric": "total_expenses",
-      "trend_delta": 5.92,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "CELLO",
-      "close": 342.35,
-      "near_low_pct": 9.03,
-      "trend_metric": "finance_costs",
-      "trend_delta": 50.0,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "KNACK",
-      "close": 186.58,
-      "near_low_pct": 9.05,
-      "trend_metric": "revenue",
-      "trend_delta": 12.31,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "CRAMC",
-      "close": 217.36,
-      "near_low_pct": 9.08,
-      "trend_metric": "revenue",
-      "trend_delta": 4.64,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "TIINDIA",
-      "close": 2190.0,
-      "near_low_pct": 9.22,
-      "trend_metric": "finance_costs",
-      "trend_delta": 2.98,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "SURYAROSNI",
-      "close": 204.67,
-      "near_low_pct": 9.24,
-      "trend_metric": "depreciation",
-      "trend_delta": 4.35,
-      "streak": 1,
       "price_zone": "near_low"
     },
     {
@@ -1529,120 +503,12 @@
       "price_zone": "near_low"
     },
     {
-      "ticker": "DBREALTY",
-      "close": 83.84,
-      "near_low_pct": 9.38,
-      "trend_metric": "total_income",
-      "trend_delta": 27.77,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "JKTYRE",
-      "close": 325.05,
-      "near_low_pct": 9.54,
-      "trend_metric": "total_expenses",
-      "trend_delta": 21.25,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
       "ticker": "IEX",
       "close": 109.0,
       "near_low_pct": 9.55,
       "trend_metric": "pat",
       "trend_delta": 3.32,
       "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "MUTHOOTFIN",
-      "close": 2528.2,
-      "near_low_pct": 9.68,
-      "trend_metric": "total_expenses",
-      "trend_delta": 14.58,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "INDUSTOWER",
-      "close": 390.0,
-      "near_low_pct": 9.69,
-      "trend_metric": "depreciation",
-      "trend_delta": 2.65,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "SONATSOFTW",
-      "close": 227.25,
-      "near_low_pct": 9.7,
-      "trend_metric": "total_income",
-      "trend_delta": 27.67,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "CHAMBLFERT",
-      "close": 384.0,
-      "near_low_pct": 9.71,
-      "trend_metric": "finance_costs",
-      "trend_delta": 552.53,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "COROMANDEL",
-      "close": 1812.0,
-      "near_low_pct": 9.75,
-      "trend_metric": "pat",
-      "trend_delta": 33079.13,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "BLUESTARCO",
-      "close": 1572.5,
-      "near_low_pct": 9.79,
-      "trend_metric": "depreciation",
-      "trend_delta": 19.92,
-      "streak": 3,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "DISHTV",
-      "close": 2.0,
-      "near_low_pct": 9.89,
-      "trend_metric": "total_expenses",
-      "trend_delta": 15.16,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "KFINTECH",
-      "close": 861.6,
-      "near_low_pct": 9.9,
-      "trend_metric": "total_expenses",
-      "trend_delta": 2.86,
-      "streak": 2,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "FORCEMOT",
-      "close": 17787.0,
-      "near_low_pct": 9.9,
-      "trend_metric": "finance_costs",
-      "trend_delta": 5200.0,
-      "streak": 1,
-      "price_zone": "near_low"
-    },
-    {
-      "ticker": "DEN",
-      "close": 24.76,
-      "near_low_pct": 9.95,
-      "trend_metric": "pbt",
-      "trend_delta": 8.56,
-      "streak": 1,
       "price_zone": "near_low"
     },
     {
