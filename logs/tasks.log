@@ -398,3 +398,19 @@ Progress: Built 4-layer structural knowledge graph. 46,456 nodes, 108,085 edges.
 Next: Wire dashboard to live SectorTrend/ConfluenceSignal nodes; test weekly_research.py
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-03 21:03
+Task: None
+Status: completed
+Progress: processed=200 edges_created=148 skipped=0
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-03 21:03
+Task: None
+Status: completed
+Progress: pairs=99 trends=99 strong=61 | top: BAJFINANCE tax_expense (improving, 3p), BAJFINANCE depreciation (improving, 3p), BAJFINANCE finance_costs (improving, 2p), BAJFINANCE eps (improving, 3p), BAJFINANCE ebit (improving, 3p)
+Next: 
+Blockers: none
+============================================================
