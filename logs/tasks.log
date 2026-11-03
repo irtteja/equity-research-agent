@@ -294,3 +294,11 @@ Progress: Interactive SPA dashboard published (v3) to artifact 56wF7LYVveY76QHah
 Next: BSE announcements integration; annual report auto-fetch pipeline; recall_tool as MCP; Phase 2 memory; weekly research job; live data wired to dashboard
 Blockers: LIVE_MARKET MCP 404; SECTOR_MAP covers only ~60 tickers
 ============================================================
+
+[CHECKPOINT] 2026-11-03 12:39
+Task: None
+Status: completed
+Progress: Dashboard published to https://claude.ai/artifact/56wF7LYVveY76QHahUuCqY v4 — 6 tabs: Overview, Indices, Momentum, Value Signals, Sectors, Movers; live data for 13 indices, 30 improving/30 deteriorating signals, 15 value plays, FII/DII flows
+Next: Wire NSE_BHAV_COPY live data to replace hardcoded DATA; expand SECTOR_MAP to full 885 tickers
+Blockers: NSE_BHAV_COPY MCP 404 — currently hardcoded snapshot data from 2026-11-03
+============================================================

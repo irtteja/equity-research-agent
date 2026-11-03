@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-03",
-  "version": 32,
+  "version": 33,
   "patterns": {
     "confirmed": [
       {
@@ -194,6 +194,18 @@
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
+      },
+      {
+        "pattern": "graph fields: consistent_periods (not streak), near_52w_low_pct (not pct_from_52w_low)",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "SECTOR_MAP root cause: NSE thematic indices cover only 207/885 tickers — midcaps absent",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -271,6 +283,12 @@
       },
       {
         "pattern": "Deleted 9 scheduled tasks — verify 4 PM daily pipeline still fires correctly on 2026-11-04",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "NSE_BHAV_COPY MCP 404 is intermittent — may recover; dashboard needs live wiring when stable",
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
@@ -378,6 +396,14 @@
       },
       {
         "signal": "dedup by ticker + streak>=2 + GROWTH_METRICS filter gives clean signal list (no cost metric noise)",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "SPA dashboard with embedded DATA literal — works offline when MCP unavailable",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "graph SQL with json_extract for property field access",
         "added": "2026-11-03"
       }
     ],
@@ -508,6 +534,14 @@
       },
       {
         "gap": "BSE announcements not yet integrated — missing corporate action signals",
+        "added": "2026-11-03"
+      },
+      {
+        "gap": "No live data refresh path in dashboard — hardcoded snapshot only",
+        "added": "2026-11-03"
+      },
+      {
+        "gap": "SECTOR_MAP covers 207/885 — sector pulse incomplete for midcap/smallcap universe",
         "added": "2026-11-03"
       }
     ]
@@ -659,6 +693,10 @@
     {
       "date": "2026-11-03",
       "note": "Sessions 6-7: interactive SPA dashboard published, 9 stale tasks deleted, 3728 files untracked from git, 860MB freed from document JSONs, graph at 45982 nodes/89486 edges"
+    },
+    {
+      "date": "2026-11-03",
+      "note": "Published comprehensive 6-tab NSE dashboard (v4) — fixed graph field names, embedded 2026-11-03 snapshot data"
     }
   ]
 }
