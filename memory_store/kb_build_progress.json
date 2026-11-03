@@ -867,5 +867,293 @@
     "results_saved": 4,
     "results_skipped": 0,
     "errors": []
+  },
+  "MAZDOCK": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "MOTHERSON": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "MUTHOOTFIN": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "PIDILITIND": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 0,
+    "concalls_ingested": 0,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "PFC": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "PNB": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "POLYCAB": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "POWERINDIA": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "SOLARINDS": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "SIEMENS": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "TATACAP": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "TATAPOWER": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "TMCV": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "TORNTPHARM": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "TVSMOTOR": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "VAML": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 2,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "UNIONBANK": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "VBL": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "ZYDUSLIFE": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "VEDL": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "WIPRO": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "ABBOTINDIA": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 0,
+    "concalls_ingested": 0,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 0,
+    "results_skipped": 0,
+    "errors": [
+      "results: empty_response"
+    ]
+  },
+  "360ONE": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "AIAENG": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "AIIL": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 0,
+    "concalls_ingested": 0,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "ABCAPITAL": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
   }
 }
