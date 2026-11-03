@@ -5810,5 +5810,284 @@
     "results_saved": 4,
     "results_skipped": 0,
     "errors": []
+  },
+  "AXISCADES": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "AVALON": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "AVL": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "BAGFILMS": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 0,
+    "concalls_ingested": 0,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "AYE": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "BAJAJCON": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "BALAJITELE": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "BALUFORGE": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 0,
+    "concalls_ingested": 0,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "BAYERCROP": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 0,
+    "concalls_ingested": 0,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 0,
+    "results_skipped": 0,
+    "errors": [
+      "results: empty_response"
+    ]
+  },
+  "BALAMINES": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "BANCOINDIA": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 0,
+    "concalls_ingested": 0,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "BLEL": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 1,
+    "concalls_ingested": 1,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 2,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "BECTORFOOD": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "BLACKBUCK": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "BIRLACORPN": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 1,
+    "results_skipped": 3,
+    "errors": []
+  },
+  "BONFIG": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 0,
+    "concalls_ingested": 0,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 0,
+    "results_skipped": 0,
+    "errors": [
+      "results: empty_response"
+    ]
+  },
+  "BLUEJET": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "BLUESTONE": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "BORORENEW": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "BTML": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "CAPILLARY": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 3,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "CAMPUS": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "CEIGALL": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "CELLO": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "CENTUM": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
   }
 }
