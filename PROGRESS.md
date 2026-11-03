@@ -1,5 +1,45 @@
 # Progress Log
 
+## 2026-11-03 — NSE bulk endpoints wired into tools + universe defined
+
+### Done
+- **NSE universe defined** (`data/universe.json` 464490e): 888 mainboard stocks from union of 128
+  NSE indices (excl. fixed income, excl. 527 SME Emerge stocks, excl. 6 pure REITs).
+- **nselib scan_page_js committed** (`/home/user/irtteja/nselib` 08d5baa): static JS endpoint
+  discovery method now in discovery.py; cloud-safe (uses nselib session, no browser).
+- **tools/indian_markets.py** — added 6 new bulk/NSE-native functions:
+  - `nse_corporate_actions_bulk(from_date, to_date)` — all equities, no 20-record cap, CSV
+  - `nse_financial_results_bulk(period)` — ~3800+ records, F&O-eligible universe, CSV
+  - `nse_all_announcements(from_date, to_date)` — all equities, date-range CSV
+  - `nse_board_meetings_bulk(from_date, to_date)` — all equities, date-range CSV
+  - `nse_integrated_filing(symbol, from_date, to_date)` — per-symbol iXBRL + PDF links (JSON)
+  - `nse_surveillance(list_type)` — ASM / GSM lists via nselib
+- **tools/announcements.py** — `get_nse_corporate_announcements()` upgraded:
+  - With symbol: uses `nse.announcements()` (180-day history) + financial_results + corporate_actions
+  - Without symbol: uses 3 bulk CSV endpoints (announcements + actions + meetings); no 20-cap
+  - Added `get_nse_financial_results_bulk(period)` — market-wide earnings scan
+  - Added `get_nse_integrated_filing(symbol, ...)` — iXBRL/PDF per company
+- **tools/fundamentals.py** — added NSE-native section:
+  - `nse_financial_statements(symbol, ...)` — iXBRL-sourced financials (integrated-filing-results)
+  - `nse_quarterly_results_all(period)` — bulk quarterly results for all mainboard stocks
+  - `nse_shareholding(symbol)` — promoter/FII/DII/public pattern history
+
+### Architecture changes
+- Bulk endpoints bypass NSE's 20-record UI cap using `from_date`/`to_date` + `csv=true` params
+- integrated-filing-results: CSV is broken on NSE's side; JSON endpoint works per-symbol
+- Universe excludes NSE Emerge (527 stocks, cleanly in NIFTY SME EMERGE only) and 6 pure REITs
+
+### Pending / next sessions
+- Test live bulk calls; verify column names match current NSE CSV schema
+- KB extraction pipeline: walk `data/universe.json`, call `nse_integrated_filing()` per symbol,
+  download PDFs from nsearchives, feed to document swarm
+- Add `var url = '/api/` pattern to `scan_page_js` in nselib (catches B.get() style JS calls)
+- Add nselib wrapper methods for bulk corporate actions, board meetings, integrated filing
+- 6-DB schema implementation
+- XBRL backfill for Nifty 50 + Midcap 50
+
+---
+
 ## 2026-10-31 — ebit/ebitda fix + graph re-backfill
 
 ### Done

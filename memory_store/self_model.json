@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-01",
-  "version": 26,
+  "last_updated": "2026-11-03",
+  "version": 27,
   "patterns": {
     "confirmed": [
       {
@@ -104,6 +104,18 @@
         "first_seen": "2026-10-31",
         "last_seen": "2026-10-31",
         "count": 1
+      },
+      {
+        "pattern": "NSE bulk CSV endpoints bypass 20-record cap with from_date/to_date params",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "integrated-filing-results JSON works per-symbol; CSV variant broken on NSE side",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -129,6 +141,12 @@
         "pattern": "ContextAgent delta accuracy: period_date ordering may miss fiscal year boundary cases",
         "first_seen": "2026-10-31",
         "last_seen": "2026-10-31",
+        "count": 1
+      },
+      {
+        "pattern": "column names in NSE bulk CSV may change between quarters — need live verification",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
         "count": 1
       }
     ],
@@ -187,6 +205,10 @@
       {
         "signal": "idempotent graph ops allow safe cleanup + re-backfill without data loss",
         "added": "2026-10-31"
+      },
+      {
+        "signal": "nselib session reuse for raw HTTP calls to NSE APIs",
+        "added": "2026-11-03"
       }
     ],
     "gaps": [
@@ -277,6 +299,10 @@
       {
         "gap": "Only 2/751 tracked symbols have XBRL results (0% coverage)",
         "added": "2026-11-01"
+      },
+      {
+        "gap": "scan_page_js misses B.get() style JS patterns — var url = /api/ not captured",
+        "added": "2026-11-03"
       }
     ]
   },
@@ -380,6 +406,10 @@
     {
       "date": "2026-11-01",
       "note": "self_improve scan: 2 high-priority gaps"
+    },
+    {
+      "date": "2026-11-03",
+      "note": "Wired NSE bulk endpoints into all 3 tool files; universe = 888 mainboard stocks"
     }
   ]
 }

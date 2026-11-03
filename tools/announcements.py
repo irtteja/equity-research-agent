@@ -75,28 +75,68 @@ def get_bse_announcements(category: str = "Result", days_back: int = 1) -> dict:
         return {"error": str(e), "category": category}
 
 
-def get_nse_corporate_announcements(symbol: str = None) -> dict:
+def get_nse_corporate_announcements(symbol: str = None, days_back: int = 7) -> dict:
     """
-    Fetch NSE corporate announcements. Optionally filter by symbol (e.g. 'RELIANCE').
-    Returns board meetings, results, dividends, and other filings.
+    Fetch NSE corporate announcements.
+    - With symbol: per-company announcements (past days_back days).
+    - Without symbol: market-wide bulk pull (all equities, no 20-record cap).
+    days_back applies to market-wide pull; per-symbol always returns up to 180 days.
     """
+    import csv, io
     try:
         from nselib import NSE
+        _fmt = lambda d: d.strftime("%d-%m-%Y")
         with NSE() as nse:
-            results = nse.financial_results(symbol=symbol) if symbol else nse.financial_results()
-            actions = nse.corporate_actions(
-                symbol=symbol,
-                from_date=date.today() - timedelta(days=30),
-                to_date=date.today() + timedelta(days=60),
-            ) if symbol else nse.corporate_actions(
-                from_date=date.today() - timedelta(days=7),
-                to_date=date.today() + timedelta(days=60),
-            )
-        return {
-            "symbol": symbol,
-            "financial_results": results,
-            "corporate_actions": actions,
-        }
+            if symbol:
+                # Per-symbol: use nselib's announcements() for full history
+                rows = nse.announcements(
+                    symbol=symbol.upper(),
+                    from_date=date.today() - timedelta(days=180),
+                    to_date=date.today(),
+                )
+                results = nse.financial_results(symbol=symbol.upper())
+                actions = nse.corporate_actions(
+                    symbol=symbol.upper(),
+                    from_date=date.today() - timedelta(days=365),
+                    to_date=date.today() + timedelta(days=90),
+                )
+                return {
+                    "symbol": symbol.upper(),
+                    "announcements": rows,
+                    "financial_results": results,
+                    "corporate_actions": actions,
+                }
+            else:
+                # Market-wide bulk: bypass 20-record cap with date-range CSV endpoints
+                fd = _fmt(date.today() - timedelta(days=days_back))
+                td = _fmt(date.today())
+                s = nse._session._s
+
+                def _fetch_csv(url, params):
+                    r = s.get(url, params=params, timeout=20)
+                    text = r.content.decode("utf-8-sig", errors="replace")
+                    return list(csv.DictReader(io.StringIO(text)))
+
+                announcements = _fetch_csv(
+                    "https://www.nseindia.com/api/corporate-announcements",
+                    {"index": "equities", "from_date": fd, "to_date": td, "csv": "true"},
+                )
+                actions = _fetch_csv(
+                    "https://www.nseindia.com/api/corporates-corporateActions",
+                    {"index": "equities", "from_date": fd, "to_date": td, "csv": "true"},
+                )
+                meetings = _fetch_csv(
+                    "https://www.nseindia.com/api/corporate-board-meetings",
+                    {"index": "equities", "from_date": fd, "to_date": td, "csv": "true"},
+                )
+                return {
+                    "symbol": None,
+                    "from": fd,
+                    "to": td,
+                    "announcements": {"count": len(announcements), "data": announcements},
+                    "corporate_actions": {"count": len(actions), "data": actions},
+                    "board_meetings": {"count": len(meetings), "data": meetings},
+                }
     except Exception as e:
         return {"error": str(e)}
 
@@ -180,3 +220,64 @@ def get_upcoming_results_calendar() -> dict:
         return {"result_calendar": bse.resultCalendar()}
     except Exception as e:
         return {"error": str(e)}
+
+
+def get_nse_financial_results_bulk(period: str = "Quarterly") -> dict:
+    """
+    NSE financial results for ALL mainboard equities — no 20-record cap.
+    Returns ~3,800+ records from the F&O-eligible universe.
+    period: 'Quarterly' or 'Annual'.
+    """
+    import csv, io
+    try:
+        from nselib import NSE
+        with NSE() as nse:
+            s = nse._session._s
+            r = s.get(
+                "https://www.nseindia.com/api/corporates-financial-results",
+                params={"index": "equities", "fo_sec": "true", "period": period, "csv": "true"},
+                timeout=30,
+            )
+            text = r.content.decode("utf-8-sig", errors="replace")
+            rows = list(csv.DictReader(io.StringIO(text)))
+        return {"period": period, "count": len(rows), "results": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+def get_nse_integrated_filing(symbol: str, from_date: str = None, to_date: str = None) -> dict:
+    """
+    NSE integrated filing results per company — returns iXBRL viewer URLs + PDF download links.
+    Filing types: INTEGRATED_FILING_INDAS (financials), INTEGRATED_FILING_GOVERNANCE.
+    PDF URLs are from nsearchives.nseindia.com and are publicly accessible.
+    from_date / to_date: 'DD-MM-YYYY'. Defaults to past 2 years.
+    """
+    try:
+        from nselib import NSE
+        _fmt = lambda d: d.strftime("%d-%m-%Y")
+        fd = from_date or _fmt(date.today() - timedelta(days=730))
+        td = to_date or _fmt(date.today())
+        with NSE() as nse:
+            s = nse._session._s
+            r = s.get(
+                "https://www.nseindia.com/api/integrated-filing-results",
+                params={"symbol": symbol.upper(), "index": "equities", "from_date": fd, "to_date": td},
+                timeout=20,
+            )
+            data = r.json()
+        filings = data.get("data", []) if isinstance(data, dict) else (data if isinstance(data, list) else [])
+        enriched = [
+            {
+                "symbol":      f.get("symbol", symbol.upper()),
+                "company":     f.get("companyName", ""),
+                "filing_type": f.get("filingType", ""),
+                "period":      f.get("period", ""),
+                "date":        f.get("sort_date", "")[:10],
+                "xbrl_url":    f.get("xbrl", ""),
+                "pdf_url":     f.get("pdfLink", "") or f.get("attachment", ""),
+            }
+            for f in filings
+        ]
+        return {"symbol": symbol.upper(), "from": fd, "to": td, "count": len(enriched), "filings": enriched}
+    except Exception as e:
+        return {"error": str(e), "symbol": symbol}

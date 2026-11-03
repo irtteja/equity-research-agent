@@ -1,9 +1,19 @@
 """
 Indian equity data via nselib (NSE) and bselib (BSE).
 Falls back gracefully when live NSE APIs are blocked from cloud IPs.
+
+Bulk endpoints (bypass NSE's 20-record UI cap):
+  - nse_all_announcements()        corporate-announcements with date range
+  - nse_corporate_actions_bulk()   corporates-corporateActions with date range -> all records
+  - nse_board_meetings_bulk()      corporate-board-meetings with date range
+  - nse_financial_results_bulk()   corporates-financial-results (3800+ records, quarterly)
+  - nse_integrated_filing()        integrated-filing-results per symbol (iXBRL + PDF links)
+  - nse_surveillance()             ASM / GSM / rumour-verification lists
 """
 import sys
 import os
+import csv
+import io
 from datetime import date, timedelta
 from typing import Optional
 
@@ -79,10 +89,9 @@ def nse_option_chain(symbol: str, expiry: Optional[str] = None) -> dict:
 
 
 def nse_corporate_actions(symbol: str) -> dict:
-    """NSE corporate actions: dividends, splits, bonuses for a symbol."""
+    """NSE corporate actions: dividends, splits, bonuses for a symbol (past 1 year + next 90 days)."""
     try:
         from nselib import NSE
-        from datetime import date, timedelta
         with NSE() as nse:
             actions = nse.corporate_actions(
                 symbol=symbol.upper(),
@@ -94,6 +103,31 @@ def nse_corporate_actions(symbol: str) -> dict:
         return {"error": str(e), "symbol": symbol}
 
 
+def nse_corporate_actions_bulk(from_date: str = None, to_date: str = None) -> dict:
+    """
+    NSE corporate actions for ALL mainboard equities in a date range (no 20-record cap).
+    from_date / to_date: 'DD-MM-YYYY'. Defaults to past 30 days + next 90 days.
+    Returns dividends, splits, bonuses, rights issues.
+    """
+    try:
+        from nselib import NSE
+        _fmt = lambda d: d.strftime("%d-%m-%Y")
+        fd = from_date or _fmt(date.today() - timedelta(days=30))
+        td = to_date or _fmt(date.today() + timedelta(days=90))
+        with NSE() as nse:
+            s = nse._session._s
+            r = s.get(
+                "https://www.nseindia.com/api/corporates-corporateActions",
+                params={"index": "equities", "from_date": fd, "to_date": td, "csv": "true"},
+                timeout=20,
+            )
+            text = r.content.decode("utf-8-sig", errors="replace")
+            rows = list(csv.DictReader(io.StringIO(text)))
+        return {"from": fd, "to": td, "count": len(rows), "actions": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+
 def nse_financial_results(symbol: str, period: str = "Quarterly") -> dict:
     """NSE quarterly/annual financial results filings for a symbol. period: Quarterly or Annual."""
     try:
@@ -103,6 +137,142 @@ def nse_financial_results(symbol: str, period: str = "Quarterly") -> dict:
         return {"symbol": symbol.upper(), "period": period, "results": results}
     except Exception as e:
         return {"error": str(e), "symbol": symbol}
+
+
+def nse_financial_results_bulk(period: str = "Quarterly") -> dict:
+    """
+    NSE financial results for ALL mainboard equities (no 20-record cap).
+    Returns ~3,800+ records covering all F&O-eligible companies.
+    period: 'Quarterly' or 'Annual'.
+    """
+    try:
+        from nselib import NSE
+        with NSE() as nse:
+            s = nse._session._s
+            r = s.get(
+                "https://www.nseindia.com/api/corporates-financial-results",
+                params={"index": "equities", "fo_sec": "true", "period": period, "csv": "true"},
+                timeout=30,
+            )
+            text = r.content.decode("utf-8-sig", errors="replace")
+            rows = list(csv.DictReader(io.StringIO(text)))
+        return {"period": period, "count": len(rows), "results": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+def nse_all_announcements(from_date: str = None, to_date: str = None) -> dict:
+    """
+    NSE corporate announcements for ALL equities in a date range (no 20-record cap).
+    from_date / to_date: 'DD-MM-YYYY'. Defaults to today only.
+    Use days_back parameter pattern: pass from_date = (today - N).strftime('%d-%m-%Y').
+    """
+    try:
+        from nselib import NSE
+        _fmt = lambda d: d.strftime("%d-%m-%Y")
+        fd = from_date or _fmt(date.today())
+        td = to_date or _fmt(date.today())
+        with NSE() as nse:
+            s = nse._session._s
+            r = s.get(
+                "https://www.nseindia.com/api/corporate-announcements",
+                params={"index": "equities", "from_date": fd, "to_date": td, "csv": "true"},
+                timeout=20,
+            )
+            text = r.content.decode("utf-8-sig", errors="replace")
+            rows = list(csv.DictReader(io.StringIO(text)))
+        return {"from": fd, "to": td, "count": len(rows), "announcements": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+def nse_board_meetings_bulk(from_date: str = None, to_date: str = None) -> dict:
+    """
+    NSE board meetings for ALL mainboard equities in a date range (no 20-record cap).
+    from_date / to_date: 'DD-MM-YYYY'. Defaults to past 7 days + next 30 days.
+    Returns upcoming and recently held board meetings, including dividend/results agenda items.
+    """
+    try:
+        from nselib import NSE
+        _fmt = lambda d: d.strftime("%d-%m-%Y")
+        fd = from_date or _fmt(date.today() - timedelta(days=7))
+        td = to_date or _fmt(date.today() + timedelta(days=30))
+        with NSE() as nse:
+            s = nse._session._s
+            r = s.get(
+                "https://www.nseindia.com/api/corporate-board-meetings",
+                params={"index": "equities", "from_date": fd, "to_date": td, "csv": "true"},
+                timeout=20,
+            )
+            text = r.content.decode("utf-8-sig", errors="replace")
+            rows = list(csv.DictReader(io.StringIO(text)))
+        return {"from": fd, "to": td, "count": len(rows), "meetings": rows}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+def nse_integrated_filing(symbol: str, from_date: str = None, to_date: str = None) -> dict:
+    """
+    NSE integrated filing results for a symbol — iXBRL viewer links + PDF download URLs.
+    Returns INTEGRATED_FILING_INDAS (financials) and INTEGRATED_FILING_GOVERNANCE filings.
+    from_date / to_date: 'DD-MM-YYYY'. Defaults to past 2 years.
+    PDF URLs are from nsearchives.nseindia.com and are cloud-accessible.
+    """
+    try:
+        from nselib import NSE
+        _fmt = lambda d: d.strftime("%d-%m-%Y")
+        fd = from_date or _fmt(date.today() - timedelta(days=730))
+        td = to_date or _fmt(date.today())
+        with NSE() as nse:
+            s = nse._session._s
+            r = s.get(
+                "https://www.nseindia.com/api/integrated-filing-results",
+                params={"symbol": symbol.upper(), "index": "equities", "from_date": fd, "to_date": td},
+                timeout=20,
+            )
+            data = r.json()
+        filings = data.get("data", []) if isinstance(data, dict) else data
+        # Annotate each filing with a direct PDF URL if not already present
+        enriched = []
+        for f in (filings if isinstance(filings, list) else []):
+            enriched.append({
+                "symbol":      f.get("symbol", symbol.upper()),
+                "company":     f.get("companyName", ""),
+                "filing_type": f.get("filingType", ""),
+                "period":      f.get("period", ""),
+                "date":        f.get("sort_date", "")[:10],
+                "xbrl_url":    f.get("xbrl", ""),
+                "pdf_url":     f.get("pdfLink", "") or f.get("attachment", ""),
+                "raw":         f,
+            })
+        return {"symbol": symbol.upper(), "from": fd, "to": td, "count": len(enriched), "filings": enriched}
+    except Exception as e:
+        return {"error": str(e), "symbol": symbol}
+
+
+def nse_surveillance(list_type: str = "asm") -> dict:
+    """
+    NSE surveillance lists: ASM (Additional Surveillance Measure) and GSM (Graded Surveillance Measure).
+    list_type: 'asm' | 'gsm' | 'all'
+    Returns stocks under enhanced surveillance with their stage/criteria.
+    """
+    try:
+        from nselib import NSE
+        results = {}
+        with NSE() as nse:
+            if list_type in ("asm", "all"):
+                try:
+                    results["asm"] = nse.reportASM()
+                except Exception as e:
+                    results["asm_error"] = str(e)
+            if list_type in ("gsm", "all"):
+                try:
+                    results["gsm"] = nse.reportGSM()
+                except Exception as e:
+                    results["gsm_error"] = str(e)
+        return results
+    except Exception as e:
+        return {"error": str(e)}
 
 
 def nse_shareholding(symbol: str) -> dict:
