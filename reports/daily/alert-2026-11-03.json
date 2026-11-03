@@ -1,0 +1,747 @@
+{
+  "date": "2026-11-03",
+  "generated_at": "2026-11-03T11:27:14.713611",
+  "graph": {
+    "nodes": 37931,
+    "edges": 65781,
+    "episodes": 91565,
+    "pending_enrichment": 8739,
+    "by_type": {
+      "Company": 867,
+      "MetricValue": 29192,
+      "TrendSummary": 7872
+    }
+  },
+  "indices": {
+    "Nifty 50": {
+      "close": 22698.85,
+      "change": -0.22,
+      "pe": "18.99",
+      "pb": "2.79",
+      "div": "1.43",
+      "date": "28-10-2026"
+    },
+    "Nifty 500": {
+      "close": 21727.45,
+      "change": -0.03,
+      "pe": "20.91",
+      "pb": "3.04",
+      "div": "1.28",
+      "date": "28-10-2026"
+    },
+    "Nifty Bank": {
+      "close": 54267.4,
+      "change": 0.54,
+      "pe": "12.14",
+      "pb": "1.63",
+      "div": "1.15",
+      "date": "28-10-2026"
+    },
+    "Nifty IT": {
+      "close": 31553.4,
+      "change": -1.98,
+      "pe": "19.34",
+      "pb": "5.52",
+      "div": "2.95",
+      "date": "28-10-2026"
+    },
+    "India VIX": {
+      "close": 16.25,
+      "change": -0.96,
+      "pe": "-",
+      "pb": "-",
+      "div": "-",
+      "date": "28-10-2026"
+    },
+    "Nifty 50 Futures Index": {
+      "close": 5517.13,
+      "change": -0.29,
+      "pe": "-",
+      "pb": "-",
+      "div": "-",
+      "date": "28-10-2026"
+    },
+    "Nifty 50 Arbitrage": {
+      "close": 2759.42,
+      "change": 0.05,
+      "pe": "-",
+      "pb": "-",
+      "div": "-",
+      "date": "28-10-2026"
+    },
+    "Nifty 50 Futures TR Index": {
+      "close": 24378.92,
+      "change": -0.27,
+      "pe": "-",
+      "pb": "-",
+      "div": "-",
+      "date": "28-10-2026"
+    },
+    "Nifty Smallcap 250": {
+      "close": 16989.4,
+      "change": 0.33,
+      "pe": "31.84",
+      "pb": "3.27",
+      "div": ".76",
+      "date": "28-10-2026"
+    },
+    "Nifty Midcap 150": {
+      "close": 21064.8,
+      "change": 0.29,
+      "pe": "26.55",
+      "pb": "3.69",
+      "div": "1",
+      "date": "28-10-2026"
+    }
+  },
+  "strong_improving": [
+    {
+      "ticker": "AARTIIND",
+      "metric": "pat",
+      "direction": "improving",
+      "streak": 3,
+      "delta_pct": 108.73,
+      "momentum": 1.0,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "AARTIIND pat: improving for 3 consecutive periods (latest \u0394 +108.7%, decelerating, strong momentum)"
+    },
+    {
+      "ticker": "ABCAPITAL",
+      "metric": "pat",
+      "direction": "improving",
+      "streak": 3,
+      "delta_pct": 10.58,
+      "momentum": 1.0,
+      "acceleration": "steady",
+      "periods": 4,
+      "summary": "ABCAPITAL pat: improving for 3 consecutive periods (latest \u0394 +10.6%, steady, strong momentum)"
+    },
+    {
+      "ticker": "ABREL",
+      "metric": "total_income",
+      "direction": "improving",
+      "streak": 3,
+      "delta_pct": 318.46,
+      "momentum": 1.0,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "ABREL total_income: improving for 3 consecutive periods (latest \u0394 +318.5%, decelerating, strong momentum)"
+    },
+    {
+      "ticker": "ACMESOLAR",
+      "metric": "revenue",
+      "direction": "improving",
+      "streak": 3,
+      "delta_pct": 3.44,
+      "momentum": 1.0,
+      "acceleration": "accelerating",
+      "periods": 4,
+      "summary": "ACMESOLAR revenue: improving for 3 consecutive periods (latest \u0394 +3.4%, accelerating, strong momentum)"
+    },
+    {
+      "ticker": "ADANIPOWER",
+      "metric": "revenue",
+      "direction": "improving",
+      "streak": 3,
+      "delta_pct": 2.84,
+      "momentum": 1.0,
+      "acceleration": "accelerating",
+      "periods": 4,
+      "summary": "ADANIPOWER revenue: improving for 3 consecutive periods (latest \u0394 +2.8%, accelerating, strong momentum)"
+    },
+    {
+      "ticker": "AEGISVOPAK",
+      "metric": "pbt",
+      "direction": "improving",
+      "streak": 3,
+      "delta_pct": 34.37,
+      "momentum": 1.0,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "AEGISVOPAK pbt: improving for 3 consecutive periods (latest \u0394 +34.4%, decelerating, strong momentum)"
+    },
+    {
+      "ticker": "AEQUS",
+      "metric": "revenue",
+      "direction": "improving",
+      "streak": 3,
+      "delta_pct": 3.42,
+      "momentum": 1.0,
+      "acceleration": "accelerating",
+      "periods": 4,
+      "summary": "AEQUS revenue: improving for 3 consecutive periods (latest \u0394 +3.4%, accelerating, strong momentum)"
+    },
+    {
+      "ticker": "AEROFLEX",
+      "metric": "revenue",
+      "direction": "improving",
+      "streak": 3,
+      "delta_pct": 42.63,
+      "momentum": 1.0,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "AEROFLEX revenue: improving for 3 consecutive periods (latest \u0394 +42.6%, decelerating, strong momentum)"
+    },
+    {
+      "ticker": "AJANTPHARM",
+      "metric": "revenue",
+      "direction": "improving",
+      "streak": 3,
+      "delta_pct": 10.34,
+      "momentum": 1.0,
+      "acceleration": "steady",
+      "periods": 4,
+      "summary": "AJANTPHARM revenue: improving for 3 consecutive periods (latest \u0394 +10.3%, steady, strong momentum)"
+    },
+    {
+      "ticker": "AKUMS",
+      "metric": "pat",
+      "direction": "improving",
+      "streak": 3,
+      "delta_pct": 13.45,
+      "momentum": 1.0,
+      "acceleration": "accelerating",
+      "periods": 4,
+      "summary": "AKUMS pat: improving for 3 consecutive periods (latest \u0394 +13.4%, accelerating, strong momentum)"
+    },
+    {
+      "ticker": "APOLLOHOSP",
+      "metric": "pat",
+      "direction": "improving",
+      "streak": 3,
+      "delta_pct": 10.72,
+      "momentum": 1.0,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "APOLLOHOSP pat: improving for 3 consecutive periods (latest \u0394 +10.7%, decelerating, strong momentum)"
+    },
+    {
+      "ticker": "APTUS",
+      "metric": "total_income",
+      "direction": "improving",
+      "streak": 3,
+      "delta_pct": 2.96,
+      "momentum": 1.0,
+      "acceleration": "steady",
+      "periods": 4,
+      "summary": "APTUS total_income: improving for 3 consecutive periods (latest \u0394 +3.0%, steady, strong momentum)"
+    },
+    {
+      "ticker": "ASAHIINDIA",
+      "metric": "revenue",
+      "direction": "improving",
+      "streak": 3,
+      "delta_pct": 4.38,
+      "momentum": 1.0,
+      "acceleration": "accelerating",
+      "periods": 4,
+      "summary": "ASAHIINDIA revenue: improving for 3 consecutive periods (latest \u0394 +4.4%, accelerating, strong momentum)"
+    },
+    {
+      "ticker": "ATGL",
+      "metric": "revenue",
+      "direction": "improving",
+      "streak": 3,
+      "delta_pct": 10.64,
+      "momentum": 1.0,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "ATGL revenue: improving for 3 consecutive periods (latest \u0394 +10.6%, decelerating, strong momentum)"
+    },
+    {
+      "ticker": "ATUL",
+      "metric": "total_income",
+      "direction": "improving",
+      "streak": 3,
+      "delta_pct": 2.35,
+      "momentum": 1.0,
+      "acceleration": "accelerating",
+      "periods": 4,
+      "summary": "ATUL total_income: improving for 3 consecutive periods (latest \u0394 +2.4%, accelerating, strong momentum)"
+    }
+  ],
+  "strong_deteriorating": [
+    {
+      "ticker": "ACC",
+      "metric": "pat",
+      "direction": "deteriorating",
+      "streak": 3,
+      "delta_pct": -36.73,
+      "momentum": -1.0,
+      "acceleration": "steady",
+      "periods": 4,
+      "summary": "ACC pat: deteriorating for 3 consecutive periods (latest \u0394 -36.7%, steady, strong momentum)"
+    },
+    {
+      "ticker": "BELRISE",
+      "metric": "ebit",
+      "direction": "deteriorating",
+      "streak": 3,
+      "delta_pct": -2.68,
+      "momentum": -1.0,
+      "acceleration": "accelerating",
+      "periods": 4,
+      "summary": "BELRISE ebit: deteriorating for 3 consecutive periods (latest \u0394 -2.7%, accelerating, strong momentum)"
+    },
+    {
+      "ticker": "BHARATFORG",
+      "metric": "pat",
+      "direction": "deteriorating",
+      "streak": 3,
+      "delta_pct": -138.51,
+      "momentum": -1.0,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "BHARATFORG pat: deteriorating for 3 consecutive periods (latest \u0394 -138.5%, decelerating, strong momentum)"
+    },
+    {
+      "ticker": "BTML",
+      "metric": "pat",
+      "direction": "deteriorating",
+      "streak": 3,
+      "delta_pct": -62.68,
+      "momentum": -1.0,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "BTML pat: deteriorating for 3 consecutive periods (latest \u0394 -62.7%, decelerating, strong momentum)"
+    },
+    {
+      "ticker": "CHALET",
+      "metric": "revenue",
+      "direction": "deteriorating",
+      "streak": 3,
+      "delta_pct": -8.23,
+      "momentum": -1.0,
+      "acceleration": "accelerating",
+      "periods": 4,
+      "summary": "CHALET revenue: deteriorating for 3 consecutive periods (latest \u0394 -8.2%, accelerating, strong momentum)"
+    },
+    {
+      "ticker": "COHANCE",
+      "metric": "pat",
+      "direction": "deteriorating",
+      "streak": 3,
+      "delta_pct": -643.8,
+      "momentum": -1.0,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "COHANCE pat: deteriorating for 3 consecutive periods (latest \u0394 -643.8%, decelerating, strong momentum)"
+    },
+    {
+      "ticker": "CRISIL",
+      "metric": "pat",
+      "direction": "deteriorating",
+      "streak": 3,
+      "delta_pct": -5.51,
+      "momentum": -1.0,
+      "acceleration": "steady",
+      "periods": 4,
+      "summary": "CRISIL pat: deteriorating for 3 consecutive periods (latest \u0394 -5.5%, steady, strong momentum)"
+    },
+    {
+      "ticker": "DISHTV",
+      "metric": "ebit",
+      "direction": "deteriorating",
+      "streak": 3,
+      "delta_pct": -34.84,
+      "momentum": -1.0,
+      "acceleration": "accelerating",
+      "periods": 4,
+      "summary": "DISHTV ebit: deteriorating for 3 consecutive periods (latest \u0394 -34.8%, accelerating, strong momentum)"
+    },
+    {
+      "ticker": "DOMS",
+      "metric": "pat",
+      "direction": "deteriorating",
+      "streak": 3,
+      "delta_pct": -15.37,
+      "momentum": -1.0,
+      "acceleration": "steady",
+      "periods": 4,
+      "summary": "DOMS pat: deteriorating for 3 consecutive periods (latest \u0394 -15.4%, steady, strong momentum)"
+    },
+    {
+      "ticker": "HGINFRA",
+      "metric": "pat",
+      "direction": "deteriorating",
+      "streak": 3,
+      "delta_pct": -152.61,
+      "momentum": -1.0,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "HGINFRA pat: deteriorating for 3 consecutive periods (latest \u0394 -152.6%, decelerating, strong momentum)"
+    },
+    {
+      "ticker": "IGL",
+      "metric": "pat",
+      "direction": "deteriorating",
+      "streak": 3,
+      "delta_pct": -90.02,
+      "momentum": -1.0,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "IGL pat: deteriorating for 3 consecutive periods (latest \u0394 -90.0%, decelerating, strong momentum)"
+    },
+    {
+      "ticker": "INDHOTEL",
+      "metric": "pat",
+      "direction": "deteriorating",
+      "streak": 3,
+      "delta_pct": -2.8,
+      "momentum": -1.0,
+      "acceleration": "accelerating",
+      "periods": 4,
+      "summary": "INDHOTEL pat: deteriorating for 3 consecutive periods (latest \u0394 -2.8%, accelerating, strong momentum)"
+    },
+    {
+      "ticker": "IONEXCHANG",
+      "metric": "ebit",
+      "direction": "deteriorating",
+      "streak": 3,
+      "delta_pct": -63.2,
+      "momentum": -1.0,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "IONEXCHANG ebit: deteriorating for 3 consecutive periods (latest \u0394 -63.2%, decelerating, strong momentum)"
+    },
+    {
+      "ticker": "JINDALSAW",
+      "metric": "pat",
+      "direction": "deteriorating",
+      "streak": 3,
+      "delta_pct": -61.14,
+      "momentum": -1.0,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "JINDALSAW pat: deteriorating for 3 consecutive periods (latest \u0394 -61.1%, decelerating, strong momentum)"
+    },
+    {
+      "ticker": "MARUTI",
+      "metric": "pat",
+      "direction": "deteriorating",
+      "streak": 3,
+      "delta_pct": -28.45,
+      "momentum": -1.0,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "MARUTI pat: deteriorating for 3 consecutive periods (latest \u0394 -28.4%, decelerating, strong momentum)"
+    }
+  ],
+  "inflections": [
+    {
+      "ticker": "360ONE",
+      "metric": "revenue",
+      "direction": "deteriorating",
+      "streak": 1,
+      "delta_pct": -6.71,
+      "momentum": 0.495,
+      "acceleration": "steady",
+      "periods": 3,
+      "summary": "360ONE revenue: deteriorating for 1 consecutive periods (latest \u0394 -6.7%, steady, moderate momentum)"
+    },
+    {
+      "ticker": "3MINDIA",
+      "metric": "revenue",
+      "direction": "stable",
+      "streak": 1,
+      "delta_pct": 1.71,
+      "momentum": 0.529,
+      "acceleration": "accelerating",
+      "periods": 4,
+      "summary": "3MINDIA revenue: stable for 1 consecutive periods (latest \u0394 +1.7%, accelerating, moderate momentum)"
+    },
+    {
+      "ticker": "AADHARHFC",
+      "metric": "revenue",
+      "direction": "stable",
+      "streak": 1,
+      "delta_pct": 0.85,
+      "momentum": 1.0,
+      "acceleration": "steady",
+      "periods": 3,
+      "summary": "AADHARHFC revenue: stable for 1 consecutive periods (latest \u0394 +0.8%, steady, strong momentum)"
+    },
+    {
+      "ticker": "AARTIPHARM",
+      "metric": "revenue",
+      "direction": "improving",
+      "streak": 1,
+      "delta_pct": 13.93,
+      "momentum": 0.761,
+      "acceleration": "accelerating",
+      "periods": 4,
+      "summary": "AARTIPHARM revenue: improving for 1 consecutive periods (latest \u0394 +13.9%, accelerating, strong momentum)"
+    },
+    {
+      "ticker": "AASTHA",
+      "metric": "revenue",
+      "direction": "deteriorating",
+      "streak": 1,
+      "delta_pct": -40.11,
+      "momentum": -1.0,
+      "acceleration": "steady",
+      "periods": 2,
+      "summary": "AASTHA revenue: deteriorating for 1 consecutive periods (latest \u0394 -40.1%, steady, strong momentum)"
+    },
+    {
+      "ticker": "AAVAS",
+      "metric": "revenue",
+      "direction": "improving",
+      "streak": 1,
+      "delta_pct": 3.89,
+      "momentum": 0.859,
+      "acceleration": "steady",
+      "periods": 4,
+      "summary": "AAVAS revenue: improving for 1 consecutive periods (latest \u0394 +3.9%, steady, strong momentum)"
+    },
+    {
+      "ticker": "ABB",
+      "metric": "revenue",
+      "direction": "improving",
+      "streak": 1,
+      "delta_pct": 11.77,
+      "momentum": 0.239,
+      "acceleration": "steady",
+      "periods": 4,
+      "summary": "ABB revenue: improving for 1 consecutive periods (latest \u0394 +11.8%, steady, weak momentum)"
+    },
+    {
+      "ticker": "ABCAPITAL",
+      "metric": "revenue",
+      "direction": "improving",
+      "streak": 1,
+      "delta_pct": 14.97,
+      "momentum": 0.47,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "ABCAPITAL revenue: improving for 1 consecutive periods (latest \u0394 +15.0%, decelerating, moderate momentum)"
+    },
+    {
+      "ticker": "ABDL",
+      "metric": "revenue",
+      "direction": "improving",
+      "streak": 1,
+      "delta_pct": 15.27,
+      "momentum": 0.034,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "ABDL revenue: improving for 1 consecutive periods (latest \u0394 +15.3%, decelerating, weak momentum)"
+    },
+    {
+      "ticker": "ABFRL",
+      "metric": "revenue",
+      "direction": "stable",
+      "streak": 1,
+      "delta_pct": 1.78,
+      "momentum": 0.308,
+      "acceleration": "accelerating",
+      "periods": 4,
+      "summary": "ABFRL revenue: stable for 1 consecutive periods (latest \u0394 +1.8%, accelerating, moderate momentum)"
+    }
+  ],
+  "sector_pulse": {
+    "Auto": {
+      "improving": 7,
+      "deteriorating": 2,
+      "stable": 2,
+      "tickers_up": [
+        "ASHOKLEY",
+        "BAJAJ-AUTO",
+        "EICHERMOT",
+        "HEROMOTOCO",
+        "M&M"
+      ],
+      "tickers_down": [
+        "M&M",
+        "MARUTI"
+      ]
+    },
+    "Consumer": {
+      "improving": 4,
+      "deteriorating": 1,
+      "stable": 2,
+      "tickers_up": [
+        "DMART",
+        "TITAN",
+        "TRENT",
+        "VMART"
+      ],
+      "tickers_down": [
+        "TRENT"
+      ]
+    },
+    "Energy": {
+      "improving": 7,
+      "deteriorating": 5,
+      "stable": 5,
+      "tickers_up": [
+        "ADANIGREEN",
+        "ADANIPORTS",
+        "BPCL",
+        "NTPC",
+        "ONGC"
+      ],
+      "tickers_down": [
+        "ADANIPORTS",
+        "NTPC",
+        "ONGC",
+        "POWERGRID",
+        "TATAPOWER"
+      ]
+    },
+    "FMCG": {
+      "improving": 7,
+      "deteriorating": 3,
+      "stable": 5,
+      "tickers_up": [
+        "BRITANNIA",
+        "COLPAL",
+        "DABUR",
+        "HINDUNILVR",
+        "ITC"
+      ],
+      "tickers_down": [
+        "BRITANNIA",
+        "HINDUNILVR",
+        "ITC"
+      ]
+    },
+    "Finance": {
+      "improving": 14,
+      "deteriorating": 1,
+      "stable": 6,
+      "tickers_up": [
+        "AUBANK",
+        "AXISBANK",
+        "BAJAJFINSV",
+        "BAJFINANCE",
+        "BANDHANBNK"
+      ],
+      "tickers_down": [
+        "HDFCLIFE"
+      ]
+    },
+    "IT": {
+      "improving": 9,
+      "deteriorating": 4,
+      "stable": 5,
+      "tickers_up": [
+        "COFORGE",
+        "HCLTECH",
+        "INFY",
+        "MPHASIS",
+        "OFSS"
+      ],
+      "tickers_down": [
+        "HCLTECH",
+        "OFSS",
+        "PERSISTENT",
+        "TCS"
+      ]
+    },
+    "Infra": {
+      "improving": 6,
+      "deteriorating": 4,
+      "stable": 5,
+      "tickers_up": [
+        "ACC",
+        "ADANIENT",
+        "GRASIM",
+        "LT",
+        "SHREECEM"
+      ],
+      "tickers_down": [
+        "ACC",
+        "ADANIENT",
+        "LT",
+        "SHREECEM"
+      ]
+    },
+    "Metals": {
+      "improving": 5,
+      "deteriorating": 3,
+      "stable": 5,
+      "tickers_up": [
+        "COALINDIA",
+        "HINDALCO",
+        "JSWSTEEL",
+        "TATASTEEL",
+        "VEDL"
+      ],
+      "tickers_down": [
+        "JSWSTEEL",
+        "TATASTEEL",
+        "VEDL"
+      ]
+    },
+    "Other": {
+      "improving": 730,
+      "deteriorating": 439,
+      "stable": 462,
+      "tickers_up": [
+        "360ONE",
+        "3MINDIA",
+        "AADHARHFC",
+        "AARTIIND",
+        "AARTIPHARM"
+      ],
+      "tickers_down": [
+        "360ONE",
+        "AASTHA",
+        "ABB",
+        "ABFRL",
+        "ABSLAMC"
+      ]
+    },
+    "Pharma": {
+      "improving": 8,
+      "deteriorating": 4,
+      "stable": 7,
+      "tickers_up": [
+        "AUROPHARMA",
+        "BIOCON",
+        "CIPLA",
+        "DIVISLAB",
+        "DRREDDY"
+      ],
+      "tickers_down": [
+        "BIOCON",
+        "DRREDDY",
+        "SUNPHARMA",
+        "TORNTPHARM"
+      ]
+    },
+    "Telecom": {
+      "improving": 2,
+      "deteriorating": 1,
+      "stable": 2,
+      "tickers_up": [
+        "BHARTIARTL",
+        "INDUSTOWER"
+      ],
+      "tickers_down": [
+        "INDUSTOWER"
+      ]
+    }
+  },
+  "recent_events": [
+    {
+      "ticker": "EMBDL",
+      "date": "",
+      "event": "Acquisition"
+    },
+    {
+      "ticker": "SKYWAYS",
+      "date": "",
+      "event": "Acquisition"
+    }
+  ],
+  "summary": {
+    "total_trends": 7872,
+    "strong_positive": 295,
+    "strong_negative": 47,
+    "inflections": 695,
+    "sectors_tracked": 11
+  }
+}

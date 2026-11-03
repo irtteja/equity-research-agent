@@ -175,26 +175,34 @@ Next: Run context_agent_runner.py then trend_agent_runner.py for graph backfill
 Blockers: none
 ============================================================
 
-[CHECKPOINT] 2026-11-03 10:55
+[CHECKPOINT] 2026-11-03 11:15
 Task: None
 Status: completed
-Progress: processed=200 edges_created=148 skipped=0
+Progress: xbrl=3291 quarters, docs=0 facts; graph=30059n/29192e
 Next: 
 Blockers: none
 ============================================================
 
-[CHECKPOINT] 2026-11-03 10:55
+[CHECKPOINT] 2026-11-03 11:17
 Task: None
 Status: completed
-Progress: pairs=82 trends=82 strong=49 | top: BAJAJ-AUTO tax_expense (stable, 1p), BAJAJ-AUTO depreciation (stable, 1p), BAJAJ-AUTO finance_costs (improving, 1p), BAJAJ-AUTO total_expenses (improving, 1p), BAJAJ-AUTO eps (improving, 1p)
+Progress: xbrl=3291 quarters, docs=0 facts; graph=30059n/29192e
 Next: 
 Blockers: none
 ============================================================
 
-[CHECKPOINT] 2026-11-03 10:55
+[CHECKPOINT] 2026-11-03 11:26
 Task: None
 Status: completed
-Progress: 1) Built comprehensive system architecture HTML artifact (all 7 layers, 30+ components, clickable detail panels). 2) Added comp_name param to nselib all_announcements() and pushed to GitHub (commit 8c85b97). 3) Ran context_agent_runner: 200 nodes, 148 PRECEDED_BY edges. 4) Ran trend_agent_runner: 82 trend summaries, 49 strong trends.
-Next: Run context_agent_runner again for remaining nodes (limit 200 per run). Monitor BAJAJ-AUTO finance_costs trend (+21%) as example of trend_agent output. Run weekly_research.py when ready.
-Blockers: LIVE_MARKET and NSE_BHAV_COPY MCPs flaky this session (session expiry/404).
+Progress: trends=7872 strong+=2539 strong-=575 inflections=5182
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-03 11:27
+Task: None
+Status: completed
+Progress: trends=7872 strong+=295 strong-=47 inflections=695
+Next: 
+Blockers: none
 ============================================================
