@@ -1,5 +1,33 @@
 # Progress Log
 
+## 2026-11-03 (session 12) — "Miro fish ripple" interconnected knowledge graph
+
+### Done
+- **Built full 5-layer structural knowledge graph** — graph.db now has **46,457 nodes + 108,084 edges**:
+  - L1: 12 MacroSector, 22 Sector, 58 Industry nodes + BELONGS_TO_SECTOR/INDUSTRY edges (875×2)
+  - L2: 142 Index nodes + 10,340 CONSTITUENT_OF memberships (from company_meta.json indices[])
+  - L3: 6,241 COMPETES_WITH edges between companies in the same NSE industry (≤20 peers each)
+  - L4: 44 BusinessGroup nodes (Tata, Adani, HDFC, etc.) + MEMBER_OF edges (keyword match on names)
+  - L5: 23 SectorTrend aggregate nodes rolling up TrendSummary bullish/bearish signals per sector
+- **Created `jobs/build_knowledge_graph.py`**: reusable, idempotent enrichment job (deletes & re-inserts structural edges on each run). ~10s, no network calls.
+- **Created `jobs/enrich_graph_structure.py`**: equivalent entry point (same logic, alternative invocation).
+- **Updated `jobs/ensure_graph.py`** Step 3/3: now calls `build_knowledge_graph.py` after backfill + trend rebuild — fresh containers get the full mesh automatically.
+- **Created `jobs/rebuild_sector_map.py`**: parallel fetch equity_meta_info() for 885 tickers → sector_map.json + company_meta.json (875 entries). NSE official macro classifications.
+- **Created `jobs/fetch_annual_reports.py`**: downloads latest annual report PDF per ticker via nselib. Idempotent (skips existing). PDFs gitignored; index.json committed.
+- **Updated `memory_store/sector_map.json`**: 207→875 entries, NSE official macro sectors.
+- **Created `memory_store/company_meta.json`**: 875 entries, full NSE metadata (sector/industry/macro/indices/isin/is_fno).
+
+### Architecture changes
+- graph.db now a true knowledge graph mesh: every company radiates sector, index, peer, business-group, and sector-trend connections
+- `ensure_graph.py` wires all 3 rebuild steps: backfill → trends → structural enrichment
+- `company_meta.json` is the canonical source for all structural metadata (indices, macro, sector, industry)
+
+### Pending / next sessions
+- Wire dashboard to live SectorTrend / ConfluenceSignal nodes (currently hardcoded snapshot)
+- Graph compaction: graph.db grows indefinitely, no pruning job yet
+- weekly_research.py: exists but disabled, never tested end-to-end
+- 4 persistent-session triggers still fire into old session_01G28r1gAsugprj2KxqH9L5D (cannot update from outside)
+
 ## 2026-11-03 (session 11) — graph.db persistence fix; all 12 triggers fully hardened
 
 ### Done
