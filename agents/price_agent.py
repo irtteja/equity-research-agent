@@ -28,6 +28,13 @@ sys.path.insert(0, str(REPO))
 NEAR_THRESHOLD = 0.10   # within 10% of 52w high or low counts as "near"
 MOMENTUM_MIN   = 0.6    # minimum momentum to flag as value signal
 
+GROWTH_METRICS = {
+    "revenue", "revenue_from_operations", "total_income", "pat", "pbt",
+    "ebit", "ebitda", "eps", "eps_basic", "eps_diluted",
+    "operating_profit", "gross_profit", "net_profit",
+    "total_comprehensive_income",
+}
+
 
 class PriceAgent:
     """Fetches live prices and writes PriceSnapshot nodes to the graph."""
@@ -122,8 +129,11 @@ class PriceAgent:
                     continue
                 momentum = float(props.get("momentum_score", 0))
                 direction = props.get("direction", "stable")
-                # Keep best improving signal per ticker
-                if direction == "improving" and momentum >= MOMENTUM_MIN:
+                # Keep best improving signal per ticker — growth metrics only, streak ≥ 2
+                metric = props.get("metric", "").lower().replace("-", "_")
+                streak = int(props.get("consistent_periods", 1))
+                if (direction == "improving" and momentum >= MOMENTUM_MIN
+                        and streak >= 2 and metric in GROWTH_METRICS):
                     existing = signals.get(ticker)
                     if not existing or momentum > float(existing.get("momentum_score", 0)):
                         signals[ticker] = props

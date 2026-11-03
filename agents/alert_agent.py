@@ -76,12 +76,15 @@ class AlertAgent:
     def generate_brief(self, as_of: date | None = None) -> dict:
         as_of = as_of or date.today()
 
-        trends   = self._get_all_trends()
-        context  = self._get_index_context(as_of)
-        events   = self._get_recent_events(as_of)
-        graph_st = self.gs.stats()
+        trends        = self._get_all_trends()
+        context       = self._get_index_context(as_of)
+        events        = self._get_recent_events(as_of)
+        graph_st      = self.gs.stats()
+        value_signals = self._get_value_signals(as_of)
+        mgmt_context  = self._get_mgmt_context()
 
-        brief = self._build_brief(trends, context, events, graph_st, as_of)
+        brief = self._build_brief(trends, context, events, graph_st, as_of,
+                                  value_signals, mgmt_context)
         self._save(brief, as_of)
         return brief
 
@@ -160,6 +163,57 @@ class AlertAgent:
                         pass
         return indices
 
+    def _get_value_signals(self, as_of: date) -> list[dict]:
+        """Load value signals (improving fundamentals + near 52w low) from price snapshot."""
+        price_file = REPO / "memory_store" / "prices" / f"{as_of.isoformat()}.json"
+        if not price_file.exists():
+            # Try most recent
+            files = sorted((REPO / "memory_store" / "prices").glob("*.json"), reverse=True)
+            if not files:
+                return []
+            price_file = files[0]
+        try:
+            data = json.loads(price_file.read_text())
+            return data.get("value_signals", [])[:20]
+        except Exception:
+            return []
+
+    def _get_mgmt_context(self) -> dict[str, list[dict]]:
+        """Pull best management statements per ticker from graph (non-boilerplate)."""
+        SKIP = {
+            "forward-looking", "forward looking", "on behalf of", "welcome you",
+            "page 1", "page 2", "page 3", "moderator", "investor relations",
+            "not the guarantees", "actual results may", "beliefs, opinion",
+            "din:", "e-voting", "safe harbor", "safe harbour", "disclaimer",
+            "earnings call", "conference call", "this transcript",
+        }
+        mgmt: dict[str, list[dict]] = {}
+        try:
+            with self.gs._conn() as conn:
+                rows = conn.execute(
+                    "SELECT ticker, properties FROM nodes WHERE node_type='ManagementStatement'"
+                ).fetchall()
+            for row in rows:
+                props = json.loads(row["properties"]) if isinstance(row["properties"], str) else row["properties"]
+                stmt = props.get("statement", "")
+                tl = stmt.lower()
+                if len(stmt) < 60 or any(kw in tl for kw in SKIP):
+                    continue
+                ticker = row["ticker"] or props.get("ticker", "")
+                if not ticker:
+                    continue
+                if ticker not in mgmt:
+                    mgmt[ticker] = []
+                if len(mgmt[ticker]) < 2:
+                    mgmt[ticker].append({
+                        "statement": stmt[:200],
+                        "category":  props.get("category", ""),
+                        "sentiment": props.get("sentiment", ""),
+                    })
+        except Exception:
+            pass
+        return mgmt
+
     def _get_recent_events(self, as_of: date) -> list[dict]:
         """Pull recent corporate events from announcements store."""
         ann_dir = REPO / "memory_store" / "announcements"
@@ -188,7 +242,8 @@ class AlertAgent:
 
     # ── Brief construction ──────────────────────────────────────────────────
 
-    def _build_brief(self, trends, context, events, graph_stats, as_of) -> dict:
+    def _build_brief(self, trends, context, events, graph_stats, as_of,
+                     value_signals=None, mgmt_context=None) -> dict:
         # Filter to meaningful growth signals only
         growth_up = [
             t for t in trends
@@ -252,22 +307,29 @@ class AlertAgent:
             for sec, v in sorted(sector_pulse.items())
         }
 
+        # Attach management context to strong signals
+        mgmt = mgmt_context or {}
+        for t in strong_pos + strong_neg + inflections:
+            t["mgmt"] = mgmt.get(t["ticker"], [])
+
         return {
             "date":          as_of.isoformat(),
             "generated_at":  datetime.now().isoformat(),
             "graph":         graph_stats,
             "indices":       context,
-            "strong_improving":   strong_pos[:15],
+            "strong_improving":     strong_pos[:15],
             "strong_deteriorating": strong_neg[:15],
-            "inflections":   inflections[:10],
-            "sector_pulse":  sector_summary,
-            "recent_events": events,
+            "inflections":          inflections[:10],
+            "sector_pulse":         sector_summary,
+            "recent_events":        events,
+            "value_signals":        (value_signals or [])[:15],
             "summary": {
                 "total_trends":    len(trends),
                 "strong_positive": len(strong_pos),
                 "strong_negative": len(strong_neg),
                 "inflections":     len(inflections),
                 "sectors_tracked": len(sector_pulse),
+                "value_signals":   len(value_signals or []),
             },
         }
 
@@ -308,6 +370,9 @@ class AlertAgent:
                         f"Δ{t['delta_pct']:+6.1f}%  {t['streak']}q streak  "
                         f"momentum={t['momentum']:+.2f}{acc}"
                     )
+                    for m in t.get("mgmt", [])[:1]:
+                        icon = "✦" if m["sentiment"] == "positive" else "⚠" if m["sentiment"] == "negative" else "·"
+                        lines.append(f"      {icon} {m['statement'][:100]}")
             if neg:
                 lines.append("\n  ▼ DETERIORATING")
                 for t in neg[:10]:
@@ -317,6 +382,9 @@ class AlertAgent:
                         f"Δ{t['delta_pct']:+6.1f}%  {t['streak']}q streak  "
                         f"momentum={t['momentum']:+.2f}{acc}"
                     )
+                    for m in t.get("mgmt", [])[:1]:
+                        icon = "✦" if m["sentiment"] == "positive" else "⚠" if m["sentiment"] == "negative" else "·"
+                        lines.append(f"      {icon} {m['statement'][:100]}")
             lines.append("")
 
         # Inflection points
@@ -346,6 +414,18 @@ class AlertAgent:
                 )
             lines.append("")
 
+        # Value signals
+        vs = brief.get("value_signals", [])
+        if vs:
+            lines.append("VALUE SIGNALS  (improving fundamentals + price near 52-week low)")
+            for s in vs[:10]:
+                lines.append(
+                    f"  {s['ticker']:<12} ₹{s.get('close',0):>8,.1f}  "
+                    f"+{s.get('near_low_pct',0):.1f}% above 52wL  "
+                    f"trend Δ{s.get('trend_delta',0):+.1f}%  {s.get('trend_metric','')}"
+                )
+            lines.append("")
+
         # Recent events
         evts = brief.get("recent_events", [])
         if evts:
@@ -361,7 +441,8 @@ class AlertAgent:
             f"[ Graph: {g.get('nodes',0):,} nodes · {g.get('edges',0):,} edges · "
             f"{s.get('total_trends',0)} trends · "
             f"{s.get('strong_positive',0)} strong↑ · "
-            f"{s.get('strong_negative',0)} strong↓ ]"
+            f"{s.get('strong_negative',0)} strong↓ · "
+            f"{s.get('value_signals',0)} value signals ]"
         )
         lines.append(f"{'='*64}\n")
         return "\n".join(lines)

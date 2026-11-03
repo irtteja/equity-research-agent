@@ -1,14 +1,16 @@
 {
   "date": "2026-11-03",
-  "generated_at": "2026-11-03T11:34:20.381401",
+  "generated_at": "2026-11-03T11:53:25.548773",
   "graph": {
-    "nodes": 37931,
-    "edges": 65781,
+    "nodes": 45982,
+    "edges": 89486,
     "episodes": 91565,
-    "pending_enrichment": 8739,
+    "pending_enrichment": 16790,
     "by_type": {
       "Company": 867,
+      "ManagementStatement": 7176,
       "MetricValue": 29192,
+      "PriceSnapshot": 875,
       "TrendSummary": 7872
     }
   },
@@ -104,7 +106,19 @@
       "momentum": 1.0,
       "acceleration": "decelerating",
       "periods": 4,
-      "summary": "AARTIIND pat: improving for 3 consecutive periods (latest \u0394 +108.7%, decelerating, strong momentum)"
+      "summary": "AARTIIND pat: improving for 3 consecutive periods (latest \u0394 +108.7%, decelerating, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "This \ncan be accessed at link below: \n \nLink: https://d9bnjb3uan3b2.cloudfront.net/Q2_FY_2027_Concall_Audio_e1169d25a4.mp3 \n \nKindly take the same on record.",
+          "category": "risk",
+          "sentiment": "neutral"
+        },
+        {
+          "statement": "This can be accessed at link below: Link: https://d9bnjb3uan3b2.cloudfront.net/Q2_FY_2027_Concall_Audio_e1169d25a4.mp3 Kindly take the same on record.",
+          "category": "risk",
+          "sentiment": "neutral"
+        }
+      ]
     },
     {
       "ticker": "ABCAPITAL",
@@ -115,7 +129,14 @@
       "momentum": 1.0,
       "acceleration": "steady",
       "periods": 4,
-      "summary": "ABCAPITAL pat: improving for 3 consecutive periods (latest \u0394 +10.6%, steady, strong momentum)"
+      "summary": "ABCAPITAL pat: improving for 3 consecutive periods (latest \u0394 +10.6%, steady, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "The above is for your information, records and dissemination please.",
+          "category": "positive",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
       "ticker": "ABREL",
@@ -126,7 +147,19 @@
       "momentum": 1.0,
       "acceleration": "decelerating",
       "periods": 4,
-      "summary": "ABREL total_income: improving for 3 consecutive periods (latest \u0394 +318.5%, decelerating, strong momentum)"
+      "summary": "ABREL total_income: improving for 3 consecutive periods (latest \u0394 +318.5%, decelerating, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "ealestate.com/abrelcms/uploads/quarterlyearningscall/quarterlyearningscall_1786691991.mp3 This is for your information and record.",
+          "category": "positive",
+          "sentiment": "positive"
+        },
+        {
+          "statement": "ealestate.com/abrelcms/uploads/quarterlyearningscall/quarterlyearningscall_1786691991.mp3 This is for your information and record.",
+          "category": "positive",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
       "ticker": "ACMESOLAR",
@@ -137,7 +170,19 @@
       "momentum": 1.0,
       "acceleration": "accelerating",
       "periods": 4,
-      "summary": "ACMESOLAR revenue: improving for 3 consecutive periods (latest \u0394 +3.4%, accelerating, strong momentum)"
+      "summary": "ACMESOLAR revenue: improving for 3 consecutive periods (latest \u0394 +3.4%, accelerating, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "India has observed its all-time highest peak electricity demand of 256 gigawatt on 25th April '26.",
+          "category": "positive",
+          "sentiment": "positive"
+        },
+        {
+          "statement": "This milestone surpasses the previous all-time high of 250 gigawatt recorded on 30th May '24 and exceeds the peak of 245 gigawatt observed on 9th January '26.",
+          "category": "positive",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
       "ticker": "ADANIPOWER",
@@ -148,7 +193,19 @@
       "momentum": 1.0,
       "acceleration": "accelerating",
       "periods": 4,
-      "summary": "ADANIPOWER revenue: improving for 3 consecutive periods (latest \u0394 +2.8%, accelerating, strong momentum)"
+      "summary": "ADANIPOWER revenue: improving for 3 consecutive periods (latest \u0394 +2.8%, accelerating, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "These statements are not the guarantee of future performance and involve risks and uncertainties that are difficult to predict.",
+          "category": "risk",
+          "sentiment": "negative"
+        },
+        {
+          "statement": "As a result, we have seen strong growth in revenues and EBITDA and ended the quarter with a solid profit after tax of INR7,000 crores.",
+          "category": "positive",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
       "ticker": "AEGISVOPAK",
@@ -159,7 +216,19 @@
       "momentum": 1.0,
       "acceleration": "decelerating",
       "periods": 4,
-      "summary": "AEGISVOPAK pbt: improving for 3 consecutive periods (latest \u0394 +34.4%, decelerating, strong momentum)"
+      "summary": "AEGISVOPAK pbt: improving for 3 consecutive periods (latest \u0394 +34.4%, decelerating, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "Our strategically located network now spans key ports across India, supported by integrated multi- modal evacuation -- that means pipelines, railways, and road -- placing us at the center of India\u2019s e",
+          "category": "positive",
+          "sentiment": "positive"
+        },
+        {
+          "statement": "Together, this combination drives consistently high standards of safety, reliability, and environmental stewardship, and we believe it creates a durable competitive advantage that is difficult to repl",
+          "category": "risk",
+          "sentiment": "negative"
+        }
+      ]
     },
     {
       "ticker": "AEQUS",
@@ -170,7 +239,19 @@
       "momentum": 1.0,
       "acceleration": "accelerating",
       "periods": 4,
-      "summary": "AEQUS revenue: improving for 3 consecutive periods (latest \u0394 +3.4%, accelerating, strong momentum)"
+      "summary": "AEQUS revenue: improving for 3 consecutive periods (latest \u0394 +3.4%, accelerating, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "These statements should be viewed together with our business risks, which may lead to actual results and performance differing materially from what is expressed or implied.",
+          "category": "risk",
+          "sentiment": "negative"
+        },
+        {
+          "statement": "The first half of '27 has taken that ambition forward with a growing business, deeper customer relationships and longer-term programs that give us real substance to the platform we are building.",
+          "category": "positive",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
       "ticker": "AEROFLEX",
@@ -181,7 +262,8 @@
       "momentum": 1.0,
       "acceleration": "decelerating",
       "periods": 4,
-      "summary": "AEROFLEX revenue: improving for 3 consecutive periods (latest \u0394 +42.6%, decelerating, strong momentum)"
+      "summary": "AEROFLEX revenue: improving for 3 consecutive periods (latest \u0394 +42.6%, decelerating, strong momentum)",
+      "mgmt": []
     },
     {
       "ticker": "AJANTPHARM",
@@ -192,7 +274,8 @@
       "momentum": 1.0,
       "acceleration": "steady",
       "periods": 4,
-      "summary": "AJANTPHARM revenue: improving for 3 consecutive periods (latest \u0394 +10.3%, steady, strong momentum)"
+      "summary": "AJANTPHARM revenue: improving for 3 consecutive periods (latest \u0394 +10.3%, steady, strong momentum)",
+      "mgmt": []
     },
     {
       "ticker": "AKUMS",
@@ -203,7 +286,8 @@
       "momentum": 1.0,
       "acceleration": "accelerating",
       "periods": 4,
-      "summary": "AKUMS pat: improving for 3 consecutive periods (latest \u0394 +13.4%, accelerating, strong momentum)"
+      "summary": "AKUMS pat: improving for 3 consecutive periods (latest \u0394 +13.4%, accelerating, strong momentum)",
+      "mgmt": []
     },
     {
       "ticker": "APOLLOHOSP",
@@ -214,7 +298,8 @@
       "momentum": 1.0,
       "acceleration": "decelerating",
       "periods": 4,
-      "summary": "APOLLOHOSP pat: improving for 3 consecutive periods (latest \u0394 +10.7%, decelerating, strong momentum)"
+      "summary": "APOLLOHOSP pat: improving for 3 consecutive periods (latest \u0394 +10.7%, decelerating, strong momentum)",
+      "mgmt": []
     },
     {
       "ticker": "APTUS",
@@ -225,7 +310,8 @@
       "momentum": 1.0,
       "acceleration": "steady",
       "periods": 4,
-      "summary": "APTUS total_income: improving for 3 consecutive periods (latest \u0394 +3.0%, steady, strong momentum)"
+      "summary": "APTUS total_income: improving for 3 consecutive periods (latest \u0394 +3.0%, steady, strong momentum)",
+      "mgmt": []
     },
     {
       "ticker": "ASAHIINDIA",
@@ -236,7 +322,8 @@
       "momentum": 1.0,
       "acceleration": "accelerating",
       "periods": 4,
-      "summary": "ASAHIINDIA revenue: improving for 3 consecutive periods (latest \u0394 +4.4%, accelerating, strong momentum)"
+      "summary": "ASAHIINDIA revenue: improving for 3 consecutive periods (latest \u0394 +4.4%, accelerating, strong momentum)",
+      "mgmt": []
     },
     {
       "ticker": "ATGL",
@@ -247,7 +334,8 @@
       "momentum": 1.0,
       "acceleration": "decelerating",
       "periods": 4,
-      "summary": "ATGL revenue: improving for 3 consecutive periods (latest \u0394 +10.6%, decelerating, strong momentum)"
+      "summary": "ATGL revenue: improving for 3 consecutive periods (latest \u0394 +10.6%, decelerating, strong momentum)",
+      "mgmt": []
     },
     {
       "ticker": "ATUL",
@@ -258,7 +346,8 @@
       "momentum": 1.0,
       "acceleration": "accelerating",
       "periods": 4,
-      "summary": "ATUL total_income: improving for 3 consecutive periods (latest \u0394 +2.4%, accelerating, strong momentum)"
+      "summary": "ATUL total_income: improving for 3 consecutive periods (latest \u0394 +2.4%, accelerating, strong momentum)",
+      "mgmt": []
     }
   ],
   "strong_deteriorating": [
@@ -271,7 +360,8 @@
       "momentum": -1.0,
       "acceleration": "steady",
       "periods": 4,
-      "summary": "ACC pat: deteriorating for 3 consecutive periods (latest \u0394 -36.7%, steady, strong momentum)"
+      "summary": "ACC pat: deteriorating for 3 consecutive periods (latest \u0394 -36.7%, steady, strong momentum)",
+      "mgmt": []
     },
     {
       "ticker": "BELRISE",
@@ -282,7 +372,19 @@
       "momentum": -1.0,
       "acceleration": "accelerating",
       "periods": 4,
-      "summary": "BELRISE ebit: deteriorating for 3 consecutive periods (latest \u0394 -2.7%, accelerating, strong momentum)"
+      "summary": "BELRISE ebit: deteriorating for 3 consecutive periods (latest \u0394 -2.7%, accelerating, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "That customer relationship was foundational to our growth, and we are grateful for the trust they placed in us.",
+          "category": "positive",
+          "sentiment": "positive"
+        },
+        {
+          "statement": "We have expanded our customer base, adding new programs and growing our content per vehicle across multiple categories.",
+          "category": "positive",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
       "ticker": "BHARATFORG",
@@ -293,7 +395,19 @@
       "momentum": -1.0,
       "acceleration": "decelerating",
       "periods": 4,
-      "summary": "BHARATFORG pat: deteriorating for 3 consecutive periods (latest \u0394 -138.5%, decelerating, strong momentum)"
+      "summary": "BHARATFORG pat: deteriorating for 3 consecutive periods (latest \u0394 -138.5%, decelerating, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "This 26.2% bore the impact of escalation in energy prices and other input cost and logistics.",
+          "category": "risk",
+          "sentiment": "neutral"
+        },
+        {
+          "statement": "The overall cost impact of these costs was about 160 basis points on our EBITDA margin and we continue to work on the recovery of these indirect cost increases with our customers.",
+          "category": "risk",
+          "sentiment": "neutral"
+        }
+      ]
     },
     {
       "ticker": "BTML",
@@ -304,7 +418,8 @@
       "momentum": -1.0,
       "acceleration": "decelerating",
       "periods": 4,
-      "summary": "BTML pat: deteriorating for 3 consecutive periods (latest \u0394 -62.7%, decelerating, strong momentum)"
+      "summary": "BTML pat: deteriorating for 3 consecutive periods (latest \u0394 -62.7%, decelerating, strong momentum)",
+      "mgmt": []
     },
     {
       "ticker": "CHALET",
@@ -315,7 +430,19 @@
       "momentum": -1.0,
       "acceleration": "accelerating",
       "periods": 4,
-      "summary": "CHALET revenue: deteriorating for 3 consecutive periods (latest \u0394 -8.2%, accelerating, strong momentum)"
+      "summary": "CHALET revenue: deteriorating for 3 consecutive periods (latest \u0394 -8.2%, accelerating, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "We appreciate this forum because it allows us to share our take on the macro and the micro factors that shape not only our current performance, but also our strategy and roadmap ahead.",
+          "category": "risk",
+          "sentiment": "neutral"
+        },
+        {
+          "statement": "On the other hand, domestic and leisure witnessed strong demand driven by strength of domestic industry, rising affluence, changing consumer preferences, and growing discretionary spend.",
+          "category": "positive",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
       "ticker": "COHANCE",
@@ -326,7 +453,8 @@
       "momentum": -1.0,
       "acceleration": "decelerating",
       "periods": 4,
-      "summary": "COHANCE pat: deteriorating for 3 consecutive periods (latest \u0394 -643.8%, decelerating, strong momentum)"
+      "summary": "COHANCE pat: deteriorating for 3 consecutive periods (latest \u0394 -643.8%, decelerating, strong momentum)",
+      "mgmt": []
     },
     {
       "ticker": "CRISIL",
@@ -337,7 +465,19 @@
       "momentum": -1.0,
       "acceleration": "steady",
       "periods": 4,
-      "summary": "CRISIL pat: deteriorating for 3 consecutive periods (latest \u0394 -5.5%, steady, strong momentum)"
+      "summary": "CRISIL pat: deteriorating for 3 consecutive periods (latest \u0394 -5.5%, steady, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "These are subject to change based on changing policies of the company and macro environment.",
+          "category": "risk",
+          "sentiment": "neutral"
+        },
+        {
+          "statement": "As a policy, company reframes from giving specific quantitative guidance on its future performance.",
+          "category": "guidance",
+          "sentiment": "neutral"
+        }
+      ]
     },
     {
       "ticker": "DISHTV",
@@ -348,7 +488,19 @@
       "momentum": -1.0,
       "acceleration": "accelerating",
       "periods": 4,
-      "summary": "DISHTV ebit: deteriorating for 3 consecutive periods (latest \u0394 -34.8%, accelerating, strong momentum)"
+      "summary": "DISHTV ebit: deteriorating for 3 consecutive periods (latest \u0394 -34.8%, accelerating, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "Dish TV responded proactively to changing consumer expectations, technological disruptions and intensifying industry competition.",
+          "category": "guidance",
+          "sentiment": "neutral"
+        },
+        {
+          "statement": "Our Company undertook targeted initiatives to strengthen our digital capabilities, enhance customer engagement and recalibrate our strategic focus.",
+          "category": "guidance",
+          "sentiment": "neutral"
+        }
+      ]
     },
     {
       "ticker": "DOMS",
@@ -359,7 +511,19 @@
       "momentum": -1.0,
       "acceleration": "steady",
       "periods": 4,
-      "summary": "DOMS pat: deteriorating for 3 consecutive periods (latest \u0394 -15.4%, steady, strong momentum)"
+      "summary": "DOMS pat: deteriorating for 3 consecutive periods (latest \u0394 -15.4%, steady, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "In case of discrepancy, the audio recordings uploaded on the Company\u2019s website will prevail.",
+          "category": "positive",
+          "sentiment": "positive"
+        },
+        {
+          "statement": "We were able to maintain our growth momentum in Q1 FY27 despite a difficult external environment, including a sharp increase and continued volatility in raw material prices.",
+          "category": "guidance",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
       "ticker": "HGINFRA",
@@ -370,7 +534,8 @@
       "momentum": -1.0,
       "acceleration": "decelerating",
       "periods": 4,
-      "summary": "HGINFRA pat: deteriorating for 3 consecutive periods (latest \u0394 -152.6%, decelerating, strong momentum)"
+      "summary": "HGINFRA pat: deteriorating for 3 consecutive periods (latest \u0394 -152.6%, decelerating, strong momentum)",
+      "mgmt": []
     },
     {
       "ticker": "IGL",
@@ -381,7 +546,19 @@
       "momentum": -1.0,
       "acceleration": "decelerating",
       "periods": 4,
-      "summary": "IGL pat: deteriorating for 3 consecutive periods (latest \u0394 -90.0%, decelerating, strong momentum)"
+      "summary": "IGL pat: deteriorating for 3 consecutive periods (latest \u0394 -90.0%, decelerating, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "Toll Free Numbers - USA: 18667462133 / UK: 08081011573 / Singapore: 8001012045 / Hong Kong: 800964448 #PhillipCapital (India) Private Limited remains committed to adhere to all regulatory guidelines a",
+          "category": "guidance",
+          "sentiment": "positive"
+        },
+        {
+          "statement": "Therefore: \u2022 The proceedings of this call will be recorded. \u2022 The list and full details of participants on the call will be shared by us with the corporate.",
+          "category": "positive",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
       "ticker": "INDHOTEL",
@@ -392,7 +569,8 @@
       "momentum": -1.0,
       "acceleration": "accelerating",
       "periods": 4,
-      "summary": "INDHOTEL pat: deteriorating for 3 consecutive periods (latest \u0394 -2.8%, accelerating, strong momentum)"
+      "summary": "INDHOTEL pat: deteriorating for 3 consecutive periods (latest \u0394 -2.8%, accelerating, strong momentum)",
+      "mgmt": []
     },
     {
       "ticker": "IONEXCHANG",
@@ -403,7 +581,19 @@
       "momentum": -1.0,
       "acceleration": "decelerating",
       "periods": 4,
-      "summary": "IONEXCHANG ebit: deteriorating for 3 consecutive periods (latest \u0394 -63.2%, decelerating, strong momentum)"
+      "summary": "IONEXCHANG ebit: deteriorating for 3 consecutive periods (latest \u0394 -63.2%, decelerating, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "We have one of the largest service networks in Asia-Pacific region, about 200,000 plus worldwide installations, including 3,000 plus core industry projects with world-class manufacturing facilities an",
+          "category": "guidance",
+          "sentiment": "neutral"
+        },
+        {
+          "statement": "This is, again, I think, one of the first times we are showing our company in this way.",
+          "category": "positive",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
       "ticker": "JINDALSAW",
@@ -414,7 +604,19 @@
       "momentum": -1.0,
       "acceleration": "decelerating",
       "periods": 4,
-      "summary": "JINDALSAW pat: deteriorating for 3 consecutive periods (latest \u0394 -61.1%, decelerating, strong momentum)"
+      "summary": "JINDALSAW pat: deteriorating for 3 consecutive periods (latest \u0394 -61.1%, decelerating, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "No unpublished price sensitive information (UPSI) is intended to be discussed during the meeting.",
+          "category": "guidance",
+          "sentiment": "neutral"
+        },
+        {
+          "statement": "No unpublished price sensitive information (UPSI) is intended to be discussed during the meeting.",
+          "category": "guidance",
+          "sentiment": "neutral"
+        }
+      ]
     },
     {
       "ticker": "MARUTI",
@@ -425,7 +627,8 @@
       "momentum": -1.0,
       "acceleration": "decelerating",
       "periods": 4,
-      "summary": "MARUTI pat: deteriorating for 3 consecutive periods (latest \u0394 -28.4%, decelerating, strong momentum)"
+      "summary": "MARUTI pat: deteriorating for 3 consecutive periods (latest \u0394 -28.4%, decelerating, strong momentum)",
+      "mgmt": []
     }
   ],
   "inflections": [
@@ -438,7 +641,19 @@
       "momentum": 0.495,
       "acceleration": "steady",
       "periods": 3,
-      "summary": "360ONE revenue: deteriorating for 1 consecutive periods (latest \u0394 -6.7%, steady, moderate momentum)"
+      "summary": "360ONE revenue: deteriorating for 1 consecutive periods (latest \u0394 -6.7%, steady, moderate momentum)",
+      "mgmt": [
+        {
+          "statement": "360 ONE WAM LIMITED \nCorporate & Registered Office: 360 ONE Centre, Kamala City, Senapati Bapat Marg, Lower Parel (West), Mumbai \u2013 400 013 \nTel (91-22) 4876 5100       Fax (91-22) 4341 1895        Ema",
+          "category": "guidance",
+          "sentiment": "negative"
+        },
+        {
+          "statement": "We request you to kindly take the above information on record.",
+          "category": "positive",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
       "ticker": "3MINDIA",
@@ -449,7 +664,19 @@
       "momentum": 0.529,
       "acceleration": "accelerating",
       "periods": 4,
-      "summary": "3MINDIA revenue: stable for 1 consecutive periods (latest \u0394 +1.7%, accelerating, moderate momentum)"
+      "summary": "3MINDIA revenue: stable for 1 consecutive periods (latest \u0394 +1.7%, accelerating, moderate momentum)",
+      "mgmt": [
+        {
+          "statement": "Thanking you \nFor 3M India Limited \n \n           \n    \n                                                                                           \nPratap Rudra Bhuvanagiri  \nCompany Secretary & \nCompl",
+          "category": "risk",
+          "sentiment": "neutral"
+        },
+        {
+          "statement": "To forecast things better, 3M undertook a study to understand \nwhich technologies will most influence the future of how we \nlive, work, and interact within our communities.",
+          "category": "guidance",
+          "sentiment": "neutral"
+        }
+      ]
     },
     {
       "ticker": "AADHARHFC",
@@ -460,7 +687,19 @@
       "momentum": 1.0,
       "acceleration": "steady",
       "periods": 3,
-      "summary": "AADHARHFC revenue: stable for 1 consecutive periods (latest \u0394 +0.8%, steady, strong momentum)"
+      "summary": "AADHARHFC revenue: stable for 1 consecutive periods (latest \u0394 +0.8%, steady, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "The above information is also available on the website of the Company and can be accessed at: \n \nhttps://aadharhousing.com/disclosures-under-regulation-62-of-the-sebi-lodr-regulation-2015-\npdf/schedul",
+          "category": "positive",
+          "sentiment": "positive"
+        },
+        {
+          "statement": "We are pleased to close the financial year on a very strong note with \nconsistent execution across growth, asset quality and profitability metrics.",
+          "category": "positive",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
       "ticker": "AARTIPHARM",
@@ -471,7 +710,19 @@
       "momentum": 0.761,
       "acceleration": "accelerating",
       "periods": 4,
-      "summary": "AARTIPHARM revenue: improving for 1 consecutive periods (latest \u0394 +13.9%, accelerating, strong momentum)"
+      "summary": "AARTIPHARM revenue: improving for 1 consecutive periods (latest \u0394 +13.9%, accelerating, strong momentum)",
+      "mgmt": [
+        {
+          "statement": "Toll Free Number: USA: 18667462133 / UK: 08081011573 / Singapore: 8001012045 / Hong Kong: 800964448 \n #PhillipCapital (India) Private Limited remains committed to adhere to all regulatory guidelines a",
+          "category": "guidance",
+          "sentiment": "positive"
+        },
+        {
+          "statement": "Therefore: \n\u2022The proceedings of this call will be recorded. \n\u2022The list and full details of participants on the call will be shared by us with the corporate.",
+          "category": "positive",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
       "ticker": "AASTHA",
@@ -482,7 +733,8 @@
       "momentum": -1.0,
       "acceleration": "steady",
       "periods": 2,
-      "summary": "AASTHA revenue: deteriorating for 1 consecutive periods (latest \u0394 -40.1%, steady, strong momentum)"
+      "summary": "AASTHA revenue: deteriorating for 1 consecutive periods (latest \u0394 -40.1%, steady, strong momentum)",
+      "mgmt": []
     },
     {
       "ticker": "AAVAS",
@@ -493,7 +745,8 @@
       "momentum": 0.859,
       "acceleration": "steady",
       "periods": 4,
-      "summary": "AAVAS revenue: improving for 1 consecutive periods (latest \u0394 +3.9%, steady, strong momentum)"
+      "summary": "AAVAS revenue: improving for 1 consecutive periods (latest \u0394 +3.9%, steady, strong momentum)",
+      "mgmt": []
     },
     {
       "ticker": "ABB",
@@ -504,7 +757,19 @@
       "momentum": 0.239,
       "acceleration": "steady",
       "periods": 4,
-      "summary": "ABB revenue: improving for 1 consecutive periods (latest \u0394 +11.8%, steady, weak momentum)"
+      "summary": "ABB revenue: improving for 1 consecutive periods (latest \u0394 +11.8%, steady, weak momentum)",
+      "mgmt": [
+        {
+          "statement": "Please note that this conference \nis being recorded and any unauthorized recording of this call is strictly prohibited.",
+          "category": "positive",
+          "sentiment": "positive"
+        },
+        {
+          "statement": "The \nrecording will be made available on the company's and service website subsequently.",
+          "category": "positive",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
       "ticker": "ABCAPITAL",
@@ -515,7 +780,14 @@
       "momentum": 0.47,
       "acceleration": "decelerating",
       "periods": 4,
-      "summary": "ABCAPITAL revenue: improving for 1 consecutive periods (latest \u0394 +15.0%, decelerating, moderate momentum)"
+      "summary": "ABCAPITAL revenue: improving for 1 consecutive periods (latest \u0394 +15.0%, decelerating, moderate momentum)",
+      "mgmt": [
+        {
+          "statement": "The above is for your information, records and dissemination please.",
+          "category": "positive",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
       "ticker": "ABDL",
@@ -526,7 +798,19 @@
       "momentum": 0.034,
       "acceleration": "decelerating",
       "periods": 4,
-      "summary": "ABDL revenue: improving for 1 consecutive periods (latest \u0394 +15.3%, decelerating, weak momentum)"
+      "summary": "ABDL revenue: improving for 1 consecutive periods (latest \u0394 +15.3%, decelerating, weak momentum)",
+      "mgmt": [
+        {
+          "statement": "The \nabove \ntranscript \nis \nalso \navailable \non \nthe \nwebsite \nof \nthe \nCompany: \nhttps://www.abdindia.com/  \n \nThe above is for your information and record.",
+          "category": "positive",
+          "sentiment": "positive"
+        },
+        {
+          "statement": "ABD has entered FY '27 with a stronger portfolio, a sharper operating model, and a clear focus \non building a future-ready spirit\u2019s company.",
+          "category": "positive",
+          "sentiment": "positive"
+        }
+      ]
     },
     {
       "ticker": "ABFRL",
@@ -537,148 +821,230 @@
       "momentum": 0.308,
       "acceleration": "accelerating",
       "periods": 4,
-      "summary": "ABFRL revenue: stable for 1 consecutive periods (latest \u0394 +1.8%, accelerating, moderate momentum)"
+      "summary": "ABFRL revenue: stable for 1 consecutive periods (latest \u0394 +1.8%, accelerating, moderate momentum)",
+      "mgmt": [
+        {
+          "statement": "Housekeeping \nquestions can be dealt separately with the IR team.",
+          "category": "positive",
+          "sentiment": "positive"
+        },
+        {
+          "statement": "Looking back \nat the quarter, the overall demand environment remained largely in line with previous quarters \nwith cautious consumer sentiment across key categories.",
+          "category": "risk",
+          "sentiment": "positive"
+        }
+      ]
     }
   ],
   "sector_pulse": {
     "Auto": {
-      "improving": 7,
-      "deteriorating": 2,
-      "stable": 2,
+      "improving": 15,
+      "deteriorating": 5,
+      "stable": 8,
       "tickers_up": [
         "ASHOKLEY",
         "BAJAJ-AUTO",
-        "EICHERMOT",
-        "HEROMOTOCO",
-        "M&M"
+        "BHARATFORG",
+        "BOSCHLTD",
+        "EICHERMOT"
       ],
       "tickers_down": [
+        "BHARATFORG",
+        "HYUNDAI",
         "M&M",
-        "MARUTI"
+        "MARUTI",
+        "TIINDIA"
+      ]
+    },
+    "Commodities": {
+      "improving": 5,
+      "deteriorating": 4,
+      "stable": 5,
+      "tickers_up": [
+        "AMBUJACEM",
+        "PIDILITIND",
+        "SHREECEM",
+        "SRF",
+        "UPL"
+      ],
+      "tickers_down": [
+        "AMBUJACEM",
+        "PIDILITIND",
+        "SHREECEM",
+        "UPL"
       ]
     },
     "Consumer": {
-      "improving": 4,
-      "deteriorating": 1,
-      "stable": 2,
+      "improving": 14,
+      "deteriorating": 8,
+      "stable": 7,
       "tickers_up": [
-        "DMART",
-        "TITAN",
-        "TRENT",
-        "VMART"
+        "AMBER",
+        "BATAINDIA",
+        "BLUESTARCO",
+        "CROMPTON",
+        "DIXON"
       ],
       "tickers_down": [
-        "TRENT"
+        "BATAINDIA",
+        "BLUESTARCO",
+        "CROMPTON",
+        "DIXON",
+        "HAVELLS"
       ]
     },
     "Energy": {
-      "improving": 7,
-      "deteriorating": 5,
-      "stable": 5,
+      "improving": 41,
+      "deteriorating": 23,
+      "stable": 27,
       "tickers_up": [
+        "ABB",
+        "ADANIENSOL",
         "ADANIGREEN",
-        "ADANIPORTS",
-        "BPCL",
-        "NTPC",
-        "ONGC"
+        "ADANIPOWER",
+        "AEGISLOG"
       ],
       "tickers_down": [
-        "ADANIPORTS",
-        "NTPC",
-        "ONGC",
-        "POWERGRID",
-        "TATAPOWER"
+        "ABB",
+        "ATGL",
+        "BHEL",
+        "CASTROLIND",
+        "CESC"
       ]
     },
     "FMCG": {
-      "improving": 7,
-      "deteriorating": 3,
-      "stable": 5,
+      "improving": 15,
+      "deteriorating": 7,
+      "stable": 10,
       "tickers_up": [
         "BRITANNIA",
         "COLPAL",
         "DABUR",
-        "HINDUNILVR",
-        "ITC"
+        "GODFRYPHLP",
+        "GODREJCP"
       ],
       "tickers_down": [
         "BRITANNIA",
+        "GODREJCP",
         "HINDUNILVR",
-        "ITC"
+        "ITC",
+        "PATANJALI"
       ]
     },
     "Finance": {
-      "improving": 14,
-      "deteriorating": 1,
-      "stable": 6,
+      "improving": 34,
+      "deteriorating": 7,
+      "stable": 17,
       "tickers_up": [
         "AUBANK",
         "AXISBANK",
         "BAJAJFINSV",
         "BAJFINANCE",
-        "BANDHANBNK"
+        "BANKBARODA"
       ],
       "tickers_down": [
-        "HDFCLIFE"
+        "HDFCLIFE",
+        "LICHSGFIN",
+        "MFSL",
+        "PFC",
+        "RECLTD"
+      ]
+    },
+    "Healthcare": {
+      "improving": 4,
+      "deteriorating": 2,
+      "stable": 2,
+      "tickers_up": [
+        "APOLLOHOSP",
+        "FORTIS",
+        "KIMS",
+        "MAXHEALTH"
+      ],
+      "tickers_down": [
+        "FORTIS",
+        "KIMS"
       ]
     },
     "IT": {
-      "improving": 9,
-      "deteriorating": 4,
-      "stable": 5,
+      "improving": 10,
+      "deteriorating": 5,
+      "stable": 6,
       "tickers_up": [
         "COFORGE",
         "HCLTECH",
         "INFY",
-        "MPHASIS",
-        "OFSS"
+        "LTM",
+        "MPHASIS"
       ],
       "tickers_down": [
         "HCLTECH",
+        "LTM",
         "OFSS",
         "PERSISTENT",
         "TCS"
       ]
     },
     "Infra": {
-      "improving": 6,
-      "deteriorating": 4,
-      "stable": 5,
+      "improving": 9,
+      "deteriorating": 6,
+      "stable": 7,
       "tickers_up": [
-        "ACC",
-        "ADANIENT",
+        "ADANIPORTS",
+        "BHARTIARTL",
+        "CUMMINSIND",
         "GRASIM",
-        "LT",
-        "SHREECEM"
+        "INDHOTEL"
       ],
       "tickers_down": [
-        "ACC",
-        "ADANIENT",
-        "LT",
-        "SHREECEM"
+        "ADANIPORTS",
+        "CUMMINSIND",
+        "INDHOTEL",
+        "INDIGO",
+        "INDUSTOWER"
+      ]
+    },
+    "Media": {
+      "improving": 10,
+      "deteriorating": 6,
+      "stable": 7,
+      "tickers_up": [
+        "DBCORP",
+        "MPSLTD",
+        "NAZARA",
+        "NETWORK18",
+        "PFOCUS"
+      ],
+      "tickers_down": [
+        "DBCORP",
+        "NAZARA",
+        "NETWORK18",
+        "PVRINOX",
+        "SUNTV"
       ]
     },
     "Metals": {
-      "improving": 5,
-      "deteriorating": 3,
-      "stable": 5,
+      "improving": 15,
+      "deteriorating": 8,
+      "stable": 9,
       "tickers_up": [
-        "COALINDIA",
+        "ADANIENT",
+        "APLAPOLLO",
         "HINDALCO",
-        "JSWSTEEL",
-        "TATASTEEL",
-        "VEDL"
+        "HINDCOPPER",
+        "HINDZINC"
       ],
       "tickers_down": [
+        "ADANIENT",
+        "HINDZINC",
         "JSWSTEEL",
-        "TATASTEEL",
-        "VEDL"
+        "NATIONALUM",
+        "SAIL"
       ]
     },
     "Other": {
-      "improving": 730,
-      "deteriorating": 439,
-      "stable": 462,
+      "improving": 596,
+      "deteriorating": 367,
+      "stable": 378,
       "tickers_up": [
         "360ONE",
         "3MINDIA",
@@ -689,40 +1055,58 @@
       "tickers_down": [
         "360ONE",
         "AASTHA",
-        "ABB",
         "ABFRL",
-        "ABSLAMC"
+        "ABSLAMC",
+        "ACC"
       ]
     },
     "Pharma": {
-      "improving": 8,
-      "deteriorating": 4,
-      "stable": 7,
+      "improving": 19,
+      "deteriorating": 13,
+      "stable": 13,
       "tickers_up": [
+        "AJANTPHARM",
+        "ALKEM",
         "AUROPHARMA",
         "BIOCON",
-        "CIPLA",
-        "DIVISLAB",
-        "DRREDDY"
+        "CIPLA"
       ],
       "tickers_down": [
+        "AJANTPHARM",
+        "ALKEM",
         "BIOCON",
         "DRREDDY",
-        "SUNPHARMA",
-        "TORNTPHARM"
+        "GLENMARK"
       ]
     },
-    "Telecom": {
-      "improving": 2,
-      "deteriorating": 1,
-      "stable": 2,
+    "Realty": {
+      "improving": 10,
+      "deteriorating": 6,
+      "stable": 9,
       "tickers_up": [
-        "BHARTIARTL",
-        "INDUSTOWER"
+        "ABREL",
+        "ANANTRAJ",
+        "BRIGADE",
+        "DLF",
+        "GODREJPROP"
       ],
       "tickers_down": [
-        "INDUSTOWER"
+        "ANANTRAJ",
+        "BRIGADE",
+        "DLF",
+        "LODHA",
+        "PHOENIXLTD"
       ]
+    },
+    "Services": {
+      "improving": 2,
+      "deteriorating": 0,
+      "stable": 1,
+      "tickers_up": [
+        "DMART",
+        "ETERNAL"
+      ],
+      "tickers_down": []
     }
   },
   "recent_events": [
@@ -737,11 +1121,149 @@
       "event": "Acquisition"
     }
   ],
+  "value_signals": [
+    {
+      "ticker": "CSBBANK",
+      "close": 295.25,
+      "near_low_pct": 0.41,
+      "trend_metric": "total_income",
+      "trend_delta": 6.36,
+      "streak": 1,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "JSWDULUX",
+      "close": 260.25,
+      "near_low_pct": 0.46,
+      "trend_metric": "total_income",
+      "trend_delta": 4.23,
+      "streak": 3,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "SIGNATURE",
+      "close": 700.0,
+      "near_low_pct": 0.72,
+      "trend_metric": "finance_costs",
+      "trend_delta": 68.28,
+      "streak": 3,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "CLEAN",
+      "close": 656.9,
+      "near_low_pct": 0.75,
+      "trend_metric": "revenue",
+      "trend_delta": 11.53,
+      "streak": 3,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "VIPIND",
+      "close": 244.75,
+      "near_low_pct": 1.05,
+      "trend_metric": "ebit",
+      "trend_delta": 64.77,
+      "streak": 1,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "MFSL",
+      "close": 1185.1,
+      "near_low_pct": 1.07,
+      "trend_metric": "depreciation",
+      "trend_delta": 2.0,
+      "streak": 2,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "ACI",
+      "close": 439.9,
+      "near_low_pct": 1.1,
+      "trend_metric": "pat",
+      "trend_delta": 3.23,
+      "streak": 1,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "ZEEL",
+      "close": 61.6,
+      "near_low_pct": 1.13,
+      "trend_metric": "tax_expense",
+      "trend_delta": 8850.0,
+      "streak": 2,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "LEAPIND",
+      "close": 112.92,
+      "near_low_pct": 1.23,
+      "trend_metric": "revenue",
+      "trend_delta": 3.82,
+      "streak": 1,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "ARVINDFASN",
+      "close": 351.15,
+      "near_low_pct": 1.25,
+      "trend_metric": "finance_costs",
+      "trend_delta": 3.23,
+      "streak": 3,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "POLICYBZR",
+      "close": 928.0,
+      "near_low_pct": 1.31,
+      "trend_metric": "finance_costs",
+      "trend_delta": 4.85,
+      "streak": 3,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "KEC",
+      "close": 315.35,
+      "near_low_pct": 1.4,
+      "trend_metric": "depreciation",
+      "trend_delta": 4.31,
+      "streak": 1,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "3MINDIA",
+      "close": 28885.0,
+      "near_low_pct": 1.4,
+      "trend_metric": "total_expenses",
+      "trend_delta": 3.74,
+      "streak": 2,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "SWIGGY",
+      "close": 176.72,
+      "near_low_pct": 1.45,
+      "trend_metric": "revenue",
+      "trend_delta": 11.14,
+      "streak": 3,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "ATUL",
+      "close": 5067.5,
+      "near_low_pct": 1.45,
+      "trend_metric": "total_income",
+      "trend_delta": 2.35,
+      "streak": 3,
+      "price_zone": "near_low"
+    }
+  ],
   "summary": {
     "total_trends": 7872,
     "strong_positive": 295,
     "strong_negative": 47,
     "inflections": 695,
-    "sectors_tracked": 11
+    "sectors_tracked": 15,
+    "value_signals": 20
   }
 }

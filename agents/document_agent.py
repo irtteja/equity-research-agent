@@ -72,6 +72,20 @@ _BOILERPLATE_KW = {
     "webcast through our website", "financial statements", "quarterly fact sheet",
     "available on our website", "press releases are also", "archive including",
     "please note",
+    # Concall transcript boilerplate
+    "forward-looking statements", "forward looking statements",
+    "on behalf of", "i welcome you all", "welcome you to",
+    "page 1 of", "page 2 of", "page 3 of",
+    "moderator:", "investor relations", "icici securities",
+    "kotak securities", "antique stock broking", "iifl securities",
+    "motilal oswal", "hdfc securities", "emkay global",
+    "this transcript", "earnings call", "earnings conference call",
+    "din:", "e-voting", "remote e-voting", "login method",
+    "independent director", "senior management", "as on ",
+    "not the guarantees", "not guarantees", "actual results may",
+    "beliefs, opinion", "beliefs and opinion",
+    "reconciliation of", "non-gaap", "as per ind as",
+    "safe harbor", "safe harbour",
 }
 
 
