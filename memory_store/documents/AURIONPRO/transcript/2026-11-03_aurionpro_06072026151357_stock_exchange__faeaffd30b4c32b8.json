@@ -1,0 +1,17 @@
+{
+  "doc_id": "faeaffd30b4c32b8",
+  "source_file": "/tmp/concall_AURIONPRO_dgfh7s5y/AURIONPRO_06072026151357_Stock_Exchange_intimation_-_Earnings_call_-_July_2026_sd.pdf",
+  "source_name": "AURIONPRO_06072026151357_Stock_Exchange_intimation_-_Earnings_call_-_July_2026_sd.pdf",
+  "ingested_at": "2026-11-03",
+  "symbol": "AURIONPRO",
+  "doc_type": "transcript",
+  "period": "Q1 FY27",
+  "confidence": "high",
+  "pages": 2,
+  "extract_method": "pymupdf",
+  "char_count": 476,
+  "text": "\nFor any queries, please contact: investorrelation@aurionpro.com\n\u001f\nYou are cordially invited to the\nQ1 FY27 Earnings Conference Call of\nAurionpro Solutions Limited\non\nTuesday, 28th July 2026 at 4:00PM IST \n6:30AM (New York Time); 11:30AM (London Time) \n6:30PM (HK/SG Time); 2:30PM (Dubai Time)\nManagement will be represented by: \nMr. Ashish Rai\nGroup CEO & Vice Chairman\nMr. Vipul Parmar\nChief Financial Ofﬁcer\nMr. Ninad Kelkar\nCompany Secretary\n\"Zoom Call Registration Link”\n",
+  "chunks": [
+    "\nFor any queries, please contact: investorrelation@aurionpro.com\n\u001f\nYou are cordially invited to the\nQ1 FY27 Earnings Conference Call of\nAurionpro Solutions Limited\non\nTuesday, 28th July 2026 at 4:00PM IST \n6:30AM (New York Time); 11:30AM (London Time) \n6:30PM (HK/SG Time); 2:30PM (Dubai Time)\nManagement will be represented by: \nMr. Ashish Rai\nGroup CEO & Vice Chairman\nMr. Vipul Parmar\nChief Financial Ofﬁcer\nMr. Ninad Kelkar\nCompany Secretary\n\"Zoom Call Registration Link”\n"
+  ]
+}
