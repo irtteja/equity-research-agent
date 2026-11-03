@@ -9327,5 +9327,51 @@
     "errors": [
       "concall download failed: 19102026182406_Earnings_Conference_Call_Invite.pdf"
     ]
+  },
+  "TIMEX": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 0,
+    "concalls_ingested": 0,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 0,
+    "results_skipped": 0,
+    "errors": [
+      "results: empty_response"
+    ]
+  },
+  "THYROCARE": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "TIMETECHNO": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "TI": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
   }
 }
