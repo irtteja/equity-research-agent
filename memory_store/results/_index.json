@@ -1,5228 +1,3490 @@
 {
-  "BIRLACORPN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 7,
-    "last_updated": "2026-11-03"
-  },
-  "CDSL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 8,
-    "last_updated": "2026-11-03"
-  },
-  "HDFCBANK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RELIANCE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ADANIENT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "APOLLOHOSP": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ADANIPORTS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ASIANPAINT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BAJAJ-AUTO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AXISBANK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BAJFINANCE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BAJAJFINSV": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BEL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BHARTIARTL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CIPLA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BSE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "COALINDIA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Half yearly",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DRREDDY": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "EICHERMOT": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ETERNAL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GRASIM": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HCLTECH": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HDFCLIFE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HINDUNILVR": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HINDALCO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "INFY": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ITC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "INDIGO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ICICIBANK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JSWSTEEL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KOTAKBANK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JIOFIN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "M&M": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MARUTI": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MAXHEALTH": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NESTLEIND": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "POWERGRID": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NTPC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ONGC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SBILIFE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SBIN": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SUNPHARMA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SHRIRAMFIN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TATACONSUM": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TATASTEEL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TECHM": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TITAN": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TCS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TRENT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TMPV": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ABB": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ULTRACEMCO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ADANIENSOL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ADANIGREEN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ADANIPOWER": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AMBUJACEM": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BAJAJHLDNG": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BOSCHLTD": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BANKBARODA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BPCL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BRITANNIA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CANBK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CGPOWER": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CHOLAFIN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CUMMINSIND": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DIVISLAB": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DLF": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DMART": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ENRIN": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "Third quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GAIL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GODREJCP": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HAL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HDFCAMC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HINDZINC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IDEA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HYUNDAI": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IOC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IRFC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LTM": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JINDALSTEL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MAZDOCK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MOTHERSON": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MUTHOOTFIN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PIDILITIND": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PFC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PNB": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "POLYCAB": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "POWERINDIA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SOLARINDS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SIEMENS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TATACAP": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TATAPOWER": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TMCV": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TORNTPHARM": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TVSMOTOR": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "VAML": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "UNIONBANK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "VBL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Third quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ZYDUSLIFE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "VEDL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "WIPRO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "360ONE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AIAENG": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AIIL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ABCAPITAL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AJANTPHARM": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ANTHEM": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ALKEM": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "APARINDS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "APLAPOLLO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ASTERDM": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ASHOKLEY": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ASTRAL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AUROPHARMA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ATGL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AUBANK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BAJAJHFL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BDL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BANKINDIA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BALKRISIND": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BERGEPAINT": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BHEL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BHARATFORG": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BHARTIHEXA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BIOCON": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BLUESTARCO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "COCHINSHIP": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "COFORGE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Half yearly",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "COLPAL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CONCOR": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CRISIL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Third quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "COROMANDEL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DABUR": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DALBHARAT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DIXON": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ENDURANCE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ESCORTS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "FACT": {
-    "latest_period": "2025-12-31",
-    "latest_quarter": "Third quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "EXIDEIND": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "FEDERALBNK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "FLUOROCHEM": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GICRE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "FORTIS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GLAXO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GLENMARK": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GMRAIRPORT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GODFRYPHLP": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GODREJIND": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GODREJPROP": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GROWW": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GVT&D": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HAVELLS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HDBFS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HINDCOPPER": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HEXT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Third quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HEROMOTOCO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HINDPETRO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ICICIAMC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HUDCO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ICICIGI": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ICICILIFE": {
-    "latest_period": "2026-03-31",
-    "latest_quarter": "Fourth quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "INDHOTEL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IDFCFIRSTB": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "INDIANB": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "INDUSINDBK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "INDUSTOWER": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IOB": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IPCALAB": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IRCTC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IREDA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ITCHOTELS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JKCEMENT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JSL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JSWINFRA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JSWENERGY": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JUBLFOOD": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KALYANKJIL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KEI": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KPRMILL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LAURUSLABS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LGEINDIA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LICHSGFIN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LENSKART": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LINDEINDIA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LICI": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LODHA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LTF": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LLOYDSME": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LTTS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LUPIN": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MAHABANK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "M&MFIN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MANKIND": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MARICO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MEDANTA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MEESHO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MFSL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MPHASIS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MRF": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MOTILALOFS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NAM-INDIA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NH": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NATIONALUM": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NAUKRI": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NLCINDIA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NMDC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NHPC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NTPCGREEN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "OBEROIRLTY": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NYKAA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "OFSS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "OIL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PATANJALI": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PAGEIND": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PAYTM": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PERSISTENT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PHOENIXLTD": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PIIND": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PETRONET": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PIRAMALFIN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "POLICYBZR": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PRESTIGE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PREMIERENE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RADICO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RVNL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SAIL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RECLTD": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SBICARD": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SRF": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SCHAEFFLER": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Third quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SHREECEM": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SUNDARMFIN": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SUPREMEIND": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SUZLON": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SWIGGY": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TATAINVEST": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TATACOMM": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "THERMAX": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TIINDIA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TORNTPOWER": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "UBL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "UNOMINDA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "UNITDSPR": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "VMM": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "UPL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "VOLTAS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "WAAREEENER": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "YESBANK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AADHARHFC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AARTIIND": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Half yearly",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AAVAS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ABDL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ABSLAMC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ABREL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ACC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ACE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ACUTAAS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ACMESOLAR": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AEGISLOG": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AETHER": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AEGISVOPAK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AFCONS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AFFLE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AMBER": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ANANDRATHI": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ANANTRAJ": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ANGELONE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ANURAS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "APTUS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "APOLLOTYRE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ARE&M": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ASAHIINDIA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ATUL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ATHERENERG": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "AVANTIFEED": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AWL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AZAD": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BANDHANBNK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BALRAMCHIN": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BATAINDIA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BBOX": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BHARATCOAL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BEML": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BELRISE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BLS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BRIGADE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BSOFT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CAMS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CANHLIFE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CANFINHOME": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CAPLIPOINT": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CARBORUNIV": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CASTROLIND": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Third quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CARTRADE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CEATLTD": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CCL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CEMPRO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CESC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CENTRALBK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CGCL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CHAMBLFERT": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CHENNPETRO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CHOLAHLDNG": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CHOICEIN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CIEINDIA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Third quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CLEAN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CLEANMAX": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CMPDI": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "COHANCE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CONCORDBIO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CREDITACC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CRAFTSMAN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CUB": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CROMPTON": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CPPLUS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CUPID": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CYIENT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DEEPAKFERT": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DEEPAKNTR": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DATAPATTNS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DOMS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DELHIVERY": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DEVYANI": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ECLERX": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "EIDPARRY": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "EIHOTEL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "EMAMILTD": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ELECON": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ELGIEQUIP": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "EMCURE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "EMMVEE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ENGINERSIN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "FINCABLES": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "FIRSTCRY": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "FORCEMOT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "FRACTAL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "FIVESTAR": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "FSL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GALLANTT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GABRIEL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GESHIP": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GILLETTE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GLAND": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GMDCLTD": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GPIL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GRAPHITE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GRANULES": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GRAVITA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GRSE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HBLENGINE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HEGAM": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HFCL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HOMEFIRST": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HONASA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HONAUT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IDBI": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HSCL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IFCI": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IEX": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IGIL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IGL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IKS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IIFL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "INDIACEM": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "INDIAMART": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "INOXINDIA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "INOXWIND": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "INTELLECT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ITI": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IRB": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IRCON": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "J&KBANK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Half yearly",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JBMA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JAINREC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "JINDALSAW": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JKTYRE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JPPOWER": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JMFINANCIL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JSWCEMENT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JUBLINGREA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JWL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JYOTICNC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KAJARIACER": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KAYNES": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KARURVYSYA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KEC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KFINTECH": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KIMS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KIRLOSBROS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KIRLOSENG": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KPIL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KPITTECH": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KSB": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LALPATHLAB": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LEMONTREE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LTFOODS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MANAPPURAM": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MGL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MINDACORP": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MMTC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MRPL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MSUMI": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MTARTECH": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NATCOPHARM": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NAVA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NAVINFLUOR": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NCC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NBCC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NETWEB": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NEULANDLAB": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NSLNISP": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NIACL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "OLAELEC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NUVOCO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NUVAMA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "OLECTRA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PARADEEP": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ONESOURCE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Half yearly",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PCBL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PGEL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PFOCUS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PINELABS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PNBHOUSING": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "POLYMED": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "POONAWALLA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PPLPHARMA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PRIVISCL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PTCIL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PWL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PVRINOX": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RAILTEL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RAINBOW": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RAMCOCEM": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RBLBANK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "REDINGTON": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RHIM": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RITES": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RPOWER": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RKFORGE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RRKABEL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RUBICON": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SAILIFE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SAGILITY": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SAMMAANCAP": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SANSERA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SARDAEN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SCHNEIDER": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SCI": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SHRIPISTON": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SHYAMMETL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SIGNATURE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SJVN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SOBHA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SONACOMS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "STARHEALTH": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "STLTECH": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SUMICHEM": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SUNTV": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SWANCORP": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SYNGENE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SYRMA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TARIL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TATACHEM": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TATAELXSI": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TATATECH": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TDPOWERSYS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TBOTEK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TECHNOE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TENNIND": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TEGA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TEJASNET": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "THANGAMAYL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TRIDENT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TIMKEN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TITAGARH": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TTML": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TRITURBINE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "UCOBANK": {
-    "latest_period": "2025-03-31",
-    "latest_quarter": "Fourth quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "VEDPOWER": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Half yearly",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "UTIAMC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "URBANCO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "USHAMART": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "VOGL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "VISL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "VIJAYA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "VTL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "WELCORP": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "WELSPUNLIV": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "WHIRLPOOL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "WOCKPHARMA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ZEEL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ZENSARTECH": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ZFCVINDIA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "3MINDIA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ZYDUSWELL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AASTHA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "ZENTEC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AARTIPHARM": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ABFRL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ACEVECTOR": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "ABLBL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ACI": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ADROITIND": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "ADVENZYMES": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AEQUS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AEROFLEX": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AEROPLANE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ALPINETEX": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "ALKYLAMINE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AKUMS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AMAGI": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "ANNU": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "AONESTEELS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "AQYLON": {
-    "latest_period": "2025-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "ARCIL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "APOLLO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ARDEE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "ARMEE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "ARVINDFASN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ARVIND": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ASHOKA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ASHAPURMIN": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ASTRAMICRO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ATLANTAELE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AUGMONT": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "AURIONPRO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AXISCADES": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AVALON": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AVL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BAGFILMS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "AYE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BAJAJCON": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BALAJITELE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BALUFORGE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BALAMINES": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BANCOINDIA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BLEL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "BECTORFOOD": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BLACKBUCK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BLUEJET": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BLUESTONE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BORORENEW": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "BTML": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CAPILLARY": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CAMPUS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CEIGALL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CELLO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CENTUM": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CERA": {
-    "latest_period": "2025-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "CINELINE": {
-    "latest_period": "2025-03-31",
-    "latest_quarter": "Fourth quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "CMLL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "CHALET": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CMRGREEN": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "CMSINFO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CORDELIA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Half yearly",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "CORONA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CRAMC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CRESTO": {
-    "latest_period": "2026-03-31",
-    "latest_quarter": "Fourth quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CREATIVEYE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CSM": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "CYBERMEDIA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "CSBBANK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DATAMATICS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DBREALTY": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DBCORP": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DBL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DCBBANK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DEEPA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "DEN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DGCONTENT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DHOOTTRANS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "DIACABS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DNAMEDIA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DISHTV": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "DYNAMATECH": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "E2E": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "EBGNG": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "EDELWEISS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "EIEL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ELEVATE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "ELECTCAST": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ELLEN": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ENIL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "EMBDL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "EMIL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ENTERO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "EPL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "EQUITASBNK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ERIS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ESDS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Half yearly",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "EXCELSOFT": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "FEDFINA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "FIEMIND": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "FINPIPE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GAEL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GAJA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "GAUDIUMIVF": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GERMAN": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "GENUSPOWER": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GKSL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GMRP&UI": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GLASSWALL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "GNFC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GODIGIT": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GOKEX": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GODREJAGRO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GOKULAGRO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GRADIENTE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "GPPL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GOLDIAM": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GREAVESCOT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GRINDWELL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GRWRHITECH": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GSFC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GUJALKALI": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GSPCROP": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "HAPPSTMNDS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "GTPL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HAPPYFORGE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HATHWAY": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HCC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HCG": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HEROMOTORS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "HERITGFOOD": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HEXAGON": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "HGINFRA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "HORIZONIND": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "HTEL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "ICIL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IIFLCAPS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IFBIND": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IMFA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "INDGN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "INDOMIM": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "INDIGOPNTS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "INDIAGLYCO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "INNOVISION": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "IONEXCHANG": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JAIBALAJI": {
-    "latest_period": "2025-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "IXIGO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JAMNAAUTO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JAYNECOIND": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JKPAPER": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JPL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "JNPR": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "JSFB": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JSLL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JSWDULUX": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JUSTDIAL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JUBLPHARMA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "JYOTHYLAB": {
-    "latest_period": "2025-03-31",
-    "latest_quarter": "Fourth quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "KANOHAR": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
   "KARAMTARA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
     "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "KANSAINER": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KITEX": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KIRLPNU": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KMEW": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KNACK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "KNRCON": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KPIGREEN": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KISSHT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KRBL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KRN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KSCL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KTKBANK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KUSUMGAR": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "KSHINTL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "KWIL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "LALITHAA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "LASERPOWER": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "LCCPROJECT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "LATENTVIEW": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LCL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "LLOYDSENT": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LLOYDSENGG": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LEAPIND": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "LOTUSDEV": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LUMINO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "LUMAXTECH": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LUMAXIND": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "LXCHEM": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MANIPALHOS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "MANYAVAR": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MANORAMA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MAPMYINDIA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MBAPL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MASTEK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MEDPLUS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "METROPOLIS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MILKYMIST": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "MIDHANI": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MIDWESTLTD": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MOIL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Half yearly",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "MOLBIO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "MPIMANIPAL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "MVELECTRO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "MPSLTD": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MUKTAARTS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "MSTCLTD": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2026-06-30"
   },
   "NDTV": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
-  "NEOGEN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "J&KBANK": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2026-03-31"
   },
-  "NEPHROPLUS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "NAZARA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "RBLBANK": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
-  "NETWORK18": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "TATASTEEL": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-09-30"
   },
-  "NEXTMEDIA": {
-    "latest_period": "2025-03-31",
-    "latest_quarter": "Fourth quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "NEWGEN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "ANTHEM": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NFL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NITYAS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "NIVABUPA": {
-    "latest_period": "2026-03-31",
-    "latest_quarter": "Fourth quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "NORTHARC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "OMNI": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "OMPOWER": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "ONMOBILE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "ORKLAINDIA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "OSWALPUMPS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PAISALO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PARAS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PCJEWELLER": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PARKHOSPS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "PDSL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PERNIASPOP": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "PFIZER": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PGHH": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PGHL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PGIL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PNC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PICCADIL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PNGJL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PNCINFRA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PNGSREVA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "POWERICA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "POWERMECH": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PRAJIND": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PRANAV": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "PRASOLCHEM": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "PRECWIRE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PSB": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PRICOLLTD": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PURVA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "PTC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "QPOWER": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RADAAN": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "QUESS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2026-03-31"
   },
   "RAIN": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "Second quarter",
     "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RADIOCITY": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RAJTV": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RALLIS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RAMBHAJO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RATNAMANI": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RATEGAIN": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RAYMOND": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RAYMONDLSL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RCF": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RAYMONDREL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RBA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RENTOMOJO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "REFEX": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RELAXO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RELIGARE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "RENUKA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-09-30"
   },
   "RSL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2026-03-31"
   },
-  "RKSWAMY": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
+  "REFEX": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2026-03-31"
   },
-  "ROUTE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "KISSHT": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2026-03-31"
   },
-  "RTNPOWER": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "GESHIP": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-09-30"
   },
-  "RSYSTEMS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "Second quarter",
+  "CARBORUNIV": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
-  "RESPONIND": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "AUROPHARMA": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-09-30"
   },
-  "RUNWALENTR": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "SAFARI": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
+  "ALKYLAMINE": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-09-30"
   },
-  "SAMBHAAV": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "GMDCLTD": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
-  "SAIPARENT": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "FINPIPE": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
-  "SAMHI": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
+  "JWL": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
-  "SANDUMA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
+  "KALYANKJIL": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-09-30"
   },
-  "SAPPHIRE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "ENGINERSIN": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
-  "SAREGAMA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
+  "ARVINDFASN": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
-  "SBIFUNDS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "SBFC": {
-    "latest_period": "2025-03-31",
-    "latest_quarter": "Fourth quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "SEDEMAC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "SENORES": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "POWERGRID": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
-  "SENCO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
+  "CEATLTD": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
-  "SFL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "BHARTIHEXA": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-09-30"
   },
-  "SGMART": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "CENTRALBK": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
-  "SHANKESH": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "SHAKTIPUMP": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "INDIANB": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
-  "SHAILY": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "ABSLAMC": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
-  "SHADOWFAX": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "CRESTO": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-06-30"
   },
-  "SHARDACROP": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "CHAMBLFERT": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-09-30"
   },
-  "SHEMAROO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "CORONA": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SHILCTECH": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SHAREINDIA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Half yearly",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SHIPROCKET": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "SHREEJISPG": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SHILPAMED": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SIGMAADV": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SJS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SIGNPOST": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SKIPPER": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SKYGOLD": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SONA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "SKYWAYS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "SMLMAH": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SPARC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SOUTHBANK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SONATSOFTW": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SPLPETRO": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SRIT": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "SSRETAIL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "STAR": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "STEAMHOUSE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "STUDDS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "STYLAMIND": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SUBROS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SUDARSCHEM": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SUDEEPPHRM": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SUNDRMFAST": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SUNFLAG": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SUNSHINE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "SUNTECK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SUPRIYA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SUVEN": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SURYAROSNI": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "SWASTIKAIN": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "SYMBIOTEC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "SWSOLAR": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TARC": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
   "TANLA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2026-03-31"
   },
-  "TECHNOCRAF": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "TEMPSENS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Half yearly",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "TEXRAIL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
+  "LUMAXTECH": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "THELEELA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "THOMASCOOK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TIMETECHNO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "THYROCARE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TI": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Half yearly",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TIPSFILMS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TMB": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TIPSMUSIC": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TRANSRAILL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TURTLEMINT": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 2,
-    "last_updated": "2026-11-03"
-  },
-  "TTKPRESTIG": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TVSSCS": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TVVISION": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "TVTODAY": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "UFO": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
   "UJJIVANSFB": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2026-03-31"
   },
-  "UNIMECH": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "EDELWEISS": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-09-30"
   },
-  "UTLSOLAR": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
+  "RATEGAIN": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "GODREJAGRO": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "MBAPL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "JUSTDIAL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TVVISION": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "DBREALTY": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "LLOYDSME": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "JKTYRE": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "OFSS": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "E2E": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "PGIL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "HOMEFIRST": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "AVL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "INDHOTEL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TEXRAIL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "BALRAMCHIN": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "JPL": {
     "quarters": 1,
-    "last_updated": "2026-11-03"
+    "latest_period": "2026-09-30"
   },
-  "V2RETAIL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
+  "BHARATFORG": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-09-30"
+  },
+  "JSWDULUX": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "MAXHEALTH": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
   },
   "VEEGALAND": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
     "quarters": 1,
-    "last_updated": "2026-11-03"
+    "latest_period": "2026-06-30"
   },
-  "VARMORA": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "RTNPOWER": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "FIRSTCRY": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SONACOMS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "DOMS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "MAPMYINDIA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "STYLAMIND": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CESC": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PGHL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "UFO": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "BALAJITELE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "IDBI": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "AURIONPRO": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "GSPCROP": {
+    "quarters": 3,
+    "latest_period": "2025-12-31"
+  },
+  "MSUMI": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "GAIL": {
+    "quarters": 4,
+    "latest_period": "2026-06-30"
+  },
+  "SBICARD": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "NAUKRI": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SHRIPISTON": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PARAS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "JSWSTEEL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BAGFILMS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "NAVA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SUDARSCHEM": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "KITEX": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "AEROFLEX": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "IMFA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "APTUS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ABFRL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ASAHIINDIA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ENTERO": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SAGILITY": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "UNIONBANK": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "SHEMAROO": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "NFL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ADANIGREEN": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "LICI": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "VEDPOWER": {
     "quarters": 2,
-    "last_updated": "2026-11-03"
+    "latest_period": "2026-06-30"
   },
-  "VAIBHAVGBL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
+  "CSM": {
+    "quarters": 2,
+    "latest_period": "2026-03-31"
   },
-  "VESUVIUS": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Third quarter",
+  "ABLBL": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2026-03-31"
+  },
+  "AADHARHFC": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "RAYMONDLSL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SCHAEFFLER": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "JUBLFOOD": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "KPIL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "EMAMILTD": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ABREL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CHENNPETRO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "IIFL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ZEEL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SYMBIOTEC": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "RKSWAMY": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SAREGAMA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "CASTROLIND": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "EMCURE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "CMPDI": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
   },
   "VGUARD": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
     "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "VIKRAMSOLR": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "VIDYAWIRES": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "VNL": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 1,
-    "last_updated": "2026-11-03"
-  },
-  "VIPIND": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "VIYASH": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "VMART": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "VOLTAMP": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "WAKEFIT": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 3,
-    "last_updated": "2026-11-03"
-  },
-  "WAAREERTL": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
-  },
-  "WABAG": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
-    "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
   "WEBELSOLAR": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
     "quarters": 3,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
+  },
+  "ICIL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "AUGMONT": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "OLAELEC": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "IRFC": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "RSYSTEMS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CAPILLARY": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "SWANCORP": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "MIDWESTLTD": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "TIPSMUSIC": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "SHAILY": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "LICHSGFIN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "HDFCLIFE": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "ULTRACEMCO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SUNFLAG": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PNGSREVA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CEIGALL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "BLS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ESDS": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "AKUMS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "POWERMECH": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "EBGNG": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "KMEW": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "PRASOLCHEM": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "ENIL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "STEAMHOUSE": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "DIXON": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "INFY": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
   },
   "WELENT": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-09-30"
   },
-  "WEWORK": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "EMMVEE": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
-  "WESTLIFE": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "PAISALO": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
   },
-  "XTRANET": {
-    "latest_period": "2026-09-30",
-    "latest_quarter": "Second quarter",
+  "THYROCARE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PCBL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "MIDHANI": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "POLYMED": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ENDURANCE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "NITYAS": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "BIRLACORPN": {
+    "quarters": 7,
+    "latest_period": "2026-09-30"
+  },
+  "HEXT": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SAMBHAAV": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "GREAVESCOT": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TVSSCS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "MOTHERSON": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "VTL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "CHOLAFIN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ZYDUSLIFE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "JSL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "STUDDS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CYBERMEDIA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "HERITGFOOD": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "KAJARIACER": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "OBEROIRLTY": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TATAELXSI": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "PERSISTENT": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "VOGL": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "CRAFTSMAN": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "STLTECH": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "APOLLO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BLACKBUCK": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "KSCL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "PARADEEP": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "EIHOTEL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "LCCPROJECT": {
     "quarters": 3,
-    "last_updated": "2026-11-03"
+    "latest_period": "2026-06-30"
   },
-  "ZEEMEDIA": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
+  "V2RETAIL": {
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
+  },
+  "ASHAPURMIN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TARC": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "INDIACEM": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "THELEELA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BRITANNIA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "AMBUJACEM": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "NTPC": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "IRCTC": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PRECWIRE": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "UTIAMC": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BAJAJ-AUTO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "DEEPAKNTR": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "BALAMINES": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "TATAPOWER": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "VISL": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "ASIANPAINT": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "UNITDSPR": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BAJAJFINSV": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ATLANTAELE": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "SWASTIKAIN": {
+    "quarters": 3,
+    "latest_period": "2026-09-30"
+  },
+  "CHALET": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "EIDPARRY": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "HCC": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "KANOHAR": {
+    "quarters": 3,
+    "latest_period": "2026-06-30"
+  },
+  "ONGC": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PETRONET": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BLUESTARCO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "GOKULAGRO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ACC": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "360ONE": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "UPL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "CLEANMAX": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ENRIN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BAJAJHFL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "CGCL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ICICIBANK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "DISHTV": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "JINDALSTEL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CCL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "AZAD": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "CONCOR": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "EXCELSOFT": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "EIEL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TRENT": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ATHERENERG": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "BLUESTONE": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "SRIT": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "KIRLPNU": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SHIPROCKET": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "IRCON": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "NEULANDLAB": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PAYTM": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BLEL": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "CMSINFO": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SAMMAANCAP": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PHOENIXLTD": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PPLPHARMA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PCJEWELLER": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "IPCALAB": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "GPPL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "AWL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "PGHH": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "CMRGREEN": {
+    "quarters": 3,
+    "latest_period": "2026-03-31"
+  },
+  "FEDFINA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "AIAENG": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PAGEIND": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "MRF": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "MARUTI": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "GRINDWELL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "GTPL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "OSWALPUMPS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SHAKTIPUMP": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "KRBL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "CDSL": {
+    "quarters": 8,
+    "latest_period": "2026-09-30"
+  },
+  "MEDANTA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "JYOTICNC": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PDSL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PRAJIND": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "HORIZONIND": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "SMLMAH": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "NTPCGREEN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "MANAPPURAM": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "LALITHAA": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "WOCKPHARMA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CREDITACC": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TIMETECHNO": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ADANIPORTS": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "SHANKESH": {
+    "quarters": 3,
+    "latest_period": "2026-06-30"
+  },
+  "WAAREEENER": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "3MINDIA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SUNDARMFIN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "MAZDOCK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "LUPIN": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "GLAND": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SBFC": {
+    "quarters": 1,
+    "latest_period": "2025-03-31"
+  },
+  "RESPONIND": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SAFARI": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "JIOFIN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "GLENMARK": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SBIFUNDS": {
+    "quarters": 3,
+    "latest_period": "2026-06-30"
+  },
+  "CARTRADE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TTML": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "NHPC": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "BALUFORGE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "TVSMOTOR": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SYRMA": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "JAYNECOIND": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SUNPHARMA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SRF": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "MANYAVAR": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "AEROPLANE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CORDELIA": {
+    "quarters": 3,
+    "latest_period": "2026-06-30"
+  },
+  "NAZARA": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "DALBHARAT": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "IREDA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SGMART": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SENORES": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
   },
   "YATHARTH": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-09-30"
+  },
+  "TITAN": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "TCS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "GODREJCP": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TDPOWERSYS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "JSFB": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "IIFLCAPS": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "GRASIM": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
   },
   "ZAGGLE": {
-    "latest_period": "2026-06-30",
-    "latest_quarter": "First quarter",
     "quarters": 4,
-    "last_updated": "2026-11-03"
+    "latest_period": "2025-12-31"
+  },
+  "SKYWAYS": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "VIDYAWIRES": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "INDUSTOWER": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "KFINTECH": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TEMPSENS": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "HBLENGINE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "UNOMINDA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SAPPHIRE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "AMAGI": {
+    "quarters": 3,
+    "latest_period": "2025-12-31"
+  },
+  "MOIL": {
+    "quarters": 1,
+    "latest_period": "2026-09-30"
+  },
+  "CGPOWER": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "AEGISVOPAK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ASHOKLEY": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "UTLSOLAR": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "TORNTPHARM": {
+    "quarters": 4,
+    "latest_period": "2026-06-30"
+  },
+  "MSTCLTD": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "CEMPRO": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "STAR": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "JAMNAAUTO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "JBMA": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "EMBDL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "MPIMANIPAL": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "JINDALSAW": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BSOFT": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "EXIDEIND": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "FORCEMOT": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PNCINFRA": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "BELRISE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "INDIGO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "POLYCAB": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "KPITTECH": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "GOKEX": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "QUESS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ZEEMEDIA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "GRWRHITECH": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SHREEJISPG": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "DEN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ARE&M": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "AARTIIND": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "OMPOWER": {
+    "quarters": 3,
+    "latest_period": "2026-03-31"
+  },
+  "ITC": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "IONEXCHANG": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "CUMMINSIND": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PRESTIGE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "GICRE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "HINDALCO": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "MMTC": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "POLICYBZR": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "APOLLOHOSP": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "GILLETTE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "FEDERALBNK": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "VIYASH": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "MOLBIO": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "BSE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "GODREJIND": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "GAJA": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "WIPRO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TI": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "HFCL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "MUTHOOTFIN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "POONAWALLA": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "RADAAN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TRIDENT": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CRAMC": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "THANGAMAYL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "VAML": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "FINCABLES": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "GABRIEL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "MVELECTRO": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "RELIANCE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ZYDUSWELL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "DEEPA": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "INDIAMART": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "RELAXO": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "RAYMOND": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "KIMS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PFOCUS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "LUMAXIND": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BALKRISIND": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CSBBANK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CAPLIPOINT": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "MILKYMIST": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "GAEL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PINELABS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TECHNOCRAF": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "GRAVITA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "FACT": {
+    "quarters": 4,
+    "latest_period": "2025-03-31"
+  },
+  "HATHWAY": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ASTERDM": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PFIZER": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SBIN": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SAIPARENT": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "NEOGEN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ARCIL": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "SURYAROSNI": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "KANSAINER": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "AVANTIFEED": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "JUBLPHARMA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "BBOX": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "CANHLIFE": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "ABCAPITAL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ONMOBILE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CANFINHOME": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PVRINOX": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "INNOVISION": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "APARINDS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SPLPETRO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "NETWORK18": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ABB": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "CREATIVEYE": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "SANSERA": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "AARTIPHARM": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TITAGARH": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CUB": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BAJAJHLDNG": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "DCBBANK": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "SOUTHBANK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "HAVELLS": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "ERIS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "GMRP&UI": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "NCC": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "IOB": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "CONCORDBIO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CENTUM": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "NESTLEIND": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ARVIND": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "CRISIL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ELEVATE": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "BPCL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TARIL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "SHREECEM": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "XTRANET": {
+    "quarters": 3,
+    "latest_period": "2026-06-30"
+  },
+  "TTKPRESTIG": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "MINDACORP": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SUNSHINE": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "ESCORTS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "NORTHARC": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PNC": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "SUNTV": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "JSWCEMENT": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "RECLTD": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "RITES": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "GLAXO": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "AEQUS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "DATAMATICS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "DEEPAKFERT": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "CMLL": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "PTC": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ADROITIND": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "JMFINANCIL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "WAKEFIT": {
+    "quarters": 3,
+    "latest_period": "2025-12-31"
+  },
+  "BLUEJET": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "BATAINDIA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "HEXAGON": {
+    "quarters": 3,
+    "latest_period": "2026-03-31"
+  },
+  "NATCOPHARM": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "IDEA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "DGCONTENT": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TRITURBINE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "RBA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "NEXTMEDIA": {
+    "quarters": 1,
+    "latest_period": "2025-03-31"
+  },
+  "LTM": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "LAURUSLABS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "EICHERMOT": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "GMRAIRPORT": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SAIL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "HINDCOPPER": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "UBL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "BECTORFOOD": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "BHARATCOAL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ELLEN": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "ACI": {
+    "quarters": 4,
+    "latest_period": "2026-06-30"
+  },
+  "THERMAX": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "IGL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BHEL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SIEMENS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ALPINETEX": {
+    "quarters": 3,
+    "latest_period": "2026-06-30"
+  },
+  "M&M": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ARMEE": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "EQUITASBNK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "JKPAPER": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CIEINDIA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ZENSARTECH": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "AEGISLOG": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "FLUOROCHEM": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "GRAPHITE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "INDUSINDBK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "KUSUMGAR": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "PURVA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "AFFLE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TATACONSUM": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ETERNAL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "HAPPYFORGE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "AXISBANK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PGEL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "GRADIENTE": {
+    "quarters": 3,
+    "latest_period": "2026-03-31"
+  },
+  "ELECON": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "INDGN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "HAPPSTMNDS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "KNACK": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "WEWORK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "LENSKART": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "OLECTRA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "TECHM": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PRIVISCL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ADANIPOWER": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "VMM": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CHOICEIN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SWSOLAR": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "SAMHI": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BANKINDIA": {
+    "quarters": 4,
+    "latest_period": "2026-06-30"
+  },
+  "ROUTE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "STARHEALTH": {
+    "quarters": 4,
+    "latest_period": "2026-09-30"
+  },
+  "PSB": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ADVENZYMES": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PNB": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "VNL": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "SHILCTECH": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "INTELLECT": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ACEVECTOR": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "RUBICON": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "JSLL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "AVALON": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "BAJAJCON": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "KTKBANK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SIGNATURE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PIIND": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "GENUSPOWER": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "NUVOCO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "GRANULES": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "DLF": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CAMPUS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "WESTLIFE": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "SOLARINDS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ZFCVINDIA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PICCADIL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "BEML": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TORNTPOWER": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "LT": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "KPRMILL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "LTTS": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "ATUL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ZENTEC": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SAILIFE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "RALLIS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "IOC": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "LTF": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "KOTAKBANK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "IEX": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "PIDILITIND": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "HDFCAMC": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "WELCORP": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CUPID": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ICICILIFE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SHYAMMETL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "TATAINVEST": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "GUJALKALI": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "LLOYDSENGG": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TEJASNET": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SIGNPOST": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "M&MFIN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "HSCL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "MASTEK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SHADOWFAX": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SBILIFE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "INOXINDIA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "LEMONTREE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PNGJL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "COROMANDEL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "RAILTEL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CPPLUS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CIPLA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "AMBER": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "MTARTECH": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "OIL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "VARMORA": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "GODREJPROP": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BDL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SIGMAADV": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "GKSL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "NAVINFLUOR": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TATACHEM": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "BOSCHLTD": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "DIACABS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "COHANCE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "AONESTEELS": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "RKFORGE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "METROPOLIS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ASHOKA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "KSHINTL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "DHOOTTRANS": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "GODIGIT": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "MOTILALOFS": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "MPHASIS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PNBHOUSING": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "FIEMIND": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ADANIENSOL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "MFSL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "CINELINE": {
+    "quarters": 1,
+    "latest_period": "2025-03-31"
+  },
+  "MANORAMA": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "LASERPOWER": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "APLAPOLLO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TMCV": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "WABAG": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "GODFRYPHLP": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "HONAUT": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "ORKLAINDIA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "DEVYANI": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "RUNWALENTR": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "LXCHEM": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "INDIGOPNTS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "LLOYDSENT": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "IGIL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "NSLNISP": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "LODHA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SKIPPER": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "DBL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "LCL": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "NUVAMA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SONA": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "IDFCFIRSTB": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "INOXWIND": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ANNU": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "ABDL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CANBK": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "FORTIS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "NH": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "JNPR": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "IKS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "TURTLEMINT": {
+    "quarters": 2,
+    "latest_period": "2026-03-31"
+  },
+  "KAYNES": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "AJANTPHARM": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CERA": {
+    "quarters": 2,
+    "latest_period": "2025-03-31"
+  },
+  "TATATECH": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "RATNAMANI": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SYNGENE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "DIVISLAB": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "JUBLINGREA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SUDEEPPHRM": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "NYKAA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PFC": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "COALINDIA": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "HEROMOTOCO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SPARC": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "VAIBHAVGBL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SUBROS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "HGINFRA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ICICIGI": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "GPIL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ITI": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "ACE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "GAUDIUMIVF": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TECHNOE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "GLASSWALL": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "JYOTHYLAB": {
+    "quarters": 1,
+    "latest_period": "2025-03-31"
+  },
+  "IFCI": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "JSWINFRA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "NLCINDIA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "KEI": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "HONASA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "HTEL": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "LUMINO": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "YESBANK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "RENUKA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "URBANCO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "KIRLOSBROS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BTML": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "AXISCADES": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "AUBANK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ANGELONE": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "HCG": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "RAYMONDREL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "MAHABANK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SHAREINDIA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "POWERINDIA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ELGIEQUIP": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "THOMASCOOK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "NMDC": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "RPOWER": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "JPPOWER": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "AETHER": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "WELSPUNLIV": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "BIOCON": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "MEESHO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "JAINREC": {
+    "quarters": 3,
+    "latest_period": "2025-12-31"
+  },
+  "MARICO": {
+    "quarters": 4,
+    "latest_period": "2025-03-31"
+  },
+  "TATACAP": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BORORENEW": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SONATSOFTW": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "RVNL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "VEDL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "LALPATHLAB": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "USHAMART": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "HEGAM": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PTCIL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "NBCC": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PRANAV": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "NIACL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TRANSRAILL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SJVN": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "SHILPAMED": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "NATIONALUM": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "BHARTIARTL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "RENTOMOJO": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "GERMAN": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "GRSE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "MPSLTD": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "PRICOLLTD": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "RADICO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "DNAMEDIA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CAMS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "MANKIND": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "MUKTAARTS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "RCF": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ANURAS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "KWIL": {
+    "quarters": 3,
+    "latest_period": "2025-12-31"
+  },
+  "AFCONS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "BANCOINDIA": {
+    "quarters": 4,
+    "latest_period": "2025-03-31"
+  },
+  "BANKBARODA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SHARDACROP": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "CLEAN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CROMPTON": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "MGL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "LEAPIND": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "ACMESOLAR": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CHOLAHLDNG": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SKYGOLD": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PARKHOSPS": {
+    "quarters": 3,
+    "latest_period": "2025-12-31"
+  },
+  "EMIL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ANANTRAJ": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "NEWGEN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "AAVAS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "AYE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BERGEPAINT": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "RADIOCITY": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "NIVABUPA": {
+    "quarters": 4,
+    "latest_period": "2025-06-30"
+  },
+  "CYIENT": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "JSWENERGY": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "HCLTECH": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BEL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "KPIGREEN": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "NEPHROPLUS": {
+    "quarters": 3,
+    "latest_period": "2025-12-31"
+  },
+  "HINDPETRO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "HDFCBANK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "RRKABEL": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "JAIBALAJI": {
+    "quarters": 3,
+    "latest_period": "2025-03-31"
+  },
+  "AASTHA": {
+    "quarters": 2,
+    "latest_period": "2026-03-31"
+  },
+  "VBL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ADANIENT": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ASTRAMICRO": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ELECTCAST": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "VIKRAMSOLR": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "RELIGARE": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "MANIPALHOS": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "SJS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SUVEN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TMPV": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "VOLTAS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "NAM-INDIA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "HEROMOTORS": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "DMART": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "MEDPLUS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ANANDRATHI": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ASTRAL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "IXIGO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "MRPL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "KARURVYSYA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "RHIM": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SCI": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "VIJAYA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "KNRCON": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "TMB": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "HUDCO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TIINDIA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "GALLANTT": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "KRN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "AIIL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "DYNAMATECH": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "RAINBOW": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "WHIRLPOOL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "FSL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SUZLON": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TVTODAY": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "EPL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ATGL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "DBCORP": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PREMIERENE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PATANJALI": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "INDOMIM": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "KEC": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TENNIND": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "TIMKEN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SFL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SSRETAIL": {
+    "quarters": 1,
+    "latest_period": "2026-06-30"
+  },
+  "FRACTAL": {
+    "quarters": 3,
+    "latest_period": "2025-12-31"
+  },
+  "DELHIVERY": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "BANDHANBNK": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PWL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SANDUMA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "IRB": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "VMART": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "VESUVIUS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "UCOBANK": {
+    "quarters": 1,
+    "latest_period": "2025-03-31"
+  },
+  "SENCO": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "LTFOODS": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "SEDEMAC": {
+    "quarters": 2,
+    "latest_period": "2026-03-31"
+  },
+  "SUMICHEM": {
+    "quarters": 4,
+    "latest_period": "2026-06-30"
+  },
+  "GOLDIAM": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "COFORGE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "PIRAMALFIN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "GSFC": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "UNIMECH": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ACUTAAS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "HINDUNILVR": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "FIVESTAR": {
+    "quarters": 4,
+    "latest_period": "2026-06-30"
+  },
+  "OMNI": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ECLERX": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "CELLO": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "QPOWER": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "JKCEMENT": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TEGA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TBOTEK": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "SUPRIYA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "DATAPATTNS": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "BRIGADE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "LATENTVIEW": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "LGEINDIA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SUNDRMFAST": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "MARKSANS": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "BAJFINANCE": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SARDAEN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ITCHOTELS": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "POWERICA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "LOTUSDEV": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "HAL": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "KIRLOSENG": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "NETWEB": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "GVT&D": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "HINDZINC": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SOBHA": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "ALKEM": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "HDBFS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "APOLLOTYRE": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "GNFC": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "GROWW": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "DABUR": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "IFBIND": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "SUNTECK": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "ONESOURCE": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "VIPIND": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ICICIAMC": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "VOLTAMP": {
+    "quarters": 4,
+    "latest_period": "2026-03-31"
+  },
+  "SCHNEIDER": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "KSB": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "TATACOMM": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "HYUNDAI": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "COCHINSHIP": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "RAMCOCEM": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SHRIRAMFIN": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "INDIAGLYCO": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SWIGGY": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "WAAREERTL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "AQYLON": {
+    "quarters": 3,
+    "latest_period": "2025-03-31"
+  },
+  "PERNIASPOP": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "COLPAL": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "RAJTV": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "ARDEE": {
+    "quarters": 2,
+    "latest_period": "2026-06-30"
+  },
+  "LINDEINDIA": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "SUPREMEIND": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "TIPSFILMS": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "DRREDDY": {
+    "quarters": 4,
+    "latest_period": "2025-12-31"
+  },
+  "REDINGTON": {
+    "quarters": 4,
+    "latest_period": "2025-09-30"
+  },
+  "RAMBHAJO": {
+    "quarters": 4,
+    "latest_period": "2026-06-30"
   }
 }

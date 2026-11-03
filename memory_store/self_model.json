@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-03",
-  "version": 33,
+  "version": 36,
   "patterns": {
     "confirmed": [
       {
@@ -203,6 +203,12 @@
       },
       {
         "pattern": "SECTOR_MAP root cause: NSE thematic indices cover only 207/885 tickers — midcaps absent",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "resolved gap: xbrl_coverage",
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
@@ -543,6 +549,10 @@
       {
         "gap": "SECTOR_MAP covers 207/885 — sector pulse incomplete for midcap/smallcap universe",
         "added": "2026-11-03"
+      },
+      {
+        "gap": "Pipeline 'event_calendar' has never produced output in event_calendar/ [STUCK: 5 scans — needs different approach] → Run: python jobs/backfill_event_calendar.py",
+        "added": "2026-11-03"
       }
     ]
   },
@@ -697,6 +707,14 @@
     {
       "date": "2026-11-03",
       "note": "Published comprehensive 6-tab NSE dashboard (v4) — fixed graph field names, embedded 2026-11-03 snapshot data"
+    },
+    {
+      "date": "2026-11-03",
+      "note": "E2E test run"
+    },
+    {
+      "date": "2026-11-03",
+      "note": "self_improve scan: resolved: xbrl_coverage; 1 high-priority gaps; 1 stuck gaps → actions: fix_script_generated"
     }
   ]
 }
