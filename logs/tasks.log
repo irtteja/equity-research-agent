@@ -390,3 +390,11 @@ Progress: All 5 layers built: L1 sectors, L2 indices, L3 peers, L4 business grou
 Next: Graph is now a true interconnected mesh. 46457 nodes, 108084 edges.
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-03 16:56
+Task: session-12-knowledge-graph
+Status: completed
+Progress: Built 4-layer structural knowledge graph. 46,456 nodes, 108,085 edges. Committed jobs/build_knowledge_graph.py, jobs/ensure_graph.py updated, weekly rebuild trigger created.
+Next: Wire dashboard to live SectorTrend/ConfluenceSignal nodes; test weekly_research.py
+Blockers: none
+============================================================
