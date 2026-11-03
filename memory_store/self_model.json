@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-03",
-  "version": 37,
+  "version": 38,
   "patterns": {
     "confirmed": [
       {
@@ -218,6 +218,24 @@
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
+      },
+      {
+        "pattern": "company_meta.json indices[] field gives direct NSE index memberships per company",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "graph.db structural edges are idempotent — safe to DELETE+re-insert on each run",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "nselib equity_meta_info() returns sector/industry/macro/indices in one call",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -307,6 +325,18 @@
       },
       {
         "pattern": "gh auth setup-git may work in some triggered sessions if gh CLI has cached auth — needs verification on next trigger run",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "BusinessGroup keyword matching may miss holdings company patterns (e.g. ABC Industries Ltd is Aditya Birla but name doesnt match)",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "COMPETES_WITH limited to top-20 alphabetical neighbors — not true market cap peers",
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
@@ -430,6 +460,14 @@
       },
       {
         "signal": "Removing broken add_repo instruction stops agents from stalling at first step",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "5-layer parallel graph build: L1 sectors → L2 indices → L3 peers → L4 groups → L5 trends → merge",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "enrich_graph_structure.py idempotent run: 46457 nodes 108084 edges reproducibly",
         "added": "2026-11-03"
       }
     ],
@@ -581,6 +619,14 @@
       {
         "gap": "Persistent session ignores cross-session instructions correctly (security feature, not a bug)",
         "added": "2026-11-03"
+      },
+      {
+        "gap": "SectorTrend L5 currently uses trend/signal text keywords — should use enum values when available",
+        "added": "2026-11-03"
+      },
+      {
+        "gap": "Graph has no time-series dimension — all structural edges are static snapshots",
+        "added": "2026-11-03"
       }
     ]
   },
@@ -624,10 +670,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-30",
-      "note": "E2E test run"
-    },
     {
       "date": "2026-10-30",
       "note": "E2E test run"
@@ -743,6 +785,10 @@
     {
       "date": "2026-11-03",
       "note": "session 10: fixed all 12 triggers — removed broken add_repo text, applied GITHUB_TOKEN or gh auth patterns per trigger complexity"
+    },
+    {
+      "date": "2026-11-03",
+      "note": "Session 12: Built full Miro fish ripple interconnected knowledge graph — 46k nodes, 108k edges, 5 structural layers (sectors/indices/peers/groups/trends). All idempotent and wired into ensure_graph.py."
     }
   ]
 }
