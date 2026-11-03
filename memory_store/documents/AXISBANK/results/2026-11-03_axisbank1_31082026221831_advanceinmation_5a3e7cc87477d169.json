@@ -1,0 +1,17 @@
+{
+  "doc_id": "5a3e7cc87477d169",
+  "source_file": "/tmp/concall_AXISBANK_mysfwus7/AXISBANK1_31082026221831_AdvanceInmationPresentation31082026Signed.pdf",
+  "source_name": "AXISBANK1_31082026221831_AdvanceInmationPresentation31082026Signed.pdf",
+  "ingested_at": "2026-11-03",
+  "symbol": "AXISBANK",
+  "doc_type": "results",
+  "period": "2026-27",
+  "confidence": "high",
+  "pages": 1,
+  "extract_method": "pymupdf",
+  "char_count": 1033,
+  "text": " \n \nAXIS/CO/CS/367/2026-27 \n \nAugust 31, 2026 \n \nNational Stock Exchange of India Limited  \nExchange Plaza,  \nPlot No. C/1, “G” Block \nBandra-Kurla Complex \nBandra (E), Mumbai – 400 051 \n \nNSE Symbol: AXISBANK \nBSE Limited \nP. J. Towers,  \nDalal Street  \nFort, Mumbai – 400 001 \n \n \nBSE Scrip Code: 532215 \n \nDear Sir/Madam, \n \nSub.: Schedule of analysts/institutional investors meet \n \nWe refer to our letter no. AXIS/CO/CS/365/2026-27 dated August 26, 2026 on the captioned \nsubject.  \n \nIn this regard, we wish to inform you that the presentation proposed to be made at the said \nmeeting is available on the Bank's website at the following link: \n \nhttps://www.axis.bank.in/shareholders-corner/financial-results-and-other-presentation \n \nThis is for your information and records. \n \nThanking You. \n \nWith warm regards, \n \nFor Axis Bank Limited \n \n \n \nSandeep Poddar \nCompany Secretary \n \nCC: \nLondon Stock Exchange \nSingapore Stock Exchange \nSandeep \nPoddar\nDigitally signed by \nSandeep Poddar \nDate: 2026.08.31 \n21:58:08 +05'30'\n",
+  "chunks": [
+    " \n \nAXIS/CO/CS/367/2026-27 \n \nAugust 31, 2026 \n \nNational Stock Exchange of India Limited  \nExchange Plaza,  \nPlot No. C/1, “G” Block \nBandra-Kurla Complex \nBandra (E), Mumbai – 400 051 \n \nNSE Symbol: AXISBANK \nBSE Limited \nP. J. Towers,  \nDalal Street  \nFort, Mumbai – 400 001 \n \n \nBSE Scrip Code: 532215 \n \nDear Sir/Madam, \n \nSub.: Schedule of analysts/institutional investors meet \n \nWe refer to our letter no. AXIS/CO/CS/365/2026-27 dated August 26, 2026 on the captioned \nsubject.  \n \nIn this regard, we wish to inform you that the presentation proposed to be made at the said \nmeeting is available on the Bank's website at the following link: \n \nhttps://www.axis.bank.in/shareholders-corner/financial-results-and-other-presentation \n \nThis is for your information and records. \n \nThanking You. \n \nWith warm regards, \n \nFor Axis Bank Limited \n \n \n \nSandeep Poddar \nCompany Secretary \n \nCC: \nLondon Stock Exchange \nSingapore Stock Exchange \nSandeep \nPoddar\nDigitally signed by \nSandeep Poddar \nDate: 2026.08.31 \n21:58:08 +05'30'\n"
+  ]
+}
