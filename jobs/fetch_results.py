@@ -49,7 +49,7 @@ def load_calendar(for_date: date) -> list[dict]:
         path = CAL_DIR / f"{(for_date - timedelta(days=1)).isoformat()}.json"
     if not path.exists():
         print(f"  [calendar] no event_calendar JSON found — fetching live")
-        return []
+        return fetch_live_calendar()
     events = json.loads(path.read_text())
     print(f"  [calendar] loaded {len(events)} events from {path.name}")
     return events
