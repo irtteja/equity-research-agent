@@ -1,13 +1,14 @@
 {
   "date": "2026-11-03",
-  "generated_at": "2026-11-03T11:57:17.796351",
+  "generated_at": "2026-11-03T13:06:51.099642",
   "graph": {
-    "nodes": 45982,
+    "nodes": 46141,
     "edges": 89486,
-    "episodes": 91565,
+    "episodes": 91665,
     "pending_enrichment": 16790,
     "by_type": {
       "Company": 867,
+      "ConfluenceSignal": 159,
       "ManagementStatement": 7176,
       "MetricValue": 29192,
       "PriceSnapshot": 875,
