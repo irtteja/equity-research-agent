@@ -22,6 +22,15 @@ sys.path.insert(0, str(REPO))
 MIN_COMPANIES = 100
 
 
+def _ensure_db_schema():
+    """Create task/checkpoint tables if missing — safe no-op if they already exist."""
+    try:
+        from memory.task_log import init_task_tables
+        init_task_tables()
+    except Exception as e:
+        print(f"[ensure_graph] schema init warning: {e}")
+
+
 def _count_nodes(node_type: str) -> int:
     try:
         from memory.graph_store import get_store
@@ -53,6 +62,7 @@ def run_step(label: str, script: str) -> bool:
 
 
 def main():
+    _ensure_db_schema()
     if not needs_rebuild():
         companies = _count_nodes("Company")
         metrics   = _count_nodes("MetricValue")
