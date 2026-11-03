@@ -150,3 +150,11 @@ Progress: pairs=20 trends=20 strong=5 | top: CDSL depreciation (improving, 5p), 
 Next: 
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-03 06:01
+Task: None
+Status: completed
+Progress: Updated tools/indian_markets.py, tools/announcements.py, tools/fundamentals.py
+Next: Test live calls; build KB extraction pipeline using integrated_filing per symbol
+Blockers: None
+============================================================
