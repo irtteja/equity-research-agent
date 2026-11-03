@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-03",
-  "version": 39,
+  "version": 40,
   "patterns": {
     "confirmed": [
       {
@@ -248,6 +248,24 @@
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
+      },
+      {
+        "pattern": "knowledge graph is more useful as a mesh than as isolated XBRL nodes",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "swarm-of-forks pattern works well for parallel layer building",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "NSE equity_meta_info() provides sector/industry/macro/indices in one call",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -349,6 +367,18 @@
       },
       {
         "pattern": "COMPETES_WITH limited to top-20 alphabetical neighbors — not true market cap peers",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "graph traversal queries not yet exposed to research workflows — need to wire",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "BusinessGroup matching by company_name keywords may miss subsidiaries with different names",
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
@@ -488,6 +518,18 @@
       },
       {
         "signal": "needs_kg_enrichment() smart check avoids unnecessary full rebuild",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "executemany bulk upsert pattern for graph.db writes (10x faster than add_node loop)",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "delete-and-re-insert structural edges on weekly rebuild (clean, idempotent)",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "ensure_graph.py smart check: runs KG enrichment if MacroSector nodes missing",
         "added": "2026-11-03"
       }
     ],
@@ -647,6 +689,14 @@
       {
         "gap": "Graph has no time-series dimension — all structural edges are static snapshots",
         "added": "2026-11-03"
+      },
+      {
+        "gap": "graph.db has no traversal utility exposed yet; agents cannot walk COMPETES_WITH edges",
+        "added": "2026-11-03"
+      },
+      {
+        "gap": "SectorTrend nodes are empty placeholders; bullish/bearish counts not filled from TrendSummary",
+        "added": "2026-11-03"
       }
     ]
   },
@@ -690,10 +740,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-30",
-      "note": "E2E test run"
-    },
     {
       "date": "2026-10-30",
       "note": "self_improve scan: 6 gaps found, 2 high priority"
@@ -809,6 +855,10 @@
     {
       "date": "2026-11-03",
       "note": "Built true interconnected knowledge graph mesh: 46k nodes 108k edges across 4 layers (sectors/indices/peers/business-groups). Weekly rebuild trigger wired."
+    },
+    {
+      "date": "2026-11-03",
+      "note": "session 12: built full 5-layer interconnected knowledge graph mesh (sectors/indices/peers/groups); 46k nodes 108k edges"
     }
   ]
 }
