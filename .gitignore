@@ -6,8 +6,9 @@ __pycache__/
 .env
 *.egg-info/
 
-# SQLite binary — not tracked (gets overwritten by git pull, causes merge conflicts)
+# SQLite binaries — not tracked (gets overwritten by git pull, causes merge conflicts)
 memory/research.db
+memory/graph.db
 memory/__pycache__/
 
 # BSE cache
