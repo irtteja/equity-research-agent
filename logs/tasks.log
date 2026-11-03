@@ -366,3 +366,19 @@ Progress: All 12 triggers audited. Removed broken add_repo instructions. Trigger
 Next: User must add GITHUB_TOKEN env secret to Default environment for push to work.
 Blockers: git push 403 until GITHUB_TOKEN is set in environment
 ============================================================
+
+[CHECKPOINT] 2026-11-03 16:22
+Task: None
+Status: completed
+Progress: prices=875 value_signals=57
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-03 16:29
+Task: None
+Status: completed
+Progress: Created ensure_graph.py; updated 5 triggers with credential fix + ensure_graph; updated PROGRESS.md
+Next: Wire dashboard to live ConfluenceSignal nodes; expand SECTOR_MAP
+Blockers: none
+============================================================
