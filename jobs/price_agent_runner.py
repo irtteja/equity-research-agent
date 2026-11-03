@@ -19,6 +19,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from agents.price_agent import PriceAgent
 from memory.task_log import log_task, update_task_status, log_checkpoint
+from memory.message_bus import publish
 
 TASK_ID = "price_agent_daily"
 
@@ -44,6 +45,18 @@ def main():
             ),
         )
         update_task_status(task_id, "completed")
+        publish("price_agent", "agent_health", {
+            "status": "completed",
+            "prices_written": result["prices_written"],
+            "value_signals": result["value_signals"],
+            "as_of": str(as_of),
+        }, ttl_hours=30)
+        if result.get("value_signals", 0) > 0:
+            publish("price_agent", "price_alert", {
+                "type": "value_signals",
+                "count": result["value_signals"],
+                "as_of": str(as_of),
+            }, recipient="orchestrator", priority="normal")
         print(f"[price_agent] done: {result}")
 
     except Exception as exc:

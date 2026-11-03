@@ -14,6 +14,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from agents.context_agent import ContextAgent
 from memory.task_log import log_task, update_task_status, log_checkpoint
+from memory.message_bus import publish
 
 TASK_ID = "context_agent_nightly"
 
@@ -33,6 +34,12 @@ def main():
             ),
         )
         update_task_status(task_id, "completed")
+        publish("context_agent", "agent_health", {
+            "status": "completed",
+            "processed": result["processed"],
+            "edges_created": result["edges_created"],
+            "skipped": result["skipped"],
+        }, ttl_hours=30)
         print(f"[context_agent] {result}")
 
     except Exception as exc:

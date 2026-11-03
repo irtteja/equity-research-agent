@@ -13,6 +13,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from agents.trend_agent import TrendAgent
 from memory.task_log import log_task, update_task_status, log_checkpoint
+from memory.message_bus import publish
 
 TASK_ID = "trend_agent_nightly"
 
@@ -38,6 +39,24 @@ def main():
             ),
         )
         update_task_status(task_id, "completed")
+        publish("trend_agent", "agent_health", {
+            "status": "completed",
+            "pairs_analyzed": result["pairs_analyzed"],
+            "trends_written": result["trends_written"],
+            "strong_trends": result["strong_trends"],
+            "top_signals": [
+                {"ticker": t["ticker"], "metric": t["metric"],
+                 "direction": t["direction"], "streak": t["streak"],
+                 "momentum": t["momentum"]}
+                for t in strong[:10]
+            ],
+        }, ttl_hours=30)
+        if strong:
+            publish("trend_agent", "trend_signal", {
+                "count": len(strong),
+                "improving": [t["ticker"] for t in strong if t["direction"] == "improving"][:10],
+                "deteriorating": [t["ticker"] for t in strong if t["direction"] == "deteriorating"][:10],
+            }, recipient="orchestrator", priority="normal")
         print(f"[trend_agent] {result}")
         if strong:
             print(f"Strong trends:")

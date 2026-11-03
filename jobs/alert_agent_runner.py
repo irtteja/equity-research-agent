@@ -18,6 +18,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from agents.alert_agent import AlertAgent
 from memory.task_log import log_task, update_task_status, log_checkpoint
+from memory.message_bus import publish
 
 TASK_ID = "alert_agent_daily"
 
@@ -47,11 +48,21 @@ def main():
             ),
         )
         update_task_status(task_id, "completed")
+        publish("alert_agent", "agent_health", {
+            "status": "completed",
+            "trends": s.get("total_trends", 0),
+            "strong_positive": s.get("strong_positive", 0),
+            "strong_negative": s.get("strong_negative", 0),
+            "as_of": str(as_of),
+        }, ttl_hours=30)
 
     except Exception as exc:
         log_checkpoint(task_id, status="failed",
             progress="AlertAgent failed", blockers=str(exc))
         update_task_status(task_id, "failed")
+        publish("alert_agent", "gap_detected", {
+            "error": str(exc), "agent": "alert_agent",
+        }, recipient="orchestrator", priority="high")
         raise
 
 
