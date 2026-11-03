@@ -1,5 +1,31 @@
 # Progress Log
 
+## 2026-11-03 (session 13) — diagnose 0-results fetch; fix push auth on results triggers; NSE Market Pulse V6
+
+### Done
+- **Diagnosed 0-results fetch (Nov 4 1 AM run)**: Three layered root causes confirmed:
+  1. Calendar file timing gap — `daily_monitor` saves `2026-11-03.json` at ~4:31 PM IST, but the triggered container pulled code at 1:46 AM IST Nov 4 before that commit landed in origin/master
+  2. `nse.event_calendar()` live fallback returned empty at 1:46 AM IST — NSE API appears to be in maintenance window at that hour
+  3. Push 403 — both results triggers had `credential.helper` but not `git remote set-url` with embedded token
+  - Underlying data is fine: 814 events, 787 results events exist in `memory_store/event_calendar/2026-11-03.json`
+  - `fetch_results.py` calendar fallback bug was already fixed by commit `67db617` (prior session)
+- **Fixed git push auth on both Results Fetch triggers**:
+  - `trig_01FuxqGR8MtthLn6fgdtB6Pc` (Nightly XBRL, 1:15 AM IST Mon-Sat): added `git remote set-url origin "https://irtteja:${GITHUB_TOKEN}@github.com/..."`
+  - `trig_011qbj3PujDhjKBz11wx5tom` (8 AM Retry, Mon-Sat): same fix
+- **Fixed `jobs/ensure_graph.py`**: `_ensure_db_schema()` now called at top of `main()` — prevents tasks-table crash on fresh containers (commit `d736956`)
+- **Fixed Swarm Orchestrator trigger**: added `git remote set-url` with embedded GITHUB_TOKEN (prior part of this session)
+- **Built NSE Market Pulse V6** (artifact `https://claude.ai/artifact/3FvshapQWYe6ZfeYHFozat`): 875-company D3 fan/wedge visualization with 5 live market data encodings (dot color=% change, dot size=mcap tier, pulse speed/amplitude=rvol, sector wedge tint=aggregate change, gold ring=Nifty50 membership). Search, sector spotlight, peer lines, ticker tape.
+
+### Architecture changes
+- All results-fetch triggers now have both `credential.helper` + `git remote set-url` for authenticated push — consistent with Swarm Orchestrator trigger pattern
+
+### Pending / next sessions
+- Calendar file timing gap: `daily_monitor` runs at 4 PM, `fetch_results` runs at 1 AM next day — file should be there but only if daily_monitor's push landed; consider having `fetch_results` always try `fetch_live_calendar()` as a secondary source if the saved file is older than 12 hours
+- Wire dashboard to live SectorTrend / ConfluenceSignal nodes (currently hardcoded snapshot)
+- Graph compaction: graph.db grows indefinitely, no pruning job yet
+- weekly_research.py: exists but disabled, never tested end-to-end
+- 4 persistent-session triggers still fire into old session_01G28r1gAsugprj2KxqH9L5D (cannot update from outside)
+
 ## 2026-11-03 (session 12) — "Miro fish ripple" interconnected knowledge graph
 
 ### Done
