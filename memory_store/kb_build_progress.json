@@ -6674,5 +6674,203 @@
     "results_saved": 4,
     "results_skipped": 0,
     "errors": []
+  },
+  "GMRP&UI": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 0,
+    "concalls_ingested": 0,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "GLASSWALL": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 1,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "GNFC": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "GODIGIT": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "GOKEX": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "GODREJAGRO": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "GOKULAGRO": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 2,
+    "concalls_ingested": 2,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "GRADIENTE": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 0,
+    "concalls_ingested": 0,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 3,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "GPPL": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 1,
+    "concalls_ingested": 1,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "GOLDIAM": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "GREAVESCOT": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "GRINDWELL": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 2,
+    "concalls_ingested": 2,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "GRWRHITECH": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "GSFC": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "GUJALKALI": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 0,
+    "concalls_ingested": 0,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "GSPCROP": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 3,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "HAPPSTMNDS": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 0,
+    "concalls_ingested": 0,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "GTPL": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
   }
 }

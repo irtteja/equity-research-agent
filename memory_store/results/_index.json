@@ -3604,5 +3604,113 @@
     "latest_quarter": "First quarter",
     "quarters": 4,
     "last_updated": "2026-11-03"
+  },
+  "GMRP&UI": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GLASSWALL": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 1,
+    "last_updated": "2026-11-03"
+  },
+  "GNFC": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GODIGIT": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GOKEX": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GODREJAGRO": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GOKULAGRO": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GRADIENTE": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 3,
+    "last_updated": "2026-11-03"
+  },
+  "GPPL": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GOLDIAM": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GREAVESCOT": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GRINDWELL": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GRWRHITECH": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GSFC": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GUJALKALI": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GSPCROP": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 3,
+    "last_updated": "2026-11-03"
+  },
+  "HAPPSTMNDS": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GTPL": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
   }
 }
