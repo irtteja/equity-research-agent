@@ -15,8 +15,29 @@
 - `memory_store/results/`: 873 XBRL result files
 
 ### Pending / next session
-- Run graph backfill: `python3 jobs/context_agent_runner.py` then `python3 jobs/trend_agent_runner.py`
-- These populate the knowledge graph for all 888 symbols (context + trend nodes)
+- ~~Run graph backfill~~ ✓ Done this session (see 2026-11-03 session 4)
+
+---
+
+## 2026-11-03 (session 4) — Graph build + system architecture artifact
+
+### Done
+- Built comprehensive system architecture HTML artifact — all 7 layers, 30+ components, interactive (clickable detail panels for every file). Published at https://claude.ai/artifact/6SNuupRHtcqectF2FkHYnP
+- Added `comp_name` param to `nselib.all_announcements()` — found via NSE JS analysis; required when date range ≥ 30 days. Committed and pushed to nselib repo (commit 8c85b97)
+- Ran `context_agent_runner.py`: 200 nodes processed, 148 PRECEDED_BY edges created in graph
+- Ran `trend_agent_runner.py`: 82 pairs analyzed, 82 TrendSummary nodes written, 49 strong trends
+- Notable signal surfaced by trend_agent: BAJAJ-AUTO finance_costs +21% QoQ vs revenue +15.8%, PAT +6.1% — leverage building; added to watch_list
+
+### Architecture changes
+- `memory/graph.db`: +148 PRECEDED_BY edges, +82 TrendSummary nodes
+- `memory_store/self_model.json`: updated with session reflection, BAJAJ-AUTO added to watch_list
+- `irtteja/nselib` (separate repo): `all_announcements()` now accepts `comp_name` param (commit 8c85b97)
+
+### Pending / next session
+- Run `context_agent_runner.py` again — limit was 200 nodes this run; more nodes likely remain
+- Run `weekly_research.py` for first full research pass
+- Investigate LIVE_MARKET MCP instability (session expiry mid-run) — add retry/reconnect logic
+- NSE_BHAV_COPY MCP returning 404 — check server health
 
 ---
 
