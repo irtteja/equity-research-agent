@@ -358,3 +358,11 @@ Progress: trends=7872 strong+=295 strong-=47 inflections=695
 Next: 
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-03 15:12
+Task: session_10
+Status: completed
+Progress: All 12 triggers audited. Removed broken add_repo instructions. Trigger push fix status: Swarm Orchestrator / equity-daily-monitor / Monthly compaction / Results 8AM Retry have GITHUB_TOKEN credential store. NSE Daily Brief / Results Nightly XBRL / NSE Announcement Fetch / equity-watchdog use gh auth fallback. 4 persistent-session triggers unchanged.
+Next: User must add GITHUB_TOKEN env secret to Default environment for push to work.
+Blockers: git push 403 until GITHUB_TOKEN is set in environment
+============================================================

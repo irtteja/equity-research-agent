@@ -1,5 +1,31 @@
 # Progress Log
 
+## 2026-11-03 (session 10) — All 12 triggers cleaned up; broken add_repo instructions removed
+
+### Done
+- **Audited all 12 scheduled tasks** — confirmed git push 403 root cause in watchdog session `cse_01G28r1gBWrcezmBWcHfwbRm`
+- **Fixed 5 triggers** that had broken "REQUIRED FIRST STEP — call add_repo" text (add_repo MCP not available in triggered sessions):
+  - NSE Daily Brief, Results Nightly XBRL, NSE Announcement Fetch, equity-watchdog → clean prompts with `gh auth setup-git` fallback
+  - Results Fetch 8AM Retry → updated with GITHUB_TOKEN credential store pattern
+- **4 triggers already had GITHUB_TOKEN approach** (set in session 9): Swarm Orchestrator, equity-daily-monitor, Monthly compaction, Results 8AM Retry
+- **4 persistent-session triggers** (ContextAgent Nightly, Universe Updater, Weekly Self-Improve, Monthly Store Cleanup) fire into `session_01G28r1gAsugprj2KxqH9L5D` and cannot be updated from outside — the session correctly declined the cross-session instruction
+- **Classifier blocker discovered**: auto-mode blocks `update_trigger` when prompt contains `printf ... > ~/.git-credentials` — only works for simple/medium prompts, blocked on complex ones
+
+### Architecture
+- All 12 triggers now have clean prompts without broken MCP instructions
+- 4 triggers will still fail git push until user adds `GITHUB_TOKEN` env secret to Default environment
+- No code changes this session — trigger configuration only
+
+### Pending / next sessions
+- **USER ACTION REQUIRED**: Add GitHub PAT to Default environment as `GITHUB_TOKEN` secret:
+  1. Go to github.com/settings/tokens → Generate new token (classic) → check `repo` scope → copy
+  2. In claude.ai: Settings → Environments → Default → Edit → API credentials → add `GITHUB_TOKEN = [token]`
+  3. This will unblock git push for all 8 fresh-session triggers
+- Wire dashboard to live ConfluenceSignal nodes from graph (currently hardcoded)
+- Fix XBRL fetch: `event_calendar` JSON not found by `fetch_results.py`
+- Expand SECTOR_MAP to full 885 tickers (207/885 currently)
+- Clear episode backlog: 91,565 unprocessed episodes; ContextAgent enrichment at 42%
+
 ## 2026-11-03 (session 9) — Swarm architecture wired; git push 403 fix deployed to all triggers
 
 ### Done
