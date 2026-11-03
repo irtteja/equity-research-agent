@@ -38,6 +38,11 @@ def needs_rebuild() -> bool:
     return _count_nodes("Company") < MIN_COMPANIES
 
 
+def needs_kg_enrichment() -> bool:
+    """True if Company nodes exist but structural graph layers are missing."""
+    return _count_nodes("Company") >= MIN_COMPANIES and _count_nodes("MacroSector") < 5
+
+
 def run_step(label: str, script: str) -> bool:
     print(f"\n[ensure_graph] {label}…")
     r = subprocess.run([sys.executable, str(REPO / "jobs" / script)], cwd=REPO)
@@ -52,8 +57,13 @@ def main():
         companies = _count_nodes("Company")
         metrics   = _count_nodes("MetricValue")
         trends    = _count_nodes("TrendSummary")
-        print(f"[ensure_graph] graph.db ready: {companies} companies, "
-              f"{metrics} metric values, {trends} trend summaries — skipping rebuild")
+        macros    = _count_nodes("MacroSector")
+        if needs_kg_enrichment():
+            print(f"[ensure_graph] Companies present but KG layers missing — running build_knowledge_graph.py")
+            run_step("KG enrichment: sectors/indices/groups", "build_knowledge_graph.py")
+        else:
+            print(f"[ensure_graph] graph.db ready: {companies} companies, "
+                  f"{metrics} metric values, {trends} trend summaries, {macros} macro sectors — skipping rebuild")
         return
 
     print("[ensure_graph] graph.db is empty or sparse — rebuilding from committed source data")
