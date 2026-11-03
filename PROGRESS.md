@@ -22,11 +22,21 @@
 - `ensure_graph.py` wires all 3 rebuild steps: backfill → trends → structural enrichment
 - `company_meta.json` is the canonical source for all structural metadata (indices, macro, sector, industry)
 
+### Addendum (session 12 continuation)
+- **Confirmed build** — all 4 layers ran successfully; graph.db verified: 46,456 nodes, 108,085 edges
+- **`jobs/ensure_graph.py`**: added `needs_kg_enrichment()` — if companies present but MacroSectors missing (partial graph), runs enrichment without full backfill
+- **`jobs/build_knowledge_graph.py`**: standalone idempotent master script committed; `enrich_graph_structure.py` duplicate removed
+- **Weekly trigger created** (`trig_015oG9qaCpDw4Fg8oE7nGhNa`): fires every Saturday 5:47 AM IST — runs `rebuild_sector_map.py` → `build_knowledge_graph.py`, pushes sector_map.json + company_meta.json
+- Commits: `1fd8592` (build_knowledge_graph.py), `65f284e` (ensure_graph.py KG enrichment check)
+
+- **Created Weekly KG Enrichment trigger** (trig_01T4YwriUz4fdwbF5b4TZeTT): fires every Sunday 7am IST, runs `build_knowledge_graph.py` to keep sector/index/peer/group edges fresh.
+
 ### Pending / next sessions
 - Wire dashboard to live SectorTrend / ConfluenceSignal nodes (currently hardcoded snapshot)
 - Graph compaction: graph.db grows indefinitely, no pruning job yet
 - weekly_research.py: exists but disabled, never tested end-to-end
 - 4 persistent-session triggers still fire into old session_01G28r1gAsugprj2KxqH9L5D (cannot update from outside)
+- Graph traversal API: expose COMPETES_WITH / CONSTITUENT_OF traversals for research queries
 
 ## 2026-11-03 (session 11) — graph.db persistence fix; all 12 triggers fully hardened
 

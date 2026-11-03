@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-03",
-  "version": 38,
+  "version": 39,
   "patterns": {
     "confirmed": [
       {
@@ -233,6 +233,18 @@
       },
       {
         "pattern": "nselib equity_meta_info() returns sector/industry/macro/indices in one call",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "swarm fork pattern works — parallel layer builds then merge coordinator",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "graph.db schema needs created_at in every INSERT",
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
@@ -469,6 +481,14 @@
       {
         "signal": "enrich_graph_structure.py idempotent run: 46457 nodes 108084 edges reproducibly",
         "added": "2026-11-03"
+      },
+      {
+        "signal": "build_knowledge_graph.py idempotent enrichment",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "needs_kg_enrichment() smart check avoids unnecessary full rebuild",
+        "added": "2026-11-03"
       }
     ],
     "gaps": [
@@ -676,10 +696,6 @@
     },
     {
       "date": "2026-10-30",
-      "note": "E2E test run"
-    },
-    {
-      "date": "2026-10-30",
       "note": "self_improve scan: 6 gaps found, 2 high priority"
     },
     {
@@ -789,6 +805,10 @@
     {
       "date": "2026-11-03",
       "note": "Session 12: Built full Miro fish ripple interconnected knowledge graph — 46k nodes, 108k edges, 5 structural layers (sectors/indices/peers/groups/trends). All idempotent and wired into ensure_graph.py."
+    },
+    {
+      "date": "2026-11-03",
+      "note": "Built true interconnected knowledge graph mesh: 46k nodes 108k edges across 4 layers (sectors/indices/peers/business-groups). Weekly rebuild trigger wired."
     }
   ]
 }
