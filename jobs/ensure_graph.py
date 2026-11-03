@@ -59,8 +59,9 @@ def main():
     print("[ensure_graph] graph.db is empty or sparse — rebuilding from committed source data")
     print(f"[ensure_graph] source: memory_store/results/*.jsonl")
 
-    run_step("Step 1/2: backfill XBRL metrics", "backfill_graph.py")
-    run_step("Step 2/2: rebuild trend summaries", "trend_agent_runner.py")
+    run_step("Step 1/3: backfill XBRL metrics", "backfill_graph.py")
+    run_step("Step 2/3: rebuild trend summaries", "trend_agent_runner.py")
+    run_step("Step 3/3: enrich structural graph (sectors/indices/groups)", "build_knowledge_graph.py")
 
     companies = _count_nodes("Company")
     metrics   = _count_nodes("MetricValue")
