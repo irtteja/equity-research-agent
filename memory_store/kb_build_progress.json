@@ -6089,5 +6089,93 @@
     "results_saved": 4,
     "results_skipped": 0,
     "errors": []
+  },
+  "CERA": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 2,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "CINELINE": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 0,
+    "concalls_ingested": 0,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 1,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "CMLL": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 2,
+    "concalls_ingested": 2,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 1,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "CHALET": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "CMRGREEN": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 3,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "CMSINFO": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "CORDELIA": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 3,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "CORONA": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 1,
+    "ar_ingested": 1,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
   }
 }
