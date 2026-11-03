@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-03",
-  "version": 28,
+  "version": 29,
   "patterns": {
     "confirmed": [
       {
@@ -140,6 +140,12 @@
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
+      },
+      {
+        "pattern": "kb build with SIGSTOP/SIGCONT pattern prevents git race conditions on active writes",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -181,6 +187,12 @@
       },
       {
         "pattern": "kb_build_progress.json checkpoint allows clean resume after container idle",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "graph backfill (context+trend agents) not yet run on full 888-symbol universe",
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
@@ -256,6 +268,14 @@
       },
       {
         "signal": "Content-hash deduplication in doc_store prevents redundant re-ingestion",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "tier-priority build order: Nifty50 → NiftyNext50 → Midcap150 → Smallcap250 → rest",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "checkpoint-based resumability after container idle",
         "added": "2026-11-03"
       }
     ],
@@ -470,6 +490,10 @@
     {
       "date": "2026-11-03",
       "note": "Built 888-stock KB builder (jobs/build_kb.py); fixed AR category mismatch; build at 358/888 and running"
+    },
+    {
+      "date": "2026-11-03",
+      "note": "KB build completed 888/888 NSE mainboard symbols — 2851 concalls, 354 ARs, 3278 XBRL quarters ingested"
     }
   ]
 }

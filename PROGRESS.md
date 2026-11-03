@@ -1,5 +1,25 @@
 # Progress Log
 
+## 2026-11-03 (session 3) — KB build COMPLETE: 888/888 symbols done
+
+### Done
+- KB build completed 888/888 NSE mainboard symbols, 0 failures (commit e935ad5)
+- Assets ingested: 2,851 concall transcripts, 354 annual reports, 3,278 XBRL quarters
+- 791 doc folders, 873 results files in memory_store/
+- /loop 2m monitor ran throughout session — committed at each tick, restarted build on any death
+- All changes pushed to origin/master across multiple checkpoint commits
+
+### Architecture changes
+- `memory_store/kb_build_progress.json`: 888/888 symbols with status=done
+- `memory_store/documents/`: 791 symbol folders fully populated
+- `memory_store/results/`: 873 XBRL result files
+
+### Pending / next session
+- Run graph backfill: `python3 jobs/context_agent_runner.py` then `python3 jobs/trend_agent_runner.py`
+- These populate the knowledge graph for all 888 symbols (context + trend nodes)
+
+---
+
 ## 2026-11-03 (session 2) — KB build running at 358/888; session housekeeping
 
 ### Done
