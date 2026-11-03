@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-03",
-  "version": 27,
+  "version": 28,
   "patterns": {
     "confirmed": [
       {
@@ -116,6 +116,30 @@
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
+      },
+      {
+        "pattern": "NSE annual reports filed under Shareholders meeting category, not Annual Report",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "Filename patterns (_iar, annualreport, annrep) reliably identify annual reports",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "nse._session._s reuse works for raw HTTP calls from cloud container",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "Bulk CSV endpoints (corporate-announcements, corporates-corporateActions) bypass 20-record cap",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -145,6 +169,18 @@
       },
       {
         "pattern": "column names in NSE bulk CSV may change between quarters — need live verification",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "integrated-filing-results CSV variant returns header-only — JSON variant works",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "kb_build_progress.json checkpoint allows clean resume after container idle",
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
@@ -208,6 +244,18 @@
       },
       {
         "signal": "nselib session reuse for raw HTTP calls to NSE APIs",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "ThreadPoolExecutor 4 workers for parallel symbol fetch — stable, no connection errors",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "Pre-loading known_symbols once in run() saves per-thread NSE connections",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "Content-hash deduplication in doc_store prevents redundant re-ingestion",
         "added": "2026-11-03"
       }
     ],
@@ -302,6 +350,14 @@
       },
       {
         "gap": "scan_page_js misses B.get() style JS patterns — var url = /api/ not captured",
+        "added": "2026-11-03"
+      },
+      {
+        "gap": "Knowledge graph still empty for 888-stock universe — needs graph backfill after KB build",
+        "added": "2026-11-03"
+      },
+      {
+        "gap": "No automated trigger to start graph build when KB build completes",
         "added": "2026-11-03"
       }
     ]
@@ -410,6 +466,10 @@
     {
       "date": "2026-11-03",
       "note": "Wired NSE bulk endpoints into all 3 tool files; universe = 888 mainboard stocks"
+    },
+    {
+      "date": "2026-11-03",
+      "note": "Built 888-stock KB builder (jobs/build_kb.py); fixed AR category mismatch; build at 358/888 and running"
     }
   ]
 }

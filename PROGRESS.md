@@ -1,5 +1,19 @@
 # Progress Log
 
+## 2026-11-03 (session 2) — KB build running at 358/888; session housekeeping
+
+### Done
+- KB build PID 173 confirmed alive: 358/888 symbols complete (40%), 0 failures
+- Checkpoint logged (`kb_build_001` in task log); self-model updated
+- PROGRESS.md and session steps completed
+
+### Pending
+- KB build finishing (~530 symbols, ~2h remaining at current pace)
+- After build: `python3 jobs/context_agent_runner.py` + `python3 jobs/trend_agent_runner.py` for graph backfill
+- Wire automatic graph-build trigger on KB build completion
+
+---
+
 ## 2026-11-03 — NSE bulk endpoints wired into tools + universe defined
 
 ### Done

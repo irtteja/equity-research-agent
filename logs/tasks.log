@@ -158,3 +158,11 @@ Progress: Updated tools/indian_markets.py, tools/announcements.py, tools/fundame
 Next: Test live calls; build KB extraction pipeline using integrated_filing per symbol
 Blockers: None
 ============================================================
+
+[CHECKPOINT] 2026-11-03 07:24
+Task: kb_build_001
+Status: in_progress
+Progress: 358/888 symbols done (40%), 0 failures, PID 173 running
+Next: Let build complete; then run context_agent_runner + trend_agent_runner for graph backfill
+Blockers: none
+============================================================
