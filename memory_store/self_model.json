@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-03",
-  "version": 30,
+  "version": 31,
   "patterns": {
     "confirmed": [
       {
@@ -152,6 +152,30 @@
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
+      },
+      {
+        "pattern": "AlertAgent GROWTH_METRICS filter eliminates noise: only revenue/PAT/EBIT/EPS count for improving signals",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "dedup by ticker (best |momentum|*streak) prevents same stock appearing multiple times in brief",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "streak>=2 filter removes one-quarter flukes — reliable trend requires at least 2 consecutive quarters",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "full pipeline works end-to-end: backfill→context_agent→trend_agent→alert_agent produces real market brief",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -205,6 +229,18 @@
       },
       {
         "pattern": "BAJAJ-AUTO finance_costs +21% with revenue +15.8% — watch if sustained into Q3",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "sector pulse usefulness: most 873-stock universe maps to Other sector — sector map needs expansion",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "inflection detection (streak==1, periods>=2) may generate too many signals (695 this run)",
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
@@ -292,6 +328,18 @@
       },
       {
         "signal": "context_agent PRECEDED_BY edges: 148 edges from 200 nodes in one pass (~74% density)",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "momentum_score * streak as dedup key selects best signal per ticker",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "ContextAgent batch size 2000 per run is efficient — runs in ~60s per batch",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "TrendAgent processes full 872-ticker universe in single pass in ~90s",
         "added": "2026-11-03"
       }
     ],
@@ -399,6 +447,18 @@
       {
         "gap": "LIVE_MARKET MCP unstable — session expires mid-run; need reconnect retry logic",
         "added": "2026-11-03"
+      },
+      {
+        "gap": "documents (concalls, ARs) not flowing into graph — ManagementStatement nodes at 0",
+        "added": "2026-11-03"
+      },
+      {
+        "gap": "SECTOR_MAP covers only ~60 of 873 tickers — most stocks show as Other in sector pulse",
+        "added": "2026-11-03"
+      },
+      {
+        "gap": "LIVE_MARKET and NSE_BHAV_COPY MCPs show 404 — daily trigger wont have live price context",
+        "added": "2026-11-03"
       }
     ]
   },
@@ -425,6 +485,18 @@
     "auto": [
       {
         "note": "BAJAJ-AUTO Q-on-Q: revenue +15.8%, PAT +6.1%, but finance_costs +21% — leverage building",
+        "date": "2026-11-03"
+      }
+    ],
+    "Finance": [
+      {
+        "note": "14 improving signals from first live brief — strong sector; HDFCBANK, ICICIBANK leading",
+        "date": "2026-11-03"
+      }
+    ],
+    "IT": [
+      {
+        "note": "mixed signals; revenue trend positive but cost pressure visible",
         "date": "2026-11-03"
       }
     ]
@@ -529,6 +601,10 @@
     {
       "date": "2026-11-03",
       "note": "2026-11-03: built full system architecture artifact; ran context+trend agents; 148 PRECEDED_BY edges, 82 trend summaries, 49 strong trends across KB"
+    },
+    {
+      "date": "2026-11-03",
+      "note": "Session 5: AlertAgent built, full pipeline running, daily trigger created — system is now autonomous"
     }
   ]
 }
