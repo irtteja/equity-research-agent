@@ -179,13 +179,26 @@ class AlertAgent:
             return []
 
     def _get_mgmt_context(self) -> dict[str, list[dict]]:
-        """Pull best management statements per ticker from graph (non-boilerplate)."""
+        """Pull substantive management quotes per ticker — boilerplate aggressively filtered."""
         SKIP = {
             "forward-looking", "forward looking", "on behalf of", "welcome you",
-            "page 1", "page 2", "page 3", "moderator", "investor relations",
-            "not the guarantees", "actual results may", "beliefs, opinion",
-            "din:", "e-voting", "safe harbor", "safe harbour", "disclaimer",
-            "earnings call", "conference call", "this transcript",
+            "page 1 of", "page 2 of", "page 3 of", "moderator",
+            "investor relations", "not the guarantee", "actual results may",
+            "beliefs, opinion", "din:", "e-voting", "safe harbor", "safe harbour",
+            "for your information", "records and dissemination",
+            "https://", "http://", ".mp3", ".pdf", "cloudfront.net",
+            "audio recording", "website will prevail", "subject to change",
+            "pursuant to", "bse limited", "nse limited", "company secretary",
+            "this is for your", "above is for", "kindly note",
+            "this conference", "earnings call", "earnings conference",
+            "financial statements", "quarterly fact sheet",
+            "risks and uncertainties", "risks, which may lead",
+            "disclaimer", "this transcript",
+        }
+        SUBSTANCE = {
+            "growth", "revenue", "margin", "demand", "customer", "market",
+            "volume", "capacity", "order", "pipeline", "expect", "target",
+            "profit", "ebitda", "strong", "expand", "launch", "deal", "win",
         }
         mgmt: dict[str, list[dict]] = {}
         try:
@@ -195,18 +208,22 @@ class AlertAgent:
                 ).fetchall()
             for row in rows:
                 props = json.loads(row["properties"]) if isinstance(row["properties"], str) else row["properties"]
-                stmt = props.get("statement", "")
+                stmt = props.get("statement", "").strip()
                 tl = stmt.lower()
-                if len(stmt) < 60 or any(kw in tl for kw in SKIP):
+                if len(stmt) < 80:
+                    continue
+                if any(kw in tl for kw in SKIP):
+                    continue
+                if not any(w in tl for w in SUBSTANCE):
                     continue
                 ticker = row["ticker"] or props.get("ticker", "")
                 if not ticker:
                     continue
                 if ticker not in mgmt:
                     mgmt[ticker] = []
-                if len(mgmt[ticker]) < 2:
+                if len(mgmt[ticker]) < 1:
                     mgmt[ticker].append({
-                        "statement": stmt[:200],
+                        "statement": stmt[:180],
                         "category":  props.get("category", ""),
                         "sentiment": props.get("sentiment", ""),
                     })
