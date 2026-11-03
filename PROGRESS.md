@@ -1,5 +1,33 @@
 # Progress Log
 
+## 2026-11-03 (session 8) — Comprehensive 6-tab dashboard published
+
+### Done
+- **Comprehensive dashboard v4** published to `https://claude.ai/artifact/56wF7LYVveY76QHahUuCqY`:
+  - 6 tabs: Overview | Indices | Momentum | Value Signals | Sectors | Movers
+  - Animated ticker strip, VIX gauge, FII/DII flow bars
+  - 13 live NSE indices (Nifty 50 at 23,810.85 +1.58%)
+  - 30 improving stocks from knowledge graph (correct `consistent_periods` field)
+  - 30 deteriorating stocks
+  - 15 value signals using correct `near_52w_low_pct` field
+  - 52W range bars, momentum score bars, accel/decel badges
+  - Sortable columns, expandable rows, real-time search
+  - SECTOR_MAP coverage noted: 207 of 885 tickers classified (known limitation)
+- **Debugged graph field names**: `consistent_periods` (not `streak`), `near_52w_low_pct` (not `pct_from_52w_low`)
+- **Identified SECTOR_MAP root cause**: NSE thematic indices are curated baskets — only 207/885 tickers covered; midcaps/smallcaps absent
+
+### Architecture notes
+- Dashboard uses hardcoded snapshot data (2026-11-03); needs NSE_BHAV_COPY MCP live wiring when server stabilises
+- SECTOR_MAP fix: needs full NSE equity list with industry field (nselib `equity_list()` not available)
+
+### Pending
+- Wire NSE_BHAV_COPY live data to replace hardcoded DATA block
+- Expand SECTOR_MAP to full 885 tickers via alternate BSE/NSE source
+- `tools/recall_tool.py` as MCP tool
+- Phase 2 memory: Kuzu graph + LanceDB vector index
+
+---
+
 ## 2026-11-03 (sessions 6–7) — Interactive dashboard, repo hygiene, self-description
 
 ### Done
