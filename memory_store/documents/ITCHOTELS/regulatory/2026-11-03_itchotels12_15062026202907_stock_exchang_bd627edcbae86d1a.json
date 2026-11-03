@@ -1,0 +1,17 @@
+{
+  "doc_id": "bd627edcbae86d1a",
+  "source_file": "/tmp/concall_ITCHOTELS_uxdoc2gu/ITCHOTELS12_15062026202907_Stock_Exchanges_Investors_Meet_Citigroup.pdf",
+  "source_name": "ITCHOTELS12_15062026202907_Stock_Exchanges_Investors_Meet_Citigroup.pdf",
+  "ingested_at": "2026-11-03",
+  "symbol": "ITCHOTELS",
+  "doc_type": "regulatory",
+  "period": "2026",
+  "confidence": "high",
+  "pages": 1,
+  "extract_method": "pymupdf",
+  "char_count": 1079,
+  "text": " \n  15th June, 2026 \n \nThe Manager   \n \n \n \n \n     \n \n     The General Manager  \nListing Department  \n \n \n \n \n    \n     \n     Dept. of Corporate Services  \nNational Stock Exchange of India Ltd.  \n \n    \n     \n     BSE Ltd.  \nExchange Plaza  \n \n \n \n \n    \n     \n     P. J. Towers \nPlot No. C-1, G Block  \n \n \n    \n     \n \n     Dalal Street \nBandra-Kurla Complex  \n \n \n \n    \n     \n     Mumbai 400 001 \nBandra (East)  \nMumbai 400 051 \n \nDear Sirs, \nAnalysts meet \n \nWe write to advise, pursuant to Regulation 30 of the SEBI (Listing Obligations and Disclosure \nRequirements) Regulations, 2015, that the Company’s representatives will be attending the \nfollowing Analysts meet: \n \nAnalysts meet \nMode of \nattendance \nNature of the \nmeeting \nDate and place of the  \nAnalysts meet \nAnalysts meet organised by \nCitigroup \nGlobal \nMarkets \nIndia Private Limited \nPhysical \nGroup meeting \n19th June, 2026 at \nGurugram \n \nYours faithfully, \nITC Hotels Limited \n \n \nDiwaker Dinesh \nCompany Secretary \nDIWAKER \nDINESH\nDigitally signed by \nDIWAKER DINESH \nDate: 2026.06.15 \n17:14:43 +05'30'\n",
+  "chunks": [
+    " \n  15th June, 2026 \n \nThe Manager   \n \n \n \n \n     \n \n     The General Manager  \nListing Department  \n \n \n \n \n    \n     \n     Dept. of Corporate Services  \nNational Stock Exchange of India Ltd.  \n \n    \n     \n     BSE Ltd.  \nExchange Plaza  \n \n \n \n \n    \n     \n     P. J. Towers \nPlot No. C-1, G Block  \n \n \n    \n     \n \n     Dalal Street \nBandra-Kurla Complex  \n \n \n \n    \n     \n     Mumbai 400 001 \nBandra (East)  \nMumbai 400 051 \n \nDear Sirs, \nAnalysts meet \n \nWe write to advise, pursuant to Regulation 30 of the SEBI (Listing Obligations and Disclosure \nRequirements) Regulations, 2015, that the Company’s representatives will be attending the \nfollowing Analysts meet: \n \nAnalysts meet \nMode of \nattendance \nNature of the \nmeeting \nDate and place of the  \nAnalysts meet \nAnalysts meet organised by \nCitigroup \nGlobal \nMarkets \nIndia Private Limited \nPhysical \nGroup meeting \n19th June, 2026 at \nGurugram \n \nYours faithfully, \nITC Hotels Limited \n \n \nDiwaker Dinesh \nCompany Secretary \nDIWAKER \nDINESH\nDigitally signed by \nDIWAKER DINESH \nDate: 2026.06.15 \n17:14:43 +05'30'\n"
+  ]
+}
