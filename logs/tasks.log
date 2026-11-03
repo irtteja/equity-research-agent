@@ -302,3 +302,27 @@ Progress: Dashboard published to https://claude.ai/artifact/56wF7LYVveY76QHahUuC
 Next: Wire NSE_BHAV_COPY live data to replace hardcoded DATA; expand SECTOR_MAP to full 885 tickers
 Blockers: NSE_BHAV_COPY MCP 404 — currently hardcoded snapshot data from 2026-11-03
 ============================================================
+
+[CHECKPOINT] 2026-11-03 13:00
+Task: None
+Status: failed
+Progress: Orchestrator cycle crashed
+Next: Check agents/orchestrator.py
+Blockers: 'GraphStore' object has no attribute 'conn'
+============================================================
+
+[CHECKPOINT] 2026-11-03 13:01
+Task: None
+Status: completed
+Progress: Confluences: 159 (buy=158, sell=1) | Gaps: 3
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 91,565 unprocessed — ContextAgent lagging; No ConfluenceSignal nodes for today — first run or no signals met threshold; Bhavcopy stale — latest is 2026-10-28
+============================================================
+
+[CHECKPOINT] 2026-11-03 13:01
+Task: None
+Status: completed
+Progress: Confluences: 128 (buy=127, sell=1) | Gaps: 2
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 91,565 unprocessed — ContextAgent lagging; Bhavcopy stale — latest is 2026-10-28
+============================================================
