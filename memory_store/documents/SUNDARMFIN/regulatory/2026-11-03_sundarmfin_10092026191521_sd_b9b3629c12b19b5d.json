@@ -1,0 +1,17 @@
+{
+  "doc_id": "b9b3629c12b19b5d",
+  "source_file": "/tmp/concall_SUNDARMFIN_e2hv0ktt/SUNDARMFIN_10092026191521_sd.pdf",
+  "source_name": "SUNDARMFIN_10092026191521_sd.pdf",
+  "ingested_at": "2026-11-03",
+  "symbol": "SUNDARMFIN",
+  "doc_type": "regulatory",
+  "period": "2026-27",
+  "confidence": "high",
+  "pages": 1,
+  "extract_method": "pymupdf",
+  "char_count": 1030,
+  "text": "SEC: 170:2026-27/SK\nSeptember 10, 2026\nThe Manager - Listing \nNational Stock Exchange of India Limited\nCapital Market – Listing\nExchange Plaza, 5th Floor\nPlot No. C/1, G Block\nBandra-Kurla Complex\nBandra (E), Mumbai 400 051\nDear Sir,\nRe:\nDisclosure under Reg. 30 read with Sch. III. Part A. Para A of SEBI (LODR) \nRegulations, 2015 – Participation in Institutional Investors’ Meeting \nWe wish to inform you that today at 5.30 P.M., Mr. M. Ramaswamy, Chief Financial Officer had \nan interaction with Yes Securities Institutional Equities, Institutional Investor, regarding the busi­\nness performance of the Company for the quarter ended 30th June 2026. It was a one-to-one \nmeet. \nFurther, we hereby confirm that: \n1.\nThe interaction was primarily in the Q&A format.\n2.\nNo Unpublished Price Sensitive Information (UPSI) was shared during the interaction. \nThanking you,\nYours truly,\nFor Sundaram Finance Limited\nP.N. Srikant\nCCO & Company Secretary\nP N \nSRIKANT\nDigitally signed \nby P N SRIKANT \nDate: 2026.09.10 \n19:02:37 +05'30'\n",
+  "chunks": [
+    "SEC: 170:2026-27/SK\nSeptember 10, 2026\nThe Manager - Listing \nNational Stock Exchange of India Limited\nCapital Market – Listing\nExchange Plaza, 5th Floor\nPlot No. C/1, G Block\nBandra-Kurla Complex\nBandra (E), Mumbai 400 051\nDear Sir,\nRe:\nDisclosure under Reg. 30 read with Sch. III. Part A. Para A of SEBI (LODR) \nRegulations, 2015 – Participation in Institutional Investors’ Meeting \nWe wish to inform you that today at 5.30 P.M., Mr. M. Ramaswamy, Chief Financial Officer had \nan interaction with Yes Securities Institutional Equities, Institutional Investor, regarding the busi­\nness performance of the Company for the quarter ended 30th June 2026. It was a one-to-one \nmeet. \nFurther, we hereby confirm that: \n1.\nThe interaction was primarily in the Q&A format.\n2.\nNo Unpublished Price Sensitive Information (UPSI) was shared during the interaction. \nThanking you,\nYours truly,\nFor Sundaram Finance Limited\nP.N. Srikant\nCCO & Company Secretary\nP N \nSRIKANT\nDigitally signed \nby P N SRIKANT \nDate: 2026.09.10 \n19:02:37 +05'30'\n"
+  ]
+}
