@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-03",
-  "version": 31,
+  "version": 32,
   "patterns": {
     "confirmed": [
       {
@@ -176,6 +176,24 @@
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
+      },
+      {
+        "pattern": "Interactive SPA with unified state object + renderAll() is more maintainable than per-section renders",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "git rm --cached removes tracking without deleting local files — safe for large data dirs",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "JSON field stripping (text/chunks) safe once content is extracted into graph — saves 860MB per run",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -241,6 +259,18 @@
       },
       {
         "pattern": "inflection detection (streak==1, periods>=2) may generate too many signals (695 this run)",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "Dashboard with hardcoded DATA is a liability — needs live NSE_BHAV_COPY MCP wiring to stay fresh",
+        "first_seen": "2026-11-03",
+        "last_seen": "2026-11-03",
+        "count": 1
+      },
+      {
+        "pattern": "Deleted 9 scheduled tasks — verify 4 PM daily pipeline still fires correctly on 2026-11-04",
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
@@ -340,6 +370,14 @@
       },
       {
         "signal": "TrendAgent processes full 872-ticker universe in single pass in ~90s",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "Artifact in-place update (same file_path) preserves URL across dashboard rewrites",
+        "added": "2026-11-03"
+      },
+      {
+        "signal": "dedup by ticker + streak>=2 + GROWTH_METRICS filter gives clean signal list (no cost metric noise)",
         "added": "2026-11-03"
       }
     ],
@@ -458,6 +496,18 @@
       },
       {
         "gap": "LIVE_MARKET and NSE_BHAV_COPY MCPs show 404 — daily trigger wont have live price context",
+        "added": "2026-11-03"
+      },
+      {
+        "gap": "SECTOR_MAP covers only ~60 of 885 tickers — most sectors show as Other in sector pulse",
+        "added": "2026-11-03"
+      },
+      {
+        "gap": "LIVE_MARKET MCP 404 means daily pipeline runs without live price context",
+        "added": "2026-11-03"
+      },
+      {
+        "gap": "BSE announcements not yet integrated — missing corporate action signals",
         "added": "2026-11-03"
       }
     ]
@@ -605,6 +655,10 @@
     {
       "date": "2026-11-03",
       "note": "Session 5: AlertAgent built, full pipeline running, daily trigger created — system is now autonomous"
+    },
+    {
+      "date": "2026-11-03",
+      "note": "Sessions 6-7: interactive SPA dashboard published, 9 stale tasks deleted, 3728 files untracked from git, 860MB freed from document JSONs, graph at 45982 nodes/89486 edges"
     }
   ]
 }
