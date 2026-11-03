@@ -9281,5 +9281,51 @@
     "results_saved": 2,
     "results_skipped": 0,
     "errors": []
+  },
+  "TEMPSENS": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 3,
+    "concalls_ingested": 3,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 2,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "TEXRAIL": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "THELEELA": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 4,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": []
+  },
+  "THOMASCOOK": {
+    "status": "done",
+    "done_at": "2026-11-03",
+    "concalls_found": 4,
+    "concalls_ingested": 3,
+    "ar_found": 0,
+    "ar_ingested": 0,
+    "results_saved": 4,
+    "results_skipped": 0,
+    "errors": [
+      "concall download failed: 19102026182406_Earnings_Conference_Call_Invite.pdf"
+    ]
   }
 }
