@@ -30,3 +30,5 @@ memory_store/documents/
 # bhavcopy/: daily OHLCV CSVs regenerated each night
 memory_store/bhavcopy/
 memory_store/indices_bhavcopy/
+# annual_reports/: PDFs too large; only index.json per ticker is committed
+memory_store/annual_reports/**/*.pdf
