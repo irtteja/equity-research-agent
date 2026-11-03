@@ -26,35 +26,16 @@ from pathlib import Path
 REPO = Path(__file__).parent.parent
 sys.path.insert(0, str(REPO))
 
-# Sector mappings — based on MISSION.md universe + NSE indices
-SECTOR_MAP = {
-    "HDFCBANK": "Finance", "ICICIBANK": "Finance", "KOTAKBANK": "Finance",
-    "SBIN": "Finance", "AXISBANK": "Finance", "BAJFINANCE": "Finance",
-    "BAJAJFINSV": "Finance", "HDFCLIFE": "Finance", "SBILIFE": "Finance",
-    "ICICIGI": "Finance", "INDUSINDBK": "Finance", "FEDERALBNK": "Finance",
-    "BANDHANBNK": "Finance", "AUBANK": "Finance", "IDFCFIRSTB": "Finance",
-    "TCS": "IT", "INFY": "IT", "WIPRO": "IT", "HCLTECH": "IT",
-    "TECHM": "IT", "LTIM": "IT", "PERSISTENT": "IT", "MPHASIS": "IT",
-    "COFORGE": "IT", "OFSS": "IT", "KPIT": "IT",
-    "RELIANCE": "Energy", "ONGC": "Energy", "BPCL": "Energy",
-    "NTPC": "Energy", "POWERGRID": "Energy", "ADANIGREEN": "Energy",
-    "ADANIPORTS": "Energy", "TATAPOWER": "Energy",
-    "TATAMOTORS": "Auto", "MARUTI": "Auto", "M&M": "Auto",
-    "BAJAJ-AUTO": "Auto", "HEROMOTOCO": "Auto", "EICHERMOT": "Auto",
-    "TVSMOTOR": "Auto", "ASHOKLEY": "Auto",
-    "SUNPHARMA": "Pharma", "DRREDDY": "Pharma", "CIPLA": "Pharma",
-    "DIVISLAB": "Pharma", "BIOCON": "Pharma", "LUPIN": "Pharma",
-    "AUROPHARMA": "Pharma", "TORNTPHARM": "Pharma",
-    "HINDUNILVR": "FMCG", "ITC": "FMCG", "NESTLEIND": "FMCG",
-    "BRITANNIA": "FMCG", "DABUR": "FMCG", "MARICO": "FMCG", "COLPAL": "FMCG",
-    "TITAN": "Consumer", "VMART": "Consumer", "TRENT": "Consumer",
-    "DMART": "Consumer",
-    "LT": "Infra", "ADANIENT": "Infra", "ULTRACEMCO": "Infra",
-    "GRASIM": "Infra", "SHREECEM": "Infra", "ACC": "Infra",
-    "TATASTEEL": "Metals", "JSWSTEEL": "Metals", "HINDALCO": "Metals",
-    "VEDL": "Metals", "COALINDIA": "Metals",
-    "BHARTIARTL": "Telecom", "INDUSTOWER": "Telecom",
-}
+# Sector map — loaded from memory_store/sector_map.json (built by jobs/build_sector_map.py)
+_SECTOR_MAP_FILE = REPO / "memory_store" / "sector_map.json"
+
+def _load_sector_map() -> dict:
+    try:
+        return json.loads(_SECTOR_MAP_FILE.read_text())
+    except Exception:
+        return {}
+
+SECTOR_MAP = _load_sector_map()
 
 KEY_INDICES = [
     "Nifty 50", "Nifty Bank", "Nifty IT", "Nifty Midcap 150",
