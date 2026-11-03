@@ -3340,5 +3340,269 @@
     "latest_quarter": "Second quarter",
     "quarters": 4,
     "last_updated": "2026-11-03"
+  },
+  "CRAMC": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "CRESTO": {
+    "latest_period": "2026-03-31",
+    "latest_quarter": "Fourth quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "CREATIVEYE": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "CSM": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 2,
+    "last_updated": "2026-11-03"
+  },
+  "CYBERMEDIA": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "CSBBANK": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "DATAMATICS": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "DBREALTY": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "DBCORP": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "DBL": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "DCBBANK": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "DEEPA": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 2,
+    "last_updated": "2026-11-03"
+  },
+  "DEN": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "DGCONTENT": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "DHOOTTRANS": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 1,
+    "last_updated": "2026-11-03"
+  },
+  "DIACABS": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "DNAMEDIA": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "DISHTV": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "DYNAMATECH": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "E2E": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 2,
+    "last_updated": "2026-11-03"
+  },
+  "EBGNG": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "EDELWEISS": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "EIEL": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "ELEVATE": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 2,
+    "last_updated": "2026-11-03"
+  },
+  "ELECTCAST": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "ELLEN": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "ENIL": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "EMBDL": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "EMIL": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "ENTERO": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "EPL": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "EQUITASBNK": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "ERIS": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "ESDS": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Half yearly",
+    "quarters": 2,
+    "last_updated": "2026-11-03"
+  },
+  "EXCELSOFT": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "FEDFINA": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "FIEMIND": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "FINPIPE": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GAEL": {
+    "latest_period": "2026-09-30",
+    "latest_quarter": "Second quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GAJA": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 2,
+    "last_updated": "2026-11-03"
+  },
+  "GAUDIUMIVF": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GERMAN": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 1,
+    "last_updated": "2026-11-03"
+  },
+  "GENUSPOWER": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
+  },
+  "GKSL": {
+    "latest_period": "2026-06-30",
+    "latest_quarter": "First quarter",
+    "quarters": 4,
+    "last_updated": "2026-11-03"
   }
 }
