@@ -442,6 +442,13 @@ def run():
     )
     update_task_status(TASK_ID, "completed")
 
+    # Export dashboard data (patch live screener + belief state into dashboard.html)
+    try:
+        from jobs.export_dashboard_data import export_dashboard_data
+        export_dashboard_data(patch_html=True, verbose=True)
+    except Exception as _exp_err:
+        print(f"[daily_monitor] dashboard export skipped: {_exp_err}")
+
     # Commit to GitHub
     _git_commit(f"chore: daily monitor {date.today().isoformat()} — {facts_total} facts ingested")
 
