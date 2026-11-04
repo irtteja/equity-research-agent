@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 56,
+  "version": 57,
   "patterns": {
     "confirmed": [
       {
@@ -434,6 +434,18 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "business_quality scoring works well: 159 tickers scored, 114 high quality",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "peer_comparison requires at least 2 peers with valid ValuationScore — otherwise returns insufficient_data correctly",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -643,6 +655,18 @@
       },
       {
         "pattern": "ConcallInsight phone-number contamination in specific_numbers — may need post-filter",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "ConcallInsight tone extraction: ManagementStatement data is too sparse for reliable tone signals (1-2 per ticker)",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "PeerComparison top_quartile is empty — may need more ValuationScore density across sectors",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -894,6 +918,18 @@
       },
       {
         "signal": "Importing helpers from generate_report.py into generate_report_html.py avoids duplication",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "sliding-window MD&A finder in annual_report_analyzer handles 200+ page PDFs",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "generate_report.py deep-dive with 10+ node types produces comprehensive research output",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "orchestrator.py Phase 2 wiring: valuation_agent -> peer_comparison -> business_quality",
         "added": "2026-11-04"
       }
     ],
@@ -1161,6 +1197,18 @@
       {
         "gap": "Conviction trend always STABLE (only 1 record per ticker so far — will improve as daily runs accumulate)",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "Banking sector peer/quality scoring returns insufficient_data (NII model, pe=None)",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "concall ingest pipeline not yet running — ManagementStatement nodes are sparse",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "AR PDFs only exist for 5 tickers — AnnualReportInsight coverage is minimal",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -1245,14 +1293,20 @@
       {
         "note": "ValuationScore metrics all None for banks — NII-based model needed",
         "date": "2026-11-04"
+      },
+      {
+        "note": "banks have pe=None in ValuationScore — peer comparison returns insufficient_data; needs bank-specific metrics (NIM, GNPA, PCR)",
+        "date": "2026-11-04"
+      }
+    ],
+    "Oil Gas & Consumable Fuels": [
+      {
+        "note": "IGL at 8th percentile 52W position, RSI 31 (oversold); RELIANCE forming BUY at 34th percentile",
+        "date": "2026-11-04"
       }
     ]
   },
   "session_log": [
-    {
-      "date": "2026-11-01",
-      "note": "self_improve scan: 2 high-priority gaps"
-    },
     {
       "date": "2026-11-03",
       "note": "Wired NSE bulk endpoints into all 3 tool files; universe = 888 mainboard stocks"
@@ -1368,6 +1422,10 @@
     {
       "date": "2026-11-04",
       "note": "session 30: deep-dive report generator — 11-section markdown + HTML, investment thesis synthesis, conviction trend, 52W fallback fix"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "completed analysis layer: concall/AR analyzers, peer comparison, business quality scorer, deep-dive report generator, HTML report output, dashboard artifact published"
     }
   ]
 }

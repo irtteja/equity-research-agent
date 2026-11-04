@@ -814,3 +814,11 @@ Progress: Built deep-dive generate_report.py (11 sections) + generate_report_htm
 Next: Next session: wire HTML reports into orchestrator daily cycle
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-04 20:02
+Task: session-31
+Status: completed
+Progress: analysis layer complete: concall_analyzer, annual_report_analyzer, peer_comparison, business_quality, deep-dive report generator, HTML report output, dashboard published
+Next: wire concall ingest pipeline, fetch more AR PDFs, run reports over all 168 BUY tickers
+Blockers: NSE_BHAV_COPY MCP server offline (market data simulated)
+============================================================
