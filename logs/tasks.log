@@ -926,3 +926,11 @@ Progress: composite_ranker, alert_engine, process_episodes, bulk_report_index, d
 Next: backfill doc_store text for 3236 entries; re-run concall_analyzer for all tickers with transcripts; wire ConcallInsight into alert engine
 Blockers: NSE concall PDF direct download returning 404 for some URLs
 ============================================================
+
+[CHECKPOINT] 2026-11-04 20:40
+Task: watchdog
+Status: completed
+Progress: 02:10 IST Nov-5 — after hours heartbeat; graph healthy (867 co, 29192 metrics, 100 trends); daily_monitor ran earlier today
+Next: next watchdog wake
+Blockers: none
+============================================================
