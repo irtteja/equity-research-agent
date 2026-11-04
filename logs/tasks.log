@@ -934,3 +934,19 @@ Progress: 02:10 IST Nov-5 — after hours heartbeat; graph healthy (867 co, 2919
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-04 21:04
+Task: None
+Status: completed
+Progress: processed=28672 edges=20449 errors=0 workers=8
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-04 21:06
+Task: None
+Status: completed
+Progress: trends_written=7340 strong=4351 workers=4 errors=0
+Next: 
+Blockers: none
+============================================================
