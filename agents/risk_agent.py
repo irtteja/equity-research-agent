@@ -90,7 +90,7 @@ class RiskAgent:
         Returns list of {ticker, quality_score, state_score, age_score, bear_score, stability_score, flags}
         """
         with _conn() as c:
-            q = """SELECT ticker, confidence, state, properties, created_at, updated_at
+            q = """SELECT ticker, confidence, belief_state as state, properties, created_at
                    FROM nodes
                    WHERE node_type='ConfluenceSignal'
                      AND json_extract(properties,'$.type') LIKE '%BUY%'"""
@@ -115,7 +115,7 @@ class RiskAgent:
             state_score = state_map.get(state, 0.5)
 
             # 2. Age score
-            upd = s["updated_at"] or s["created_at"] or today.isoformat()
+            upd = s["created_at"] or today.isoformat()
             try:
                 upd_date = date.fromisoformat(upd[:10])
                 age_days = (today - upd_date).days
