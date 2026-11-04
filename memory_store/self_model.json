@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 50,
+  "version": 51,
   "patterns": {
     "confirmed": [
       {
@@ -362,6 +362,18 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "belief_state is the correct nodes column (not state)",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "nodes table has no updated_at — use created_at",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -535,6 +547,12 @@
       },
       {
         "pattern": "technical engine RSI/MACD may need tuning for Indian market microstructure",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "prediction_log track record too fresh to evaluate — need 30d",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -738,6 +756,18 @@
       },
       {
         "signal": "screener SQL join (ConfluenceSignal + PriceSnapshot + TrendSummary + Company) returns 168 tickers clean",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "5-source devil_advocate scoring (trend+52Wh+belief_log+debt/margin+keywords)",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "sector_concentration flag at 30% threshold",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "signal_quality composite score (belief_state×age×bear×stability)",
         "added": "2026-11-04"
       }
     ],
@@ -965,6 +995,14 @@
       {
         "gap": "global macro data not yet surfaced in dashboard",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "prediction_log seeded with today date — no historical baseline yet",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "liquidity check needs traded_value field populated in PriceSnapshot",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -1008,10 +1046,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-30",
-      "note": "self_improve scan: 2 high-priority gaps"
-    },
     {
       "date": "2026-10-30",
       "note": "self_improve scan: 2 high-priority gaps"
@@ -1127,6 +1161,10 @@
     {
       "date": "2026-11-04",
       "note": "Session 23: live-wired 168-ticker screener to dashboard v5; fork agents completed technical/valuation/alert/devil-advocate/macro stack; daily_monitor auto-exports on each cycle"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "completed risk_agent + alert_agent + devil_advocate + prediction_log + registered 4 agents in agent_configs; synthesis phase now has full bear-case pipeline"
     }
   ]
 }

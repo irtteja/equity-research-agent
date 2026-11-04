@@ -1,5 +1,36 @@
 # Progress Log
 
+## 2026-11-04 — Agent Layer Completion + Risk/Alert/Backtest (session 24)
+
+### Done
+- **`agents/risk_agent.py`**: sector concentration flags, signal quality scoring (belief_state ×
+  age × bear_case × revision_stability), liquidity check vs ₹50L/10K vol thresholds.
+  Writes RiskReport nodes. Tested: 158 BUY signals, overall_risk=low.
+- **`agents/alert_agent.py`**: 6 alert types (signal_flip_bear/bull, new_buy, conviction_surge/drop,
+  stale_signal). Scans belief_log + nodes. Writes AlertEvent nodes to graph.db.
+  Fixed: `updated_at` → `created_at` column (nodes table schema).
+- **`agents/devil_advocate.py`**: 5 bear argument sources; writes BearCase nodes.
+  RELIANCE test: bull=0.646, bear=0, verdict=BUY.
+- **`memory/prediction_log.py`**: tracks signal predictions vs t+30/60/90d price outcomes.
+  `seed_from_confluence_signals()` seeded 159 predictions.
+- **`jobs/register_agents.py`**: registers alert_agent, devil_advocate, risk_agent, backtest_agent
+  in agent_configs table. Idempotent.
+- **`jobs/orchestrator.py`** synthesis phase now runs:
+  analyst → sectors → alert_agent → devil_advocate (top 30) → risk_agent.
+- **`agents/risk_agent.py`** column fix: `state` → `belief_state`, `updated_at` removed (commit 2006882).
+- Commits: 2eb1783 (alert_agent fix), 2006882 (risk_agent fix + conviction_tracker)
+
+### Architecture changes
+- Synthesis phase now has full bear-case + risk pipeline (5 agents total in Phase 3)
+- 159 predictions seeded in prediction_log — track record starts 2026-11-04
+
+### Pending / next sessions
+- End-to-end `daily_monitor.py` test run to validate full 6-phase pipeline
+- Backtesting engine: reads `prediction_log`, compares predicted vs actual price moves 30/60/90d
+- Concall transcript extraction: wire `document_agent` to NSE announcement PDFs
+- Background agents (3 forks launched): technical/valuation engines, dashboard live-wiring,
+  screener expansion to 159 tickers, global macro overlay — pending notification
+
 ## 2026-11-04 — Full Stack Integration + Dashboard v5 (session 23)
 
 ### Done
