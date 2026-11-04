@@ -1,5 +1,26 @@
 # Progress Log
 
+## 2026-11-04 (session 17) — Vendor nselib; verify watchdog push works
+
+### Done
+- **Verified watchdog git push works**: fired `trig_01KQz1r73WqHT1eDZT8Gnk5x` against `session_01G28r1baFCcEtSCP6jvUn1Y`. Completed 04:34 UTC, pushed `58d3063`. ensure_graph rebuilt 867 companies / 29,192 metric values. No 403 — persistent session fix confirmed end-to-end.
+- **Diagnosed nselib gap**: persistent-agent env has no setup script, so `~/irtteja/nselib` doesn't exist there. All 15 job/tool files that relied on that path were failing silently.
+- **Fixed**: copied nselib package to `vendor/nselib/`. Updated all 15 files (`jobs/*.py`, `tools/*.py`) to check vendor path first, fall back to `~/irtteja/nselib`. Import verified OK from vendor. Committed `d61d701`, pushed `1635e8d`.
+- Files changed: `jobs/build_kb.py`, `daily_monitor.py`, `fetch_announcements.py`, `fetch_results.py`, `save_bhavcopy.py`, `save_index_constituents.py`, `save_indices_bhavcopy.py`, `triage_test.py`, `update_universe.py`, `weekly_research.py` + `tools/announcements.py`, `fundamentals.py`, `indian_markets.py`, `macro.py`, `pdf_parser.py`
+
+### Architecture notes (session 17 additions)
+- `vendor/nselib/` now travels with the repo — available in any environment that checks out the code, no separate install needed.
+- Fallback to `~/irtteja/nselib` preserves backward compatibility for the default dev environment (which still clones nselib separately).
+- Remaining gap: NSE_BHAV_COPY + LIVE_MARKET MCP servers still not configured in the persistent-agent environment. Jobs use nselib directly now (not MCP tools), so this is lower priority.
+
+### Pending / next sessions (updated)
+- Fire `daily_monitor` or `fetch_announcements` trigger to confirm nselib works in persistent-agent env
+- Investigate why NSE_BHAV_COPY MCP isn't available in persistent-agent env (configure environment if possible)
+- Run `fetch_results.py` manually against a known-results day — verify XBRL pipeline end-to-end
+- Phase 2 memory: Kuzu graph + LanceDB vector index
+
+---
+
 ## 2026-11-04 (session 16) — Git push fix: all 11 triggers migrated to push-enabled persistent session
 
 ### Done

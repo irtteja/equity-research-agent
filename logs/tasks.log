@@ -470,3 +470,11 @@ Progress: heartbeat — market hours (10:11 IST), graph.db ready (867 co, 29192 
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-04 04:48
+Task: session-17-vendor-nselib
+Status: completed
+Progress: Copied nselib to vendor/nselib/, updated 15 job/tool files to use vendored path first with ~/irtteja/nselib fallback. Committed d61d701, pushed 1635e8d.
+Next: Fire daily_monitor or fetch_announcements trigger to verify nselib imports work in persistent-agent env
+Blockers: None
+============================================================

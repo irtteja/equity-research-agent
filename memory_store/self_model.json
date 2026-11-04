@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 44,
+  "version": 45,
   "patterns": {
     "confirmed": [
       {
@@ -290,6 +290,12 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "vendoring nselib into repo eliminates env-specific install dependency",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -421,6 +427,12 @@
       },
       {
         "pattern": "All 11 triggers in one persistent session may cause context accumulation over time — monitor autocompact behavior",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "NSE_BHAV_COPY MCP availability in persistent-agent env — not yet tested",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -584,6 +596,10 @@
       },
       {
         "signal": "update_trigger(enabled=false) works even when delete_trigger is blocked by auto-mode classifier",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "vendor/nselib fallback pattern for cross-env compatibility",
         "added": "2026-11-04"
       }
     ],
@@ -775,6 +791,10 @@
       {
         "gap": "delete_trigger is blocked by auto-mode classifier intermittently — 5 triggers could not be deleted, only disabled",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "nselib was silently failing in automated sessions — no error surfaced in logs",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -818,10 +838,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-30",
-      "note": "E2E test run"
-    },
     {
       "date": "2026-10-30",
       "note": "self_improve scan: 5 gaps found, 2 high priority"
@@ -937,6 +953,10 @@
     {
       "date": "2026-11-04",
       "note": "Session 16: fixed git push 403 by creating push-enabled persistent session in Persistent-agent env; migrated all 11 triggers to it"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "Session 17: vendored nselib into repo; verified watchdog push 58d3063 succeeded; fixed 15 files to use vendor path first"
     }
   ]
 }
