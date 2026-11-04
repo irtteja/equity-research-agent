@@ -1,5 +1,26 @@
 # Progress Log
 
+## 2026-11-04 — Daily monitor run (equity-daily-monitor trigger)
+
+### Done
+- **daily_monitor.py**: completed with errors; pushed f2eae5d. Captured: 591 events saved to event calendar, macro snapshot (Nikkei -4.46%, Copper -3.97%, Brent -1.88%, SENSEX +0.53%), FII net +₹6836 Cr / DII net -₹3678 Cr (03-Nov), 12 NSE announcements triaged.
+- **price_agent_runner.py**: 495 PriceSnapshot nodes written (Nifty 500 bulk), 0 value signals today.
+- **save_bhavcopy.py**: `status: holiday` — Nov 4, 2026 is a market holiday; data_date = 2026-11-03.
+- **save_indices_bhavcopy.py**: failed — NSE file not yet available (holiday confirmed).
+- **Vendor path fix**: `agents/price_agent.py` and `agents/document_swarm.py` were missed in Session 17's vendor-path sweep; fixed both (`sys.path.insert(0, REPO/"vendor")`).
+
+### Architecture notes
+- 2 agent files missed in the Session 17 vendor sweep: `agents/price_agent.py`, `agents/document_swarm.py`. Now fixed.
+- Nov 4, 2026 is a market holiday — no bhavcopy available; daily_monitor still ran macro data via yfinance.
+
+### Pending / next sessions (updated)
+- Confirm no other agent/worker files are missing the vendor path (audit `agents/workers/`)
+- Run `fetch_results.py` manually — verify XBRL pipeline end-to-end
+- Phase 2 memory: Kuzu graph + LanceDB vector index
+- Weekly research job (`weekly_research.py`) — still disabled
+
+---
+
 ## 2026-11-04 (session 17) — Vendor nselib; verify watchdog push works
 
 ### Done
