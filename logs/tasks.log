@@ -950,3 +950,11 @@ Progress: git pull (888 tickers, new agents), context_agent 28672 nodes/20449 ed
 Next: wire Living Graph to daily price refresh; more context_agent runs for deeper enrichment
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-04 22:41
+Task: watchdog
+Status: completed
+Progress: 04:11 IST Nov-5 — after-hours heartbeat; graph healthy (867 co, 29192 metrics); daily_monitor ran earlier
+Next: next watchdog wake
+Blockers: none
+============================================================
