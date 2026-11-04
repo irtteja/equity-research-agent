@@ -21,7 +21,7 @@ from zoneinfo import ZoneInfo
 
 REPO = Path(__file__).parent.parent
 sys.path.insert(0, str(REPO))
-sys.path.insert(0, str(REPO / "vendor" / "nselib"))
+sys.path.insert(0, str(REPO / "vendor"))
 
 DB_PATH       = REPO / "memory_store" / "graph.db"
 SCHEDULE_FILE = REPO / "memory_store" / "nse_feed_schedule.json"
