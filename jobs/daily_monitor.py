@@ -246,6 +246,16 @@ def run():
         print(f"  ERROR: {e}")
         results["deals"] = {"error": str(e)}
 
+    # 5b. Graph cleanup — trim stale PriceSnapshot and TrendSummary dupes
+    print("\n[5b] Graph cleanup (stale nodes)...")
+    try:
+        from jobs.cleanup_graph import cleanup as cleanup_graph
+        cleanup_stats = cleanup_graph()
+        results["graph_cleanup"] = cleanup_stats
+    except Exception as e:
+        print(f"  ERROR: {e}")
+        results["graph_cleanup"] = {"error": str(e)}
+
     # Save output
     out_dir = os.path.join(REPO_DIR, "reports", "daily")
     os.makedirs(out_dir, exist_ok=True)
