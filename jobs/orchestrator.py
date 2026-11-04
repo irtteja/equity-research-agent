@@ -328,6 +328,69 @@ def run_meta_phase(synthesize_tools: int = 5, verbose: bool = True) -> dict:
         results["graph_dynamics"] = {"error": str(e)}
         _log("meta", f"graph_dynamics FAILED: {e}")
 
+    # Global macro snapshot (yfinance — no auth)
+    try:
+        _log("meta", "global_macro snapshot...")
+        t1 = time.time()
+        from tools.global_macro import run as macro_run
+        macro_r = macro_run(verbose=verbose)
+        _record_perf("global_macro_v1", 1, 0, time.time()-t1, "meta")
+        results["global_macro"] = macro_r.get("signal", {})
+        _log("meta", (
+            f"macro: signal={macro_r.get('signal',{}).get('signal','?')}  "
+            f"score={macro_r.get('signal',{}).get('macro_score',0):.2f}"
+        ))
+    except Exception as e:
+        results["global_macro"] = {"error": str(e)}
+        _log("meta", f"global_macro FAILED: {e}")
+
+    # News sentiment scoring from ManagementStatement graph nodes
+    try:
+        _log("meta", "news_agent sentiment scoring...")
+        t1 = time.time()
+        from agents.news_agent import run_all as news_run
+        news_r = news_run(verbose=verbose)
+        scored = [r for r in news_r if "sentiment_score" in r]
+        _record_perf("news_agent_v1", len(scored), 0, time.time()-t1, "meta")
+        results["news_sentiment"] = {
+            "scored": len(scored),
+            "bullish": sum(1 for r in scored if r.get("signal") == "bullish"),
+            "bearish": sum(1 for r in scored if r.get("signal") == "bearish"),
+        }
+        _log("meta", (
+            f"news: scored={len(scored)}  "
+            f"bullish={results['news_sentiment']['bullish']}  "
+            f"bearish={results['news_sentiment']['bearish']}"
+        ))
+    except Exception as e:
+        results["news_sentiment"] = {"error": str(e)}
+        _log("meta", f"news_agent FAILED: {e}")
+
+    # Conviction snapshot — blends bayesian + sentiment + macro + technical
+    try:
+        _log("meta", "conviction_tracker daily snapshot...")
+        t1 = time.time()
+        from memory.conviction_tracker import record_daily_conviction
+        conv_r = record_daily_conviction(verbose=verbose)
+        ok = [r for r in conv_r if "conviction_score" in r]
+        _record_perf("conviction_tracker_v1", len(ok), 0, time.time()-t1, "meta")
+        results["conviction"] = {
+            "recorded": len(ok),
+            "strong_buy": sum(1 for r in ok if r.get("signal") == "strong_buy"),
+            "buy": sum(1 for r in ok if r.get("signal") == "buy"),
+            "hold": sum(1 for r in ok if r.get("signal") == "hold"),
+            "sell": sum(1 for r in ok if r.get("signal") in ("sell", "strong_sell")),
+        }
+        _log("meta", (
+            f"conviction: recorded={len(ok)}  "
+            f"strong_buy={results['conviction']['strong_buy']}  "
+            f"buy={results['conviction']['buy']}  "
+            f"sell={results['conviction']['sell']}"
+        ))
+    except Exception as e:
+        results["conviction"] = {"error": str(e)}
+        _log("meta", f"conviction_tracker FAILED: {e}")
+
     # Tool synthesis — recursive self-improvement
     if synthesize_tools > 0:
         try:
