@@ -1,0 +1,240 @@
+{
+  "version": "1.0",
+  "updated": "2026-10-20",
+  "base_url": "https://www.nseindia.com/api/",
+  "endpoints": {
+    "equity-stockIndices": {
+      "purpose": "Live index snapshot with all constituent prices",
+      "params": ["index"],
+      "example_params": {"index": "NIFTY 50"},
+      "returns": ["name", "advance", "decline", "data"],
+      "nselib_method": "live_indices()",
+      "module": "indices"
+    },
+    "allIndices": {
+      "purpose": "Summary of all NSE indices with last price and change",
+      "params": [],
+      "returns": ["data"],
+      "nselib_method": "all_indices()",
+      "module": "indices"
+    },
+    "quote-equity": {
+      "purpose": "Full quote for a single equity stock",
+      "params": ["symbol"],
+      "example_params": {"symbol": "RELIANCE"},
+      "returns": ["info", "metadata", "priceInfo", "industryInfo", "securityInfo"],
+      "nselib_method": "stock_quote()",
+      "module": "quotes"
+    },
+    "quote-derivative": {
+      "purpose": "F&O quote for a stock/index",
+      "params": ["symbol"],
+      "returns": ["info", "metadata", "stocks"],
+      "nselib_method": "fno_quote()",
+      "module": "fno"
+    },
+    "search/autocomplete": {
+      "purpose": "Symbol/company name autocomplete search",
+      "params": ["q"],
+      "returns": ["symbols"],
+      "nselib_method": "search()",
+      "module": "quotes"
+    },
+    "market-data-pre-open": {
+      "purpose": "Pre-open session data for NIFTY/BANKNIFTY/SME",
+      "params": ["key"],
+      "example_params": {"key": "NIFTY"},
+      "returns": ["data", "timestamp"],
+      "nselib_method": null,
+      "module": "market",
+      "notes": "Not yet wrapped in nselib"
+    },
+    "live-analysis-data": {
+      "purpose": "Market-wide top gainers, losers, most active by value/volume",
+      "params": ["index", "graphType"],
+      "returns": ["data"],
+      "nselib_method": "market_movers()",
+      "module": "market"
+    },
+    "historicalOR/cm/equity": {
+      "purpose": "OHLCV history for a single equity (up to 1 year)",
+      "params": ["symbol", "series", "from", "to"],
+      "example_params": {"symbol": "TCS", "series": "EQ", "from": "01-01-2026", "to": "20-10-2026"},
+      "returns": ["data"],
+      "nselib_method": "stock_history()",
+      "module": "history"
+    },
+    "historicalOR/fo/derivatives": {
+      "purpose": "Historical F&O OHLCV for futures and options",
+      "params": ["symbol", "instrumentType", "expiryDate", "strikePrice", "optionType", "from", "to"],
+      "returns": ["data"],
+      "nselib_method": "fno_history()",
+      "module": "history"
+    },
+    "index-names": {
+      "purpose": "List of all index names and their identifiers",
+      "params": [],
+      "returns": ["data"],
+      "nselib_method": "index_names()",
+      "module": "indices"
+    },
+    "corporates-corporateActions": {
+      "purpose": "Dividends, splits, bonuses, rights, buybacks",
+      "params": ["index", "series", "from", "to", "symbol"],
+      "returns": ["data"],
+      "nselib_method": "corporate_actions()",
+      "module": "corporate"
+    },
+    "corporate-announcements": {
+      "purpose": "Exchange filings and disclosures",
+      "params": ["index", "from", "to", "symbol"],
+      "returns": ["data"],
+      "nselib_method": "announcements()",
+      "module": "corporate"
+    },
+    "corporate-board-meetings": {
+      "purpose": "Recently filed board meeting notices (capped at 20, ignores date params)",
+      "params": ["index", "from", "to", "symbol"],
+      "returns": ["data"],
+      "nselib_method": "board_meetings()",
+      "module": "corporate",
+      "notes": "Returns only 20 most recently filed; use event-calendar for full forward-looking schedule"
+    },
+    "event-calendar": {
+      "purpose": "Full forward-looking corporate event calendar for current results season (~490 entries, ~19 dates)",
+      "params": [],
+      "returns": ["symbol", "companyName", "purpose", "bm_date"],
+      "nselib_method": "event_calendar()",
+      "module": "corporate",
+      "notes": "Active only during results seasons (Q1/Q2/Q3/Q4 windows)"
+    },
+    "corporates-financial-results": {
+      "purpose": "Quarterly and annual financial results filings",
+      "params": ["index", "period", "from", "to", "symbol"],
+      "returns": ["data"],
+      "nselib_method": "financial_results()",
+      "module": "corporate"
+    },
+    "top-corp-info": {
+      "purpose": "Shareholding pattern (promoter/FII/DII/public) for a company",
+      "params": ["symbol", "market"],
+      "returns": ["shareholdings_patterns"],
+      "nselib_method": "shareholding_patterns()",
+      "module": "corporate"
+    },
+    "annual-reports": {
+      "purpose": "List of annual report PDFs for a company",
+      "params": ["symbol", "index"],
+      "returns": ["data"],
+      "nselib_method": "annual_reports()",
+      "module": "corporate"
+    },
+    "corporates-pit": {
+      "purpose": "SEBI insider trading disclosures (SAST/PIT)",
+      "params": ["from", "to", "symbol"],
+      "returns": ["data"],
+      "nselib_method": "insider_trading()",
+      "module": "corporate"
+    },
+    "block-deal": {
+      "purpose": "Block and bulk deal transactions",
+      "params": [],
+      "returns": ["data"],
+      "nselib_method": "block_deals()",
+      "module": "market"
+    },
+    "historicalOR/bulk-block-short-deals": {
+      "purpose": "Historical bulk/block/short-sell deals",
+      "params": ["symbol", "from", "to", "type"],
+      "returns": ["data"],
+      "nselib_method": "bulk_deal_history()",
+      "module": "market"
+    },
+    "option-chain-equities": {
+      "purpose": "Full option chain for an equity (all strikes, expiries)",
+      "params": ["symbol"],
+      "returns": ["records", "filtered"],
+      "nselib_method": null,
+      "module": "fno",
+      "notes": "Not yet wrapped in nselib"
+    },
+    "option-chain-indices": {
+      "purpose": "Full option chain for NIFTY/BANKNIFTY/FINNIFTY",
+      "params": ["symbol"],
+      "returns": ["records", "filtered"],
+      "nselib_method": null,
+      "module": "fno",
+      "notes": "Not yet wrapped in nselib"
+    },
+    "live-analysis-emerge": {
+      "purpose": "SME Emerge segment market movers",
+      "params": [],
+      "returns": ["data"],
+      "nselib_method": null,
+      "module": "market",
+      "notes": "Not yet wrapped in nselib"
+    },
+    "daily-reports": {
+      "purpose": "Links to daily Bhavcopy, delivery data, and other EOD reports",
+      "params": ["type"],
+      "returns": ["data"],
+      "nselib_method": "daily_reports()",
+      "module": "downloads"
+    },
+    "NextApi/apiClient/GetQuoteApi": {
+      "purpose": "Alternate F&O quote endpoint used by NSE website",
+      "params": ["symbol"],
+      "returns": ["data"],
+      "nselib_method": "fno_quote()",
+      "module": "fno"
+    },
+    "equity-meta-info": {
+      "purpose": "Static metadata for a stock: sector, industry, listing date, face value",
+      "params": ["symbol"],
+      "returns": ["data"],
+      "nselib_method": null,
+      "module": "quotes",
+      "notes": "Not yet wrapped in nselib"
+    },
+    "marketStatus": {
+      "purpose": "Current market open/close/holiday status across all segments",
+      "params": [],
+      "returns": ["marketState"],
+      "nselib_method": "market_status()",
+      "module": "market"
+    },
+    "holiday-master": {
+      "purpose": "NSE trading holiday calendar for the year",
+      "params": ["type"],
+      "example_params": {"type": "trading"},
+      "returns": ["CM", "FO", "CD"],
+      "nselib_method": "holidays()",
+      "module": "market"
+    },
+    "52-week-high-low-detail": {
+      "purpose": "Stocks hitting 52-week highs or lows today",
+      "params": ["type"],
+      "example_params": {"type": "High"},
+      "returns": ["data"],
+      "nselib_method": null,
+      "module": "market",
+      "notes": "Not yet wrapped in nselib"
+    },
+    "live-analysis-variations": {
+      "purpose": "Circuit breaker hits — stocks at upper/lower circuit limits",
+      "params": ["index", "variation"],
+      "returns": ["data"],
+      "nselib_method": null,
+      "module": "market",
+      "notes": "Not yet wrapped in nselib"
+    },
+    "equity-institutional-holdings": {
+      "purpose": "FII/DII holding changes for a stock over time",
+      "params": ["symbol"],
+      "returns": ["data"],
+      "nselib_method": null,
+      "module": "corporate",
+      "notes": "Not yet wrapped in nselib"
+    }
+  }
+}

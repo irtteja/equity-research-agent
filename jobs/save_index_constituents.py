@@ -12,7 +12,10 @@ that doesn't match the skip rules is included automatically.
 """
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-sys.path.insert(0, os.path.expanduser("~/irtteja/nselib"))
+_NSELIB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "vendor")
+if not os.path.isdir(os.path.join(_NSELIB_PATH, "nselib")):
+    _NSELIB_PATH = os.path.expanduser("~/irtteja/nselib")
+sys.path.insert(0, _NSELIB_PATH)
 
 import json
 import re

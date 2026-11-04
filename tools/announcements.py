@@ -3,7 +3,9 @@ BSE/NSE announcement fetcher and impact analyser.
 Reads corporate announcements, classifies them, stores impact reasoning.
 """
 import sys, os
-_NSELIB_PATH = os.path.expanduser("~/irtteja/nselib")
+_NSELIB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "vendor")
+if not os.path.isdir(os.path.join(_NSELIB_PATH, "nselib")):
+    _NSELIB_PATH = os.path.expanduser("~/irtteja/nselib")
 if _NSELIB_PATH not in sys.path:
     sys.path.insert(0, _NSELIB_PATH)
 
