@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 43,
+  "version": 44,
   "patterns": {
     "confirmed": [
       {
@@ -272,6 +272,24 @@
         "first_seen": "2026-11-03",
         "last_seen": "2026-11-03",
         "count": 1
+      },
+      {
+        "pattern": "CCR git proxy 403 is fixed by putting repo in session_context.sources via source_url at session creation",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "Persistent-agent environment (env_018Jn7eFp7GpLnFdr1TaWMzw) has no setup script conflict with source_url",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "Persistent triggers cannot have notifications parameter — must omit it",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -397,6 +415,12 @@
       },
       {
         "pattern": "add_repo tool use inside triggered session is the correct fix for CCR proxy 403 — gh auth setup-git and embedded-token remote URL both fail because proxy checks session sources, not credentials",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "All 11 triggers in one persistent session may cause context accumulation over time — monitor autocompact behavior",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -553,6 +577,14 @@
       {
         "signal": "ensure_graph._ensure_db_schema() prevents tasks-table crash on fresh containers",
         "added": "2026-11-03"
+      },
+      {
+        "signal": "create_session with source_url in non-Default environment = repo in session_context.sources = proxy authorizes git push",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "update_trigger(enabled=false) works even when delete_trigger is blocked by auto-mode classifier",
+        "added": "2026-11-04"
       }
     ],
     "gaps": [
@@ -735,6 +767,14 @@
       {
         "gap": "Default environment (env_01Hp1atedcZtiEHXrNH19crn) does not support Repositories in settings. Git push from triggered sessions requires a non-Default env with the repo added.",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "Session 15 found root cause but not the solution — Default env setup script conflict with source_url was not anticipated",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "delete_trigger is blocked by auto-mode classifier intermittently — 5 triggers could not be deleted, only disabled",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -778,10 +818,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-30",
-      "note": "wired concall auto-ingestion: fetch_announcements --save now downloads+indexes transcripts automatically"
-    },
     {
       "date": "2026-10-30",
       "note": "E2E test run"
@@ -897,6 +933,10 @@
     {
       "date": "2026-11-04",
       "note": "Session 15: confirmed add_repo unavailable in Default-env triggered sessions; cleaned all 11 trigger prompts; user must add repo to non-Default env to fix git push"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "Session 16: fixed git push 403 by creating push-enabled persistent session in Persistent-agent env; migrated all 11 triggers to it"
     }
   ]
 }

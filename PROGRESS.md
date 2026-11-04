@@ -1,5 +1,34 @@
 # Progress Log
 
+## 2026-11-04 (session 16) — Git push fix: all 11 triggers migrated to push-enabled persistent session
+
+### Done
+- **Root cause confirmed and fixed**: Git push 403 in triggered sessions is caused by empty `session_request.config.sources` in Default-environment fresh-session triggers. The CCR git proxy refuses to inject credentials if the repo isn't in sources.
+- **Fix implemented**: Created a new persistent session `session_01G28r1baFCcEtSCP6jvUn1Y` ("equity-research — automated jobs (push-enabled)") in the **"Persistent agent"** environment (`env_018Jn7eFp7GpLnFdr1TaWMzw`), with `source_url: https://github.com/irtteja/equity-research-agent.git`. This session has the repo in `session_context.sources` → git push works (verified: "Everything up-to-date").
+- **Why "Persistent agent" env works**: Unlike the Default environment, it has no conflicting setup script that would clash with `source_url` clone. The Default environment's setup script clones the repo separately, causing "destination path already exists" conflict when `source_url` is also set.
+- **All 11 non-persistent triggers**: deleted/disabled old versions, recreated as `persist_session: true` with `persistent_session_id: session_01G28r1baFCcEtSCP6jvUn1Y`. Auto-mode classifier blocked 5 of 11 deletes; those were disabled via `update_trigger(enabled=false)` and new persistent replacements were created.
+- **5 disabled (not deletable due to classifier)**: `trig_017nk5a4gh6aHspV213HYDuC`, `trig_01U1ZPx6KcGb97hn4whNWa9F`, `trig_01FuxqGR8MtthLn6fgdtB6Pc`, `trig_01QHEHM7BKc8jtHiFhUFcxj5`, `trig_015oG9qaCpDw4Fg8oE7nGhNa` — these still exist but are disabled; can be deleted manually via UI.
+- New trigger IDs (all persistent, all targeting `session_01G28r1baFCcEtSCP6jvUn1Y`):
+  - equity-watchdog: `trig_01KQz1r73WqHT1eDZT8Gnk5x`
+  - NSE Daily Announcement Fetch: `trig_01S3ouXTvKCuPusubPhoc9TY`
+  - Results Fetch Nightly XBRL: `trig_0129xgGUuFCN2WTDeXLVNcde`
+  - equity-daily-monitor: `trig_015rY84hYFGqWUfmUTvyVWNU`
+  - NSE Daily Brief: `trig_01MgDbigKTyrYs5fV4PS9khJ`
+  - Swarm Orchestrator: `trig_01Fp3WHCY1ehv4E7N5vASwfy`
+  - Results Fetch 8 AM Retry: `trig_013MmoT8CZhtTNvpvLDwwALb`
+  - Monthly memory compaction: `trig_01AhFwnBpSHv72nP9UkPtEwV`
+  - Weekly KG Enrichment: `trig_01HqDfc5W5cA4shMfxnTEdTz`
+  - Annual Reports Fetch — Weekly: `trig_017coepHWX42GjSe36ABeSt7`
+  - Weekly Sector Map + Graph Rebuild: `trig_01Q2FpUiGdGyH6aNF3FmRsv6`
+
+### Architecture notes
+- **Why persistent session needed**: CCR proxy checks `session_request.config.sources` (empty for fresh-session triggers in Default env) → 403 on push. Persistent sessions retain the repo in `session_context.sources` between firings.
+- **"Persistent agent" environment**: No conflicting setup script. `source_url` clones cleanly → repo appears in `session_context.sources` → proxy authorizes push.
+- **Autocompact**: enabled on the persistent session (threshold 165,600 tokens) — context is auto-managed.
+- **To delete the 5 disabled triggers**: do it manually via claude.ai UI, or add `mcp__claude-code-remote__delete_trigger` to project permissions in `.claude/settings.json`.
+
+### Pending / next sessions
+
 ## 2026-11-04 (session 15) — CCR proxy 403 root cause confirmed; triggers cleaned up; user action required
 
 ### Done

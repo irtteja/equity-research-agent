@@ -422,3 +422,11 @@ Progress: Confirmed add_repo unavailable in triggered sessions; removed useless 
 Next: User must add irtteja/equity-research-agent to a non-Default environment Repositories, then update trigger environment_id
 Blockers: Default environment does not support Repositories setting; add_repo not available in triggered sessions
 ============================================================
+
+[CHECKPOINT] 2026-11-04 04:25
+Task: None
+Status: completed
+Progress: Created session_01G28r1baFCcEtSCP6jvUn1Y in Persistent-agent env with source_url. Deleted/disabled all 11 non-persistent triggers. Created 11 new persistent replacements. Git push verified working.
+Next: Monitor first trigger fires to confirm push works in production
+Blockers: 5 old disabled triggers cannot be deleted (auto-mode classifier blocks delete_trigger) — delete manually via UI
+============================================================
