@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 49,
+  "version": 50,
   "patterns": {
     "confirmed": [
       {
@@ -332,6 +332,18 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "analyst synthesis works without API calls — pure heuristics (momentum score, keyword tone, conviction arithmetic) produce actionable BUY/HOLD/WATCH/AVOID",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "squarified treemap on canvas is the right form for sector momentum — size=count, color=improving_pct, diverging palette",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -487,6 +499,12 @@
       },
       {
         "pattern": "Phase 3 ingest_new_sources.py — nselib API for delivery_bhavcopy/surveillance_indicator not tested against live NSE",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "sector rotation signal (leaders/laggards) needs 2+ weeks of time series to validate — current single-snapshot may not reflect true rotation",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -682,6 +700,18 @@
       },
       {
         "signal": "ConfluenceSignal properties: type, score, reason, near_low_pct, streak — richer than expected",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "git filter-repo for history cleanup — stripped 273MB from 191 commits cleanly",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "CorporateEvent node upsert from nselib announcements — 719 priority events in 2 days",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "work_queue atomic claim_batch prevents double-dispatch across ThreadPoolExecutor workers",
         "added": "2026-11-04"
       }
     ],
@@ -897,6 +927,14 @@
       {
         "gap": "Dashboard not permanently hosted — needs a trigger or persistent process",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "FII/DII flows.jsonl is empty — daily_monitor step 5d has never run end-to-end",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "analyst_synthesis episodes exist but screener only shows 20 tickers — full 159 signal universe not wired yet",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -937,13 +975,45 @@
         "note": "mixed signals; revenue trend positive but cost pressure visible",
         "date": "2026-11-03"
       }
+    ],
+    "Textiles": [
+      {
+        "note": "leading sector — 76.1% metrics improving, 2 BUY confluence signals",
+        "date": "2026-11-04"
+      }
+    ],
+    "Financial Services": [
+      {
+        "note": "75.0% improving, largest by stock count — broad base healthy",
+        "date": "2026-11-04"
+      }
+    ],
+    "Telecom": [
+      {
+        "note": "73.7% improving — BHARTIARTL dominates, structural strength",
+        "date": "2026-11-04"
+      }
+    ],
+    "Utilities": [
+      {
+        "note": "laggard at 15.4% improving — regulatory/tariff headwinds persist",
+        "date": "2026-11-04"
+      }
+    ],
+    "Construction Materials": [
+      {
+        "note": "22.9% improving — cement demand soft, input costs elevated",
+        "date": "2026-11-04"
+      }
+    ],
+    "Media": [
+      {
+        "note": "25.0% improving — digital shift still compressing traditional revenue",
+        "date": "2026-11-04"
+      }
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-30",
-      "note": "upgraded self_improve scan to data-driven with persistence tracking; resolved 3 prior gaps"
-    },
     {
       "date": "2026-10-30",
       "note": "self_improve scan: 2 high-priority gaps"
@@ -1059,6 +1129,10 @@
     {
       "date": "2026-11-04",
       "note": "Session 18: built Phase 2 (8-thread parallel workers + work queue), Phase 3 (7 new NSE sources), Phase 5 (NSE-style 7-tab dashboard). Commits 48ca715 + 9eb265a. GitHub size cleanup still blocked on user authorization."
+    },
+    {
+      "date": "2026-11-04",
+      "note": "analyst engine + sector analyst + corp events pipeline built; github cleanup done 286MB→13MB; dashboard v3 published with treemap, corp feed, screener"
     }
   ]
 }

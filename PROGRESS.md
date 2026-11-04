@@ -1,5 +1,43 @@
 # Progress Log
 
+## 2026-11-04 (session 19) — Analyst engine + interactive dashboard v3
+
+### Done
+- **Phase 1 — GitHub history cleanup** (force-push authorized by user):
+  - `git filter-repo` stripped `memory_store/documents/` and `graph.db-wal` from all 191 commits
+  - Repo size 286MB → 13MB; force-pushed to origin; remote re-added after filter-repo removed it
+- **Phase 4 — Analyst agent** (commits 2d04c23, f06231a):
+  - `agents/analyst_agent.py` (369 lines): pure-Python heuristic synthesis; BUY/HOLD/WATCH/AVOID; conviction score; writes `analyst_synthesis` episodes to graph.db
+  - `memory/agent_registry.py` (251 lines): module-level dynamic agent registry; 6 defaults seeded; schema `agent_configs` in graph.db
+  - `jobs/swarm_runner.py` (210 lines): routes queue items to right agent class via `AGENT_CLASS_MAP`
+  - `jobs/analyst_runner.py`: standalone 4-thread runner consuming `analyst_queue`
+  - `jobs/daily_monitor.py`: extended with step 5e (enqueue analyst work) and step 5f (fetch corp events)
+  - 24 analyst_synthesis episodes written for top 20 signal tickers
+- **Engine build** (commit 5c36dd4):
+  - `agents/sector_analyst.py`: sector/industry aggregation; rotation signal; leaders (Textiles 76%, FinServ 75%, Telecom 74%) and laggards (Utilities 15%, Const.Mat 23%)
+  - `jobs/fetch_corp_events.py`: fetches NSE announcements + board meetings; 719 priority events in last 2 days; CorporateEvent nodes in graph
+- **Dashboard v3** (artifact https://claude.ai/artifact/JGgysb6frykyg2dCyzEC2z):
+  - 8 tabs: Pulse, Sectors, Corp Feed, Screener, Markets, Analyst, FII/DII, Graph
+  - Canvas squarified treemap for sector momentum (22 sectors, diverging green→gray→red palette)
+  - CSS animated scrolling corp events feed with category filters (Results/Dividend/Corporate_Action/Management)
+  - Interactive screener: sector filter, signal filter, text search, sortable columns
+  - Count-up animations on NIFTY/SENSEX/BANK KPI tiles
+  - Sector rotation chips showing leaders/laggards
+  - Chart.js FII/DII grouped bar chart + node type donut
+  - Dark-first IBM Plex Mono/Sans, responsive, full dark/light theme tokens
+
+### Architecture changes
+- Analyst synthesis is now a graph node type (`analyst_synthesis` episodes) — queryable alongside price/trend/signal nodes
+- Dynamic agent registry allows adding/enabling agents without code changes (DB-driven config)
+- Corp events pipeline feeds real NSE data into graph → screener and corp feed tab are live
+- Dashboard serves pre-computed graph data (no live API calls from artifact) — fast, fully offline-capable
+
+### Pending / next sessions
+- **FII/DII time series** — `memory_store/fii_dii/flows.jsonl` exists; needs populating via daily runs (ingest_new_sources.py step 5d)
+- **Screener expansion** — currently 20 analyst tickers; expand to full 159 signal tickers from ConfluenceSignal nodes
+- **Sector treemap live data** — currently hardcoded from sector_analyst run; wire up periodic refresh
+- **TradingView news integration** — connect `mcp__TradingView_MCP__mcp-tv-get-news` to news feed in Pulse tab
+
 ## 2026-11-04 (session 18) — Swarm architecture + NSE dashboard
 
 ### Done
