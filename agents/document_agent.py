@@ -186,6 +186,20 @@ class DocumentAgent:
             "statements": total_stmts,
         }
 
+    def process_ticker(self, ticker: str) -> dict:
+        """Process one ticker's documents. Used by parallel workers."""
+        doc_dir = REPO / "memory_store" / "documents"
+        ticker_dir = doc_dir / ticker
+        if not ticker_dir.exists():
+            return {"docs": 0, "stmts": 0}
+        docs, stmts = self._process_ticker(ticker, ticker_dir)
+        self._progress.setdefault("done", {})[ticker] = {
+            "docs": docs, "stmts": stmts,
+            "at": __import__("datetime").datetime.now().isoformat(),
+        }
+        self._save_progress()
+        return {"docs": docs, "stmts": stmts}
+
     # ── Per-ticker processing ────────────────────────────────────────────────
 
     def _process_ticker(self, ticker: str, ticker_dir: Path) -> tuple[int, int]:

@@ -68,6 +68,17 @@ class TrendAgent:
     def __init__(self):
         self.gs = _gs()
 
+    def process_pair(self, ticker: str, metric: str, min_periods: int = 3) -> dict:
+        """Process one (ticker, metric) pair. Used by parallel workers."""
+        chain = self._walk_chain(ticker, metric)
+        if len(chain) < min_periods:
+            return {"written": 0, "strong": 0}
+        result = self._write_trend(ticker, metric, chain)
+        if result:
+            strong = 1 if abs(result.get("momentum_score", 0)) >= STRONG_MOMENTUM else 0
+            return {"written": 1, "strong": strong}
+        return {"written": 0, "strong": 0}
+
     def process_all(self, min_periods: int = 3, limit: int = 100) -> dict:
         """
         Find all (ticker, metric) pairs with ≥ min_periods enriched nodes,

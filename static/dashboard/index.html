@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Equity Research</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+/* ── Design tokens ── */
+:root {
+  --bg:        #0b0f1a;
+  --surface:   #111827;
+  --surface-2: #1a2237;
+  --border:    #1e2d47;
+  --text:      #e8edf5;
+  --muted:     #7a8fa6;
+  --accent:    #2979f5;
+  --accent-dim:#1a56c4;
+  --up:        #12b87a;
+  --up-dim:    #0d8a5b;
+  --dn:        #ef4444;
+  --dn-dim:    #b91c1c;
+  --warn:      #f59e0b;
+  --radius:    6px;
+  --font:      'Inter', system-ui, sans-serif;
+}
+[data-theme="light"] {
+  --bg:        #f1f4f8;
+  --surface:   #ffffff;
+  --surface-2: #f8fafc;
+  --border:    #dde3ed;
+  --text:      #0f172a;
+  --muted:     #64748b;
+  --accent:    #1d4ed8;
+  --accent-dim:#1e40af;
+  --up:        #059669;
+  --up-dim:    #047857;
+  --dn:        #dc2626;
+  --dn-dim:    #b91c1c;
+  --warn:      #d97706;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 14px; }
+body { background: var(--bg); color: var(--text); font-family: var(--font); min-height: 100vh; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+/* ── Header ── */
+header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center;
+  padding: 0 20px; height: 48px; gap: 16px;
+  position: sticky; top: 0; z-index: 100;
+}
+.logo { font-weight: 700; font-size: 15px; color: var(--accent); letter-spacing: -0.3px; white-space: nowrap; }
+.logo span { color: var(--text); }
+
+/* ticker strip */
+#ticker-strip {
+  display: flex; align-items: center; gap: 20px;
+  overflow: hidden; flex: 1; mask-image: linear-gradient(90deg, transparent, black 40px, black calc(100% - 40px), transparent);
+}
+.tick-item { display: flex; align-items: baseline; gap: 5px; white-space: nowrap; font-size: 12px; }
+.tick-name { color: var(--muted); font-size: 11px; }
+.tick-val { font-weight: 600; font-variant-numeric: tabular-nums; }
+.tick-chg { font-size: 11px; font-variant-numeric: tabular-nums; }
+.up  { color: var(--up); }
+.dn  { color: var(--dn); }
+.neu { color: var(--muted); }
+
+.theme-btn {
+  background: none; border: 1px solid var(--border); border-radius: var(--radius);
+  color: var(--muted); cursor: pointer; padding: 4px 8px; font-size: 12px;
+  transition: all 0.15s;
+}
+.theme-btn:hover { border-color: var(--accent); color: var(--text); }
+
+/* ── Tabs ── */
+nav {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center;
+  padding: 0 20px; gap: 2px;
+  overflow-x: auto;
+}
+.tab {
+  background: none; border: none; color: var(--muted);
+  cursor: pointer; font-size: 13px; font-family: var(--font);
+  padding: 11px 14px; border-bottom: 2px solid transparent;
+  white-space: nowrap; transition: color 0.15s, border-color 0.15s;
+}
+.tab:hover { color: var(--text); }
+.tab.active { color: var(--text); border-bottom-color: var(--accent); font-weight: 600; }
+
+/* last-updated badge */
+.last-upd { margin-left: auto; color: var(--muted); font-size: 11px; white-space: nowrap; padding: 0 4px; }
+
+/* ── Main layout ── */
+main { padding: 20px; max-width: 1800px; margin: 0 auto; }
+
+/* ── Tab pane ── */
+.pane { display: none; }
+.pane.active { display: block; }
+
+/* ── Stat tiles ── */
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.tile {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 14px 16px;
+}
+.tile-label { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .4px; margin-bottom: 6px; }
+.tile-value { font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1; }
+.tile-sub { font-size: 12px; margin-top: 4px; font-variant-numeric: tabular-nums; }
+
+/* ── Grid helpers ── */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+@media (max-width: 900px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+
+/* ── Card ── */
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+}
+.card-hd {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 14px; border-bottom: 1px solid var(--border);
+  font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .4px;
+}
+.card-hd .badge {
+  background: var(--surface-2); border-radius: 100px;
+  padding: 2px 8px; font-size: 11px; color: var(--muted);
+}
+
+/* ── Tables ── */
+.tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
+.tbl th { background: var(--surface-2); padding: 8px 12px; text-align: left; font-weight: 600; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .3px; border-bottom: 1px solid var(--border); }
+.tbl td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+.tbl tr:last-child td { border-bottom: none; }
+.tbl tr:hover td { background: var(--surface-2); }
+.tbl .num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* ticker chip */
+.chip {
+  display: inline-block; background: var(--surface-2);
+  border: 1px solid var(--border); border-radius: 4px;
+  padding: 2px 7px; font-size: 12px; font-weight: 600;
+  font-family: 'JetBrains Mono', monospace; cursor: pointer;
+  transition: border-color 0.1s;
+}
+.chip:hover { border-color: var(--accent); color: var(--accent); }
+
+/* sparkline canvas */
+.spark { height: 32px; width: 80px; display: block; }
+
+/* signal card */
+.sig-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 12px 14px;
+  display: flex; gap: 12px; align-items: flex-start;
+  margin-bottom: 8px; transition: border-color 0.1s;
+}
+.sig-card:hover { border-color: var(--accent); }
+.sig-dir { width: 42px; height: 42px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+.sig-dir.bull { background: rgba(18,184,122,.15); }
+.sig-dir.bear { background: rgba(239,68,68,.15); }
+.sig-dir.neu  { background: rgba(122,143,166,.15); }
+.sig-body { flex: 1; min-width: 0; }
+.sig-ticker { font-weight: 700; font-size: 14px; }
+.sig-type { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .4px; }
+.sig-summary { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.sig-meta { text-align: right; white-space: nowrap; }
+.sig-str { font-size: 12px; font-weight: 600; }
+.sig-time { font-size: 11px; color: var(--muted); }
+
+/* pill badges */
+.pill { display: inline-block; border-radius: 100px; padding: 2px 8px; font-size: 11px; font-weight: 600; }
+.pill-up { background: rgba(18,184,122,.15); color: var(--up); }
+.pill-dn { background: rgba(239,68,68,.15); color: var(--dn); }
+.pill-neu{ background: var(--surface-2); color: var(--muted); }
+.pill-warn { background: rgba(245,158,11,.15); color: var(--warn); }
+
+/* ── Chart containers ── */
+.chart-wrap { padding: 14px; height: 220px; position: relative; }
+.chart-wrap canvas { width: 100% !important; height: 100% !important; }
+
+/* ── Watchlist search ── */
+.search-row { display: flex; gap: 10px; margin-bottom: 16px; }
+.search-box {
+  flex: 1; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); color: var(--text);
+  font-size: 14px; padding: 8px 12px;
+  outline: none; transition: border-color 0.15s;
+}
+.search-box::placeholder { color: var(--muted); }
+.search-box:focus { border-color: var(--accent); }
+.btn {
+  background: var(--accent); color: #fff; border: none;
+  border-radius: var(--radius); cursor: pointer;
+  font-size: 13px; padding: 8px 16px; font-family: var(--font);
+  transition: background 0.15s;
+}
+.btn:hover { background: var(--accent-dim); }
+
+/* watchlist split */
+.wl-split { display: grid; grid-template-columns: 260px 1fr; gap: 16px; }
+@media (max-width: 700px) { .wl-split { grid-template-columns: 1fr; } }
+.wl-list { max-height: 500px; overflow-y: auto; }
+.wl-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 8px 12px; border-bottom: 1px solid var(--border);
+  cursor: pointer; transition: background 0.1s;
+}
+.wl-item:hover, .wl-item.selected { background: var(--surface-2); }
+.wl-item .name { font-size: 12px; color: var(--muted); margin-top: 1px; }
+
+/* agent log */
+.agent-row {
+  display: flex; gap: 10px; padding: 8px 12px;
+  border-bottom: 1px solid var(--border); align-items: center;
+  font-size: 12px;
+}
+.agent-row:hover { background: var(--surface-2); }
+.status-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+.dot-done { background: var(--up); }
+.dot-fail { background: var(--dn); }
+.dot-prog { background: var(--warn); animation: pulse 1s infinite; }
+.dot-pend { background: var(--muted); }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+
+/* graph node type list */
+.node-row {
+  display: flex; align-items: center; padding: 7px 14px;
+  border-bottom: 1px solid var(--border); font-size: 12px; gap: 10px;
+}
+.node-bar-track { flex: 1; height: 5px; background: var(--border); border-radius: 3px; overflow: hidden; }
+.node-bar-fill { height: 100%; background: var(--accent); border-radius: 3px; transition: width 0.6s; }
+
+/* breadth gauge */
+.breadth-row { display: flex; align-items: center; gap: 8px; padding: 14px; }
+.breadth-bar { flex: 1; height: 10px; border-radius: 5px; overflow: hidden; display: flex; }
+.breadth-adv { background: var(--up); }
+.breadth-unch { background: var(--muted); }
+.breadth-dcl { background: var(--dn); }
+.breadth-labels { display: flex; justify-content: space-between; padding: 4px 14px 10px; font-size: 11px; }
+
+/* spinner */
+.spinner {
+  display: inline-block; width: 18px; height: 18px; border-radius: 50%;
+  border: 2px solid var(--border); border-top-color: var(--accent);
+  animation: spin .6s linear infinite; vertical-align: middle;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* error state */
+.err-block { padding: 20px; color: var(--dn); font-size: 13px; text-align: center; }
+
+/* empty state */
+.empty { padding: 32px; color: var(--muted); font-size: 13px; text-align: center; }
+
+/* announcement row */
+.ann-row { padding: 8px 14px; border-bottom: 1px solid var(--border); font-size: 12px; }
+.ann-row:hover { background: var(--surface-2); }
+.ann-title { font-weight: 600; margin-bottom: 2px; }
+.ann-meta { color: var(--muted); display: flex; gap: 10px; }
+
+/* results table value */
+.metric-val { font-variant-numeric: tabular-nums; font-size: 13px; }
+.up-val { color: var(--up); }
+.dn-val { color: var(--dn); }
+</style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="logo">NSE<span>Research</span></div>
+  <div id="ticker-strip"></div>
+  <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+</header>
+
+<!-- ── TABS ── -->
+<nav>
+  <button class="tab active" onclick="switchTab('market', this)">Market</button>
+  <button class="tab" onclick="switchTab('signals', this)">Signals</button>
+  <button class="tab" onclick="switchTab('trends', this)">Trends</button>
+  <button class="tab" onclick="switchTab('announcements', this)">Announcements</button>
+  <button class="tab" onclick="switchTab('watchlist', this)">Watchlist</button>
+  <button class="tab" onclick="switchTab('agents', this)">Swarm</button>
+  <button class="tab" onclick="switchTab('graph', this)">Graph</button>
+  <span class="last-upd" id="last-upd">—</span>
+</nav>
+
+<!-- ── MAIN ── -->
+<main>
+
+  <!-- ══ MARKET tab ══ -->
+  <div class="pane active" id="pane-market">
+    <div class="tiles" id="market-tiles">
+      <div class="tile"><div class="tile-label">Loading…</div><div class="tile-value" id="spin-market"><span class="spinner"></span></div></div>
+    </div>
+
+    <!-- breadth bar -->
+    <div class="card" style="margin-bottom:16px" id="breadth-card">
+      <div class="card-hd">Market Breadth <span class="badge" id="breadth-total">—</span></div>
+      <div class="breadth-row">
+        <span style="font-size:11px;color:var(--up);width:60px">▲ <span id="breadth-adv">—</span></span>
+        <div class="breadth-bar" id="breadth-bar"></div>
+        <span style="font-size:11px;color:var(--dn);width:60px;text-align:right"><span id="breadth-dcl">—</span> ▼</span>
+      </div>
+      <div class="breadth-labels">
+        <span style="color:var(--up)">Advances</span>
+        <span style="color:var(--muted)">Unchanged <span id="breadth-unch">—</span></span>
+        <span style="color:var(--dn)">Declines</span>
+      </div>
+    </div>
+
+    <!-- movers -->
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-hd">Top Gainers <span class="badge" id="gainers-cnt">—</span></div>
+        <div id="gainers-body"></div>
+      </div>
+      <div class="card">
+        <div class="card-hd">Top Losers <span class="badge" id="losers-cnt">—</span></div>
+        <div id="losers-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SIGNALS tab ══ -->
+  <div class="pane" id="pane-signals">
+    <div id="signals-body"><span class="spinner"></span></div>
+  </div>
+
+  <!-- ══ TRENDS tab ══ -->
+  <div class="pane" id="pane-trends">
+    <div class="card">
+      <div class="card-hd">Trend Summaries <span class="badge" id="trends-cnt">—</span></div>
+      <table class="tbl" id="trends-tbl">
+        <thead><tr>
+          <th>Ticker</th><th>Metric</th><th>Direction</th><th>Periods</th><th>Summary</th>
+        </tr></thead>
+        <tbody id="trends-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══ ANNOUNCEMENTS tab ══ -->
+  <div class="pane" id="pane-announcements">
+    <div class="card">
+      <div class="card-hd">Recent Announcements</div>
+      <div id="ann-body"><span class="spinner" style="margin:20px"></span></div>
+    </div>
+  </div>
+
+  <!-- ══ WATCHLIST tab ══ -->
+  <div class="pane" id="pane-watchlist">
+    <div class="search-row">
+      <input id="wl-search" class="search-box" placeholder="Search ticker or company…" oninput="searchWatchlist(this.value)">
+      <button class="btn" onclick="loadWatchlistItem(document.getElementById('wl-search').value.trim().toUpperCase())">Go</button>
+    </div>
+    <div class="wl-split">
+      <div class="card">
+        <div class="card-hd">Companies</div>
+        <div class="wl-list" id="wl-list"></div>
+      </div>
+      <div id="wl-detail"><div class="empty">Select a company from the list or search a ticker</div></div>
+    </div>
+  </div>
+
+  <!-- ══ AGENTS / SWARM tab ══ -->
+  <div class="pane" id="pane-agents">
+    <div class="tiles" id="swarm-tiles">
+      <div class="tile"><div class="tile-label">Workers</div><div class="tile-value" id="swarm-size">—</div></div>
+      <div class="tile"><div class="tile-label">Incomplete</div><div class="tile-value" id="swarm-incomplete" style="color:var(--warn)">—</div></div>
+    </div>
+    <div class="card">
+      <div class="card-hd">Recent Agent Activity</div>
+      <div id="agents-log"></div>
+    </div>
+  </div>
+
+  <!-- ══ GRAPH tab ══ -->
+  <div class="pane" id="pane-graph">
+    <div class="tiles" id="graph-tiles">
+      <div class="tile"><div class="tile-label">Loading…</div><div class="tile-value"><span class="spinner"></span></div></div>
+    </div>
+    <div class="grid-2" style="margin-top:16px">
+      <div class="card">
+        <div class="card-hd">Node Type Breakdown</div>
+        <div id="node-types"></div>
+      </div>
+      <div class="card">
+        <div class="card-hd">Recent Graph Activity</div>
+        <div id="recent-nodes"></div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script>
+// ── State ──────────────────────────────────────────────────────────────────
+const state = { market: null, signals: null, graph: null };
+const REFRESH_MS = 60_000; // auto-refresh every 60s
+let _sectors = null;
+
+// ── Theme ──────────────────────────────────────────────────────────────────
+function toggleTheme() {
+  const h = document.documentElement;
+  const dark = h.dataset.theme !== 'light';
+  h.dataset.theme = dark ? 'light' : 'dark';
+  document.querySelector('.theme-btn').textContent = dark ? '🌙' : '☀️';
+}
+
+// ── Tabs ───────────────────────────────────────────────────────────────────
+function switchTab(name, btn) {
+  document.querySelectorAll('.pane').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('pane-' + name).classList.add('active');
+  btn.classList.add('active');
+  loadTab(name);
+}
+
+function loadTab(name) {
+  if (name === 'market')        loadMarket();
+  if (name === 'signals')       loadSignals();
+  if (name === 'trends')        loadTrends();
+  if (name === 'announcements') loadAnnouncements();
+  if (name === 'watchlist')     loadWatchlistList();
+  if (name === 'agents')        loadAgents();
+  if (name === 'graph')         loadGraph();
+}
+
+// ── Fetch helper ───────────────────────────────────────────────────────────
+async function api(path) {
+  const r = await fetch('/api' + path);
+  if (!r.ok) throw new Error(r.status);
+  return r.json();
+}
+
+function fmt(n, dec=2) {
+  if (n == null) return '—';
+  if (typeof n === 'string') n = parseFloat(n);
+  if (isNaN(n)) return '—';
+  return n.toLocaleString('en-IN', {minimumFractionDigits: dec, maximumFractionDigits: dec});
+}
+
+function fmtCr(n) {
+  if (n == null) return '—';
+  if (typeof n === 'string') n = parseFloat(n);
+  if (isNaN(n)) return '—';
+  if (Math.abs(n) >= 1e7) return (n/1e7).toFixed(2) + ' Cr';
+  if (Math.abs(n) >= 1e5) return (n/1e5).toFixed(2) + ' L';
+  return n.toLocaleString('en-IN');
+}
+
+function chgClass(n) { return n > 0.05 ? 'up' : n < -0.05 ? 'dn' : 'neu'; }
+function dirClass(d) { return d === 'improving' || d === 'up' || d === 'bullish' ? 'up' : d === 'deteriorating' || d === 'down' || d === 'bearish' ? 'dn' : 'neu'; }
+
+function timeAgo(ts) {
+  if (!ts) return '—';
+  const diff = (Date.now() - new Date(ts)) / 1000;
+  if (diff < 60) return Math.round(diff) + 's ago';
+  if (diff < 3600) return Math.round(diff/60) + 'm ago';
+  if (diff < 86400) return Math.round(diff/3600) + 'h ago';
+  return Math.round(diff/86400) + 'd ago';
+}
+
+// ── Ticker strip ───────────────────────────────────────────────────────────
+function updateStrip(indices) {
+  const strip = document.getElementById('ticker-strip');
+  if (!indices || !indices.length) return;
+  strip.innerHTML = indices.map(idx => {
+    const v = idx.value;
+    const c = idx.change;
+    const cls = chgClass(c);
+    const sign = c > 0 ? '+' : '';
+    return `<div class="tick-item">
+      <span class="tick-name">${idx.name}</span>
+      <span class="tick-val ${cls}">${v ? fmt(v, 0) : '—'}</span>
+      <span class="tick-chg ${cls}">${c != null ? sign + fmt(c) + '%' : ''}</span>
+    </div>`;
+  }).join('');
+}
+
+// ── MARKET ────────────────────────────────────────────────────────────────
+async function loadMarket() {
+  try {
+    const d = await api('/market');
+    state.market = d;
+    document.getElementById('last-upd').textContent = d.date || '—';
+
+    // Stat tiles
+    const b = d.breadth || {};
+    const adv = b.advances || 0;
+    const dcl = b.declines || 0;
+    const unc = b.unchanged || 0;
+    const total = adv + dcl + unc || 1;
+
+    const tiles = document.getElementById('market-tiles');
+    tiles.innerHTML = `
+      <div class="tile">
+        <div class="tile-label">Advances</div>
+        <div class="tile-value up">${adv}</div>
+        <div class="tile-sub up">${((adv/total)*100).toFixed(1)}% of market</div>
+      </div>
+      <div class="tile">
+        <div class="tile-label">Declines</div>
+        <div class="tile-value dn">${dcl}</div>
+        <div class="tile-sub dn">${((dcl/total)*100).toFixed(1)}% of market</div>
+      </div>
+      <div class="tile">
+        <div class="tile-label">Unchanged</div>
+        <div class="tile-value neu">${unc}</div>
+        <div class="tile-sub neu">${((unc/total)*100).toFixed(1)}% of market</div>
+      </div>
+      <div class="tile">
+        <div class="tile-label">Total Tracked</div>
+        <div class="tile-value">${total}</div>
+        <div class="tile-sub muted">stocks</div>
+      </div>
+    `;
+
+    // Breadth bar
+    document.getElementById('breadth-adv').textContent = adv;
+    document.getElementById('breadth-dcl').textContent = dcl;
+    document.getElementById('breadth-unch').textContent = unc;
+    document.getElementById('breadth-total').textContent = total + ' stocks';
+    const bar = document.getElementById('breadth-bar');
+    bar.innerHTML = `
+      <div class="breadth-adv" style="width:${(adv/total)*100}%"></div>
+      <div class="breadth-unch" style="width:${(unc/total)*100}%"></div>
+      <div class="breadth-dcl" style="width:${(dcl/total)*100}%"></div>
+    `;
+
+    // Gainers
+    const gainers = (d.movers_up || []).slice(0, 15);
+    document.getElementById('gainers-cnt').textContent = gainers.length;
+    document.getElementById('gainers-body').innerHTML = `<table class="tbl">
+      <thead><tr><th>Ticker</th><th class="num">Change %</th></tr></thead>
+      <tbody>${gainers.map(g => `<tr>
+        <td><span class="chip" onclick="loadWatchlistItem('${g.ticker}')">${g.ticker}</span></td>
+        <td class="num up">+${fmt(g.pct)}%</td>
+      </tr>`).join('')}</tbody>
+    </table>`;
+
+    // Losers
+    const losers = (d.movers_down || []).slice(0, 15);
+    document.getElementById('losers-cnt').textContent = losers.length;
+    document.getElementById('losers-body').innerHTML = `<table class="tbl">
+      <thead><tr><th>Ticker</th><th class="num">Change %</th></tr></thead>
+      <tbody>${losers.map(g => `<tr>
+        <td><span class="chip" onclick="loadWatchlistItem('${g.ticker}')">${g.ticker}</span></td>
+        <td class="num dn">${fmt(g.pct)}%</td>
+      </tr>`).join('')}</tbody>
+    </table>`;
+
+    // Index strip
+    if (d.indices && d.indices.length) updateStrip(d.indices);
+
+  } catch(e) {
+    document.getElementById('market-tiles').innerHTML = `<div class="err-block">Could not load market data: ${e.message}</div>`;
+  }
+}
+
+// ── SIGNALS ───────────────────────────────────────────────────────────────
+async function loadSignals() {
+  const el = document.getElementById('signals-body');
+  try {
+    const sigs = await api('/signals?limit=50');
+    if (!sigs.length) { el.innerHTML = `<div class="empty">No signals in graph yet. Run orchestrator to generate.</div>`; return; }
+
+    el.innerHTML = sigs.map(s => {
+      const dir = s.direction;
+      const dirC = dir === 'bullish' || dir === 'up' ? 'bull' : dir === 'bearish' || dir === 'down' ? 'bear' : 'neu';
+      const icon = dirC === 'bull' ? '↑' : dirC === 'bear' ? '↓' : '→';
+      const cls = dirC === 'bull' ? 'up' : dirC === 'bear' ? 'dn' : 'neu';
+      return `<div class="sig-card">
+        <div class="sig-dir ${dirC}">${icon}</div>
+        <div class="sig-body">
+          <div style="display:flex;align-items:center;gap:8px">
+            <span class="chip" onclick="loadWatchlistItem('${s.ticker}')">${s.ticker}</span>
+            <span class="sig-type">${s.signal_type || 'signal'}</span>
+          </div>
+          <div class="sig-summary">${s.summary || s.name || ''}</div>
+          <div style="margin-top:4px;display:flex;gap:6px;flex-wrap:wrap">
+            ${s.metrics && s.metrics.length ? s.metrics.slice(0,4).map(m => `<span class="pill pill-neu">${m}</span>`).join('') : ''}
+            ${s.streak ? `<span class="pill pill-up">${s.streak}Q streak</span>` : ''}
+            ${s.near_low_pct != null ? `<span class="pill pill-warn">${s.near_low_pct.toFixed(1)}% from 52W low</span>` : ''}
+          </div>
+        </div>
+        <div class="sig-meta">
+          <div class="sig-str ${cls}">${s.score != null ? 'Score: ' + (s.score*100).toFixed(0) : s.strength || dir || ''}</div>
+          <div class="sig-time">${timeAgo(s.created_at)}</div>
+        </div>
+      </div>`;
+    }).join('');
+  } catch(e) {
+    el.innerHTML = `<div class="err-block">Error: ${e.message}</div>`;
+  }
+}
+
+// ── TRENDS ────────────────────────────────────────────────────────────────
+async function loadTrends() {
+  try {
+    const trends = await api('/trends?limit=60');
+    document.getElementById('trends-cnt').textContent = trends.length;
+    const tbody = document.getElementById('trends-body');
+    tbody.innerHTML = trends.map(t => {
+      const cls = dirClass(t.direction);
+      const dirLabel = t.direction || '—';
+      return `<tr>
+        <td><span class="chip" onclick="loadWatchlistItem('${t.ticker}')">${t.ticker}</span></td>
+        <td>${(t.metric||'').replace(/_/g,' ')}</td>
+        <td><span class="${cls}">${dirLabel}</span></td>
+        <td class="num">${t.periods || '—'}</td>
+        <td style="color:var(--muted);max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${t.summary || '—'}</td>
+      </tr>`;
+    }).join('');
+  } catch(e) {
+    document.getElementById('trends-body').innerHTML = `<tr><td colspan="5" class="err-block">Error: ${e.message}</td></tr>`;
+  }
+}
+
+// ── ANNOUNCEMENTS ─────────────────────────────────────────────────────────
+async function loadAnnouncements() {
+  const el = document.getElementById('ann-body');
+  try {
+    const anns = await api('/announcements?limit=30');
+    if (!anns || anns.error || !Array.isArray(anns)) {
+      el.innerHTML = `<div class="empty">${anns && anns.error ? anns.error : 'No announcements available'}</div>`; return;
+    }
+    if (!anns.length) { el.innerHTML = `<div class="empty">No recent announcements</div>`; return; }
+    el.innerHTML = anns.map(a => `<div class="ann-row">
+      <div class="ann-title">
+        <span class="chip" onclick="loadWatchlistItem('${a.ticker||''}')" style="margin-right:6px">${a.ticker||'?'}</span>
+        ${a.title || a.subject || ''}
+      </div>
+      <div class="ann-meta">
+        <span>${a.category||a.type||''}</span>
+        <span>${a.exchange||''}</span>
+        <span>${a.date||a.timestamp||''}</span>
+      </div>
+    </div>`).join('');
+  } catch(e) {
+    el.innerHTML = `<div class="err-block">Error: ${e.message}</div>`;
+  }
+}
+
+// ── WATCHLIST ─────────────────────────────────────────────────────────────
+let _wlAll = [];
+async function loadWatchlistList() {
+  if (_wlAll.length) return renderWlList(_wlAll);
+  try {
+    // Load sectors for company list
+    if (!_sectors) _sectors = await api('/sectors');
+    // Build a flat list from first 5 of each sector
+    const tickers = [];
+    for (const sec of (_sectors || []).slice(0, 20)) {
+      for (const t of (sec.tickers || [])) tickers.push({ ticker: t, sector: sec.name });
+    }
+    _wlAll = tickers;
+    renderWlList(_wlAll);
+  } catch(e) {}
+}
+
+function searchWatchlist(q) {
+  if (!q) return renderWlList(_wlAll);
+  const ql = q.toLowerCase();
+  renderWlList(_wlAll.filter(x => x.ticker.toLowerCase().includes(ql) || (x.sector||'').toLowerCase().includes(ql)));
+}
+
+function renderWlList(items) {
+  const el = document.getElementById('wl-list');
+  if (!items.length) { el.innerHTML = `<div class="empty">No matches</div>`; return; }
+  el.innerHTML = items.map(x => `<div class="wl-item" onclick="loadWatchlistItem('${x.ticker}')">
+    <div>
+      <div style="font-weight:600">${x.ticker}</div>
+      <div class="name">${x.sector || ''}</div>
+    </div>
+  </div>`).join('');
+}
+
+async function loadWatchlistItem(ticker) {
+  if (!ticker) return;
+  ticker = ticker.toUpperCase();
+  // Switch to watchlist tab if not on it
+  document.querySelectorAll('.pane').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('pane-watchlist').classList.add('active');
+  document.querySelectorAll('.tab')[4].classList.add('active');
+
+  const detail = document.getElementById('wl-detail');
+  detail.innerHTML = `<div style="padding:20px"><span class="spinner"></span> Loading ${ticker}…</div>`;
+  document.getElementById('wl-search').value = ticker;
+
+  try {
+    const [company, results] = await Promise.all([
+      api('/watchlist/' + ticker),
+      api('/results/' + ticker).catch(() => [])
+    ]);
+
+    const trends = company.trends || [];
+    const metrics = company.metrics || [];
+
+    detail.innerHTML = `
+      <div class="card" style="margin-bottom:12px">
+        <div class="card-hd">
+          ${ticker} — ${company.company || ticker}
+          <span class="badge">${company.sector || '—'}</span>
+        </div>
+        <div style="padding:12px;display:flex;gap:16px;flex-wrap:wrap">
+          <div><div class="tile-label">Industry</div><div style="font-size:13px">${company.industry || '—'}</div></div>
+          <div><div class="tile-label">ISIN</div><div style="font-size:13px;font-family:monospace">${company.isin || '—'}</div></div>
+          <div><div class="tile-label">F&O Stock</div><div style="font-size:13px">${company.fo_stock ? '✓ Yes' : 'No'}</div></div>
+        </div>
+      </div>
+
+      ${trends.length ? `
+      <div class="card" style="margin-bottom:12px">
+        <div class="card-hd">Trend Signals</div>
+        <div style="padding:8px;display:flex;gap:8px;flex-wrap:wrap">
+          ${trends.map(t => {
+            const cls = dirClass(t.direction);
+            return `<div style="background:var(--surface-2);border:1px solid var(--border);border-radius:6px;padding:8px 12px;min-width:140px">
+              <div style="font-size:11px;color:var(--muted);text-transform:uppercase">${(t.metric||'').replace(/_/g,' ')}</div>
+              <div class="${cls}" style="font-weight:600;margin-top:2px">${t.direction || '—'}</div>
+              <div style="font-size:11px;color:var(--muted)">${t.periods || 0} periods</div>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>` : ''}
+
+      ${results.length ? `
+      <div class="card" style="margin-bottom:12px">
+        <div class="card-hd">Quarterly Results (last ${results.length} quarters)</div>
+        <div style="overflow-x:auto">
+        <table class="tbl">
+          <thead><tr>
+            <th>Quarter</th><th class="num">Revenue (Cr)</th><th class="num">PAT (Cr)</th>
+            <th class="num">EBIT (Cr)</th><th class="num">EPS</th><th>Audited</th>
+          </tr></thead>
+          <tbody>${results.map((q, i) => {
+            const prevPat = i > 0 ? results[i-1].pat : null;
+            const patChg = prevPat ? ((q.pat - prevPat) / Math.abs(prevPat) * 100) : null;
+            const cls = patChg != null ? (patChg > 0 ? 'up-val' : 'dn-val') : '';
+            return `<tr>
+              <td style="font-weight:600">${q.quarter || q.period_end || '—'}</td>
+              <td class="num metric-val">${fmtCr(q.revenue_from_operations)}</td>
+              <td class="num metric-val ${cls}">${fmtCr(q.pat)} ${patChg != null ? `<span style="font-size:11px">(${patChg > 0 ? '+' : ''}${patChg.toFixed(1)}%)</span>` : ''}</td>
+              <td class="num metric-val">${fmtCr(q.ebit)}</td>
+              <td class="num metric-val">${q.eps_basic != null ? fmt(q.eps_basic) : '—'}</td>
+              <td style="color:var(--muted)">${q.audited ? 'Yes' : 'No'}</td>
+            </tr>`;
+          }).join('')}</tbody>
+        </table>
+        </div>
+      </div>` : ''}
+
+      ${company.management && company.management.length ? `
+      <div class="card">
+        <div class="card-hd">Management Commentary (recent)</div>
+        ${company.management.map(m => `<div class="ann-row">
+          <div style="font-size:13px">${m.text}</div>
+          <div class="ann-meta"><span>${m.source || ''}</span><span>${timeAgo(m.created_at)}</span></div>
+        </div>`).join('')}
+      </div>` : ''}
+    `;
+  } catch(e) {
+    detail.innerHTML = `<div class="err-block">Could not load ${ticker}: ${e.message}</div>`;
+  }
+}
+
+// ── AGENTS / SWARM ────────────────────────────────────────────────────────
+async function loadAgents() {
+  try {
+    const d = await api('/agents');
+    document.getElementById('swarm-size').textContent = d.swarm_size || 8;
+    document.getElementById('swarm-incomplete').textContent = (d.incomplete||[]).length;
+
+    const log = document.getElementById('agents-log');
+    const rows = [...(d.incomplete||[]).map(t => ({...t, _inc:true})), ...(d.recent||[])];
+    if (!rows.length) { log.innerHTML = `<div class="empty">No agent activity logged</div>`; return; }
+
+    log.innerHTML = rows.slice(0,40).map(r => {
+      const st = r.status || 'unknown';
+      const dotCls = st === 'completed' ? 'dot-done' : st === 'failed' ? 'dot-fail' : st === 'in_progress' ? 'dot-prog' : 'dot-pend';
+      return `<div class="agent-row">
+        <div class="status-dot ${dotCls}"></div>
+        <div style="flex:1;min-width:0">
+          <span style="font-weight:600">${r.task_id || '—'}</span>
+          <span style="color:var(--muted);margin-left:8px">${(r.description || r.title || '').slice(0,80)}</span>
+        </div>
+        <div style="color:var(--muted);white-space:nowrap">${timeAgo(r.timestamp)}</div>
+      </div>`;
+    }).join('');
+  } catch(e) {
+    document.getElementById('agents-log').innerHTML = `<div class="err-block">Error: ${e.message}</div>`;
+  }
+}
+
+// ── GRAPH ─────────────────────────────────────────────────────────────────
+let _graphChart = null;
+async function loadGraph() {
+  try {
+    const g = await api('/graph/stats');
+
+    document.getElementById('graph-tiles').innerHTML = `
+      <div class="tile">
+        <div class="tile-label">Nodes</div>
+        <div class="tile-value">${(g.nodes||0).toLocaleString('en-IN')}</div>
+      </div>
+      <div class="tile">
+        <div class="tile-label">Edges</div>
+        <div class="tile-value">${(g.edges||0).toLocaleString('en-IN')}</div>
+      </div>
+      <div class="tile">
+        <div class="tile-label">Episodes</div>
+        <div class="tile-value">${(g.episodes||0).toLocaleString('en-IN')}</div>
+      </div>
+      <div class="tile">
+        <div class="tile-label">Pending Enrichment</div>
+        <div class="tile-value" style="color:var(--warn)">${(g.pending_enrichment||0).toLocaleString('en-IN')}</div>
+      </div>
+    `;
+
+    // Node type list
+    const byType = g.by_type || {};
+    const maxN = Math.max(...Object.values(byType), 1);
+    const ntEl = document.getElementById('node-types');
+    const sorted = Object.entries(byType).sort((a,b) => b[1]-a[1]);
+    ntEl.innerHTML = sorted.map(([type, n]) => `<div class="node-row">
+      <div style="width:160px;font-weight:600;font-size:12px">${type}</div>
+      <div class="node-bar-track"><div class="node-bar-fill" style="width:${(n/maxN)*100}%"></div></div>
+      <div style="width:60px;text-align:right;font-variant-numeric:tabular-nums;font-size:12px">${n.toLocaleString('en-IN')}</div>
+    </div>`).join('');
+
+    // Recent nodes
+    const rnEl = document.getElementById('recent-nodes');
+    rnEl.innerHTML = (g.recent_nodes||[]).map(n => `<div class="agent-row">
+      <span class="pill pill-neu" style="flex-shrink:0">${n.node_type}</span>
+      <span class="chip" style="flex-shrink:0" onclick="loadWatchlistItem('${n.ticker}')">${n.ticker||'—'}</span>
+      <span style="color:var(--muted);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px">${n.name||''}</span>
+      <span style="color:var(--muted);white-space:nowrap;font-size:11px">${timeAgo(n.created_at)}</span>
+    </div>`).join('');
+
+  } catch(e) {
+    document.getElementById('graph-tiles').innerHTML = `<div class="err-block">Error: ${e.message}</div>`;
+  }
+}
+
+// ── Auto-refresh ──────────────────────────────────────────────────────────
+function autoRefresh() {
+  const activeTab = document.querySelector('.pane.active');
+  if (!activeTab) return;
+  const name = activeTab.id.replace('pane-', '');
+  loadTab(name);
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────
+loadMarket();
+setInterval(autoRefresh, REFRESH_MS);
+</script>
+</body>
+</html>
