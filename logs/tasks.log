@@ -566,3 +566,11 @@ Progress: market-hours watchdog 12:10 IST; live NSE indices captured (Nifty50 -0
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-04 07:03
+Task: None
+Status: completed
+Progress: Confluences: 0 (buy=0, sell=0) | Gaps: 3
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: No TrendSummary nodes — TrendAgent may not have run; Episode backlog: 31,424 unprocessed — ContextAgent lagging; No ConfluenceSignal nodes for today — first run or no signals met threshold
+============================================================
