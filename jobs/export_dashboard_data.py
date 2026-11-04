@@ -263,6 +263,32 @@ def _top_signals(c) -> list:
     return [{"ticker": r[0], "conf": round(r[1], 3), "state": r[2]} for r in rows]
 
 
+# ── Ranked watchlist (top 20 CompositeRank nodes) ────────────────────────────
+
+def _ranked(c) -> list:
+    """Return top 20 tickers by composite_score from CompositeRank nodes."""
+    rows = c.execute("""
+        SELECT ticker, properties FROM nodes
+        WHERE node_type='CompositeRank'
+        ORDER BY CAST(json_extract(properties,'$.composite_score') AS REAL) DESC
+        LIMIT 20
+    """).fetchall()
+    out = []
+    for r in rows:
+        p = _p(r["properties"])
+        out.append({
+            "ticker":          r["ticker"],
+            "composite_score": p.get("composite_score"),
+            "quality_tier":    p.get("quality_tier"),
+            "rank":            p.get("rank"),
+            "conf":            p.get("conf"),
+            "quality_score":   p.get("quality_score"),
+            "peer_verdict":    p.get("peer_verdict"),
+            "pos_52w":         p.get("pos_52w"),
+        })
+    return out
+
+
 # ── FII/DII (from FIIDIIDaily nodes if present) ──────────────────────────────
 
 def _fii_dii(c) -> list:
@@ -293,6 +319,7 @@ def export_dashboard_data(patch_html: bool = True, verbose: bool = True) -> dict
     cbt     = _conf_by_type(c)
     topsig  = _top_signals(c)
     fiidii  = _fii_dii(c)
+    ranked  = _ranked(c)
 
     data = {
         "generated_at":  datetime.now().isoformat(),
@@ -305,6 +332,7 @@ def export_dashboard_data(patch_html: bool = True, verbose: bool = True) -> dict
         "conf_by_type":  cbt,
         "top_signals":   topsig,
         "fii_dii":       fiidii,
+        "ranked":        ranked,
     }
 
     OUT_JSON.write_text(json.dumps(data, indent=2, default=str))

@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 57,
+  "version": 58,
   "patterns": {
     "confirmed": [
       {
@@ -670,6 +670,12 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "CompositeRanker scores are dominated by confluence+quality; peer_verdict currently 0.4 for most tickers (mid_quartile/insufficient_data) — limited differentiation until top_quartile tickers emerge",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "rejected": []
@@ -930,6 +936,14 @@
       },
       {
         "signal": "orchestrator.py Phase 2 wiring: valuation_agent -> peer_comparison -> business_quality",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "CompositeRanker weighted formula correctly ranks tickers; 159 scored in 0.03s with 0 errors",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "graph.db upsert_node pattern works for new node types (CompositeRank)",
         "added": "2026-11-04"
       }
     ],
@@ -1209,6 +1223,14 @@
       {
         "gap": "AR PDFs only exist for 5 tickers — AnnualReportInsight coverage is minimal",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "PeerComparison top_quartile = 0 tickers limits peer_score differentiation (all score 0.4-0.5)",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "Technical pos_52w close to 0 for most tickers (near 52W lows) — tech component contributes high uniformly",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -1307,10 +1329,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-11-03",
-      "note": "Wired NSE bulk endpoints into all 3 tool files; universe = 888 mainboard stocks"
-    },
     {
       "date": "2026-11-03",
       "note": "Built 888-stock KB builder (jobs/build_kb.py); fixed AR category mismatch; build at 358/888 and running"
@@ -1426,6 +1444,10 @@
     {
       "date": "2026-11-04",
       "note": "completed analysis layer: concall/AR analyzers, peer comparison, business quality scorer, deep-dive report generator, HTML report output, dashboard artifact published"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "Composite screener ranker built: 159 tickers ranked A/B/C/D in 0.03s; orchestrator + dashboard export wired"
     }
   ]
 }

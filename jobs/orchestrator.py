@@ -215,6 +215,21 @@ def run_analysis_phase(workers: int = 4, verbose: bool = True) -> dict:
         results["annual_report_analysis"] = {"error": str(e)}
         _log("analysis", f"annual_report_analyzer FAILED: {e}")
 
+    # Composite ranker (scores + ranks all 159 ConfluenceSignal tickers)
+    try:
+        _log("analysis", "composite_ranker (all signal tickers)...")
+        t1 = time.time()
+        from agents.composite_ranker import CompositeRanker
+        r = CompositeRanker().run_all(limit=200)
+        _record_perf("composite_ranker_v1", r.get("ok", 0), r.get("errors", 0), time.time()-t1, "analysis")
+        results["composite_ranker"] = r
+        if verbose:
+            _log("analysis", f"composite_ranker: {r.get('ok')} ranked, {r.get('errors')} errors, "
+                             f"{r.get('duration_s')}s")
+    except Exception as e:
+        results["composite_ranker"] = {"error": str(e)}
+        _log("analysis", f"composite_ranker FAILED: {e}")
+
     results["duration_s"] = round(time.time() - t0, 1)
     return results
 

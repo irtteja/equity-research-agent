@@ -1,5 +1,26 @@
 # Progress Log
 
+## 2026-11-04 — Composite screener ranker: quality_tier A/B/C/D + ranked watchlist (session 32)
+
+### Done
+- **`agents/composite_ranker.py`** (NEW): `CompositeRanker` class with `run_all(limit=200)` and `rank_ticker(ticker)` methods. Combines 4 signals with weights: confluence confidence (40%), business quality (25%), peer standing (20%), technical position (15%). Writes `CompositeRank` nodes to graph.db. Saves `memory_store/ranked_watchlist.json`. Ran on all 159 ConfluenceSignal tickers: 0 errors, 159 ranked in 0.03s.
+- **`jobs/orchestrator.py`** Phase 2 Analysis extended: composite_ranker step added after annual_report_analyzer. Runs `CompositeRanker().run_all(limit=200)` with agent_perf recording.
+- **`jobs/export_dashboard_data.py`**: added `_ranked()` function pulling CompositeRank nodes from graph.db; added `"ranked"` key to dashboard data output (top 20 by composite_score).
+- **`memory_store/ranked_watchlist.json`**: 159-ticker ranked watchlist generated with composite_score, quality_tier, rank, conf, quality_score, peer_verdict, pos_52w.
+- Top 10 from first run: CLEAN (0.8795 A), VAIBHAVGBL (0.8651 A), GSFC (0.8558 A), POLICYBZR (0.8535 A), HUDCO (0.8526 A), SAFARI (0.8483 A), CONCOR (0.8482 A), AVANTIFEED (0.8459 A), GPIL (0.8447 A), RAILTEL (0.8382 A)
+
+### Architecture changes
+- New node type: `CompositeRank` in graph.db — written per ticker after every orchestrator analysis cycle
+- Scoring formula: conf×0.40 + quality_score×0.25 + peer_score×0.20 + (1-pos_52w/100)×0.15
+- Tier mapping: A ≥0.70, B ≥0.55, C ≥0.40, D <0.40
+- Dashboard data: `ranked` key added to dashboard_data.json (top 20 composite-ranked tickers)
+
+### Pending / next sessions
+- Dashboard UI: add Ranked tab showing top-20 tickers with tier badges and composite breakdown
+- PeerComparison top_quartile is still 0 (all tickers in mid/bottom/insufficient) — needs more ValuationScore density
+- Run report generator over ranked A-tier tickers for quality-filtered deep dives
+- Consider weighting adjustment as more data accumulates (peer_verdict currently 0 or 0.4-only range)
+
 ## 2026-11-04 — Analysis layer complete: concall/AR analyzers, peer comparison, business quality, full report stack (session 31)
 
 ### Done

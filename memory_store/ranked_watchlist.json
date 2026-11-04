@@ -1,0 +1,1592 @@
+[
+  {
+    "ticker": "CLEAN",
+    "composite_score": 0.8795,
+    "quality_tier": "A",
+    "rank": 1,
+    "conf": 0.98,
+    "quality_score": 0.95,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0168
+  },
+  {
+    "ticker": "VAIBHAVGBL",
+    "composite_score": 0.8651,
+    "quality_tier": "A",
+    "rank": 2,
+    "conf": 0.944,
+    "quality_score": 0.95,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0233
+  },
+  {
+    "ticker": "GSFC",
+    "composite_score": 0.8558,
+    "quality_tier": "A",
+    "rank": 3,
+    "conf": 0.921,
+    "quality_score": 0.95,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0586
+  },
+  {
+    "ticker": "POLICYBZR",
+    "composite_score": 0.8535,
+    "quality_tier": "A",
+    "rank": 4,
+    "conf": 0.965,
+    "quality_score": 0.95,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.0114
+  },
+  {
+    "ticker": "HUDCO",
+    "composite_score": 0.8526,
+    "quality_tier": "A",
+    "rank": 5,
+    "conf": 0.944,
+    "quality_score": 0.9,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0268
+  },
+  {
+    "ticker": "SAFARI",
+    "composite_score": 0.8483,
+    "quality_tier": "A",
+    "rank": 6,
+    "conf": 0.902,
+    "quality_score": 0.95,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0323
+  },
+  {
+    "ticker": "CONCOR",
+    "composite_score": 0.8482,
+    "quality_tier": "A",
+    "rank": 7,
+    "conf": 0.902,
+    "quality_score": 0.95,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0975
+  },
+  {
+    "ticker": "AVANTIFEED",
+    "composite_score": 0.8459,
+    "quality_tier": "A",
+    "rank": 8,
+    "conf": 0.896,
+    "quality_score": 0.95,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0239
+  },
+  {
+    "ticker": "GPIL",
+    "composite_score": 0.8447,
+    "quality_tier": "A",
+    "rank": 9,
+    "conf": 0.943,
+    "quality_score": 0.95,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.0271
+  },
+  {
+    "ticker": "RAILTEL",
+    "composite_score": 0.8382,
+    "quality_tier": "A",
+    "rank": 10,
+    "conf": 0.877,
+    "quality_score": 0.95,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.056
+  },
+  {
+    "ticker": "INDIAMART",
+    "composite_score": 0.8266,
+    "quality_tier": "A",
+    "rank": 11,
+    "conf": 0.848,
+    "quality_score": 0.95,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0716
+  },
+  {
+    "ticker": "GODFRYPHLP",
+    "composite_score": 0.8262,
+    "quality_tier": "A",
+    "rank": 12,
+    "conf": 0.847,
+    "quality_score": 0.95,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0593
+  },
+  {
+    "ticker": "PFC",
+    "composite_score": 0.8235,
+    "quality_tier": "A",
+    "rank": 13,
+    "conf": 0.934,
+    "quality_score": 0.8,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0437
+  },
+  {
+    "ticker": "PRAJIND",
+    "composite_score": 0.823,
+    "quality_tier": "A",
+    "rank": 14,
+    "conf": 0.839,
+    "quality_score": 0.95,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0775
+  },
+  {
+    "ticker": "BDL",
+    "composite_score": 0.8202,
+    "quality_tier": "A",
+    "rank": 15,
+    "conf": 0.882,
+    "quality_score": 0.95,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.0652
+  },
+  {
+    "ticker": "JUBLINGREA",
+    "composite_score": 0.82,
+    "quality_tier": "A",
+    "rank": 16,
+    "conf": 0.863,
+    "quality_score": 0.9,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.1024
+  },
+  {
+    "ticker": "AWL",
+    "composite_score": 0.8183,
+    "quality_tier": "A",
+    "rank": 17,
+    "conf": 0.921,
+    "quality_score": 0.8,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0376
+  },
+  {
+    "ticker": "HAPPSTMNDS",
+    "composite_score": 0.8165,
+    "quality_tier": "A",
+    "rank": 18,
+    "conf": 0.854,
+    "quality_score": 0.9,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0704
+  },
+  {
+    "ticker": "COLPAL",
+    "composite_score": 0.816,
+    "quality_tier": "A",
+    "rank": 19,
+    "conf": 0.884,
+    "quality_score": 0.85,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0919
+  },
+  {
+    "ticker": "IMFA",
+    "composite_score": 0.8132,
+    "quality_tier": "A",
+    "rank": 20,
+    "conf": 0.877,
+    "quality_score": 0.85,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0768
+  },
+  {
+    "ticker": "SBICARD",
+    "composite_score": 0.8127,
+    "quality_tier": "A",
+    "rank": 21,
+    "conf": 0.907,
+    "quality_score": 0.8,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0455
+  },
+  {
+    "ticker": "EMAMILTD",
+    "composite_score": 0.8125,
+    "quality_tier": "A",
+    "rank": 22,
+    "conf": 0.813,
+    "quality_score": 0.95,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.1289
+  },
+  {
+    "ticker": "IREDA",
+    "composite_score": 0.8119,
+    "quality_tier": "A",
+    "rank": 23,
+    "conf": 0.905,
+    "quality_score": 0.8,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0608
+  },
+  {
+    "ticker": "ARVINDFASN",
+    "composite_score": 0.8118,
+    "quality_tier": "A",
+    "rank": 24,
+    "conf": 0.967,
+    "quality_score": 0.7,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0196
+  },
+  {
+    "ticker": "M&M",
+    "composite_score": 0.8112,
+    "quality_tier": "A",
+    "rank": 25,
+    "conf": 0.841,
+    "quality_score": 0.9,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.1494
+  },
+  {
+    "ticker": "IRB",
+    "composite_score": 0.81,
+    "quality_tier": "A",
+    "rank": 26,
+    "conf": 0.9,
+    "quality_score": 0.8,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0205
+  },
+  {
+    "ticker": "M&MFIN",
+    "composite_score": 0.8087,
+    "quality_tier": "A",
+    "rank": 27,
+    "conf": 0.897,
+    "quality_score": 0.8,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0662
+  },
+  {
+    "ticker": "SUNDARMFIN",
+    "composite_score": 0.8052,
+    "quality_tier": "A",
+    "rank": 28,
+    "conf": 0.826,
+    "quality_score": 0.9,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.132
+  },
+  {
+    "ticker": "CREDITACC",
+    "composite_score": 0.804,
+    "quality_tier": "A",
+    "rank": 29,
+    "conf": 0.823,
+    "quality_score": 0.9,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.1014
+  },
+  {
+    "ticker": "BLS",
+    "composite_score": 0.8016,
+    "quality_tier": "A",
+    "rank": 30,
+    "conf": 0.848,
+    "quality_score": 0.85,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0891
+  },
+  {
+    "ticker": "BLACKBUCK",
+    "composite_score": 0.7996,
+    "quality_tier": "A",
+    "rank": 31,
+    "conf": 0.781,
+    "quality_score": 0.95,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.1819
+  },
+  {
+    "ticker": "ITC",
+    "composite_score": 0.7981,
+    "quality_tier": "A",
+    "rank": 32,
+    "conf": 0.777,
+    "quality_score": 0.95,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.1215
+  },
+  {
+    "ticker": "BAJAJHFL",
+    "composite_score": 0.7936,
+    "quality_tier": "A",
+    "rank": 33,
+    "conf": 0.797,
+    "quality_score": 0.9,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.1394
+  },
+  {
+    "ticker": "LUPIN",
+    "composite_score": 0.793,
+    "quality_tier": "A",
+    "rank": 34,
+    "conf": 0.827,
+    "quality_score": 0.85,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.1932
+  },
+  {
+    "ticker": "ALKEM",
+    "composite_score": 0.7929,
+    "quality_tier": "A",
+    "rank": 35,
+    "conf": 0.765,
+    "quality_score": 0.95,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.3786
+  },
+  {
+    "ticker": "DBL",
+    "composite_score": 0.7916,
+    "quality_tier": "A",
+    "rank": 36,
+    "conf": 0.792,
+    "quality_score": 0.9,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.1567
+  },
+  {
+    "ticker": "APTUS",
+    "composite_score": 0.7887,
+    "quality_tier": "A",
+    "rank": 37,
+    "conf": 0.847,
+    "quality_score": 0.8,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0875
+  },
+  {
+    "ticker": "VIKRAMSOLR",
+    "composite_score": 0.7884,
+    "quality_tier": "A",
+    "rank": 38,
+    "conf": 0.896,
+    "quality_score": 0.8,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.0234
+  },
+  {
+    "ticker": "ABREL",
+    "composite_score": 0.7859,
+    "quality_tier": "A",
+    "rank": 39,
+    "conf": 0.89,
+    "quality_score": 0.8,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.0448
+  },
+  {
+    "ticker": "CANFINHOME",
+    "composite_score": 0.7838,
+    "quality_tier": "A",
+    "rank": 40,
+    "conf": 0.835,
+    "quality_score": 0.8,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.1557
+  },
+  {
+    "ticker": "SUZLON",
+    "composite_score": 0.7838,
+    "quality_tier": "A",
+    "rank": 41,
+    "conf": 0.791,
+    "quality_score": 0.95,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.0917
+  },
+  {
+    "ticker": "JSWDULUX",
+    "composite_score": 0.7827,
+    "quality_tier": "A",
+    "rank": 42,
+    "conf": 0.988,
+    "quality_score": 0.85,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": null
+  },
+  {
+    "ticker": "AAVAS",
+    "composite_score": 0.7821,
+    "quality_tier": "A",
+    "rank": 43,
+    "conf": 0.768,
+    "quality_score": 0.9,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0925
+  },
+  {
+    "ticker": "HAVELLS",
+    "composite_score": 0.7817,
+    "quality_tier": "A",
+    "rank": 44,
+    "conf": 0.861,
+    "quality_score": 0.75,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.1009
+  },
+  {
+    "ticker": "GMDCLTD",
+    "composite_score": 0.778,
+    "quality_tier": "A",
+    "rank": 45,
+    "conf": 0.789,
+    "quality_score": 0.85,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0823
+  },
+  {
+    "ticker": "BHARATCOAL",
+    "composite_score": 0.7729,
+    "quality_tier": "A",
+    "rank": 46,
+    "conf": 0.87,
+    "quality_score": 0.7,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0884
+  },
+  {
+    "ticker": "CRAMC",
+    "composite_score": 0.7705,
+    "quality_tier": "A",
+    "rank": 47,
+    "conf": 0.758,
+    "quality_score": 0.95,
+    "peer_verdict": "absent",
+    "pos_52w": 0.1374
+  },
+  {
+    "ticker": "MEDPLUS",
+    "composite_score": 0.7689,
+    "quality_tier": "A",
+    "rank": 48,
+    "conf": 0.86,
+    "quality_score": 0.7,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0649
+  },
+  {
+    "ticker": "MASTEK",
+    "composite_score": 0.7681,
+    "quality_tier": "A",
+    "rank": 49,
+    "conf": 0.752,
+    "quality_score": 0.95,
+    "peer_verdict": "absent",
+    "pos_52w": 0.1199
+  },
+  {
+    "ticker": "IEX",
+    "composite_score": 0.7653,
+    "quality_tier": "A",
+    "rank": 50,
+    "conf": 0.745,
+    "quality_score": 0.95,
+    "peer_verdict": "absent",
+    "pos_52w": 0.1563
+  },
+  {
+    "ticker": "CMSINFO",
+    "composite_score": 0.7616,
+    "quality_tier": "A",
+    "rank": 51,
+    "conf": 0.798,
+    "quality_score": 0.85,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.0802
+  },
+  {
+    "ticker": "STUDDS",
+    "composite_score": 0.7615,
+    "quality_tier": "A",
+    "rank": 52,
+    "conf": 0.935,
+    "quality_score": 0.85,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": null
+  },
+  {
+    "ticker": "FINPIPE",
+    "composite_score": 0.7615,
+    "quality_tier": "A",
+    "rank": 53,
+    "conf": 0.735,
+    "quality_score": 0.95,
+    "peer_verdict": "absent",
+    "pos_52w": 0.0161
+  },
+  {
+    "ticker": "FRACTAL",
+    "composite_score": 0.7614,
+    "quality_tier": "A",
+    "rank": 54,
+    "conf": 0.935,
+    "quality_score": 0.95,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0866
+  },
+  {
+    "ticker": "VBL",
+    "composite_score": 0.7613,
+    "quality_tier": "A",
+    "rank": 55,
+    "conf": 0.81,
+    "quality_score": 0.75,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.1553
+  },
+  {
+    "ticker": "IRFC",
+    "composite_score": 0.7583,
+    "quality_tier": "A",
+    "rank": 56,
+    "conf": 0.896,
+    "quality_score": 0.6,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0444
+  },
+  {
+    "ticker": "IXIGO",
+    "composite_score": 0.7544,
+    "quality_tier": "A",
+    "rank": 57,
+    "conf": 0.855,
+    "quality_score": 0.65,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0494
+  },
+  {
+    "ticker": "HDFCAMC",
+    "composite_score": 0.7542,
+    "quality_tier": "A",
+    "rank": 58,
+    "conf": 0.717,
+    "quality_score": 0.95,
+    "peer_verdict": "absent",
+    "pos_52w": 0.0696
+  },
+  {
+    "ticker": "3MINDIA",
+    "composite_score": 0.7527,
+    "quality_tier": "A",
+    "rank": 59,
+    "conf": 0.963,
+    "quality_score": 0.85,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": null
+  },
+  {
+    "ticker": "TIMETECHNO",
+    "composite_score": 0.7526,
+    "quality_tier": "A",
+    "rank": 60,
+    "conf": 0.776,
+    "quality_score": 0.85,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.1943
+  },
+  {
+    "ticker": "KIRLPNU",
+    "composite_score": 0.7499,
+    "quality_tier": "A",
+    "rank": 61,
+    "conf": 0.706,
+    "quality_score": 0.95,
+    "peer_verdict": "absent",
+    "pos_52w": 0.0172
+  },
+  {
+    "ticker": "AURIONPRO",
+    "composite_score": 0.749,
+    "quality_tier": "A",
+    "rank": 62,
+    "conf": 0.704,
+    "quality_score": 0.95,
+    "peer_verdict": "absent",
+    "pos_52w": 0.0787
+  },
+  {
+    "ticker": "TTML",
+    "composite_score": 0.7484,
+    "quality_tier": "A",
+    "rank": 63,
+    "conf": 0.734,
+    "quality_score": 0.9,
+    "peer_verdict": "absent",
+    "pos_52w": 0.1232
+  },
+  {
+    "ticker": "WAAREERTL",
+    "composite_score": 0.7477,
+    "quality_tier": "A",
+    "rank": 64,
+    "conf": 0.732,
+    "quality_score": 0.9,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.0669
+  },
+  {
+    "ticker": "NTPC",
+    "composite_score": 0.747,
+    "quality_tier": "A",
+    "rank": 65,
+    "conf": 0.731,
+    "quality_score": 0.9,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2411
+  },
+  {
+    "ticker": "ATUL",
+    "composite_score": 0.7468,
+    "quality_tier": "A",
+    "rank": 66,
+    "conf": 0.961,
+    "quality_score": 0.85,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0357
+  },
+  {
+    "ticker": "LTF",
+    "composite_score": 0.7455,
+    "quality_tier": "A",
+    "rank": 67,
+    "conf": 0.727,
+    "quality_score": 0.9,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2141
+  },
+  {
+    "ticker": "ANURAS",
+    "composite_score": 0.745,
+    "quality_tier": "A",
+    "rank": 68,
+    "conf": 0.676,
+    "quality_score": 0.9,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.238
+  },
+  {
+    "ticker": "MFSL",
+    "composite_score": 0.7434,
+    "quality_tier": "A",
+    "rank": 69,
+    "conf": 0.971,
+    "quality_score": 0.5,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.0174
+  },
+  {
+    "ticker": "BALKRISIND",
+    "composite_score": 0.7399,
+    "quality_tier": "A",
+    "rank": 70,
+    "conf": 0.682,
+    "quality_score": 0.95,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2787
+  },
+  {
+    "ticker": "INDUSTOWER",
+    "composite_score": 0.7389,
+    "quality_tier": "A",
+    "rank": 71,
+    "conf": 0.742,
+    "quality_score": 0.85,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2735
+  },
+  {
+    "ticker": "CHAMBLFERT",
+    "composite_score": 0.7386,
+    "quality_tier": "A",
+    "rank": 72,
+    "conf": 0.741,
+    "quality_score": 0.85,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2145
+  },
+  {
+    "ticker": "ONGC",
+    "composite_score": 0.7384,
+    "quality_tier": "A",
+    "rank": 73,
+    "conf": 0.834,
+    "quality_score": 0.7,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.1533
+  },
+  {
+    "ticker": "KFINTECH",
+    "composite_score": 0.7366,
+    "quality_tier": "A",
+    "rank": 74,
+    "conf": 0.736,
+    "quality_score": 0.85,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2205
+  },
+  {
+    "ticker": "YESBANK",
+    "composite_score": 0.7354,
+    "quality_tier": "A",
+    "rank": 75,
+    "conf": 0.951,
+    "quality_score": 0.5,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.0262
+  },
+  {
+    "ticker": "CCL",
+    "composite_score": 0.7342,
+    "quality_tier": "A",
+    "rank": 76,
+    "conf": 0.73,
+    "quality_score": 0.85,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2297
+  },
+  {
+    "ticker": "JMFINANCIL",
+    "composite_score": 0.7334,
+    "quality_tier": "A",
+    "rank": 77,
+    "conf": 0.759,
+    "quality_score": 0.8,
+    "peer_verdict": "absent",
+    "pos_52w": 0.128
+  },
+  {
+    "ticker": "ENDURANCE",
+    "composite_score": 0.7327,
+    "quality_tier": "A",
+    "rank": 78,
+    "conf": 0.664,
+    "quality_score": 0.95,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2875
+  },
+  {
+    "ticker": "RELIANCE",
+    "composite_score": 0.7305,
+    "quality_tier": "A",
+    "rank": 79,
+    "conf": 0.64,
+    "quality_score": 0.9,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.3388
+  },
+  {
+    "ticker": "BAJAJFINSV",
+    "composite_score": 0.7293,
+    "quality_tier": "A",
+    "rank": 80,
+    "conf": 0.749,
+    "quality_score": 0.8,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2206
+  },
+  {
+    "ticker": "IGL",
+    "composite_score": 0.7288,
+    "quality_tier": "A",
+    "rank": 81,
+    "conf": 0.841,
+    "quality_score": 0.65,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.0818
+  },
+  {
+    "ticker": "ZAGGLE",
+    "composite_score": 0.7288,
+    "quality_tier": "A",
+    "rank": 82,
+    "conf": 0.841,
+    "quality_score": 0.65,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.0338
+  },
+  {
+    "ticker": "CANBK",
+    "composite_score": 0.7281,
+    "quality_tier": "A",
+    "rank": 83,
+    "conf": 0.933,
+    "quality_score": 0.5,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.0595
+  },
+  {
+    "ticker": "AADHARHFC",
+    "composite_score": 0.7271,
+    "quality_tier": "A",
+    "rank": 84,
+    "conf": 0.943,
+    "quality_score": 0.8,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0354
+  },
+  {
+    "ticker": "MUTHOOTFIN",
+    "composite_score": 0.7266,
+    "quality_tier": "A",
+    "rank": 85,
+    "conf": 0.742,
+    "quality_score": 0.8,
+    "peer_verdict": "absent",
+    "pos_52w": 0.121
+  },
+  {
+    "ticker": "HONAUT",
+    "composite_score": 0.7246,
+    "quality_tier": "A",
+    "rank": 86,
+    "conf": 0.706,
+    "quality_score": 0.85,
+    "peer_verdict": "absent",
+    "pos_52w": 0.1866
+  },
+  {
+    "ticker": "MAXHEALTH",
+    "composite_score": 0.7226,
+    "quality_tier": "A",
+    "rank": 87,
+    "conf": 0.67,
+    "quality_score": 0.9,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2513
+  },
+  {
+    "ticker": "VGUARD",
+    "composite_score": 0.7207,
+    "quality_tier": "A",
+    "rank": 88,
+    "conf": 0.634,
+    "quality_score": 0.95,
+    "peer_verdict": "absent",
+    "pos_52w": 0.27
+  },
+  {
+    "ticker": "TIINDIA",
+    "composite_score": 0.7189,
+    "quality_tier": "A",
+    "rank": 89,
+    "conf": 0.754,
+    "quality_score": 0.75,
+    "peer_verdict": "absent",
+    "pos_52w": 0.1389
+  },
+  {
+    "ticker": "HINDUNILVR",
+    "composite_score": 0.7181,
+    "quality_tier": "A",
+    "rank": 90,
+    "conf": 0.69,
+    "quality_score": 0.85,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2769
+  },
+  {
+    "ticker": "TATACAP",
+    "composite_score": 0.7176,
+    "quality_tier": "A",
+    "rank": 91,
+    "conf": 0.658,
+    "quality_score": 0.9,
+    "peer_verdict": "absent",
+    "pos_52w": 0.4013
+  },
+  {
+    "ticker": "CHOLAHLDNG",
+    "composite_score": 0.7175,
+    "quality_tier": "A",
+    "rank": 92,
+    "conf": 0.657,
+    "quality_score": 0.9,
+    "peer_verdict": "absent",
+    "pos_52w": 0.1978
+  },
+  {
+    "ticker": "ACUTAAS",
+    "composite_score": 0.7155,
+    "quality_tier": "A",
+    "rank": 93,
+    "conf": 0.686,
+    "quality_score": 0.85,
+    "peer_verdict": "absent",
+    "pos_52w": 0.9429
+  },
+  {
+    "ticker": "NAVA",
+    "composite_score": 0.7152,
+    "quality_tier": "A",
+    "rank": 94,
+    "conf": 0.62,
+    "quality_score": 0.95,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2091
+  },
+  {
+    "ticker": "JINDALSTEL",
+    "composite_score": 0.7148,
+    "quality_tier": "A",
+    "rank": 95,
+    "conf": 0.651,
+    "quality_score": 0.9,
+    "peer_verdict": "absent",
+    "pos_52w": 0.3886
+  },
+  {
+    "ticker": "UNOMINDA",
+    "composite_score": 0.7145,
+    "quality_tier": "A",
+    "rank": 96,
+    "conf": 0.65,
+    "quality_score": 0.9,
+    "peer_verdict": "absent",
+    "pos_52w": 0.3615
+  },
+  {
+    "ticker": "JUBLFOOD",
+    "composite_score": 0.71,
+    "quality_tier": "A",
+    "rank": 97,
+    "conf": 0.838,
+    "quality_score": 0.9,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.1075
+  },
+  {
+    "ticker": "VEDL",
+    "composite_score": 0.7079,
+    "quality_tier": "A",
+    "rank": 98,
+    "conf": 0.695,
+    "quality_score": 0.8,
+    "peer_verdict": "absent",
+    "pos_52w": 0.0441
+  },
+  {
+    "ticker": "FORTIS",
+    "composite_score": 0.7077,
+    "quality_tier": "A",
+    "rank": 99,
+    "conf": 0.695,
+    "quality_score": 0.8,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2287
+  },
+  {
+    "ticker": "PTC",
+    "composite_score": 0.7075,
+    "quality_tier": "A",
+    "rank": 100,
+    "conf": 0.894,
+    "quality_score": 0.8,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0535
+  },
+  {
+    "ticker": "ICICIAMC",
+    "composite_score": 0.7028,
+    "quality_tier": "A",
+    "rank": 101,
+    "conf": 0.652,
+    "quality_score": 0.85,
+    "peer_verdict": "absent",
+    "pos_52w": 0.3159
+  },
+  {
+    "ticker": "DMART",
+    "composite_score": 0.6989,
+    "quality_tier": "B",
+    "rank": 102,
+    "conf": 0.779,
+    "quality_score": 0.95,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.1665
+  },
+  {
+    "ticker": "HEROMOTOCO",
+    "composite_score": 0.6984,
+    "quality_tier": "B",
+    "rank": 103,
+    "conf": 0.641,
+    "quality_score": 0.85,
+    "peer_verdict": "absent",
+    "pos_52w": 0.366
+  },
+  {
+    "ticker": "HDBFS",
+    "composite_score": 0.6972,
+    "quality_tier": "B",
+    "rank": 104,
+    "conf": 0.668,
+    "quality_score": 0.8,
+    "peer_verdict": "absent",
+    "pos_52w": 0.0296
+  },
+  {
+    "ticker": "SRF",
+    "composite_score": 0.6947,
+    "quality_tier": "B",
+    "rank": 105,
+    "conf": 0.694,
+    "quality_score": 0.75,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2595
+  },
+  {
+    "ticker": "AUBANK",
+    "composite_score": 0.6928,
+    "quality_tier": "B",
+    "rank": 106,
+    "conf": 0.845,
+    "quality_score": 0.5,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.1547
+  },
+  {
+    "ticker": "MAZDOCK",
+    "composite_score": 0.6918,
+    "quality_tier": "B",
+    "rank": 107,
+    "conf": 0.761,
+    "quality_score": 0.55,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.0841
+  },
+  {
+    "ticker": "IONEXCHANG",
+    "composite_score": 0.6914,
+    "quality_tier": "B",
+    "rank": 108,
+    "conf": 0.779,
+    "quality_score": 0.6,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.1495
+  },
+  {
+    "ticker": "ASHOKLEY",
+    "composite_score": 0.6911,
+    "quality_tier": "B",
+    "rank": 109,
+    "conf": 0.716,
+    "quality_score": 0.7,
+    "peer_verdict": "absent",
+    "pos_52w": 0.1901
+  },
+  {
+    "ticker": "CEATLTD",
+    "composite_score": 0.691,
+    "quality_tier": "B",
+    "rank": 110,
+    "conf": 0.716,
+    "quality_score": 0.7,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2685
+  },
+  {
+    "ticker": "WAAREEENER",
+    "composite_score": 0.6901,
+    "quality_tier": "B",
+    "rank": 111,
+    "conf": 0.807,
+    "quality_score": 0.55,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.1121
+  },
+  {
+    "ticker": "ABSLAMC",
+    "composite_score": 0.6886,
+    "quality_tier": "B",
+    "rank": 112,
+    "conf": 0.616,
+    "quality_score": 0.85,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2006
+  },
+  {
+    "ticker": "EIDPARRY",
+    "composite_score": 0.6839,
+    "quality_tier": "B",
+    "rank": 113,
+    "conf": 0.835,
+    "quality_score": 0.8,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0667
+  },
+  {
+    "ticker": "NFL",
+    "composite_score": 0.6791,
+    "quality_tier": "B",
+    "rank": 114,
+    "conf": 0.823,
+    "quality_score": 0.8,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0929
+  },
+  {
+    "ticker": "FORCEMOT",
+    "composite_score": 0.6783,
+    "quality_tier": "B",
+    "rank": 115,
+    "conf": 0.59,
+    "quality_score": 0.85,
+    "peer_verdict": "absent",
+    "pos_52w": 0.1561
+  },
+  {
+    "ticker": "AXISBANK",
+    "composite_score": 0.6781,
+    "quality_tier": "B",
+    "rank": 116,
+    "conf": 0.809,
+    "quality_score": 0.5,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.3075
+  },
+  {
+    "ticker": "DNAMEDIA",
+    "composite_score": 0.6775,
+    "quality_tier": "B",
+    "rank": 117,
+    "conf": 0.775,
+    "quality_score": 0.85,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": null
+  },
+  {
+    "ticker": "OMPOWER",
+    "composite_score": 0.6757,
+    "quality_tier": "B",
+    "rank": 118,
+    "conf": 0.708,
+    "quality_score": 0.95,
+    "peer_verdict": "absent",
+    "pos_52w": null
+  },
+  {
+    "ticker": "PNGJL",
+    "composite_score": 0.6755,
+    "quality_tier": "B",
+    "rank": 119,
+    "conf": 0.615,
+    "quality_score": 0.8,
+    "peer_verdict": "absent",
+    "pos_52w": 0.3108
+  },
+  {
+    "ticker": "TARC",
+    "composite_score": 0.6733,
+    "quality_tier": "B",
+    "rank": 120,
+    "conf": 0.871,
+    "quality_score": 0.7,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0639
+  },
+  {
+    "ticker": "TATASTEEL",
+    "composite_score": 0.67,
+    "quality_tier": "B",
+    "rank": 121,
+    "conf": 0.726,
+    "quality_score": 0.6,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2555
+  },
+  {
+    "ticker": "SIGNATURE",
+    "composite_score": 0.6674,
+    "quality_tier": "B",
+    "rank": 122,
+    "conf": 0.981,
+    "quality_score": 0.5,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0113
+  },
+  {
+    "ticker": "PNC",
+    "composite_score": 0.6673,
+    "quality_tier": "B",
+    "rank": 123,
+    "conf": 0.687,
+    "quality_score": 0.95,
+    "peer_verdict": "absent",
+    "pos_52w": null
+  },
+  {
+    "ticker": "NTPCGREEN",
+    "composite_score": 0.6664,
+    "quality_tier": "B",
+    "rank": 124,
+    "conf": 0.885,
+    "quality_score": 0.65,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0823
+  },
+  {
+    "ticker": "RALLIS",
+    "composite_score": 0.6664,
+    "quality_tier": "B",
+    "rank": 125,
+    "conf": 0.885,
+    "quality_score": 0.65,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0678
+  },
+  {
+    "ticker": "DELHIVERY",
+    "composite_score": 0.6662,
+    "quality_tier": "B",
+    "rank": 126,
+    "conf": 0.654,
+    "quality_score": 0.7,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2971
+  },
+  {
+    "ticker": "HDFCBANK",
+    "composite_score": 0.6652,
+    "quality_tier": "B",
+    "rank": 127,
+    "conf": 0.776,
+    "quality_score": 0.5,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.1616
+  },
+  {
+    "ticker": "ASHAPURMIN",
+    "composite_score": 0.6644,
+    "quality_tier": "B",
+    "rank": 128,
+    "conf": 0.911,
+    "quality_score": 0.6,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0258
+  },
+  {
+    "ticker": "ZEEL",
+    "composite_score": 0.6627,
+    "quality_tier": "B",
+    "rank": 129,
+    "conf": 0.813,
+    "quality_score": 0.75,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0132
+  },
+  {
+    "ticker": "VOLTAS",
+    "composite_score": 0.6598,
+    "quality_tier": "B",
+    "rank": 130,
+    "conf": 0.669,
+    "quality_score": 0.65,
+    "peer_verdict": "absent",
+    "pos_52w": 0.1771
+  },
+  {
+    "ticker": "BANKBARODA",
+    "composite_score": 0.6595,
+    "quality_tier": "B",
+    "rank": 131,
+    "conf": 0.762,
+    "quality_score": 0.5,
+    "peer_verdict": "insufficient_data",
+    "pos_52w": 0.1916
+  },
+  {
+    "ticker": "SWIGGY",
+    "composite_score": 0.6594,
+    "quality_tier": "B",
+    "rank": 132,
+    "conf": 0.961,
+    "quality_score": 0.5,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0097
+  },
+  {
+    "ticker": "THOMASCOOK",
+    "composite_score": 0.6591,
+    "quality_tier": "B",
+    "rank": 133,
+    "conf": 0.929,
+    "quality_score": 0.55,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0282
+  },
+  {
+    "ticker": "TMPV",
+    "composite_score": 0.6588,
+    "quality_tier": "B",
+    "rank": 134,
+    "conf": 0.76,
+    "quality_score": 0.5,
+    "peer_verdict": "absent",
+    "pos_52w": 0.1101
+  },
+  {
+    "ticker": "JSWCEMENT",
+    "composite_score": 0.6572,
+    "quality_tier": "B",
+    "rank": 135,
+    "conf": 0.632,
+    "quality_score": 0.7,
+    "peer_verdict": "absent",
+    "pos_52w": 0.4169
+  },
+  {
+    "ticker": "IRCON",
+    "composite_score": 0.6547,
+    "quality_tier": "B",
+    "rank": 136,
+    "conf": 0.887,
+    "quality_score": 0.6,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.045
+  },
+  {
+    "ticker": "UBL",
+    "composite_score": 0.6544,
+    "quality_tier": "B",
+    "rank": 137,
+    "conf": 0.855,
+    "quality_score": 0.65,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0875
+  },
+  {
+    "ticker": "GMRP&UI",
+    "composite_score": 0.6511,
+    "quality_tier": "B",
+    "rank": 138,
+    "conf": 0.847,
+    "quality_score": 0.25,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": 0.1004
+  },
+  {
+    "ticker": "RVNL",
+    "composite_score": 0.6496,
+    "quality_tier": "B",
+    "rank": 139,
+    "conf": 0.874,
+    "quality_score": 0.6,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0286
+  },
+  {
+    "ticker": "BAGFILMS",
+    "composite_score": 0.6454,
+    "quality_tier": "B",
+    "rank": 140,
+    "conf": 0.801,
+    "quality_score": 0.6,
+    "peer_verdict": "mid_quartile",
+    "pos_52w": null
+  },
+  {
+    "ticker": "KPIGREEN",
+    "composite_score": 0.6439,
+    "quality_tier": "B",
+    "rank": 141,
+    "conf": 0.86,
+    "quality_score": 0.6,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0529
+  },
+  {
+    "ticker": "CASTROLIND",
+    "composite_score": 0.641,
+    "quality_tier": "B",
+    "rank": 142,
+    "conf": 0.624,
+    "quality_score": 0.65,
+    "peer_verdict": "absent",
+    "pos_52w": 0.718
+  },
+  {
+    "ticker": "JIOFIN",
+    "composite_score": 0.6378,
+    "quality_tier": "B",
+    "rank": 143,
+    "conf": 0.845,
+    "quality_score": 0.6,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.1029
+  },
+  {
+    "ticker": "BLUESTARCO",
+    "composite_score": 0.6377,
+    "quality_tier": "B",
+    "rank": 144,
+    "conf": 0.739,
+    "quality_score": 0.45,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2347
+  },
+  {
+    "ticker": "NLCINDIA",
+    "composite_score": 0.6355,
+    "quality_tier": "B",
+    "rank": 145,
+    "conf": 0.639,
+    "quality_score": 0.6,
+    "peer_verdict": "absent",
+    "pos_52w": 0.0484
+  },
+  {
+    "ticker": "INDIANB",
+    "composite_score": 0.6349,
+    "quality_tier": "B",
+    "rank": 146,
+    "conf": 0.701,
+    "quality_score": 0.5,
+    "peer_verdict": "absent",
+    "pos_52w": 0.3614
+  },
+  {
+    "ticker": "EQUITASBNK",
+    "composite_score": 0.6348,
+    "quality_tier": "B",
+    "rank": 147,
+    "conf": 0.7,
+    "quality_score": 0.5,
+    "peer_verdict": "absent",
+    "pos_52w": 0.1457
+  },
+  {
+    "ticker": "RELIGARE",
+    "composite_score": 0.6274,
+    "quality_tier": "B",
+    "rank": 148,
+    "conf": 0.682,
+    "quality_score": 0.5,
+    "peer_verdict": "absent",
+    "pos_52w": 0.2808
+  },
+  {
+    "ticker": "RCF",
+    "composite_score": 0.6261,
+    "quality_tier": "B",
+    "rank": 149,
+    "conf": 0.878,
+    "quality_score": 0.5,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0665
+  },
+  {
+    "ticker": "PNCINFRA",
+    "composite_score": 0.6191,
+    "quality_tier": "B",
+    "rank": 150,
+    "conf": 0.798,
+    "quality_score": 0.6,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0504
+  },
+  {
+    "ticker": "HATHWAY",
+    "composite_score": 0.6173,
+    "quality_tier": "B",
+    "rank": 151,
+    "conf": 0.887,
+    "quality_score": 0.75,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": null
+  },
+  {
+    "ticker": "VMM",
+    "composite_score": 0.617,
+    "quality_tier": "B",
+    "rank": 152,
+    "conf": 0.793,
+    "quality_score": 0.6,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.1035
+  },
+  {
+    "ticker": "INDUSINDBK",
+    "composite_score": 0.6033,
+    "quality_tier": "B",
+    "rank": 153,
+    "conf": 0.622,
+    "quality_score": 0.5,
+    "peer_verdict": "absent",
+    "pos_52w": 0.3246
+  },
+  {
+    "ticker": "JWL",
+    "composite_score": 0.5898,
+    "quality_tier": "B",
+    "rank": 154,
+    "conf": 0.65,
+    "quality_score": 0.4,
+    "peer_verdict": "absent",
+    "pos_52w": 0.1221
+  },
+  {
+    "ticker": "SWSOLAR",
+    "composite_score": 0.5757,
+    "quality_tier": "B",
+    "rank": 155,
+    "conf": 0.877,
+    "quality_score": 0.3,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": 0.0496
+  },
+  {
+    "ticker": "KNRCON",
+    "composite_score": 0.5717,
+    "quality_tier": "B",
+    "rank": 156,
+    "conf": 0.542,
+    "quality_score": 0.5,
+    "peer_verdict": "absent",
+    "pos_52w": 0.0594
+  },
+  {
+    "ticker": "RADAAN",
+    "composite_score": 0.5604,
+    "quality_tier": "B",
+    "rank": 157,
+    "conf": 0.701,
+    "quality_score": 0.5,
+    "peer_verdict": "absent",
+    "pos_52w": null
+  },
+  {
+    "ticker": "GTPL",
+    "composite_score": 0.5086,
+    "quality_tier": "C",
+    "rank": 158,
+    "conf": 0.834,
+    "quality_score": 0.4,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": null
+  },
+  {
+    "ticker": "NDTV",
+    "composite_score": 0.4934,
+    "quality_tier": "C",
+    "rank": 159,
+    "conf": 0.546,
+    "quality_score": 0.8,
+    "peer_verdict": "bottom_quartile",
+    "pos_52w": null
+  }
+]
