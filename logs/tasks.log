@@ -550,3 +550,19 @@ Progress: Price agent expanded: 753 PriceSnapshot nodes (501 Nifty500 + 251 Micr
 Next: Persistent session needs git rebase + push (4 local commits). Bhavcopy rerun after 16:30 IST.
 Blockers: Persistent session git proxy 403 — repo not in authorized sources for that session container
 ============================================================
+
+[CHECKPOINT] 2026-11-04 06:41
+Task: None
+Status: completed
+Progress: live NSE derivatives indices saved (12:10 IST). MCP disconnected before gainers/losers.
+Next: next watchdog wake
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-04 06:41
+Task: watchdog
+Status: completed
+Progress: market-hours watchdog 12:10 IST; live NSE indices captured (Nifty50 -0.14%, NiftyNext50 +0.90%, NiftyBank -0.05%); MCP disconnected before gainers/losers
+Next: next watchdog wake
+Blockers: none
+============================================================
