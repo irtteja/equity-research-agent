@@ -221,6 +221,50 @@ def run():
         print(f"  ERROR: {e}")
         results["ingestion"] = {"error": str(e)}
 
+    # 3c. Structured quarterly results — for companies scheduled today
+    print("\n[3c] Fetching structured quarterly results (result-day companies)...")
+    try:
+        cal_events = results.get("event_calendar", {})
+        # Pick symbols scheduled to announce results today
+        cal_path = os.path.join(REPO_DIR, "memory_store", "event_calendar", f"{date.today().isoformat()}.json")
+        result_symbols = []
+        if os.path.exists(cal_path):
+            with open(cal_path) as f:
+                cal_data = json.load(f)
+            for ev in cal_data:
+                purpose = (ev.get("purpose", "") or ev.get("bm_desc", "") or "").lower()
+                if any(kw in purpose for kw in ("financial result", "quarterly result", "half year", "annual result")):
+                    sym = ev.get("symbol", ev.get("nse_symbol", ""))
+                    if sym:
+                        result_symbols.append(sym.upper())
+        result_symbols = list(dict.fromkeys(result_symbols))  # deduplicate, preserve order
+
+        if result_symbols:
+            print(f"  {len(result_symbols)} companies expected to report today: {result_symbols[:10]}{'...' if len(result_symbols) > 10 else ''}")
+            from jobs.fetch_results import fetch_symbol
+            from memory.results_store import save_results
+            fetched, failed = 0, []
+            for sym in result_symbols:
+                try:
+                    quarters = fetch_symbol(sym)
+                    if quarters:
+                        saved = save_results(sym, quarters)
+                        fetched += saved.get("saved", 0)
+                except Exception as e2:
+                    failed.append(f"{sym}: {e2}")
+            results["structured_results"] = {
+                "symbols_expected": len(result_symbols),
+                "quarters_saved": fetched,
+                "errors": failed[:5],
+            }
+            print(f"  Saved {fetched} new quarters; {len(failed)} failures")
+        else:
+            results["structured_results"] = {"status": "no result companies today"}
+            print("  No result companies today")
+    except Exception as e:
+        print(f"  ERROR: {e}")
+        results["structured_results"] = {"error": str(e)}
+
     # 4. Save bhavcopy (equity + indices)
     print("\n[4/5] Saving NSE bhavcopy (equity + indices) for today...")
     try:
@@ -255,6 +299,54 @@ def run():
     except Exception as e:
         print(f"  ERROR: {e}")
         results["graph_cleanup"] = {"error": str(e)}
+
+    # 5c. New data sources — delivery, surveillance, participant OI, FII/DII flat file
+    print("\n[5c] Ingesting new NSE data sources (market-wide)...")
+    try:
+        from jobs.ingest_new_sources import (
+            ingest_delivery_bhavcopy,
+            ingest_surveillance,
+            ingest_participant_oi,
+        )
+        prev_day = date.today() - __import__("datetime").timedelta(days=1)
+        results["delivery_bhavcopy"] = ingest_delivery_bhavcopy(prev_day)
+        results["surveillance"]      = ingest_surveillance(date.today())
+        results["participant_oi"]    = ingest_participant_oi(prev_day)
+        print(f"  delivery: {results['delivery_bhavcopy']}")
+        print(f"  surveillance: {results['surveillance']}")
+        print(f"  participant_oi: {results['participant_oi']}")
+    except Exception as e:
+        print(f"  ERROR: {e}")
+        results["new_sources"] = {"error": str(e)}
+
+    # 5d. Persist FII/DII flows (from step 2) to flat-file time series
+    print("\n[5d] Persisting FII/DII flows to time-series store...")
+    try:
+        from memory.fii_dii_store import save_flows
+        raw_fii = results.get("fii_dii", {})
+        flows_list = raw_fii if isinstance(raw_fii, list) else raw_fii.get("data", [])
+        if flows_list:
+            normalised = []
+            for f in flows_list:
+                cat = str(f.get("category", f.get("clientType", f.get("type", "")))).upper().strip()
+                if not cat:
+                    continue
+                normalised.append({
+                    "category": cat,
+                    "buy":  f.get("buyValue", f.get("buy", 0)),
+                    "sell": f.get("sellValue", f.get("sell", 0)),
+                    "net":  f.get("netValue", f.get("net", 0)),
+                    "source": "nse",
+                })
+            fii_save = save_flows(normalised, trade_date=date.today())
+            results["fii_dii_store"] = fii_save
+            print(f"  saved: {fii_save}")
+        else:
+            results["fii_dii_store"] = {"status": "no flow data to store"}
+            print("  no FII/DII flow data available")
+    except Exception as e:
+        print(f"  ERROR: {e}")
+        results["fii_dii_store"] = {"error": str(e)}
 
     # Save output
     out_dir = os.path.join(REPO_DIR, "reports", "daily")

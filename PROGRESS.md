@@ -28,6 +28,36 @@
 
 ---
 
+## 2026-11-04 (session 18) — Phase 3: 7 new NSE data sources wired into daily monitor
+
+### Done
+- **`memory/node_types.py`** (new): 7 typed node writers — SurveillanceFlag, DeliveryMetric, ParticipantOI, InsiderTrade, PledgeData, SASTFiling, CorporateAction. Deterministic node IDs for idempotent upserts.
+- **`memory/fii_dii_store.py`** (new): FII/DII time-series flat-file store. Monthly JSONL in `memory_store/fii_dii/`. `save_flows()` / `get_flows()` / `get_index()` API.
+- **`jobs/ingest_new_sources.py`** (new): 7 ingestion functions using nselib `NSE()` context manager:
+  - Market-wide (daily): `ingest_delivery_bhavcopy()`, `ingest_surveillance()`, `ingest_participant_oi()`, `ingest_fii_dii()`
+  - Per-ticker (watchlist): `ingest_insider_trading()`, `ingest_pledge_data()`, `ingest_sast_reg29()`
+  - `run_all()` orchestrates all 7 with per-ticker falling back to watchlist
+- **`jobs/daily_monitor.py`** (modified): Added 3 new steps:
+  - Step 3c: fetch structured quarterly results (XBRL) for today's result-day companies via fetch_results.py
+  - Step 5c: run market-wide new sources (delivery, surveillance, participant OI)
+  - Step 5d: persist step-2 FII/DII flows to flat-file time series
+- **`jobs/cleanup_graph.py`** (modified): Added `_delete_old_by_property()` helper + retention rules for 6 new node types (90–365 day windows). DeliveryMetric/ParticipantOI 90d, SurveillanceFlag 180d, InsiderTrade/PledgeData/SASTFiling/CorporateAction 365d.
+- **`.gitignore`** (modified): Added `*.db-wal`, `*.db-shm`; delivery_bhavcopy/, participant_oi/, surveillance/ (high-volume, rebuilt daily). fii_dii/, insider_trading/, pledge_data/, sast_reg29/ kept (small, valuable).
+
+### Architecture notes
+- nselib NSE class is a combined mixin: `NSE().full_bhavcopy_delivery()`, `NSE().participant_oi()`, `NSE().insider_trading()` etc.
+- Delivery bhavcopy uses `full_bhavcopy_delivery()` → CSV parse → top-100 by delivery-value get graph nodes
+- Surveillance uses existing `tools.indian_markets.nse_surveillance()` wrapper for ASM/GSM/T2T
+- Per-ticker sources only run against watchlist (not all 1500 tickers) to keep daily runtime bounded
+
+### Pending / next sessions
+- Phase 2 (parallel workers) running in background agent `a535d96675578708b` — await completion
+- Phase 4 (adaptive graph): date index on graph.db, event-driven enqueue, SurveillanceFlag → ConfluenceSignal block
+- Phase 5 (NSE-style dashboard): live artifact with 6 tabs
+- Phase 1 (GitHub history cleanup): needs explicit user approval for force push (strip 286MB pack)
+
+---
+
 ## 2026-11-04 (session 17 cont.) — All-indices price fetch; daily monitor results
 
 ### Done
