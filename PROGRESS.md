@@ -1,5 +1,19 @@
 # Progress Log
 
+## 2026-11-04 (session 17 cont. #2) — backfill_graph complete; agents/workers audit
+
+### Done
+- **backfill_graph.py** rerun with 600s timeout (had timed out at 120s during NSE Daily Brief pipeline): completed successfully — 872 tickers, 3,291 quarters, 31,424 XBRL nodes written; graph state: 31,432 nodes · 52,511 edges.
+- **agents/workers/ audit**: confirmed no nselib/bselib imports — no vendor-path fix needed in that subdirectory.
+
+### Pending / next sessions (updated)
+- Run `fetch_results.py` manually — verify XBRL pipeline end-to-end
+- Phase 2 memory: Kuzu graph + LanceDB vector index
+- Weekly research job (`weekly_research.py`) — still disabled
+- 4 stalled agents (context_agent, alert_agent, document_agent, announcement_agent) have not heartbeated in >26h — investigate scheduled triggers
+
+---
+
 ## 2026-11-04 (session 17 cont.) — All-indices price fetch; daily monitor results
 
 ### Done
