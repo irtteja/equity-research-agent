@@ -462,3 +462,11 @@ Progress: market-hours watchdog: ensure_graph rebuilt (867 companies, 29192 metr
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-04 04:41
+Task: watchdog
+Status: completed
+Progress: heartbeat — market hours (10:11 IST), graph.db ready (867 co, 29192 metrics), snapshot already saved at 10:00 IST
+Next: next watchdog wake
+Blockers: none
+============================================================
