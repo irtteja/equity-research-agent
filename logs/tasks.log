@@ -934,3 +934,11 @@ Progress: 02:10 IST Nov-5 — after hours heartbeat; graph healthy (867 co, 2919
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-04 21:02
+Task: None
+Status: completed
+Progress: Confluences: 3 (buy=3, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 77,093 unprocessed — ContextAgent lagging
+============================================================
