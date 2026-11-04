@@ -61,6 +61,19 @@ class ContextAgent:
     def __init__(self):
         self.gs = _gs()
 
+    def process_single(self, node_id: str) -> dict:
+        """Process one MetricValue node by id. Used by parallel workers."""
+        node = self.gs.get_node(node_id)
+        if not node or node.get("enriched"):
+            return {"processed": 0, "edges_created": 0}
+        try:
+            edges = self._enrich_node(node)
+            self.gs.mark_enriched(node_id)
+            return {"processed": 1, "edges_created": edges}
+        except Exception as exc:
+            _log(f"ContextAgent.process_single {node_id}: {exc}")
+            return {"processed": 0, "edges_created": 0, "error": str(exc)}
+
     def process_pending(self, limit: int = 20) -> dict:
         """
         Process unenriched MetricValue nodes.
