@@ -67,19 +67,36 @@ class PriceAgent:
         data = json.loads(prog.read_text())
         return {s.upper() for s, v in data.items() if isinstance(v, dict) and v.get("status") == "done"}
 
+    # Broad indices first so early calls catch the most new symbols
+    _PRIORITY = {
+        "NIFTY TOTAL MARKET": 0, "NIFTY 500": 1,
+        "NIFTY MICROCAP 250": 2, "NIFTY SMALLCAP 250": 3,
+        "NIFTY 200": 4, "NIFTY 100": 5, "NIFTY 50": 6,
+    }
+
     def _load_all_indices(self) -> list[str]:
-        """Return all tracked index names from symbol_to_indices.json."""
+        """Return all NSE mainboard equity index names (live from API, excluding SME/fixed-income)."""
+        try:
+            resp = self.nse.list_indices()
+            data = resp.get("data", resp) if isinstance(resp, dict) else resp
+            names = [
+                d["index"] for d in data
+                if d.get("key") != "FIXED INCOME INDICES"
+                and "SME" not in d.get("index", "").upper()
+                and "EMERGE" not in d.get("index", "").upper()
+            ]
+            if names:
+                return sorted(names, key=lambda x: (self._PRIORITY.get(x, 99), x))
+        except Exception as e:
+            print(f"[PriceAgent] list_indices failed ({e}), falling back to cached list")
+        # Fallback: cached index names from symbol_to_indices.json
         path = REPO / "data" / "symbol_to_indices.json"
-        if not path.exists():
-            return ["NIFTY 500", "NIFTY MICROCAP 250", "NIFTY SMALLCAP 250"]
-        data = json.loads(path.read_text())
-        indices: set[str] = set()
-        for idx_list in data.values():
-            indices.update(idx_list)
-        # Sort so bigger/broader indices come first (more new symbols per call)
-        priority = {"NIFTY 500": 0, "NIFTY MICROCAP 250": 1, "NIFTY SMALLCAP 250": 2,
-                    "NIFTY TOTAL MKT": 3, "NIFTY 200": 4, "NIFTY 100": 5, "NIFTY 50": 6}
-        return sorted(indices, key=lambda x: (priority.get(x, 99), x))
+        if path.exists():
+            cached: set[str] = set()
+            for idx_list in json.loads(path.read_text()).values():
+                cached.update(idx_list)
+            return sorted(cached, key=lambda x: (self._PRIORITY.get(x, 99), x))
+        return ["NIFTY 500", "NIFTY MICROCAP 250", "NIFTY SMALLCAP 250"]
 
     def _fetch_prices(self, universe: set[str]) -> dict[str, dict]:
         """Fetch live prices — all tracked indices, deduplicate by symbol, fallback for gaps."""
