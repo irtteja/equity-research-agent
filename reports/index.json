@@ -1,0 +1,222 @@
+[
+  {
+    "rank": 1,
+    "ticker": "CLEAN",
+    "sector": "Chemicals",
+    "quality_tier": "A",
+    "composite_score": 0.8795,
+    "signal": "BUY",
+    "confidence": 0.8795,
+    "w52_position": "1.7% (near low)",
+    "report_link": "reports/tickers/CLEAN/latest.md"
+  },
+  {
+    "rank": 2,
+    "ticker": "VAIBHAVGBL",
+    "sector": "Consumer Durables",
+    "quality_tier": "A",
+    "composite_score": 0.8651,
+    "signal": "BUY",
+    "confidence": 0.8651,
+    "w52_position": "2.3% (near low)",
+    "report_link": "reports/tickers/VAIBHAVGBL/latest.md"
+  },
+  {
+    "rank": 3,
+    "ticker": "GSFC",
+    "sector": "Chemicals",
+    "quality_tier": "A",
+    "composite_score": 0.8558,
+    "signal": "BUY",
+    "confidence": 0.8558,
+    "w52_position": "5.9%",
+    "report_link": "reports/tickers/GSFC/latest.md"
+  },
+  {
+    "rank": 4,
+    "ticker": "POLICYBZR",
+    "sector": "Financial Services",
+    "quality_tier": "A",
+    "composite_score": 0.8535,
+    "signal": "BUY",
+    "confidence": 0.8535,
+    "w52_position": "1.1% (near low)",
+    "report_link": "reports/tickers/POLICYBZR/latest.md"
+  },
+  {
+    "rank": 5,
+    "ticker": "HUDCO",
+    "sector": "Financial Services",
+    "quality_tier": "A",
+    "composite_score": 0.8526,
+    "signal": "BUY",
+    "confidence": 0.8526,
+    "w52_position": "2.7% (near low)",
+    "report_link": "reports/tickers/HUDCO/latest.md"
+  },
+  {
+    "rank": 6,
+    "ticker": "SAFARI",
+    "sector": "Consumer Durables",
+    "quality_tier": "A",
+    "composite_score": 0.8483,
+    "signal": "BUY",
+    "confidence": 0.8483,
+    "w52_position": "3.2% (near low)",
+    "report_link": "reports/tickers/SAFARI/latest.md"
+  },
+  {
+    "rank": 7,
+    "ticker": "CONCOR",
+    "sector": "Services",
+    "quality_tier": "A",
+    "composite_score": 0.8482,
+    "signal": "BUY",
+    "confidence": 0.8482,
+    "w52_position": "9.8%",
+    "report_link": "reports/tickers/CONCOR/latest.md"
+  },
+  {
+    "rank": 8,
+    "ticker": "AVANTIFEED",
+    "sector": "Fast Moving Consumer Goods",
+    "quality_tier": "A",
+    "composite_score": 0.8459,
+    "signal": "BUY",
+    "confidence": 0.8459,
+    "w52_position": "2.4% (near low)",
+    "report_link": "reports/tickers/AVANTIFEED/latest.md"
+  },
+  {
+    "rank": 9,
+    "ticker": "GPIL",
+    "sector": "Capital Goods",
+    "quality_tier": "A",
+    "composite_score": 0.8447,
+    "signal": "BUY",
+    "confidence": 0.8447,
+    "w52_position": "2.7% (near low)",
+    "report_link": "reports/tickers/GPIL/latest.md"
+  },
+  {
+    "rank": 10,
+    "ticker": "RAILTEL",
+    "sector": "Telecommunication",
+    "quality_tier": "A",
+    "composite_score": 0.8382,
+    "signal": "BUY",
+    "confidence": 0.8382,
+    "w52_position": "5.6%",
+    "report_link": "reports/tickers/RAILTEL/latest.md"
+  },
+  {
+    "rank": 11,
+    "ticker": "INDIAMART",
+    "sector": "Consumer Services",
+    "quality_tier": "A",
+    "composite_score": 0.8266,
+    "signal": "BUY",
+    "confidence": 0.8266,
+    "w52_position": "7.2%",
+    "report_link": "reports/tickers/INDIAMART/latest.md"
+  },
+  {
+    "rank": 12,
+    "ticker": "GODFRYPHLP",
+    "sector": "Fast Moving Consumer Goods",
+    "quality_tier": "A",
+    "composite_score": 0.8262,
+    "signal": "BUY",
+    "confidence": 0.8262,
+    "w52_position": "5.9%",
+    "report_link": "reports/tickers/GODFRYPHLP/latest.md"
+  },
+  {
+    "rank": 13,
+    "ticker": "PFC",
+    "sector": "Financial Services",
+    "quality_tier": "A",
+    "composite_score": 0.8235,
+    "signal": "BUY",
+    "confidence": 0.8235,
+    "w52_position": "4.4% (near low)",
+    "report_link": "reports/tickers/PFC/latest.md"
+  },
+  {
+    "rank": 14,
+    "ticker": "PRAJIND",
+    "sector": "Capital Goods",
+    "quality_tier": "A",
+    "composite_score": 0.823,
+    "signal": "BUY",
+    "confidence": 0.823,
+    "w52_position": "7.8%",
+    "report_link": "reports/tickers/PRAJIND/latest.md"
+  },
+  {
+    "rank": 15,
+    "ticker": "BDL",
+    "sector": "Capital Goods",
+    "quality_tier": "A",
+    "composite_score": 0.8202,
+    "signal": "BUY",
+    "confidence": 0.8202,
+    "w52_position": "6.5%",
+    "report_link": "reports/tickers/BDL/latest.md"
+  },
+  {
+    "rank": 16,
+    "ticker": "JUBLINGREA",
+    "sector": "Chemicals",
+    "quality_tier": "A",
+    "composite_score": 0.82,
+    "signal": "BUY",
+    "confidence": 0.82,
+    "w52_position": "10.2%",
+    "report_link": "reports/tickers/JUBLINGREA/latest.md"
+  },
+  {
+    "rank": 17,
+    "ticker": "AWL",
+    "sector": "Fast Moving Consumer Goods",
+    "quality_tier": "A",
+    "composite_score": 0.8183,
+    "signal": "BUY",
+    "confidence": 0.8183,
+    "w52_position": "3.8% (near low)",
+    "report_link": "reports/tickers/AWL/latest.md"
+  },
+  {
+    "rank": 18,
+    "ticker": "HAPPSTMNDS",
+    "sector": "Information Technology",
+    "quality_tier": "A",
+    "composite_score": 0.8165,
+    "signal": "BUY",
+    "confidence": 0.8165,
+    "w52_position": "7.0%",
+    "report_link": "reports/tickers/HAPPSTMNDS/latest.md"
+  },
+  {
+    "rank": 19,
+    "ticker": "COLPAL",
+    "sector": "Fast Moving Consumer Goods",
+    "quality_tier": "A",
+    "composite_score": 0.816,
+    "signal": "BUY",
+    "confidence": 0.816,
+    "w52_position": "9.2%",
+    "report_link": "reports/tickers/COLPAL/latest.md"
+  },
+  {
+    "rank": 20,
+    "ticker": "IMFA",
+    "sector": "Metals & Mining",
+    "quality_tier": "A",
+    "composite_score": 0.8132,
+    "signal": "BUY",
+    "confidence": 0.8132,
+    "w52_position": "7.7%",
+    "report_link": "reports/tickers/IMFA/latest.md"
+  }
+]
