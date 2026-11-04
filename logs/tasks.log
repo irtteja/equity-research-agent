@@ -774,3 +774,11 @@ Progress: Fetched 462 announcements for 253 symbols; analyzed 85 material items;
 Next: None - routine fetch complete
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-04 19:45
+Task: None
+Status: completed
+Progress: Loaded 814 calendar events from 2026-11-03.json; 0 companies scheduled for results — nothing to fetch
+Next: None
+Blockers: none
+============================================================
