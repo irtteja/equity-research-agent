@@ -4,7 +4,7 @@ PriceSnapshot nodes to the knowledge graph.
 
 Reads:
   memory_store/kb_build_progress.json — full symbol universe
-  NSE live data via nselib (index_constituents covers Nifty 500 in one call)
+  NSE live data via nselib (bulk index_constituents calls: Nifty 500 + Microcap 250 + Smallcap 250)
 
 Writes:
   PriceSnapshot nodes  — close, 52w high/low, price_zone, value_signal flag
@@ -67,33 +67,45 @@ class PriceAgent:
         data = json.loads(prog.read_text())
         return {s.upper() for s, v in data.items() if isinstance(v, dict) and v.get("status") == "done"}
 
+    # Broad indices that together cover the full 888-stock universe.
+    # Each is one API call returning live prices for all its constituents.
+    _BULK_INDICES = [
+        "NIFTY 500",          # top 500 by mkt cap (~495 EQ stocks)
+        "NIFTY MICROCAP 250", # ranks 501-750 (~250 more)
+        "NIFTY SMALLCAP 250", # overlap with above but catches sector stragglers
+    ]
+
     def _fetch_prices(self, universe: set[str]) -> dict[str, dict]:
-        """Fetch prices — bulk via Nifty 500 first, then per-symbol fallback."""
+        """Fetch live prices — bulk index calls first, per-symbol fallback for remainder."""
         prices: dict[str, dict] = {}
 
-        # Bulk pull from Nifty 500 (covers most tracked stocks in one call)
-        try:
-            members = self.nse.index_constituents("NIFTY 500")
-            for m in members:
-                sym = (m.get("symbol") or "").upper()
-                if not sym or m.get("series") != "EQ":
-                    continue
-                try:
-                    prices[sym] = {
-                        "close":      float(m.get("lastPrice") or 0),
-                        "prev_close": float(m.get("previousClose") or 0),
-                        "pct_change": float(m.get("pChange") or 0),
-                        "year_high":  float(m.get("yearHigh") or 0),
-                        "year_low":   float(m.get("yearLow") or 0),
-                    }
-                except (TypeError, ValueError):
-                    continue
-            print(f"[PriceAgent] bulk fetch: {len(prices)} stocks from Nifty 500")
-        except Exception as e:
-            print(f"[PriceAgent] bulk fetch failed: {e}")
+        for index_name in self._BULK_INDICES:
+            try:
+                members = self.nse.index_constituents(index_name)
+                before = len(prices)
+                for m in members:
+                    sym = (m.get("symbol") or "").upper()
+                    if not sym or sym in prices:
+                        continue
+                    try:
+                        prices[sym] = {
+                            "close":      float(m.get("lastPrice") or 0),
+                            "prev_close": float(m.get("previousClose") or 0),
+                            "pct_change": float(m.get("pChange") or 0),
+                            "year_high":  float(m.get("yearHigh") or 0),
+                            "year_low":   float(m.get("yearLow") or 0),
+                        }
+                    except (TypeError, ValueError):
+                        continue
+                added = len(prices) - before
+                print(f"[PriceAgent] bulk {index_name}: +{added} stocks ({len(prices)} total)")
+            except Exception as e:
+                print(f"[PriceAgent] bulk {index_name} failed: {e}")
 
-        # Per-symbol fallback for stocks not in Nifty 500
+        # Per-symbol fallback for any stocks still missing (sector-only names)
         missing = universe - set(prices.keys())
+        if missing:
+            print(f"[PriceAgent] per-symbol fallback for {len(missing)} remaining stocks")
         fallback_ok = 0
         for sym in sorted(missing):
             try:
