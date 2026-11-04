@@ -414,3 +414,11 @@ Progress: Updated all 11 non-persistent triggers with add_repo instruction; test
 Next: Confirm test fire PUSH_OK; fix 4 persistent-session triggers if needed
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-04 01:26
+Task: session-15-trigger-cleanup
+Status: completed
+Progress: Confirmed add_repo unavailable in triggered sessions; removed useless add_repo instructions from all 11 non-persistent triggers; documented user action required in PROGRESS.md
+Next: User must add irtteja/equity-research-agent to a non-Default environment Repositories, then update trigger environment_id
+Blockers: Default environment does not support Repositories setting; add_repo not available in triggered sessions
+============================================================
