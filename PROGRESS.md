@@ -1,22 +1,38 @@
 # Progress Log
 
-## 2026-11-04 (session 14) — fix CCR git proxy 403 on all triggered sessions
+## 2026-11-04 (session 15) — CCR proxy 403 root cause confirmed; triggers cleaned up; user action required
 
 ### Done
-- **Root cause identified**: CCR git proxy checks *session sources*, not credentials. `gh auth setup-git` and `git remote set-url` with GITHUB_TOKEN both fail because they don't change session sources — the proxy blocks pushes regardless of what credential helper is set.
-- **Correct fix**: `add_repo` tool use inside the triggered session adds the repo to the session's authorized sources. The triggered session has `mcp__claude-code-remote__add_repo` in its tool set.
-- **All 11 non-persistent triggers updated** with `add_repo` instruction prepended: equity-watchdog, equity-daily-monitor, NSE Daily Announcement Fetch, Results Fetch Nightly XBRL, Results Fetch 8 AM Retry, NSE Daily Brief, Swarm Orchestrator, Monthly memory compaction, Annual Reports Fetch, Weekly Sector Map + Graph Rebuild, Weekly KG Enrichment.
-- **Test fire in progress** (cse_01G28r1bad2AtqHs9ZTdhQj1) — verify add_repo → git push works
-- **4 persistent-session triggers** (ContextAgent Nightly, Weekly Self-Improve, Monthly Store Cleanup, Universe Updater) fire into session_01G28r1gAsugprj2KxqH9L5D — cannot be updated from outside. Those sessions may also need add_repo — pending.
+- **Root cause confirmed (definitive)**: `mcp__claude-code-remote__add_repo` is NOT available in fresh-session triggered sessions. When called directly it returns `Error: No such tool available`. ToolSearch returns `No matching deferred tools found`. The `turn_handoff.tools` metadata listing it was misleading.
+- **Why**: Triggers run in the **Default** environment (`env_01Hp1atedcZtiEHXrNH19crn`). The Default environment does NOT support adding repositories at the environment settings level. Fresh-session triggered sessions therefore have no way to authorize git push at runtime.
+- **What works for git push**: Adding the repo to a **non-Default environment's Repositories** (under the cloud environment menu → Edit). Once added, all sessions fired from that environment (including triggered sessions) have the repo in their authorized sources and can push.
+- **All 11 non-persistent triggers cleaned up**: removed the now-confirmed-useless `add_repo` instructions from all trigger prompts. Push will silently fail (403) until the environment is fixed.
+- **Previous session's finding was wrong**: Session 14 believed `add_repo` was the fix and would work in triggered sessions — it doesn't.
+- Commits: session 14 fix commit `283e547` (the add_repo approach), this session cleans up prompts only
 
-### Architecture notes
-- CCR proxy decision: purely based on `session_request.config.sources` — no workaround via credential helpers
-- `add_repo` must be called as a *tool use* in the first turn, before any bash command that pushes
-- Self-model correction: previous note "git remote set-url with embedded token is mandatory" was WRONG — that approach never worked in CCR triggered sessions
+### Architecture notes — CCR git push in triggered sessions
+- `mcp__claude-code-remote__add_repo` is NOT available in Default-environment triggered sessions (18-tool subset, add_repo not among them)
+- CCR git proxy authorizes based on `session_request.config.sources` — empty for Default-env triggers
+- `turn_handoff.tools` listing a tool does NOT mean it's callable — it may be metadata only
+- **The fix is at the environment level, not the session level**
+
+### USER ACTION REQUIRED — to fix git push on all triggered sessions
+The 11 non-persistent triggers all use the Default environment, which cannot have repos added.
+You need to either:
+
+**Option A (recommended):** Add the repo to an existing non-Default environment
+1. In Claude Code (web or app title bar), open the cloud environment menu
+2. Choose one of your non-Default environments: "Ravi's cloud" or "MiroFish" or "Persistent agent"
+3. Click Edit → find the Repositories section → add `irtteja/equity-research-agent`
+4. Tell me which environment_id you used (e.g. `env_01DtPBUypKDTKMTe3nsege7U` for "Ravi's cloud")
+5. I'll update all 11 trigger `environment_id` fields to use that environment
+
+**Option B:** Create a new custom environment with the repo preconfigured, then update triggers.
+
+Until this is done, all 11 non-persistent triggers will fail their git push (403 from proxy). The runs themselves succeed (all jobs run fine), only the final commit/push step fails.
 
 ### Pending / next sessions
-- Confirm test fire cse_01G28r1bad2AtqHs9ZTdhQj1 reports PUSH_OK
-- Fix persistent session triggers if they also fail on git push
+- **FIX GIT PUSH**: User needs to add repo to non-Default environment (see above)
 - Run fetch_results.py manually against a day with known results — verify XBRL pipeline end-to-end
 - BSE announcements integration — currently NSE-only
 - tools/recall_tool.py — expose recall as MCP tool for in-session queries

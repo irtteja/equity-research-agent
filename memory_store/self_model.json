@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 42,
+  "version": 43,
   "patterns": {
     "confirmed": [
       {
@@ -727,6 +727,14 @@
       {
         "gap": "Previous self-model note about git remote set-url with embedded token was WRONG — that approach never worked in CCR triggered sessions; correct fix is add_repo as tool use",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "Session 14 was WRONG: add_repo is NOT available in Default-env triggered sessions — returns No such tool available. turn_handoff.tools metadata was misleading.",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "Default environment (env_01Hp1atedcZtiEHXrNH19crn) does not support Repositories in settings. Git push from triggered sessions requires a non-Default env with the repo added.",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -770,10 +778,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-30",
-      "note": "added concall transcript discovery tool (get_concall_transcripts); prune_memory.py for log/db compaction"
-    },
     {
       "date": "2026-10-30",
       "note": "wired concall auto-ingestion: fetch_announcements --save now downloads+indexes transcripts automatically"
@@ -889,6 +893,10 @@
     {
       "date": "2026-11-04",
       "note": "Session 14: discovered CCR proxy checks session sources only; updated all 11 non-persistent triggers with add_repo instruction; test fire in progress to verify"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "Session 15: confirmed add_repo unavailable in Default-env triggered sessions; cleaned all 11 trigger prompts; user must add repo to non-Default env to fix git push"
     }
   ]
 }
