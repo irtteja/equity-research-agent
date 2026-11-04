@@ -430,3 +430,35 @@ Progress: Created session_01G28r1baFCcEtSCP6jvUn1Y in Persistent-agent env with 
 Next: Monitor first trigger fires to confirm push works in production
 Blockers: 5 old disabled triggers cannot be deleted (auto-mode classifier blocks delete_trigger) — delete manually via UI
 ============================================================
+
+[CHECKPOINT] 2026-11-04 04:33
+Task: None
+Status: completed
+Progress: xbrl=3291 quarters, docs=0 facts; graph=30059n/29192e
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-04 04:33
+Task: None
+Status: completed
+Progress: pairs=0 trends=0 strong=0 | top: none
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-04 04:34
+Task: None
+Status: completed
+Progress: macro snapshot saved
+Next: run daily_monitor after market close (after 4pm IST)
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-04 04:34
+Task: watchdog
+Status: completed
+Progress: market-hours watchdog: ensure_graph rebuilt (867 companies, 29192 metrics), macro snapshot saved (2026-11-04)
+Next: next watchdog wake
+Blockers: none
+============================================================
