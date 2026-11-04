@@ -362,6 +362,19 @@ def run():
         results["analyst_enqueued"] = {"error": str(e)}
         log_checkpoint(task_id, status="in_progress", progress=f"step 5e skipped: {e}")
 
+    # Step 5f: Corp events fetch (announcements + board meetings → graph)
+    print("\n[5f] Fetching corporate events...")
+    try:
+        from jobs.fetch_corp_events import run_all as fetch_events
+        ev = fetch_events(save_to_graph=True)
+        results["corp_events"] = ev
+        print(f"  announcements={ev.get('announcements',0)}  board_meetings={ev.get('board_meetings',0)}")
+        log_checkpoint(task_id, status="in_progress", progress=f"step 5f: {ev}")
+    except Exception as e:
+        print(f"  ERROR: {e}")
+        results["corp_events"] = {"error": str(e)}
+        log_checkpoint(task_id, status="in_progress", progress=f"step 5f skipped: {e}")
+
     # Save output
     out_dir = os.path.join(REPO_DIR, "reports", "daily")
     os.makedirs(out_dir, exist_ok=True)
