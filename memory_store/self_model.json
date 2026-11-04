@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 61,
+  "version": 62,
   "patterns": {
     "confirmed": [
       {
@@ -482,6 +482,18 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "context_agent scales to 28k+ nodes in one pass",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "trend_agent reliably finds strong momentum signals",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -733,6 +745,12 @@
       },
       {
         "pattern": "concall PDF re-download still shows duplicate after dedup fix — NSE PDFs may be returning same hash as prior download (content hasn't changed, just the dedup logic was wrong)",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "YATHARTH finance_costs +30% — investigate if structural or seasonal",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -1037,6 +1055,14 @@
       {
         "signal": "concall_analyzer now reads doc_store transcripts — richer analysis possible",
         "added": "2026-11-04"
+      },
+      {
+        "signal": "Pearson correlation from local bhavcopy CSVs — fast and reliable",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "bhavcopy-based price data as correlation substrate",
+        "added": "2026-11-04"
       }
     ],
     "gaps": [
@@ -1335,6 +1361,14 @@
       {
         "gap": "Only 32 of 3268 doc_store entries have text — older ingest saved metadata only; backfill requires re-download",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "TATAMOTORS bhavcopy stale (last seen 2025-10-23) — check if delisted or symbol change",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "Finance sector intra-correlations all below 0.40 — idiosyncratic risk dominant",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -1364,6 +1398,21 @@
       "ticker": "AMBER",
       "reason": "subsidiary acquisition via rights issue",
       "added": "2026-11-04"
+    },
+    {
+      "ticker": "YATHARTH",
+      "reason": "finance_costs +30% momentum=1.0 — 3 consecutive quarters",
+      "added": "2026-11-04"
+    },
+    {
+      "ticker": "WEWORK",
+      "reason": "depreciation +11.1% and total_expenses +8.8% — cost structure expanding",
+      "added": "2026-11-04"
+    },
+    {
+      "ticker": "ZAGGLE",
+      "reason": "finance_costs +3.8% momentum=1.0 — growing debt service",
+      "added": "2026-11-04"
     }
   ],
   "sector_notes": {
@@ -1383,12 +1432,20 @@
       {
         "note": "14 improving signals from first live brief — strong sector; HDFCBANK, ICICIBANK leading",
         "date": "2026-11-03"
+      },
+      {
+        "note": "fragmented — zero intra-sector pairs above 0.40 — idiosyncratic alpha possible",
+        "date": "2026-11-04"
       }
     ],
     "IT": [
       {
         "note": "mixed signals; revenue trend positive but cost pressure visible",
         "date": "2026-11-03"
+      },
+      {
+        "note": "fully correlated cluster (all 10 pairs above 0.60) — acts as single macro bet",
+        "date": "2026-11-04"
       }
     ],
     "metals": [
@@ -1430,13 +1487,15 @@
         "note": "IGL at 8th percentile 52W position, RSI 31 (oversold); RELIANCE forming BUY at 34th percentile",
         "date": "2026-11-04"
       }
+    ],
+    "Energy": [
+      {
+        "note": "RELIANCE anomaly +11.6% on 88.1M shares 2026-11-02 needs fundamental catalyst check",
+        "date": "2026-11-04"
+      }
     ]
   },
   "session_log": [
-    {
-      "date": "2026-11-03",
-      "note": "Session 5: AlertAgent built, full pipeline running, daily trigger created — system is now autonomous"
-    },
     {
       "date": "2026-11-03",
       "note": "Sessions 6-7: interactive SPA dashboard published, 9 stale tasks deleted, 3728 files untracked from git, 860MB freed from document JSONs, graph at 45982 nodes/89486 edges"
@@ -1552,6 +1611,10 @@
     {
       "date": "2026-11-04",
       "note": "built composite ranker, alert engine, episode processor, bulk report index, fixed doc_store dedup, wired concall_analyzer to doc_store; 6 new tools shipped in one session"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "nightly enrichment cycle complete: 28,672 context edges + 7,340 trend nodes built; real prices and correlations wired into Living Graph; system architecture artifact published"
     }
   ]
 }

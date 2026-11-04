@@ -942,3 +942,11 @@ Progress: Confluences: 3 (buy=3, sell=0) | Gaps: 1
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 77,093 unprocessed — ContextAgent lagging
 ============================================================
+
+[CHECKPOINT] 2026-11-04 21:07
+Task: nightly-2026-11-04
+Status: completed
+Progress: git pull (888 tickers, new agents), context_agent 28672 nodes/20449 edges, trend_agent 7340 trends/4351 strong, committed 6bf8213+750deb6, pushed
+Next: wire Living Graph to daily price refresh; more context_agent runs for deeper enrichment
+Blockers: none
+============================================================
