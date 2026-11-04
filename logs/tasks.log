@@ -478,3 +478,11 @@ Progress: Copied nselib to vendor/nselib/, updated 15 job/tool files to use vend
 Next: Fire daily_monitor or fetch_announcements trigger to verify nselib imports work in persistent-agent env
 Blockers: None
 ============================================================
+
+[CHECKPOINT] 2026-11-04 04:58
+Task: daily-monitor-2026-11-04
+Status: completed_with_errors
+Progress: Macro, FII/DII, 0 facts ingested, bhavcopy 0 rows, block/bulk deals
+Next: Review material announcements, update PROGRESS.md
+Blockers: indices_bhavcopy
+============================================================
