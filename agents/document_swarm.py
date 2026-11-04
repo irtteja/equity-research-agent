@@ -20,7 +20,9 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+_REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, _REPO)
+sys.path.insert(0, os.path.join(_REPO, "vendor"))  # vendored nselib fallback
 
 from memory.doc_store import save_document, summary as store_summary
 

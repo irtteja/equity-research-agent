@@ -24,6 +24,7 @@ from pathlib import Path
 
 REPO = Path(__file__).parent.parent
 sys.path.insert(0, str(REPO))
+sys.path.insert(0, str(REPO / "vendor"))  # vendored nselib fallback
 
 NEAR_THRESHOLD = 0.10   # within 10% of 52w high or low counts as "near"
 MOMENTUM_MIN   = 0.6    # minimum momentum to flag as value signal

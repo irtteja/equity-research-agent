@@ -486,3 +486,51 @@ Progress: Macro, FII/DII, 0 facts ingested, bhavcopy 0 rows, block/bulk deals
 Next: Review material announcements, update PROGRESS.md
 Blockers: indices_bhavcopy
 ============================================================
+
+[CHECKPOINT] 2026-11-04 04:58
+Task: None
+Status: failed
+Progress: PriceAgent failed
+Next: 
+Blockers: No module named 'nselib'
+============================================================
+
+[CHECKPOINT] 2026-11-04 04:59
+Task: None
+Status: failed
+Progress: PriceAgent failed
+Next: 
+Blockers: No module named 'nselib'
+============================================================
+
+[CHECKPOINT] 2026-11-04 05:02
+Task: None
+Status: completed
+Progress: prices=495 value_signals=0
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-04 05:02
+Task: None
+Status: skipped
+Progress: holiday — bhavcopy not available
+Next: run after next trading day
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-04 05:02
+Task: None
+Status: failed
+Progress: NSE file not available — market holiday
+Next: run after next trading day
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-04 05:02
+Task: equity-daily-monitor
+Status: completed
+Progress: daily_monitor OK (591 events, macro, FII/DII, 12 anncts); prices 495 nodes; bhavcopy skipped (holiday); vendor fix for agents/price_agent.py + agents/document_swarm.py
+Next: next trading day bhavcopy; audit agents/workers/ vendor gap
+Blockers: none
+============================================================

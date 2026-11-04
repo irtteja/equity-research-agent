@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T05:02:04.363721",
+  "stats": {
+    "prices_written": 495,
+    "value_signals": 0,
+    "date": "2026-11-04"
+  },
+  "value_signals": [],
+  "movers_up": [
+    {
+      "ticker": "FRACTAL",
+      "pct": 11.08
+    },
+    {
+      "ticker": "EMCURE",
+      "pct": 8.28
+    },
+    {
+      "ticker": "HEGAM",
+      "pct": 7.97
+    },
+    {
+      "ticker": "GMDCLTD",
+      "pct": 6.44
+    },
+    {
+      "ticker": "MEDANTA",
+      "pct": 5.88
+    },
+    {
+      "ticker": "BHEL",
+      "pct": 5.48
+    },
+    {
+      "ticker": "LINDEINDIA",
+      "pct": 5.33
+    },
+    {
+      "ticker": "NLCINDIA",
+      "pct": 5.15
+    },
+    {
+      "ticker": "ARE&M",
+      "pct": 5.12
+    },
+    {
+      "ticker": "MFSL",
+      "pct": 5.05
+    },
+    {
+      "ticker": "KFINTECH",
+      "pct": 4.94
+    },
+    {
+      "ticker": "FACT",
+      "pct": 4.89
+    },
+    {
+      "ticker": "UNOMINDA",
+      "pct": 4.86
+    },
+    {
+      "ticker": "DOMS",
+      "pct": 4.78
+    },
+    {
+      "ticker": "WELSPUNLIV",
+      "pct": 4.16
+    },
+    {
+      "ticker": "TEGA",
+      "pct": 4.1
+    },
+    {
+      "ticker": "ACE",
+      "pct": 3.9
+    },
+    {
+      "ticker": "POWERINDIA",
+      "pct": 3.87
+    },
+    {
+      "ticker": "JYOTICNC",
+      "pct": 3.84
+    },
+    {
+      "ticker": "SAGILITY",
+      "pct": 3.83
+    }
+  ],
+  "movers_down": [
+    {
+      "ticker": "MCX",
+      "pct": -5.5
+    },
+    {
+      "ticker": "AIAENG",
+      "pct": -3.75
+    },
+    {
+      "ticker": "ITI",
+      "pct": -3.65
+    },
+    {
+      "ticker": "KEC",
+      "pct": -3.46
+    },
+    {
+      "ticker": "GRAPHITE",
+      "pct": -3.41
+    }
+  ]
+}
