@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 47,
+  "version": 49,
   "patterns": {
     "confirmed": [
       {
@@ -314,6 +314,24 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "nselib NSE() context manager works for all data sources in single session",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "parallel ThreadPoolExecutor workers sharing SQLite (WAL mode) is reliable for enrichment workloads",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "atomic claim_batch() via UPDATE WHERE id IN (...) AND status=pending prevents double-processing",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -457,6 +475,18 @@
       },
       {
         "pattern": "141 stocks still need per-symbol fallback — may be thinly-traded or index-excluded",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "full_bhavcopy_delivery CSV parsing may need field name normalisation on first live run",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "Phase 3 ingest_new_sources.py — nselib API for delivery_bhavcopy/surveillance_indicator not tested against live NSE",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -636,6 +666,22 @@
       },
       {
         "signal": "timeout 600 python3 -I jobs/backfill_graph.py — reliable full rebuild of XBRL metric nodes",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "graph node idempotency via deterministic IDs (md5 hash of key fields)",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "work_queue.py deduplication via UNIQUE(queue, item_key) — prevents re-queue across runs",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "FastAPI + uvicorn serving graph.db data at localhost:7860 — all 8 endpoints returning real data",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "ConfluenceSignal properties: type, score, reason, near_low_pct, streak — richer than expected",
         "added": "2026-11-04"
       }
     ],
@@ -835,6 +881,22 @@
       {
         "gap": "persistent session git proxy 403 on fresh containers — push credentials not persisted across container restarts",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "per-ticker sources (insider, pledge, SAST) need watchlist to be populated before they run",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "17,106 MetricValue nodes still unenriched — pending enrichment loop needs to run",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "FII/DII tab on dashboard has no data yet — Phase 3 ingest has not run against live NSE",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "Dashboard not permanently hosted — needs a trigger or persistent process",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -878,14 +940,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-30",
-      "note": "self-iterate: fixed results date-parse bug; built outcome_log; wired triage logging; 5 gaps → 3"
-    },
-    {
-      "date": "2026-10-30",
-      "note": "self_improve scan: resolved: bse_integration, document_swarm, scheduled_tasks; 2 high-priority gaps"
-    },
     {
       "date": "2026-10-30",
       "note": "upgraded self_improve scan to data-driven with persistence tracking; resolved 3 prior gaps"
@@ -997,6 +1051,14 @@
     {
       "date": "2026-11-04",
       "note": "backfill_graph completed with 600s timeout (872 tickers, 31424 nodes); agents/workers audit clean — vendor sweep 100% complete"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "Phase 3 complete: 7 new NSE sources wired; node_types, fii_dii_store, ingest_new_sources written and committed 9eb265a"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "Session 18: built Phase 2 (8-thread parallel workers + work queue), Phase 3 (7 new NSE sources), Phase 5 (NSE-style 7-tab dashboard). Commits 48ca715 + 9eb265a. GitHub size cleanup still blocked on user authorization."
     }
   ]
 }

@@ -1,5 +1,40 @@
 # Progress Log
 
+## 2026-11-04 (session 18) — Swarm architecture + NSE dashboard
+
+### Done
+- **Phase 2 — Parallel workers** (commit 48ca715):
+  - `memory/work_queue.py`: SQLite-backed atomic work queue; `claim_batch()` prevents double-work across threads
+  - `agents/context_agent.py`: added `process_single(node_id)` for per-node dispatch
+  - `agents/trend_agent.py`: added `process_pair(ticker, metric)` for per-pair dispatch
+  - `agents/document_agent.py`: added `process_ticker(ticker)` for per-ticker dispatch
+  - `jobs/context_agent_runner.py`: 8 parallel workers via `ThreadPoolExecutor`; `--dry-run`, `--reset`, `--workers` flags
+  - `jobs/trend_agent_runner.py`: 4 parallel workers; enqueues all enriched (ticker, metric) pairs
+  - `jobs/document_agent_runner.py`: 4 parallel workers; deduplication via progress file + queue
+- **Phase 3 — 7 new NSE data sources** (commit 9eb265a):
+  - `memory/node_types.py`: typed node writers for DeliveryMetric, InsiderTrade, PledgeData, SurveillanceFlag, ParticipantOI, SASTFiling, CorporateAction
+  - `memory/fii_dii_store.py`: dedicated FII/DII flat-file time-series (monthly JSONL)
+  - `jobs/ingest_new_sources.py`: 7 ingestion functions + `run_all()`; SME filter applied
+  - `jobs/daily_monitor.py`: steps 3c (results on result day), 5c (new sources ingestion), 5d (FII/DII time series)
+  - `jobs/cleanup_graph.py`: retention rules for all 6 new node types (90–365 days)
+- **Phase 5 — NSE-style dashboard** (commit 48ca715):
+  - `jobs/dashboard_server.py`: FastAPI backend; 8 live endpoints; run with `python jobs/dashboard_server.py --port 7860`
+  - `static/dashboard/index.html`: 7-tab dashboard (Market · Signals · Trends · Announcements · Watchlist · Swarm · Graph); 60s auto-refresh; dark/light theme
+
+### Architecture changes
+- Work queue pattern replaces single-threaded `process_pending(limit=N)` calls; workers claim atomically from SQLite
+- ContextAgent enrichment: 17,106 pending nodes × 8 workers = ~8–10 min to clear (vs days single-threaded)
+- Dashboard live-serves from memory_store/ and graph.db; no data duplication
+
+### Pending / next sessions
+- **Phase 1 (GitHub history cleanup)** — NEEDS USER AUTHORIZATION: `git filter-repo` to strip 286MB history (annual report JSONs + graph.db-wal commits), then `git push --force`. User must explicitly authorize before this runs.
+- **Phase 4 (adaptive graph)**: date index on graph.db, event-driven work queue enqueuing on `add_node()`, SurveillanceFlag blocking ConfluenceSignal
+- Dashboard: add FII/DII tab data once Phase 3 ingestion has run; add price-chart sparklines per ticker
+- Run `python jobs/context_agent_runner.py` to clear 17K pending enrichment backlog
+- Run `python jobs/trend_agent_runner.py --reset` after context enrichment
+
+---
+
 ## 2026-11-04 (session 17 cont. #3) — EOD prices + bhavcopy after market close
 
 ### Done
