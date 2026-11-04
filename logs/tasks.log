@@ -574,3 +574,19 @@ Progress: Confluences: 0 (buy=0, sell=0) | Gaps: 3
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: No TrendSummary nodes — TrendAgent may not have run; Episode backlog: 31,424 unprocessed — ContextAgent lagging; No ConfluenceSignal nodes for today — first run or no signals met threshold
 ============================================================
+
+[CHECKPOINT] 2026-11-04 08:41
+Task: None
+Status: completed
+Progress: 14:10 IST snapshot: Nifty50 +0.29% 23880, NiftyNext50 +1.23% 70484, NiftyBank +0.43% 55778. Recovered from morning weakness.
+Next: next watchdog wake; market closes 15:30 IST
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-04 08:41
+Task: watchdog
+Status: completed
+Progress: market-hours watchdog 14:10 IST; Nifty50 +0.29% 23880, NiftyNext50 +1.23% 70484, NiftyBank +0.43% 55778 — broad recovery; NSE MCP drops after 1st call (consistent)
+Next: market closes 15:30 IST; next watchdog 16:40 IST (after hours → daily_monitor)
+Blockers: none
+============================================================
