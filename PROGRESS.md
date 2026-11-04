@@ -1,5 +1,37 @@
 # Progress Log
 
+## 2026-11-04 — Global Macro, News Sentiment, Conviction Tracker (session 25)
+
+### Done
+- **`tools/global_macro.py`**: yfinance-based macro overlay — USDINR, Crude, US10Y, S&P500, Nikkei,
+  HangSeng, Dow. India-specific thresholds (USD/INR>84.5 bearish, Crude>$90 bearish,
+  US10Y>4.5% bearish). Writes GlobalMacro node to graph.db. Smoke-tested.
+- **`agents/news_agent.py`**: keyword-based sentiment scoring from ManagementStatement graph nodes.
+  43 BULL / 36 BEAR keywords. Writes SentimentScore nodes per ticker. Rolling 90-day window.
+  `get_top_sentiment()` for bullish/bearish ranking. Smoke-tested.
+- **`memory/conviction_tracker.py`**: `conviction_history` SQLite table, daily conviction snapshot
+  blending bayesian (40%) + technical (25%) + sentiment (20%) + macro (15%).
+  `get_rising_conviction()`, `get_falling_conviction()`, `get_top_conviction()` APIs.
+  Ran on 159 tickers — 159 conviction rows recorded.
+- **`jobs/run_macro_news.py`**: wrapper running macro → news → conviction in sequence.
+- **`jobs/orchestrator.py`** Phase 4 extended with global_macro, news_agent, conviction_tracker
+  blocks (inserted before tool synthesis). Each records agent_perf metrics.
+- All 8 generated tools in `generated_tools/` pass AST syntax check.
+- Confirmed parallel forks (sessions 24, etc.) already committed the full agent layer
+  (ef421b1 wired everything).
+
+### Architecture changes
+- Phase 4 (Meta) now runs: coverage → meta_cognition → graph_dynamics → global_macro →
+  news_sentiment → conviction_snapshot → tool_synthesis
+- conviction_history table created with indexes on ticker + date
+- SentimentScore node type added to graph
+
+### Pending / next sessions
+- Backtesting engine: reads prediction_log, compares predicted vs actual price moves 30/60/90d
+- Dashboard live-wiring: export_dashboard_data.py reading from graph.db (fork a346cbad)
+- Concall transcript extraction: wire document_agent to NSE announcement PDFs
+- CCR trigger for run_macro_news.py (daily after-market close)
+
 ## 2026-11-04 — Agent Layer Completion + Risk/Alert/Backtest (session 24)
 
 ### Done
