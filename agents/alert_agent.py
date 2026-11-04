@@ -125,10 +125,10 @@ class AlertAgent:
         stale_cutoff = (datetime.now() - timedelta(days=7)).isoformat()
         with _conn() as c:
             stale = c.execute(
-                """SELECT ticker, updated_at FROM nodes
+                """SELECT ticker, created_at FROM nodes
                    WHERE node_type='ConfluenceSignal'
                    AND json_extract(properties,'$.type') LIKE '%BUY%'
-                   AND (updated_at IS NULL OR updated_at < ?)""",
+                   AND (created_at IS NULL OR created_at < ?)""",
                 (stale_cutoff,)
             ).fetchall()
 
