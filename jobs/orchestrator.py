@@ -219,6 +219,22 @@ def run_meta_phase(synthesize_tools: int = 5, verbose: bool = True) -> dict:
         results["meta_cognition"] = {"error": str(e)}
         _log("meta", f"meta_cognition FAILED: {e}")
 
+    # Graph dynamics cycle — learn/relearn/unlearn/prune
+    try:
+        _log("meta", "graph_dynamics cycle (learn/relearn/unlearn/prune)...")
+        from jobs.dynamics_runner import run_cycle as run_dynamics
+        t1 = time.time()
+        dr = run_dynamics(limit=200, verbose=verbose)
+        _record_perf("graph_dynamics_v1", dr.get("tickers_processed", 0),
+                     len(dr.get("errors", [])), time.time() - t1, "meta")
+        results["graph_dynamics"] = dr
+        _log("meta", f"graph_dynamics done: {dr.get('tickers_processed',0)} tickers, "
+             f"learned={dr.get('learned',0)} relearned={dr.get('relearned',0)} "
+             f"pruned={dr.get('pruned',0)}")
+    except Exception as e:
+        results["graph_dynamics"] = {"error": str(e)}
+        _log("meta", f"graph_dynamics FAILED: {e}")
+
     # Tool synthesis — recursive self-improvement
     if synthesize_tools > 0:
         try:
