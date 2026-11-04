@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 47,
+  "version": 48,
   "patterns": {
     "confirmed": [
       {
@@ -314,6 +314,24 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "SQLite edges table uses source_id/target_id not from_id/to_id",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "agent_configs schema: id/agent_type/display_name/description/tools/queue_name",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "nselib import: sys.path.insert(0, vendor/nselib); from nselib import NSE",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -457,6 +475,18 @@
       },
       {
         "pattern": "141 stocks still need per-symbol fallback — may be thinly-traded or index-excluded",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "Bayesian belief revision needs backfill pass — most nodes sitting at 0.5 default",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "Duplicate pruning aggressively merged 42K nodes on first run — monitor for over-pruning",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -636,6 +666,18 @@
       },
       {
         "signal": "timeout 600 python3 -I jobs/backfill_graph.py — reliable full rebuild of XBRL metric nodes",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "run_dynamics_cycle() on 3 test tickers: 42K dupes merged, 140 episodes compressed, 1 edge formed",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "belief_engine schema migration (ALTER TABLE) is idempotent — safe to call _ensure_schema() on every import",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "monkey-patching GraphStore via _belief_patched flag guards against double-patching",
         "added": "2026-11-04"
       }
     ],
@@ -835,6 +877,14 @@
       {
         "gap": "persistent session git proxy 403 on fresh containers — push credentials not persisted across container restarts",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "Initial confidence for existing nodes is 0.5 — need a backfill pass to seed them correctly",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "No integration test for contradict/corroborate chain yet — belief_log has only 2 rows",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -878,10 +928,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-30",
-      "note": "self-iterate: fixed results date-parse bug; built outcome_log; wired triage logging; 5 gaps → 3"
-    },
     {
       "date": "2026-10-30",
       "note": "self_improve scan: resolved: bse_integration, document_swarm, scheduled_tasks; 2 high-priority gaps"
@@ -997,6 +1043,10 @@
     {
       "date": "2026-11-04",
       "note": "backfill_graph completed with 600s timeout (872 tickers, 31424 nodes); agents/workers audit clean — vendor sweep 100% complete"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "Completed living knowledge graph: Bayesian belief engine + 6-op dynamics cycle (learn/relearn/unlearn/prune/compress/form_edges) wired into orchestrator meta-phase"
     }
   ]
 }

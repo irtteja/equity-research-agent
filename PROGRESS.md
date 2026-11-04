@@ -1,5 +1,50 @@
 # Progress Log
 
+## 2026-11-04 — Living Knowledge Graph + Bayesian Belief Revision (session 21)
+
+### Done
+- **`memory/belief_engine.py`** (NEW, 1b85560): Bayesian belief revision engine. Each node
+  carries `confidence` (0-1), `belief_state` (forming/confirmed/contested/retracted),
+  `evidence_count`. Updates: corroborate `+= (1-c)*w*0.30`, contradict `*= (1-w*0.55)`,
+  decay `→ 0.5 at 3%/day`. `belief_log` table captures every change.
+  Contradiction detection: `trend_flip` (same metric, flipped direction) and
+  `signal_vs_analyst` (ConfluenceSignal BUY vs analyst AVOID).
+- **`memory/graph_dynamics.py`** (NEW): Living graph runtime — 6-operation cycle:
+  learn (initial confidence by node_type), relearn (contradiction resolution + decay),
+  unlearn (retract stale unsupported beliefs), prune (merge dupes, delete retracted,
+  isolate cleanup), compress (summarise episode bursts), form_edges (ANALYST/TREND_CHAIN).
+  First run: 42K duplicate nodes merged, 140 episodes compressed, 1 edge formed.
+- **`memory/graph_store_patch.py`** (NEW): Monkey-patch adding `upsert_node_with_confidence`,
+  `corroborate_node`, `contradict_node`, `get_confident_nodes` to GraphStore. Idempotent.
+- **`jobs/dynamics_runner.py`** (NEW): CLI wrapper with `run_cycle()` + belief state report
+  (distribution, confidence by type, belief log, edge weights). Flags: `--cycle`, `--report`,
+  `--belief TICKER`, `--prune-only`.
+- **`jobs/orchestrator.py`** (modified): Added graph dynamics block to `run_meta_phase()`
+  before tool synthesis — runs `run_dynamics_cycle(limit=200)` with `agent_perf` recording.
+- **agent registry**: `graph_dynamics_v1` registered in `agent_configs` (now 10 agents total).
+- **Validated**: imports clean, belief_log writes correctly, edge SQL `source_id/target_id`
+  aligned with actual schema (was `from_id/to_id` in draft).
+- **Commit**: `1b85560` — pushed to GitHub `irtteja/equity-research-agent`.
+
+### Architecture changes
+- Knowledge graph is now a **living, belief-aware system**: every node has a confidence
+  score that rises with corroboration, falls with contradiction, and decays with time.
+  Unsupported beliefs are retracted; duplicates are merged; episodes are compressed.
+  The dynamics cycle runs every meta-phase of the orchestrator.
+- Schema additions: `nodes.confidence REAL`, `nodes.belief_state TEXT`,
+  `nodes.evidence_count INTEGER`, `edges.weight REAL`, `belief_log` table.
+
+### Pending / next sessions
+- Raise initial confidence for well-supported node types (most nodes sit at 0.5 default —
+  need a backfill pass to seed them with correct initial values via `learn_from_new_nodes`)
+- Wire `graph_store_patch.py` into daily ingestion agents so new nodes get correct initial
+  confidence rather than the 0.5 default
+- Investigate 4 stalled agents (context_agent, alert_agent, document_agent, announcement_agent)
+- Run `fetch_results.py` manually — verify XBRL pipeline end-to-end
+- Phase 2 memory: Kuzu graph + LanceDB vector index
+
+---
+
 ## 2026-11-04 (session 17 cont. #3) — EOD prices + bhavcopy after market close
 
 ### Done
