@@ -407,6 +407,34 @@ def run_meta_phase(synthesize_tools: int = 5, verbose: bool = True) -> dict:
             results["tool_synthesis"] = {"error": str(e)}
             _log("meta", f"tool_synthesizer FAILED: {e}")
 
+    # Relative strength vs Nifty
+    try:
+        _log("meta", "relative_strength update...")
+        t1 = time.time()
+        from memory.relative_strength import run_all as rs_run_all
+        rs_results = rs_run_all(limit=200)
+        _record_perf("relative_strength_v1", len(rs_results), 0, time.time()-t1, "meta")
+        results["relative_strength"] = {"computed": len(rs_results)}
+        if verbose:
+            _log("meta", f"relative_strength: {len(rs_results)} tickers updated")
+    except Exception as e:
+        results["relative_strength"] = {"error": str(e)}
+        _log("meta", f"relative_strength FAILED: {e}")
+
+    # Research reports
+    try:
+        _log("meta", "generating research reports...")
+        t1 = time.time()
+        from jobs.generate_report import run_all_reports
+        n_reports = run_all_reports(limit=200)
+        _record_perf("report_generator_v1", n_reports, 0, time.time()-t1, "meta")
+        results["research_reports"] = {"generated": n_reports}
+        if verbose:
+            _log("meta", f"research_reports: {n_reports} reports updated")
+    except Exception as e:
+        results["research_reports"] = {"error": str(e)}
+        _log("meta", f"research_reports FAILED: {e}")
+
     results["duration_s"] = round(time.time() - t0, 1)
     return results
 

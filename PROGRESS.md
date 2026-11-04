@@ -1,5 +1,76 @@
 # Progress Log
 
+## 2026-11-04 — Research report generator + relative strength engine (session 27)
+
+### Done
+- **`jobs/generate_report.py`**: 1-page markdown research reports per ticker, pulling all graph
+  layers (price, technicals, valuation, fundamentals, management statements, bear case, alerts,
+  macro, conviction, sentiment). Generates `reports/tickers/<TICKER>/YYYY-MM-DD.md` + `latest.md`.
+  Ran and committed 158 initial reports for today's BUY universe.
+- **`memory/relative_strength.py`**: Nifty-relative return engine — computes rs_30/rs_60/rs_90
+  for each BUY ticker from PriceSnapshot history. Labels strong_outperformer → strong_underperformer.
+  Writes RelativeStrength nodes to graph.db. Ran on 159 tickers (all 0 today — 1 day of data;
+  real values will appear after 30+ days of feed accumulation).
+- **`jobs/orchestrator.py`** Phase 4 Meta extended: relative_strength + research_reports now
+  run after tool_synthesis on every swarm cycle.
+- **`jobs/daily_monitor.py`**: auto-generates reports at end of each daily run.
+- Committed all 158 reports + both engines (commit 66f046d).
+- Background forks (sessions 24-26) completed in parallel:
+  - `memory/graph_store.py`: `upsert_node()` added (commit d84f6e5) — fixed silent write failures
+    in 6 agents (technical, valuation, news, risk, devil's advocate, alert)
+  - 148 TechnicalSignal, 159 ValuationScore, 159 SentimentScore nodes now populated
+  - `agents/news_agent.py`: now reads `statement` field from ManagementStatement nodes
+    (46/159 tickers with real sentiment data)
+
+### Architecture changes
+- `reports/tickers/` directory created with per-ticker dated + `latest.md` reports
+- Orchestrator Phase 4: relative_strength + report_generator added as final meta steps
+- daily_monitor auto-generates reports at end of each cycle (no separate trigger needed)
+
+### Pending / next sessions
+- Relative strength will produce real signals after 30d of daily price feed accumulation
+- Options analysis: PCR, max pain, IV percentile from option chain snapshots (data already ingested)
+- Peer comparison: relative scoring vs sector peers (sector_map.json + MetricValue nodes available)
+- Concall transcript integration: `jobs/ingest_concalls.py` wired but not running in swarm
+- Dashboard: add RelativeStrength + TechnicalSignal tabs to dashboard.html
+
+## 2026-11-04 — GraphStore fix, full analysis pipeline populated (session 26)
+
+### Done
+- **`memory/graph_store.py`**: added `upsert_node(node_type, name, ticker, properties)` helper
+  that auto-generates node_id from MD5 hash of `node_type:name`. Fixes all agents that call
+  `upsert_node` without an explicit ID (news, risk, devil's advocate, alert, technical, valuation).
+- **`memory/technical_engine.py`** + **`memory/valuation_engine.py`**: fixed `upsert_node` call
+  (was calling non-existent method; now uses new helper).
+- **`agents/news_agent.py`**: fixed text extraction — now reads `statement` field from
+  ManagementStatement nodes (previously only looked for `headline`/`description` etc).
+  Result: 46/159 tickers now have actual sentiment data (from ManagementStatements).
+- Populated all analysis node types across 159 tickers:
+  - **TechnicalSignal**: 148 nodes (RSI/EMA/MACD/52W; 11 skipped — insufficient price history)
+  - **ValuationScore**: 159 nodes (P/E, PAT growth, EBIT margin, FCF proxy, verdict)
+  - **SentimentScore**: 159 nodes (46 with real data, 113 neutral/no_data)
+  - **RiskReport**: 1 node (portfolio-level; overall_risk=low, 0 flags)
+  - **AlertEvent**: 158 nodes (all info severity — no critical/warning signals yet)
+- **`jobs/generate_report.py`**: 1-page per-ticker markdown research reports pulling all layers
+  (price, trend, technicals, valuation, fundamentals, management statements, bear case, macro).
+- **`reports/tickers/RELIANCE/`**: sample report output committed.
+- Devils advocate: 20 BUY signals tested — 16 held, 4 downgraded to HOLD/WAIT.
+
+### Architecture changes
+- `GraphStore.upsert_node()` added — all agent node writes now work without explicit IDs
+- Full analysis pipeline now operational: TechnicalSignal + ValuationScore + SentimentScore
+  + RiskReport + AlertEvent all populated and refreshable on each orchestrator cycle
+- Node count: 5,864 total (up from ~4,345 before analysis layer was fixed)
+
+### Pending / next sessions
+- Backtesting engine: reads prediction_log, compares predicted vs actual price moves 30/60/90d
+- Dashboard live-wiring: export_dashboard_data.py reading from graph.db (fork a346cbad)
+- Concall transcript extraction: wire document_agent to NSE announcement PDFs
+- CCR trigger for run_macro_news.py (daily after-market close)
+- QA agent: natural language queries against knowledge graph
+- Peer comparison engine: HDFC Bank vs sector peers
+- Vector embeddings: semantic search over 706 ManagementStatement nodes
+
 ## 2026-11-04 — Global Macro, News Sentiment, Conviction Tracker (session 25)
 
 ### Done
