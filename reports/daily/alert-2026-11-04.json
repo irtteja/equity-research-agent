@@ -1,0 +1,254 @@
+{
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T10:36:48.210384",
+  "graph": {
+    "nodes": 31432,
+    "edges": 52511,
+    "episodes": 45669,
+    "pending_enrichment": 26432,
+    "by_type": {
+      "BusinessGroup": 18,
+      "Company": 867,
+      "Index": 142,
+      "Industry": 58,
+      "MacroSector": 12,
+      "MetricValue": 29192,
+      "PriceSnapshot": 1021,
+      "Sector": 22,
+      "TrendSummary": 100
+    }
+  },
+  "indices": {},
+  "strong_improving": [
+    {
+      "ticker": "AARTIIND",
+      "metric": "pat",
+      "direction": "improving",
+      "streak": 3,
+      "delta_pct": 108.73,
+      "momentum": 1.0,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "AARTIIND pat: improving for 3 consecutive periods (latest \u0394 +108.7%, decelerating, strong momentum)",
+      "mgmt": []
+    },
+    {
+      "ticker": "ABCAPITAL",
+      "metric": "pat",
+      "direction": "improving",
+      "streak": 3,
+      "delta_pct": 10.58,
+      "momentum": 1.0,
+      "acceleration": "steady",
+      "periods": 4,
+      "summary": "ABCAPITAL pat: improving for 3 consecutive periods (latest \u0394 +10.6%, steady, strong momentum)",
+      "mgmt": []
+    }
+  ],
+  "strong_deteriorating": [],
+  "inflections": [
+    {
+      "ticker": "360ONE",
+      "metric": "revenue",
+      "direction": "deteriorating",
+      "streak": 1,
+      "delta_pct": -6.71,
+      "momentum": 0.495,
+      "acceleration": "steady",
+      "periods": 3,
+      "summary": "360ONE revenue: deteriorating for 1 consecutive periods (latest \u0394 -6.7%, steady, moderate momentum)",
+      "mgmt": []
+    },
+    {
+      "ticker": "3MINDIA",
+      "metric": "revenue",
+      "direction": "stable",
+      "streak": 1,
+      "delta_pct": 1.71,
+      "momentum": 0.529,
+      "acceleration": "accelerating",
+      "periods": 4,
+      "summary": "3MINDIA revenue: stable for 1 consecutive periods (latest \u0394 +1.7%, accelerating, moderate momentum)",
+      "mgmt": []
+    },
+    {
+      "ticker": "AADHARHFC",
+      "metric": "revenue",
+      "direction": "stable",
+      "streak": 1,
+      "delta_pct": 0.85,
+      "momentum": 1.0,
+      "acceleration": "steady",
+      "periods": 3,
+      "summary": "AADHARHFC revenue: stable for 1 consecutive periods (latest \u0394 +0.8%, steady, strong momentum)",
+      "mgmt": []
+    },
+    {
+      "ticker": "AARTIPHARM",
+      "metric": "revenue",
+      "direction": "improving",
+      "streak": 1,
+      "delta_pct": 13.93,
+      "momentum": 0.761,
+      "acceleration": "accelerating",
+      "periods": 4,
+      "summary": "AARTIPHARM revenue: improving for 1 consecutive periods (latest \u0394 +13.9%, accelerating, strong momentum)",
+      "mgmt": []
+    },
+    {
+      "ticker": "AASTHA",
+      "metric": "revenue",
+      "direction": "deteriorating",
+      "streak": 1,
+      "delta_pct": -40.11,
+      "momentum": -1.0,
+      "acceleration": "steady",
+      "periods": 2,
+      "summary": "AASTHA revenue: deteriorating for 1 consecutive periods (latest \u0394 -40.1%, steady, strong momentum)",
+      "mgmt": []
+    },
+    {
+      "ticker": "AAVAS",
+      "metric": "revenue",
+      "direction": "improving",
+      "streak": 1,
+      "delta_pct": 3.89,
+      "momentum": 0.859,
+      "acceleration": "steady",
+      "periods": 4,
+      "summary": "AAVAS revenue: improving for 1 consecutive periods (latest \u0394 +3.9%, steady, strong momentum)",
+      "mgmt": []
+    },
+    {
+      "ticker": "ABB",
+      "metric": "revenue",
+      "direction": "improving",
+      "streak": 1,
+      "delta_pct": 11.77,
+      "momentum": 0.239,
+      "acceleration": "steady",
+      "periods": 4,
+      "summary": "ABB revenue: improving for 1 consecutive periods (latest \u0394 +11.8%, steady, weak momentum)",
+      "mgmt": []
+    },
+    {
+      "ticker": "ABCAPITAL",
+      "metric": "revenue",
+      "direction": "improving",
+      "streak": 1,
+      "delta_pct": 14.97,
+      "momentum": 0.47,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "ABCAPITAL revenue: improving for 1 consecutive periods (latest \u0394 +15.0%, decelerating, moderate momentum)",
+      "mgmt": []
+    },
+    {
+      "ticker": "ABDL",
+      "metric": "revenue",
+      "direction": "improving",
+      "streak": 1,
+      "delta_pct": 15.27,
+      "momentum": 0.034,
+      "acceleration": "decelerating",
+      "periods": 4,
+      "summary": "ABDL revenue: improving for 1 consecutive periods (latest \u0394 +15.3%, decelerating, weak momentum)",
+      "mgmt": []
+    }
+  ],
+  "sector_pulse": {
+    "Commodities": {
+      "improving": 1,
+      "deteriorating": 0,
+      "stable": 0,
+      "tickers_up": [
+        "AARTIIND"
+      ],
+      "tickers_down": []
+    },
+    "Consumer Discretionary": {
+      "improving": 1,
+      "deteriorating": 1,
+      "stable": 0,
+      "tickers_up": [
+        "AASTHA"
+      ],
+      "tickers_down": [
+        "AASTHA"
+      ]
+    },
+    "Diversified": {
+      "improving": 1,
+      "deteriorating": 0,
+      "stable": 1,
+      "tickers_up": [
+        "3MINDIA"
+      ],
+      "tickers_down": []
+    },
+    "Fast Moving Consumer Goods": {
+      "improving": 1,
+      "deteriorating": 0,
+      "stable": 1,
+      "tickers_up": [
+        "ABDL"
+      ],
+      "tickers_down": []
+    },
+    "Financial Services": {
+      "improving": 4,
+      "deteriorating": 1,
+      "stable": 0,
+      "tickers_up": [
+        "360ONE",
+        "AADHARHFC",
+        "AAVAS",
+        "ABCAPITAL"
+      ],
+      "tickers_down": [
+        "360ONE"
+      ]
+    },
+    "Healthcare": {
+      "improving": 1,
+      "deteriorating": 0,
+      "stable": 0,
+      "tickers_up": [
+        "AARTIPHARM"
+      ],
+      "tickers_down": []
+    },
+    "Industrials": {
+      "improving": 1,
+      "deteriorating": 1,
+      "stable": 1,
+      "tickers_up": [
+        "ABB"
+      ],
+      "tickers_down": [
+        "ABB"
+      ]
+    }
+  },
+  "recent_events": [
+    {
+      "ticker": "EMBDL",
+      "date": "",
+      "event": "Acquisition"
+    },
+    {
+      "ticker": "SKYWAYS",
+      "date": "",
+      "event": "Acquisition"
+    }
+  ],
+  "value_signals": [],
+  "summary": {
+    "total_trends": 100,
+    "strong_positive": 2,
+    "strong_negative": 0,
+    "inflections": 9,
+    "sectors_tracked": 7,
+    "value_signals": 0
+  }
+}
