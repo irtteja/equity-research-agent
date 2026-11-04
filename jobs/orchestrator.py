@@ -155,6 +155,34 @@ def run_analysis_phase(workers: int = 4, verbose: bool = True) -> dict:
         results["valuation"] = {"error": str(e)}
         _log("analysis", f"valuation_agent FAILED: {e}")
 
+    # Concall analysis (top 30 tickers with ManagementStatement nodes)
+    try:
+        _log("analysis", "concall_analyzer (top 30 tickers)...")
+        t1 = time.time()
+        from agents.concall_analyzer import ConcallAnalyzer
+        r = ConcallAnalyzer().run_all(limit=30)
+        _record_perf("concall_analyzer", r.get("ok", 0), r.get("errors", 0), time.time()-t1, "analysis")
+        results["concall_analysis"] = r
+        if verbose:
+            _log("analysis", f"concall_analyzer: {r.get('ok')} ok, {r.get('skipped')} skipped, {r.get('errors')} errors")
+    except Exception as e:
+        results["concall_analysis"] = {"error": str(e)}
+        _log("analysis", f"concall_analyzer FAILED: {e}")
+
+    # Annual report analysis (top 20 tickers with AR PDFs)
+    try:
+        _log("analysis", "annual_report_analyzer (top 20 tickers)...")
+        t1 = time.time()
+        from agents.annual_report_analyzer import AnnualReportAnalyzer
+        r = AnnualReportAnalyzer().run_all(limit=20)
+        _record_perf("annual_report_analyzer", r.get("ok", 0), r.get("errors", 0), time.time()-t1, "analysis")
+        results["annual_report_analysis"] = r
+        if verbose:
+            _log("analysis", f"annual_report_analyzer: {r.get('ok')} ok, {r.get('skipped')} skipped, {r.get('errors')} errors")
+    except Exception as e:
+        results["annual_report_analysis"] = {"error": str(e)}
+        _log("analysis", f"annual_report_analyzer FAILED: {e}")
+
     results["duration_s"] = round(time.time() - t0, 1)
     return results
 
