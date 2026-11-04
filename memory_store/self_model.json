@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 50,
+  "version": 51,
   "patterns": {
     "confirmed": [
       {
@@ -344,6 +344,24 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "meta-cognitive observe() → gap → enqueue loop closes the self-improvement cycle without API calls",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "template-based tool synthesis from nselib method names produces runnable Python in <1s per tool",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "ticker_coverage table with staleness scoring is the right primitive for gap detection",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -505,6 +523,18 @@
       },
       {
         "pattern": "sector rotation signal (leaders/laggards) needs 2+ weeks of time series to validate — current single-snapshot may not reflect true rotation",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "auto-synthesized tools (generic template) may fail silently on methods that require specific params — need schema-aware templates for high-value methods",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "95 unused nselib methods is likely an overcount — many are utilities, not data fetchers",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -712,6 +742,18 @@
       },
       {
         "signal": "work_queue atomic claim_batch prevents double-dispatch across ThreadPoolExecutor workers",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "4-phase orchestrator (ingestion→analysis→synthesis→meta) completes without import errors",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "coverage_map rebuild: 4,151 (ticker, node_type) rows from 46K nodes in <2s",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "meta-cognition identifies 26 gaps on first run including 5 priority-1 stale PriceSnapshots",
         "added": "2026-11-04"
       }
     ],
@@ -935,6 +977,14 @@
       {
         "gap": "analyst_synthesis episodes exist but screener only shows 20 tickers — full 159 signal universe not wired yet",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "daily_monitor steps 5g/5h add significant runtime — need to benchmark before daily trigger",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "generated_tools/ tools use generic template — need specialised templates for financial data methods",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -1014,10 +1064,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-30",
-      "note": "self_improve scan: 2 high-priority gaps"
-    },
     {
       "date": "2026-10-30",
       "note": "self_improve scan: 2 high-priority gaps"
@@ -1133,6 +1179,10 @@
     {
       "date": "2026-11-04",
       "note": "analyst engine + sector analyst + corp events pipeline built; github cleanup done 286MB→13MB; dashboard v3 published with treemap, corp feed, screener"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "meta-cognitive engine built: 6 new files, 9-agent registry, 95-method synthesis backlog, 8 tools auto-generated, all committed"
     }
   ]
 }

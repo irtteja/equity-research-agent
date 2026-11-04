@@ -1,5 +1,33 @@
 # Progress Log
 
+## 2026-11-04 (session 20) — Meta-cognitive swarm engine with recursive self-improvement
+
+### Done
+- **Meta-cognitive engine** (commit eb3d49b):
+  - `memory/agent_perf.py`: records per-agent run metrics (success rate, duration, fail count) in graph.db `agent_perf` table
+  - `memory/coverage_map.py`: `ticker_coverage` table (4,151 rows on first build); `coverage_score()` 0-1; `get_gaps()` / `get_stale()`
+  - `memory/meta_cognition.py`: full observe → identify_gaps → enqueue_gap_work → snapshot loop; scans 95 unused nselib methods; writes MetaCogSnapshot episodes
+  - `agents/coverage_agent.py`: rebuilds coverage per ticker; writes CoverageScore nodes
+  - `agents/tool_synthesizer.py`: template-based Python code generation from unused nselib methods; saves to `generated_tools/`; registers in DB
+  - `jobs/orchestrator.py`: unified 4-phase swarm coordinator (Ingestion → Analysis → Synthesis → Meta); `--once` / `--continuous` / `--phase` / `--status` CLI
+  - `jobs/daily_monitor.py`: added steps 5g (swarm analysis+synthesis) + 5h (meta-cognitive cycle)
+  - Agent registry extended to 9 agents (3 new: coverage_agent_v1, meta_cognition_v1, tool_synthesizer_v1)
+  - First synthesis batch: 8 auto-generated tools from unused nselib methods (ingest_ask, ingest_bulk_equity_bhavcopy, etc.)
+
+### Architecture changes
+- **4-layer engine**: Ingestion → Analysis → Synthesis → Meta forms a closed loop
+- **Meta-cognitive cycle**: system observes its own gaps, enqueues fill work, generates new tools — no human intervention needed
+- **Recursive self-improvement**: 95 unused nselib methods are the synthesis backlog; each daily_monitor run can generate up to N new ingestion tools
+- **Coverage map** tracks per-ticker node type presence and staleness — gaps surface automatically
+- **Agent perf table** enables future self-tuning (adjust concurrency/priority for underperforming agents)
+
+### Pending / next sessions
+- **Generated tools quality**: auto-synthesized tools use generic template; should be refined with method-specific schemas and proper node type classification
+- **Orchestrator daily trigger**: set up scheduled CCR trigger to run `python jobs/orchestrator.py --once` daily at 15:30 IST (after market close)
+- **Dashboard live wire**: connect orchestrator output to dashboard API (currently hardcoded; could serve from meta_cog_snapshot episodes)
+- **Sector rotation historical**: with daily meta-cycles, we can build a time series of sector rotation signals
+- **Alert agent**: use coverage gaps + staleness to trigger targeted re-ingestion alerts
+
 ## 2026-11-04 (session 19) — Analyst engine + interactive dashboard v3
 
 ### Done
