@@ -348,6 +348,20 @@ def run():
         print(f"  ERROR: {e}")
         results["fii_dii_store"] = {"error": str(e)}
 
+    # 5e. Enqueue analyst synthesis for top signal tickers
+    print("\n[5e] Enqueuing analyst synthesis work...")
+    try:
+        from jobs.swarm_runner import SwarmRunner
+        runner = SwarmRunner()
+        enqueued = runner.enqueue_analyst_work()
+        results["analyst_enqueued"] = enqueued
+        print(f"  enqueued {enqueued} tickers for analyst synthesis")
+        log_checkpoint(task_id, status="in_progress", progress=f"step 5e: {enqueued} analyst items enqueued")
+    except Exception as e:
+        print(f"  ERROR: {e}")
+        results["analyst_enqueued"] = {"error": str(e)}
+        log_checkpoint(task_id, status="in_progress", progress=f"step 5e skipped: {e}")
+
     # Save output
     out_dir = os.path.join(REPO_DIR, "reports", "daily")
     os.makedirs(out_dir, exist_ok=True)
