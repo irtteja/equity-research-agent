@@ -67,19 +67,26 @@ class PriceAgent:
         data = json.loads(prog.read_text())
         return {s.upper() for s, v in data.items() if isinstance(v, dict) and v.get("status") == "done"}
 
-    # Broad indices that together cover the full 888-stock universe.
-    # Each is one API call returning live prices for all its constituents.
-    _BULK_INDICES = [
-        "NIFTY 500",          # top 500 by mkt cap (~495 EQ stocks)
-        "NIFTY MICROCAP 250", # ranks 501-750 (~250 more)
-        "NIFTY SMALLCAP 250", # overlap with above but catches sector stragglers
-    ]
+    def _load_all_indices(self) -> list[str]:
+        """Return all tracked index names from symbol_to_indices.json."""
+        path = REPO / "data" / "symbol_to_indices.json"
+        if not path.exists():
+            return ["NIFTY 500", "NIFTY MICROCAP 250", "NIFTY SMALLCAP 250"]
+        data = json.loads(path.read_text())
+        indices: set[str] = set()
+        for idx_list in data.values():
+            indices.update(idx_list)
+        # Sort so bigger/broader indices come first (more new symbols per call)
+        priority = {"NIFTY 500": 0, "NIFTY MICROCAP 250": 1, "NIFTY SMALLCAP 250": 2,
+                    "NIFTY TOTAL MKT": 3, "NIFTY 200": 4, "NIFTY 100": 5, "NIFTY 50": 6}
+        return sorted(indices, key=lambda x: (priority.get(x, 99), x))
 
     def _fetch_prices(self, universe: set[str]) -> dict[str, dict]:
-        """Fetch live prices — bulk index calls first, per-symbol fallback for remainder."""
+        """Fetch live prices — all tracked indices, deduplicate by symbol, fallback for gaps."""
         prices: dict[str, dict] = {}
+        all_indices = self._load_all_indices()
 
-        for index_name in self._BULK_INDICES:
+        for index_name in all_indices:
             try:
                 members = self.nse.index_constituents(index_name)
                 before = len(prices)
@@ -98,9 +105,10 @@ class PriceAgent:
                     except (TypeError, ValueError):
                         continue
                 added = len(prices) - before
-                print(f"[PriceAgent] bulk {index_name}: +{added} stocks ({len(prices)} total)")
+                if added:
+                    print(f"[PriceAgent] {index_name}: +{added} new ({len(prices)} total)")
             except Exception as e:
-                print(f"[PriceAgent] bulk {index_name} failed: {e}")
+                print(f"[PriceAgent] {index_name} failed: {e}")
 
         # Per-symbol fallback for any stocks still missing (sector-only names)
         missing = universe - set(prices.keys())
