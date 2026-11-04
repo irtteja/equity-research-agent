@@ -1,0 +1,20 @@
+[
+  {
+    "date": "2026-11-03",
+    "decision": "read",
+    "reason": "Product launch - innovation/growth signal",
+    "headline": "Product launch - Hindustan Zinc Limited",
+    "pdf_url": "https://nsearchives.nseindia.com/corporate/HINDZINCNSE_03112026180851_SEintimationproduct.pdf",
+    "facts_extracted": 1,
+    "summary": "Hindustan Zinc Limited product launch: Hindustan Zinc Limited has informed the Exchange about Product launch"
+  },
+  {
+    "date": "2026-11-03",
+    "decision": "ignore",
+    "reason": "Shareholders meeting - check for significant resolutions",
+    "headline": "Shareholders meeting - Hindustan Zinc Limited",
+    "pdf_url": "https://nsearchives.nseindia.com/corporate/HINDZINCNSE_03112026145713_SEintimationfinal03112026.pdf",
+    "facts_extracted": 0,
+    "summary": "Hindustan Zinc Limited: Hindustan Zinc Limited has informed the Exchange regarding Notice of Postal Ballot"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "date": "2026-11-03",
+    "decision": "escalate",
+    "reason": "Acquisition is material corporate event - escalate for review",
+    "headline": "Acquisition - Clean Max Enviro Energy Solutions Limited",
+    "pdf_url": "https://nsearchives.nseindia.com/corporate/CLEANMAX_03112026235251_FR30092026.pdf",
+    "facts_extracted": 1,
+    "summary": "Clean Max Enviro Energy Solutions Limited acquisition: Incorporation of a wholly owned subsidiary of the Company at the International Financial ServicesCentre (IFSC) in Gujarat Finance Tec-City (GIFT City), Gujarat, India"
+  },
+  {
+    "date": "2026-11-03",
+    "decision": "read",
+    "reason": "Board approved Q2FY27 results - material financial event",
+    "headline": "Outcome of Board Meeting - Clean Max Enviro Energy Solutions Limited",
+    "pdf_url": "https://nsearchives.nseindia.com/corporate/CLEANMAX_03112026213525_Outcome031126.pdf",
+    "facts_extracted": 1,
+    "summary": "Clean Max Enviro Energy Solutions Limited Q2FY27 financial results approved by board."
+  }
+]

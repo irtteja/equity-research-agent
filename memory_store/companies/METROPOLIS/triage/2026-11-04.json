@@ -1,0 +1,29 @@
+[
+  {
+    "date": "2026-11-03",
+    "decision": "read",
+    "reason": "Dividend declaration - income event for shareholders",
+    "headline": "Record Date - Metropolis Healthcare Limited",
+    "pdf_url": "https://nsearchives.nseindia.com/corporate/METROPOLIS_03112026193209_Signed_Outcome_of_Board_Meeting_-_November_2026.pdf",
+    "facts_extracted": 1,
+    "summary": "Metropolis Healthcare Limited: Metropolis Healthcare Limited has informed the Exchange about the declaration of Interim Dividend and record date."
+  },
+  {
+    "date": "2026-11-03",
+    "decision": "read",
+    "reason": "Dividend declaration - income event for shareholders",
+    "headline": "Dividend - Metropolis Healthcare Limited",
+    "pdf_url": "https://nsearchives.nseindia.com/corporate/METROPOLIS_03112026192702_Signed_Outcome_of_Board_Meeting_-_November_2026.pdf",
+    "facts_extracted": 1,
+    "summary": "Metropolis Healthcare Limited: Metropolis Healthcare Limited has informed the Exchange that Board of Directors at its meeting held on November 03, 2026, declared Interim Dividend of Re. 1 per equity share."
+  },
+  {
+    "date": "2026-11-03",
+    "decision": "read",
+    "reason": "Board approved Q2FY27 results - material financial event",
+    "headline": "Outcome of Board Meeting - Metropolis Healthcare Limited",
+    "pdf_url": "https://nsearchives.nseindia.com/corporate/METROPOLIS_03112026191630_Signed_Outcome_of_Board_Meeting_-_November_2026.pdf",
+    "facts_extracted": 1,
+    "summary": "Metropolis Healthcare Limited Q2FY27 financial results approved by board."
+  }
+]

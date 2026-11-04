@@ -1,0 +1,38 @@
+[
+  {
+    "date": "2026-11-03",
+    "decision": "escalate",
+    "reason": "Securities issuance is dilutive event",
+    "headline": "Issue of Securities - Lloyds Metals And Energy Limited",
+    "pdf_url": "https://nsearchives.nseindia.com/corporate/LLOYDSME_03112026200922_20261103_Outcome_of_Board_Meeting.pdf",
+    "facts_extracted": 1,
+    "summary": "Lloyds Metals And Energy Limited: Approval for Raising of Funds through Issuance of Foreign Currency Denominated Notes) and/or INR Non-Convertible Debentures ( INR NCDs ) and/or Other Debt Securities in one or more tranches."
+  },
+  {
+    "date": "2026-11-03",
+    "decision": "escalate",
+    "reason": "Acquisition is material corporate event - escalate for review",
+    "headline": "Acquisition - Lloyds Metals And Energy Limited",
+    "pdf_url": "https://nsearchives.nseindia.com/corporate/LLOYDSME_03112026200547_20261103_Outcome_of_Board_Meeting.pdf",
+    "facts_extracted": 1,
+    "summary": "Lloyds Metals And Energy Limited acquisition: Approval for further investment in Thriveni Earthmovers and Infra Private Limited, subsidiary of the company, by way of subscription to rights issue / further issue of capital."
+  },
+  {
+    "date": "2026-11-03",
+    "decision": "read",
+    "reason": "Capacity expansion - positive growth signal",
+    "headline": "Capacity addition - Lloyds Metals And Energy Limited",
+    "pdf_url": "https://nsearchives.nseindia.com/corporate/LLOYDSME_03112026200415_20261103_Outcome_of_Board_Meeting.pdf",
+    "facts_extracted": 1,
+    "summary": "Lloyds Metals And Energy Limited capacity addition: Approval for Setting up of 360 MW Thermal Power Plant by the Company at Konsari, Maharashtra"
+  },
+  {
+    "date": "2026-11-03",
+    "decision": "read",
+    "reason": "Board meeting outcome - check for strategic decisions",
+    "headline": "Outcome of Board Meeting - Lloyds Metals And Energy Limited",
+    "pdf_url": "https://nsearchives.nseindia.com/corporate/LLOYDSME_03112026190341_20261103_Outcome_of_Board_Meeting.pdf",
+    "facts_extracted": 0,
+    "summary": "Lloyds Metals And Energy Limited board meeting outcome: Outcome of Board Meeting held on 03rd November, 2026"
+  }
+]
