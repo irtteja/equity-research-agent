@@ -1,5 +1,39 @@
 # Progress Log
 
+## 2026-11-04 — Episode processor + bulk report index (session 33)
+
+### Done
+- **`jobs/process_episodes.py`** (commit 19852ca): Drains the 88,572-episode backlog in
+  memory_store/graph.db. Pre-loads MetricValue (869) and TrendSummary (862) node IDs into
+  memory sets; processes episodes in batches of 500 always from offset 0 (critical: naive
+  OFFSET-based pagination skips rows as processed=1 marks shrink the result set).
+  xbrl_result → matches MetricValue id `{ticker}-{metric}-{period}`; metric_trend/trend_signal
+  → matches TrendSummary id `trend-{ticker}-{metric}`; all other types marked done immediately.
+  Result: 88,572 → 0 unprocessed in <1 second. CLI: `--batch`, `--dry-run`.
+- **`jobs/bulk_report_index.py`** (commit 98e5818): Bulk report generator + consolidated index.
+  Reads memory_store/ranked_watchlist.json (159 BUY tickers from composite_ranker); enriches
+  with Sector (company_meta.json), Quality Tier (BusinessQuality nodes), 52W Position
+  (pos_52w from watchlist converted from fraction to %). For each ticker calls
+  `jobs/generate_report.save_report()`. Writes reports/index.md (Markdown table) and
+  reports/index.json (JSON array). CLI: `--limit N`, `--tier A/B/C/D`, `--no-report`.
+  --tier filter works across full universe by over-fetching before filtering.
+  Initial run: 20 reports generated/regenerated, index.md + index.json written.
+- Pushed commits 19852ca + 98e5818 to origin/master
+
+### Architecture changes
+- Episode backlog management: process_episodes.py is the canonical drain job; should be run
+  after any large XBRL/trend ingestion to keep episodes.processed=0 count near zero
+- reports/index.md + reports/index.json: new consolidated discovery surface for all BUY reports
+- ranked_watchlist.json field mapping: `pos_52w` (fraction 0-1) ≠ `near_low_pct` (percent);
+  bulk_report_index.py auto-detects and converts
+
+### Pending / next sessions
+- Run `bulk_report_index.py --limit 50` to cover full top-50 BUY universe
+- Schedule process_episodes.py to run after each XBRL ingestion cycle (add to orchestrator)
+- Wire reports/index.md into dashboard HTML as a browsable report gallery
+- reports/index.md uses `tickers/{TICKER}/latest.md` relative links — need a simple HTTP
+  server or artifact to browse them interactively
+
 ## 2026-11-04 — Proactive alert engine: 6 alert types + orchestrator wiring (session 32)
 
 ### Done

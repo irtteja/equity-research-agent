@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 59,
+  "version": 60,
   "patterns": {
     "confirmed": [
       {
@@ -464,6 +464,12 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "episode backlog offset-based pagination fails when mutating rows in-flight — always use offset=0 for shrinking result sets",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -703,6 +709,12 @@
       },
       {
         "pattern": "management_tone_caution depends on defensive tone — currently absent from ConcallInsight nodes",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "ranked_watchlist.json pos_52w field is fractional (0-1), not percentage — need field-name normalization layer",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -982,6 +994,10 @@
       },
       {
         "signal": "MD5 hash upsert matching graph_store.upsert_node() pattern ensures consistent node IDs",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "pre-loading node IDs into Python sets before batch processing is fast and avoids per-episode round-trips",
         "added": "2026-11-04"
       }
     ],
@@ -1269,6 +1285,10 @@
       {
         "gap": "Technical pos_52w close to 0 for most tickers (near 52W lows) — tech component contributes high uniformly",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "process_episodes.py should be wired into orchestrator post-ingestion to prevent backlog re-accumulation",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -1367,10 +1387,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-11-03",
-      "note": "KB build completed 888/888 NSE mainboard symbols — 2851 concalls, 354 ARs, 3278 XBRL quarters ingested"
-    },
     {
       "date": "2026-11-03",
       "note": "2026-11-03: built full system architecture artifact; ran context+trend agents; 148 PRECEDED_BY edges, 82 trend summaries, 49 strong trends across KB"
@@ -1486,6 +1502,10 @@
     {
       "date": "2026-11-04",
       "note": "alert engine built: 6 rule-based types, 275 alerts across 159 tickers, wired into orchestrator Phase 3"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "Built episode processor (88K→0 backlog) and bulk report index (reports/index.md + index.json for 20 BUY tickers)"
     }
   ]
 }
