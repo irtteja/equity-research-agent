@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 46,
+  "version": 47,
   "patterns": {
     "confirmed": [
       {
@@ -299,6 +299,18 @@
       },
       {
         "pattern": "price_agent 3-bulk-index covers 753/888 stocks on a live trading day",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "backfill_graph.py completes cleanly when given 600s — the 120s default kills it mid-run",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "agents/workers/ subdirectory uses no nselib/bselib — vendor-path sweep complete for all agents/",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -621,6 +633,10 @@
       {
         "signal": "bhavcopy too_early detection now correct",
         "added": "2026-11-04"
+      },
+      {
+        "signal": "timeout 600 python3 -I jobs/backfill_graph.py — reliable full rebuild of XBRL metric nodes",
+        "added": "2026-11-04"
       }
     ],
     "gaps": [
@@ -864,10 +880,6 @@
   "session_log": [
     {
       "date": "2026-10-30",
-      "note": "self_improve scan: 3 gaps found, 1 high priority"
-    },
-    {
-      "date": "2026-10-30",
       "note": "self-iterate: fixed results date-parse bug; built outcome_log; wired triage logging; 5 gaps → 3"
     },
     {
@@ -981,6 +993,10 @@
     {
       "date": "2026-11-04",
       "note": "Price agent expanded to 753 stocks. Daily monitor ran. Push 403 from persistent session container needs env-level repo auth fix."
+    },
+    {
+      "date": "2026-11-04",
+      "note": "backfill_graph completed with 600s timeout (872 tickers, 31424 nodes); agents/workers audit clean — vendor sweep 100% complete"
     }
   ]
 }
