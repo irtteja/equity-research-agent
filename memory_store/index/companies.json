@@ -1,1 +1,304 @@
-{"updated": null, "companies": {}}
+{
+  "updated": null,
+  "companies": {},
+  "SBIN": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "TATASTEEL": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "BAJAJFINSV": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "SOLARINDS": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "BAJAJHLDNG": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "LLOYDSME": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "PRESTIGE": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "HINDZINC": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "DABUR": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "FLUOROCHEM": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "NEULANDLAB": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "BALKRISIND": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "AIAENG": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "AIIL": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "AMBER": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "LINDEINDIA": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "MEDANTA": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "ASAHIINDIA": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "GLAXO": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "ANTHEM": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "ENDURANCE": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "EMCURE": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "JYOTICNC": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "VIJAYA": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "MGL": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "METROPOLIS": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "PFIZER": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "DIACABS": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "CHAMBLFERT": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "MINDACORP": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "GRAPHITE": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "ZYDUSWELL": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "SEDEMAC": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "INOXINDIA": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "BATAINDIA": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "CLEANMAX": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "FRACTAL": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "FIRSTCRY": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "KSB": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "VMART": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "HEGAM": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "IONEXCHANG": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "EMBDL": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "SAFARI": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "SAMHI": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "V2RETAIL": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "BLS": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "ALKYLAMINE": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "NORTHARC": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "LOTUSDEV": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "SANDUMA": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "JAINREC": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "TRANSRAILL": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "EBGNG": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "NEPHROPLUS": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "DATAMATICS": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "CEIGALL": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "SUBROS": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "EIEL": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  },
+  "HGINFRA": {
+    "last_filing": "2026-11-03",
+    "last_ingested": "2026-11-04",
+    "last_updated": "2026-11-04"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 52,
+  "version": 53,
   "patterns": {
     "confirmed": [
       {
@@ -389,6 +389,12 @@
       },
       {
         "pattern": "global_macro thresholds correctly reflect India macro sensitivities",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "NSE announcement desc field is reliable for filtering material events",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -807,6 +813,10 @@
       {
         "signal": "AST syntax check for generated_tools is fast and reliable quality gate",
         "added": "2026-11-04"
+      },
+      {
+        "signal": "In-session analysis of announcement text produces consistent triage without API calls",
+        "added": "2026-11-04"
       }
     ],
     "gaps": [
@@ -1063,6 +1073,21 @@
       "ticker": "BAJAJ-AUTO",
       "reason": "finance_costs +21% diverging from revenue +15.8%; leverage building",
       "added": "2026-11-03"
+    },
+    {
+      "ticker": "TATASTEEL",
+      "reason": "merger effective date announced",
+      "added": "2026-11-04"
+    },
+    {
+      "ticker": "LLOYDSME",
+      "reason": "capacity + securities + acquisition trifecta",
+      "added": "2026-11-04"
+    },
+    {
+      "ticker": "AMBER",
+      "reason": "subsidiary acquisition via rights issue",
+      "added": "2026-11-04"
     }
   ],
   "sector_notes": {
@@ -1089,13 +1114,33 @@
         "note": "mixed signals; revenue trend positive but cost pressure visible",
         "date": "2026-11-03"
       }
+    ],
+    "metals": [
+      {
+        "note": "TATASTEEL merger effective, LLOYDSME expanding with 360MW thermal plant",
+        "date": "2026-11-04"
+      }
+    ],
+    "pharma": [
+      {
+        "note": "Multiple Q2FY27 results - NEULANDLAB GLAXO EMCURE ANTHEM",
+        "date": "2026-11-04"
+      }
+    ],
+    "realty": [
+      {
+        "note": "PRESTIGE acquisition LOTUSDEV OFS",
+        "date": "2026-11-04"
+      }
+    ],
+    "financials": [
+      {
+        "note": "SBIN Q2FY27 results BAJAJFINSV Q2FY27 results",
+        "date": "2026-11-04"
+      }
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-31",
-      "note": "built knowledge graph layer (graph_store + episode_bridge + ContextAgent); wired into ingestion, results_store, self_improve; all facts/XBRL/gaps now auto-write to graph; ripple architecture active"
-    },
     {
       "date": "2026-10-31",
       "note": "closed recursive self-improvement loop for agents: backfill graph, TrendAgent, _signal_agent_quality; 5 core scheduled tasks re-enabled; pipeline verified end-to-end on real CDSL/BIRLACORPN data"
@@ -1211,6 +1256,10 @@
     {
       "date": "2026-11-04",
       "note": "session 25: global_macro + news_agent + conviction_tracker complete; parallel forks had already committed everything before context resumed"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "Processed 462 Nov-3 NSE announcements; 85 material, 13 escalated; TATASTEEL merger effective date notable"
     }
   ]
 }

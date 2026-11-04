@@ -1285,3 +1285,31 @@ Monthly pruner (1st of month, 2 AM IST). Enforces:
 - Total: 751 mainboard stocks
 - Added: BAGMANE, BIRET, EMBASSY
 - Removed: AASTHA, ACEVECTOR, ADROITIND, AEROPLANE, ALPINETEX, ANNU, AONESTEELS, AQYLON, ARCIL, ARDEE, ARMEE, AUGMONT, AYE, BAGFILMS, BALAJITELE, BLEL, BTML, CINELINE, CMLL, CORDELIA, CORONA, CREATIVEYE, CRESTO, CSM, CYBERMEDIA, DEEPA, DEN, DGCONTENT, DHOOTTRANS, DISHTV, DNAMEDIA, ELEVATE, ENIL, ESDS, EXCELSOFT, FUSIONCX, GAJA, GAUDIUMIVF, GERMAN, GKSL, GLASSWALL, GRADIENTE, GSPCROP, GTPL, HATHWAY, HDFIRE, HEROMOTORS, HEXAGON, HORIZONIND, HTEL, INDOMIM, INNOVISION, JNPR, JSIPL, KANOHAR, KARAMTARA, KNACK, KSHINTL, KUSUMGAR, LALITHAA, LASERPOWER, LCCPROJECT, LCL, LEAPIND, LUMINO, MANIPALHOS, MIDWESTLTD, MILKYMIST, MMWL, MOLBIO, MONEYVIEW, MPIMANIPAL, MUKTAARTS, MVELECTRO, NDTV, NEXTMEDIA, NITYAS, OMPOWER, ONMOBILE, ORIENTCABL, ORKLAINDIA, PERNIASPOP, PNC, PNGSREVA, PRANAV, PRASOLCHEM, PSB, QUINT, RADAAN, RADIOCITY, RAJTV, RAMBHAJO, RENTOMOJO, RKSWAMY, RSL, RUNWALENTR, SAIPARENT, SAMBHAAV, SBIFUNDS, SHANKESH, SHEMAROO, SHIPROCKET, SIGNPOST, SKYWAYS, SONA, SRIT, SSRETAIL, STEAMHOUSE, STUDDS, SUNSHINE, SWASTIKAIN, SYMBIOTEC, TECHNOCRAF, TEMPSENS, TIPSFILMS, TURTLEMINT, TVTODAY, TVVISION, UFO, VARMORA, VEEGALAND, VIDYAWIRES, VNL, XTRANET, ZEEMEDIA
+
+## 2026-11-05 — NSE Announcement Analysis (Nov 3)
+
+### Done
+- Fetched 462 NSE announcements for 253 symbols on 2026-11-03 (fetch_announcements_parallel)
+- Saved to `memory_store/announcements/2026-11-03.json`
+- Filtered 85 material announcements across 13 categories
+- Analyzed in-session (no API calls) and persisted via `save_extraction()` for all 85
+- **13 escalated** (acquisitions, mergers, credit revisions, OFS):
+  - TATASTEEL: Merger effective date (Rujuvalika Investment amalgamation)
+  - LLOYDSME: 360MW thermal plant + subsidiary investment + NCD/FCB issuance
+  - PRESTIGE: 100% stake in Gloind Vintage Infra
+  - AMBER: Subsidiary (IL JIN Electronics) acquisition
+  - CLEANMAX: New WOS incorporation
+  - FIRSTCRY (Brainbees): Acquisition
+  - CEIGALL: Acquisition
+  - LOTUSDEV: Promoter OFS
+  - SUBROS: Credit rating revision
+  - EIEL: Credit rating revision
+- Updated self-model with sector notes and watch-list additions
+
+### Pending / next sessions
+- Run `fetch_results.py` manually to verify XBRL pipeline end-to-end
+- Phase 2 memory: Kuzu graph + LanceDB vector index
+- Weekly research job (`jobs/weekly_research.py`) still disabled
+- 3 stalled agents: context_agent, document_agent, announcement_agent (>26h no heartbeat)
+- Episode backlog: 77,093 unprocessed episodes
+- Add `memory_store/graph.db-shm` and `memory_store/graph.db-wal` to .gitignore
