@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 45,
+  "version": 46,
   "patterns": {
     "confirmed": [
       {
@@ -296,6 +296,12 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "price_agent 3-bulk-index covers 753/888 stocks on a live trading day",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -433,6 +439,12 @@
       },
       {
         "pattern": "NSE_BHAV_COPY MCP availability in persistent-agent env — not yet tested",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "141 stocks still need per-symbol fallback — may be thinly-traded or index-excluded",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -600,6 +612,14 @@
       },
       {
         "signal": "vendor/nselib fallback pattern for cross-env compatibility",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "vendor/nselib path works in persistent-agent env",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "bhavcopy too_early detection now correct",
         "added": "2026-11-04"
       }
     ],
@@ -795,6 +815,10 @@
       {
         "gap": "nselib was silently failing in automated sessions — no error surfaced in logs",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "persistent session git proxy 403 on fresh containers — push credentials not persisted across container restarts",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -838,10 +862,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-30",
-      "note": "self_improve scan: 5 gaps found, 2 high priority"
-    },
     {
       "date": "2026-10-30",
       "note": "self_improve scan: 3 gaps found, 1 high priority"
@@ -957,6 +977,10 @@
     {
       "date": "2026-11-04",
       "note": "Session 17: vendored nselib into repo; verified watchdog push 58d3063 succeeded; fixed 15 files to use vendor path first"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "Price agent expanded to 753 stocks. Daily monitor ran. Push 403 from persistent session container needs env-level repo auth fix."
     }
   ]
 }
