@@ -105,17 +105,19 @@ def _fetch_statements(ticker: str) -> list[dict]:
 
 
 def _extract_pdf_text(ticker: str, max_pages: int = 50) -> str:
-    """Try to extract text from concall PDFs for the ticker. Returns '' if none found."""
+    """Try to extract text from concall PDFs + doc_store transcripts for the ticker."""
+    text_parts = []
+
+    # 1. PDF files on disk (concalls/ and annual_reports/)
     dirs_to_check = [
         CONCALL_DIR / ticker,
         REPO / "memory_store" / "annual_reports" / ticker,
     ]
-    text_parts = []
     for d in dirs_to_check:
         if not d.exists():
             continue
         pdfs = sorted(d.glob("*.pdf"))
-        for pdf_path in pdfs[:2]:  # max 2 PDFs per ticker
+        for pdf_path in pdfs[:2]:
             try:
                 import pymupdf  # noqa: PLC0415
                 doc = pymupdf.open(str(pdf_path))
@@ -124,6 +126,21 @@ def _extract_pdf_text(ticker: str, max_pages: int = 50) -> str:
                 doc.close()
             except Exception:
                 pass
+
+    # 2. doc_store transcripts (extracted text from previously ingested concall PDFs)
+    try:
+        from memory.doc_store import search_index, load_document  # noqa: PLC0415
+        entries = search_index(symbol=ticker, doc_type="transcript")
+        for entry in entries[:3]:  # up to 3 transcripts per ticker
+            path = entry.get("store_path", "")
+            if path:
+                doc = load_document(path)
+                txt = doc.get("text", "") if doc else ""
+                if txt:
+                    text_parts.append(txt[:30_000])  # cap per transcript
+    except Exception:
+        pass
+
     return "\n".join(text_parts)
 
 

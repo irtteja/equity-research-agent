@@ -108,7 +108,17 @@ def _is_duplicate(content_hash: str) -> bool:
             try:
                 rec = json.loads(line)
                 if rec.get("doc_id") == content_hash:
-                    return True
+                    # Verify the stored file actually has text; if not, allow re-save
+                    sp = rec.get("store_path", "")
+                    if sp and Path(sp).exists():
+                        try:
+                            stored = json.loads(Path(sp).read_text(encoding="utf-8"))
+                            if stored.get("text"):
+                                return True
+                        except Exception:
+                            return True  # file exists but unreadable — treat as dup
+                    # Hash found in index but file missing or empty text — allow re-save
+                    return False
             except Exception:
                 pass
     return False
@@ -145,8 +155,18 @@ def search_index(
     return results
 
 
-def load_document(doc_id: str) -> dict | None:
-    """Load full document JSON by doc_id."""
+def load_document(doc_id_or_path: str) -> dict | None:
+    """Load full document JSON by doc_id or store_path."""
+    # If it looks like a file path, load directly
+    p = Path(doc_id_or_path)
+    if p.suffix == ".json" and p.exists():
+        try:
+            with open(p, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return None
+
+    # Otherwise treat as doc_id and look up in index
     if not _INDEX_FILE.exists():
         return None
     store_path = None
@@ -154,7 +174,7 @@ def load_document(doc_id: str) -> dict | None:
         for line in f:
             try:
                 rec = json.loads(line)
-                if rec.get("doc_id") == doc_id:
+                if rec.get("doc_id") == doc_id_or_path:
                     store_path = rec.get("store_path")
                     break
             except Exception:
