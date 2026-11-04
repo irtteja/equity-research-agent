@@ -1,0 +1,302 @@
+"""
+ToolSynthesizer — recursively improves the system by generating new ingestion tools.
+
+Identifies nselib methods not yet wired into the agent pipeline,
+synthesises Python ingestion functions from templates, saves them to
+generated_tools/, and registers them in the graph.db generated_tools table.
+
+No external API calls. Template-based code generation.
+
+Called by:
+  jobs/orchestrator.py  (Phase: meta, after meta_cognition cycle)
+  python -m agents.tool_synthesizer [--list-unused] [--synthesize N] [--run NAME]
+"""
+import json
+import re
+import sqlite3
+import textwrap
+from datetime import datetime
+from pathlib import Path
+
+REPO    = Path(__file__).parent.parent
+DB_PATH = REPO / "memory_store" / "graph.db"
+GEN_DIR = REPO / "generated_tools"
+
+
+def _conn():
+    c = sqlite3.connect(str(DB_PATH), timeout=10)
+    c.row_factory = sqlite3.Row
+    c.execute("PRAGMA journal_mode=WAL")
+    return c
+
+
+def _ensure_gen_tools_table():
+    with _conn() as c:
+        c.execute("""
+            CREATE TABLE IF NOT EXISTS generated_tools (
+                id           INTEGER PRIMARY KEY AUTOINCREMENT,
+                name         TEXT UNIQUE,
+                file_path    TEXT,
+                description  TEXT,
+                nselib_method TEXT,
+                node_type    TEXT,
+                created_at   TEXT DEFAULT (datetime('now')),
+                last_run     TEXT,
+                run_count    INTEGER DEFAULT 0,
+                status       TEXT DEFAULT 'active'
+            )""")
+
+
+_ensure_gen_tools_table()
+GEN_DIR.mkdir(parents=True, exist_ok=True)
+(GEN_DIR / "__init__.py").touch(exist_ok=True)
+
+
+# ── Method classification ────────────────────────────────────────────────────
+
+_METHOD_CATEGORIES = {
+    # pattern → (node_type, description_template)
+    r"^get_.*_insider":       ("InsiderTrade",    "Fetch insider trading data"),
+    r"^get_.*_pledge":        ("PledgeData",       "Fetch pledge data"),
+    r"^get_.*_sast":          ("SASTFiling",       "Fetch SAST filings"),
+    r"^get_.*_corpinfo":      ("CompanyMeta",      "Fetch company corporate info"),
+    r"^get_.*_annual":        ("AnnualReport",     "Fetch annual report data"),
+    r"^get_.*_quarter":       ("QuarterlyResult",  "Fetch quarterly financial data"),
+    r"^get_.*_financial":     ("FinancialMetric",  "Fetch financial data"),
+    r"^get_.*_holding":       ("ShareholderData",  "Fetch shareholding data"),
+    r"^get_.*_option":        ("OptionData",       "Fetch options data"),
+    r"^get_.*_future":        ("FuturesData",      "Fetch futures data"),
+    r"^get_.*_derivative":    ("DerivativeData",   "Fetch derivatives data"),
+    r"^get_.*_index":         ("IndexData",        "Fetch index data"),
+    r"^get_.*_equity":        ("EquityData",       "Fetch equity data"),
+    r"^get_.*_history":       ("PriceHistory",     "Fetch historical price data"),
+    r"^get_.*_ohlc":          ("OHLCData",         "Fetch OHLC data"),
+    r"^get_.*_market":        ("MarketData",       "Fetch market data"),
+    r"^get_.*_active":        ("ActiveData",       "Fetch active securities data"),
+    r"^get_.*_circuit":       ("CircuitData",      "Fetch circuit breaker data"),
+    r"^get_.*_corp":          ("CorporateData",    "Fetch corporate action data"),
+    r"^get_":                 ("NSEData",           "Fetch NSE data"),
+    r"^equity_":              ("EquityMeta",        "Fetch equity metadata"),
+    r"^index_":               ("IndexMeta",         "Fetch index metadata"),
+    r"^live_":                ("LiveData",          "Fetch live market data"),
+}
+
+
+def _classify_method(method_name: str) -> tuple[str, str]:
+    """Return (node_type, description) for a nselib method name."""
+    for pattern, (nt, desc) in _METHOD_CATEGORIES.items():
+        if re.match(pattern, method_name):
+            return nt, desc
+    return "NSEData", f"Fetch data via NSE.{method_name}()"
+
+
+def _get_method_signature(method_name: str) -> dict:
+    """Return parameter info for a nselib method."""
+    try:
+        import inspect, sys as _sys
+        _nselib_path = str(REPO / "vendor" / "nselib")
+        if _nselib_path not in _sys.path:
+            _sys.path.insert(0, _nselib_path)
+        from nselib import NSE
+        method = getattr(NSE, method_name, None)
+        if method is None:
+            return {"params": [], "doc": ""}
+        sig = inspect.signature(method)
+        params = [
+            {"name": k, "default": str(v.default) if v.default is not inspect.Parameter.empty else None}
+            for k, v in sig.parameters.items()
+            if k not in ("self",)
+        ]
+        doc = (inspect.getdoc(method) or "").strip()[:300]
+        return {"params": params, "doc": doc}
+    except Exception:
+        return {"params": [], "doc": ""}
+
+
+# ── Code generation ───────────────────────────────────────────────────────────
+
+_TOOL_TEMPLATE = '''\
+"""
+Auto-generated ingestion tool for NSE.{method_name}().
+Generated by ToolSynthesizer on {ts}.
+Node type: {node_type}
+NSE method: {method_name}
+"""
+import json
+from datetime import datetime
+from pathlib import Path
+import sys
+
+REPO = Path(__file__).parent.parent
+sys.path.insert(0, str(REPO))
+
+
+def run(ticker: str = None, **kwargs) -> dict:
+    """
+    Ingest data from NSE.{method_name}() for the given ticker (if applicable).
+    Writes {node_type} nodes to graph.db.
+    Returns dict with status, count, errors.
+    """
+    from memory.graph_store import get_store
+    gs = get_store()
+
+    try:
+        from vendor.nselib.nselib import NSE
+        nse = NSE()
+        # Call the method — adapt args based on ticker requirement
+        if ticker:
+            try:
+                data = nse.{method_name}(ticker, **kwargs)
+            except TypeError:
+                data = nse.{method_name}(**kwargs)
+        else:
+            data = nse.{method_name}(**kwargs)
+    except Exception as e:
+        return {{"status": "error", "error": str(e), "count": 0}}
+
+    if data is None:
+        return {{"status": "no_data", "count": 0}}
+
+    # Normalise: data may be a list, dict, or DataFrame
+    rows = []
+    if hasattr(data, "to_dict"):
+        rows = data.to_dict(orient="records")
+    elif isinstance(data, list):
+        rows = [r if isinstance(r, dict) else {{"value": r}} for r in data]
+    elif isinstance(data, dict):
+        rows = [data]
+    else:
+        rows = [{{"raw": str(data)}}]
+
+    written = 0
+    for row in rows[:500]:  # cap at 500 nodes per call
+        t = row.get("symbol") or row.get("ticker") or ticker
+        if not t:
+            continue
+        try:
+            gs.upsert_node(
+                node_type="{node_type}",
+                name=f"{method_name}_{{t}}_{{datetime.now().date()}}",
+                ticker=t.upper(),
+                properties=row,
+            )
+            written += 1
+        except Exception:
+            pass
+
+    return {{"status": "ok", "count": written, "source": "NSE.{method_name}"}}
+
+
+if __name__ == "__main__":
+    import argparse
+    p = argparse.ArgumentParser(description="Ingest {method_name}")
+    p.add_argument("--ticker", help="Ticker symbol (optional)")
+    args = p.parse_args()
+    result = run(ticker=args.ticker)
+    print(json.dumps(result, indent=2, default=str))
+'''
+
+
+def synthesize_tool(method_name: str) -> dict:
+    """
+    Generate and save a new ingestion tool for the given nselib method.
+    Returns {name, file_path, node_type, status}.
+    """
+    node_type, description = _classify_method(method_name)
+    sig = _get_method_signature(method_name)
+
+    tool_name = f"ingest_{method_name}"
+    file_name = f"{tool_name}.py"
+    file_path = GEN_DIR / file_name
+
+    code = _TOOL_TEMPLATE.format(
+        method_name=method_name,
+        node_type=node_type,
+        ts=datetime.now().isoformat(),
+    )
+
+    file_path.write_text(textwrap.dedent(code))
+
+    # Register in DB
+    with _conn() as c:
+        c.execute(
+            """INSERT OR REPLACE INTO generated_tools
+               (name, file_path, description, nselib_method, node_type, status)
+               VALUES (?,?,?,?,?,?)""",
+            (tool_name, str(file_path.relative_to(REPO)),
+             f"{description} via NSE.{method_name}()",
+             method_name, node_type, "active"),
+        )
+
+    return {
+        "name":       tool_name,
+        "file_path":  str(file_path),
+        "node_type":  node_type,
+        "sig_params": [p["name"] for p in sig["params"]],
+        "status":     "created",
+    }
+
+
+def get_unused_nselib_methods() -> list[str]:
+    """Return nselib methods not yet referenced in tools/, agents/, jobs/, generated_tools/."""
+    from memory.meta_cognition import _find_unused_nselib
+    return _find_unused_nselib()
+
+
+def run_synthesis_cycle(max_tools: int = 10, verbose: bool = False) -> list[dict]:
+    """
+    Auto-generate tools for the top N unused nselib methods.
+    Skips methods that already have a generated tool.
+    Returns list of creation results.
+    """
+    # What's already been synthesised?
+    with _conn() as c:
+        done = {r[0] for r in c.execute("SELECT nselib_method FROM generated_tools").fetchall()}
+
+    unused = get_unused_nselib_methods()
+    to_do  = [m for m in unused if m not in done][:max_tools]
+
+    results = []
+    for method in to_do:
+        try:
+            r = synthesize_tool(method)
+            results.append(r)
+            if verbose:
+                print(f"  [synth] created {r['name']} → {r['node_type']}")
+        except Exception as exc:
+            results.append({"method": method, "status": "error", "error": str(exc)})
+
+    return results
+
+
+def list_generated_tools() -> list[dict]:
+    """Return all registered generated tools."""
+    with _conn() as c:
+        rows = c.execute(
+            "SELECT name, nselib_method, node_type, status, created_at, run_count FROM generated_tools"
+        ).fetchall()
+    return [dict(r) for r in rows]
+
+
+# ── CLI ───────────────────────────────────────────────────────────────────────
+
+if __name__ == "__main__":
+    import argparse, sys
+    sys.path.insert(0, str(REPO))
+    p = argparse.ArgumentParser(description="Tool synthesizer — recursive self-improvement")
+    p.add_argument("--list-unused",  action="store_true", help="List unused nselib methods")
+    p.add_argument("--synthesize",   type=int, metavar="N", help="Synthesize N new tools")
+    p.add_argument("--list-tools",   action="store_true", help="List generated tools")
+    args = p.parse_args()
+
+    if args.list_unused:
+        for m in get_unused_nselib_methods()[:30]:
+            print(f"  {m}")
+    elif args.synthesize:
+        results = run_synthesis_cycle(max_tools=args.synthesize, verbose=True)
+        print(f"\nSynthesized {len([r for r in results if r.get('status')=='created'])} tools")
+    elif args.list_tools:
+        for t in list_generated_tools():
+            print(f"  {t['name']:40s} {t['node_type']:25s} {t['status']}")
+    else:
+        p.print_help()

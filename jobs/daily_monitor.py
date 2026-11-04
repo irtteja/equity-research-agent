@@ -375,6 +375,32 @@ def run():
         results["corp_events"] = {"error": str(e)}
         log_checkpoint(task_id, status="in_progress", progress=f"step 5f skipped: {e}")
 
+    # 5g. Analysis + synthesis swarms (context enrichment, trend, analyst)
+    print("\n[5g] Running analysis + synthesis swarms...")
+    try:
+        from jobs.orchestrator import run_analysis_phase, run_synthesis_phase
+        analysis_r  = run_analysis_phase(workers=4, verbose=True)
+        synthesis_r = run_synthesis_phase(verbose=True)
+        results["swarm_analysis"]  = analysis_r
+        results["swarm_synthesis"] = synthesis_r
+        log_checkpoint(task_id, status="in_progress", progress=f"step 5g: analysis+synthesis done")
+    except Exception as e:
+        print(f"  ERROR: {e}")
+        results["swarm_analysis"] = {"error": str(e)}
+        log_checkpoint(task_id, status="in_progress", progress=f"step 5g skipped: {e}")
+
+    # 5h. Meta-cognitive cycle (coverage rebuild + gap detection + tool synthesis)
+    print("\n[5h] Meta-cognitive cycle (coverage + gap detection + self-improvement)...")
+    try:
+        from jobs.orchestrator import run_meta_phase
+        meta_r = run_meta_phase(synthesize_tools=5, verbose=True)
+        results["meta_cognition"] = meta_r
+        log_checkpoint(task_id, status="in_progress", progress=f"step 5h: meta done — enqueued={meta_r.get('meta_cognition',{}).get('enqueued',0)}")
+    except Exception as e:
+        print(f"  ERROR: {e}")
+        results["meta_cognition"] = {"error": str(e)}
+        log_checkpoint(task_id, status="in_progress", progress=f"step 5h skipped: {e}")
+
     # Save output
     out_dir = os.path.join(REPO_DIR, "reports", "daily")
     os.makedirs(out_dir, exist_ok=True)
