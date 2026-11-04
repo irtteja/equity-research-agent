@@ -125,6 +125,36 @@ def run_analysis_phase(workers: int = 4, verbose: bool = True) -> dict:
             results[queue_name] = {"error": str(e)}
             _log("analysis", f"{queue_name} FAILED: {e}")
 
+    # Technical analysis (RSI, EMA, MACD, 52W position)
+    try:
+        _log("analysis", "technical_agent (signal tickers)...")
+        t1 = time.time()
+        from agents.technical_agent import TechnicalAgent
+        ta = TechnicalAgent()
+        r = ta.run_all(limit=200)
+        _record_perf("technical_agent_v1", r.get("ok", 0), r.get("error", 0), time.time()-t1, "analysis")
+        results["technical"] = r
+        if verbose:
+            _log("analysis", f"technical: {r.get('ok')} ok, signals={r.get('signals')}")
+    except Exception as e:
+        results["technical"] = {"error": str(e)}
+        _log("analysis", f"technical_agent FAILED: {e}")
+
+    # Valuation scoring (P/E, growth, margins)
+    try:
+        _log("analysis", "valuation_agent (signal tickers)...")
+        t1 = time.time()
+        from agents.valuation_agent import ValuationAgent
+        va = ValuationAgent()
+        r = va.run_all(limit=200)
+        _record_perf("valuation_agent_v1", r.get("ok", 0), r.get("error", 0), time.time()-t1, "analysis")
+        results["valuation"] = r
+        if verbose:
+            _log("analysis", f"valuation: {r.get('ok')} ok, verdicts={r.get('verdicts')}")
+    except Exception as e:
+        results["valuation"] = {"error": str(e)}
+        _log("analysis", f"valuation_agent FAILED: {e}")
+
     results["duration_s"] = round(time.time() - t0, 1)
     return results
 
