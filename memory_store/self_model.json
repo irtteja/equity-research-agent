@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 55,
+  "version": 56,
   "patterns": {
     "confirmed": [
       {
@@ -410,6 +410,30 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "ConcallInsight uses specific_numbers, risks_flagged, positive_signals field names",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "conviction_history uses record_date column (not date)",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "TechnicalSignal reliably stores high52w/low52w as fallback for PriceSnapshot",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "BearCase bear_arguments are dicts with reason/severity/data_point/weight fields",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -613,6 +637,12 @@
       },
       {
         "pattern": "banking sector ValuationScore always pe=None — may need bank-specific scorer",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "ConcallInsight phone-number contamination in specific_numbers — may need post-filter",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -852,6 +882,18 @@
       },
       {
         "signal": "industry-level peer grouping from company_meta.json gives 3-10 peers for most tickers",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "Deep-dive report format synthesizes investment thesis from 5 signal layers",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "HTML report with prefers-color-scheme dark/light theme works with inline CSS only",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "Importing helpers from generate_report.py into generate_report_html.py avoids duplication",
         "added": "2026-11-04"
       }
     ],
@@ -1111,6 +1153,14 @@
       {
         "gap": "MetricValue nodes mostly only have revenue metric — multi-metric business quality needs richer data",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "PeerComparison and BusinessQuality nodes not yet built — report shows proxies",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "Conviction trend always STABLE (only 1 record per ticker so far — will improve as daily runs accumulate)",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -1199,10 +1249,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-11-01",
-      "note": "E2E test run"
-    },
     {
       "date": "2026-11-01",
       "note": "self_improve scan: 2 high-priority gaps"
@@ -1318,6 +1364,10 @@
     {
       "date": "2026-11-04",
       "note": "peer comparison + business quality scorer built; 101 + 159 nodes written; orchestrator Phase 2 wired"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "session 30: deep-dive report generator — 11-section markdown + HTML, investment thesis synthesis, conviction trend, 52W fallback fix"
     }
   ]
 }

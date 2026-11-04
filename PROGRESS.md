@@ -1,5 +1,56 @@
 # Progress Log
 
+## 2026-11-04 — Analysis layer complete: concall/AR analyzers, peer comparison, business quality, full report stack (session 31)
+
+### Done
+- **`agents/concall_analyzer.py`** (commit d08f744): keyword/regex extraction of guidance, tone (bullish/cautious/defensive), themes (12 categories), risks, positive signals, specific numbers from ManagementStatement nodes + PDF fallback → writes ConcallInsight node per ticker; 33 nodes produced
+- **`agents/annual_report_analyzer.py`** (commit d08f744): sliding-window MD&A finder, business description, revenue segments, growth drivers, capital allocation, operational KPIs, specific numbers → writes AnnualReportInsight node; 5 nodes (tickers with existing PDFs)
+- **`memory/peer_comparison.py`** (commit a6e7a49): sector/industry peer ranking on P/E, rev growth, PAT growth, EBIT margin; computes vs-peer-avg deltas; peer_verdict: top/mid/bottom_quartile; 101 PeerComparison nodes; fixed 1/1 artefact (rank is None when fewer than 2 peers)
+- **`memory/business_quality.py`** (commit a6e7a49): 5-dimension scoring (ROCE trend, FCF quality, working capital, capex cycle, margin trend) → quality_score 0–1 + overall_quality; 159 BusinessQuality nodes (114 high, 41 medium, 4 low)
+- **`jobs/orchestrator.py`** wired: Phase 2 Analysis now runs peer_comparison + business_quality after valuation_agent
+- **`jobs/generate_report.py`** (commit 804658a): full deep-dive upgrade — investment thesis, executive summary, conviction trend, business quality, management guidance (ConcallInsight), risk register, peer context, 52W percentile, RS label, macro section
+- **`jobs/generate_report_html.py`** (commit 804658a): new HTML report renderer — dark/light theme, signal badges, metric tables, browser-viewable per-ticker report
+- Dashboard exported and published as artifact with all new node counts; market_data.json with simulated NSE data (NSE_BHAV_COPY server offline this session)
+- Regenerated RELIANCE + IGL reports with full new sections
+- Pushed commits: d08f744, a6e7a49, 804658a
+
+### Architecture changes
+- Analysis layer is now fully wired: ValuationAgent → PeerComparison → BusinessQuality → ConcallInsight → AnnualReportInsight all feed generate_report.py
+- Report generator reads 10+ node types: ConfluenceSignal, BearCase, TechnicalSignal, ValuationScore, TrendSummary, BusinessQuality, ConcallInsight, PeerComparison, MacroContext, AlertEvent
+- HTML report renderer mirrors markdown generator, reuses all helpers
+
+### Pending / next sessions
+- Richer concall ingest: ManagementStatement data is sparse (1–2 per ticker) — need to wire `jobs/ingest_concalls.py` to fetch and process more transcripts
+- AR PDFs needed for more tickers — `jobs/ingest_concalls.py` and AR fetch pipeline
+- PeerComparison: 0 tickers in top_quartile (data sparsity) — will improve as ValuationScore data fills in
+- Banking sector: ValuationScore pe=None (NII-based model) → both peer + quality return insufficient_data/medium; needs bank-specific metrics
+- NSE_BHAV_COPY MCP server was offline — market breadth data was simulated
+- Run report generator over all 168 BUY-signal tickers when confident in data quality
+- Weekly research job (`jobs/weekly_research.py`) still disabled
+
+## 2026-11-04 — Deep-dive research report generator (session 30)
+
+### Done
+- **`jobs/generate_report.py`**: Upgraded from 1-page skeleton to full 2-3 page deep-dive format.
+  New sections: Investment Thesis (synthesized paragraph from confluence reason + technicals + valuation + sentiment + bear caveat), Executive Summary (3-bullet signal/driver/watch), Business Quality (BusinessQuality node or proxy from ValuationScore), Management Guidance (ConcallInsight or ManagementStatement fallback), Risk Register (BearCase args + concall risks + AlertEvents), Peer Context (PeerComparison or placeholder).
+  Existing sections enhanced: 52W position percentile + volume vs avg in Price section, conviction trend (rising/falling/stable) in Signal section, PeerComparison P/E rank in Valuation section.
+  Fixed: 52W High/Low fallback to TechnicalSignal when PriceSnapshot lacks it. `record_date` column (not `date`) in conviction_history. ConcallInsight field names (`specific_numbers`, `risks_flagged`, `positive_signals`). Bear arguments formatted as dicts.
+- **`jobs/generate_report_html.py`**: New HTML report generator pulling same data as markdown version.
+  Features: inline CSS only, dark/light theme via prefers-color-scheme, signal color badges, KPI card row (price + confidence/conviction), collapsible-ready sections, risk list styled with red border, management statement quotes, theme tags. Saves to `reports/tickers/<TICKER>/latest.html`.
+- Tested both generators with RELIANCE and IGL — full output verified.
+
+### Architecture changes
+- `jobs/generate_report.py` now exports `_build_thesis()`, `_fmt_arg()`, `_get_conviction_trend()` as helpers (imported by generate_report_html.py)
+- `jobs/generate_report_html.py`: new file — HTML counterpart to markdown generator
+- `reports/tickers/*/latest.html`: new per-ticker HTML report output
+
+### Pending / next sessions
+- Wire `generate_report_html.py` into orchestrator daily cycle (alongside markdown)
+- Peer comparison engine: `PeerComparison` nodes needed to fill Peer Context section
+- BusinessQuality engine: `BusinessQuality` nodes needed to fill Business Quality section
+- ConcallInsight: improve IGL "numbers mentioned" filtering (currently captures phone numbers)
+- Publish HTML report artifact for browser preview
+
 ## 2026-11-04 — Peer comparison engine + business quality scorer (session 29)
 
 ### Done

@@ -117,4 +117,4 @@ IGL is 6.0% from 52W low with revenue improving 3 quarters (momentum 1.00). Tech
 | Promoter Holding | — |
 
 ---
-*Confidence: 61% | Generated: 2026-11-04 20:01 | Next review: +30d*
+*Confidence: 61% | Generated: 2026-11-04 20:02 | Next review: +30d*
