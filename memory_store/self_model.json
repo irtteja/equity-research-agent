@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 48,
+  "version": 49,
   "patterns": {
     "confirmed": [
       {
@@ -332,6 +332,18 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "belief states visible in dashboard",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "bayesian learning runs correctly on historical data",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -487,6 +499,12 @@
       },
       {
         "pattern": "Duplicate pruning aggressively merged 42K nodes on first run — monitor for over-pruning",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "ConfluenceSignal will reach confirmed state after multiple daily cycles",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -678,6 +696,10 @@
       },
       {
         "signal": "monkey-patching GraphStore via _belief_patched flag guards against double-patching",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "learn_from_new_nodes with hours_back=9999 seeds belief state from historical multi-type overlap",
         "added": "2026-11-04"
       }
     ],
@@ -885,6 +907,14 @@
       {
         "gap": "No integration test for contradict/corroborate chain yet — belief_log has only 2 rows",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "no contradictions detected yet (need more daily cycles)",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "ConfluenceSignal avg confidence only 0.60",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -928,10 +958,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-30",
-      "note": "self_improve scan: resolved: bse_integration, document_swarm, scheduled_tasks; 2 high-priority gaps"
-    },
     {
       "date": "2026-10-30",
       "note": "upgraded self_improve scan to data-driven with persistence tracking; resolved 3 prior gaps"
@@ -1047,6 +1073,10 @@
     {
       "date": "2026-11-04",
       "note": "Completed living knowledge graph: Bayesian belief engine + 6-op dynamics cycle (learn/relearn/unlearn/prune/compress/form_edges) wired into orchestrator meta-phase"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "wired living graph belief states into dashboard Graph tab; 870 revisions seeded; 318 confirmed nodes"
     }
   ]
 }

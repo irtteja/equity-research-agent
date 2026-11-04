@@ -1,5 +1,38 @@
 # Progress Log
 
+## 2026-11-04 — Dashboard Belief Health Panel (session 22)
+
+### Done
+- **Belief learning cycle**: ran `learn_from_new_nodes(hours_back=9999)` on all 159 ConfluenceSignal
+  tickers → 870 belief revisions. Graph now has 318 confirmed nodes (7.3%) and 4,027 forming (92.7%).
+  `belief_log` has 362 entries. PriceSnapshot/MetricValue for signal tickers reached confirmed state
+  (conf=0.80, threshold=0.65). ConfluenceSignals averaging 0.60 confidence (all forming).
+- **Dashboard v4** (artifact `JGgysb6frykyg2dCyzEC2z`, scratchpad `dashboard.html`): Graph tab
+  completely rebuilt with living graph belief health panel:
+  - 4-KPI header: 4,345 nodes / 108,085 edges / 318 confirmed beliefs / 362 revisions
+  - Belief state distribution bars (confirmed/forming/contested/retracted)
+  - Avg confidence by node type with animated fill bars and confirmed/total counts
+  - Recent belief revisions log (↑/↓, Δconf, reason)
+  - Top 10 confident ConfluenceSignals
+  - Existing Node Types donut + coverage table kept
+- Updated NODE_TYPES constants to reflect post-pruning counts (4,345 nodes, not 46,457).
+
+### Architecture notes
+- Belief states evolve automatically as the swarm runs: each dynamics cycle learns new nodes,
+  relearns contradictions, decays stale beliefs toward 0.5, prunes dead nodes.
+- 318 confirmed nodes = PriceSnapshots and MetricValues for all 159 signal tickers (both got
+  confirmed because signal tickers have price + metric data = multi_type_support corroboration).
+- ConfluenceSignals remain "forming" until the belief engine sees enough cross-corroboration
+  over multiple cycles (expected to evolve to confirmed/contested as daily runs accumulate).
+
+### Next sessions
+- **Belief evolution tracking**: add time-series of belief state counts (confirmed grows over time)
+- **Alert agent**: trigger re-ingestion when ConfluenceSignal drops to contested
+- **Screener expansion**: 20 analyst tickers → full 159 signal tickers from ConfluenceSignal nodes
+- **FII/DII population**: flows.jsonl needs populating via daily runs
+
+---
+
 ## 2026-11-04 — Living Knowledge Graph + Bayesian Belief Revision (session 21)
 
 ### Done

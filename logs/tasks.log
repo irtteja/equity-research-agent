@@ -734,3 +734,11 @@ Progress: 00:11 IST Nov 5 — resolved unrelated-history divergence with session
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-04 18:57
+Task: session-22-belief-dashboard
+Status: completed
+Progress: Ran belief learning on 159 signal tickers (870 revisions). Updated dashboard Graph tab with living graph belief health panel. Belief states: 318 confirmed / 4027 forming.
+Next: Daily orchestrator trigger will continue belief evolution as new data arrives.
+Blockers: none
+============================================================
