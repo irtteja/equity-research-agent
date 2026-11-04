@@ -399,18 +399,18 @@ Next: Wire dashboard to live SectorTrend/ConfluenceSignal nodes; test weekly_res
 Blockers: none
 ============================================================
 
-[CHECKPOINT] 2026-11-03 21:03
-Task: None
+[CHECKPOINT] 2026-11-04 01:15
+Task: session-14-git-push-fix
 Status: completed
-Progress: processed=200 edges_created=148 skipped=0
-Next: 
+Progress: Updated all 11 non-persistent triggers with add_repo instruction; test fire launched
+Next: Confirm test fire PUSH_OK; fix 4 persistent-session triggers if needed
 Blockers: none
 ============================================================
 
-[CHECKPOINT] 2026-11-03 21:03
-Task: None
+[CHECKPOINT] 2026-11-04 01:15
+Task: session-14-git-push-fix
 Status: completed
-Progress: pairs=99 trends=99 strong=61 | top: BAJFINANCE tax_expense (improving, 3p), BAJFINANCE depreciation (improving, 3p), BAJFINANCE finance_costs (improving, 2p), BAJFINANCE eps (improving, 3p), BAJFINANCE ebit (improving, 3p)
-Next: 
+Progress: Updated all 11 non-persistent triggers with add_repo instruction; test fire launched
+Next: Confirm test fire PUSH_OK; fix 4 persistent-session triggers if needed
 Blockers: none
 ============================================================

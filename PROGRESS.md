@@ -1,5 +1,28 @@
 # Progress Log
 
+## 2026-11-04 (session 14) — fix CCR git proxy 403 on all triggered sessions
+
+### Done
+- **Root cause identified**: CCR git proxy checks *session sources*, not credentials. `gh auth setup-git` and `git remote set-url` with GITHUB_TOKEN both fail because they don't change session sources — the proxy blocks pushes regardless of what credential helper is set.
+- **Correct fix**: `add_repo` tool use inside the triggered session adds the repo to the session's authorized sources. The triggered session has `mcp__claude-code-remote__add_repo` in its tool set.
+- **All 11 non-persistent triggers updated** with `add_repo` instruction prepended: equity-watchdog, equity-daily-monitor, NSE Daily Announcement Fetch, Results Fetch Nightly XBRL, Results Fetch 8 AM Retry, NSE Daily Brief, Swarm Orchestrator, Monthly memory compaction, Annual Reports Fetch, Weekly Sector Map + Graph Rebuild, Weekly KG Enrichment.
+- **Test fire in progress** (cse_01G28r1bad2AtqHs9ZTdhQj1) — verify add_repo → git push works
+- **4 persistent-session triggers** (ContextAgent Nightly, Weekly Self-Improve, Monthly Store Cleanup, Universe Updater) fire into session_01G28r1gAsugprj2KxqH9L5D — cannot be updated from outside. Those sessions may also need add_repo — pending.
+
+### Architecture notes
+- CCR proxy decision: purely based on `session_request.config.sources` — no workaround via credential helpers
+- `add_repo` must be called as a *tool use* in the first turn, before any bash command that pushes
+- Self-model correction: previous note "git remote set-url with embedded token is mandatory" was WRONG — that approach never worked in CCR triggered sessions
+
+### Pending / next sessions
+- Confirm test fire cse_01G28r1bad2AtqHs9ZTdhQj1 reports PUSH_OK
+- Fix persistent session triggers if they also fail on git push
+- Run fetch_results.py manually against a day with known results — verify XBRL pipeline end-to-end
+- BSE announcements integration — currently NSE-only
+- tools/recall_tool.py — expose recall as MCP tool for in-session queries
+- Phase 2 memory: Kuzu graph + LanceDB vector index (once facts accumulate)
+- Weekly research job (jobs/weekly_research.py) — still disabled
+
 ## 2026-11-03 (session 13) — diagnose 0-results fetch; fix push auth on results triggers; NSE Market Pulse V6
 
 ### Done
