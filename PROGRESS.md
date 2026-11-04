@@ -1,5 +1,42 @@
 # Progress Log
 
+## 2026-11-04 — GraphStore fix, full analysis pipeline populated (session 26)
+
+### Done
+- **`memory/graph_store.py`**: added `upsert_node(node_type, name, ticker, properties)` helper
+  that auto-generates node_id from MD5 hash of `node_type:name`. Fixes all agents that call
+  `upsert_node` without an explicit ID (news, risk, devil's advocate, alert, technical, valuation).
+- **`memory/technical_engine.py`** + **`memory/valuation_engine.py`**: fixed `upsert_node` call
+  (was calling non-existent method; now uses new helper).
+- **`agents/news_agent.py`**: fixed text extraction — now reads `statement` field from
+  ManagementStatement nodes (previously only looked for `headline`/`description` etc).
+  Result: 46/159 tickers now have actual sentiment data (from ManagementStatements).
+- Populated all analysis node types across 159 tickers:
+  - **TechnicalSignal**: 148 nodes (RSI/EMA/MACD/52W; 11 skipped — insufficient price history)
+  - **ValuationScore**: 159 nodes (P/E, PAT growth, EBIT margin, FCF proxy, verdict)
+  - **SentimentScore**: 159 nodes (46 with real data, 113 neutral/no_data)
+  - **RiskReport**: 1 node (portfolio-level; overall_risk=low, 0 flags)
+  - **AlertEvent**: 158 nodes (all info severity — no critical/warning signals yet)
+- **`jobs/generate_report.py`**: 1-page per-ticker markdown research reports pulling all layers
+  (price, trend, technicals, valuation, fundamentals, management statements, bear case, macro).
+- **`reports/tickers/RELIANCE/`**: sample report output committed.
+- Devils advocate: 20 BUY signals tested — 16 held, 4 downgraded to HOLD/WAIT.
+
+### Architecture changes
+- `GraphStore.upsert_node()` added — all agent node writes now work without explicit IDs
+- Full analysis pipeline now operational: TechnicalSignal + ValuationScore + SentimentScore
+  + RiskReport + AlertEvent all populated and refreshable on each orchestrator cycle
+- Node count: 5,864 total (up from ~4,345 before analysis layer was fixed)
+
+### Pending / next sessions
+- Backtesting engine: reads prediction_log, compares predicted vs actual price moves 30/60/90d
+- Dashboard live-wiring: export_dashboard_data.py reading from graph.db (fork a346cbad)
+- Concall transcript extraction: wire document_agent to NSE announcement PDFs
+- CCR trigger for run_macro_news.py (daily after-market close)
+- QA agent: natural language queries against knowledge graph
+- Peer comparison engine: HDFC Bank vs sector peers
+- Vector embeddings: semantic search over 706 ManagementStatement nodes
+
 ## 2026-11-04 — Global Macro, News Sentiment, Conviction Tracker (session 25)
 
 ### Done

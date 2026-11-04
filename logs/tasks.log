@@ -766,3 +766,11 @@ Progress: risk_agent, alert_agent, devil_advocate, prediction_log, register_agen
 Next: end-to-end daily_monitor test; wait for 3 background fork agents to complete
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-04 19:34
+Task: session_26
+Status: completed
+Progress: GraphStore upsert_node fix; all analysis nodes populated: TechnicalSignal(148), ValuationScore(159), SentimentScore(159), RiskReport(1), AlertEvent(158)
+Next: Backtest engine, dashboard live-wiring, concall ingestion, QA agent
+Blockers: None
+============================================================

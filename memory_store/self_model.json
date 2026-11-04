@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 52,
+  "version": 53,
   "patterns": {
     "confirmed": [
       {
@@ -392,6 +392,24 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "GraphStore.add_node requires explicit node_id; upsert_node helper needed for auto-ID",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "ManagementStatement nodes store text in statement field not headline/description",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "upsert_node(node_type, name, ticker, properties) is the standard write API for all agents",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -583,6 +601,12 @@
       },
       {
         "pattern": "technical_score defaulting to 0.5 until technical_engine agents complete their work",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "SentimentScore coverage is thin (46/159) — may improve as more concall data is ingested",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -806,6 +830,22 @@
       },
       {
         "signal": "AST syntax check for generated_tools is fast and reliable quality gate",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "TechnicalSignal: 148/159 tickers — robust RSI/EMA/MACD from 249 bhavcopy CSVs",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "ValuationScore: 159/159 tickers — all from results JSONL files",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "Devil's advocate running: 16/20 BUY signals held after bear case analysis",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "AlertEvent: 158 info-level alerts generated from belief_log",
         "added": "2026-11-04"
       }
     ],
@@ -1049,6 +1089,14 @@
       {
         "gap": "conviction_score variance narrow until technical_engine provides real scores",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "No concall transcripts ingested yet — ManagementStatement coverage sparse for many tickers",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "SentimentScore meaningful for only 46/159 tickers",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -1092,10 +1140,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-31",
-      "note": "built knowledge graph layer (graph_store + episode_bridge + ContextAgent); wired into ingestion, results_store, self_improve; all facts/XBRL/gaps now auto-write to graph; ripple architecture active"
-    },
     {
       "date": "2026-10-31",
       "note": "closed recursive self-improvement loop for agents: backfill graph, TrendAgent, _signal_agent_quality; 5 core scheduled tasks re-enabled; pipeline verified end-to-end on real CDSL/BIRLACORPN data"
@@ -1211,6 +1255,10 @@
     {
       "date": "2026-11-04",
       "note": "session 25: global_macro + news_agent + conviction_tracker complete; parallel forks had already committed everything before context resumed"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "Fixed upsert_node in GraphStore; populated all 5 analysis node types across 159 tickers"
     }
   ]
 }
