@@ -1,5 +1,32 @@
 # Progress Log
 
+## 2026-11-04 (session 17 cont.) — All-indices price fetch; daily monitor results
+
+### Done
+- **Daily monitor ran** (equity-daily-monitor trigger, 10:33 IST with old code, then re-run):
+  - Macro snapshot: 596 calendar events saved (579 results events), INDIA VIX 15.89
+  - FII net +₹6,836 Cr (03-Nov data)
+- **Price agent — expanded to full universe**: 753 PriceSnapshot nodes written (501 Nifty500 + 251 Microcap250 + 1 Smallcap250 + fallback), 0 value signals. Up from 495 (old code).
+- **Bhavcopy**: returned `too_early` correctly — NSE data not yet published before 16:30 IST. Needs rerun after market close.
+- **Indices bhavcopy**: `ind_close_all_04112026.csv` not yet on NSE. Needs rerun after close.
+- **Graph rebuild**: `graph.db` was empty in new container; rebuilt from `memory_store/results/*.jsonl` → 867 companies, 29,192 metric values.
+- **Price agent fix — all 127 NSE equity indices**: replaced 3-index hardcoded list with dynamic `list_indices()` call. Loads all 127 mainboard equity indices (excludes fixed income + SME), broad indices sorted first. Falls back to cached `symbol_to_indices.json` on API failure. Committed `df863bd`, `3322eab`.
+- **Bhavcopy too_early fix**: `save_bhavcopy.py` now distinguishes "bhavcopy not published yet" (< 16:30 IST) from genuine market holiday. Committed `224975c`.
+
+### Architecture notes
+- NSE has 127 mainboard equity indices (128 − 1 SME). Our `symbol_to_indices.json` had 87 (abbreviated names); price agent now loads all 127 live.
+- Our 87 cached indices already cover all 751 tracked symbols (0 gaps) — extra 40 are factor/strategy variants with same underlying stocks.
+- Persistent session (`session_01G28r1baFCcEtSCP6jvUn1Y`) has 4 locally unpushed commits; git proxy returned 403 — repo not in that session's authorized sources. Needs `add_repo` re-authorization + rebase.
+
+### Pending / next sessions
+- Persistent session: re-authorize `irtteja/equity-research-agent` push access, rebase local master onto origin, push 4 commits
+- Bhavcopy rerun after 16:30 IST today (equity + indices)
+- Verify full 127-index price fetch on next run (3322eab code not yet run by persistent session)
+- TrendAgent still at 0 runs → 0 TrendSummary nodes → no value signals possible
+- Run `fetch_results.py` manually — verify XBRL pipeline end-to-end
+
+---
+
 ## 2026-11-04 — Daily monitor run (equity-daily-monitor trigger)
 
 ### Done
