@@ -1,6 +1,6 @@
 {
   "date": "2026-11-04",
-  "generated_at": "2026-11-04T05:39:19.989063",
+  "generated_at": "2026-11-04T11:09:27.426934",
   "stats": {
     "prices_written": 1021,
     "value_signals": 0,
@@ -9,146 +9,166 @@
   "value_signals": [],
   "movers_up": [
     {
+      "ticker": "HEGAM",
+      "pct": 20.0
+    },
+    {
+      "ticker": "CREATIVEYE",
+      "pct": 16.28
+    },
+    {
+      "ticker": "SAREGAMA",
+      "pct": 14.46
+    },
+    {
       "ticker": "FRACTAL",
-      "pct": 11.46
+      "pct": 13.73
+    },
+    {
+      "ticker": "GAJA",
+      "pct": 12.48
+    },
+    {
+      "ticker": "GERMAN",
+      "pct": 12.17
+    },
+    {
+      "ticker": "ICIL",
+      "pct": 12.03
+    },
+    {
+      "ticker": "AEROFLEX",
+      "pct": 10.9
+    },
+    {
+      "ticker": "ZEEL",
+      "pct": 10.6
     },
     {
       "ticker": "GMDCLTD",
-      "pct": 10.57
+      "pct": 10.08
     },
     {
       "ticker": "EMCURE",
       "pct": 10.0
     },
     {
-      "ticker": "EBGNG",
-      "pct": 9.52
-    },
-    {
-      "ticker": "SANDUMA",
-      "pct": 9.18
-    },
-    {
-      "ticker": "RSYSTEMS",
-      "pct": 9.18
-    },
-    {
-      "ticker": "GAJA",
-      "pct": 8.63
-    },
-    {
-      "ticker": "TECHNOCRAF",
-      "pct": 8.51
-    },
-    {
-      "ticker": "HEGAM",
-      "pct": 7.9
+      "ticker": "UNIMECH",
+      "pct": 10.0
     },
     {
       "ticker": "DHOOTTRANS",
-      "pct": 7.86
-    },
-    {
-      "ticker": "EQUITASBNK",
-      "pct": 7.5
-    },
-    {
-      "ticker": "SKYWAYS",
-      "pct": 7.04
+      "pct": 10.0
     },
     {
       "ticker": "LINDEINDIA",
-      "pct": 6.08
+      "pct": 9.91
     },
     {
-      "ticker": "BHEL",
-      "pct": 5.96
+      "ticker": "VARMORA",
+      "pct": 9.48
     },
     {
-      "ticker": "UNOMINDA",
-      "pct": 5.75
-    },
-    {
-      "ticker": "ACE",
-      "pct": 5.74
+      "ticker": "REDINGTON",
+      "pct": 9.47
     },
     {
       "ticker": "NLCINDIA",
-      "pct": 5.72
+      "pct": 8.97
     },
     {
-      "ticker": "FACT",
-      "pct": 5.59
+      "ticker": "RENTOMOJO",
+      "pct": 8.86
     },
     {
-      "ticker": "TEGA",
-      "pct": 5.48
+      "ticker": "SANDUMA",
+      "pct": 8.76
     },
     {
-      "ticker": "CORONA",
-      "pct": 5.35
+      "ticker": "APOLLO",
+      "pct": 8.55
     }
   ],
   "movers_down": [
     {
-      "ticker": "IONEXCHANG",
-      "pct": -10.57
+      "ticker": "V2RETAIL",
+      "pct": -10.1
     },
     {
-      "ticker": "INDIAGLYCO",
-      "pct": -5.79
+      "ticker": "IONEXCHANG",
+      "pct": -8.15
+    },
+    {
+      "ticker": "THANGAMAYL",
+      "pct": -6.41
+    },
+    {
+      "ticker": "TBOTEK",
+      "pct": -5.23
+    },
+    {
+      "ticker": "AIAENG",
+      "pct": -5.15
     },
     {
       "ticker": "MCX",
-      "pct": -5.16
+      "pct": -5.02
+    },
+    {
+      "ticker": "LOTUSDEV",
+      "pct": -5.0
     },
     {
       "ticker": "RAMBHAJO",
       "pct": -4.99
     },
     {
-      "ticker": "KRN",
-      "pct": -4.11
+      "ticker": "NEXTMEDIA",
+      "pct": -4.78
     },
     {
-      "ticker": "EMBDL",
-      "pct": -4.06
+      "ticker": "GRADIENTE",
+      "pct": -4.76
     },
     {
-      "ticker": "AIAENG",
-      "pct": -4.03
+      "ticker": "MMWL",
+      "pct": -4.64
     },
     {
-      "ticker": "JSLL",
-      "pct": -3.96
-    },
-    {
-      "ticker": "SEDEMAC",
-      "pct": -3.95
-    },
-    {
-      "ticker": "ITI",
-      "pct": -3.63
-    },
-    {
-      "ticker": "KEC",
-      "pct": -3.54
+      "ticker": "MARKSANS",
+      "pct": -4.54
     },
     {
       "ticker": "MTARTECH",
-      "pct": -3.48
+      "pct": -4.49
     },
     {
-      "ticker": "ENIL",
-      "pct": -3.38
+      "ticker": "INDIAGLYCO",
+      "pct": -4.42
     },
     {
-      "ticker": "MPSLTD",
-      "pct": -3.28
+      "ticker": "ZYDUSLIFE",
+      "pct": -4.23
     },
     {
-      "ticker": "GRAPHITE",
-      "pct": -3.19
+      "ticker": "ALKYLAMINE",
+      "pct": -4.15
+    },
+    {
+      "ticker": "ITI",
+      "pct": -3.23
+    },
+    {
+      "ticker": "SEDEMAC",
+      "pct": -3.15
+    },
+    {
+      "ticker": "MIDWESTLTD",
+      "pct": -3.15
+    },
+    {
+      "ticker": "ACUTAAS",
+      "pct": -3.1
     }
   ]
 }

@@ -1,5 +1,19 @@
 # Progress Log
 
+## 2026-11-04 (session 17 cont. #3) — EOD prices + bhavcopy after market close
+
+### Done
+- **equity-daily-monitor trigger** (16:31 IST / 11:01 UTC): daily_monitor.py re-ran (completed_with_errors, pushed 534a54c), price_agent 1,021 PriceSnapshot nodes (0 value signals), equity bhavcopy 748 rows saved.
+- **Indices bhavcopy**: NSE file not available — consistent with market holiday (Nov 4, 2026).
+
+### Pending / next sessions (updated)
+- Run `fetch_results.py` manually — verify XBRL pipeline end-to-end
+- Phase 2 memory: Kuzu graph + LanceDB vector index
+- Weekly research job (`weekly_research.py`) — still disabled
+- 4 stalled agents (context_agent, alert_agent, document_agent, announcement_agent) — investigate
+
+---
+
 ## 2026-11-04 (session 17 cont. #2) — backfill_graph complete; agents/workers audit
 
 ### Done

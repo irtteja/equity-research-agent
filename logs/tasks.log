@@ -654,3 +654,19 @@ Progress: Macro, FII/DII, 0 facts ingested, bhavcopy 0 rows, block/bulk deals
 Next: Review material announcements, update PROGRESS.md
 Blockers: indices_bhavcopy
 ============================================================
+
+[CHECKPOINT] 2026-11-04 11:09
+Task: None
+Status: completed
+Progress: prices=1021 value_signals=0
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-04 11:09
+Task: None
+Status: completed
+Progress: daily_monitor: completed_with_errors; price_agent: 1021 nodes 0 value_signals; bhavcopy: 748 rows; indices_bhavcopy: NSE file not available (holiday)
+Next: none
+Blockers: none
+============================================================
