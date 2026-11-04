@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-04T19:25:52.673729",
+  "generated_at": "2026-11-04T20:01:47.707163",
   "graph": {
-    "nodes": 4345,
+    "nodes": 5447,
     "edges": 108089,
     "episodes": 88572,
     "belief_states": {
       "confirmed": 318,
-      "forming": 4027,
+      "forming": 5129,
       "contested": 0,
       "retracted": 0
     },
@@ -17,12 +17,23 @@
       "Company": 867,
       "TrendSummary": 862,
       "ManagementStatement": 706,
+      "BusinessQuality": 159,
       "ConfluenceSignal": 159,
+      "RelativeStrength": 159,
+      "SentimentScore": 159,
+      "ValuationScore": 159,
+      "AlertEvent": 158,
+      "TechnicalSignal": 148,
+      "PeerComparison": 101,
+      "ConcallInsight": 33,
+      "BearCase": 20,
+      "AnnualReportInsight": 5,
       "BusinessGroup": 1,
       "Gap": 1,
       "Index": 1,
       "Industry": 1,
       "MacroSector": 1,
+      "RiskReport": 1,
       "Sector": 1,
       "SectorTrend": 1
     }

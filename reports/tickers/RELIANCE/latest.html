@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RELIANCE — RELIANCE Research Report</title>
+<style>
+
+:root {
+  --bg:       #ffffff;
+  --bg2:      #f4f6f9;
+  --bg3:      #e8ecf2;
+  --text:     #1a1d23;
+  --text2:    #4a5568;
+  --border:   #d1d9e0;
+  --accent:   #2563eb;
+  --buy:      #16a34a;
+  --avoid:    #dc2626;
+  --hold:     #d97706;
+  --info:     #0369a1;
+  --tag-bg:   #eff6ff;
+  --tag-txt:  #1d4ed8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:      #111827;
+    --bg2:     #1f2937;
+    --bg3:     #374151;
+    --text:    #f9fafb;
+    --text2:   #9ca3af;
+    --border:  #374151;
+    --accent:  #60a5fa;
+    --buy:     #4ade80;
+    --avoid:   #f87171;
+    --hold:    #fbbf24;
+    --info:    #38bdf8;
+    --tag-bg:  #1e3a5f;
+    --tag-txt: #93c5fd;
+  }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.6;
+  padding: 0 16px 48px;
+}
+.page { max-width: 860px; margin: 0 auto; }
+header { padding: 32px 0 24px; border-bottom: 2px solid var(--border); margin-bottom: 28px; }
+header h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.5px; }
+header .meta { color: var(--text2); font-size: 13px; margin-top: 4px; }
+.signal-badge {
+  display: inline-block; padding: 3px 12px; border-radius: 999px;
+  font-weight: 700; font-size: 13px; letter-spacing: 0.5px; margin-left: 10px;
+}
+.signal-BUY   { background: var(--buy);   color: #fff; }
+.signal-AVOID { background: var(--avoid); color: #fff; }
+.signal-HOLD  { background: var(--hold);  color: #fff; }
+.section { margin: 28px 0; }
+.section h2 {
+  font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+  color: var(--text2); border-bottom: 1px solid var(--border); padding-bottom: 6px; margin-bottom: 14px;
+}
+.thesis {
+  background: var(--bg2); border-left: 4px solid var(--accent);
+  padding: 14px 18px; border-radius: 6px; font-size: 15px; line-height: 1.7;
+  color: var(--text);
+}
+.exec-bullets { list-style: none; }
+.exec-bullets li {
+  padding: 8px 14px; border-radius: 6px; margin-bottom: 6px; background: var(--bg2);
+  font-size: 14px;
+}
+.exec-bullets li strong { color: var(--accent); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+th { background: var(--bg2); font-weight: 600; color: var(--text2); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+tr:last-child td { border-bottom: none; }
+.table-wrap { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.metric-row td:first-child { color: var(--text2); font-size: 13px; }
+.metric-row td:last-child  { font-weight: 600; }
+.verdict-cheap    { color: var(--buy); }
+.verdict-fair     { color: var(--hold); }
+.verdict-expensive{ color: var(--avoid); }
+.verdict-BUY      { color: var(--buy); font-weight: 700; }
+.verdict-HOLD     { color: var(--hold); font-weight: 700; }
+.verdict-AVOID    { color: var(--avoid); font-weight: 700; }
+.risk-list { list-style: none; }
+.risk-list li {
+  padding: 10px 14px; border-left: 3px solid var(--avoid);
+  background: var(--bg2); border-radius: 0 6px 6px 0; margin-bottom: 8px;
+  font-size: 14px;
+}
+.alert-list { list-style: none; }
+.alert-list li { padding: 8px 12px; border-radius: 6px; background: var(--bg3); margin-bottom: 6px; font-size: 13px; }
+.alert-critical { border-left: 3px solid var(--avoid); }
+.alert-warning  { border-left: 3px solid var(--hold); }
+.alert-info     { border-left: 3px solid var(--info); }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; background: var(--tag-bg); color: var(--tag-txt); margin-right: 4px; }
+.note { color: var(--text2); font-style: italic; font-size: 13px; padding: 10px 0; }
+.footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--text2); font-size: 12px; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 600px) { .two-col { grid-template-columns: 1fr; } }
+.card { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+.card .kpi-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text2); }
+.card .kpi-value { font-size: 22px; font-weight: 700; margin-top: 2px; }
+.card .kpi-sub   { font-size: 12px; color: var(--text2); margin-top: 2px; }
+.trend-rising  { color: var(--buy); }
+.trend-falling { color: var(--avoid); }
+.trend-stable  { color: var(--text2); }
+
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <h1>RELIANCE — RELIANCE <span class="signal-badge signal-BUY">BUY</span></h1>
+  <div class="meta">Oil Gas &amp; Consumable Fuels · Petroleum Products · 2026-11-04</div>
+</header>
+
+<div class="two-col" style="margin:0 0 28px">
+  <div class="card">
+    <div class="kpi-label">Close Price</div>
+    <div class="kpi-value">₹1307.9</div>
+    <div class="kpi-sub">Change 0.6% · 52W pos 34%</div>
+  </div>
+  <div class="card">
+    <div class="kpi-label">Confidence · Conviction</div>
+    <div class="kpi-value">65% · 0.59</div>
+    <div class="kpi-sub">FORMING state · <span class="trend-stable">→ stable</span></div>
+  </div>
+</div>
+<div class="section"><h2>Investment Thesis</h2><p class="thesis">RELIANCE is 13.5% from 52W low with revenue improving 3 quarters (momentum 1.00). Price momentum is positive with healthy technicals (RSI 67). Valuation is fair (P/E 21.6x) — not expensive for the growth on offer.</p></div><div class="section"><h2>Executive Summary</h2><ul class="exec-bullets">
+  <li><strong>Signal:</strong> BUY · 65% confidence · FORMING state</li>
+  <li><strong>Key driver:</strong> RELIANCE is 13.5% from 52W low with revenue improving 3 quarters (momentum 1.00)</li>
+  <li><strong>Watch:</strong> No material bear arguments (score 0.00)</li>
+</ul></div><div class="section"><h2>Signal &amp; Conviction</h2><div class="table-wrap"><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr class="metric-row"><td>Signal</td><td><span class="signal-BUY" style="font-weight:700">BUY</span></td></tr>
+<tr class="metric-row"><td>Confidence</td><td>64.6%</td></tr>
+<tr class="metric-row"><td>Belief State</td><td>FORMING</td></tr>
+<tr class="metric-row"><td>Conviction Score</td><td>0.59</td></tr>
+<tr class="metric-row"><td>Conviction Trend (7d)</td><td><span class="trend-stable">→ STABLE</span></td></tr>
+<tr class="metric-row"><td>Sentiment</td><td>mixed_news_flow (0.56)</td></tr>
+<tr class="metric-row"><td>Net Conviction</td><td>0.65</td></tr>
+</tbody></table></div></div><div class="section"><h2>Price &amp; Technicals</h2><div class="table-wrap"><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr class="metric-row"><td>Close</td><td>₹1307.9</td></tr>
+<tr class="metric-row"><td>Change</td><td>0.6%</td></tr>
+<tr class="metric-row"><td>52W High</td><td>₹1611.8</td></tr>
+<tr class="metric-row"><td>52W Low</td><td>₹1152.2</td></tr>
+<tr class="metric-row"><td>52W Position</td><td>34% of range</td></tr>
+<tr class="metric-row"><td>Relative Strength</td><td>in_line (rs_30: 0.0)</td></tr>
+<tr class="metric-row"><td>Volume vs Avg</td><td>1.87x avg</td></tr>
+<tr class="metric-row"><td>RSI (14)</td><td>66.7</td></tr>
+<tr class="metric-row"><td>MACD Hist</td><td>14.04</td></tr>
+<tr class="metric-row"><td>EMA Status</td><td>Above EMA20</td></tr>
+<tr class="metric-row"><td>Technical Signal</td><td><strong>momentum</strong></td></tr>
+</tbody></table></div></div><div class="section"><h2>Valuation</h2><div class="table-wrap"><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr class="metric-row"><td>P/E</td><td>21.6x</td></tr>
+<tr class="metric-row"><td>Valuation Score</td><td>0.53 (0=cheap → 1=expensive)</td></tr>
+<tr class="metric-row"><td>Verdict</td><td><span class="verdict-fair"><strong>FAIR</strong></span></td></tr>
+<tr class="metric-row"><td>PAT Growth YoY</td><td>27.4%</td></tr>
+<tr class="metric-row"><td>Rev Growth YoY</td><td>6.7%</td></tr>
+<tr class="metric-row"><td>EBIT Margin</td><td>14.2%</td></tr>
+<tr class="metric-row"><td>FCF Proxy (₹Cr)</td><td>1555</td></tr>
+<tr class="metric-row"><td>Debt/Equity</td><td>0.34</td></tr>
+<tr class="metric-row"><td>Interest Coverage</td><td>5.5x</td></tr>
+<tr class="metric-row"><td>Peer P/E Rank</td><td>—</td></tr>
+</tbody></table></div></div><div class="section"><h2>Business Quality</h2><div class="table-wrap"><table><thead><tr><th>Dimension</th><th>Assessment</th></tr></thead><tbody><tr class="metric-row"><td>ROCE Trend</td><td>improving</td></tr>
+<tr class="metric-row"><td>FCF Quality</td><td>high</td></tr>
+<tr class="metric-row"><td>Margin Trend</td><td>expanding</td></tr>
+<tr class="metric-row"><td>Capital Allocation</td><td>—</td></tr>
+<tr class="metric-row"><td>Overall Quality</td><td><strong>high</strong></td></tr>
+</tbody></table></div></div><div class="section"><h2>Management Guidance</h2><p><strong>Tone:</strong> bullish &nbsp;|&nbsp; <strong>Sources:</strong> 1 management statements</p>
+<p style="margin-top:10px"><strong>Key Themes:</strong> <span class="tag">margin_expansion</span></p>
+<p style="margin-top:12px;font-weight:600;font-size:13px">Notable statements:</p><ul style="list-style:disc;padding-left:20px;margin-top:4px"><li style="margin-bottom:6px;font-size:13px;color:var(--text2)">EBITDA has been strong and when you look at EBITDA and recurring EBITDA, because last time, same time, we had the Rs.8,900 Crores of Asian paints and that is why right through the presentation I have backed it out, otherwise it just does not make com</li></ul>
+<p style="margin-top:10px"><strong>Numbers mentioned:</strong> <span class="tag">Rs.8,900 Crore</span></p></div><div class="section"><h2>Risk Register</h2><p class="note">No material bear arguments identified.</p><p style="margin-top:14px;font-weight:600;font-size:13px">Active alerts:</p><ul class="alert-list"><li class="alert-info"><strong>new_buy_signal</strong> — New BUY signal for RELIANCE</li></ul></div><div class="section"><h2>Peer Context</h2><p style="margin-bottom:12px;font-size:14px"><strong>vs Sector Peers:</strong> mid_quartile</p><div class="table-wrap"><table><thead><tr><th>Dimension</th><th>Peer Rank</th></tr></thead><tbody><tr class="metric-row"><td>P/E Rank</td><td>—</td></tr>
+<tr class="metric-row"><td>Revenue Growth</td><td>—</td></tr>
+<tr class="metric-row"><td>EBIT Margin Rank</td><td>—</td></tr>
+<tr class="metric-row"><td>Overall Verdict</td><td><strong>mid_quartile</strong></td></tr>
+</tbody></table></div></div><div class="section"><h2>Macro Context</h2><p><strong>Global Signal:</strong> — &nbsp;|&nbsp; <strong>Score:</strong> —</p><p style="margin-top:10px;font-size:13px"><strong>Sector sensitivity:</strong> Oil Gas &amp; Consumable Fuels is sensitive to crude oil prices and USD/INR.</p></div><div class="section"><h2>Fundamentals</h2><div class="table-wrap"><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr class="metric-row"><td>Revenue Growth YoY</td><td>6.7%</td></tr>
+<tr class="metric-row"><td>PAT Growth YoY</td><td>27.4%</td></tr>
+<tr class="metric-row"><td>EBIT Margin</td><td>14.2%</td></tr>
+<tr class="metric-row"><td>Debt/Equity</td><td>0.34</td></tr>
+<tr class="metric-row"><td>Interest Coverage</td><td>5.5x</td></tr>
+<tr class="metric-row"><td>FCF Proxy (₹Cr)</td><td>1555</td></tr>
+<tr class="metric-row"><td>ROE</td><td>—</td></tr>
+<tr class="metric-row"><td>Promoter Holding</td><td>—</td></tr>
+</tbody></table></div></div>
+<div class="footer">
+  Confidence: 65% &nbsp;|&nbsp; Generated: 2026-11-04 20:01 &nbsp;|&nbsp; Next review: +30d
+  &nbsp;|&nbsp; <em>equity-research-agent</em>
+</div>
+
+</div>
+</body>
+</html>

@@ -798,3 +798,19 @@ Progress: Built memory/peer_comparison.py + memory/business_quality.py; wired in
 Next: top_quartile peer signals ready for dashboard/report integration; banking sector ValuationScore sparse (pe=None) — known limitation
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-04 20:01
+Task: None
+Status: completed
+Progress: Built deep-dive generate_report.py (11 sections: investment thesis, exec summary, signal, price+technicals, valuation, business quality, mgmt guidance, risk register, peer context, macro context, fundamentals). Built generate_report_html.py with inline CSS, dark/light theme, KPI cards. Tested RELIANCE + IGL.
+Next: None - complete
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-04 20:01
+Task: deep_dive_report_gen_001
+Status: completed
+Progress: Built deep-dive generate_report.py (11 sections) + generate_report_html.py. Tested RELIANCE + IGL.
+Next: Next session: wire HTML reports into orchestrator daily cycle
+Blockers: none
+============================================================
