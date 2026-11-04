@@ -1,5 +1,45 @@
 # Progress Log
 
+## 2026-11-04 — Full Stack Integration + Dashboard v5 (session 23)
+
+### Done
+- **Dashboard v5** published (artifact `JGgysb6frykyg2dCyzEC2z`): live 168-ticker screener injected
+  from graph.db via `jobs/export_dashboard_data.py`. Screener tab shows all ConfluenceSignal nodes
+  joined with PriceSnapshot + TrendSummary + Company. Belief health panel retained from v4.
+- **`jobs/export_dashboard_data.py`**: reads graph.db → writes `memory_store/dashboard_data.json` →
+  patches JS constants in dashboard.html in-place (regex lambda pattern to avoid unicode escape bugs).
+  Patches: SCREENER_DATA (168 tickers), SECTORS, NODE_TYPES, BELIEF_STATES, CONF_BY_TYPE, BELIEF_LOG,
+  TOP_SIGNALS, graph KPI numbers, tab badges.
+- **`jobs/daily_monitor.py`**: wired `export_dashboard_data()` at end of each daily run, so dashboard
+  auto-refreshes every cycle without manual intervention.
+- **Fork agents** (concurrent builds, all committed):
+  - `memory/technical_engine.py` + `agents/technical_agent.py`: RSI, MACD, EMA, 52W position
+  - `memory/valuation_engine.py` + `agents/valuation_agent.py`: P/E, P/B, EV/EBITDA relative scoring
+  - `agents/alert_agent.py`: signal flip detection (BUY→AVOID, belief state transitions)
+  - `agents/devil_advocate.py`: bear arguments for every BUY signal (contrarian validation layer)
+  - `tools/global_macro.py`: USD/INR, crude, US rates via yfinance
+  - `memory/prediction_log.py`: track signal predictions vs outcomes for backtesting
+
+### Architecture changes
+- Orchestrator now runs: Ingestion → Analysis → Synthesis → Meta → Export (6 phases)
+- Dashboard data flow: graph.db → export script → JS constants → artifact (no backend API needed)
+
+### Pending / next sessions
+- End-to-end `daily_monitor.py` test run to validate full 6-phase pipeline
+- Backtesting engine: reads `prediction_log`, compares predicted vs actual price moves 30/60/90d
+- Concall transcript extraction: wire `document_agent` to NSE announcement PDFs
+- Global macro in dashboard: add macro panel showing USD/INR, crude, US10Y trend
+- Devil's advocate output: surface top bear cases in dashboard for each BUY signal
+- Run `python jobs/daily_monitor.py` after market hours for first full automated cycle
+
+### Commits
+- `41e81f1` — feat: wire export_dashboard_data into daily_monitor pipeline
+- `e34de17` — feat: valuation agent, devil's advocate, macro overlay, live dashboard export
+- `23c7d6d` — feat: technical/valuation engines, alert agent, prediction log
+- `ddafcc3` — feat: NSE 24x7 live feed with session persistence
+
+---
+
 ## 2026-11-04 — Dashboard Belief Health Panel (session 22)
 
 ### Done

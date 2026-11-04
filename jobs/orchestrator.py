@@ -204,6 +204,69 @@ def run_synthesis_phase(verbose: bool = True) -> dict:
         results["sectors"] = {"error": str(e)}
         _log("synthesis", f"sector_analyst FAILED: {e}")
 
+    # Alert agent — belief_log state changes + stale signals
+    try:
+        _log("synthesis", "alert_agent (last 3h)...")
+        t1 = time.time()
+        from agents.alert_agent import AlertAgent
+        aa = AlertAgent()
+        r = aa.run(hours_back=3)
+        _record_perf("alert_agent_v1", r.get("alerts_written", 0), 0, time.time()-t1, "synthesis")
+        results["alerts"] = r
+        if verbose:
+            _log("synthesis", (
+                f"alerts: {r.get('alerts_generated',0)} generated "
+                f"critical={r.get('critical',0)} warning={r.get('warning',0)}"
+            ))
+    except Exception as e:
+        results["alerts"] = {"error": str(e)}
+        _log("synthesis", f"alert_agent FAILED: {e}")
+
+    # Devil's advocate — bear case on top BUY signals
+    try:
+        _log("synthesis", "devil_advocate (top 30 BUY signals)...")
+        t1 = time.time()
+        from agents.devil_advocate import DevilAdvocate
+        da = DevilAdvocate()
+        da_results = da.run_all(limit=30)
+        buy_held  = sum(1 for r in da_results if r.get("verdict") == "BUY")
+        downgraded = sum(1 for r in da_results if r.get("verdict") in ("HOLD", "WAIT"))
+        _record_perf("devil_advocate_v1", buy_held, 0, time.time()-t1, "synthesis")
+        results["devil_advocate"] = {
+            "analyzed": len(da_results),
+            "buy_held": buy_held,
+            "downgraded": downgraded,
+        }
+        if verbose:
+            _log("synthesis", f"devil_advocate: {buy_held} BUY held, {downgraded} downgraded")
+    except Exception as e:
+        results["devil_advocate"] = {"error": str(e)}
+        _log("synthesis", f"devil_advocate FAILED: {e}")
+
+    # Risk agent — concentration, quality, liquidity checks
+    try:
+        _log("synthesis", "risk_agent...")
+        t1 = time.time()
+        from agents.risk_agent import RiskAgent
+        ra = RiskAgent()
+        r = ra.run()
+        _record_perf("risk_agent_v1", 1, 0, time.time()-t1, "synthesis")
+        results["risk"] = {
+            "overall_risk":  r.get("overall_risk"),
+            "flags_total":   r.get("flags_total"),
+            "low_quality":   r.get("signal_quality", {}).get("low_quality", 0),
+            "illiquid":      r.get("liquidity", {}).get("flagged", 0),
+        }
+        if verbose:
+            _log("synthesis", (
+                f"risk: overall={r.get('overall_risk')} "
+                f"flags={r.get('flags_total')} "
+                f"low_quality={r.get('signal_quality',{}).get('low_quality',0)}"
+            ))
+    except Exception as e:
+        results["risk"] = {"error": str(e)}
+        _log("synthesis", f"risk_agent FAILED: {e}")
+
     results["duration_s"] = round(time.time() - t0, 1)
     return results
 

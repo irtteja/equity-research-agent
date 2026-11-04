@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 49,
+  "version": 50,
   "patterns": {
     "confirmed": [
       {
@@ -344,6 +344,24 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "regex lambda replacement pattern required for JSON unicode escape safety in re.sub",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "artifact patching via JS constant replacement is viable for static dashboard data injection",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "fork agents can build independent sub-systems concurrently without coordination overhead",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -505,6 +523,18 @@
       },
       {
         "pattern": "ConfluenceSignal will reach confirmed state after multiple daily cycles",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "devil advocate and alert agents need live graph data to demonstrate value — untested end-to-end",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "technical engine RSI/MACD may need tuning for Indian market microstructure",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -700,6 +730,14 @@
       },
       {
         "signal": "learn_from_new_nodes with hours_back=9999 seeds belief state from historical multi-type overlap",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "belief seeding from historical multi-type overlap: 870 revisions, 318 confirmed in one pass",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "screener SQL join (ConfluenceSignal + PriceSnapshot + TrendSummary + Company) returns 168 tickers clean",
         "added": "2026-11-04"
       }
     ],
@@ -915,6 +953,18 @@
       {
         "gap": "ConfluenceSignal avg confidence only 0.60",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "backtesting engine not yet built — prediction_log exists but no backtester that reads it",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "concall transcript extraction not wired to document agent",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "global macro data not yet surfaced in dashboard",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -958,10 +1008,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-30",
-      "note": "upgraded self_improve scan to data-driven with persistence tracking; resolved 3 prior gaps"
-    },
     {
       "date": "2026-10-30",
       "note": "self_improve scan: 2 high-priority gaps"
@@ -1077,6 +1123,10 @@
     {
       "date": "2026-11-04",
       "note": "wired living graph belief states into dashboard Graph tab; 870 revisions seeded; 318 confirmed nodes"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "Session 23: live-wired 168-ticker screener to dashboard v5; fork agents completed technical/valuation/alert/devil-advocate/macro stack; daily_monitor auto-exports on each cycle"
     }
   ]
 }
