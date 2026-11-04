@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 51,
+  "version": 52,
   "patterns": {
     "confirmed": [
       {
@@ -374,6 +374,24 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "conviction_history table stores 4-signal blend reliably",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "news_agent keyword scoring works with zero external calls",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "global_macro thresholds correctly reflect India macro sensitivities",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -553,6 +571,18 @@
       },
       {
         "pattern": "prediction_log track record too fresh to evaluate — need 30d",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "sentiment scores mostly neutral (0.5) due to sparse ManagementStatement nodes — will improve as feed runs",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "technical_score defaulting to 0.5 until technical_engine agents complete their work",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -768,6 +798,14 @@
       },
       {
         "signal": "signal_quality composite score (belief_state×age×bear×stability)",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "parallel fork architecture — 4 forks completed all major agent layer work before this session started",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "AST syntax check for generated_tools is fast and reliable quality gate",
         "added": "2026-11-04"
       }
     ],
@@ -1003,6 +1041,14 @@
       {
         "gap": "liquidity check needs traded_value field populated in PriceSnapshot",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "SentimentScore signal differentiation weak until more ManagementStatement nodes accumulate",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "conviction_score variance narrow until technical_engine provides real scores",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -1046,10 +1092,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-30",
-      "note": "self_improve scan: 2 high-priority gaps"
-    },
     {
       "date": "2026-10-31",
       "note": "built knowledge graph layer (graph_store + episode_bridge + ContextAgent); wired into ingestion, results_store, self_improve; all facts/XBRL/gaps now auto-write to graph; ripple architecture active"
@@ -1165,6 +1207,10 @@
     {
       "date": "2026-11-04",
       "note": "completed risk_agent + alert_agent + devil_advocate + prediction_log + registered 4 agents in agent_configs; synthesis phase now has full bear-case pipeline"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "session 25: global_macro + news_agent + conviction_tracker complete; parallel forks had already committed everything before context resumed"
     }
   ]
 }

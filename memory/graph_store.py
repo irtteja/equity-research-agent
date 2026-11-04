@@ -166,6 +166,24 @@ class GraphStore:
                 )
         return node_id
 
+    def upsert_node(
+        self,
+        node_type: str,
+        name: str,
+        ticker: str = "",
+        properties: dict = None,
+    ) -> str:
+        """Upsert a node by (node_type, name) key. Returns node_id."""
+        import hashlib
+        node_id = hashlib.md5(f"{node_type}:{name}".encode()).hexdigest()[:16]
+        return self.add_node(
+            node_id=node_id,
+            node_type=node_type,
+            name=name,
+            ticker=ticker,
+            properties=properties,
+        )
+
     def get_node(self, node_id: str) -> dict | None:
         with self._conn() as conn:
             row = conn.execute("SELECT * FROM nodes WHERE id=?", (node_id,)).fetchone()
