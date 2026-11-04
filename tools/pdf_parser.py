@@ -4,7 +4,10 @@ Uses nselib for downloading (handles NSE session/cookies), pymupdf for extractio
 Fallback: Tesseract OCR for scanned/image-only PDFs.
 """
 import sys, os
-sys.path.insert(0, os.path.expanduser("~/irtteja/nselib"))
+_NSELIB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "vendor")
+if not os.path.isdir(os.path.join(_NSELIB_PATH, "nselib")):
+    _NSELIB_PATH = os.path.expanduser("~/irtteja/nselib")
+sys.path.insert(0, _NSELIB_PATH)
 
 import tempfile
 from pathlib import Path
@@ -127,7 +130,6 @@ def fetch_nse_announcements(symbol: str, days_back: int = 1) -> list[dict]:
     Fetch recent NSE announcements for a symbol.
     Returns list of announcement dicts with 'pdf_url' field populated.
     """
-    sys.path.insert(0, os.path.expanduser("~/irtteja/nselib"))
     from nselib import NSE
 
     with NSE() as nse:

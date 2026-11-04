@@ -9,7 +9,9 @@ NSE-native functions avoid the 20-record UI cap by using bulk CSV or per-symbol 
 import sys, os, csv, io
 from datetime import date, timedelta
 
-_NSELIB_PATH = os.path.expanduser("~/irtteja/nselib")
+_NSELIB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "vendor")
+if not os.path.isdir(os.path.join(_NSELIB_PATH, "nselib")):
+    _NSELIB_PATH = os.path.expanduser("~/irtteja/nselib")
 if _NSELIB_PATH not in sys.path:
     sys.path.insert(0, _NSELIB_PATH)
 
