@@ -1,5 +1,39 @@
 # Progress Log
 
+## 2026-11-04 — Research report generator + relative strength engine (session 27)
+
+### Done
+- **`jobs/generate_report.py`**: 1-page markdown research reports per ticker, pulling all graph
+  layers (price, technicals, valuation, fundamentals, management statements, bear case, alerts,
+  macro, conviction, sentiment). Generates `reports/tickers/<TICKER>/YYYY-MM-DD.md` + `latest.md`.
+  Ran and committed 158 initial reports for today's BUY universe.
+- **`memory/relative_strength.py`**: Nifty-relative return engine — computes rs_30/rs_60/rs_90
+  for each BUY ticker from PriceSnapshot history. Labels strong_outperformer → strong_underperformer.
+  Writes RelativeStrength nodes to graph.db. Ran on 159 tickers (all 0 today — 1 day of data;
+  real values will appear after 30+ days of feed accumulation).
+- **`jobs/orchestrator.py`** Phase 4 Meta extended: relative_strength + research_reports now
+  run after tool_synthesis on every swarm cycle.
+- **`jobs/daily_monitor.py`**: auto-generates reports at end of each daily run.
+- Committed all 158 reports + both engines (commit 66f046d).
+- Background forks (sessions 24-26) completed in parallel:
+  - `memory/graph_store.py`: `upsert_node()` added (commit d84f6e5) — fixed silent write failures
+    in 6 agents (technical, valuation, news, risk, devil's advocate, alert)
+  - 148 TechnicalSignal, 159 ValuationScore, 159 SentimentScore nodes now populated
+  - `agents/news_agent.py`: now reads `statement` field from ManagementStatement nodes
+    (46/159 tickers with real sentiment data)
+
+### Architecture changes
+- `reports/tickers/` directory created with per-ticker dated + `latest.md` reports
+- Orchestrator Phase 4: relative_strength + report_generator added as final meta steps
+- daily_monitor auto-generates reports at end of each cycle (no separate trigger needed)
+
+### Pending / next sessions
+- Relative strength will produce real signals after 30d of daily price feed accumulation
+- Options analysis: PCR, max pain, IV percentile from option chain snapshots (data already ingested)
+- Peer comparison: relative scoring vs sector peers (sector_map.json + MetricValue nodes available)
+- Concall transcript integration: `jobs/ingest_concalls.py` wired but not running in swarm
+- Dashboard: add RelativeStrength + TechnicalSignal tabs to dashboard.html
+
 ## 2026-11-04 — GraphStore fix, full analysis pipeline populated (session 26)
 
 ### Done

@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 53,
+  "version": 54,
   "patterns": {
     "confirmed": [
       {
@@ -410,6 +410,18 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "generate_report pulls all graph layers correctly when node types are populated",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "BUY_CONFLUENCE type field requires LIKE pattern match — signal field is not populated directly",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -607,6 +619,18 @@
       },
       {
         "pattern": "SentimentScore coverage is thin (46/159) — may improve as more concall data is ingested",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "relative_strength rs values will be meaningful after 30d price history accumulates",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "report quality improves significantly once TechnicalSignal/ValuationScore nodes are denser",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -846,6 +870,14 @@
       },
       {
         "signal": "AlertEvent: 158 info-level alerts generated from belief_log",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "save_report() works end-to-end for all 158 BUY tickers in one pass",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "upsert_node fix unblocked 6 agents that were silently failing to write nodes",
         "added": "2026-11-04"
       }
     ],
@@ -1097,6 +1129,14 @@
       {
         "gap": "SentimentScore meaningful for only 46/159 tickers",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "options analysis (PCR/max pain) not yet wired into reports or orchestrator",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "peer comparison module missing — sector-relative valuation scoring not done yet",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -1140,10 +1180,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-31",
-      "note": "closed recursive self-improvement loop for agents: backfill graph, TrendAgent, _signal_agent_quality; 5 core scheduled tasks re-enabled; pipeline verified end-to-end on real CDSL/BIRLACORPN data"
-    },
     {
       "date": "2026-10-31",
       "note": "fixed ebit/ebitda mismatch in episode_bridge; cleaned stale nodes; re-ran agents"
@@ -1259,6 +1295,10 @@
     {
       "date": "2026-11-04",
       "note": "Fixed upsert_node in GraphStore; populated all 5 analysis node types across 159 tickers"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "Session 27: built research report generator (158 reports committed) and relative strength engine; all agents now write nodes correctly after upsert_node fix"
     }
   ]
 }
