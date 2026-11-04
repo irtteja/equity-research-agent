@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 53,
+  "version": 55,
   "patterns": {
     "confirmed": [
       {
@@ -398,6 +398,18 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "keyword-based extraction works for tone/theme scoring from management statements",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "peer_comparison ranks correctly handle sparse data (< 2 valid → insufficient_data)",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -589,6 +601,18 @@
       },
       {
         "pattern": "technical_score defaulting to 0.5 until technical_engine agents complete their work",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "ManagementStatement nodes are sparse (1-2 per ticker) — may need richer concall ingest",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "banking sector ValuationScore always pe=None — may need bank-specific scorer",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -816,6 +840,18 @@
       },
       {
         "signal": "In-session analysis of announcement text produces consistent triage without API calls",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "pymupdf can extract AR PDF text at scale; MD&A section found with sliding window scan",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "FCF/PAT ratio from ValuationScore is a reliable quality signal without external data",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "industry-level peer grouping from company_meta.json gives 3-10 peers for most tickers",
         "added": "2026-11-04"
       }
     ],
@@ -1059,6 +1095,22 @@
       {
         "gap": "conviction_score variance narrow until technical_engine provides real scores",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "AR PDFs only exist for 5 tickers; RELIANCE/IGL/HDFCBANK have no AR PDFs yet",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "number extraction extracts phone numbers from broker disclaimers — need better filtering",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "banking sector EBIT/margin metrics missing — peer comparison returns insufficient_data for all banks",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "MetricValue nodes mostly only have revenue metric — multi-metric business quality needs richer data",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -1138,17 +1190,15 @@
         "note": "SBIN Q2FY27 results BAJAJFINSV Q2FY27 results",
         "date": "2026-11-04"
       }
+    ],
+    "Financial Services": [
+      {
+        "note": "ValuationScore metrics all None for banks — NII-based model needed",
+        "date": "2026-11-04"
+      }
     ]
   },
   "session_log": [
-    {
-      "date": "2026-10-31",
-      "note": "closed recursive self-improvement loop for agents: backfill graph, TrendAgent, _signal_agent_quality; 5 core scheduled tasks re-enabled; pipeline verified end-to-end on real CDSL/BIRLACORPN data"
-    },
-    {
-      "date": "2026-10-31",
-      "note": "fixed ebit/ebitda mismatch in episode_bridge; cleaned stale nodes; re-ran agents"
-    },
     {
       "date": "2026-11-01",
       "note": "E2E test run"
@@ -1260,6 +1310,14 @@
     {
       "date": "2026-11-04",
       "note": "Processed 462 Nov-3 NSE announcements; 85 material, 13 escalated; TATASTEEL merger effective date notable"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "Built ConcallAnalyzer + AnnualReportAnalyzer agents; 33 ConcallInsight + 5 AnnualReportInsight nodes in graph.db; wired into orchestrator Phase 2"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "peer comparison + business quality scorer built; 101 + 159 nodes written; orchestrator Phase 2 wired"
     }
   ]
 }

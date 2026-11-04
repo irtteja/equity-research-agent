@@ -60,9 +60,11 @@ def _rank(value: float, all_values: list[float], higher_is_better: bool) -> tupl
     """
     Return (rank, total) where rank=1 is best.
     Skips None values in all_values.
+    Returns (None, total) when there are fewer than 2 valid values — ranking is
+    not meaningful when the subject is the only data point.
     """
     valid = [v for v in all_values if v is not None and not (isinstance(v, float) and v != v)]
-    if value is None or len(valid) == 0:
+    if value is None or len(valid) < 2:
         return (None, len(valid))
     sorted_vals = sorted(valid, reverse=higher_is_better)
     try:

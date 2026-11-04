@@ -108,6 +108,41 @@ def _extract_pages(pdf_path: Path, max_pages: int = 50) -> str:
         return ""
 
 
+def _extract_mda_section(pdf_path: Path, max_section_chars: int = 20_000) -> str:
+    """
+    Scan entire PDF to locate MD&A section. Returns the section text (up to
+    max_section_chars). Falls back to first 50 pages if not found.
+    Scans in 10-page windows to avoid loading the whole PDF into RAM.
+    """
+    try:
+        import pymupdf  # noqa: PLC0415
+        doc   = pymupdf.open(str(pdf_path))
+        total = len(doc)
+
+        # Phase 1: quick scan for MD&A by page, in batches of 10
+        for start in range(0, total, 10):
+            end   = min(start + 10, total)
+            chunk = "\n".join(doc[i].get_text() for i in range(start, end))
+            chunk_lower = chunk.lower()
+            for marker in MDA_MARKERS:
+                if marker in chunk_lower:
+                    # Found the MD&A region — extract from here
+                    idx = chunk_lower.find(marker)
+                    tail = chunk[idx:]
+                    # Continue reading a few more pages
+                    for j in range(end, min(end + 20, total)):
+                        tail += doc[j].get_text()
+                    doc.close()
+                    return tail[:max_section_chars]
+
+        # Fallback: return first 50 pages
+        text = "\n".join(doc[i].get_text() for i in range(min(50, total)))
+        doc.close()
+        return text[:max_section_chars]
+    except Exception:
+        return ""
+
+
 def _find_section(text_lower: str, markers: list[str], max_offset: int = 50_000) -> int:
     """Return index of first marker match, within max_offset chars. -1 if not found."""
     for marker in markers:
@@ -188,24 +223,30 @@ def analyze_ticker(ticker: str) -> dict | None:
     text_lower  = full_text.lower()
     all_sents   = _sentences(full_text)
 
-    # Locate MD&A section
-    mda_start = _find_section(text_lower, MDA_MARKERS)
-    if mda_start > -1:
-        mda_text   = full_text[mda_start: mda_start + 15_000]
-        mda_lower  = mda_text.lower()
-        mda_sents  = _sentences(mda_text)
-    else:
-        mda_text   = full_text[:15_000]
-        mda_lower  = text_lower[:15_000]
-        mda_sents  = all_sents[:100]
+    # Locate MD&A section — use smart scanner for large PDFs
+    mda_text = _extract_mda_section(pdf_path)
+    if not mda_text:
+        mda_text = full_text[:15_000]
+    # Strip the section header itself to get to the content
+    mda_lower = mda_text.lower()
+    mda_start_in_mda = _find_section(mda_lower, MDA_MARKERS, max_offset=len(mda_lower))
+    if mda_start_in_mda > -1:
+        mda_text  = mda_text[mda_start_in_mda:]
+        mda_lower = mda_text.lower()
+    mda_sents = _sentences(mda_text)
 
-    # Locate risk section
-    risk_start = _find_section(text_lower, RISK_MARKERS)
+    # Locate risk section within MD&A text or fall back to full text
+    risk_start = _find_section(mda_lower, RISK_MARKERS, max_offset=len(mda_lower))
     if risk_start > -1:
-        risk_text  = full_text[risk_start: risk_start + 8_000]
+        risk_text  = mda_text[risk_start: risk_start + 8_000]
         risk_sents = _sentences(risk_text)
     else:
-        risk_sents = []
+        risk_start_full = _find_section(text_lower, RISK_MARKERS)
+        if risk_start_full > -1:
+            risk_text  = full_text[risk_start_full: risk_start_full + 8_000]
+            risk_sents = _sentences(risk_text)
+        else:
+            risk_sents = []
 
     # 1. Business description (2 sentences from MD&A)
     business_desc = _build_business_description(mda_sents, ticker)

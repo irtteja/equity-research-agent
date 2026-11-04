@@ -155,6 +155,38 @@ def run_analysis_phase(workers: int = 4, verbose: bool = True) -> dict:
         results["valuation"] = {"error": str(e)}
         _log("analysis", f"valuation_agent FAILED: {e}")
 
+    # Peer comparison (relative ranking vs sector/industry peers)
+    try:
+        _log("analysis", "peer_comparison (signal tickers)...")
+        t1 = time.time()
+        from memory.peer_comparison import run_all as peer_run_all
+        peer_results = peer_run_all(limit=100)
+        ok   = sum(1 for r in peer_results if "error" not in r)
+        fail = len(peer_results) - ok
+        _record_perf("peer_comparison_v1", ok, fail, time.time()-t1, "analysis")
+        results["peer_comparison"] = {"ok": ok, "fail": fail}
+        if verbose:
+            _log("analysis", f"peer_comparison: {ok} ok, {fail} fail")
+    except Exception as e:
+        results["peer_comparison"] = {"error": str(e)}
+        _log("analysis", f"peer_comparison FAILED: {e}")
+
+    # Business quality scoring (earnings quality + capital efficiency)
+    try:
+        _log("analysis", "business_quality (signal tickers)...")
+        t1 = time.time()
+        from memory.business_quality import run_all as bq_run_all
+        bq_results = bq_run_all(limit=159)
+        ok   = sum(1 for r in bq_results if "error" not in r)
+        fail = len(bq_results) - ok
+        _record_perf("business_quality_v1", ok, fail, time.time()-t1, "analysis")
+        results["business_quality"] = {"ok": ok, "fail": fail}
+        if verbose:
+            _log("analysis", f"business_quality: {ok} ok, {fail} fail")
+    except Exception as e:
+        results["business_quality"] = {"error": str(e)}
+        _log("analysis", f"business_quality FAILED: {e}")
+
     # Concall analysis (top 30 tickers with ManagementStatement nodes)
     try:
         _log("analysis", "concall_analyzer (top 30 tickers)...")

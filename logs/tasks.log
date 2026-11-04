@@ -782,3 +782,19 @@ Progress: Loaded 814 calendar events from 2026-11-03.json; 0 companies scheduled
 Next: None
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-04 19:59
+Task: concall_ar_analyzers_2026_11_04
+Status: completed
+Progress: Built agents/concall_analyzer.py and agents/annual_report_analyzer.py. 33 ConcallInsight + 5 AnnualReportInsight nodes written. Wired into orchestrator Phase 2. Tested on RELIANCE, IGL, HDFCBANK.
+Next: Fetch more annual report PDFs for broader coverage. Improve number extraction (filter phone numbers). Add concall PDF ingest pipeline.
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-04 20:00
+Task: peer_bq_001
+Status: completed
+Progress: Built memory/peer_comparison.py + memory/business_quality.py; wired into orchestrator Phase 2; ran full batch (100 PeerComparison + 159 BusinessQuality nodes written to graph.db); tested on RELIANCE/IGL/HDFCBANK/AXISBANK
+Next: top_quartile peer signals ready for dashboard/report integration; banking sector ValuationScore sparse (pe=None) — known limitation
+Blockers: none
+============================================================
