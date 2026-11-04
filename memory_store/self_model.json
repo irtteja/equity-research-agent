@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 58,
+  "version": 59,
   "patterns": {
     "confirmed": [
       {
@@ -446,6 +446,24 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "TechnicalSignal.pos_52w is stored as 0-1 decimal (not 0-100 percentile)",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "ConfluenceSignal uses type field (BUY_CONFLUENCE/SELL_CONFLUENCE), not signal field",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "Deduplication via AlertEvent name {ticker}_AlertEvent_{type}_{date} prevents duplicate daily alerts",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -673,6 +691,18 @@
       },
       {
         "pattern": "CompositeRanker scores are dominated by confluence+quality; peer_verdict currently 0.4 for most tickers (mid_quartile/insufficient_data) — limited differentiation until top_quartile tickers emerge",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "conviction_drop fires only after 2+ days of conviction_history accumulation",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "management_tone_caution depends on defensive tone — currently absent from ConcallInsight nodes",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -944,6 +974,14 @@
       },
       {
         "signal": "graph.db upsert_node pattern works for new node types (CompositeRank)",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "rule-based alert engine: 275 alerts fired across 159 tickers on first run with 0 errors",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "MD5 hash upsert matching graph_store.upsert_node() pattern ensures consistent node IDs",
         "added": "2026-11-04"
       }
     ],
@@ -1331,10 +1369,6 @@
   "session_log": [
     {
       "date": "2026-11-03",
-      "note": "Built 888-stock KB builder (jobs/build_kb.py); fixed AR category mismatch; build at 358/888 and running"
-    },
-    {
-      "date": "2026-11-03",
       "note": "KB build completed 888/888 NSE mainboard symbols — 2851 concalls, 354 ARs, 3278 XBRL quarters ingested"
     },
     {
@@ -1448,6 +1482,10 @@
     {
       "date": "2026-11-04",
       "note": "Composite screener ranker built: 159 tickers ranked A/B/C/D in 0.03s; orchestrator + dashboard export wired"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "alert engine built: 6 rule-based types, 275 alerts across 159 tickers, wired into orchestrator Phase 3"
     }
   ]
 }

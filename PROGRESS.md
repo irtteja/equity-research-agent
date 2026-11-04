@@ -1,6 +1,37 @@
 # Progress Log
 
-## 2026-11-04 — Composite screener ranker: quality_tier A/B/C/D + ranked watchlist (session 32)
+## 2026-11-04 — Proactive alert engine: 6 alert types + orchestrator wiring (session 32)
+
+### Done
+- **`memory/alert_engine.py`** (NEW): AlertEngine class with 6 rule-based alert conditions,
+  all heuristic (no Claude API). Conditions: price_near_52w_low (high severity: pos_52w < 10%
+  AND BUY_CONFLUENCE), conviction_drop (medium: score drops from ≥0.60 to <0.55 across last 2
+  conviction_history records), quality_vs_price_divergence (medium: overall_quality=high AND
+  pos_52w < 20%), peer_pe_discount (medium: pe_premium_pct < -20), management_tone_caution
+  (low: ConcallInsight.tone=defensive AND BUY_CONFLUENCE), strong_buy_conviction (info:
+  score ≥ 0.70 AND quality_score ≥ 0.70). Deduplication: one AlertEvent per type per ticker
+  per day via name-based upsert.
+- First run across 159 tickers: 275 alerts fired
+  - strong_buy_conviction: 88, quality_vs_price_divergence: 77, price_near_52w_low: 72, peer_pe_discount: 38
+  - conviction_drop + management_tone_caution: 0 (expected — only 1 conviction_history record per
+    ticker today; defensive tone not found in current ConcallInsight data)
+- **`jobs/orchestrator.py`**: wired AlertEngine into Phase 3 Synthesis (after risk_agent);
+  records agent_perf under "alert_engine_v1"
+- Tests confirmed: RELIANCE no alerts (pos_52w=34%), IGL fires price_near_52w_low (pos_52w=1.1%)
+
+### Architecture changes
+- New module: `memory/alert_engine.py` — AlertEngine class + CLI (--ticker / --limit)
+- AlertEvent node schema extended: adds `data` dict with condition-specific values
+- Orchestrator Phase 3 Synthesis: alert_engine_v1 runs after risk_agent on every swarm cycle
+- pos_52w stored as 0-1 decimal in TechnicalSignal; alert conditions use 0.10/0.20 thresholds
+
+### Pending / next sessions
+- conviction_drop will fire once daily conviction_history accumulates 2+ records per ticker (after day 2+)
+- management_tone_caution depends on ConcallInsight.tone=defensive — currently no tickers have defensive tone
+- AlertEvent nodes visible in generate_report.py Risk Register section (already reads AlertEvent nodes)
+- Could add alert_engine results to dashboard AlertEvent tab
+
+## 2026-11-04 — Analysis layer complete: concall/AR analyzers, peer comparison, business quality, full report stack (session 31)
 
 ### Done
 - **`agents/composite_ranker.py`** (NEW): `CompositeRanker` class with `run_all(limit=200)` and `rank_ticker(ticker)` methods. Combines 4 signals with weights: confluence confidence (40%), business quality (25%), peer standing (20%), technical position (15%). Writes `CompositeRank` nodes to graph.db. Saves `memory_store/ranked_watchlist.json`. Ran on all 159 ConfluenceSignal tickers: 0 errors, 159 ranked in 0.03s.

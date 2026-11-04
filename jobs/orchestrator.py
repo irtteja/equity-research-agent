@@ -342,6 +342,27 @@ def run_synthesis_phase(verbose: bool = True) -> dict:
         results["risk"] = {"error": str(e)}
         _log("synthesis", f"risk_agent FAILED: {e}")
 
+    # Proactive alert engine — 6 rule-based condition checks across all tickers
+    try:
+        _log("synthesis", "alert_engine (all signal tickers)...")
+        t1 = time.time()
+        from memory.alert_engine import AlertEngine
+        ae = AlertEngine()
+        ae_r = ae.run_all(limit=200)
+        _record_perf("alert_engine_v1", ae_r.get("fired", 0), ae_r.get("errors", 0),
+                     time.time() - t1, "synthesis")
+        results["alert_engine"] = ae_r
+        if verbose:
+            _log("synthesis", (
+                f"alert_engine: fired={ae_r.get('fired',0)} "
+                f"skipped={ae_r.get('skipped',0)} "
+                f"errors={ae_r.get('errors',0)} "
+                f"types={list(ae_r.get('per_type',{}).keys())}"
+            ))
+    except Exception as e:
+        results["alert_engine"] = {"error": str(e)}
+        _log("synthesis", f"alert_engine FAILED: {e}")
+
     results["duration_s"] = round(time.time() - t0, 1)
     return results
 
