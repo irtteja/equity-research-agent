@@ -449,6 +449,14 @@ def run():
     except Exception as _exp_err:
         print(f"[daily_monitor] dashboard export skipped: {_exp_err}")
 
+    # Generate per-ticker research reports for all BUY signals
+    try:
+        from jobs.generate_report import run_all_reports
+        n_reports = run_all_reports(limit=200)
+        print(f"[daily_monitor] generated {n_reports} research reports")
+    except Exception as _rep_err:
+        print(f"[daily_monitor] report generation skipped: {_rep_err}")
+
     # Commit to GitHub
     _git_commit(f"chore: daily monitor {date.today().isoformat()} — {facts_total} facts ingested")
 

@@ -176,7 +176,8 @@ def generate_report(ticker: str) -> str:
 
     # ── Signal ─────────────────────────────────────────────────────────────────
     sp     = (signal or {}).get("properties", {})
-    sig_name  = sp.get("signal",    "—")
+    raw_type  = sp.get("type", "")
+    sig_name  = "BUY" if "BUY" in raw_type else ("AVOID" if "AVOID" in raw_type else sp.get("signal", "HOLD"))
     conf      = signal.get("confidence", 0.5) if signal else 0.5
     bstate    = signal.get("belief_state", "forming") if signal else "forming"
 
@@ -326,7 +327,8 @@ def run_all_reports(limit: int = 50) -> int:
         rows = c.execute(
             """SELECT DISTINCT ticker FROM nodes
                WHERE node_type='ConfluenceSignal'
-               AND json_extract(properties,'$.signal')='BUY'
+               AND (json_extract(properties,'$.signal')='BUY'
+                    OR json_extract(properties,'$.type') LIKE 'BUY%')
                ORDER BY confidence DESC
                LIMIT ?""",
             (limit,),

@@ -3,7 +3,7 @@
 
 ---
 
-## Signal: 🟡 —  🔵 FORMING
+## Signal: 🟢 BUY  🔵 FORMING
 **Confidence:** 64.6%  |  **Conviction:** —  |  **Sentiment:** neutral (0.56)
 
 ---
