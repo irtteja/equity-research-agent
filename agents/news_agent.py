@@ -89,6 +89,7 @@ def _get_statements_for_ticker(ticker: str, days_back: int = 90) -> list[dict]:
                 "name":       row["name"],
                 "created_at": row["created_at"],
                 "text":       " ".join([
+                    str(props.get("statement", "")),
                     str(props.get("headline", "")),
                     str(props.get("description", "")),
                     str(props.get("body", "")),
