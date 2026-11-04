@@ -918,3 +918,11 @@ Progress: Indexed 20 tickers in 0.23s
 Next: None
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-04 20:14
+Task: session-32
+Status: completed
+Progress: composite_ranker, alert_engine, process_episodes, bulk_report_index, doc_store fix, concall_analyzer doc_store wiring all shipped and pushed
+Next: backfill doc_store text for 3236 entries; re-run concall_analyzer for all tickers with transcripts; wire ConcallInsight into alert engine
+Blockers: NSE concall PDF direct download returning 404 for some URLs
+============================================================

@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-04",
-  "version": 60,
+  "version": 61,
   "patterns": {
     "confirmed": [
       {
@@ -470,6 +470,18 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "doc_store dedup was broken: stored files had no text — fix: check text presence before marking duplicate",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "doc_store load_document should accept both doc_id and store_path for flexibility",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -715,6 +727,12 @@
       },
       {
         "pattern": "ranked_watchlist.json pos_52w field is fractional (0-1), not percentage — need field-name normalization layer",
+        "first_seen": "2026-11-04",
+        "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "concall PDF re-download still shows duplicate after dedup fix — NSE PDFs may be returning same hash as prior download (content hasn't changed, just the dedup logic was wrong)",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
@@ -998,6 +1016,26 @@
       },
       {
         "signal": "pre-loading node IDs into Python sets before batch processing is fast and avoids per-episode round-trips",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "composite_ranker: 159 tickers scored in 0.03s — CLEAN, VAIBHAVGBL, GSFC top 3",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "alert_engine: 275 alerts across 159 tickers on first run — price_near_52w_low=72, quality_vs_price_divergence=77, strong_buy_conviction=88",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "process_episodes: 88,572 → 0 unprocessed episodes drained in <1s using pre-loaded ID sets",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "bulk_report_index: 20 reports + reports/index.md generated from ranked_watchlist",
+        "added": "2026-11-04"
+      },
+      {
+        "signal": "concall_analyzer now reads doc_store transcripts — richer analysis possible",
         "added": "2026-11-04"
       }
     ],
@@ -1289,6 +1327,14 @@
       {
         "gap": "process_episodes.py should be wired into orchestrator post-ingestion to prevent backlog re-accumulation",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "NSE concall PDFs: download still fails 404 — the ingest worked previously via proxy; direct URL fetch fails",
+        "added": "2026-11-04"
+      },
+      {
+        "gap": "Only 32 of 3268 doc_store entries have text — older ingest saved metadata only; backfill requires re-download",
+        "added": "2026-11-04"
       }
     ]
   },
@@ -1387,10 +1433,6 @@
     ]
   },
   "session_log": [
-    {
-      "date": "2026-11-03",
-      "note": "2026-11-03: built full system architecture artifact; ran context+trend agents; 148 PRECEDED_BY edges, 82 trend summaries, 49 strong trends across KB"
-    },
     {
       "date": "2026-11-03",
       "note": "Session 5: AlertAgent built, full pipeline running, daily trigger created — system is now autonomous"
@@ -1506,6 +1548,10 @@
     {
       "date": "2026-11-04",
       "note": "Built episode processor (88K→0 backlog) and bulk report index (reports/index.md + index.json for 20 BUY tickers)"
+    },
+    {
+      "date": "2026-11-04",
+      "note": "built composite ranker, alert engine, episode processor, bulk report index, fixed doc_store dedup, wired concall_analyzer to doc_store; 6 new tools shipped in one session"
     }
   ]
 }
