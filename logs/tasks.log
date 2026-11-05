@@ -1222,3 +1222,11 @@ Progress: after-hours heartbeat 02:10 IST Nov 6 — daily_monitor ran Nov 5, XBR
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-05 21:02
+Task: nightly-2026-11-05
+Status: completed
+Progress: git pull, context_agent (0 new nodes), trend_agent (0 new pairs) — graph fully enriched from 2026-11-04 run
+Next: wait for new announcements/XBRL data to arrive before next enrichment pass
+Blockers: none
+============================================================
