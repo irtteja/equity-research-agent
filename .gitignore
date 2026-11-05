@@ -8,6 +8,7 @@ __pycache__/
 
 # SQLite binaries — not tracked (gets overwritten by git pull, causes merge conflicts)
 memory/research.db
+data/graph.db
 memory/graph.db
 memory/__pycache__/
 
