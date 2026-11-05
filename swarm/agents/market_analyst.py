@@ -61,11 +61,27 @@ async def market_brain(system: str | None, messages: list, tools: list[dict]) ->
         parts = []
         for r in results:
             data = _parse_output(r.get("output", "{}"))
-            parts.append(data)
+            # nse_index_data returns a list of constituent stocks — wrap it
+            if isinstance(data, list):
+                parts.append({"_index_list": data})
+            else:
+                parts.append(data)
 
         # Build a plain-language synthesis
         summary_lines = ["**Market Analysis Summary**\n"]
         for d in parts:
+            # Handle index constituent lists
+            if "_index_list" in d:
+                items = d["_index_list"]
+                if items and isinstance(items, list):
+                    top = sorted(items, key=lambda x: float(str(x.get("pChange") or x.get("pct_change") or 0).replace("%","")), reverse=True)
+                    gainers = [f"{x.get('symbol','?')} {x.get('pChange','')}" for x in top[:3] if float(str(x.get("pChange",0)).replace("%","") or 0) > 0]
+                    losers  = [f"{x.get('symbol','?')} {x.get('pChange','')}" for x in top[-3:] if float(str(x.get("pChange",0)).replace("%","") or 0) < 0]
+                    if gainers:
+                        summary_lines.append(f"  Top Gainers: {', '.join(gainers)}")
+                    if losers:
+                        summary_lines.append(f"  Top Losers:  {', '.join(reversed(losers))}")
+                continue
             if "error" in d:
                 summary_lines.append(f"⚠ {d['error']}")
                 continue
@@ -73,20 +89,28 @@ async def market_brain(system: str | None, messages: list, tools: list[dict]) ->
             if sym:
                 # nse_equity_quote returns: last/close, pct_change, year_high, year_low, volume
                 # yfinance returns: current_price, price_change_pct, high_52w, low_52w, avg_volume
-                ltp = (d.get("last") or d.get("close") or
-                       d.get("lastPrice") or d.get("current_price") or d.get("ltp") or "N/A")
-                chg = (d.get("pct_change") or d.get("pChange") or
-                       d.get("price_change_pct") or "")
+                def _first_nonzero(*keys):
+                    for k in keys:
+                        v = d.get(k)
+                        if v is not None and v != 0:
+                            return v
+                    return None
+
+                ltp = _first_nonzero("last", "close", "lastPrice", "current_price", "ltp")
+                # During live market hours last/close are 0 — derive from prev_close + change
+                if ltp is None:
+                    pc  = d.get("prev_close") or 0
+                    chg = d.get("change") or 0
+                    if pc:
+                        ltp = round(pc + chg, 2)
+                    else:
+                        ltp = _first_nonzero("high", "open") or "N/A"
+
+                chg = d.get("pct_change") or d.get("pChange") or d.get("price_change_pct") or ""
                 h52 = d.get("year_high") or d.get("high52") or d.get("high_52w") or ""
                 l52 = d.get("year_low")  or d.get("low52")  or d.get("low_52w")  or ""
-                vol = (d.get("volume") or d.get("totalTradedVolume") or
-                       d.get("avg_volume") or "")
+                vol = d.get("volume") or d.get("totalTradedVolume") or d.get("avg_volume") or ""
                 pe  = d.get("pe", "")
-                # During live market, last/close may be 0; use prev_close + change as fallback
-                if not ltp or ltp == 0:
-                    pc = d.get("prev_close", 0)
-                    chg_abs = d.get("change", 0)
-                    ltp = round(pc + chg_abs, 2) if pc else (d.get("high") or d.get("open") or "N/A")
                 summary_lines.append(
                     f"**{sym}**: LTP ₹{ltp}"
                     + (f"  Chg {chg}%" if chg else "")
@@ -132,11 +156,10 @@ async def market_brain(system: str | None, messages: list, tools: list[dict]) ->
             calls.append({"name": "nse_price_history", "arguments": {"symbol": sym, "days": 90}})
         return None, calls
 
-    # Market overview / indices
+    # Market overview / indices — skip nse_equity_quote for NIFTY (blocked from cloud)
     if any(w in q_lower for w in ["market", "nifty", "sensex", "index", "overview", "today"]):
         return None, [
-            {"name": "nse_equity_quote", "arguments": {"symbol": "NIFTY"}},
-            {"name": "nse_index_data",   "arguments": {"index_name": "NIFTY 50"}},
+            {"name": "nse_index_data", "arguments": {"index_name": "NIFTY 50"}},
         ]
 
     # Top movers

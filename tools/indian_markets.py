@@ -306,7 +306,10 @@ def nse_index_data(index_name: str = "NIFTY 50") -> dict:
             "top_losers": losers,
         }
     except Exception as e:
-        return {"error": str(e), "index": index_name}
+        msg = str(e)
+        if "nseindia.com" in msg or "'list'" in msg or "403" in msg or "404" in msg:
+            msg = f"NSE live index API unavailable from cloud (use archive-based methods)"
+        return {"error": msg, "index": index_name}
 
 
 def nse_lookup(query: str) -> dict:

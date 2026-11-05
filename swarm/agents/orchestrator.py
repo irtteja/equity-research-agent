@@ -59,9 +59,41 @@ def _classify(query: str) -> tuple[str, int]:
     return "unknown", 0
 
 
+def _synthesize_text(combined: str) -> str:
+    """Format pre-combined agent output into a morning brief."""
+    lines = ["# NSE Morning Research Brief\n"]
+    sections = combined.split("---")
+    for section in sections:
+        section = section.strip()
+        if not section:
+            continue
+        if section.startswith("[MarketAnalyst:NIFTY]") or "NIFTY" in section[:40]:
+            lines.append("## 1. Market Pulse\n")
+        elif section.startswith("[MarketAnalyst:Tickers]") or "RELIANCE" in section[:60]:
+            lines.append("## 2. Key Tickers\n")
+        elif section.startswith("[FundamentalsAnalyst:Announcements]"):
+            lines.append("## 3. Today's Announcements\n")
+        elif section.startswith("[FundamentalsAnalyst:CorpActions]"):
+            lines.append("## 4. Corporate Actions\n")
+        # Strip the bracket label prefix
+        body = section
+        for prefix in ("[MarketAnalyst:NIFTY]", "[MarketAnalyst:Tickers]",
+                       "[FundamentalsAnalyst:Announcements]", "[FundamentalsAnalyst:CorpActions]"):
+            if body.startswith(prefix):
+                body = body[len(prefix):].strip()
+                break
+        lines.append(body)
+        lines.append("")
+    return "\n".join(lines)
+
+
 async def orchestrator_brain(system: str | None, messages: list, tools: list[dict]) -> tuple[str | None, list[dict]]:
     query  = _last_user(messages).strip()
     results = _tool_results(messages)
+
+    # Direct synthesis: morning_brief passes combined agent output with this prefix
+    if query.startswith("You have received research from") or "[MarketAnalyst" in query or "[FundamentalsAnalyst" in query:
+        return _synthesize_text(query), []
 
     # After tool results come back (from send_message to sub-agents), synthesize
     if results:

@@ -81,6 +81,17 @@ async def fundamentals_brain(system: str | None, messages: list, tools: list[dic
                     lines.append(f"  [{dt}] **{sym}**: {subj}")
                 continue
 
+            # Corporate actions — returns {"from", "to", "count", "actions": [...]}
+            if "actions" in data:
+                acts = data["actions"]
+                lines.append(f"**Corporate Actions** ({data.get('count', len(acts))} total, showing top 10)")
+                for a in acts[:10]:
+                    sym = a.get("SYMBOL", "")
+                    purpose = a.get("PURPOSE", "")[:80]
+                    ex_dt = a.get("EX-DATE", a.get("exDate", ""))
+                    lines.append(f"  [{ex_dt}] **{sym}**: {purpose}")
+                continue
+
             # Legacy list format
             if isinstance(data, list) and data and (
                 "desc" in (data[0] if data else {}) or "SYMBOL" in (data[0] if data else {})
@@ -114,26 +125,31 @@ async def fundamentals_brain(system: str | None, messages: list, tools: list[dic
     q_lower = query.lower()
     symbols = _extract_symbols(query)
 
+    # Announcements — check before "result" since "Board meetings and results" should → announcements
+    if any(w in q_lower for w in ["announcement", "board meeting", "bse", "nse news", "filing", "regulatory"]):
+        sym = symbols[0] if symbols else None
+        args: dict = {"days": 3}
+        if sym:
+            args["symbol"] = sym
+        return None, [{"name": "nse_all_announcements", "arguments": args}]
+
     # Earnings / results calendar
     if any(w in q_lower for w in ["result", "earning", "quarterly", "q1", "q2", "q3", "q4", "xbrl"]):
         if symbols:
             return None, [{"name": "nse_integrated_filing", "arguments": {"symbol": symbols[0]}}]
         return None, [{"name": "nse_financial_results_bulk", "arguments": {"days": 7}}]
 
-    # Announcements
-    if any(w in q_lower for w in ["announcement", "bse", "nse news", "filing", "regulatory"]):
+    # Announcements (secondary check — broad terms)
+    if any(w in q_lower for w in ["important", "news"]):
         sym = symbols[0] if symbols else None
         args = {"days": 3}
         if sym:
             args["symbol"] = sym
         return None, [{"name": "nse_all_announcements", "arguments": args}]
 
-    # Board meetings / dividends
-    if any(w in q_lower for w in ["board meeting", "dividend", "split", "bonus", "corporate action"]):
-        args = {"days": 30}
-        if symbols:
-            args["symbol"] = symbols[0]
-        return None, [{"name": "nse_corporate_actions_bulk", "arguments": args}]
+    # Dividends / splits / bonus / corporate actions
+    if any(w in q_lower for w in ["dividend", "split", "bonus", "corporate action"]):
+        return None, [{"name": "nse_corporate_actions_bulk", "arguments": {}}]
 
     # Conviction score from graph
     if any(w in q_lower for w in ["conviction", "score", "rank", "rated", "grade"]):
