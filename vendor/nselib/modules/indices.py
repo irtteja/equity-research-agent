@@ -645,6 +645,161 @@ class IndicesMixin:
         return rows
 
 
+    def index_snapshot_archive(self, index: str = "NIFTY 50", date: date | None = None) -> dict:
+        """Cloud-safe index snapshot from bhavcopy archive.
+
+        Uses the NSE bhavcopy (equity + indices) to build a snapshot without
+        hitting the live API. Works from any IP.
+
+        Args:
+            index: Index name e.g. "NIFTY 50", "NIFTY BANK"
+            date: Trading date (defaults to today; falls back to most recent available)
+
+        Returns:
+            {
+              "index": str,
+              "date": str,
+              "close": float,
+              "open": float,
+              "high": float,
+              "low": float,
+              "prev_close": float,
+              "pct_change": float,
+              "constituents": [{"symbol": str, "close": float, "pct_change": float, ...}]
+            }
+
+        Uses:
+          1. IndicesBhavcopy from nsearchives for the index OHLCV
+          2. Constituent list from the static CSV (already in _CONSTITUENT_CSV map)
+          3. Equity bhavcopy for constituent prices
+        """
+        import io
+        import datetime as _datetime_mod
+
+        _NSE_ARCHIVE = "https://nsearchives.nseindia.com"
+
+        # `date` parameter shadows the imported class; use module reference for .today()
+        target_date: _datetime_mod.date = (
+            date if date is not None else _datetime_mod.date.today()
+        )
+
+        def _float(val: Any) -> float | None:
+            try:
+                return float(val) if val and str(val).strip() else None
+            except (ValueError, TypeError):
+                return None
+
+        # --- 1. Fetch indices bhavcopy; fall back up to 5 days for holidays/weekends ---
+        rows_index: list[dict] = []
+        actual_date: _datetime_mod.date = target_date
+        for offset in range(5):
+            d = target_date - _datetime_mod.timedelta(days=offset)
+            url = (
+                f"{_NSE_ARCHIVE}/content/indices/"
+                f"ind_close_all_{d.strftime('%d%m%Y')}.csv"
+            )
+            try:
+                resp = self._session.get_raw(url)
+                text = resp.content.decode("utf-8-sig")
+                rows_index = list(csv.DictReader(io.StringIO(text)))
+                if rows_index:
+                    actual_date = d
+                    break
+            except Exception:
+                continue
+
+        if not rows_index:
+            raise NSEDataError(
+                f"Indices bhavcopy unavailable for {target_date} and the 4 prior days."
+            )
+
+        # --- 2. Find target index row (NSE uses "Index Name" as the first column) ---
+        index_row: dict[str, Any] | None = None
+        for row in rows_index:
+            name = (row.get("Index Name") or row.get("IndexName") or "").strip()
+            if name.upper() == index.upper():
+                index_row = row
+                break
+
+        if index_row is None:
+            available = sorted(
+                (row.get("Index Name") or row.get("IndexName") or "").strip()
+                for row in rows_index
+            )
+            raise NSEDataError(
+                f"Index {index!r} not found in bhavcopy for {actual_date}. "
+                f"Available ({len(available)}): {available}"
+            )
+
+        close      = _float(index_row.get("Closing Index Value"))
+        open_      = _float(index_row.get("Opening Index Value"))
+        high       = _float(index_row.get("High Index Value"))
+        low        = _float(index_row.get("Low Index Value"))
+        prev_close = _float(
+            index_row.get("Previous Index Value")
+            or index_row.get("Prev Close Value")
+        )
+
+        pct_change: float | None = None
+        if close is not None and prev_close:
+            pct_change = round((close - prev_close) / prev_close * 100, 2)
+
+        # --- 3. Load constituent symbols from most-recent saved snapshot ---
+        key = _index_key(index)
+        snapshot_file = _STORE / f"{key}_latest.json"
+        constituent_symbols: list[str] = []
+        if snapshot_file.exists():
+            try:
+                constituent_symbols = json.loads(snapshot_file.read_text()).get("symbols", [])
+            except Exception:
+                pass
+
+        # --- 4. Fetch constituent prices from equity bhavcopy (HistoryMixin) ---
+        constituents: list[dict] = []
+        if constituent_symbols:
+            bhav_rows = self._fetch_bhavcopy_day(actual_date)
+            # Build symbol → row map; keep first EQ-series occurrence per symbol
+            bhav_map: dict[str, dict] = {}
+            for row in bhav_rows:
+                sym    = row.get("TckrSymb", "").strip()
+                series = row.get("SctySrs",  "").strip()
+                if sym and series in _EQ_SERIES and sym not in bhav_map:
+                    bhav_map[sym] = row
+
+            for sym in constituent_symbols:
+                row = bhav_map.get(sym)
+                if not row:
+                    continue
+                c  = _float(row.get("ClsPric"))
+                pc = _float(row.get("PrvsClsgPric"))
+                pct: float | None = None
+                if c is not None and pc:
+                    pct = round((c - pc) / pc * 100, 2)
+                constituents.append({
+                    "symbol":     sym,
+                    "open":       _float(row.get("OpnPric")),
+                    "high":       _float(row.get("HghPric")),
+                    "low":        _float(row.get("LwPric")),
+                    "close":      c,
+                    "prev_close": pc,
+                    "pct_change": pct,
+                    "volume": (
+                        int(float(row["TtlTradgVol"])) if row.get("TtlTradgVol") else None
+                    ),
+                })
+
+        return {
+            "index":        index,
+            "date":         actual_date.isoformat(),
+            "close":        close,
+            "open":         open_,
+            "high":         high,
+            "low":          low,
+            "prev_close":   prev_close,
+            "pct_change":   pct_change,
+            "constituents": constituents,
+        }
+
     def get_index_names(self):
         """List of all NSE index names grouped by category."""
         path = "index-names"

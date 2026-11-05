@@ -12,6 +12,43 @@ def _fmt_numeric(d: date) -> str:
     return d.strftime("%d-%m-%Y")
 
 
+# Indices that are NOT equity (bonds, derivatives, VIX, REITs, SME).
+# fetch_index_constituents() rejects these early with a clear error.
+_NON_EQUITY_INDICES: frozenset[str] = frozenset({
+    "INDIA VIX",
+    "NIFTY SME EMERGE",
+    "NIFTY 50 FUTURES INDEX",
+    "NIFTY 50 FUTURES TR INDEX",
+    "NIFTY 50 ARBITRAGE",
+    "NIFTY REITS & INVITS",
+    "NIFTY50 SHARIAH",
+    "NIFTY500 SHARIAH",
+    "NIFTY25 SHARIAH",
+    "NIFTY BHARAT BOND - APRIL 2023",
+    "NIFTY BHARAT BOND - APRIL 2025",
+    "NIFTY BHARAT BOND - APRIL 2030",
+    "NIFTY BHARAT BOND - APRIL 2031",
+    "NIFTY BHARAT BOND - APRIL 2032",
+    "NIFTY BHARAT BOND - APRIL 2033",
+})
+
+# Substring patterns in the index name that indicate a non-equity index.
+_NON_EQUITY_SUBSTRINGS: tuple[str, ...] = (
+    "BHARAT BOND",
+    "BHARATBOND",
+    "G-SEC",
+    "CORPORATE BOND",
+    "PSU BOND",
+    " GILT ",
+    "NIFTY GS ",
+)
+
+
+def _is_non_equity(name: str) -> bool:
+    upper = name.upper()
+    return upper in _NON_EQUITY_INDICES or any(s in upper for s in _NON_EQUITY_SUBSTRINGS)
+
+
 # NSE archive: index name → constituent CSV filename
 _CONSTITUENT_CSV: dict[str, str] = {
     "NIFTY 50":                         "ind_nifty50list.csv",
@@ -92,34 +129,54 @@ class MarketMixin:
 
     def fetch_index_constituents(self, index: str = "NIFTY 50") -> list[dict]:
         """
-        Constituent stocks of an NSE index — company name, symbol, industry, ISIN.
-        Fetched from NSE's static archive (works from any IP).
-        Returns a list of dicts with keys: Company Name, Industry, Symbol, Series, ISIN Code.
+        Constituent stocks of an NSE equity index.
+
+        **Archive path** (44 well-known indices, works from any IP including cloud):
+          Returns [{"Company Name", "Industry", "Symbol", "Series", "ISIN Code"}, ...]
+
+        **Live API fallback** (all other equity indices, requires non-datacenter IP):
+          Returns live price records: symbol, companyName, lastPrice, pChange, etc.
+          The first element of the NSE response (the index itself) is stripped.
+
+        Raises NSEDataError for non-equity indices (bonds, VIX, futures, REITs, SME).
         """
+        if _is_non_equity(index):
+            from ..exceptions import NSEDataError
+            raise NSEDataError(
+                f"{index!r} is not an equity index "
+                f"(bond / VIX / futures / REIT / SME indices are excluded)."
+            )
+
         key = index.upper()
+
+        # ── Archive CSV (cloud-safe) ───────────────────────────────────────
         filename = _CONSTITUENT_CSV.get(key)
         if not filename:
-            # fuzzy match
             match = next(
                 (k for k in _CONSTITUENT_CSV if key in k or k in key), None
             )
-            if not match:
-                from ..exceptions import NSEDataError
-                raise NSEDataError(
-                    f"No constituent data for {index!r}. "
-                    f"Supported: {sorted(_CONSTITUENT_CSV.keys())}"
-                )
-            filename = _CONSTITUENT_CSV[match]
+            if match:
+                filename = _CONSTITUENT_CSV[match]
 
-        url  = f"{NSE_ARCHIVE}/content/indices/{filename}"
-        resp = self._session.get_raw(url)
-        reader = csv.DictReader(io.StringIO(resp.text))
-        return [dict(row) for row in reader]
+        if filename:
+            url  = f"{NSE_ARCHIVE}/content/indices/{filename}"
+            resp = self._session.get_raw(url)
+            reader = csv.DictReader(io.StringIO(resp.text))
+            rows = [dict(row) for row in reader]
+            if rows:
+                return rows
+
+        # ── Live API fallback (equity-stockIndices) ────────────────────────
+        resp = self._session.get("equity-stockIndices", params={"index": index})
+        data = resp.get("data", []) if isinstance(resp, dict) else []
+        # First item in NSE's response is the index summary, not a stock — skip it.
+        return data[1:] if data else data
 
     def list_equity_stocks_by_index(self, index: str = "NIFTY 50") -> list[dict]:
         """
         Constituent stocks of an NSE index.
         Returns the same data as fetch_index_constituents().
+        Returns a list of dicts (not a dict wrapper). Pass directly to gainers() or losers().
         """
         return self.fetch_index_constituents(index)
 
@@ -132,12 +189,13 @@ class MarketMixin:
     #  Gainers / losers / breadth                                         #
     # ------------------------------------------------------------------ #
 
-    def gainers(self, data: dict, count: int | None = None) -> list[dict]:
+    def gainers(self, data: dict | list, count: int | None = None) -> list[dict]:
         """
         Top gainers from a universe returned by list_equity_stocks_by_index().
         Sorted by pChange descending.
+        Accepts either a list directly or a dict with a "data" key.
         """
-        stocks = data.get("data", [])
+        stocks = data if isinstance(data, list) else data.get("data", [])
         result = sorted(
             [s for s in stocks if s.get("pChange", 0) > 0],
             key=lambda s: s.get("pChange", 0),
@@ -145,11 +203,12 @@ class MarketMixin:
         )
         return result[:count] if count else result
 
-    def losers(self, data: dict, count: int | None = None) -> list[dict]:
+    def losers(self, data: dict | list, count: int | None = None) -> list[dict]:
         """
         Top losers. Sorted by pChange ascending (biggest loss first).
+        Accepts either a list directly or a dict with a "data" key.
         """
-        stocks = data.get("data", [])
+        stocks = data if isinstance(data, list) else data.get("data", [])
         result = sorted(
             [s for s in stocks if s.get("pChange", 0) < 0],
             key=lambda s: s.get("pChange", 0),

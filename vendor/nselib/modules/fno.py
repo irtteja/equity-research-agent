@@ -935,6 +935,64 @@ class FnoMixin:
                 continue
         return []
 
+    def options_oi_history(
+        self,
+        symbol: str,
+        expiry: str,
+        from_date: date,
+        to_date: date,
+    ) -> list[dict]:
+        """EOD OI per strike over time for a symbol+expiry pair.
+
+        Fetches fo_market_activity (the full F&O bhavcopy) for each date and
+        filters to option rows (CE/PE) matching symbol and expiry.
+
+        Args:
+            symbol: Underlying symbol e.g. "NIFTY", "RELIANCE"
+            expiry: Expiry date string as it appears in bhavcopy e.g. "27-Nov-2026"
+            from_date: start date
+            to_date: end date
+
+        Returns:
+            List of dicts: {date, symbol, expiry, strike, instrument(CE/PE),
+                           open_interest, change_in_oi, volume, close_price}
+        """
+        sym_upper = symbol.upper()
+        expiry_upper = expiry.upper()
+        out: list[dict] = []
+        seen_dates: set[str] = set()
+
+        d = from_date
+        while d <= to_date:
+            activity = self.fo_market_activity(d)
+            actual_date = activity.get("date")
+            if actual_date and actual_date not in seen_dates:
+                seen_dates.add(actual_date)
+                for row in activity.get("options", []):
+                    if (row.get("symbol", "").upper() == sym_upper and
+                            row.get("expiry", "").upper() == expiry_upper):
+                        # change_in_oi column may survive unmapped with its raw name
+                        change_in_oi = (
+                            row.get("change_in_oi")
+                            or row.get("CHG_IN_OI")
+                            or row.get("CHNG_IN_OI")
+                            or row.get("ChngInOpnIntrst")
+                            or 0
+                        )
+                        out.append({
+                            "date":          actual_date,
+                            "symbol":        row.get("symbol", ""),
+                            "expiry":        row.get("expiry", ""),
+                            "strike":        row.get("strike", ""),
+                            "instrument":    row.get("option_type", ""),
+                            "open_interest": row.get("oi", ""),
+                            "change_in_oi":  change_in_oi,
+                            "volume":        row.get("traded_qty", ""),
+                            "close_price":   row.get("close", ""),
+                        })
+            d += timedelta(days=1)
+        return out
+
     def fo_ael_option_contracts(self, trade_date: date | None = None) -> list[dict]:
         """Contract-wise Additional Exposure Limit (AEL) for F&O option contracts.
 
