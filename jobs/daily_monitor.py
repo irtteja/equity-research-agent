@@ -75,8 +75,9 @@ def run():
     print(f"Daily Monitor — {datetime.now().strftime('%Y-%m-%d %H:%M IST')}")
     print(f"{'='*60}\n")
 
-    log_task(TASK_ID, f"Daily market monitoring {date.today().isoformat()}",
+    task_id = log_task(TASK_ID, f"Daily market monitoring {date.today().isoformat()}",
              "Macro snapshot, FII/DII, announcements, block deals", priority="high")
+    task_id = task_id or TASK_ID
     update_task_status(TASK_ID, "in_progress")
 
     results = {}

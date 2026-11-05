@@ -1086,3 +1086,43 @@ Progress: xbrl=3291 quarters, docs=0 facts; graph=32696n/58415e
 Next: 
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-05 10:51
+Task: daily-monitor-2026-11-05
+Status: in_progress
+Progress: step 5e: 0 analyst items enqueued
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-05 10:51
+Task: daily-monitor-2026-11-05
+Status: in_progress
+Progress: step 5f: {'announcements': 862, 'board_meetings': 13, 'saved': True, 'error': None}
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-05 10:51
+Task: daily-monitor-2026-11-05
+Status: in_progress
+Progress: step 5g: analysis+synthesis done
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-05 10:52
+Task: daily-monitor-2026-11-05
+Status: in_progress
+Progress: step 5h: meta done — enqueued=5
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-05 10:52
+Task: daily-monitor-2026-11-05
+Status: completed_with_errors
+Progress: Macro, FII/DII, 0 facts ingested, bhavcopy 0 rows, block/bulk deals
+Next: Review material announcements, update PROGRESS.md
+Blockers: structured_results, indices_bhavcopy, corp_events
+============================================================
