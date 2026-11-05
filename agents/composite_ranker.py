@@ -115,6 +115,14 @@ def _load_technical(conn, ticker: str) -> Optional[dict]:
     return _p(row["properties"]) if row else None
 
 
+def _load_surveillance_flags(conn) -> set[str]:
+    """Return set of tickers with active SurveillanceFlag nodes (GSM/ASM/ESM flagged)."""
+    rows = conn.execute(
+        "SELECT ticker FROM nodes WHERE node_type='SurveillanceFlag' AND belief_state='confirmed'"
+    ).fetchall()
+    return {r["ticker"] for r in rows}
+
+
 # ── Score computation ─────────────────────────────────────────────────────────
 
 def _compute_score(ticker: str, conf: float, conn) -> dict:
@@ -260,10 +268,19 @@ class CompositeRanker:
             return {"ok": 0, "errors": 0, "tickers": [], "duration_s": 0.0,
                     "error": "No ConfluenceSignal nodes found in graph.db"}
 
-        # Score all tickers
+        # Load surveillance-flagged tickers (hard exclude from BUY)
+        surveillance_flagged = _load_surveillance_flags(conn)
+        if surveillance_flagged:
+            print(f"[ranker] {len(surveillance_flagged)} tickers excluded by SurveillanceFlag")
+
+        # Score all tickers (skip surveillance-flagged ones)
         scored  = []
         errors  = 0
+        excluded = []
         for td in tickers_data:
+            if td["ticker"] in surveillance_flagged:
+                excluded.append(td["ticker"])
+                continue
             try:
                 result = _compute_score(td["ticker"], td["conf"], conn)
                 scored.append(result)
@@ -309,10 +326,11 @@ class CompositeRanker:
         tickers_out = [r["ticker"] for r in scored]
 
         return {
-            "ok":         len(scored),
-            "errors":     errors,
-            "tickers":    tickers_out,
-            "duration_s": dur,
+            "ok":                   len(scored),
+            "errors":               errors,
+            "surveillance_excluded": excluded,
+            "tickers":              tickers_out,
+            "duration_s":           dur,
         }
 
 

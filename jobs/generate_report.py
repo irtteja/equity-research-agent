@@ -288,6 +288,8 @@ def generate_report(ticker: str) -> str:
     concall   = _get_node(ticker, "ConcallInsight")
     peer_cmp  = _get_node(ticker, "PeerComparison")
     biz_qual  = _get_node(ticker, "BusinessQuality")
+    analyst   = _get_node(ticker, "AnalystConsensus")
+    surv_flag = _get_node(ticker, "SurveillanceFlag")
 
     # ── Company header ─────────────────────────────────────────────────────────
     comp_props = (company or {}).get("properties", {})
@@ -379,6 +381,21 @@ def generate_report(ticker: str) -> str:
     # ── ConcallInsight ────────────────────────────────────────────────────────
     ccp = (concall or {}).get("properties", {})
 
+    # ── Analyst consensus (TradingView) ───────────────────────────────────────
+    acp = (analyst or {}).get("properties", {})
+    ac_consensus  = acp.get("consensus", "")
+    ac_total      = acp.get("total_analysts", 0)
+    ac_buy        = acp.get("buy_total", acp.get("buy", 0))
+    ac_hold       = acp.get("hold", 0)
+    ac_sell       = acp.get("sell_total", acp.get("sell", 0))
+    ac_target     = acp.get("price_target_1y")
+    ac_upside     = acp.get("upside_pct")
+
+    # ── Surveillance flag ─────────────────────────────────────────────────────
+    sfp = (surv_flag or {}).get("properties", {})
+    sf_severity   = sfp.get("severity", "")
+    sf_flags      = sfp.get("flags", {})
+
     # ── Build investment thesis ────────────────────────────────────────────────
     thesis = _build_thesis(ticker, signal, trend, tech, bear, senti, val)
 
@@ -463,6 +480,35 @@ def generate_report(ticker: str) -> str:
         f"| Technical Signal | **{tech_sig}** |",
         "",
     ]
+
+    # ── ANALYST CONSENSUS (TradingView) ──────────────────────────────────────
+    if analyst and ac_total:
+        ac_icon = "🟢" if ac_consensus in ("STRONG_BUY", "BUY") else ("🔴" if ac_consensus == "SELL" else "🟡")
+        buy_pct = round(ac_buy / ac_total * 100) if ac_total else 0
+        lines += [
+            "## ANALYST CONSENSUS",
+            "",
+            f"| Metric | Value |",
+            f"|--------|-------|",
+            f"| Consensus | {ac_icon} **{ac_consensus}** |",
+            f"| Buy / Hold / Sell | {ac_buy} / {ac_hold} / {ac_sell} (of {ac_total} analysts) |",
+            f"| Buy % | {buy_pct}% |",
+        ]
+        if ac_target:
+            lines.append(f"| Price Target 1Y | ₹{ac_target:.0f} |")
+        if ac_upside is not None:
+            upside_icon = "▲" if ac_upside > 0 else "▼"
+            lines.append(f"| Upside vs CMP | {upside_icon} {abs(ac_upside):.1f}% |")
+        lines.append("")
+
+    # ── SURVEILLANCE WARNING ──────────────────────────────────────────────────
+    if surv_flag and sf_severity:
+        active_flags = ", ".join(f"{k.upper()}:{v}" for k, v in sf_flags.items() if v)
+        lines += [
+            f"> ⚠️ **SURVEILLANCE FLAG ({sf_severity.upper()})**: This ticker is under NSE surveillance "
+            f"({active_flags}). Treat BUY signal with extreme caution — elevated risk of regulatory action.",
+            "",
+        ]
 
     # ── VALUATION ─────────────────────────────────────────────────────────────
     lines += [

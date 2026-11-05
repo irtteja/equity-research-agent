@@ -73,6 +73,22 @@ def run_ingestion_phase(verbose: bool = True) -> dict:
         results["corp_events"] = {"error": str(e)}
         _log("ingestion", f"corp_events FAILED: {e}")
 
+    # Surveillance flags (GSM/ASM/ESM hard filters — must run before composite_ranker)
+    try:
+        _log("ingestion", "ingest_surveillance (NSE flags)...")
+        t1 = time.time()
+        import jobs.ingest_surveillance as surv
+        r = surv.run()
+        results["surveillance"] = r
+        _record_perf("surveillance_ingest", r.get("inserted", 0) + r.get("updated", 0), 0,
+                     time.time()-t1, "ingestion")
+        if verbose:
+            _log("ingestion", f"surveillance: {r.get('actually_flagged',0)} flagged, "
+                              f"{r.get('inserted',0)} new, {r.get('retracted',0)} retracted")
+    except Exception as e:
+        results["surveillance"] = {"error": str(e)}
+        _log("ingestion", f"surveillance FAILED: {e}")
+
     # New data sources (delivery, insider, pledge, etc.)
     try:
         _log("ingestion", "ingest_new_sources...")
@@ -556,6 +572,22 @@ def run_full_cycle(
         "phases": {},
     }
 
+    # Seed graph from last committed snapshot (solves ephemeral graph.db problem)
+    try:
+        _log("orchestrator", "Importing graph snapshot...")
+        from jobs.import_snapshot import import_snapshot
+        snap_r = import_snapshot()
+        cycle["snapshot_import"] = snap_r
+        _log("orchestrator", (
+            f"Snapshot: {snap_r.get('status')} "
+            f"nodes={snap_r.get('nodes_imported',0)} "
+            f"conviction={snap_r.get('conviction_imported',0)} "
+            f"date={snap_r.get('snapshot_date','?')}"
+        ))
+    except Exception as e:
+        cycle["snapshot_import"] = {"error": str(e)}
+        _log("orchestrator", f"snapshot_import FAILED (non-fatal): {e}")
+
     if not skip_ingestion:
         _log("orchestrator", "=== Phase 1: Ingestion ===")
         cycle["phases"]["ingestion"] = run_ingestion_phase(verbose=verbose)
@@ -574,6 +606,20 @@ def run_full_cycle(
 
     cycle["total_duration_s"] = round(time.time() - t0, 1)
     cycle["completed_at"]     = datetime.now().isoformat()
+
+    # Export snapshot to committed JSON before session ends (solves ephemeral graph.db)
+    try:
+        _log("orchestrator", "Exporting graph snapshot...")
+        from jobs.export_snapshot import export
+        exp_r = export()
+        cycle["snapshot_export"] = exp_r
+        _log("orchestrator", (
+            f"Snapshot exported: nodes={exp_r.get('nodes',0)} "
+            f"conviction={exp_r.get('conviction_rows',0)} → {exp_r.get('latest','?')}"
+        ))
+    except Exception as e:
+        cycle["snapshot_export"] = {"error": str(e)}
+        _log("orchestrator", f"snapshot_export FAILED (non-fatal): {e}")
 
     _log("orchestrator", f"Cycle complete in {cycle['total_duration_s']}s")
     return cycle

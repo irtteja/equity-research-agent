@@ -1,5 +1,5 @@
 # CLEAN — CLEAN
-*Chemicals | Chemicals & Petrochemicals | 2026-11-04*
+*Chemicals | Chemicals & Petrochemicals | 2026-11-05*
 
 ---
 
@@ -40,6 +40,14 @@ CLEAN is 0.8% from 52W low with revenue improving 3 quarters (momentum 1.00). Te
 | MACD Hist | -9.58 |
 | EMA20 | Below EMA20 |
 | Technical Signal | **oversold_bounce** |
+
+## ANALYST CONSENSUS
+
+| Metric | Value |
+|--------|-------|
+| Consensus | 🟢 **STRONG_BUY** |
+| Buy / Hold / Sell | 11 / 1 / 1 (of 13 analysts) |
+| Buy % | 85% |
 
 ## VALUATION
 
@@ -112,4 +120,4 @@ CLEAN is 0.8% from 52W low with revenue improving 3 quarters (momentum 1.00). Te
 | Promoter Holding | — |
 
 ---
-*Confidence: 61% | Generated: 2026-11-04 20:12 | Next review: +30d*
+*Confidence: 61% | Generated: 2026-11-05 01:21 | Next review: +30d*
