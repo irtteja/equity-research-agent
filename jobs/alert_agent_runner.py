@@ -35,26 +35,27 @@ def main():
 
     try:
         agent = AlertAgent()
-        brief = agent.print_brief(as_of=as_of)
+        result = agent.run(hours_back=24)
 
-        s = brief.get("summary", {})
+        alerts = result.get("alerts", [])
+        critical = [a for a in alerts if a.get("severity") == "critical"]
         log_checkpoint(task_id,
             status="completed",
             progress=(
-                f"trends={s.get('total_trends',0)} "
-                f"strong+={s.get('strong_positive',0)} "
-                f"strong-={s.get('strong_negative',0)} "
-                f"inflections={s.get('inflections',0)}"
+                f"alerts={len(alerts)} "
+                f"critical={len(critical)} "
+                f"as_of={as_of}"
             ),
         )
         update_task_status(task_id, "completed")
         publish("alert_agent", "agent_health", {
             "status": "completed",
-            "trends": s.get("total_trends", 0),
-            "strong_positive": s.get("strong_positive", 0),
-            "strong_negative": s.get("strong_negative", 0),
+            "alerts": len(alerts),
+            "critical": len(critical),
             "as_of": str(as_of),
         }, ttl_hours=30)
+        for a in alerts[:10]:
+            print(f"  [{a.get('severity','?')}] {a.get('ticker','?')}: {a.get('message','')[:80]}")
 
     except Exception as exc:
         log_checkpoint(task_id, status="failed",

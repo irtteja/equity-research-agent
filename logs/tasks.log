@@ -1046,3 +1046,35 @@ Progress: Confluences: 3 (buy=3, sell=0) | Gaps: 1
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 77,093 unprocessed — ContextAgent lagging
 ============================================================
+
+[CHECKPOINT] 2026-11-05 10:33
+Task: None
+Status: completed
+Progress: trends_written=1253 strong=735 workers=4 errors=0
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-05 10:33
+Task: None
+Status: failed
+Progress: AlertAgent failed
+Next: 
+Blockers: 'AlertAgent' object has no attribute 'print_brief'
+============================================================
+
+[CHECKPOINT] 2026-11-05 10:34
+Task: None
+Status: failed
+Progress: AlertAgent failed
+Next: 
+Blockers: no such table: belief_log
+============================================================
+
+[CHECKPOINT] 2026-11-05 10:35
+Task: None
+Status: failed
+Progress: alert_agent_runner crashed: belief_log table missing from graph.db
+Next: create belief_log table in graph schema or skip alert_agent until schema updated
+Blockers: sqlite3.OperationalError: no such table: belief_log
+============================================================
