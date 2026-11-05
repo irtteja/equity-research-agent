@@ -1,5 +1,31 @@
 # Progress Log
 
+## 2026-11-05 — Market hours monitoring + post-close daily pipeline
+
+### Done
+- **NSE live feed**: 6 cycles (11:05–15:05 IST), ~26–28 nodes/cycle (live_prices, top_movers, market_status, fii_dii, option_chains)
+- **Swarm orchestrator**: 3 cycles — 3 BUY confluences stable all day: 3MINDIA(0.94), AADHARHFC(0.89), AAVAS(0.74)
+- **backfill_graph**: TrendSummary 100→1263 (commits `fdc8de9`)
+- **context_agent**: 5,000 episodes processed, 3,578 edges created
+- **trend_agent**: 1,253 trends written (735 strong)
+- **daily_monitor**: ran post-close (16:00 IST), 3 research reports: 3MINDIA, AADHARHFC, AAVAS
+- **Graph state**: 3,871→4,118 nodes, 58,418 edges; belief confirmed=136, forming=3,735
+- **Nov 5 is a holiday**: bhavcopy/indices download returned `holiday` / `download_failed`
+
+### Architecture changes
+- Fixed `task_id` NameError in `jobs/daily_monitor.py` (commit `08ace34`)
+- Fixed `alert_agent_runner.py` calling non-existent `print_brief()` → corrected to `run()` (commit `6ecdf8e`)
+
+### Bugs found / pending
+- **alert_agent**: blocked by missing `belief_log` table in graph.db — needs schema migration
+- **Stalled agents**: context_agent, document_agent, announcement_agent (>26h no heartbeat)
+- **Episode backlog**: 77,093 (5,000 processed today, ~72,093 remaining)
+
+### Pending / next session
+- Create `belief_log` table in graph schema to unblock alert_agent
+- Process remaining episode backlog via context_agent
+- Weekly research job still disabled
+
 ## 2026-11-04 — Nightly enrichment cycle complete + Living Graph wired with real data (session 34)
 
 ### Done
