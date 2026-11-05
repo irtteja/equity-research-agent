@@ -1126,3 +1126,11 @@ Progress: Macro, FII/DII, 0 facts ingested, bhavcopy 0 rows, block/bulk deals
 Next: Review material announcements, update PROGRESS.md
 Blockers: structured_results, indices_bhavcopy, corp_events
 ============================================================
+
+[CHECKPOINT] 2026-11-05 10:52
+Task: watchdog
+Status: completed
+Progress: post-close daily_monitor run complete; fixed task_id NameError in daily_monitor.py; 3 ticker reports generated (3MINDIA, AADHARHFC, AAVAS); graph: 3871 nodes 58418 edges
+Next: next watchdog wake
+Blockers: none
+============================================================
