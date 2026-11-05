@@ -120,6 +120,7 @@ class MarketMixin:
         """
         Constituent stocks of an NSE index.
         Returns the same data as fetch_index_constituents().
+        Returns a list of dicts (not a dict wrapper). Pass directly to gainers() or losers().
         """
         return self.fetch_index_constituents(index)
 
@@ -132,12 +133,13 @@ class MarketMixin:
     #  Gainers / losers / breadth                                         #
     # ------------------------------------------------------------------ #
 
-    def gainers(self, data: dict, count: int | None = None) -> list[dict]:
+    def gainers(self, data: dict | list, count: int | None = None) -> list[dict]:
         """
         Top gainers from a universe returned by list_equity_stocks_by_index().
         Sorted by pChange descending.
+        Accepts either a list directly or a dict with a "data" key.
         """
-        stocks = data.get("data", [])
+        stocks = data if isinstance(data, list) else data.get("data", [])
         result = sorted(
             [s for s in stocks if s.get("pChange", 0) > 0],
             key=lambda s: s.get("pChange", 0),
@@ -145,11 +147,12 @@ class MarketMixin:
         )
         return result[:count] if count else result
 
-    def losers(self, data: dict, count: int | None = None) -> list[dict]:
+    def losers(self, data: dict | list, count: int | None = None) -> list[dict]:
         """
         Top losers. Sorted by pChange ascending (biggest loss first).
+        Accepts either a list directly or a dict with a "data" key.
         """
-        stocks = data.get("data", [])
+        stocks = data if isinstance(data, list) else data.get("data", [])
         result = sorted(
             [s for s in stocks if s.get("pChange", 0) < 0],
             key=lambda s: s.get("pChange", 0),

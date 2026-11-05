@@ -24,6 +24,29 @@ from urllib3.util.retry import Retry
 
 from .exceptions import NSESessionError, NSEFileUnavailableError
 
+# Module-level shared session — avoids re-seeding Akamai cookies on every with NSE() block
+_shared_session: "NSESession | None" = None
+_shared_folder:  str = ""
+
+def get_shared_session(download_folder: str | Path = ".", rate: float = 3.0, timeout: int = 15) -> "NSESession":
+    """Return a module-level NSESession, creating it once and reusing it across calls.
+
+    Saves ~0.5s per call vs opening a fresh NSE() context each time (cookie re-seeding overhead).
+    Thread-safe: the token bucket inside NSESession is already mutex-protected.
+    """
+    global _shared_session, _shared_folder
+    folder = str(Path(download_folder).expanduser().resolve())
+    if _shared_session is None or not _shared_session._s or _shared_folder != folder:
+        if _shared_session is not None:
+            try:
+                _shared_session.close()
+            except Exception:
+                pass
+        _shared_session = NSESession(download_folder=download_folder, rate=rate, timeout=timeout)
+        _shared_folder  = folder
+    return _shared_session
+
+
 NSE_BASE    = "https://www.nseindia.com"
 NSE_BASE_IN = "https://www.nseindia.in"   # mirror domain; used as fallback
 NSE_API     = f"{NSE_BASE}/api"
@@ -69,13 +92,13 @@ _HOME_HEADERS = {
 
 
 class _TokenBucket:
-    """Thread-safe token bucket for rate limiting."""
+    """Thread-safe token bucket for rate limiting (single-process only)."""
 
     def __init__(self, rate: float):
-        self._rate  = rate
+        self._rate   = rate
         self._tokens = rate
-        self._last  = time.monotonic()
-        self._lock  = threading.Lock()
+        self._last   = time.monotonic()
+        self._lock   = threading.Lock()
 
     def consume(self) -> None:
         with self._lock:
@@ -89,6 +112,75 @@ class _TokenBucket:
                 self._tokens = 0
             else:
                 self._tokens -= 1
+
+
+class _FileTokenBucket:
+    """Cross-process token bucket using a file lock + JSON state.
+
+    Shares the rate limit across all processes on the same machine, so two
+    concurrent nselib processes (morning brief + interactive query) together
+    respect the per-IP limit instead of each running at full rate.
+
+    Falls back to _TokenBucket on platforms without fcntl (Windows).
+    State file: ~/.nselib/rate_limit.json
+    """
+
+    _STATE_FILE = Path.home() / ".nselib" / "rate_limit.json"
+
+    def __init__(self, rate: float):
+        self._rate      = rate
+        self._lock      = threading.Lock()   # intra-process guard
+        self._fallback  = _TokenBucket(rate) # used if fcntl unavailable
+        try:
+            import fcntl as _fcntl  # noqa: F401
+            self._has_fcntl = True
+            self._STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
+        except ImportError:
+            self._has_fcntl = False
+
+    def consume(self) -> None:
+        if not self._has_fcntl:
+            self._fallback.consume()
+            return
+        with self._lock:
+            self._file_consume()
+
+    def _file_consume(self) -> None:
+        import fcntl
+
+        retries = 0
+        while True:
+            with open(self._STATE_FILE, "a+") as fh:
+                fcntl.flock(fh, fcntl.LOCK_EX)
+                try:
+                    fh.seek(0)
+                    raw = fh.read().strip()
+                    state = json.loads(raw) if raw else {"tokens": self._rate, "ts": time.time()}
+
+                    now     = time.time()
+                    elapsed = now - state["ts"]
+                    tokens  = min(self._rate, state["tokens"] + elapsed * self._rate)
+
+                    if tokens >= 1:
+                        # Token available — consume and write
+                        state = {"tokens": tokens - 1, "ts": now}
+                        fh.seek(0); fh.truncate()
+                        fh.write(json.dumps(state)); fh.flush()
+                        return
+                    else:
+                        # No token yet — record current state, release lock, sleep
+                        wait = (1 - tokens) / self._rate
+                        state = {"tokens": tokens, "ts": now}
+                        fh.seek(0); fh.truncate()
+                        fh.write(json.dumps(state)); fh.flush()
+                finally:
+                    fcntl.flock(fh, fcntl.LOCK_UN)
+
+            # Sleep outside the lock so other processes can also run
+            time.sleep(wait)
+            retries += 1
+            if retries > 20:   # safety: never spin forever
+                return
 
 
 class NSESession:
@@ -119,7 +211,7 @@ class NSESession:
         self.download_folder.mkdir(parents=True, exist_ok=True)
 
         self._timeout    = timeout
-        self._bucket     = _TokenBucket(rate)
+        self._bucket     = _FileTokenBucket(rate)
         self._cookie_file = self.download_folder / self._COOKIE_FILE
         self._cookie_ts:    float = 0.0
         self._cookie_ts_in: float = 0.0   # tracks nseindia.in session freshness

@@ -39,6 +39,12 @@ def _is_sme_bse(row: dict) -> bool:
     return str(row.get("Group", "") or row.get("group", "")).strip().upper() in _BSE_SME_GROUPS
 
 
+def _nse():
+    """Return the module-level shared NSE instance (no cookie re-seeding overhead)."""
+    from nselib import NSE
+    return NSE.shared()
+
+
 # ------------------------------------------------------------------ #
 #  NSE tools (via nselib)                                             #
 # ------------------------------------------------------------------ #
@@ -46,9 +52,7 @@ def _is_sme_bse(row: dict) -> bool:
 def nse_equity_quote(symbol: str) -> dict:
     """Live NSE quote: OHLC, LTP, volume, 52w high/low, % change for a symbol like RELIANCE."""
     try:
-        from nselib import NSE
-        with NSE() as nse:
-            return nse.equity_quote(symbol.upper())
+        return _nse().equity_quote(symbol.upper())
     except Exception as e:
         return {"error": str(e), "symbol": symbol}
 
@@ -56,9 +60,7 @@ def nse_equity_quote(symbol: str) -> dict:
 def nse_price_history(symbol: str, days: int = 365) -> dict:
     """Historical daily OHLCV from NSE for a symbol. Uses bhavcopy archive as fallback (works from cloud)."""
     try:
-        from nselib import NSE
-        with NSE() as nse:
-            rows = nse.fetch_equity_historical_data(symbol.upper(), days=days)
+        rows = _nse().fetch_equity_historical_data(symbol.upper(), days=days)
         if not rows:
             return {"error": f"No history found for {symbol}"}
         return {
@@ -76,10 +78,9 @@ def nse_price_history(symbol: str, days: int = 365) -> dict:
 def nse_option_chain(symbol: str, expiry: Optional[str] = None) -> dict:
     """NSE option chain with CE/PE data side by side. Also returns max pain strike. symbol: NIFTY, BANKNIFTY, or stock symbol."""
     try:
-        from nselib import NSE
-        with NSE() as nse:
-            chain = nse.compile_option_chain(symbol.upper(), expiry=expiry)
-            mp = nse.max_pain(symbol.upper(), expiry=expiry)
+        nse = _nse()
+        chain = nse.compile_option_chain(symbol.upper(), expiry=expiry)
+        mp = nse.max_pain(symbol.upper(), expiry=expiry)
         return {
             "symbol": symbol.upper(),
             "max_pain": mp,
@@ -93,13 +94,11 @@ def nse_option_chain(symbol: str, expiry: Optional[str] = None) -> dict:
 def nse_corporate_actions(symbol: str) -> dict:
     """NSE corporate actions: dividends, splits, bonuses for a symbol (past 1 year + next 90 days)."""
     try:
-        from nselib import NSE
-        with NSE() as nse:
-            actions = nse.corporate_actions(
-                symbol=symbol.upper(),
-                from_date=date.today() - timedelta(days=365),
-                to_date=date.today() + timedelta(days=90),
-            )
+        actions = _nse().corporate_actions(
+            symbol=symbol.upper(),
+            from_date=date.today() - timedelta(days=365),
+            to_date=date.today() + timedelta(days=90),
+        )
         return {"symbol": symbol.upper(), "actions": actions}
     except Exception as e:
         return {"error": str(e), "symbol": symbol}
@@ -112,19 +111,17 @@ def nse_corporate_actions_bulk(from_date: str = None, to_date: str = None) -> di
     Returns dividends, splits, bonuses, rights issues.
     """
     try:
-        from nselib import NSE
         _fmt = lambda d: d.strftime("%d-%m-%Y")
         fd = from_date or _fmt(date.today() - timedelta(days=30))
         td = to_date or _fmt(date.today() + timedelta(days=90))
-        with NSE() as nse:
-            s = nse._session._s
-            r = s.get(
-                "https://www.nseindia.com/api/corporates-corporateActions",
-                params={"index": "equities", "from_date": fd, "to_date": td, "csv": "true"},
-                timeout=20,
-            )
-            text = r.content.decode("utf-8-sig", errors="replace")
-            rows = list(csv.DictReader(io.StringIO(text)))
+        s = _nse()._session._s
+        r = s.get(
+            "https://www.nseindia.com/api/corporates-corporateActions",
+            params={"index": "equities", "from_date": fd, "to_date": td, "csv": "true"},
+            timeout=20,
+        )
+        text = r.content.decode("utf-8-sig", errors="replace")
+        rows = list(csv.DictReader(io.StringIO(text)))
         return {"from": fd, "to": td, "count": len(rows), "actions": rows}
     except Exception as e:
         return {"error": str(e)}
@@ -133,9 +130,7 @@ def nse_corporate_actions_bulk(from_date: str = None, to_date: str = None) -> di
 def nse_financial_results(symbol: str, period: str = "Quarterly") -> dict:
     """NSE quarterly/annual financial results filings for a symbol. period: Quarterly or Annual."""
     try:
-        from nselib import NSE
-        with NSE() as nse:
-            results = nse.financial_results(symbol=symbol.upper(), period=period)
+        results = _nse().financial_results(symbol=symbol.upper(), period=period)
         return {"symbol": symbol.upper(), "period": period, "results": results}
     except Exception as e:
         return {"error": str(e), "symbol": symbol}
@@ -148,16 +143,14 @@ def nse_financial_results_bulk(period: str = "Quarterly") -> dict:
     period: 'Quarterly' or 'Annual'.
     """
     try:
-        from nselib import NSE
-        with NSE() as nse:
-            s = nse._session._s
-            r = s.get(
-                "https://www.nseindia.com/api/corporates-financial-results",
-                params={"index": "equities", "fo_sec": "true", "period": period, "csv": "true"},
-                timeout=30,
-            )
-            text = r.content.decode("utf-8-sig", errors="replace")
-            rows = list(csv.DictReader(io.StringIO(text)))
+        s = _nse()._session._s
+        r = s.get(
+            "https://www.nseindia.com/api/corporates-financial-results",
+            params={"index": "equities", "fo_sec": "true", "period": period, "csv": "true"},
+            timeout=30,
+        )
+        text = r.content.decode("utf-8-sig", errors="replace")
+        rows = list(csv.DictReader(io.StringIO(text)))
         return {"period": period, "count": len(rows), "results": rows}
     except Exception as e:
         return {"error": str(e)}
@@ -170,19 +163,17 @@ def nse_all_announcements(from_date: str = None, to_date: str = None) -> dict:
     Use days_back parameter pattern: pass from_date = (today - N).strftime('%d-%m-%Y').
     """
     try:
-        from nselib import NSE
         _fmt = lambda d: d.strftime("%d-%m-%Y")
         fd = from_date or _fmt(date.today())
         td = to_date or _fmt(date.today())
-        with NSE() as nse:
-            s = nse._session._s
-            r = s.get(
-                "https://www.nseindia.com/api/corporate-announcements",
-                params={"index": "equities", "from_date": fd, "to_date": td, "csv": "true"},
-                timeout=20,
-            )
-            text = r.content.decode("utf-8-sig", errors="replace")
-            rows = list(csv.DictReader(io.StringIO(text)))
+        s = _nse()._session._s
+        r = s.get(
+            "https://www.nseindia.com/api/corporate-announcements",
+            params={"index": "equities", "from_date": fd, "to_date": td, "csv": "true"},
+            timeout=20,
+        )
+        text = r.content.decode("utf-8-sig", errors="replace")
+        rows = list(csv.DictReader(io.StringIO(text)))
         return {"from": fd, "to": td, "count": len(rows), "announcements": rows}
     except Exception as e:
         return {"error": str(e)}
@@ -195,19 +186,17 @@ def nse_board_meetings_bulk(from_date: str = None, to_date: str = None) -> dict:
     Returns upcoming and recently held board meetings, including dividend/results agenda items.
     """
     try:
-        from nselib import NSE
         _fmt = lambda d: d.strftime("%d-%m-%Y")
         fd = from_date or _fmt(date.today() - timedelta(days=7))
         td = to_date or _fmt(date.today() + timedelta(days=30))
-        with NSE() as nse:
-            s = nse._session._s
-            r = s.get(
-                "https://www.nseindia.com/api/corporate-board-meetings",
-                params={"index": "equities", "from_date": fd, "to_date": td, "csv": "true"},
-                timeout=20,
-            )
-            text = r.content.decode("utf-8-sig", errors="replace")
-            rows = list(csv.DictReader(io.StringIO(text)))
+        s = _nse()._session._s
+        r = s.get(
+            "https://www.nseindia.com/api/corporate-board-meetings",
+            params={"index": "equities", "from_date": fd, "to_date": td, "csv": "true"},
+            timeout=20,
+        )
+        text = r.content.decode("utf-8-sig", errors="replace")
+        rows = list(csv.DictReader(io.StringIO(text)))
         return {"from": fd, "to": td, "count": len(rows), "meetings": rows}
     except Exception as e:
         return {"error": str(e)}
@@ -221,20 +210,17 @@ def nse_integrated_filing(symbol: str, from_date: str = None, to_date: str = Non
     PDF URLs are from nsearchives.nseindia.com and are cloud-accessible.
     """
     try:
-        from nselib import NSE
         _fmt = lambda d: d.strftime("%d-%m-%Y")
         fd = from_date or _fmt(date.today() - timedelta(days=730))
         td = to_date or _fmt(date.today())
-        with NSE() as nse:
-            s = nse._session._s
-            r = s.get(
-                "https://www.nseindia.com/api/integrated-filing-results",
-                params={"symbol": symbol.upper(), "index": "equities", "from_date": fd, "to_date": td},
-                timeout=20,
-            )
-            data = r.json()
+        s = _nse()._session._s
+        r = s.get(
+            "https://www.nseindia.com/api/integrated-filing-results",
+            params={"symbol": symbol.upper(), "index": "equities", "from_date": fd, "to_date": td},
+            timeout=20,
+        )
+        data = r.json()
         filings = data.get("data", []) if isinstance(data, dict) else data
-        # Annotate each filing with a direct PDF URL if not already present
         enriched = []
         for f in (filings if isinstance(filings, list) else []):
             enriched.append({
@@ -259,19 +245,18 @@ def nse_surveillance(list_type: str = "asm") -> dict:
     Returns stocks under enhanced surveillance with their stage/criteria.
     """
     try:
-        from nselib import NSE
+        nse = _nse()
         results = {}
-        with NSE() as nse:
-            if list_type in ("asm", "all"):
-                try:
-                    results["asm"] = nse.reportASM()
-                except Exception as e:
-                    results["asm_error"] = str(e)
-            if list_type in ("gsm", "all"):
-                try:
-                    results["gsm"] = nse.reportGSM()
-                except Exception as e:
-                    results["gsm_error"] = str(e)
+        if list_type in ("asm", "all"):
+            try:
+                results["asm"] = nse.reportASM()
+            except Exception as e:
+                results["asm_error"] = str(e)
+        if list_type in ("gsm", "all"):
+            try:
+                results["gsm"] = nse.reportGSM()
+            except Exception as e:
+                results["gsm_error"] = str(e)
         return results
     except Exception as e:
         return {"error": str(e)}
@@ -280,9 +265,7 @@ def nse_surveillance(list_type: str = "asm") -> dict:
 def nse_shareholding(symbol: str) -> dict:
     """NSE shareholding pattern: promoter, FII, DII, public breakdown for a symbol."""
     try:
-        from nselib import NSE
-        with NSE() as nse:
-            data = nse.shareholding_patterns(symbol.upper())
+        data = _nse().shareholding_patterns(symbol.upper())
         return {"symbol": symbol.upper(), "shareholding": data}
     except Exception as e:
         return {"error": str(e), "symbol": symbol}
@@ -291,13 +274,12 @@ def nse_shareholding(symbol: str) -> dict:
 def nse_index_data(index_name: str = "NIFTY 50") -> dict:
     """Live NSE index quote and top constituents. index_name examples: 'NIFTY 50', 'NIFTY BANK', 'NIFTY IT'."""
     try:
-        from nselib import NSE
-        with NSE() as nse:
-            quote = nse.index_quote(index_name)
-            stocks = nse.list_equity_stocks_by_index(index_name)
-            gainers = nse.gainers(stocks, count=5)
-            losers = nse.losers(stocks, count=5)
-            ad = nse.advance_decline(index_name)
+        nse = _nse()
+        quote = nse.index_quote(index_name)
+        stocks = nse.list_equity_stocks_by_index(index_name)
+        gainers = nse.gainers(stocks, count=5)
+        losers = nse.losers(stocks, count=5)
+        ad = nse.advance_decline(index_name)
         return {
             "index": index_name,
             "quote": quote,
@@ -315,9 +297,7 @@ def nse_index_data(index_name: str = "NIFTY 50") -> dict:
 def nse_lookup(query: str) -> dict:
     """Search NSE for a company by name or partial symbol. Returns matching symbols."""
     try:
-        from nselib import NSE
-        with NSE() as nse:
-            results = nse.lookup(query)
+        results = _nse().lookup(query)
         return {"query": query, "matches": results}
     except Exception as e:
         return {"error": str(e), "query": query}

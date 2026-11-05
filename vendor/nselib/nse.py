@@ -9,7 +9,7 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
-from .core     import NSESession
+from .core     import NSESession, get_shared_session
 from .brain    import Brain
 from .guardian import Guardian
 from .exceptions import BrainNotConfiguredError
@@ -95,6 +95,41 @@ class NSE(
                                        patches_file=patches_file)
             # Redirect all session.get() calls through the Guardian
             self._session.get = self._guardian.guarded_get
+
+    # ------------------------------------------------------------------ #
+    #  Shared singleton — avoids cookie re-seeding on every context open  #
+    # ------------------------------------------------------------------ #
+
+    _shared: "NSE | None" = None
+
+    @classmethod
+    def shared(
+        cls,
+        download_folder: str | Path = ".",
+        rate:  float = 3.0,
+        timeout: int = 15,
+    ) -> "NSE":
+        """Return a module-level shared NSE instance.
+
+        Use this instead of `with NSE() as nse:` when making many short calls
+        (e.g. one tool call per request in an agent loop). Avoids re-seeding
+        the Akamai session cookie on every open — saves ~0.5s per call.
+
+            # Instead of:
+            with NSE() as nse:
+                return nse.fno_ban_list(d)   # 0.6s (cookie overhead)
+
+            # Use:
+            nse = NSE.shared()
+            return nse.fno_ban_list(d)       # 0.06s (session reused)
+        """
+        if cls._shared is None:
+            inst = cls.__new__(cls)
+            inst._session  = get_shared_session(download_folder, rate, timeout)
+            inst._brain    = None
+            inst._guardian = None
+            cls._shared    = inst
+        return cls._shared
 
     # ------------------------------------------------------------------ #
     #  Context manager                                                     #
@@ -391,3 +426,14 @@ class NSE(
             },
             self.shareholding_patterns,
         )
+
+    # ------------------------------------------------------------------ #
+    #  Health check                                                        #
+    # ------------------------------------------------------------------ #
+
+    def health_check(self, nselib_dir: str | None = None) -> dict:
+        """Run a full health-check cycle. Returns the JSON report dict.
+        Equivalent to HealthChecker.run(nselib_dir or os.path.dirname(__file__))."""
+        from .healthcheck import HealthChecker
+        import os
+        return HealthChecker.run(nselib_dir or os.path.dirname(__file__))

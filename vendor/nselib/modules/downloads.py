@@ -1217,6 +1217,109 @@ class DownloadsMixin:
                 "maturities": _parse_csv_z("mat"),
             }
 
+    # ------------------------------------------------------------------ #
+    #  FII / DII historical (archive-based, cloud-safe)                  #
+    # ------------------------------------------------------------------ #
+
+    def fii_dii_historical(
+        self,
+        from_date: date,
+        to_date: date,
+    ) -> list[dict]:
+        """FII/DII historical trade activity from NSE archive.
+
+        Uses participant-wise F&O volume files (fao_participant_vol_DDMMYYYY.csv)
+        from nsearchives.nseindia.com — the same archive approach used by
+        participant_volume() in fno.py, extended over a date range.
+
+        Iterates every weekday in [from_date, to_date]. Dates where no file
+        exists (exchange holidays, weekends) are silently skipped.
+
+        Returns one dict per trading day:
+            date      : ISO date string (YYYY-MM-DD)
+            fii_buy   : FII total contracts bought / long opened (int)
+            fii_sell  : FII total contracts sold / short opened (int)
+            fii_net   : fii_buy - fii_sell
+            dii_buy   : DII total contracts bought / long opened (int)
+            dii_sell  : DII total contracts sold / short opened (int)
+            dii_net   : dii_buy - dii_sell
+
+        Values are contract counts (F&O, not cash-market rupee amounts).
+        Always cloud-safe: only nsearchives.nseindia.com is used.
+        """
+        import csv as _csv_m
+        import io as _io_m
+
+        # Column order in fao_participant_vol_*.csv (after the participant name):
+        # futures_index_long, futures_index_short,
+        # futures_stock_long, futures_stock_short,
+        # options_index_call_long, options_index_put_long,
+        # options_index_call_short, options_index_put_short,
+        # options_stock_call_long, options_stock_put_long,
+        # options_stock_call_short, options_stock_put_short,
+        # total_long, total_short
+        # (column positions 13 and 14, 0-indexed)
+        _TOTAL_BUY_COL  = 13   # "total_long"  maps to buy side
+        _TOTAL_SELL_COL = 14   # "total_short" maps to sell side
+
+        def _int(s: str) -> int:
+            try:
+                return int(s.strip().replace(",", ""))
+            except ValueError:
+                return 0
+
+        results: list[dict] = []
+
+        for d in _trading_days(from_date, to_date):
+            url = (
+                f"{_ARCHIVE}/content/nsccl/"
+                f"fao_participant_vol_{d.strftime('%d%m%Y')}.csv"
+            )
+            try:
+                r = self._session._s.get(url, timeout=8)
+                if r.status_code != 200 or b"DOCTYPE" in r.content[:50]:
+                    continue
+                reader = _csv_m.reader(_io_m.StringIO(r.text))
+                rows = list(reader)
+                # rows[0]: title / description row
+                # rows[1]: column-name header
+                # rows[2:]: one row per participant (FII, DII, Client, Pro, Total)
+                fii_row = dii_row = None
+                for row in rows[2:]:
+                    if not row or not row[0].strip():
+                        continue
+                    label = row[0].strip().upper()
+                    if label == "FII":
+                        fii_row = row
+                    elif label in ("DII", "MF"):
+                        dii_row = row
+
+                if fii_row is None and dii_row is None:
+                    continue
+
+                def _extract(row):
+                    if row is None or len(row) <= _TOTAL_SELL_COL:
+                        return 0, 0
+                    buy  = _int(row[_TOTAL_BUY_COL])
+                    sell = _int(row[_TOTAL_SELL_COL])
+                    return buy, sell
+
+                fii_buy, fii_sell = _extract(fii_row)
+                dii_buy, dii_sell = _extract(dii_row)
+                results.append({
+                    "date":     d.isoformat(),
+                    "fii_buy":  fii_buy,
+                    "fii_sell": fii_sell,
+                    "fii_net":  fii_buy - fii_sell,
+                    "dii_buy":  dii_buy,
+                    "dii_sell": dii_sell,
+                    "dii_net":  dii_buy - dii_sell,
+                })
+            except Exception:
+                continue
+
+        return results
+
     def egr_var_files(self, dt: date | None = None) -> list[dict]:
         """EGR segment (Exchange for Gold Receipts) VaR margin files.
 
