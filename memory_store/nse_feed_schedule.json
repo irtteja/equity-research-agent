@@ -1,47 +1,47 @@
 {
   "live_prices": {
-    "last": 1793957710.7698736,
-    "count": 25,
+    "last": 1793965742.4892178,
+    "count": 26,
     "errors": 0
   },
   "indices": {
-    "last": 1793957710.7698736,
-    "count": 25,
+    "last": 1793965742.4892178,
+    "count": 26,
     "errors": 0
   },
   "top_movers": {
-    "last": 1793957710.7698736,
-    "count": 25,
+    "last": 1793965742.4892178,
+    "count": 26,
     "errors": 0
   },
   "market_status": {
-    "last": 1793957710.7698736,
-    "count": 25,
+    "last": 1793965742.4892178,
+    "count": 26,
     "errors": 0
   },
   "corp_events": {
-    "last": 1793957710.7698736,
-    "count": 24,
+    "last": 1793965742.4892178,
+    "count": 25,
     "errors": 0
   },
   "board_meetings": {
-    "last": 1793957710.7698736,
-    "count": 19,
+    "last": 1793965742.4892178,
+    "count": 20,
     "errors": 0
   },
   "fii_dii": {
-    "last": 1793957710.7698736,
-    "count": 19,
+    "last": 1793965742.4892178,
+    "count": 20,
     "errors": 0
   },
   "option_chains": {
-    "last": 1793957710.7698736,
-    "count": 24,
+    "last": 1793965742.4892178,
+    "count": 25,
     "errors": 0
   },
   "delivery": {
-    "last": 1793954122.2124417,
-    "count": 14,
+    "last": 1793965742.4892178,
+    "count": 15,
     "errors": 0
   },
   "insider": {
@@ -50,8 +50,8 @@
     "errors": 0
   },
   "bulk_deals": {
-    "last": 1793957710.7698736,
-    "count": 19,
+    "last": 1793965742.4892178,
+    "count": 20,
     "errors": 0
   }
 }
