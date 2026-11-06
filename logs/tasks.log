@@ -1462,3 +1462,11 @@ Progress: Fri Nov  6 18:40:51 UTC 2026 — midnight heartbeat (00:10 IST Nov 7);
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-06 19:35
+Task: ingest_2026-11-05
+Status: completed
+Progress: 614 announcements fetched for 271 symbols (Nov 5 2026). Triaged 119 high-value. Saved 29 facts: 5 acquisitions (ASHOKLEY BHARATFORG CPPLUS DEEPAKFERT SUNTECK), 9 dividends (ASTRAL EMAMILTD GODFRYPHLP IRB NBCC ONGC SAFARI SONATSOFTW PGIL), 13 board outcomes (M&M TITAN MOTHERSON THERMAX BRITANNIA BHARTIARTL MPHASIS FORTIS GLENMARK IPCALAB LICI ONGC KPIL), 2 credit ratings (AAVAS NYKAA). Attachment bodies not stored — PDFs not downloaded.
+Next: XBRL fetch will get Q2 results for board outcome companies
+Blockers: none
+============================================================
