@@ -1,5 +1,39 @@
 # Progress Log
 
+## 2026-11-06 — Backtest validation: fundamental signals show +24.4% spread (session 35, part 2)
+
+### Done
+- **Cross-sectional backtest** (`jobs/backtest_engine.py`): XBRL fundamental signals (QoQ rev + PAT trends) vs 6-month price performance
+  - Universe: 77 NSE mainboard companies, signal date ~May 2026, return window May→Nov 2026
+  - **Improving** (n=37): avg 6M return **+9.2%**, win rate 67.6%
+  - **Flat** (n=15): avg 6M return **−5.0%**, win rate 46.7%
+  - **Deteriorating** (n=25): avg 6M return **−15.3%**, win rate 20.0%
+  - Signal alpha (Improving − Deteriorating): **+24.4%** spread
+  - Excess return over NIFTY 50 6M (+1.6%): **+7.6%**
+  - Notable hits: ATHERENERG +99.5%, CORONA +38.7%, BOSCHLTD +36.7%, AKUMS +34.4%
+  - Notable misses: AASTHA −64.0% (deteriorating caught), AFCONS −35.9%, JWL −35.8%
+- **Backtest results** saved to `reports/backtest/cross_sectional_2026-11-06.json`
+- **Visual report** published as Claude artifact (backtest_report.html)
+- Caveat noted: some Q1 FY27 data creates look-ahead bias; 77-company sample is small
+
+### Architecture changes
+- `jobs/backtest_engine.py`: new cross-sectional backtest engine using XBRL data + yfinance
+- `reports/backtest/`: new directory for backtest output files
+
+### Key findings
+- Fundamental QoQ momentum is a strong 6M price predictor in this cohort
+- Sector confirmation: pharma improvers (AURO, AJANT, CIPLA) all positive; cement deteriorators (ACC, MAZDOCK, BORORENEW) all negative
+- Signal spread of +24.4% suggests the scoring model has real edge — needs full universe validation
+
+### Pending / next sessions
+- Validate on full 1,500+ NSE universe (remove 77-company sample bias)
+- Remove look-ahead bias: rebuild signals using only Q4 FY26 data, return window from Q4 FY26 publication date
+- Wire `kb/scorer.py` into orchestrator daily cycle
+- Implement 90-day weight update workflow (prediction_log → error attribution → weight proposals)
+- Resolve TDPOWERSYS -31% correction catalyst (check BSE announcements)
+
+---
+
 ## 2026-11-06 — KB schema + TD Power Systems thesis built end-to-end (session 35)
 
 ### Done

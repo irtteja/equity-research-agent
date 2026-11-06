@@ -1014,3 +1014,11 @@ Progress: kb/ directory created with scorer.py + weights.json + README; TDPOWERS
 Next: Run kb/scorer.py weekly to track score changes; resolve 6 open questions (esp. catalyst for 31% correction); update prediction on 2027-02-06
 Blockers: NSE Bhavcopy MCP offline this session (session expired); no concall access for TDPOWERSYS yet
 ============================================================
+
+[CHECKPOINT] 2026-11-06 08:04
+Task: session-35-backtest
+Status: completed
+Progress: Cross-sectional backtest complete. 77 companies. Signal alpha +24.4%. Artifact published.
+Next: Commit backtest engine + results. Session wrap-up.
+Blockers: none
+============================================================

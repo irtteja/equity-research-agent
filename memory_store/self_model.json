@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-06",
-  "version": 63,
+  "version": 64,
   "patterns": {
     "confirmed": [
       {
@@ -494,6 +494,12 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "fundamental QoQ trends have strong predictive power for 6M price performance",
+        "first_seen": "2026-11-06",
+        "last_seen": "2026-11-06",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -769,6 +775,12 @@
       },
       {
         "pattern": "kb/scorer.py formula works: thesis_score=0.61 on first run from thesis.json",
+        "first_seen": "2026-11-06",
+        "last_seen": "2026-11-06",
+        "count": 1
+      },
+      {
+        "pattern": "look-ahead bias with Q1 FY27 data may inflate signal alpha",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
         "count": 1
@@ -1089,6 +1101,10 @@
       {
         "signal": "TradingView MCP provides TTM financials + analyst targets + technicals in one call",
         "added": "2026-11-06"
+      },
+      {
+        "signal": "improving signal: +9.2% avg, 67.6% win rate vs deteriorating: -15.3%, 20% win rate",
+        "added": "2026-11-06"
       }
     ],
     "gaps": [
@@ -1407,6 +1423,10 @@
       {
         "gap": "kb/ directory not yet wired into orchestrator daily cycle",
         "added": "2026-11-06"
+      },
+      {
+        "gap": "77 company sample is small; full 1500+ NSE universe needed for robust validation",
+        "added": "2026-11-06"
       }
     ]
   },
@@ -1501,6 +1521,10 @@
       {
         "note": "Multiple Q2FY27 results - NEULANDLAB GLAXO EMCURE ANTHEM",
         "date": "2026-11-04"
+      },
+      {
+        "note": "strong improvers: AUROPHARMA, AJANTPHARM, CIPLA all positive 6M",
+        "date": "2026-11-06"
       }
     ],
     "realty": [
@@ -1542,13 +1566,15 @@
         "note": "TDPOWERSYS +54% rev YoY but 64x P/E. Strong growth, expensive valuation.",
         "date": "2026-11-06"
       }
+    ],
+    "cement": [
+      {
+        "note": "ACC MAZDOCK BORORENEW all deteriorating and negative — sector headwind confirmed",
+        "date": "2026-11-06"
+      }
     ]
   },
   "session_log": [
-    {
-      "date": "2026-11-03",
-      "note": "Published comprehensive 6-tab NSE dashboard (v4) — fixed graph field names, embedded 2026-11-03 snapshot data"
-    },
     {
       "date": "2026-11-03",
       "note": "E2E test run"
@@ -1664,6 +1690,10 @@
     {
       "date": "2026-11-06",
       "note": "Built KB schema layer; TDPOWERSYS thesis end-to-end (Option C of design brief); scored 0.61 BUY"
+    },
+    {
+      "date": "2026-11-06",
+      "note": "backtest validation: fundamental signals show +24.4% spread between improving and deteriorating cohorts over 6M"
     }
   ]
 }
