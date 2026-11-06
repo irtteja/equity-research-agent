@@ -1470,3 +1470,11 @@ Progress: 614 announcements fetched for 271 symbols (Nov 5 2026). Triaged 119 hi
 Next: XBRL fetch will get Q2 results for board outcome companies
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-06 19:46
+Task: xbrl_fetch_2026-11-06
+Status: completed
+Progress: XBRL fetch ran: calendar loaded from 2026-11-05.json (holiday), 0 companies scheduled. Nov 6 board outcomes (M&M, TITAN, BHARTIARTL, etc.) will appear in next calendar cycle.
+Next: retry XBRL fetch when Nov 6 calendar is available
+Blockers: calendar still showing Nov 5 holiday date
+============================================================
