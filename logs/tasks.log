@@ -1382,3 +1382,19 @@ Progress: Fri Nov  6 10:41:15 UTC 2026 — after-hours heartbeat; daily_monitor 
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-06 11:04
+Task: None
+Status: completed
+Progress: prices=1024 value_signals=5
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-06 11:04
+Task: daily_monitor_2026-11-06b
+Status: completed
+Progress: price_agent: 1024 PriceSnapshot nodes, 5 value signals; bhavcopy: 748 rows saved (2026-11-06.csv); indices bhavcopy: download_failed (NSE file not yet available)
+Next: indices bhavcopy retry at next trigger if file available
+Blockers: indices_bhavcopy NSE file not available at 16:32 IST — may appear later
+============================================================

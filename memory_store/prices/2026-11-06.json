@@ -1,0 +1,220 @@
+{
+  "date": "2026-11-06",
+  "generated_at": "2026-11-06T11:04:22.389238",
+  "stats": {
+    "prices_written": 1024,
+    "value_signals": 5,
+    "date": "2026-11-06"
+  },
+  "value_signals": [
+    {
+      "ticker": "CANBK",
+      "close": 122.93,
+      "near_low_pct": 7.24,
+      "trend_metric": "total_income",
+      "trend_delta": 3.13,
+      "streak": 2,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "CANFINHOME",
+      "close": 749.0,
+      "near_low_pct": 8.08,
+      "trend_metric": "revenue",
+      "trend_delta": 3.16,
+      "streak": 2,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "ABREL",
+      "close": 1083.3,
+      "near_low_pct": 8.87,
+      "trend_metric": "revenue",
+      "trend_delta": 336.87,
+      "streak": 2,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "close": 713.5,
+      "near_low_pct": 8.88,
+      "trend_metric": "revenue",
+      "trend_delta": 29.44,
+      "streak": 2,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "BHARATCOAL",
+      "close": 31.56,
+      "near_low_pct": 9.13,
+      "trend_metric": "revenue",
+      "trend_delta": 23.01,
+      "streak": 3,
+      "price_zone": "near_low"
+    }
+  ],
+  "movers_up": [
+    {
+      "ticker": "SYMBIOTEC",
+      "pct": 20.0
+    },
+    {
+      "ticker": "INDIA VIX",
+      "pct": 13.35
+    },
+    {
+      "ticker": "TTKPRESTIG",
+      "pct": 11.24
+    },
+    {
+      "ticker": "TTML",
+      "pct": 11.21
+    },
+    {
+      "ticker": "SAILIFE",
+      "pct": 10.88
+    },
+    {
+      "ticker": "TIPSFILMS",
+      "pct": 9.26
+    },
+    {
+      "ticker": "ENTERO",
+      "pct": 8.83
+    },
+    {
+      "ticker": "V2RETAIL",
+      "pct": 7.47
+    },
+    {
+      "ticker": "LINDEINDIA",
+      "pct": 7.32
+    },
+    {
+      "ticker": "SMT",
+      "pct": 7.04
+    },
+    {
+      "ticker": "KIRLPNU",
+      "pct": 6.53
+    },
+    {
+      "ticker": "WABAG",
+      "pct": 6.31
+    },
+    {
+      "ticker": "NEOGEN",
+      "pct": 6.31
+    },
+    {
+      "ticker": "THOMASCOOK",
+      "pct": 6.13
+    },
+    {
+      "ticker": "YESBANK",
+      "pct": 5.91
+    },
+    {
+      "ticker": "HAVELLS",
+      "pct": 5.61
+    },
+    {
+      "ticker": "KALYANKJIL",
+      "pct": 5.49
+    },
+    {
+      "ticker": "CEMPRO",
+      "pct": 5.41
+    },
+    {
+      "ticker": "M&M",
+      "pct": 5.11
+    },
+    {
+      "ticker": "VNL",
+      "pct": 5.0
+    }
+  ],
+  "movers_down": [
+    {
+      "ticker": "SUPRIYA",
+      "pct": -20.0
+    },
+    {
+      "ticker": "EBGNG",
+      "pct": -18.91
+    },
+    {
+      "ticker": "THERMAX",
+      "pct": -17.49
+    },
+    {
+      "ticker": "TDPOWERSYS",
+      "pct": -13.47
+    },
+    {
+      "ticker": "RATEGAIN",
+      "pct": -11.81
+    },
+    {
+      "ticker": "AEROFLEX",
+      "pct": -10.48
+    },
+    {
+      "ticker": "AVALON",
+      "pct": -10.05
+    },
+    {
+      "ticker": "HAPPYFORGE",
+      "pct": -10.0
+    },
+    {
+      "ticker": "ASTRAL",
+      "pct": -9.68
+    },
+    {
+      "ticker": "APARINDS",
+      "pct": -9.43
+    },
+    {
+      "ticker": "TENNIND",
+      "pct": -9.41
+    },
+    {
+      "ticker": "UTLSOLAR",
+      "pct": -8.84
+    },
+    {
+      "ticker": "REDINGTON",
+      "pct": -7.83
+    },
+    {
+      "ticker": "EMIL",
+      "pct": -7.58
+    },
+    {
+      "ticker": "GERMAN",
+      "pct": -7.54
+    },
+    {
+      "ticker": "WELCORP",
+      "pct": -7.13
+    },
+    {
+      "ticker": "ELLEN",
+      "pct": -7.13
+    },
+    {
+      "ticker": "GOKEX",
+      "pct": -7.04
+    },
+    {
+      "ticker": "KUSUMGAR",
+      "pct": -6.87
+    },
+    {
+      "ticker": "MONEYVIEW",
+      "pct": -6.83
+    }
+  ]
+}
