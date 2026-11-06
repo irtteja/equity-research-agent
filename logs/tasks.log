@@ -1486,3 +1486,11 @@ Progress: Fri Nov  6 20:41:08 UTC 2026 — early-morning heartbeat (02:10 IST No
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-06 21:02
+Task: nightly-2026-11-06
+Status: completed
+Progress: git pull (prices 2026-11-06, 13k+ insertions), context_agent (0 new nodes), trend_agent (0 new pairs) — graph still fully enriched
+Next: new XBRL data or announcements will queue nodes for next run
+Blockers: none
+============================================================
