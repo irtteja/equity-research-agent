@@ -1374,3 +1374,11 @@ Progress: backfill_graph completed: MetricValue 29192, PriceSnapshot 2044, Trend
 Next: update PROGRESS.md, apply reflection, commit and push
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-06 10:41
+Task: watchdog
+Status: completed
+Progress: Fri Nov  6 10:41:15 UTC 2026 — after-hours heartbeat; daily_monitor already ran (commit 0f13cd1); graph ready (867 companies, 267 trend summaries, 29192 metrics)
+Next: next watchdog wake
+Blockers: none
+============================================================
