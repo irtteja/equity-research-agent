@@ -1398,3 +1398,11 @@ Progress: price_agent: 1024 PriceSnapshot nodes, 5 value signals; bhavcopy: 748 
 Next: indices bhavcopy retry at next trigger if file available
 Blockers: indices_bhavcopy NSE file not available at 16:32 IST — may appear later
 ============================================================
+
+[CHECKPOINT] 2026-11-06 11:04
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 127,482 unprocessed — ContextAgent lagging
+============================================================
