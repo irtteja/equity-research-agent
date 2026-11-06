@@ -1278,3 +1278,11 @@ Progress: PROGRESS.md updated for Nov 5-6 holiday session; self-model reflection
 Next: await market open 09:15 IST — daily pipeline (price_agent/trend_agent/confluence rescan)
 Blockers: episode backlog 95929; stalled agents: context_agent alert_agent document_agent announcement_agent
 ============================================================
+
+[CHECKPOINT] 2026-11-06 02:40
+Task: watchdog
+Status: completed
+Progress: pre-market heartbeat 08:10 IST Nov 6 — market opens 09:15 IST; graph ready (867 companies, 12 confluences); 12 BUY confluences carried forward
+Next: next watchdog wake (market hours)
+Blockers: none
+============================================================
