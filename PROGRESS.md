@@ -1,5 +1,37 @@
 # Progress Log
 
+## 2026-11-06 — Holiday session: announcement ingest + orchestrator steady-state
+
+### Done
+- Ingested 567 NSE announcements for 273 symbols (2026-11-04 date) → `memory_store/announcements/2026-11-04.json`
+- Triaged 336 material announcements; saved 17 facts for 14 companies via `save_insight()`:
+  - Q2 FY27 results: LUPIN, APOLLOHOSP, AUROPHARMA, ZYDUSLIFE, BIOCON, BSE, NYKAA, NHPC, CUMMINSIND, BLS, BALKRISIND, LALPATHLAB, EXIDEIND, SUNDARMFIN
+  - Corp actions: BAJAJHFL NCD allotment 300,000 NCDs; BSE exec appointment (Ashutosh Singh as ED)
+- Nov 5 was a market holiday: `nse_live_feed.py` ran 3×, served cached NSE data (live_prices, top_movers, fii_dii — 40 nodes each); bhavcopy/indices returned empty
+- XBRL nightly fetch: 0 companies scheduled (holiday calendar) — no results fetched (commits: none needed)
+- Swarm Orchestrator: 7 cycles across Nov 5–6; 12 stable BUY confluences throughout holiday
+  - CANBK 0.81, CANFINHOME 0.80, BHARATCOAL 0.78, BLACKBUCK 0.76, ABREL 0.74, AVANTIFEED 0.70, AXISBANK 0.70, BANKBARODA 0.69, BLS 0.68, AUBANK 0.65, BAJAJHFL 0.618, AURIONPRO 0.618
+- Watchdog heartbeat: 4× across Nov 5–6 (pre-market, market-hours, post-market)
+- Self-model reflection applied (v63): watch_add 5 BUY confluence tickers, sector notes (Pharma/NBFC/PSU Banks)
+
+### Key commits (Nov 5–6)
+- `b84887c` — ingest: 2026-11-04 announcements (17 facts saved)
+- `828d91b`, `893f043`, `a4e0524` — live_feed (after-hours / cached holiday data)
+- `507eee2`, `02ff51b`, `6b8e41f`, `c48e2e9`, `51e3c1b`, `cd1ef72`, `799f25f` — orchestrator cycles
+- `f1a5b02`, `61938e4`, `4eee0dc`, `bef7095`, `a8160b7` — watchdog heartbeats
+
+### Architecture notes
+- `belief_log` table exists in graph.db — AlertAgent schema concern was already resolved
+- `fetch_announcements_parallel()` returns dict keyed by symbol (not list) — iterate as `.items()`
+- `save_insight()` is in `memory/research_store.py:80`, not `memory/task_log.py`
+
+### Pending / next sessions
+- Market opens Nov 6 at 09:15 IST (03:45 UTC): daily pipeline will run (price_agent → trend_agent → confluence rescan)
+- ContextAgent episode backlog: 95,929 unprocessed — wire drain into orchestrator post-ingestion
+- Stalled agents: context_agent, alert_agent, document_agent, announcement_agent (>26h no heartbeat)
+- Weekly research job (`jobs/weekly_research.py`) still disabled
+- Phase 2 memory: Kuzu graph + LanceDB vector index
+
 ## 2026-11-05 — Market hours monitoring + post-close daily pipeline
 
 ### Done

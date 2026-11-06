@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-04",
-  "version": 62,
+  "last_updated": "2026-11-06",
+  "version": 63,
   "patterns": {
     "confirmed": [
       {
@@ -494,6 +494,24 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "fetch_announcements_parallel returns dict keyed by symbol — iterate as items(), not direct list",
+        "first_seen": "2026-11-06",
+        "last_seen": "2026-11-06",
+        "count": 1
+      },
+      {
+        "pattern": "save_insight lives in memory.research_store, not memory.task_log",
+        "first_seen": "2026-11-06",
+        "last_seen": "2026-11-06",
+        "count": 1
+      },
+      {
+        "pattern": "belief_log table present in graph.db — schema already handles it",
+        "first_seen": "2026-11-06",
+        "last_seen": "2026-11-06",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -753,6 +771,18 @@
         "pattern": "YATHARTH finance_costs +30% — investigate if structural or seasonal",
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
+        "count": 1
+      },
+      {
+        "pattern": "Nov 5 holiday: NSE cached data served for live_prices/top_movers; bhavcopy/indices return empty",
+        "first_seen": "2026-11-06",
+        "last_seen": "2026-11-06",
+        "count": 1
+      },
+      {
+        "pattern": "BUY confluence set stable across holiday period (12 signals) — no price movement to shift signals",
+        "first_seen": "2026-11-06",
+        "last_seen": "2026-11-06",
         "count": 1
       }
     ],
@@ -1063,6 +1093,14 @@
       {
         "signal": "bhavcopy-based price data as correlation substrate",
         "added": "2026-11-04"
+      },
+      {
+        "signal": "git add -A before every commit ensures nse_feed_schedule.json and volatile files are captured",
+        "added": "2026-11-06"
+      },
+      {
+        "signal": "inline Python -c with sys.path.insert works for one-off queries across job modules",
+        "added": "2026-11-06"
       }
     ],
     "gaps": [
@@ -1369,6 +1407,14 @@
       {
         "gap": "Finance sector intra-correlations all below 0.40 — idiosyncratic risk dominant",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "ContextAgent backlog (95929 episodes) — no recurring drain wired into orchestrator",
+        "added": "2026-11-06"
+      },
+      {
+        "gap": "Stalled agents (context_agent, alert_agent, document_agent, announcement_agent) >26h no heartbeat",
+        "added": "2026-11-06"
       }
     ]
   },
@@ -1413,6 +1459,36 @@
       "ticker": "ZAGGLE",
       "reason": "finance_costs +3.8% momentum=1.0 — growing debt service",
       "added": "2026-11-04"
+    },
+    {
+      "ticker": "CANBK",
+      "theme": "PSU bank basket 52W low",
+      "note": "0.81 BUY confluence",
+      "added": "2026-11-06"
+    },
+    {
+      "ticker": "CANFINHOME",
+      "theme": "NBFC 52W low",
+      "note": "0.80 BUY confluence",
+      "added": "2026-11-06"
+    },
+    {
+      "ticker": "BHARATCOAL",
+      "theme": "coal/energy near low",
+      "note": "0.78 BUY confluence",
+      "added": "2026-11-06"
+    },
+    {
+      "ticker": "BLACKBUCK",
+      "theme": "logistics tech near low",
+      "note": "0.76 BUY confluence",
+      "added": "2026-11-06"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "theme": "aquaculture near low",
+      "note": "0.70 BUY confluence",
+      "added": "2026-11-06"
     }
   ],
   "sector_notes": {
@@ -1493,13 +1569,27 @@
         "note": "RELIANCE anomaly +11.6% on 88.1M shares 2026-11-02 needs fundamental catalyst check",
         "date": "2026-11-04"
       }
+    ],
+    "Pharma": [
+      {
+        "note": "Q2 FY27 results wave (LUPIN APOLLOHOSP AUROPHARMA ZYDUSLIFE BIOCON) — monitor margin trends",
+        "date": "2026-11-06"
+      }
+    ],
+    "NBFC": [
+      {
+        "note": "BAJAJHFL NCD allotment 300k NCDs; AUBANK exchange clarification — no adverse news",
+        "date": "2026-11-06"
+      }
+    ],
+    "PSU Banks": [
+      {
+        "note": "CANBK BANKBARODA PSU basket near 52W lows — persistent BUY confluence signals",
+        "date": "2026-11-06"
+      }
     ]
   },
   "session_log": [
-    {
-      "date": "2026-11-03",
-      "note": "Sessions 6-7: interactive SPA dashboard published, 9 stale tasks deleted, 3728 files untracked from git, 860MB freed from document JSONs, graph at 45982 nodes/89486 edges"
-    },
     {
       "date": "2026-11-03",
       "note": "Published comprehensive 6-tab NSE dashboard (v4) — fixed graph field names, embedded 2026-11-03 snapshot data"
@@ -1615,6 +1705,10 @@
     {
       "date": "2026-11-04",
       "note": "nightly enrichment cycle complete: 28,672 context edges + 7,340 trend nodes built; real prices and correlations wired into Living Graph; system architecture artifact published"
+    },
+    {
+      "date": "2026-11-06",
+      "note": "Nov 5-6 holiday session: 567 announcements ingested, 17 facts saved, 12 BUY confluences stable, orchestrator 7 cycles, live_feed 3 times (cached holiday data)"
     }
   ]
 }
