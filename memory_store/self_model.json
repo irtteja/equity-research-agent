@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-06",
-  "version": 63,
+  "version": 64,
   "patterns": {
     "confirmed": [
       {
@@ -512,6 +512,24 @@
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
         "count": 1
+      },
+      {
+        "pattern": "BUY_CONFLUENCE stable at 12 signals across full Nov 6 trading day",
+        "first_seen": "2026-11-06",
+        "last_seen": "2026-11-06",
+        "count": 1
+      },
+      {
+        "pattern": "backfill_graph extends TrendSummary coverage from 138 to 267 — improves orchestrator scan quality",
+        "first_seen": "2026-11-06",
+        "last_seen": "2026-11-06",
+        "count": 1
+      },
+      {
+        "pattern": "stale PriceSnapshot (1021 of 2044) caused by bhavcopy pipeline gap, not live_feed",
+        "first_seen": "2026-11-06",
+        "last_seen": "2026-11-06",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -781,6 +799,12 @@
       },
       {
         "pattern": "BUY confluence set stable across holiday period (12 signals) — no price movement to shift signals",
+        "first_seen": "2026-11-06",
+        "last_seen": "2026-11-06",
+        "count": 1
+      },
+      {
+        "pattern": "confluence set may expand after next orchestrator cycle with 267 trend summaries vs 138",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
         "count": 1
@@ -1101,6 +1125,14 @@
       {
         "signal": "inline Python -c with sys.path.insert works for one-off queries across job modules",
         "added": "2026-11-06"
+      },
+      {
+        "signal": "git add -A captures volatile files like nse_feed_schedule.json reliably",
+        "added": "2026-11-06"
+      },
+      {
+        "signal": "background backfill_graph avoids 120s foreground timeout",
+        "added": "2026-11-06"
       }
     ],
     "gaps": [
@@ -1415,6 +1447,14 @@
       {
         "gap": "Stalled agents (context_agent, alert_agent, document_agent, announcement_agent) >26h no heartbeat",
         "added": "2026-11-06"
+      },
+      {
+        "gap": "context_agent ModuleNotFoundError with -I flag: agents package not on sys.path when isolated",
+        "added": "2026-11-06"
+      },
+      {
+        "gap": "95929 unprocessed episodes in episode backlog — context_agent stalled >26h",
+        "added": "2026-11-06"
       }
     ]
   },
@@ -1488,6 +1528,24 @@
       "ticker": "AVANTIFEED",
       "theme": "aquaculture near low",
       "note": "0.70 BUY confluence",
+      "added": "2026-11-06"
+    },
+    {
+      "ticker": "AXISBANK",
+      "theme": "private bank 52W low",
+      "note": "0.70 BUY confluence stable",
+      "added": "2026-11-06"
+    },
+    {
+      "ticker": "BANKBARODA",
+      "theme": "PSU bank basket",
+      "note": "0.69 BUY confluence",
+      "added": "2026-11-06"
+    },
+    {
+      "ticker": "AUBANK",
+      "theme": "small finance bank",
+      "note": "0.65 BUY confluence",
       "added": "2026-11-06"
     }
   ],
@@ -1580,20 +1638,30 @@
       {
         "note": "BAJAJHFL NCD allotment 300k NCDs; AUBANK exchange clarification — no adverse news",
         "date": "2026-11-06"
+      },
+      {
+        "note": "CANFINHOME + BAJAJHFL + AUBANK all in BUY confluence zone — housing finance under pressure",
+        "date": "2026-11-06"
       }
     ],
     "PSU Banks": [
       {
         "note": "CANBK BANKBARODA PSU basket near 52W lows — persistent BUY confluence signals",
         "date": "2026-11-06"
+      },
+      {
+        "note": "CANBK + BANKBARODA both at 52W lows with strong confluence — sector rotation signal",
+        "date": "2026-11-06"
+      }
+    ],
+    "Private Banks": [
+      {
+        "note": "AXISBANK showing 0.70 confluence — lagging peers, potential catch-up candidate",
+        "date": "2026-11-06"
       }
     ]
   },
   "session_log": [
-    {
-      "date": "2026-11-03",
-      "note": "Published comprehensive 6-tab NSE dashboard (v4) — fixed graph field names, embedded 2026-11-03 snapshot data"
-    },
     {
       "date": "2026-11-03",
       "note": "E2E test run"
@@ -1709,6 +1777,10 @@
     {
       "date": "2026-11-06",
       "note": "Nov 5-6 holiday session: 567 announcements ingested, 17 facts saved, 12 BUY confluences stable, orchestrator 7 cycles, live_feed 3 times (cached holiday data)"
+    },
+    {
+      "date": "2026-11-06",
+      "note": "Nov 6 full trading day: 12 BUY confluences stable, TrendSummary backfill 138→267, daily pipeline clean"
     }
   ]
 }

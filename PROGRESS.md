@@ -1,5 +1,47 @@
 # Progress Log
 
+## 2026-11-06 — Full trading day: live feed, orchestrator, post-close backfill
+
+### Done
+- **Live feed**: 5 market-hours runs (03:35–09:35 UTC / 09:05–15:05 IST); ~40 nodes/run (live_prices 15, top_movers 20, market_status 1, fii_dii 2, option_chains 2). Indices endpoint returned 0 nodes consistently.
+- **Orchestrator**: 3 cycles (03:03, 05:03, 07:02 UTC) — 2044 price × trend node scans, 12 stable BUY confluences all day
+- **Watchdog heartbeats**: 3× (04:41, 06:41, 08:41 UTC) — all clean, no anomalies
+- **Post-close daily brief** (10:31 UTC / 16:01 IST):
+  - `fetch_results.py`: 0 companies (holiday calendar still showing Nov 5)
+  - `backfill_graph.py`: **TrendSummary 138 → 267** (+129 summaries), MetricValue 29,192, PriceSnapshot 2,044, Sector 22, OptionChainSnapshot 6
+  - `trend_agent_runner.py`: processed EPL, ENTERO, ENRIN, CUMMINSIND and others; `▲ CUMMINSIND revenue Δ+13.8% momentum=+1.00`
+  - `alert_agent_runner.py`: no alerts triggered
+  - `context_agent`: skipped (`ModuleNotFoundError` with `-I` flag — `agents` package not on sys.path)
+- **BUY confluence set** (stable all 12 all day): CANBK 0.81, CANFINHOME 0.80, BHARATCOAL 0.78, BLACKBUCK 0.76, ABREL 0.74, AVANTIFEED 0.70, AXISBANK 0.70, BANKBARODA 0.69, BLS 0.68, AUBANK 0.65, BAJAJHFL 0.618, AURIONPRO 0.618
+- **Self-model reflection** (v64): confirmed BUY_CONFLUENCE stability, backfill impact on TrendSummary, sector notes (PSU Banks, NBFC, Private Banks)
+
+### Key commits (Nov 6 market day)
+- `0f13cd1` — daily: brief 2026-11-06
+- `47bd694` — live_feed: 2026-11-06-0935
+- `70f6a71` — orchestrator: 2026-11-06-0902
+- `8c2be54` — watchdog: 2026-11-06-0841
+- `4edc1ff` — live_feed: 2026-11-06-0835
+- `2db3ec9` — live_feed: 2026-11-06-0735
+- `5b2440f` — orchestrator: 2026-11-06-0702
+- `6123dd0` — watchdog: 2026-11-06-0641
+- `e480272` — live_feed: 2026-11-06-0635
+- `5457cb6` — live_feed: 2026-11-06-0535
+- `6843359` — orchestrator: 2026-11-06-0503
+- `0baf5c3` — watchdog: 2026-11-06-0441
+- `b1bf374` — live_feed: 2026-11-06-0436
+
+### Architecture changes
+- **backfill_graph must run in background**: exceeds 120s foreground timeout; use `run_in_background: true`
+- **git add -A required**: `nse_feed_schedule.json` and other volatile files missed by selective add
+
+### Pending / next sessions
+- Fix `context_agent` module path: use `sys.path.insert(0, '/home/user/equity-research-agent')` before import when running with `-I`
+- ContextAgent episode backlog: 95,929+ unprocessed — needs dedicated drain session
+- Next orchestrator cycle will scan 267 trend summaries (vs 138 before) — may expand confluence set
+- Stale PriceSnapshot (1,021 of 2,044): will refresh after bhavcopy pipeline next trading day
+
+---
+
 ## 2026-11-06 — Holiday session: announcement ingest + orchestrator steady-state
 
 ### Done
