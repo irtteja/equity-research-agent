@@ -1478,3 +1478,11 @@ Progress: XBRL fetch ran: calendar loaded from 2026-11-05.json (holiday), 0 comp
 Next: retry XBRL fetch when Nov 6 calendar is available
 Blockers: calendar still showing Nov 5 holiday date
 ============================================================
+
+[CHECKPOINT] 2026-11-06 20:41
+Task: watchdog
+Status: completed
+Progress: Fri Nov  6 20:41:08 UTC 2026 — early-morning heartbeat (02:10 IST Nov 7); Nov 6 complete: bhavcopy 748+151 rows, 29 announcement facts, 12 BUY confluences held all day; graph ready
+Next: next watchdog wake
+Blockers: none
+============================================================
