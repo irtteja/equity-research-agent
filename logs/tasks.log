@@ -998,3 +998,19 @@ Progress: Confluences: 3 (buy=3, sell=0) | Gaps: 1
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 77,093 unprocessed — ContextAgent lagging
 ============================================================
+
+[CHECKPOINT] 2026-11-06 07:49
+Task: None
+Status: completed
+Progress: xbrl=3291 quarters, docs=0 facts; graph=30059n/29192e
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-06 07:53
+Task: None
+Status: completed
+Progress: kb/ directory created with scorer.py + weights.json + README; TDPOWERSYS/thesis.json with full KB schema (core thesis, scoring, evidence log, prediction log, entity relationships, open questions, watch triggers); ThesisNode inserted in graph.db; prediction_log entry at ₹565 BUY 0.55 confidence; thesis_score=0.61
+Next: Run kb/scorer.py weekly to track score changes; resolve 6 open questions (esp. catalyst for 31% correction); update prediction on 2027-02-06
+Blockers: NSE Bhavcopy MCP offline this session (session expired); no concall access for TDPOWERSYS yet
+============================================================

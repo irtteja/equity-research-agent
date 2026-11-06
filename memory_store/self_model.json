@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-04",
-  "version": 62,
+  "last_updated": "2026-11-06",
+  "version": 63,
   "patterns": {
     "confirmed": [
       {
@@ -754,6 +754,24 @@
         "first_seen": "2026-11-04",
         "last_seen": "2026-11-04",
         "count": 1
+      },
+      {
+        "pattern": "TDPOWERSYS 31% 1-month correction — catalyst unknown; RSI 28.6 oversold; worth monitoring for reversal",
+        "first_seen": "2026-11-06",
+        "last_seen": "2026-11-06",
+        "count": 1
+      },
+      {
+        "pattern": "FCF/PAT conversion gap in capital goods companies may be structural — receivables cycle",
+        "first_seen": "2026-11-06",
+        "last_seen": "2026-11-06",
+        "count": 1
+      },
+      {
+        "pattern": "kb/scorer.py formula works: thesis_score=0.61 on first run from thesis.json",
+        "first_seen": "2026-11-06",
+        "last_seen": "2026-11-06",
+        "count": 1
       }
     ],
     "rejected": []
@@ -1063,6 +1081,14 @@
       {
         "signal": "bhavcopy-based price data as correlation substrate",
         "added": "2026-11-04"
+      },
+      {
+        "signal": "XBRL data provides 4 quarters P&L + balance sheet + cash flow — sufficient for thesis build",
+        "added": "2026-11-06"
+      },
+      {
+        "signal": "TradingView MCP provides TTM financials + analyst targets + technicals in one call",
+        "added": "2026-11-06"
       }
     ],
     "gaps": [
@@ -1369,6 +1395,18 @@
       {
         "gap": "Finance sector intra-correlations all below 0.40 — idiosyncratic risk dominant",
         "added": "2026-11-04"
+      },
+      {
+        "gap": "No concall access for TDPOWERSYS — management quality score based on balance sheet only",
+        "added": "2026-11-06"
+      },
+      {
+        "gap": "NSE Bhavcopy MCP went offline mid-session",
+        "added": "2026-11-06"
+      },
+      {
+        "gap": "kb/ directory not yet wired into orchestrator daily cycle",
+        "added": "2026-11-06"
       }
     ]
   },
@@ -1413,6 +1451,11 @@
       "ticker": "ZAGGLE",
       "reason": "finance_costs +3.8% momentum=1.0 — growing debt service",
       "added": "2026-11-04"
+    },
+    {
+      "ticker": "TDPOWERSYS",
+      "note": "BUY 0.61 at 565; watch for RSI reversal above 35 or price above 600",
+      "added": "2026-11-06"
     }
   ],
   "sector_notes": {
@@ -1493,13 +1536,15 @@
         "note": "RELIANCE anomaly +11.6% on 88.1M shares 2026-11-02 needs fundamental catalyst check",
         "date": "2026-11-04"
       }
+    ],
+    "Capital Goods": [
+      {
+        "note": "TDPOWERSYS +54% rev YoY but 64x P/E. Strong growth, expensive valuation.",
+        "date": "2026-11-06"
+      }
     ]
   },
   "session_log": [
-    {
-      "date": "2026-11-03",
-      "note": "Sessions 6-7: interactive SPA dashboard published, 9 stale tasks deleted, 3728 files untracked from git, 860MB freed from document JSONs, graph at 45982 nodes/89486 edges"
-    },
     {
       "date": "2026-11-03",
       "note": "Published comprehensive 6-tab NSE dashboard (v4) — fixed graph field names, embedded 2026-11-03 snapshot data"
@@ -1615,6 +1660,10 @@
     {
       "date": "2026-11-04",
       "note": "nightly enrichment cycle complete: 28,672 context edges + 7,340 trend nodes built; real prices and correlations wired into Living Graph; system architecture artifact published"
+    },
+    {
+      "date": "2026-11-06",
+      "note": "Built KB schema layer; TDPOWERSYS thesis end-to-end (Option C of design brief); scored 0.61 BUY"
     }
   ]
 }

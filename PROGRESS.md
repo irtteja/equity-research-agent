@@ -1,5 +1,47 @@
 # Progress Log
 
+## 2026-11-06 — KB schema + TD Power Systems thesis built end-to-end (session 35)
+
+### Done
+- **Design brief read**: `equity-research-system-brief.md` — brief recommends Option C (one company, end to end). System is 34 sessions in; brief aligns with what's built. This session implements the brief's KB schema layer.
+- **`kb/` directory created**: New top-level KB directory with the schema described in the design brief.
+  - `kb/README.md`: Documents the KB schema and scoring formula
+  - `kb/scorer.py`: Mathematical scoring engine implementing `thesis_score = Σ(component_score × weight)`
+  - `kb/weights.json`: Dynamic weights (v1 = equal 0.20 each; will update from prediction errors after 90d outcomes)
+  - `kb/TDPOWERSYS/thesis.json`: Full thesis file for TD Power Systems
+- **TD Power Systems thesis** (`kb/TDPOWERSYS/thesis.json`):
+  - 4-quarter financial analysis from XBRL: Q2 FY26–Q1 FY27 (ending Jun 2026 latest)
+  - TTM Revenue ₹2,124 Cr (+54% YoY), TTM PAT ₹275 Cr (+45% YoY), EBIT margin 17.8%
+  - Balance sheet: equity ₹1,071 Cr, near-zero debt (D/E 0.03x), receivables ₹742 Cr + inventory ₹503 Cr
+  - **thesis_score = 0.61** (medium conviction BUY, sub-signal WAIT_FOR_TECHNICAL_CONFIRMATION)
+  - Component scores: earnings_quality=0.55, mgmt_quality=0.70, valuation=0.35, momentum=0.65, thesis_alignment=0.80
+  - 4 evidence log entries, 1 prediction (target ₹700 by 2027-02-06), 6 open questions, 7 watch triggers
+  - **Alert**: Stock down -31% in 1 month, RSI 28.6 (deeply oversold), 4x normal volume today — catalyst unknown
+- **Prediction recorded** in `memory_store/graph.db prediction_log`: BUY at ₹565, target ₹700, 90-day horizon
+- **ThesisNode** inserted in `memory_store/graph.db` nodes table: joins 41 existing TDPOWERSYS MetricValue nodes
+
+### Architecture changes
+- `kb/` directory is new: KB schema layer described in design brief, not previously built
+- `kb/scorer.py` implements the brief's mathematical scoring formula with dynamic weights
+- `kb/weights.json` is the weight store — to be updated from prediction error attribution after 90d
+- `kb/SYMBOL/thesis.json` is the per-company thesis file format — TDPOWERSYS is the first entry
+- `ThesisNode` is a new node type in graph.db — joins the company's MetricValue nodes
+
+### Key findings from TDPOWERSYS analysis
+- **Structural momentum**: Revenue +54% YoY, PAT +45% YoY — genuinely strong growth
+- **Technical dislocation**: Price ₹565, RSI 28.6 (oversold), -31% 1M — catalyst unclear
+- **Valuation tension**: P/E 64x expensive but analyst 1Y target ₹887 (+57%)
+- **FCF gap**: PAT-to-FCF conversion only 31% in Q4 FY26 — working capital absorption is a risk
+- **Open question (priority HIGH)**: What caused the -31% correction? Needs BSE announcement check and concall
+
+### Pending / next sessions
+- Resolve TDPOWERSYS open questions: check BSE announcements for correction catalyst; fetch concall
+- Build thesis files for 4 more companies (design brief roadmap: 5 companies by Month 1)
+- Wire `kb/scorer.py` into orchestrator — run scoring on each thesis file in daily cycle
+- Implement weight update workflow: after 90-day outcomes, compare predictions vs actual, propose new weights
+- Add `kb/` to `ensure_graph.py` startup check so ThesisNodes persist across container restarts
+- NSE Bhavcopy MCP was offline this session (session expired mid-session) — price history not fetched
+
 ## 2026-11-04 — Nightly enrichment cycle complete + Living Graph wired with real data (session 34)
 
 ### Done

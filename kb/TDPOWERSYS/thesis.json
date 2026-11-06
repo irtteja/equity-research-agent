@@ -1,0 +1,206 @@
+{
+  "symbol": "TDPOWERSYS",
+  "company": "TD Power Systems Limited",
+  "isin": "INE419M01035",
+  "sector": "Capital Goods",
+  "industry": "Electrical Equipment",
+  "macro": "Industrials",
+  "thesis_created": "2026-11-06",
+  "thesis_version": 1,
+  "thesis_status": "active",
+
+  "business_summary": "Manufacturer of AC/DC electric motors and generators for critical industrial applications. Products serve power generation (thermal, hydro, wind), marine, steel/metals, railways, defense and oil & gas. Exports significant share of revenues (~40%) providing geographic diversification. F&O eligible, part of NIFTY CAPITAL GOODS and NIFTY SMALLCAP 100.",
+
+  "core_thesis": {
+    "one_line": "India's power infrastructure buildout will compound TD Power's order book for the next 3-5 years; near-zero debt and improving margins make this a high-quality capital goods play.",
+    "time_horizon": "18-36 months",
+    "conviction": "medium-high",
+
+    "bull_case": {
+      "primary": "India's accelerating thermal, hydro and renewable power capacity additions require large AC/DC motors and generators — TD Power is a critical sub-component supplier benefiting from every MW added.",
+      "supporting_points": [
+        "TTM revenue +54% YoY and PAT +45% YoY — structural growth, not one-off",
+        "EBIT margins 17-18% and stable — pricing power or cost discipline, needs confirmation",
+        "Near-zero debt (D/E ~0.03x) = capacity to fund order book growth via internal accruals",
+        "Part of multiple NIFTY indices (CAPITAL GOODS, SMALLCAP 100, ENERGY) = growing institutional ownership",
+        "Analyst 1-year consensus target ₹887.75 = +57% from ₹565",
+        "Export revenues hedge against domestic cycle volatility",
+        "Dividend yield 0.14% — not a yield play but signals management confidence"
+      ]
+    },
+
+    "bear_case": {
+      "primary": "Capital goods companies with P/E 64x and high working capital burn are vulnerable to any execution miss or cycle slowdown; the -31% 1-month correction suggests institutional concern.",
+      "supporting_points": [
+        "P/E 64x and P/S 8.3x — pricing in sustained >40% growth, any deceleration = significant re-rating risk",
+        "Working capital absorption: receivables ₹742 Cr + inventory ₹503 Cr vs ~₹590 Cr quarterly revenue = 2+ quarter cash tied up",
+        "FCF conversion: Q4 FY26 FCF only ₹22.7 Cr on ₹72 Cr PAT (31% conversion) — PAT is accounting profit, not cash",
+        "Order concentration: 5-10 large customers likely account for majority of revenue",
+        "Global competition from ABB, Siemens, GE in higher-end motor/generator segments",
+        "If power capex cycle stalls (delayed clearances, budget cuts), revenue lumpiness could shock earnings",
+        "The 31% 1-month drawdown may reflect missed guidance or sector rotation — catalyst unknown without concall access"
+      ]
+    }
+  },
+
+  "scoring": {
+    "model_version": "v1",
+    "scored_on": "2026-11-06",
+    "weights": {"w1": 0.20, "w2": 0.20, "w3": 0.20, "w4": 0.20, "w5": 0.20},
+
+    "earnings_quality_score": {
+      "score": 0.55,
+      "rationale": "EBIT margins stable 17-18.3% (positive), revenue growth consistent, BUT FCF conversion low at 31% and receivables at 1.26x quarterly revenue indicate working capital absorption is a structural concern. PAT-to-FCF gap needs monitoring."
+    },
+    "mgmt_quality_score": {
+      "score": 0.70,
+      "rationale": "Near-zero debt (D/E 0.03x) reflects disciplined capital allocation. Regular dividends. Clean equity structure. No data on promoter changes, governance risks, or compensation excesses — neutral assumption used. No concall access in this session."
+    },
+    "valuation_score": {
+      "score": 0.35,
+      "rationale": "P/E 64x and P/S 8.3x are expensive for capital goods. EV/EBITDA ~45x is high. PEG 1.4x is acceptable if 40%+ growth sustains, but that is a strong assumption. Analyst target provides +57% upside which is meaningful, but valuation leaves no margin of safety for execution risk."
+    },
+    "momentum_score": {
+      "score": 0.65,
+      "rationale": "Structural momentum is excellent (revenue +54%, PAT +45% YoY, Q1 FY27 is strongest quarter in 4). Technical momentum is very weak: RSI 28.6 (oversold), MACD bearish, price 21% below EMA50, -31% 1-month. These are contradictory signals — structural tailwind vs technical downtrend. Averaging to 0.65 pending reversal signal."
+    },
+    "thesis_alignment_score": {
+      "score": 0.80,
+      "rationale": "India power capex cycle is a confirmed multi-year theme (National Electricity Policy, NTPC expansion, state discom capex). TD Power is a direct beneficiary with differentiated manufacturing. Aligns with capital goods super-cycle and PLI electrical equipment. Strong theme alignment."
+    },
+
+    "thesis_score": 0.61,
+    "signal": "BUY",
+    "sub_signal": "WAIT_FOR_TECHNICAL_CONFIRMATION",
+    "confidence": 0.55,
+    "rationale": "Score 0.61 = medium conviction BUY. The fundamental thesis is intact (strong growth, clean balance sheet, sector tailwind) but the sharp -31% 1-month correction and bearish technical setup suggest this is not the bottom yet. RSI 28.6 is oversold but can stay oversold. WAIT for RSI reversal above 35 or price recapture of ₹600 before entering. The best entry is likely in ₹500-540 range if the correction continues."
+  },
+
+  "evidence_log": [
+    {
+      "date": "2026-11-06",
+      "source": "XBRL / NSE filings + TradingView MCP",
+      "type": "financial_result",
+      "summary": "Q1 FY27 results: Revenue ₹640 Cr (+8.6% QoQ, +54% YoY), EBIT ₹117 Cr (margin 18.3%), PAT ₹86 Cr, EPS ₹5.52. Balance sheet data not in Q1 XBRL extract (available for Q4 FY26 and Q2 FY26 only).",
+      "impact": "positive",
+      "confidence": 0.9
+    },
+    {
+      "date": "2026-11-06",
+      "source": "TradingView MCP",
+      "type": "technical_signal",
+      "summary": "Price ₹565, RSI 28.6 (oversold), -31% in 1 month, 4x normal volume today. MACD bearish. EMA50=₹716, EMA200=₹600. Stock in sharp correction from recent highs.",
+      "impact": "negative",
+      "confidence": 0.95
+    },
+    {
+      "date": "2026-11-06",
+      "source": "TradingView MCP",
+      "type": "analyst_consensus",
+      "summary": "1-year consensus target ₹887.75 = +57% upside from ₹565. This is a strong bullish signal from the sell-side.",
+      "impact": "positive",
+      "confidence": 0.75
+    },
+    {
+      "date": "2026-11-06",
+      "source": "XBRL Q4 FY26 balance sheet",
+      "type": "balance_sheet",
+      "summary": "Equity ₹1,071 Cr. Total assets ₹1,877 Cr. Net borrowings ~₹36 Cr (near-zero). Trade receivables ₹742 Cr + inventories ₹503 Cr = ₹1,245 Cr working capital deployed.",
+      "impact": "mixed",
+      "confidence": 0.9
+    }
+  ],
+
+  "prediction_log": [
+    {
+      "date_made": "2026-11-06",
+      "prediction": "TDPOWERSYS will recover to ₹700+ within 3 months (by 2027-02-06) driven by strong Q1 FY27 earnings and power capex cycle continuation. Current RSI 28 oversold condition resolves.",
+      "price_at_prediction": 565.0,
+      "target_price": 700.0,
+      "stop_loss": 480.0,
+      "horizon_days": 90,
+      "outcome_date": "2027-02-06",
+      "outcome_price": null,
+      "outcome_note": null,
+      "prediction_basis": ["RSI_oversold", "analyst_target_consensus", "earnings_momentum", "sector_tailwind"]
+    }
+  ],
+
+  "entity_relationships": {
+    "sector": "Capital Goods",
+    "sub_sector": "Electrical Equipment",
+    "index_memberships": [
+      "NIFTY CAPITAL GOODS",
+      "NIFTY SMALLCAP 100",
+      "NIFTY 500",
+      "NIFTY ENERGY",
+      "NIFTY INDIA INFRASTRUCTURE & LOGISTICS"
+    ],
+    "direct_competitors": [
+      {"symbol": "ABB", "note": "Largest direct competitor; ABB India makes motors/drives for similar applications"},
+      {"symbol": "CGPOWER", "note": "CG Power (Murugappa group); transformers + motors"},
+      {"symbol": "BHEL", "note": "BHEL competes in large generators for power plants"},
+      {"symbol": "POWERINDIA", "note": "Hitachi Energy India; power infrastructure"}
+    ],
+    "sector_peers": [
+      {"symbol": "CGPOWER", "note": "Closest peer on electrical equipment"},
+      {"symbol": "ELECON", "note": "Gear/transmission equipment for industrial applications"},
+      {"symbol": "MTARTECH", "note": "Critical precision components for power + defense"}
+    ],
+    "macro_factors": [
+      {"factor": "India_Power_Capex", "direction": "positive", "strength": "high", "note": "NTPC adding 32 GW by 2032; state discoms replacing old equipment"},
+      {"factor": "PLI_Electrical_Equipment", "direction": "positive", "strength": "medium", "note": "PLI scheme supports domestic motor/generator manufacturing"},
+      {"factor": "USD_INR", "direction": "mixed", "strength": "medium", "note": "Export revenues (USD) benefit from weak INR; import costs for components affected by strong USD"},
+      {"factor": "Global_Capex_Cycle", "direction": "positive", "strength": "medium", "note": "Marine and international power project orders track global infrastructure spend"}
+    ]
+  },
+
+  "open_questions": [
+    {
+      "question": "What caused the 31% correction in the last month?",
+      "priority": "high",
+      "action": "Read Q2 FY27 concall transcript if available; check BSE/NSE announcements for guidance downgrade, promoter selling, or sector news",
+      "added_date": "2026-11-06"
+    },
+    {
+      "question": "What is the current order book size and YoY growth?",
+      "priority": "high",
+      "action": "Fetch latest management commentary from concall or investor presentation. Order book visibility is critical for growth confidence.",
+      "added_date": "2026-11-06"
+    },
+    {
+      "question": "What is the mix of domestic vs export revenue?",
+      "priority": "medium",
+      "action": "Check segmental disclosures in annual report. Export-dependent companies face currency and macro headwinds.",
+      "added_date": "2026-11-06"
+    },
+    {
+      "question": "Why is FCF conversion so low (31% in Q4 FY26)?",
+      "priority": "medium",
+      "action": "Track receivables days (742/589 = 126 days in Q4). If this is rising structurally, it signals customer payment issues or aggressive revenue recognition.",
+      "added_date": "2026-11-06"
+    },
+    {
+      "question": "Who are the top 5 customers and what is their % of revenue?",
+      "priority": "medium",
+      "action": "Annual report related-party disclosures. Concentration with power utilities (NTPC, TPDDL, etc.) = good; concentration with 1-2 customers = risk.",
+      "added_date": "2026-11-06"
+    },
+    {
+      "question": "What is the Q1 FY27 balance sheet — specifically receivables and capex?",
+      "priority": "low",
+      "action": "XBRL extract for Q1 FY27 may not have balance sheet attached yet. Fetch when available.",
+      "added_date": "2026-11-06"
+    }
+  ],
+
+  "watch_triggers": [
+    "Price crosses ₹600 (EMA200) → upgrade confidence to 0.65",
+    "Price breaks ₹480 → stop loss triggered, downgrade thesis",
+    "Order book news > ₹2000 Cr → strong bullish confirmation",
+    "Concall guidance downgrade → re-evaluate thesis_alignment_score",
+    "FCF conversion improves >60% → upgrade earnings_quality_score to 0.70",
+    "Insider buying reported → upgrade mgmt_quality_score",
+    "ABB or CGPower quarterly commentary on sector — cross-reference TD Power thesis"
+  ]
+}

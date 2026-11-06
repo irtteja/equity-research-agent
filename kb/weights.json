@@ -1,0 +1,10 @@
+{
+  "w1": 0.20,
+  "w2": 0.20,
+  "w3": 0.20,
+  "w4": 0.20,
+  "w5": 0.20,
+  "version": 1,
+  "last_updated": "2026-11-06",
+  "update_reason": "Initial equal weights — will update from prediction error attribution after 90-day outcomes"
+}
