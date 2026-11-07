@@ -32,9 +32,9 @@
     "last_updated": "2026-11-04"
   },
   "PRESTIGE": {
-    "last_filing": "2026-11-03",
-    "last_ingested": "2026-11-04",
-    "last_updated": "2026-11-04"
+    "last_filing": "2026-11-07",
+    "last_ingested": "2026-11-07",
+    "last_updated": "2026-11-07"
   },
   "HINDZINC": {
     "last_filing": "2026-11-03",
@@ -300,5 +300,80 @@
     "last_filing": "2026-11-03",
     "last_ingested": "2026-11-04",
     "last_updated": "2026-11-04"
+  },
+  "AEQUS": {
+    "last_filing": "2026-11-07",
+    "last_ingested": "2026-11-07",
+    "last_updated": "2026-11-07"
+  },
+  "SHAREINDIA": {
+    "last_filing": "2026-11-07",
+    "last_ingested": "2026-11-07",
+    "last_updated": "2026-11-07"
+  },
+  "MEDPLUS": {
+    "last_filing": "2026-11-07",
+    "last_ingested": "2026-11-07",
+    "last_updated": "2026-11-07"
+  },
+  "JYOTHYLAB": {
+    "last_filing": "2026-11-07",
+    "last_ingested": "2026-11-07",
+    "last_updated": "2026-11-07"
+  },
+  "SMLMAH": {
+    "last_filing": "2026-11-07",
+    "last_ingested": "2026-11-07",
+    "last_updated": "2026-11-07"
+  },
+  "ASTERDM": {
+    "last_filing": "2026-11-07",
+    "last_ingested": "2026-11-07",
+    "last_updated": "2026-11-07"
+  },
+  "BOSCHLTD": {
+    "last_filing": "2026-11-07",
+    "last_ingested": "2026-11-07",
+    "last_updated": "2026-11-07"
+  },
+  "HINDALCO": {
+    "last_filing": "2026-11-07",
+    "last_ingested": "2026-11-07",
+    "last_updated": "2026-11-07"
+  },
+  "BHARTIARTL": {
+    "last_filing": "2026-11-07",
+    "last_ingested": "2026-11-07",
+    "last_updated": "2026-11-07"
+  },
+  "M&M": {
+    "last_filing": "2026-11-07",
+    "last_ingested": "2026-11-07",
+    "last_updated": "2026-11-07"
+  },
+  "TECHM": {
+    "last_filing": "2026-11-07",
+    "last_ingested": "2026-11-07",
+    "last_updated": "2026-11-07"
+  },
+  "MARICO": {
+    "last_filing": "2026-11-07",
+    "last_ingested": "2026-11-07",
+    "last_updated": "2026-11-07"
+  },
+  "JSWENERGY": {
+    "last_filing": "2026-11-07",
+    "last_ingested": "2026-11-07",
+    "last_updated": "2026-11-07"
+  },
+  "ABCAPITAL": {
+    "last_filing": "2026-11-07",
+    "last_ingested": "2026-11-07",
+    "last_updated": "2026-11-07"
+  },
+  "JSWSTEEL": {
+    "last_filing": "2026-11-07",
+    "last_ingested": "2026-11-07",
+    "last_updated": "2026-11-07"
   }
 }

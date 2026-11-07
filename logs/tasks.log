@@ -1598,3 +1598,11 @@ Progress: 757 stocks researched, 0 failed; results calendar saved; self-model re
 Next: next weekly run Sunday Nov 15
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-07 19:36
+Task: announcements-2026-11-06
+Status: completed
+Progress: 542 announcements fetched (291 symbols); 143 material items triaged; 16 high-priority extractions saved
+Next: next announcement fetch tomorrow
+Blockers: M&M/TECHM/MARICO acquisition targets in PDFs only — full details not extracted
+============================================================
