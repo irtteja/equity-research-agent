@@ -1606,3 +1606,11 @@ Progress: 542 announcements fetched (291 symbols); 143 material items triaged; 1
 Next: next announcement fetch tomorrow
 Blockers: M&M/TECHM/MARICO acquisition targets in PDFs only — full details not extracted
 ============================================================
+
+[CHECKPOINT] 2026-11-07 20:40
+Task: watchdog
+Status: completed
+Progress: Sunday 02:10 IST heartbeat; graph ok (867 companies); weekly_research done; announcements 2026-11-06 ingested
+Next: next watchdog wake
+Blockers: none
+============================================================
