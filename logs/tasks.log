@@ -1502,3 +1502,11 @@ Progress: Fri Nov  6 22:40:45 UTC 2026 — pre-dawn heartbeat (04:10 IST Nov 7);
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-07 00:40
+Task: watchdog
+Status: completed
+Progress: Saturday 06:10 IST - weekend heartbeat, graph ready (867 companies, 267 trend summaries)
+Next: next watchdog wake
+Blockers: none
+============================================================
