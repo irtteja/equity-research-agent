@@ -1,0 +1,81 @@
+{
+  "symbol": "VEDPOWER",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "VEDPOWER",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 36.3,
+    "high": 36.3,
+    "low": 34.9,
+    "close": 35.33,
+    "last": 35.33,
+    "prev_close": 36.45,
+    "change": -1.06,
+    "pct_change": -2.91,
+    "volume": 23309460,
+    "turnover": 826087262.4,
+    "year_high": 49.88,
+    "year_low": 27.5
+  },
+  "financial_results": {
+    "symbol": "VEDPOWER",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "VEDPOWER",
+    "shareholding": [
+      {
+        "date": "12-Jun-2026",
+        "Promoter & Promoter Group": "  56.38"
+      },
+      {
+        "date": "12-Jun-2026",
+        "Public": "  43.46"
+      },
+      {
+        "date": "12-Jun-2026",
+        "Shares held by Employee Trusts": "   0.16"
+      },
+      {
+        "date": "12-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  56.38"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  43.46"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.16"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  56.38"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  43.46"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.16"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "symbol": "BIRET",
+  "date": "2026-11-07",
+  "quote": {
+    "error": "NSE file not available: https://www.nseindia.com/api/NextApi/apiClient/GetQuoteApi",
+    "symbol": "BIRET"
+  },
+  "financial_results": {
+    "symbol": "BIRET",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "BIRET",
+    "shareholding": []
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

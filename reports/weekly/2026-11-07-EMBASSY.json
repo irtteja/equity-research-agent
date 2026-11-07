@@ -1,0 +1,20 @@
+{
+  "symbol": "EMBASSY",
+  "date": "2026-11-07",
+  "quote": {
+    "error": "NSE file not available: https://www.nseindia.com/api/NextApi/apiClient/GetQuoteApi",
+    "symbol": "EMBASSY"
+  },
+  "financial_results": {
+    "symbol": "EMBASSY",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "EMBASSY",
+    "shareholding": []
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

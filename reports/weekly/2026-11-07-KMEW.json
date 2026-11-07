@@ -1,0 +1,226 @@
+{
+  "symbol": "KMEW",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "KMEW",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 641,
+    "high": 675,
+    "low": 592,
+    "close": 652.8,
+    "last": 652.8,
+    "prev_close": 3143.3,
+    "change": 26.5,
+    "pct_change": 4.22,
+    "volume": 964735,
+    "turnover": 600827310.65,
+    "year_high": 683.4,
+    "year_low": 248.61
+  },
+  "financial_results": {
+    "symbol": "KMEW",
+    "period": "Quarterly",
+    "results": [
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "12-Feb-2025 16:56:12",
+        "companyName": "Knowledge Marine & Engineering Works Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:11",
+        "exchdisstime": "12-Feb-2025 16:56:23",
+        "filingDate": "12-Feb-2025 16:56",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE0CJD01011",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNCNEKMEW",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1194979",
+        "symbol": "KMEW",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_119908_1379905_12022025045612.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "12-Feb-2025 16:51:24",
+        "companyName": "Knowledge Marine & Engineering Works Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:40",
+        "exchdisstime": "12-Feb-2025 16:52:04",
+        "filingDate": "12-Feb-2025 16:51",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE0CJD01011",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNNNEKMEW",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1194969",
+        "symbol": "KMEW",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_119903_1379884_12022025045124.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "19-Nov-2024 15:58:58",
+        "companyName": "Knowledge Marine & Engineering Works Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:17",
+        "exchdisstime": "19-Nov-2024 15:59:15",
+        "filingDate": "19-Nov-2024 15:58",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE0CJD01011",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNCNEKMEW",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1189237",
+        "symbol": "KMEW",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_116961_1316997_19112024035858.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "19-Nov-2024 15:45:12",
+        "companyName": "Knowledge Marine & Engineering Works Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:51",
+        "exchdisstime": "19-Nov-2024 15:46:03",
+        "filingDate": "19-Nov-2024 15:45",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE0CJD01011",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNNNEKMEW",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1189235",
+        "symbol": "KMEW",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_116960_1316972_19112024034512.xml"
+      }
+    ]
+  },
+  "shareholding": {
+    "symbol": "KMEW",
+    "shareholding": [
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  53.63"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  46.37"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  53.63"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  46.37"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  51.56"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  48.44"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "04-Aug-2026",
+        "Promoter & Promoter Group": "  49.99"
+      },
+      {
+        "date": "04-Aug-2026",
+        "Public": "  50.01"
+      },
+      {
+        "date": "04-Aug-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "04-Aug-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  50.30"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  49.70"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

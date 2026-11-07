@@ -1,0 +1,170 @@
+{
+  "symbol": "BAJAJHFL",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "BAJAJHFL",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 82.3,
+    "high": 82.33,
+    "low": 79.81,
+    "close": 80,
+    "last": 80,
+    "prev_close": 83.16,
+    "change": -3.16,
+    "pct_change": -3.8,
+    "volume": 6759014,
+    "turnover": 544033036.86,
+    "year_high": 110.5,
+    "year_low": 72.65
+  },
+  "financial_results": {
+    "symbol": "BAJAJHFL",
+    "period": "Quarterly",
+    "results": [
+      {
+        "audited": "Un-Audited",
+        "bank": "F",
+        "broadCastDate": "27-Jan-2025 20:58:57",
+        "companyName": "Bajaj Housing Finance Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:35",
+        "exchdisstime": "27-Jan-2025 20:59:32",
+        "filingDate": "27-Jan-2025 20:58",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "NBFC-IND",
+        "industry": "-",
+        "isin": "INE377Y01014",
+        "oldNewFlag": null,
+        "params": "01-Oct-202431-Dec-2024Q3UFNNFEBAJAJHFL",
+        "period": "Quarterly",
+        "reInd": "F",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1190805",
+        "symbol": "BAJAJHFL",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/NBFC_INDAS_117798_1362436_27012025085856.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "F",
+        "broadCastDate": "21-Oct-2024 19:03:45",
+        "companyName": "Bajaj Housing Finance Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:46",
+        "exchdisstime": "21-Oct-2024 19:04:31",
+        "filingDate": "21-Oct-2024 19:03",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "NBFC-IND",
+        "industry": "-",
+        "isin": "INE377Y01014",
+        "oldNewFlag": null,
+        "params": "01-Jul-202430-Sep-2024Q2UFNNFEBAJAJHFL",
+        "period": "Quarterly",
+        "reInd": "F",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1181807",
+        "symbol": "BAJAJHFL",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/NBFC_INDAS_112963_1283730_21102024070343.xml"
+      }
+    ]
+  },
+  "shareholding": {
+    "symbol": "BAJAJHFL",
+    "shareholding": [
+      {
+        "date": "30-Sep-2025",
+        "Promoter & Promoter Group": "  88.70"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Public": "  11.25"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Shares held by Employee Trusts": "   0.04"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  86.70"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  13.25"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.04"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  86.70"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  13.25"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.04"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  86.70"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  13.25"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.04"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  86.70"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  13.26"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.04"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

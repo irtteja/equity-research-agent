@@ -1,0 +1,282 @@
+{
+  "symbol": "BLUEJET",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "BLUEJET",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 572,
+    "high": 574.95,
+    "low": 542.35,
+    "close": 553.8,
+    "last": 553.8,
+    "prev_close": 576.35,
+    "change": -18.6,
+    "pct_change": -3.23,
+    "volume": 1123510,
+    "turnover": 625491722.3,
+    "year_high": 647.8,
+    "year_low": 325
+  },
+  "financial_results": {
+    "symbol": "BLUEJET",
+    "period": "Quarterly",
+    "results": [
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "29-Jan-2025 15:16:59",
+        "companyName": "Blue Jet Healthcare Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:30",
+        "exchdisstime": "29-Jan-2025 15:17:29",
+        "filingDate": "29-Jan-2025 15:16",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE0KBH01020",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNNNEBLUEJET",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1191157",
+        "symbol": "BLUEJET",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_117978_1364374_29012025031659.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "29-Oct-2024 15:19:49",
+        "companyName": "Blue Jet Healthcare Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:35",
+        "exchdisstime": "29-Oct-2024 15:20:24",
+        "filingDate": "29-Oct-2024 15:19",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE0KBH01020",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNNNEBLUEJET",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1183430",
+        "symbol": "BLUEJET",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_113811_1292328_29102024031949.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "06-Aug-2024 16:32:27",
+        "companyName": "Blue Jet Healthcare Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:01:01",
+        "exchdisstime": "06-Aug-2024 16:33:28",
+        "filingDate": "06-Aug-2024 16:32",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Apr-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE0KBH01020",
+        "oldNewFlag": "N",
+        "params": "01-Apr-202430-Jun-2024Q1UNNNNEBLUEJET",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "First Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1179033",
+        "symbol": "BLUEJET",
+        "toDate": "30-Jun-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_110479_1213959_06082024043227.xml"
+      },
+      {
+        "audited": "Audited",
+        "bank": "N",
+        "broadCastDate": "26-May-2024 13:19:40",
+        "companyName": "Blue Jet Healthcare Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "::",
+        "exchdisstime": null,
+        "filingDate": "26-May-2024 13:19",
+        "financialYear": "01-Apr-2023 To 31-Mar-2024",
+        "format": "New",
+        "fromDate": "01-Jan-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE0KBH01020",
+        "oldNewFlag": "N",
+        "params": "01-Jan-202431-Mar-2024Q4ANNNNEBLUEJET",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Fourth Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1174275",
+        "symbol": "BLUEJET",
+        "toDate": "31-Mar-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_107297_1139552_26052024011939.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "06-Feb-2024 16:48:13",
+        "companyName": "Blue Jet Healthcare Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:03:53",
+        "exchdisstime": "06-Feb-2024 16:52:06",
+        "filingDate": "06-Feb-2024 16:48",
+        "financialYear": "01-Apr-2023 To 31-Mar-2024",
+        "format": "New",
+        "fromDate": "01-Oct-2023",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE0KBH01020",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202331-Dec-2023Q3UNNNNEBLUEJET",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1164883",
+        "symbol": "BLUEJET",
+        "toDate": "31-Dec-2023",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_102444_1045828_06022024044813.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "11-Nov-2023 12:25:37",
+        "companyName": "Blue Jet Healthcare Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:48:28",
+        "exchdisstime": "11-Nov-2023 13:14:05",
+        "filingDate": "11-Nov-2023 12:25",
+        "financialYear": "01-Apr-2023 To 31-Mar-2024",
+        "format": "New",
+        "fromDate": "01-Jul-2023",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE0KBH01020",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202330-Sep-2023Q2UNNNNEBLUEJET",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1161279",
+        "symbol": "BLUEJET",
+        "toDate": "30-Sep-2023",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_100607_986730_11112023122537.xml"
+      }
+    ]
+  },
+  "shareholding": {
+    "symbol": "BLUEJET",
+    "shareholding": [
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  79.81"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  20.19"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  79.81"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  20.19"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  79.81"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  20.19"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "09-Jul-2026",
+        "Promoter & Promoter Group": "  73.15"
+      },
+      {
+        "date": "09-Jul-2026",
+        "Public": "  26.85"
+      },
+      {
+        "date": "09-Jul-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "09-Jul-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  73.15"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  26.85"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "symbol": "GROWW",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "GROWW",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 215,
+    "high": 218,
+    "low": 208.55,
+    "close": 215.08,
+    "last": 215.08,
+    "prev_close": 223.89,
+    "change": -8.19,
+    "pct_change": -3.66,
+    "volume": 198554804,
+    "turnover": 42387479557.92,
+    "year_high": 227.2,
+    "year_low": 112
+  },
+  "financial_results": {
+    "symbol": "GROWW",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "GROWW",
+    "shareholding": [
+      {
+        "date": "11-Nov-2025",
+        "Promoter & Promoter Group": "  27.81"
+      },
+      {
+        "date": "11-Nov-2025",
+        "Public": "  72.19"
+      },
+      {
+        "date": "11-Nov-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "11-Nov-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  27.81"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  72.19"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  27.38"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  71.31"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   1.31"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  27.14"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  71.75"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   1.11"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  27.13"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  71.87"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   1.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

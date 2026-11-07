@@ -1,0 +1,113 @@
+{
+  "symbol": "URBANCO",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "URBANCO",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 155.48,
+    "high": 159.37,
+    "low": 155.1,
+    "close": 158.12,
+    "last": 158.12,
+    "prev_close": 158.52,
+    "change": 0.48,
+    "pct_change": 0.3,
+    "volume": 1222591,
+    "turnover": 192240208.84,
+    "year_high": 183.97,
+    "year_low": 100.7
+  },
+  "financial_results": {
+    "symbol": "URBANCO",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "URBANCO",
+    "shareholding": [
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  20.29"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  79.71"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  19.02"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  75.79"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   5.19"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "24-Mar-2026",
+        "Promoter & Promoter Group": "  19.02"
+      },
+      {
+        "date": "24-Mar-2026",
+        "Public": "  75.79"
+      },
+      {
+        "date": "24-Mar-2026",
+        "Shares held by Employee Trusts": "   5.19"
+      },
+      {
+        "date": "24-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  19.02"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  76.46"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   4.52"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  19.02"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  77.13"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   3.85"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

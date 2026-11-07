@@ -1,0 +1,170 @@
+{
+  "symbol": "AVL",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "AVL",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 522,
+    "high": 526.6,
+    "low": 516.65,
+    "close": 523.6,
+    "last": 523.6,
+    "prev_close": 522.85,
+    "change": -0.45,
+    "pct_change": -0.09,
+    "volume": 43883,
+    "turnover": 22876646.73,
+    "year_high": 705,
+    "year_low": 436.55
+  },
+  "financial_results": {
+    "symbol": "AVL",
+    "period": "Quarterly",
+    "results": [
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "31-Jan-2025 13:34:46",
+        "companyName": "Aditya Vision Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:13",
+        "exchdisstime": "31-Jan-2025 13:34:59",
+        "filingDate": "31-Jan-2025 13:34",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE679V01027",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNNNEAVL",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1191705",
+        "symbol": "AVL",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_118259_1367013_31012025013446.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "12-Nov-2024 18:27:35",
+        "companyName": "Aditya Vision Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:01:11",
+        "exchdisstime": "12-Nov-2024 18:28:46",
+        "filingDate": "12-Nov-2024 18:27",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE679V01027",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNNNEAVL",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1186235",
+        "symbol": "AVL",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_115280_1306660_12112024062734.xml"
+      }
+    ]
+  },
+  "shareholding": {
+    "symbol": "AVL",
+    "shareholding": [
+      {
+        "date": "30-Jun-2025",
+        "Promoter & Promoter Group": "  53.23"
+      },
+      {
+        "date": "30-Jun-2025",
+        "Public": "  46.77"
+      },
+      {
+        "date": "30-Jun-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Promoter & Promoter Group": "  47.32"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Public": "  52.68"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  47.14"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  52.86"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  47.14"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  52.86"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  47.14"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  52.86"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

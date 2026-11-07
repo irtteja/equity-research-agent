@@ -1,0 +1,226 @@
+{
+  "symbol": "ACMESOLAR",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "ACMESOLAR",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 408.25,
+    "high": 410,
+    "low": 391.5,
+    "close": 394.95,
+    "last": 394.95,
+    "prev_close": 407.9,
+    "change": -11.5,
+    "pct_change": -2.82,
+    "volume": 885420,
+    "turnover": 352193513.4,
+    "year_high": 476.9,
+    "year_low": 195.9
+  },
+  "financial_results": {
+    "symbol": "ACMESOLAR",
+    "period": "Quarterly",
+    "results": [
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "29-Jan-2025 19:26:10",
+        "companyName": "Acme Solar Holdings Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:48",
+        "exchdisstime": "29-Jan-2025 19:26:58",
+        "filingDate": "29-Jan-2025 19:26",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE622W01025",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNCNEACMESOLAR",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1191335",
+        "symbol": "ACMESOLAR",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_118068_1365116_29012025072610.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "29-Jan-2025 19:25:10",
+        "companyName": "Acme Solar Holdings Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:42",
+        "exchdisstime": "29-Jan-2025 19:25:52",
+        "filingDate": "29-Jan-2025 19:25",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE622W01025",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNNNEACMESOLAR",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1191333",
+        "symbol": "ACMESOLAR",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_118067_1365111_29012025072509.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "25-Nov-2024 20:55:57",
+        "companyName": "Acme Solar Holdings Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:51",
+        "exchdisstime": "25-Nov-2024 20:56:48",
+        "filingDate": "25-Nov-2024 20:55",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE622W01025",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNCNEACMESOLAR",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1189318",
+        "symbol": "ACMESOLAR",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_117017_1319334_25112024085556.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "25-Nov-2024 20:52:30",
+        "companyName": "Acme Solar Holdings Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:47",
+        "exchdisstime": "25-Nov-2024 20:53:17",
+        "filingDate": "25-Nov-2024 20:52",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE622W01025",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNNNEACMESOLAR",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1189316",
+        "symbol": "ACMESOLAR",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_117016_1319329_25112024085229.xml"
+      }
+    ]
+  },
+  "shareholding": {
+    "symbol": "ACMESOLAR",
+    "shareholding": [
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  83.29"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  16.60"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.11"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  83.29"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  16.61"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.10"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "04-Jun-2026",
+        "Promoter & Promoter Group": "  71.48"
+      },
+      {
+        "date": "04-Jun-2026",
+        "Public": "  28.44"
+      },
+      {
+        "date": "04-Jun-2026",
+        "Shares held by Employee Trusts": "   0.08"
+      },
+      {
+        "date": "04-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  71.40"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  28.42"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.18"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  71.40"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  28.47"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.13"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

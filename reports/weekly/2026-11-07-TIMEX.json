@@ -1,0 +1,32 @@
+{
+  "symbol": "TIMEX",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "TIMEX",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 686,
+    "high": 707.25,
+    "low": 680.25,
+    "close": 701.2,
+    "last": 701.2,
+    "prev_close": 697.4,
+    "change": 4.05,
+    "pct_change": 0.58,
+    "volume": 416708,
+    "turnover": 289878753.12,
+    "year_high": 759.7,
+    "year_low": 312
+  },
+  "financial_results": {
+    "symbol": "TIMEX",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "TIMEX",
+    "shareholding": []
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

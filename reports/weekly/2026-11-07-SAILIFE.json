@@ -1,0 +1,170 @@
+{
+  "symbol": "SAILIFE",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "SAILIFE",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 1655.1,
+    "high": 1814.9,
+    "low": 1614.9,
+    "close": 1785.1,
+    "last": 1785.1,
+    "prev_close": 1594.5,
+    "change": 173.5,
+    "pct_change": 10.88,
+    "volume": 13228347,
+    "turnover": 23412851355.3,
+    "year_high": 1814.9,
+    "year_low": 783.85
+  },
+  "financial_results": {
+    "symbol": "SAILIFE",
+    "period": "Quarterly",
+    "results": [
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "07-Feb-2025 16:02:13",
+        "companyName": "Sai Life Sciences Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:16",
+        "exchdisstime": "07-Feb-2025 16:02:29",
+        "filingDate": "07-Feb-2025 16:02",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE570L01029",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNCNESAILIFE",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1193271",
+        "symbol": "SAILIFE",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_119051_1374417_07022025040212.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "07-Feb-2025 16:00:24",
+        "companyName": "Sai Life Sciences Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:11",
+        "exchdisstime": "07-Feb-2025 16:00:35",
+        "filingDate": "07-Feb-2025 16:00",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE570L01029",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNNNESAILIFE",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1193269",
+        "symbol": "SAILIFE",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_119050_1374408_07022025040024.xml"
+      }
+    ]
+  },
+  "shareholding": {
+    "symbol": "SAILIFE",
+    "shareholding": [
+      {
+        "date": "30-Sep-2025",
+        "Promoter & Promoter Group": "  34.94"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Public": "  65.06"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  34.70"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  65.30"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  34.61"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  65.39"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  34.53"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  65.47"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  34.50"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  65.50"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "symbol": "PIRAMALFIN",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "PIRAMALFIN",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 2050,
+    "high": 2201,
+    "low": 2050,
+    "close": 2161.8,
+    "last": 2161.8,
+    "prev_close": 2119.6,
+    "change": 80.4,
+    "pct_change": 3.79,
+    "volume": 319443,
+    "turnover": 680004702.96,
+    "year_high": 2326.4,
+    "year_low": 1260
+  },
+  "financial_results": {
+    "symbol": "PIRAMALFIN",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "PIRAMALFIN",
+    "shareholding": [
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  46.16"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  53.43"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.41"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  46.16"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  53.54"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.30"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  46.16"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  53.62"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.22"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "28-Aug-2026",
+        "Promoter & Promoter Group": "  44.22"
+      },
+      {
+        "date": "28-Aug-2026",
+        "Public": "  55.58"
+      },
+      {
+        "date": "28-Aug-2026",
+        "Shares held by Employee Trusts": "   0.20"
+      },
+      {
+        "date": "28-Aug-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  44.22"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  55.74"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.04"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "symbol": "IKS",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "IKS",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 1726.9,
+    "high": 1726.9,
+    "low": 1627.8,
+    "close": 1657.1,
+    "last": 1657.1,
+    "prev_close": 1757.2,
+    "change": -102.1,
+    "pct_change": -5.81,
+    "volume": 184986,
+    "turnover": 306514402.56,
+    "year_high": 1970,
+    "year_low": 1262
+  },
+  "financial_results": {
+    "symbol": "IKS",
+    "period": "Quarterly",
+    "results": [
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "06-Feb-2025 12:50:49",
+        "companyName": "Inventurus Knowledge Solutions Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:29",
+        "exchdisstime": "06-Feb-2025 12:51:18",
+        "filingDate": "06-Feb-2025 12:50",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE115Q01022",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNCNEIKS",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1192805",
+        "symbol": "IKS",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_118818_1372444_06022025125049.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "06-Feb-2025 12:47:26",
+        "companyName": "Inventurus Knowledge Solutions Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:20",
+        "exchdisstime": "06-Feb-2025 12:47:46",
+        "filingDate": "06-Feb-2025 12:47",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE115Q01022",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNNNEIKS",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1192803",
+        "symbol": "IKS",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_118817_1372438_06022025124726.xml"
+      }
+    ]
+  },
+  "shareholding": {
+    "symbol": "IKS",
+    "shareholding": [
+      {
+        "date": "30-Sep-2025",
+        "Promoter & Promoter Group": "  63.72"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Public": "  33.82"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Shares held by Employee Trusts": "   2.46"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  63.72"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  33.91"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   2.37"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  63.72"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  33.97"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   2.31"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  63.72"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  34.05"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   2.22"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  63.72"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  34.09"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   2.19"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

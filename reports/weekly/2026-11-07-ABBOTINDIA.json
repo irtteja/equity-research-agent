@@ -1,0 +1,142 @@
+{
+  "symbol": "ABBOTINDIA",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "ABBOTINDIA",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 26615,
+    "high": 27065,
+    "low": 26280,
+    "close": 26345,
+    "last": 26345,
+    "prev_close": 26605,
+    "change": -225,
+    "pct_change": -0.85,
+    "volume": 16959,
+    "turnover": 450377958.33,
+    "year_high": 30655,
+    "year_low": 24650
+  },
+  "financial_results": {
+    "symbol": "ABBOTINDIA",
+    "period": "Quarterly",
+    "results": [
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "09-Jun-2010 14:47:08",
+        "companyName": "Abbott India Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "::",
+        "exchdisstime": null,
+        "filingDate": "09-Jun-2010 18:27",
+        "financialYear": "01-Dec-2009 To 30-Nov-2010",
+        "format": "Old",
+        "fromDate": "01-Dec-2009",
+        "indAs": "Non-Ind-AS",
+        "industry": "-",
+        "isin": "INE358A01014",
+        "oldNewFlag": null,
+        "params": "01-Dec-200928-Feb-2010Q1UNNNAEABBOTINDIA",
+        "period": "Quarterly",
+        "reInd": "-",
+        "relatingTo": "First Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": "https://nsearchives.nseindia.com/archives/financial_results/financial_res_ABBOTINDIA_75466.html",
+        "seqNumber": "75466",
+        "symbol": "ABBOTINDIA",
+        "toDate": "28-Feb-2010",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/-"
+      }
+    ]
+  },
+  "shareholding": {
+    "symbol": "ABBOTINDIA",
+    "shareholding": [
+      {
+        "date": "31-Dec-2017",
+        "Promoter & Promoter Group": "  74.99"
+      },
+      {
+        "date": "31-Dec-2017",
+        "Public": "  25.01"
+      },
+      {
+        "date": "31-Dec-2017",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2017",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2018",
+        "Promoter & Promoter Group": "  74.99"
+      },
+      {
+        "date": "31-Mar-2018",
+        "Public": "  25.01"
+      },
+      {
+        "date": "31-Mar-2018",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2018",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2018",
+        "Promoter & Promoter Group": "  74.99"
+      },
+      {
+        "date": "30-Jun-2018",
+        "Public": "  25.01"
+      },
+      {
+        "date": "30-Jun-2018",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2018",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2018",
+        "Promoter & Promoter Group": "  74.99"
+      },
+      {
+        "date": "30-Sep-2018",
+        "Public": "  25.01"
+      },
+      {
+        "date": "30-Sep-2018",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2018",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2018",
+        "Promoter & Promoter Group": "  74.99"
+      },
+      {
+        "date": "31-Dec-2018",
+        "Public": "  25.01"
+      },
+      {
+        "date": "31-Dec-2018",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2018",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

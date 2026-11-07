@@ -1,0 +1,170 @@
+{
+  "symbol": "SENORES",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "SENORES",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 1185,
+    "high": 1185,
+    "low": 1130.1,
+    "close": 1161,
+    "last": 1161,
+    "prev_close": 1187.9,
+    "change": -32.7,
+    "pct_change": -2.75,
+    "volume": 274945,
+    "turnover": 317542228.85,
+    "year_high": 1599,
+    "year_low": 706
+  },
+  "financial_results": {
+    "symbol": "SENORES",
+    "period": "Quarterly",
+    "results": [
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "24-Jan-2025 12:38:56",
+        "companyName": "Senores Pharmaceuticals Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:30",
+        "exchdisstime": "24-Jan-2025 12:39:26",
+        "filingDate": "24-Jan-2025 12:38",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE0RB801010",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNCNESENORES",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1190397",
+        "symbol": "SENORES",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_117594_1360008_24012025123855.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "24-Jan-2025 12:37:25",
+        "companyName": "Senores Pharmaceuticals Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:54",
+        "exchdisstime": "24-Jan-2025 12:38:19",
+        "filingDate": "24-Jan-2025 12:37",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE0RB801010",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNNNESENORES",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1190395",
+        "symbol": "SENORES",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_117593_1360002_24012025123725.xml"
+      }
+    ]
+  },
+  "shareholding": {
+    "symbol": "SENORES",
+    "shareholding": [
+      {
+        "date": "30-Sep-2025",
+        "Promoter & Promoter Group": "  45.80"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Public": "  54.20"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  45.80"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  54.20"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  45.82"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  54.18"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  45.82"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  54.18"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  45.82"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  54.18"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "symbol": "CLEANMAX",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "CLEANMAX",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 1021.2,
+    "high": 1314.7,
+    "low": 1021.2,
+    "close": 1259.7,
+    "last": 1259.7,
+    "prev_close": 1276.5,
+    "change": -16.5,
+    "pct_change": -1.29,
+    "volume": 887516,
+    "turnover": 1071817572.56,
+    "year_high": 1536,
+    "year_low": 727.1
+  },
+  "financial_results": {
+    "symbol": "CLEANMAX",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "CLEANMAX",
+    "shareholding": [
+      {
+        "date": "01-Mar-2026",
+        "Promoter & Promoter Group": "  49.48"
+      },
+      {
+        "date": "01-Mar-2026",
+        "Public": "  50.52"
+      },
+      {
+        "date": "01-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "01-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  49.48"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  50.52"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  49.42"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  50.58"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  49.28"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  50.72"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "symbol": "SWIGGY",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "SWIGGY",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 188.85,
+    "high": 192.12,
+    "low": 184.11,
+    "close": 191.17,
+    "last": 191.17,
+    "prev_close": 189.51,
+    "change": 1.66,
+    "pct_change": 0.88,
+    "volume": 15599744,
+    "turnover": 2926043982.08,
+    "year_high": 421.6,
+    "year_low": 174.2
+  },
+  "financial_results": {
+    "symbol": "SWIGGY",
+    "period": "Quarterly",
+    "results": [
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "05-Feb-2025 18:36:14",
+        "companyName": "Swiggy Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:26",
+        "exchdisstime": "05-Feb-2025 18:36:40",
+        "filingDate": "05-Feb-2025 18:36",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE00H001014",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNNNESWIGGY",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1192703",
+        "symbol": "SWIGGY",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_118767_1371955_05022025063613.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "05-Feb-2025 17:51:10",
+        "companyName": "Swiggy Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:34",
+        "exchdisstime": "05-Feb-2025 17:51:44",
+        "filingDate": "05-Feb-2025 17:51",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE00H001014",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNCNESWIGGY",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1192677",
+        "symbol": "SWIGGY",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_118754_1371841_05022025055110.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "04-Dec-2024 13:11:37",
+        "companyName": "Swiggy Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:39",
+        "exchdisstime": "04-Dec-2024 13:12:16",
+        "filingDate": "04-Dec-2024 13:11",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE00H001014",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNCNESWIGGY",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1189408",
+        "symbol": "SWIGGY",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_117069_1322795_04122024011137.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "04-Dec-2024 12:47:21",
+        "companyName": "Swiggy Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:25",
+        "exchdisstime": "04-Dec-2024 12:47:46",
+        "filingDate": "04-Dec-2024 12:47",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE00H001014",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNNNESWIGGY",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1189406",
+        "symbol": "SWIGGY",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_117068_1322779_04122024124720.xml"
+      }
+    ]
+  },
+  "shareholding": {
+    "symbol": "SWIGGY",
+    "shareholding": [
+      {
+        "date": "13-Dec-2025",
+        "Promoter & Promoter Group": "   0.00"
+      },
+      {
+        "date": "13-Dec-2025",
+        "Public": "  93.97"
+      },
+      {
+        "date": "13-Dec-2025",
+        "Shares held by Employee Trusts": "   6.03"
+      },
+      {
+        "date": "13-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  94.06"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   5.94"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  94.41"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   5.59"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  94.92"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   5.08"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  95.02"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   4.98"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

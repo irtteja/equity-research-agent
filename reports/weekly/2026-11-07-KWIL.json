@@ -1,0 +1,97 @@
+{
+  "symbol": "KWIL",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "KWIL",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 38.95,
+    "high": 39,
+    "low": 37.99,
+    "close": 38.28,
+    "last": 38.28,
+    "prev_close": 38.99,
+    "change": -0.69,
+    "pct_change": -1.77,
+    "volume": 6061086,
+    "turnover": 233230589.28,
+    "year_high": 50.68,
+    "year_low": 22.24
+  },
+  "financial_results": {
+    "symbol": "KWIL",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "KWIL",
+    "shareholding": [
+      {
+        "date": "16-Feb-2026",
+        "Promoter & Promoter Group": "  61.90"
+      },
+      {
+        "date": "16-Feb-2026",
+        "Public": "  38.10"
+      },
+      {
+        "date": "16-Feb-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "16-Feb-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  61.90"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  38.10"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  61.91"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  38.09"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  61.91"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  38.09"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "symbol": "KISSHT",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "KISSHT",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 331.5,
+    "high": 349.1,
+    "low": 323.5,
+    "close": 345.4,
+    "last": 345.4,
+    "prev_close": 330.75,
+    "change": 14.45,
+    "pct_change": 4.37,
+    "volume": 1066978,
+    "turnover": 356594717.38,
+    "year_high": 388.15,
+    "year_low": 190
+  },
+  "financial_results": {
+    "symbol": "KISSHT",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "KISSHT",
+    "shareholding": [
+      {
+        "date": "07-May-2026",
+        "Promoter & Promoter Group": "  24.80"
+      },
+      {
+        "date": "07-May-2026",
+        "Public": "  75.20"
+      },
+      {
+        "date": "07-May-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "07-May-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  24.80"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  75.20"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "26-Aug-2026",
+        "Promoter & Promoter Group": "  23.57"
+      },
+      {
+        "date": "26-Aug-2026",
+        "Public": "  76.43"
+      },
+      {
+        "date": "26-Aug-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "26-Aug-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  23.46"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  76.54"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "23-Oct-2026",
+        "Promoter & Promoter Group": "  20.42"
+      },
+      {
+        "date": "23-Oct-2026",
+        "Public": "  79.58"
+      },
+      {
+        "date": "23-Oct-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "23-Oct-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "symbol": "FRACTAL",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "FRACTAL",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 808.9,
+    "high": 829.9,
+    "low": 793.7,
+    "close": 808.85,
+    "last": 808.85,
+    "prev_close": 809.45,
+    "change": 0.5,
+    "pct_change": 0.06,
+    "volume": 725286,
+    "turnover": 589468943.64,
+    "year_high": 1118,
+    "year_low": 696.3
+  },
+  "financial_results": {
+    "symbol": "FRACTAL",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "FRACTAL",
+    "shareholding": [
+      {
+        "date": "13-Feb-2026",
+        "Promoter & Promoter Group": "  16.97"
+      },
+      {
+        "date": "13-Feb-2026",
+        "Public": "  83.03"
+      },
+      {
+        "date": "13-Feb-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "13-Feb-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  16.97"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  83.03"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  16.97"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  83.03"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  16.81"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  83.19"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

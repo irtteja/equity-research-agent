@@ -1,0 +1,97 @@
+{
+  "symbol": "CMPDI",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "CMPDI",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 182,
+    "high": 182.66,
+    "low": 175.62,
+    "close": 177.28,
+    "last": 177.28,
+    "prev_close": 184.33,
+    "change": -6.45,
+    "pct_change": -3.5,
+    "volume": 1077622,
+    "turnover": 191762834.9,
+    "year_high": 283.69,
+    "year_low": 150.16
+  },
+  "financial_results": {
+    "symbol": "CMPDI",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "CMPDI",
+    "shareholding": [
+      {
+        "date": "25-Mar-2026",
+        "Promoter & Promoter Group": "  85.00"
+      },
+      {
+        "date": "25-Mar-2026",
+        "Public": "  15.00"
+      },
+      {
+        "date": "25-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "25-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  85.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  15.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  85.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  15.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  85.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  15.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

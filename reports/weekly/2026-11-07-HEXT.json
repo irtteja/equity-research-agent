@@ -1,0 +1,170 @@
+{
+  "symbol": "HEXT",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "HEXT",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 502.6,
+    "high": 507.95,
+    "low": 496.1,
+    "close": 503.5,
+    "last": 503.5,
+    "prev_close": 503.15,
+    "change": 0.85,
+    "pct_change": 0.17,
+    "volume": 487231,
+    "turnover": 244443792.7,
+    "year_high": 807.75,
+    "year_low": 400.2
+  },
+  "financial_results": {
+    "symbol": "HEXT",
+    "period": "Quarterly",
+    "results": [
+      {
+        "audited": "Audited",
+        "bank": "N",
+        "broadCastDate": "07-Mar-2025 18:03:48",
+        "companyName": "Hexaware Technologies Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:44",
+        "exchdisstime": "07-Mar-2025 18:04:32",
+        "filingDate": "07-Mar-2025 18:03",
+        "financialYear": "01-Jan-2024 To 31-Dec-2024",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE093A01041",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q4ANNCNEHEXT",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Fourth Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1197192",
+        "symbol": "HEXT",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_121019_1393846_07032025060347.xml"
+      },
+      {
+        "audited": "Audited",
+        "bank": "N",
+        "broadCastDate": "07-Mar-2025 17:56:41",
+        "companyName": "Hexaware Technologies Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:41",
+        "exchdisstime": "07-Mar-2025 17:57:22",
+        "filingDate": "07-Mar-2025 17:56",
+        "financialYear": "01-Jan-2024 To 31-Dec-2024",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE093A01041",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q4ANNNNEHEXT",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Fourth Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1197190",
+        "symbol": "HEXT",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_121018_1393836_07032025055641.xml"
+      }
+    ]
+  },
+  "shareholding": {
+    "symbol": "HEXT",
+    "shareholding": [
+      {
+        "date": "30-Sep-2025",
+        "Promoter & Promoter Group": "  74.55"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Public": "  25.44"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Shares held by Employee Trusts": "   0.01"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  74.30"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  25.43"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.27"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  74.30"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  25.44"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.26"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  74.30"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  25.50"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.20"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  74.30"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  25.52"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.18"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

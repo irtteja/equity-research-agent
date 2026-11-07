@@ -1,0 +1,226 @@
+{
+  "symbol": "AFCONS",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "AFCONS",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 213.93,
+    "high": 216.45,
+    "low": 212.64,
+    "close": 215.88,
+    "last": 215.88,
+    "prev_close": 219.44,
+    "change": -3.94,
+    "pct_change": -1.8,
+    "volume": 374100,
+    "turnover": 80162148,
+    "year_high": 446.95,
+    "year_low": 203.6
+  },
+  "financial_results": {
+    "symbol": "AFCONS",
+    "period": "Quarterly",
+    "results": [
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "14-Feb-2025 13:27:30",
+        "companyName": "Afcons Infrastructure Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:20",
+        "exchdisstime": "14-Feb-2025 13:27:50",
+        "filingDate": "14-Feb-2025 13:27",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE101I01011",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNCNEAFCONS",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1196135",
+        "symbol": "AFCONS",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_120487_1383624_14022025012729.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "14-Feb-2025 13:23:57",
+        "companyName": "Afcons Infrastructure Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:01:40",
+        "exchdisstime": "14-Feb-2025 13:25:37",
+        "filingDate": "14-Feb-2025 13:23",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE101I01011",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNNNEAFCONS",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1196131",
+        "symbol": "AFCONS",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_120485_1383615_14022025012356.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "23-Nov-2024 18:55:11",
+        "companyName": "Afcons Infrastructure Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:50",
+        "exchdisstime": "23-Nov-2024 18:56:01",
+        "filingDate": "23-Nov-2024 18:55",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE101I01011",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNCNEAFCONS",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1189310",
+        "symbol": "AFCONS",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_117011_1318789_23112024065509.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "23-Nov-2024 18:52:37",
+        "companyName": "Afcons Infrastructure Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:41",
+        "exchdisstime": "23-Nov-2024 18:53:18",
+        "filingDate": "23-Nov-2024 18:52",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE101I01011",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNNNEAFCONS",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1189308",
+        "symbol": "AFCONS",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_117010_1318786_23112024065235.xml"
+      }
+    ]
+  },
+  "shareholding": {
+    "symbol": "AFCONS",
+    "shareholding": [
+      {
+        "date": "30-Sep-2025",
+        "Promoter & Promoter Group": "  50.17"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Public": "  49.83"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  50.17"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  49.83"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  50.17"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  49.83"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  50.17"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  49.83"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  50.17"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  49.83"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

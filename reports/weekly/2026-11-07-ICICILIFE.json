@@ -1,0 +1,113 @@
+{
+  "symbol": "ICICILIFE",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "ICICILIFE",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 425,
+    "high": 438.9,
+    "low": 419.15,
+    "close": 438.9,
+    "last": 438.9,
+    "prev_close": 427.65,
+    "change": 11.25,
+    "pct_change": 2.63,
+    "volume": 3099911,
+    "turnover": 1338386574.25,
+    "year_high": 706.8,
+    "year_low": 401.65
+  },
+  "financial_results": {
+    "symbol": "ICICILIFE",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "ICICILIFE",
+    "shareholding": [
+      {
+        "date": "30-Sep-2025",
+        "Promoter & Promoter Group": "  72.93"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Public": "  27.07"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  72.88"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  27.12"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  72.80"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  27.20"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  72.73"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  27.27"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  74.70"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  25.30"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

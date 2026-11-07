@@ -1,0 +1,282 @@
+{
+  "symbol": "EMCURE",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "EMCURE",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 2224.2,
+    "high": 2253.2,
+    "low": 2181.1,
+    "close": 2212.8,
+    "last": 2212.8,
+    "prev_close": 2245,
+    "change": -35,
+    "pct_change": -1.56,
+    "volume": 231748,
+    "turnover": 515908127.68,
+    "year_high": 2266.4,
+    "year_low": 1312.3
+  },
+  "financial_results": {
+    "symbol": "EMCURE",
+    "period": "Quarterly",
+    "results": [
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "06-Feb-2025 15:34:00",
+        "companyName": "Emcure Pharmaceuticals Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:33",
+        "exchdisstime": "06-Feb-2025 15:34:33",
+        "filingDate": "06-Feb-2025 15:34",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE168P01015",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNCNEEMCURE",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1192861",
+        "symbol": "EMCURE",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_118846_1372723_06022025033359.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "06-Feb-2025 15:29:28",
+        "companyName": "Emcure Pharmaceuticals Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:21",
+        "exchdisstime": "06-Feb-2025 15:29:49",
+        "filingDate": "06-Feb-2025 15:29",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE168P01015",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNNNEEMCURE",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1192851",
+        "symbol": "EMCURE",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_118841_1372708_06022025032928.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "08-Nov-2024 14:05:03",
+        "companyName": "Emcure Pharmaceuticals Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:30",
+        "exchdisstime": "08-Nov-2024 14:05:33",
+        "filingDate": "08-Nov-2024 14:05",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE168P01015",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNCNEEMCURE",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1184765",
+        "symbol": "EMCURE",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_114507_1301164_08112024020502.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "08-Nov-2024 14:02:04",
+        "companyName": "Emcure Pharmaceuticals Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:47",
+        "exchdisstime": "08-Nov-2024 14:02:51",
+        "filingDate": "08-Nov-2024 14:02",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE168P01015",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNNNEEMCURE",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1184761",
+        "symbol": "EMCURE",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_114505_1301153_08112024020204.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "13-Aug-2024 22:12:16",
+        "companyName": "Emcure Pharmaceuticals Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:35",
+        "exchdisstime": "13-Aug-2024 22:12:51",
+        "filingDate": "13-Aug-2024 22:12",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Apr-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE168P01015",
+        "oldNewFlag": "N",
+        "params": "01-Apr-202430-Jun-2024Q1UNNCNEEMCURE",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "First Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1180506",
+        "symbol": "EMCURE",
+        "toDate": "30-Jun-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_111948_1224543_13082024101216.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "13-Aug-2024 21:59:05",
+        "companyName": "Emcure Pharmaceuticals Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:28",
+        "exchdisstime": "13-Aug-2024 21:59:33",
+        "filingDate": "13-Aug-2024 21:59",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Apr-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE168P01015",
+        "oldNewFlag": "N",
+        "params": "01-Apr-202430-Jun-2024Q1UNNNNEEMCURE",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "First Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1180501",
+        "symbol": "EMCURE",
+        "toDate": "30-Jun-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_111943_1224523_13082024095905.xml"
+      }
+    ]
+  },
+  "shareholding": {
+    "symbol": "EMCURE",
+    "shareholding": [
+      {
+        "date": "30-Sep-2025",
+        "Promoter & Promoter Group": "  77.88"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Public": "  22.12"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  77.87"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  22.13"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  77.87"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  22.13"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  77.83"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  22.17"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  77.82"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  22.18"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

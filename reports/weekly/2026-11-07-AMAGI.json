@@ -1,0 +1,97 @@
+{
+  "symbol": "AMAGI",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "AMAGI",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 568.45,
+    "high": 574.85,
+    "low": 556.5,
+    "close": 568.25,
+    "last": 568.25,
+    "prev_close": 568.45,
+    "change": -5.45,
+    "pct_change": -0.96,
+    "volume": 301361,
+    "turnover": 170835523.68,
+    "year_high": 727.4,
+    "year_low": 310.2
+  },
+  "financial_results": {
+    "symbol": "AMAGI",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "AMAGI",
+    "shareholding": [
+      {
+        "date": "20-Jan-2026",
+        "Promoter & Promoter Group": "  14.92"
+      },
+      {
+        "date": "20-Jan-2026",
+        "Public": "  85.08"
+      },
+      {
+        "date": "20-Jan-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "20-Jan-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  14.92"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  85.08"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  14.92"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  85.08"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  14.66"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  85.34"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "symbol": "NIVABUPA",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "NIVABUPA",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 75.45,
+    "high": 76.41,
+    "low": 75.45,
+    "close": 76.08,
+    "last": 76.08,
+    "prev_close": 76.76,
+    "change": -0.91,
+    "pct_change": -1.19,
+    "volume": 670108,
+    "turnover": 50867898.28,
+    "year_high": 91.4,
+    "year_low": 67.5
+  },
+  "financial_results": {
+    "symbol": "NIVABUPA",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "NIVABUPA",
+    "shareholding": [
+      {
+        "date": "30-Sep-2025",
+        "Promoter & Promoter Group": "  55.41"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Public": "  44.59"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  55.36"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  44.64"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  55.36"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  44.64"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  55.30"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  44.70"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  55.29"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  44.71"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

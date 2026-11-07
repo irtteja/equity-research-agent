@@ -1,0 +1,113 @@
+{
+  "symbol": "TATACAP",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "TATACAP",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 342.1,
+    "high": 359.2,
+    "low": 340.5,
+    "close": 358.05,
+    "last": 358.05,
+    "prev_close": 347.85,
+    "change": 9.65,
+    "pct_change": 2.77,
+    "volume": 3486619,
+    "turnover": 1231125168.9,
+    "year_high": 390.2,
+    "year_low": 296
+  },
+  "financial_results": {
+    "symbol": "TATACAP",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "TATACAP",
+    "shareholding": [
+      {
+        "date": "10-Oct-2025",
+        "Promoter & Promoter Group": "  85.41"
+      },
+      {
+        "date": "10-Oct-2025",
+        "Public": "  13.92"
+      },
+      {
+        "date": "10-Oct-2025",
+        "Shares held by Employee Trusts": "   0.67"
+      },
+      {
+        "date": "10-Oct-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  85.41"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  13.93"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.66"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  85.41"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  13.93"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.66"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  85.41"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  13.94"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.65"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  85.41"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  13.95"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.64"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

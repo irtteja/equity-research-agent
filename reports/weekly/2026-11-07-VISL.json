@@ -1,0 +1,81 @@
+{
+  "symbol": "VISL",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "VISL",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 27.21,
+    "high": 27.23,
+    "low": 26.5,
+    "close": 26.81,
+    "last": 26.81,
+    "prev_close": 27.35,
+    "change": -0.45,
+    "pct_change": -1.65,
+    "volume": 8693601,
+    "turnover": 232640762.76,
+    "year_high": 44.78,
+    "year_low": 19.06
+  },
+  "financial_results": {
+    "symbol": "VISL",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "VISL",
+    "shareholding": [
+      {
+        "date": "12-Jun-2026",
+        "Promoter & Promoter Group": "  56.38"
+      },
+      {
+        "date": "12-Jun-2026",
+        "Public": "  43.46"
+      },
+      {
+        "date": "12-Jun-2026",
+        "Shares held by Employee Trusts": "   0.16"
+      },
+      {
+        "date": "12-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  56.38"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  43.46"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.16"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  56.38"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  43.46"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.16"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

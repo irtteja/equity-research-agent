@@ -1,0 +1,113 @@
+{
+  "symbol": "THELEELA",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "THELEELA",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 684,
+    "high": 696.6,
+    "low": 679,
+    "close": 692.3,
+    "last": 692.3,
+    "prev_close": 689.75,
+    "change": -1.55,
+    "pct_change": -0.22,
+    "volume": 283550,
+    "turnover": 195711881,
+    "year_high": 706.7,
+    "year_low": 384.5
+  },
+  "financial_results": {
+    "symbol": "THELEELA",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "THELEELA",
+    "shareholding": [
+      {
+        "date": "30-Sep-2025",
+        "Promoter & Promoter Group": "  75.91"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Public": "  24.09"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  75.91"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  24.09"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  75.91"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  24.09"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  75.91"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  24.09"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  75.91"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  24.09"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

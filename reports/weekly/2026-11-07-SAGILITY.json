@@ -1,0 +1,226 @@
+{
+  "symbol": "SAGILITY",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "SAGILITY",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 43.79,
+    "high": 44.03,
+    "low": 43,
+    "close": 43.46,
+    "last": 43.46,
+    "prev_close": 43.8,
+    "change": -0.34,
+    "pct_change": -0.78,
+    "volume": 28860726,
+    "turnover": 1256884617.3,
+    "year_high": 54.3,
+    "year_low": 35.83
+  },
+  "financial_results": {
+    "symbol": "SAGILITY",
+    "period": "Quarterly",
+    "results": [
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "05-Feb-2025 20:30:14",
+        "companyName": "SAGILITY LIMITED",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:34",
+        "exchdisstime": "05-Feb-2025 20:30:48",
+        "filingDate": "05-Feb-2025 20:30",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE0W2G01015",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNCNESAGILITY",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1192729",
+        "symbol": "SAGILITY",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_118780_1372149_05022025083011.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "05-Feb-2025 20:27:56",
+        "companyName": "SAGILITY LIMITED",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:57",
+        "exchdisstime": "05-Feb-2025 20:28:53",
+        "filingDate": "05-Feb-2025 20:27",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE0W2G01015",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNNNESAGILITY",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1192727",
+        "symbol": "SAGILITY",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_118779_1372145_05022025082755.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "25-Nov-2024 23:51:46",
+        "companyName": "SAGILITY LIMITED",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:26",
+        "exchdisstime": "25-Nov-2024 23:52:12",
+        "filingDate": "25-Nov-2024 23:51",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE0W2G01015",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNCNESAGILITY",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1189322",
+        "symbol": "SAGILITY",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_117019_1319357_25112024115146.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "25-Nov-2024 23:50:33",
+        "companyName": "SAGILITY LIMITED",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:31",
+        "exchdisstime": "25-Nov-2024 23:51:04",
+        "filingDate": "25-Nov-2024 23:50",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE0W2G01015",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNNNESAGILITY",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1189320",
+        "symbol": "SAGILITY",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_117018_1319354_25112024115033.xml"
+      }
+    ]
+  },
+  "shareholding": {
+    "symbol": "SAGILITY",
+    "shareholding": [
+      {
+        "date": "30-Sep-2025",
+        "Promoter & Promoter Group": "  67.38"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Public": "  32.62"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  50.95"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  49.05"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  50.95"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  49.05"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  50.95"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  49.05"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  50.95"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  49.05"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

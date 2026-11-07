@@ -1,0 +1,338 @@
+{
+  "symbol": "TBOTEK",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "TBOTEK",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 1575,
+    "high": 1575.2,
+    "low": 1547.5,
+    "close": 1564.7,
+    "last": 1564.7,
+    "prev_close": 1576.5,
+    "change": -7.5,
+    "pct_change": -0.48,
+    "volume": 29087,
+    "turnover": 45461526.65,
+    "year_high": 1772.5,
+    "year_low": 1004.2
+  },
+  "financial_results": {
+    "symbol": "TBOTEK",
+    "period": "Quarterly",
+    "results": [
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "13-Feb-2025 11:47:18",
+        "companyName": "TBO Tek Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:31",
+        "exchdisstime": "13-Feb-2025 11:47:49",
+        "filingDate": "13-Feb-2025 11:47",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE673O01025",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNNNETBOTEK",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1195395",
+        "symbol": "TBOTEK",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_120117_1381097_13022025114717.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "13-Feb-2025 11:45:04",
+        "companyName": "TBO Tek Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:50",
+        "exchdisstime": "13-Feb-2025 11:45:54",
+        "filingDate": "13-Feb-2025 11:45",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE673O01025",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNCNETBOTEK",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1195393",
+        "symbol": "TBOTEK",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_120116_1381093_13022025114503.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "13-Nov-2024 13:04:31",
+        "companyName": "TBO Tek Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:51",
+        "exchdisstime": "13-Nov-2024 13:05:22",
+        "filingDate": "13-Nov-2024 13:04",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE673O01025",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNNNETBOTEK",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1186607",
+        "symbol": "TBOTEK",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_115475_1307847_13112024010431.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "13-Nov-2024 13:02:54",
+        "companyName": "TBO Tek Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:01:18",
+        "exchdisstime": "13-Nov-2024 13:04:12",
+        "filingDate": "13-Nov-2024 13:02",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE673O01025",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNCNETBOTEK",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1186605",
+        "symbol": "TBOTEK",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_115474_1307840_13112024010253.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "13-Aug-2024 19:40:55",
+        "companyName": "TBO Tek Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:57",
+        "exchdisstime": "13-Aug-2024 19:41:52",
+        "filingDate": "13-Aug-2024 19:40",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Apr-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE673O01025",
+        "oldNewFlag": "N",
+        "params": "01-Apr-202430-Jun-2024Q1UNNNNETBOTEK",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "First Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1180467",
+        "symbol": "TBOTEK",
+        "toDate": "30-Jun-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_111909_1224295_13082024074055.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "13-Aug-2024 19:39:43",
+        "companyName": "TBO Tek Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:01:21",
+        "exchdisstime": "13-Aug-2024 19:41:04",
+        "filingDate": "13-Aug-2024 19:39",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Apr-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE673O01025",
+        "oldNewFlag": "N",
+        "params": "01-Apr-202430-Jun-2024Q1UNNCNETBOTEK",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "First Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1180463",
+        "symbol": "TBOTEK",
+        "toDate": "30-Jun-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_111905_1224282_13082024073942.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "31-May-2024 14:39:42",
+        "companyName": "TBO Tek Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:40",
+        "exchdisstime": "31-May-2024 14:40:22",
+        "filingDate": "31-May-2024 14:39",
+        "financialYear": "01-Apr-2023 To 31-Mar-2024",
+        "format": "New",
+        "fromDate": "01-Jan-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE673O01025",
+        "oldNewFlag": "N",
+        "params": "01-Jan-202431-Mar-2024Q4UNNNNETBOTEK",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Fourth Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1176684",
+        "symbol": "TBOTEK",
+        "toDate": "31-Mar-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_108512_1150182_31052024023941.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "31-May-2024 14:37:51",
+        "companyName": "TBO Tek Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:26",
+        "exchdisstime": "31-May-2024 14:38:17",
+        "filingDate": "31-May-2024 14:37",
+        "financialYear": "01-Apr-2023 To 31-Mar-2024",
+        "format": "New",
+        "fromDate": "01-Jan-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE673O01025",
+        "oldNewFlag": "N",
+        "params": "01-Jan-202431-Mar-2024Q4UNNCNETBOTEK",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Fourth Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1176680",
+        "symbol": "TBOTEK",
+        "toDate": "31-Mar-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_108510_1150176_31052024023750.xml"
+      }
+    ]
+  },
+  "shareholding": {
+    "symbol": "TBOTEK",
+    "shareholding": [
+      {
+        "date": "30-Sep-2025",
+        "Promoter & Promoter Group": "  44.41"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Public": "  53.60"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Shares held by Employee Trusts": "   1.99"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  44.41"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  53.70"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   1.89"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  44.41"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  53.93"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   1.66"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  44.41"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  54.06"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   1.53"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  44.41"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  54.15"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   1.44"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

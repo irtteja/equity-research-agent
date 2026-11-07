@@ -1,0 +1,81 @@
+{
+  "symbol": "TRIVENIPT",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "TRIVENIPT",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 468.05,
+    "high": 468.05,
+    "low": 440,
+    "close": 446.55,
+    "last": 446.55,
+    "prev_close": 470.45,
+    "change": -19.75,
+    "pct_change": -4.2,
+    "volume": 127304,
+    "turnover": 57286800,
+    "year_high": 720,
+    "year_low": 410.1
+  },
+  "financial_results": {
+    "symbol": "TRIVENIPT",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "TRIVENIPT",
+    "shareholding": [
+      {
+        "date": "12-Oct-2026",
+        "Promoter & Promoter Group": "  72.36"
+      },
+      {
+        "date": "12-Oct-2026",
+        "Public": "  27.64"
+      },
+      {
+        "date": "12-Oct-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "12-Oct-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "09-Oct-2026",
+        "Promoter & Promoter Group": "  72.36"
+      },
+      {
+        "date": "09-Oct-2026",
+        "Public": "  27.64"
+      },
+      {
+        "date": "09-Oct-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "09-Oct-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  72.36"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  27.64"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "Insufficient price data for TRIVENIPT.NS"
+  }
+}

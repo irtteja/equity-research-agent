@@ -1,0 +1,170 @@
+{
+  "symbol": "VMM",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "VMM",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 93,
+    "high": 94,
+    "low": 92.25,
+    "close": 94,
+    "last": 94,
+    "prev_close": 93.9,
+    "change": 0.1,
+    "pct_change": 0.11,
+    "volume": 4130149,
+    "turnover": 384062555.51,
+    "year_high": 144.45,
+    "year_low": 84.16
+  },
+  "financial_results": {
+    "symbol": "VMM",
+    "period": "Quarterly",
+    "results": [
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "31-Jan-2025 19:34:24",
+        "companyName": "Vishal Mega Mart Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:01:03",
+        "exchdisstime": "31-Jan-2025 19:35:27",
+        "filingDate": "31-Jan-2025 19:34",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE01EA01019",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNCNEVMM",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1191931",
+        "symbol": "VMM",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_118373_1367897_31012025073424.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "31-Jan-2025 19:32:54",
+        "companyName": "Vishal Mega Mart Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:38",
+        "exchdisstime": "31-Jan-2025 19:33:32",
+        "filingDate": "31-Jan-2025 19:32",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE01EA01019",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNNNEVMM",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1191923",
+        "symbol": "VMM",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_118369_1367885_31012025073253.xml"
+      }
+    ]
+  },
+  "shareholding": {
+    "symbol": "VMM",
+    "shareholding": [
+      {
+        "date": "30-Sep-2025",
+        "Promoter & Promoter Group": "  54.11"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Public": "  45.89"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  54.09"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  45.91"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  40.12"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  59.88"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  40.09"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  59.91"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  40.02"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  59.98"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

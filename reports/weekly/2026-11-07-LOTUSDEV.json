@@ -1,0 +1,113 @@
+{
+  "symbol": "LOTUSDEV",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "LOTUSDEV",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 231.3,
+    "high": 237.25,
+    "low": 230.28,
+    "close": 233.82,
+    "last": 233.82,
+    "prev_close": 234.2,
+    "change": -3.05,
+    "pct_change": -1.3,
+    "volume": 1170814,
+    "turnover": 273584107.38,
+    "year_high": 252.4,
+    "year_low": 102.2
+  },
+  "financial_results": {
+    "symbol": "LOTUSDEV",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "LOTUSDEV",
+    "shareholding": [
+      {
+        "date": "30-Sep-2025",
+        "Promoter & Promoter Group": "  81.86"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Public": "  18.14"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  81.86"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  18.14"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  81.87"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  18.13"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  81.87"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  18.13"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  79.87"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  20.13"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "symbol": "VOGL",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "VOGL",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 31.13,
+    "high": 31.25,
+    "low": 30.21,
+    "close": 30.74,
+    "last": 30.74,
+    "prev_close": 31.45,
+    "change": -0.6,
+    "pct_change": -1.91,
+    "volume": 13087591,
+    "turnover": 401658167.79,
+    "year_high": 47.6,
+    "year_low": 26.41
+  },
+  "financial_results": {
+    "symbol": "VOGL",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "VOGL",
+    "shareholding": [
+      {
+        "date": "12-Jun-2026",
+        "Promoter & Promoter Group": "  56.38"
+      },
+      {
+        "date": "12-Jun-2026",
+        "Public": "  43.46"
+      },
+      {
+        "date": "12-Jun-2026",
+        "Shares held by Employee Trusts": "   0.16"
+      },
+      {
+        "date": "12-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  56.38"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  43.46"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.16"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  56.38"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  43.46"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.16"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}
