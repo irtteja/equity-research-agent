@@ -1,0 +1,97 @@
+{
+  "symbol": "BHARATCOAL",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "BHARATCOAL",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 31.79,
+    "high": 31.87,
+    "low": 30.88,
+    "close": 31.56,
+    "last": 31.56,
+    "prev_close": 31.37,
+    "change": 0.19,
+    "pct_change": 0.61,
+    "volume": 5109836,
+    "turnover": 159937866.8,
+    "year_high": 45.09,
+    "year_low": 28.92
+  },
+  "financial_results": {
+    "symbol": "BHARATCOAL",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "BHARATCOAL",
+    "shareholding": [
+      {
+        "date": "14-Jan-2026",
+        "Promoter & Promoter Group": "  90.00"
+      },
+      {
+        "date": "14-Jan-2026",
+        "Public": "  10.00"
+      },
+      {
+        "date": "14-Jan-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "14-Jan-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  90.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  10.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  90.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  10.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  90.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  10.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

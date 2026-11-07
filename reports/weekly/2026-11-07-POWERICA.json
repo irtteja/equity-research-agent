@@ -1,0 +1,81 @@
+{
+  "symbol": "POWERICA",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "POWERICA",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 480,
+    "high": 481,
+    "low": 445.1,
+    "close": 469.6,
+    "last": 469.6,
+    "prev_close": 494.55,
+    "change": -29.45,
+    "pct_change": -5.95,
+    "volume": 535878,
+    "turnover": 244108505.34,
+    "year_high": 676.95,
+    "year_low": 365.1
+  },
+  "financial_results": {
+    "symbol": "POWERICA",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "POWERICA",
+    "shareholding": [
+      {
+        "date": "01-Apr-2026",
+        "Promoter & Promoter Group": "  77.18"
+      },
+      {
+        "date": "01-Apr-2026",
+        "Public": "  22.82"
+      },
+      {
+        "date": "01-Apr-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "01-Apr-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  77.18"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  22.82"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  77.18"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  22.82"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

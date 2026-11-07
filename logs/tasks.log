@@ -1582,3 +1582,11 @@ Progress: Sunday heartbeat: ensure_graph ok (867 companies, 12 macro sectors); w
 Next: weekly_research.py completes async; next watchdog in 2h
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-07 19:17
+Task: weekly-research-2026-11-07
+Status: completed
+Progress: Researched 757 items
+Next: Review weekly reports, identify stocks for deeper research
+Blockers: none
+============================================================

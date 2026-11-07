@@ -1,0 +1,85 @@
+{
+  "symbol": "OMNI",
+  "date": "2026-11-07",
+  "quote": {
+    "error": "'NoneType' object has no attribute 'get'",
+    "symbol": "OMNI"
+  },
+  "financial_results": {
+    "symbol": "OMNI",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "OMNI",
+    "shareholding": [
+      {
+        "date": "02-Mar-2026",
+        "Promoter & Promoter Group": "  74.19"
+      },
+      {
+        "date": "02-Mar-2026",
+        "Public": "  25.81"
+      },
+      {
+        "date": "02-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "02-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  74.19"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  25.81"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  74.19"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  25.81"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  74.19"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  25.81"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

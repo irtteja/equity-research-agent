@@ -1,0 +1,81 @@
+{
+  "symbol": "CMRGREEN",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "CMRGREEN",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 212.28,
+    "high": 222.99,
+    "low": 208.81,
+    "close": 218.29,
+    "last": 218.29,
+    "prev_close": 213.68,
+    "change": 4.82,
+    "pct_change": 2.26,
+    "volume": 777378,
+    "turnover": 169616105.82,
+    "year_high": 268.96,
+    "year_low": 191.35
+  },
+  "financial_results": {
+    "symbol": "CMRGREEN",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "CMRGREEN",
+    "shareholding": [
+      {
+        "date": "09-Jun-2026",
+        "Promoter & Promoter Group": "  84.00"
+      },
+      {
+        "date": "09-Jun-2026",
+        "Public": "  16.00"
+      },
+      {
+        "date": "09-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "09-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  84.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  16.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  84.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  16.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

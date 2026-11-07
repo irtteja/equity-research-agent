@@ -1,0 +1,226 @@
+{
+  "symbol": "TRANSRAILL",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "TRANSRAILL",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 440,
+    "high": 447,
+    "low": 424.3,
+    "close": 440.35,
+    "last": 440.35,
+    "prev_close": 442.2,
+    "change": 1.8,
+    "pct_change": 0.41,
+    "volume": 444493,
+    "turnover": 193176657.8,
+    "year_high": 714.05,
+    "year_low": 400.65
+  },
+  "financial_results": {
+    "symbol": "TRANSRAILL",
+    "period": "Quarterly",
+    "results": [
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "10-Feb-2025 20:47:55",
+        "companyName": "Transrail Lighting Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:14",
+        "exchdisstime": "10-Feb-2025 20:48:09",
+        "filingDate": "10-Feb-2025 20:47",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE454P01035",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNCNETRANSRAILL",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1194125",
+        "symbol": "TRANSRAILL",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_119480_1377272_10022025084755.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "10-Feb-2025 20:45:12",
+        "companyName": "Transrail Lighting Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:14",
+        "exchdisstime": "10-Feb-2025 20:45:26",
+        "filingDate": "10-Feb-2025 20:45",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Oct-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE454P01035",
+        "oldNewFlag": "N",
+        "params": "01-Oct-202431-Dec-2024Q3UNNNNETRANSRAILL",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Third Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1194123",
+        "symbol": "TRANSRAILL",
+        "toDate": "31-Dec-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_119479_1377269_10022025084511.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "16-Jan-2025 15:13:13",
+        "companyName": "Transrail Lighting Limited",
+        "consolidated": "Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:35",
+        "exchdisstime": "16-Jan-2025 15:13:48",
+        "filingDate": "16-Jan-2025 15:13",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE454P01035",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNCNETRANSRAILL",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1189769",
+        "symbol": "TRANSRAILL",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_117271_1347290_16012025031313.xml"
+      },
+      {
+        "audited": "Un-Audited",
+        "bank": "N",
+        "broadCastDate": "16-Jan-2025 15:08:22",
+        "companyName": "Transrail Lighting Limited",
+        "consolidated": "Non-Consolidated",
+        "cumulative": "Non-cumulative",
+        "difference": "00:00:30",
+        "exchdisstime": "16-Jan-2025 15:08:52",
+        "filingDate": "16-Jan-2025 15:08",
+        "financialYear": "01-Apr-2024 To 31-Mar-2025",
+        "format": "New",
+        "fromDate": "01-Jul-2024",
+        "indAs": "Ind-AS New",
+        "industry": "-",
+        "isin": "INE454P01035",
+        "oldNewFlag": "N",
+        "params": "01-Jul-202430-Sep-2024Q2UNNNNETRANSRAILL",
+        "period": "Quarterly",
+        "reInd": "N",
+        "relatingTo": "Second Quarter",
+        "resultDescription": null,
+        "resultDetailedDataLink": null,
+        "seqNumber": "1189765",
+        "symbol": "TRANSRAILL",
+        "toDate": "30-Sep-2024",
+        "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INDAS_117268_1347265_16012025030822.xml"
+      }
+    ]
+  },
+  "shareholding": {
+    "symbol": "TRANSRAILL",
+    "shareholding": [
+      {
+        "date": "30-Sep-2025",
+        "Promoter & Promoter Group": "  71.12"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Public": "  28.88"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  71.12"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  28.88"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  71.12"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  28.88"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  71.12"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  28.88"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  71.12"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  28.88"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "symbol": "SHILCTECH",
+  "date": "2026-11-07",
+  "quote": {
+    "symbol": "SHILCTECH",
+    "date": "06-Nov-2026 16:00:00",
+    "open": 3550,
+    "high": 3553,
+    "low": 3466,
+    "close": 3533.1,
+    "last": 3533.1,
+    "prev_close": 3552.8,
+    "change": -12.8,
+    "pct_change": -0.36,
+    "volume": 15255,
+    "turnover": 53421789.6,
+    "year_high": 5399,
+    "year_low": 2852.5
+  },
+  "financial_results": {
+    "symbol": "SHILCTECH",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "SHILCTECH",
+    "shareholding": [
+      {
+        "date": "21-Nov-2025",
+        "Promoter & Promoter Group": "  62.12"
+      },
+      {
+        "date": "21-Nov-2025",
+        "Public": "  37.88"
+      },
+      {
+        "date": "21-Nov-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "21-Nov-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  62.12"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  37.88"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  62.12"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  37.88"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  62.12"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  37.88"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  62.12"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  37.88"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}
