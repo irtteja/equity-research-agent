@@ -1614,3 +1614,11 @@ Progress: Sunday 02:10 IST heartbeat; graph ok (867 companies); weekly_research 
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-07 22:42
+Task: watchdog
+Status: completed
+Progress: Sunday 04:11 IST heartbeat; graph ok (867 companies); no market action
+Next: next watchdog wake
+Blockers: none
+============================================================
