@@ -1518,3 +1518,11 @@ Progress: Saturday 08:10 IST - weekend heartbeat, annual reports fetch in progre
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-07 04:41
+Task: watchdog
+Status: completed
+Progress: Saturday 10:10 IST - weekend heartbeat, graph healthy
+Next: next watchdog wake
+Blockers: none
+============================================================
