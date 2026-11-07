@@ -1574,3 +1574,11 @@ Progress: Saturday 22:11 IST - weekend heartbeat, graph healthy
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-07 18:43
+Task: watchdog-2026-11-08-0011
+Status: completed
+Progress: Sunday heartbeat: ensure_graph ok (867 companies, 12 macro sectors); weekly_research.py started in background
+Next: weekly_research.py completes async; next watchdog in 2h
+Blockers: none
+============================================================

@@ -1708,3 +1708,20 @@ Monthly pruner (1st of month, 2 AM IST). Enforces:
 - 3 stalled agents: context_agent, document_agent, announcement_agent (>26h no heartbeat)
 - Episode backlog: 77,093 unprocessed episodes
 - Add `memory_store/graph.db-shm` and `memory_store/graph.db-wal` to .gitignore
+
+## 2026-11-07 — Saturday Scheduled Operations
+
+### Done
+- **Sector map + graph rebuild** (65855e3): `rebuild_sector_map.py` fetched equity_meta_info() for 885 tickers; 857 patched (13 stale tickers errored: CYBERMEDIA, GRADIENTE, HFCL, JSIPL, MIDWESTLTD, MILKYMIST, MMWL, OMNI, QUINT, RAMBHAJO and others). `build_knowledge_graph.py` rebuilt structural layers (12 macro sectors, 867 companies, 29192 metric values, 267 trend summaries).
+- **Annual reports fetch** (3ba139b, 6cf710b, 56b1b56): Downloaded 819 PDF annual reports for 2025-2026 fiscal year across all 885 tracked tickers (~521s). Index JSON files committed in 3 batches. PDFs gitignored.
+- **NSE After-Hours Feed** (131d37e, fabe2e5, 255e148, 11af95a): 4 runs; each wrote ~42 nodes across 10-11 endpoints (live_prices, top_movers, market_status, fii_dii, option_chains, bulk_deals, insider). market=CLOSED on Saturday.
+- **Watchdog heartbeats** (8d53318 through 817e6cb): 7 heartbeat cycles across the day; ensure_graph always no-op (graph already populated); BUY_CONFLUENCE signals stable at 12 (CANBK 0.81, CANFINHOME 0.79 leading).
+
+### Architecture changes
+- None — operational day only
+
+### Pending / next sessions
+- Weekly research job (`jobs/weekly_research.py`): Started Sunday Nov 8 00:11 IST; runs research on 885 tracked stocks
+- Annual reports PDF extraction pipeline: 819 PDFs downloaded, extraction not yet built
+- Phase 2 memory: Kuzu graph + LanceDB vector index
+- BSE announcements integration
