@@ -1510,3 +1510,11 @@ Progress: Saturday 06:10 IST - weekend heartbeat, graph ready (867 companies, 26
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-07 02:40
+Task: watchdog
+Status: completed
+Progress: Saturday 08:10 IST - weekend heartbeat, annual reports fetch in progress
+Next: next watchdog wake
+Blockers: none
+============================================================
