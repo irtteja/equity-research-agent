@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-06",
-  "version": 64,
+  "last_updated": "2026-11-07",
+  "version": 65,
   "patterns": {
     "confirmed": [
       {
@@ -530,6 +530,30 @@
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
         "count": 1
+      },
+      {
+        "pattern": "nse_live_feed runs cleanly after-hours (42 nodes/run)",
+        "first_seen": "2026-11-07",
+        "last_seen": "2026-11-07",
+        "count": 1
+      },
+      {
+        "pattern": "ensure_graph is instant no-op when graph populated",
+        "first_seen": "2026-11-07",
+        "last_seen": "2026-11-07",
+        "count": 1
+      },
+      {
+        "pattern": "weekly_research.py processes 885 stocks reliably (757 completed, 0 failed)",
+        "first_seen": "2026-11-07",
+        "last_seen": "2026-11-07",
+        "count": 1
+      },
+      {
+        "pattern": "annual_reports fetch handles 819 PDFs in ~521s",
+        "first_seen": "2026-11-07",
+        "last_seen": "2026-11-07",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -807,6 +831,12 @@
         "pattern": "confluence set may expand after next orchestrator cycle with 267 trend summaries vs 138",
         "first_seen": "2026-11-06",
         "last_seen": "2026-11-06",
+        "count": 1
+      },
+      {
+        "pattern": "nse_index_data returns empty dict {} on weekends/after-hours for index quotes",
+        "first_seen": "2026-11-07",
+        "last_seen": "2026-11-07",
         "count": 1
       }
     ],
@@ -1133,6 +1163,18 @@
       {
         "signal": "background backfill_graph avoids 120s foreground timeout",
         "added": "2026-11-06"
+      },
+      {
+        "signal": "BUY_CONFLUENCE signals stable across weekend (12 signals, CANBK/CANFINHOME leading)",
+        "added": "2026-11-07"
+      },
+      {
+        "signal": "sector map rebuild catches stale tickers cleanly (logs errors, continues)",
+        "added": "2026-11-07"
+      },
+      {
+        "signal": "weekly_research self-commits at end — partial mid-run commits do not conflict",
+        "added": "2026-11-07"
       }
     ],
     "gaps": [
@@ -1455,6 +1497,14 @@
       {
         "gap": "95929 unprocessed episodes in episode backlog — context_agent stalled >26h",
         "added": "2026-11-06"
+      },
+      {
+        "gap": "nse_index_data returns empty {} outside market hours — weekly_research index section yields no data",
+        "added": "2026-11-07"
+      },
+      {
+        "gap": "insider endpoint has 3h cooldown — some live_feed runs skip it",
+        "added": "2026-11-07"
       }
     ]
   },
@@ -1664,10 +1714,6 @@
   "session_log": [
     {
       "date": "2026-11-03",
-      "note": "E2E test run"
-    },
-    {
-      "date": "2026-11-03",
       "note": "self_improve scan: resolved: xbrl_coverage; 1 high-priority gaps; 1 stuck gaps → actions: fix_script_generated"
     },
     {
@@ -1781,6 +1827,10 @@
     {
       "date": "2026-11-06",
       "note": "Nov 6 full trading day: 12 BUY confluences stable, TrendSummary backfill 138→267, daily pipeline clean"
+    },
+    {
+      "date": "2026-11-07",
+      "note": "2026-11-07 Saturday: sector map + 819 annual reports + 4 live feeds + 7 watchdog heartbeats + weekly_research 757/885 stocks (Sunday 00:11 IST)"
     }
   ]
 }
