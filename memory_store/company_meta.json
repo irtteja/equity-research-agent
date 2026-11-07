@@ -11297,13 +11297,13 @@
   "KMEW": {
     "symbol": "KMEW",
     "company_name": "Knowledge Marine & Engineering Works Limited",
-    "isin": "INE0CJD01029",
+    "isin": "INE0CJD01037",
     "sector": "Services",
     "industry": "Engineering Services",
     "macro": "Services",
     "is_fno": true,
     "listing_date": "14-Nov-2024 00:00:00",
-    "face_value": 5,
+    "face_value": 1,
     "indices": [
       "NIFTY COMMERCIAL & TRANSPORT SERVICES",
       "NIFTY MICROCAP 250",
