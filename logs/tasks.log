@@ -1638,3 +1638,11 @@ Progress: Rebuilt KG structural layers: 34809 nodes, 89046 edges (252 new nodes,
 Next: next weekly KG rebuild next Sunday
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-08 02:41
+Task: watchdog
+Status: completed
+Progress: Sunday 08:10 IST heartbeat; graph ok (867 companies); no market action
+Next: next watchdog wake
+Blockers: none
+============================================================
