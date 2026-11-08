@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-07",
-  "version": 65,
+  "last_updated": "2026-11-08",
+  "version": 68,
   "patterns": {
     "confirmed": [
       {
@@ -553,6 +553,36 @@
         "pattern": "annual_reports fetch handles 819 PDFs in ~521s",
         "first_seen": "2026-11-07",
         "last_seen": "2026-11-07",
+        "count": 1
+      },
+      {
+        "pattern": "resolved gap: context_agent:low_enrichment_rate",
+        "first_seen": "2026-11-08",
+        "last_seen": "2026-11-08",
+        "count": 1
+      },
+      {
+        "pattern": "resolved gap: pipeline_never_run:event_calendar",
+        "first_seen": "2026-11-08",
+        "last_seen": "2026-11-08",
+        "count": 1
+      },
+      {
+        "pattern": "resolved gap: pipeline_stale:announcements",
+        "first_seen": "2026-11-08",
+        "last_seen": "2026-11-08",
+        "count": 1
+      },
+      {
+        "pattern": "resolved gap: pipeline_stale:bhavcopy",
+        "first_seen": "2026-11-08",
+        "last_seen": "2026-11-08",
+        "count": 1
+      },
+      {
+        "pattern": "resolved gap: pipeline_stale:indices_bhavcopy",
+        "first_seen": "2026-11-08",
+        "last_seen": "2026-11-08",
         "count": 1
       }
     ],
@@ -1505,6 +1535,18 @@
       {
         "gap": "insider endpoint has 3h cooldown — some live_feed runs skip it",
         "added": "2026-11-07"
+      },
+      {
+        "gap": "26 skip decisions contain strong financial keywords — possible false negatives (rules: newspaper publication, newspaper advertisement, link of recording)",
+        "added": "2026-11-08"
+      },
+      {
+        "gap": "Pipeline 'bhavcopy' has never produced output in bhavcopy/",
+        "added": "2026-11-08"
+      },
+      {
+        "gap": "Pipeline 'indices_bhavcopy' has never produced output in indices_bhavcopy/",
+        "added": "2026-11-08"
       }
     ]
   },
@@ -1714,14 +1756,6 @@
   "session_log": [
     {
       "date": "2026-11-03",
-      "note": "self_improve scan: resolved: xbrl_coverage; 1 high-priority gaps; 1 stuck gaps → actions: fix_script_generated"
-    },
-    {
-      "date": "2026-11-03",
-      "note": "session 10: fixed all 12 triggers — removed broken add_repo text, applied GITHUB_TOKEN or gh auth patterns per trigger complexity"
-    },
-    {
-      "date": "2026-11-03",
       "note": "Session 12: Built full Miro fish ripple interconnected knowledge graph — 46k nodes, 108k edges, 5 structural layers (sectors/indices/peers/groups/trends). All idempotent and wired into ensure_graph.py."
     },
     {
@@ -1831,6 +1865,14 @@
     {
       "date": "2026-11-07",
       "note": "2026-11-07 Saturday: sector map + 819 annual reports + 4 live feeds + 7 watchdog heartbeats + weekly_research 757/885 stocks (Sunday 00:11 IST)"
+    },
+    {
+      "date": "2026-11-08",
+      "note": "E2E test run"
+    },
+    {
+      "date": "2026-11-08",
+      "note": "self_improve scan: resolved: context_agent:low_enrichment_rate, pipeline_never_run:event_calendar, pipeline_stale:announcements, pipeline_stale:bhavcopy, pipeline_stale:indices_bhavcopy; 3 high-priority gaps"
     }
   ]
 }
