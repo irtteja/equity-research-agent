@@ -1654,3 +1654,11 @@ Progress: heartbeat — git pull (self_model.json updated from another session),
 Next: next watchdog wake ~06:40 UTC; NSE live feed due ~07:17 UTC
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-08 06:41
+Task: watchdog
+Status: completed
+Progress: heartbeat — repo up to date, ensure_graph no-op (867 companies, 12 macro sectors), market CLOSED (Sunday)
+Next: next watchdog wake ~08:41 UTC; NSE live feed due ~10:17 UTC
+Blockers: none
+============================================================
