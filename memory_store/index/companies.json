@@ -7,9 +7,9 @@
     "last_updated": "2026-11-04"
   },
   "TATASTEEL": {
-    "last_filing": "2026-11-03",
-    "last_ingested": "2026-11-04",
-    "last_updated": "2026-11-04"
+    "last_filing": "2026-11-08",
+    "last_ingested": "2026-11-08",
+    "last_updated": "2026-11-08"
   },
   "BAJAJFINSV": {
     "last_filing": "2026-11-03",
@@ -375,5 +375,55 @@
     "last_filing": "2026-11-07",
     "last_ingested": "2026-11-07",
     "last_updated": "2026-11-07"
+  },
+  "CANBK": {
+    "last_filing": "2026-11-08",
+    "last_ingested": "2026-11-08",
+    "last_updated": "2026-11-08"
+  },
+  "COHANCE": {
+    "last_filing": "2026-11-08",
+    "last_ingested": "2026-11-08",
+    "last_updated": "2026-11-08"
+  },
+  "HBLENGINE": {
+    "last_filing": "2026-11-08",
+    "last_ingested": "2026-11-08",
+    "last_updated": "2026-11-08"
+  },
+  "GOLDIAM": {
+    "last_filing": "2026-11-08",
+    "last_ingested": "2026-11-08",
+    "last_updated": "2026-11-08"
+  },
+  "TATACHEM": {
+    "last_filing": "2026-11-08",
+    "last_ingested": "2026-11-08",
+    "last_updated": "2026-11-08"
+  },
+  "BHEL": {
+    "last_filing": "2026-11-08",
+    "last_ingested": "2026-11-08",
+    "last_updated": "2026-11-08"
+  },
+  "ATGL": {
+    "last_filing": "2026-11-08",
+    "last_ingested": "2026-11-08",
+    "last_updated": "2026-11-08"
+  },
+  "DIVISLAB": {
+    "last_filing": "2026-11-08",
+    "last_ingested": "2026-11-08",
+    "last_updated": "2026-11-08"
+  },
+  "SURYAROSNI": {
+    "last_filing": "2026-11-08",
+    "last_ingested": "2026-11-08",
+    "last_updated": "2026-11-08"
+  },
+  "WAAREERTL": {
+    "last_filing": "2026-11-08",
+    "last_ingested": "2026-11-08",
+    "last_updated": "2026-11-08"
   }
 }
