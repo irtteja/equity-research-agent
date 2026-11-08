@@ -1734,3 +1734,11 @@ Progress: git pull (new triage/facts for TATACHEM, TATASTEEL, WAAREERTL), contex
 Next: gaps flagged by self-improve: investigate triage_skip_financial_leak (26 false negatives) and bhavcopy pipeline path mismatch
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-08 21:04
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 127,482 unprocessed — ContextAgent lagging
+============================================================
