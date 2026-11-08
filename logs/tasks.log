@@ -1710,3 +1710,11 @@ Progress: heartbeat — repo up to date, ensure_graph no-op (867 companies, 12 m
 Next: next watchdog wake ~20:41 UTC; market opens ~03:45 UTC (09:15 IST Mon)
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-08 19:02
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 2
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 127,482 unprocessed — ContextAgent lagging; No ConfluenceSignal nodes for today — first run or no signals met threshold
+============================================================
