@@ -1646,3 +1646,11 @@ Progress: Sunday 08:10 IST heartbeat; graph ok (867 companies); no market action
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-08 04:40
+Task: watchdog
+Status: completed
+Progress: heartbeat — git pull (self_model.json updated from another session), ensure_graph no-op (867 companies, 12 macro sectors), market CLOSED (Sunday)
+Next: next watchdog wake ~06:40 UTC; NSE live feed due ~07:17 UTC
+Blockers: none
+============================================================
