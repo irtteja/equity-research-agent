@@ -1678,3 +1678,11 @@ Progress: heartbeat — repo up to date, ensure_graph no-op (867 companies, 12 m
 Next: next watchdog wake ~12:41 UTC
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-08 12:40
+Task: watchdog
+Status: completed
+Progress: heartbeat — repo up to date, ensure_graph no-op (867 companies, 12 macro sectors), market CLOSED (Sunday 18:10 IST)
+Next: next watchdog wake ~14:40 UTC
+Blockers: none
+============================================================
