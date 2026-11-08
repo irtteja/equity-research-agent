@@ -1726,3 +1726,11 @@ Progress: heartbeat — repo up to date, ensure_graph no-op (867 companies, 12 m
 Next: next watchdog wake ~22:40 UTC; market opens ~03:45 UTC
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-08 21:01
+Task: nightly-2026-11-08
+Status: completed
+Progress: git pull (new triage/facts for TATACHEM, TATASTEEL, WAAREERTL), context_agent (0 new nodes), trend_agent (0 new pairs)
+Next: gaps flagged by self-improve: investigate triage_skip_financial_leak (26 false negatives) and bhavcopy pipeline path mismatch
+Blockers: none
+============================================================
