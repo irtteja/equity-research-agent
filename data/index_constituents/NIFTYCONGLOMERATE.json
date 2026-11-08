@@ -1,0 +1,160 @@
+{
+  "index": "NIFTYCONGLOMERATE",
+  "as_of": "2026-11-08",
+  "count": 51,
+  "constituents": [
+    {
+      "symbol": "NIFTY CONGLOMERATE 50"
+    },
+    {
+      "symbol": "M&M"
+    },
+    {
+      "symbol": "TITAN"
+    },
+    {
+      "symbol": "LT"
+    },
+    {
+      "symbol": "TCS"
+    },
+    {
+      "symbol": "CGPOWER"
+    },
+    {
+      "symbol": "HINDALCO"
+    },
+    {
+      "symbol": "BAJFINANCE"
+    },
+    {
+      "symbol": "ADANIPORTS"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "TATASTEEL"
+    },
+    {
+      "symbol": "ULTRACEMCO"
+    },
+    {
+      "symbol": "JSWSTEEL"
+    },
+    {
+      "symbol": "TECHM"
+    },
+    {
+      "symbol": "IDEA"
+    },
+    {
+      "symbol": "ADANIENT"
+    },
+    {
+      "symbol": "TMCV"
+    },
+    {
+      "symbol": "TIINDIA"
+    },
+    {
+      "symbol": "VEDL"
+    },
+    {
+      "symbol": "GRASIM"
+    },
+    {
+      "symbol": "CHOLAFIN"
+    },
+    {
+      "symbol": "LTM"
+    },
+    {
+      "symbol": "COALINDIA"
+    },
+    {
+      "symbol": "ADANIPOWER"
+    },
+    {
+      "symbol": "AMBUJACEM"
+    },
+    {
+      "symbol": "ADANIGREEN"
+    },
+    {
+      "symbol": "GODREJPROP"
+    },
+    {
+      "symbol": "TRENT"
+    },
+    {
+      "symbol": "HINDZINC"
+    },
+    {
+      "symbol": "VAML"
+    },
+    {
+      "symbol": "BAJAJFINSV"
+    },
+    {
+      "symbol": "ZENSARTECH"
+    },
+    {
+      "symbol": "JINDALSTEL"
+    },
+    {
+      "symbol": "M&MFIN"
+    },
+    {
+      "symbol": "CHOLAHLDNG"
+    },
+    {
+      "symbol": "LTF"
+    },
+    {
+      "symbol": "JSWENERGY"
+    },
+    {
+      "symbol": "ABCAPITAL"
+    },
+    {
+      "symbol": "COROMANDEL"
+    },
+    {
+      "symbol": "GODREJCP"
+    },
+    {
+      "symbol": "LTTS"
+    },
+    {
+      "symbol": "KEC"
+    },
+    {
+      "symbol": "CESC"
+    },
+    {
+      "symbol": "FSL"
+    },
+    {
+      "symbol": "JSL"
+    },
+    {
+      "symbol": "BAJAJHLDNG"
+    },
+    {
+      "symbol": "CEATLTD"
+    },
+    {
+      "symbol": "JSWINFRA"
+    },
+    {
+      "symbol": "CMPDI"
+    },
+    {
+      "symbol": "PCBL"
+    },
+    {
+      "symbol": "GODREJIND"
+    }
+  ]
+}

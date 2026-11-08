@@ -93,6 +93,7 @@
     "NIFTY MNC"
   ],
   "ABCAPITAL": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 100",
@@ -135,7 +136,6 @@
     "NIFTY TOTAL MKT",
     "NIFTY MIDSMALL 50 50",
     "NIFTY REALTY",
-    "NIFTY REITS REALTY",
     "NIFTY500 EW",
     "NIFTY MULTI INFRA",
     "NIFTY NEW CONSUMP",
@@ -213,6 +213,7 @@
   ],
   "ADANIENSOL": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -230,6 +231,7 @@
   ],
   "ADANIENT": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -243,6 +245,7 @@
   ],
   "ADANIGREEN": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -262,6 +265,7 @@
   ],
   "ADANIPORTS": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -280,6 +284,7 @@
   ],
   "ADANIPOWER": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -422,6 +427,7 @@
     "NIFTY MICROCAP250"
   ],
   "ALKEM": [
+    "NIFTY FPI 150",
     "NIFTY 500",
     "NIFTY MIDCAP 150",
     "NIFTY MIDSML 400",
@@ -514,7 +520,6 @@
     "NIFTY TOTAL MKT",
     "NIFTY MIDSMALL 50 50",
     "NIFTY REALTY",
-    "NIFTY REITS REALTY",
     "NIFTY500 EW",
     "NIFTY NEW CONSUMP",
     "NIFTY INFRALOG"
@@ -580,6 +585,7 @@
     "NIFTY500 EW"
   ],
   "APLAPOLLO": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -605,6 +611,7 @@
   ],
   "APOLLOHOSP": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -703,6 +710,7 @@
   ],
   "ASHOKLEY": [
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -729,6 +737,7 @@
   ],
   "ASIANPAINT": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -832,6 +841,7 @@
   "AUBANK": [
     "NIFTY BANK",
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -855,6 +865,7 @@
   ],
   "AUROPHARMA": [
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -907,6 +918,7 @@
     "NIFTY 50",
     "NIFTY BANK",
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -949,11 +961,11 @@
     "NIFTY500 MULTICAP",
     "NIFTY TOTAL MKT",
     "NIFTY MIDSMALL 50 50",
-    "NIFTY REITS REALTY",
     "NIFTY500 EW"
   ],
   "BAJAJ-AUTO": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -987,6 +999,7 @@
   "BAJAJFINSV": [
     "NIFTY 50",
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -1028,6 +1041,7 @@
   "BAJFINANCE": [
     "NIFTY 50",
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -1168,6 +1182,7 @@
   ],
   "BEL": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -1237,6 +1252,7 @@
   ],
   "BHARATFORG": [
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -1263,6 +1279,7 @@
   ],
   "BHARTIARTL": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -1300,6 +1317,7 @@
   ],
   "BHEL": [
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -1322,6 +1340,7 @@
     "NIFTY RAILWAYSPSU"
   ],
   "BIOCON": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 100",
@@ -1345,7 +1364,6 @@
     "NIFTY500 MULTICAP",
     "NIFTY TOTAL MKT",
     "NIFTY MIDSMALL 50 50",
-    "NIFTY REITS REALTY",
     "NIFTY500 EW"
   ],
   "BIRLACORPN": [
@@ -1377,6 +1395,7 @@
     "NIFTY MICROCAP250"
   ],
   "BLUESTARCO": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 100",
@@ -1423,6 +1442,7 @@
   ],
   "BPCL": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -1451,7 +1471,6 @@
     "NIFTY TOTAL MKT",
     "NIFTY MIDSMALL 50 50",
     "NIFTY REALTY",
-    "NIFTY REITS REALTY",
     "NIFTY500 EW",
     "NIFTY MULTI INFRA",
     "NIFTY NEW CONSUMP",
@@ -1460,6 +1479,7 @@
   ],
   "BRITANNIA": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -1485,6 +1505,7 @@
   "BSE": [
     "NIFTY 50",
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -1721,6 +1742,7 @@
   ],
   "CGPOWER": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -1777,6 +1799,7 @@
   "CHOLAFIN": [
     "NIFTY NEXT 50",
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -1815,6 +1838,7 @@
   ],
   "CIPLA": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -1878,6 +1902,7 @@
   ],
   "COALINDIA": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -1916,6 +1941,7 @@
     "NIFTY INFRALOG"
   ],
   "COFORGE": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 100",
@@ -2108,6 +2134,7 @@
   ],
   "CUMMINSIND": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -2151,6 +2178,7 @@
     "NIFTY IND DIGITAL"
   ],
   "DABUR": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -2241,6 +2269,7 @@
     "NIFTY MULTI MFG"
   ],
   "DELHIVERY": [
+    "NIFTY FPI 150",
     "NIFTY 500",
     "NIFTY SMLCAP 100",
     "NIFTY SMLCAP 50",
@@ -2286,6 +2315,7 @@
   ],
   "DIVISLAB": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -2304,6 +2334,7 @@
   ],
   "DIXON": [
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -2331,6 +2362,7 @@
   ],
   "DLF": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -2338,7 +2370,6 @@
     "NIFTY LARGEMID250",
     "NIFTY TOTAL MKT",
     "NIFTY REALTY",
-    "NIFTY REITS REALTY",
     "NIFTY500 EW",
     "NIFTY CONSUMPTION",
     "NIFTY INFRA",
@@ -2350,6 +2381,7 @@
   ],
   "DMART": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -2378,6 +2410,7 @@
   ],
   "DRREDDY": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -2428,6 +2461,7 @@
   ],
   "EICHERMOT": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -2525,7 +2559,6 @@
     "NIFTY LARGEMID250",
     "NIFTY TOTAL MKT",
     "NIFTY MIDSMALL 50 50",
-    "NIFTY REITS REALTY",
     "NIFTY500 EW"
   ],
   "EMBDL": [
@@ -2628,6 +2661,7 @@
   ],
   "ETERNAL": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -2675,6 +2709,7 @@
   "FEDERALBNK": [
     "NIFTY BANK",
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -2766,6 +2801,7 @@
     "NIFTY NEW CONSUMP"
   ],
   "FORTIS": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -2826,6 +2862,7 @@
   ],
   "GAIL": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -2939,6 +2976,7 @@
     "NIFTY500 EW"
   ],
   "GLENMARK": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -2971,6 +3009,7 @@
     "NIFTY500 EW"
   ],
   "GMRAIRPORT": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -3017,6 +3056,7 @@
   ],
   "GODREJCP": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -3046,6 +3086,7 @@
     "NIFTYCONGLOMERATE"
   ],
   "GODREJPROP": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -3057,7 +3098,6 @@
     "NIFTY TOTAL MKT",
     "NIFTY MIDSMALL 50 50",
     "NIFTY REALTY",
-    "NIFTY REITS REALTY",
     "NIFTY500 EW",
     "NIFTY MULTI INFRA",
     "NIFTY NEW CONSUMP",
@@ -3120,6 +3160,7 @@
   ],
   "GRASIM": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -3206,6 +3247,7 @@
   ],
   "GVT&D": [
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -3230,6 +3272,7 @@
   ],
   "HAL": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -3257,6 +3300,7 @@
     "NIFTY WAVES"
   ],
   "HAVELLS": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -3302,6 +3346,7 @@
   ],
   "HCLTECH": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -3329,6 +3374,7 @@
   ],
   "HDFCAMC": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -3349,6 +3395,7 @@
     "NIFTY 50",
     "NIFTY BANK",
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -3367,6 +3414,7 @@
   "HDFCLIFE": [
     "NIFTY 50",
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -3401,6 +3449,7 @@
   ],
   "HEROMOTOCO": [
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -3466,6 +3515,7 @@
   ],
   "HINDALCO": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -3500,6 +3550,7 @@
     "NIFTY INDIA MFG"
   ],
   "HINDPETRO": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -3524,6 +3575,7 @@
   ],
   "HINDUNILVR": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -3545,6 +3597,7 @@
   ],
   "HINDZINC": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -3659,6 +3712,7 @@
     "NIFTY 50",
     "NIFTY BANK",
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -3677,6 +3731,7 @@
   ],
   "ICICIGI": [
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -3724,6 +3779,7 @@
   ],
   "IDEA": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -3849,6 +3905,7 @@
   ],
   "INDHOTEL": [
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -3920,6 +3977,7 @@
   ],
   "INDIGO": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -3948,6 +4006,7 @@
   "INDUSINDBK": [
     "NIFTY BANK",
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -3967,6 +4026,7 @@
   ],
   "INDUSTOWER": [
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -3986,6 +4046,7 @@
   ],
   "INFY": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -4053,6 +4114,7 @@
   ],
   "IOC": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -4149,6 +4211,7 @@
   ],
   "IRFC": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -4162,6 +4225,7 @@
   ],
   "ITC": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -4262,6 +4326,7 @@
   ],
   "JINDALSTEL": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -4278,6 +4343,7 @@
   "JIOFIN": [
     "NIFTY 50",
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -4383,6 +4449,7 @@
     "NIFTY500 MQVLV50"
   ],
   "JSWENERGY": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -4417,6 +4484,7 @@
   ],
   "JSWSTEEL": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -4571,6 +4639,7 @@
     "NIFTYCONGLOMERATE"
   ],
   "KEI": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 100",
@@ -4671,6 +4740,7 @@
     "NIFTY 50",
     "NIFTY BANK",
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -4739,9 +4809,6 @@
     "NIFTY TOTAL MKT",
     "NIFTY MICROCAP250"
   ],
-  "KRT": [
-    "NIFTY REITS REALTY"
-  ],
   "KSB": [
     "NIFTY 500",
     "NIFTY SMLCAP 250",
@@ -4794,6 +4861,7 @@
     "NIFTY MICROCAP250"
   ],
   "LAURUSLABS": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -4836,6 +4904,7 @@
     "NIFTY NEW CONSUMP"
   ],
   "LENSKART": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 100",
@@ -4939,6 +5008,7 @@
     "NIFTY500 EW"
   ],
   "LODHA": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 100",
@@ -4949,7 +5019,6 @@
     "NIFTY TOTAL MKT",
     "NIFTY MIDSMALL 50 50",
     "NIFTY REALTY",
-    "NIFTY REITS REALTY",
     "NIFTY500 EW",
     "NIFTY MULTI INFRA",
     "NIFTY NEW CONSUMP",
@@ -4964,6 +5033,7 @@
   ],
   "LT": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -5008,6 +5078,7 @@
   ],
   "LTM": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -5051,6 +5122,7 @@
   ],
   "LUPIN": [
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -5080,6 +5152,7 @@
   ],
   "M&M": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -5146,6 +5219,7 @@
     "NIFTY IPO"
   ],
   "MANKIND": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -5178,6 +5252,7 @@
   ],
   "MARICO": [
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -5208,6 +5283,7 @@
   ],
   "MARUTI": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -5238,6 +5314,7 @@
   ],
   "MAXHEALTH": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -5332,6 +5409,7 @@
   ],
   "MFSL": [
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -5383,9 +5461,6 @@
     "NIFTY MIDSMALL 50 50",
     "NIFTY500 EW"
   ],
-  "MINDSPACE": [
-    "NIFTY REITS REALTY"
-  ],
   "MMTC": [
     "NIFTY 500",
     "NIFTY SMLCAP 250",
@@ -5410,6 +5485,7 @@
   ],
   "MOTHERSON": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -5444,6 +5520,7 @@
     "NIFTY INTERNET"
   ],
   "MPHASIS": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 100",
@@ -5529,6 +5606,7 @@
   "MUTHOOTFIN": [
     "NIFTY NEXT 50",
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -5577,6 +5655,7 @@
     "NIFTY MULTI MFG"
   ],
   "NATIONALUM": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -5599,6 +5678,7 @@
   ],
   "NAUKRI": [
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -5690,6 +5770,7 @@
   ],
   "NESTLEIND": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -5767,6 +5848,7 @@
     "NIFTY500 EW"
   ],
   "NHPC": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -5796,6 +5878,51 @@
     "NIFTY MIDSMALL 50 50",
     "NIFTY500 EW"
   ],
+  "NIFTY ALPHA QUALITY VALUE LOW-VOLATILITY 30": [
+    "NIFTY AQLV 30"
+  ],
+  "NIFTY CONGLOMERATE 50": [
+    "NIFTYCONGLOMERATE"
+  ],
+  "NIFTY INDIA FPI 150": [
+    "NIFTY FPI 150"
+  ],
+  "NIFTY LOW VOLATILITY 50": [
+    "NIFTY LOW VOL 50"
+  ],
+  "NIFTY MIDCAP150 MOMENTUM 50": [
+    "NIFTYM150MOMNTM50"
+  ],
+  "NIFTY MIDCAP150 QUALITY 50": [
+    "NIFTY M150 QLTY50"
+  ],
+  "NIFTY100 ESG SECTOR LEADERS": [
+    "NIFTY100ESGSECLDR"
+  ],
+  "NIFTY100 LOW VOLATILITY 30": [
+    "NIFTY100 LOWVOL30"
+  ],
+  "NIFTY100 QUALITY 30": [
+    "NIFTY100 QUALTY30"
+  ],
+  "NIFTY200 MOMENTUM 30": [
+    "NIFTY200MOMENTM30"
+  ],
+  "NIFTY200 QUALITY 30": [
+    "NIFTY200 QUALTY30"
+  ],
+  "NIFTY500 LOW VOLATILITY 50": [
+    "NIFTY500 LOWVOL50"
+  ],
+  "NIFTY500 MOMENTUM 50": [
+    "NIFTY500MOMENTM50"
+  ],
+  "NIFTY500 MULTIFACTOR MQVLV 50": [
+    "NIFTY500 MQVLV50"
+  ],
+  "NIFTY500 QUALITY 50": [
+    "NIFTY500 QLTY50"
+  ],
   "NITYAS": [
     "NIFTY IPO"
   ],
@@ -5821,6 +5948,7 @@
     "NIFTY INFRALOG"
   ],
   "NMDC": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -5855,6 +5983,7 @@
   ],
   "NTPC": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -5914,10 +6043,8 @@
     "NIFTY CEMENT",
     "NIFTY500 EW"
   ],
-  "NXST": [
-    "NIFTY REITS REALTY"
-  ],
   "NYKAA": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -5947,7 +6074,6 @@
     "NIFTY TOTAL MKT",
     "NIFTY MIDSMALL 50 50",
     "NIFTY REALTY",
-    "NIFTY REITS REALTY",
     "NIFTY500 EW",
     "NIFTY MULTI INFRA",
     "NIFTY NEW CONSUMP",
@@ -5977,6 +6103,7 @@
     "NIFTY IND DIGITAL"
   ],
   "OIL": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -6043,6 +6170,7 @@
   ],
   "ONGC": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -6138,6 +6266,7 @@
   ],
   "PAYTM": [
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -6180,6 +6309,7 @@
   ],
   "PERSISTENT": [
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -6218,6 +6348,7 @@
   "PFC": [
     "NIFTY NEXT 50",
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -6273,6 +6404,7 @@
     "NIFTY MICROCAP250"
   ],
   "PHOENIXLTD": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -6284,7 +6416,6 @@
     "NIFTY TOTAL MKT",
     "NIFTY MIDSMALL 50 50",
     "NIFTY REALTY",
-    "NIFTY REITS REALTY",
     "NIFTY500 EW",
     "NIFTY MULTI INFRA",
     "NIFTY NEW CONSUMP",
@@ -6299,6 +6430,7 @@
   ],
   "PIDILITIND": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -6318,6 +6450,7 @@
     "NIFTY INDIA MFG"
   ],
   "PIIND": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 100",
@@ -6363,6 +6496,7 @@
   "PNB": [
     "NIFTY NEXT 50",
     "NIFTY BANK",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -6406,6 +6540,7 @@
   ],
   "POLICYBZR": [
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -6425,6 +6560,7 @@
   ],
   "POLYCAB": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -6468,6 +6604,7 @@
   ],
   "POWERGRID": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -6495,6 +6632,7 @@
   ],
   "POWERINDIA": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -6558,6 +6696,7 @@
     "NIFTY500 EW"
   ],
   "PRESTIGE": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -6569,7 +6708,6 @@
     "NIFTY TOTAL MKT",
     "NIFTY MIDSMALL 50 50",
     "NIFTY REALTY",
-    "NIFTY REITS REALTY",
     "NIFTY500 EW",
     "NIFTY MULTI INFRA",
     "NIFTY NEW CONSUMP",
@@ -6753,6 +6891,7 @@
   ],
   "RECLTD": [
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -6794,6 +6933,7 @@
   ],
   "RELIANCE": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -7057,6 +7197,7 @@
   "SBILIFE": [
     "NIFTY 50",
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -7076,6 +7217,7 @@
     "NIFTY 50",
     "NIFTY BANK",
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -7190,6 +7332,7 @@
     "NIFTY IPO"
   ],
   "SHREECEM": [
+    "NIFTY FPI 150",
     "NIFTY 500",
     "NIFTY MIDCAP 150",
     "NIFTY MIDSML 400",
@@ -7223,6 +7366,7 @@
   "SHRIRAMFIN": [
     "NIFTY 50",
     "NIFTY FIN SERVICE",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -7323,6 +7467,7 @@
   ],
   "SOLARINDS": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -7342,6 +7487,7 @@
     "NIFTY IPO"
   ],
   "SONACOMS": [
+    "NIFTY FPI 150",
     "NIFTY 500",
     "NIFTY SMLCAP 100",
     "NIFTY SMLCAP 50",
@@ -7379,6 +7525,7 @@
   ],
   "SRF": [
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -7483,6 +7630,7 @@
   ],
   "SUNPHARMA": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -7520,6 +7668,7 @@
     "NIFTY WAVES"
   ],
   "SUPREMEIND": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 100",
@@ -7549,6 +7698,7 @@
   ],
   "SUZLON": [
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -7698,6 +7848,7 @@
   ],
   "TATACONSUM": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -7741,6 +7892,7 @@
   ],
   "TATAPOWER": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -7764,6 +7916,7 @@
   ],
   "TATASTEEL": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -7810,6 +7963,7 @@
   ],
   "TCS": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -7847,6 +8001,7 @@
   ],
   "TECHM": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -7956,6 +8111,7 @@
     "NIFTY MICROCAP250"
   ],
   "TIINDIA": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -8018,6 +8174,7 @@
   ],
   "TITAN": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -8057,6 +8214,7 @@
   ],
   "TMPV": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -8076,6 +8234,7 @@
   ],
   "TORNTPHARM": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -8119,6 +8278,7 @@
   ],
   "TRENT": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -8176,6 +8336,7 @@
   ],
   "TVSMOTOR": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -8235,6 +8396,7 @@
   ],
   "ULTRACEMCO": [
     "NIFTY 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -8264,6 +8426,7 @@
   "UNIONBANK": [
     "NIFTY NEXT 50",
     "NIFTY BANK",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -8276,6 +8439,7 @@
     "NIFTY HOUSING"
   ],
   "UNITDSPR": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -8312,6 +8476,7 @@
     "NIFTY TRANS LOGIS"
   ],
   "UPL": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -8375,6 +8540,7 @@
   ],
   "VAML": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -8393,6 +8559,7 @@
   ],
   "VBL": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -8407,6 +8574,7 @@
   ],
   "VEDL": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -8482,6 +8650,7 @@
     "NIFTY MICROCAP250"
   ],
   "VMM": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -8514,6 +8683,7 @@
     "NIFTY MICROCAP250"
   ],
   "VOLTAS": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 100",
@@ -8545,6 +8715,7 @@
     "NIFTY500 EW"
   ],
   "WAAREEENER": [
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -8623,6 +8794,7 @@
   ],
   "WIPRO": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",
@@ -8665,6 +8837,7 @@
   "YESBANK": [
     "NIFTY BANK",
     "NIFTY MID SELECT",
+    "NIFTY FPI 150",
     "NIFTY 200",
     "NIFTY 500",
     "NIFTY MIDCAP 50",
@@ -8737,6 +8910,7 @@
   ],
   "ZYDUSLIFE": [
     "NIFTY NEXT 50",
+    "NIFTY FPI 150",
     "NIFTY 100",
     "NIFTY 200",
     "NIFTY 500",

@@ -1,0 +1,160 @@
+{
+  "index": "NIFTY M150 QLTY50",
+  "as_of": "2026-11-08",
+  "count": 51,
+  "constituents": [
+    {
+      "symbol": "NIFTY MIDCAP150 QUALITY 50"
+    },
+    {
+      "symbol": "BSE"
+    },
+    {
+      "symbol": "MPHASIS"
+    },
+    {
+      "symbol": "APARINDS"
+    },
+    {
+      "symbol": "ASTRAL"
+    },
+    {
+      "symbol": "POWERINDIA"
+    },
+    {
+      "symbol": "COFORGE"
+    },
+    {
+      "symbol": "HEROMOTOCO"
+    },
+    {
+      "symbol": "PERSISTENT"
+    },
+    {
+      "symbol": "POLYCAB"
+    },
+    {
+      "symbol": "TIINDIA"
+    },
+    {
+      "symbol": "HAVELLS"
+    },
+    {
+      "symbol": "DIXON"
+    },
+    {
+      "symbol": "MARICO"
+    },
+    {
+      "symbol": "PIIND"
+    },
+    {
+      "symbol": "KEI"
+    },
+    {
+      "symbol": "MOTILALOFS"
+    },
+    {
+      "symbol": "MAHABANK"
+    },
+    {
+      "symbol": "SUPREMEIND"
+    },
+    {
+      "symbol": "BDL"
+    },
+    {
+      "symbol": "TATAELXSI"
+    },
+    {
+      "symbol": "3MINDIA"
+    },
+    {
+      "symbol": "OFSS"
+    },
+    {
+      "symbol": "VOLTAS"
+    },
+    {
+      "symbol": "INDIANB"
+    },
+    {
+      "symbol": "NMDC"
+    },
+    {
+      "symbol": "PETRONET"
+    },
+    {
+      "symbol": "NAM-INDIA"
+    },
+    {
+      "symbol": "DABUR"
+    },
+    {
+      "symbol": "GODFRYPHLP"
+    },
+    {
+      "symbol": "COROMANDEL"
+    },
+    {
+      "symbol": "KPITTECH"
+    },
+    {
+      "symbol": "LTTS"
+    },
+    {
+      "symbol": "APLAPOLLO"
+    },
+    {
+      "symbol": "PAGEIND"
+    },
+    {
+      "symbol": "IRCTC"
+    },
+    {
+      "symbol": "360ONE"
+    },
+    {
+      "symbol": "AJANTPHARM"
+    },
+    {
+      "symbol": "ABBOTINDIA"
+    },
+    {
+      "symbol": "BALKRISIND"
+    },
+    {
+      "symbol": "COLPAL"
+    },
+    {
+      "symbol": "ALKEM"
+    },
+    {
+      "symbol": "AIAENG"
+    },
+    {
+      "symbol": "GLAXO"
+    },
+    {
+      "symbol": "SUNDARMFIN"
+    },
+    {
+      "symbol": "BERGEPAINT"
+    },
+    {
+      "symbol": "SCHAEFFLER"
+    },
+    {
+      "symbol": "ENDURANCE"
+    },
+    {
+      "symbol": "KPRMILL"
+    },
+    {
+      "symbol": "CRISIL"
+    },
+    {
+      "symbol": "HONAUT"
+    }
+  ]
+}

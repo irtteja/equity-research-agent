@@ -1,0 +1,160 @@
+{
+  "index": "NIFTY500 QLTY50",
+  "as_of": "2026-11-08",
+  "count": 51,
+  "constituents": [
+    {
+      "symbol": "NIFTY500 QUALITY 50"
+    },
+    {
+      "symbol": "INFY"
+    },
+    {
+      "symbol": "BSE"
+    },
+    {
+      "symbol": "TCS"
+    },
+    {
+      "symbol": "CGPOWER"
+    },
+    {
+      "symbol": "GVT&D"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "ABB"
+    },
+    {
+      "symbol": "SOLARINDS"
+    },
+    {
+      "symbol": "BEL"
+    },
+    {
+      "symbol": "PERSISTENT"
+    },
+    {
+      "symbol": "DIXON"
+    },
+    {
+      "symbol": "FORCEMOT"
+    },
+    {
+      "symbol": "SUZLON"
+    },
+    {
+      "symbol": "BRITANNIA"
+    },
+    {
+      "symbol": "MARICO"
+    },
+    {
+      "symbol": "MOTILALOFS"
+    },
+    {
+      "symbol": "LTM"
+    },
+    {
+      "symbol": "COALINDIA"
+    },
+    {
+      "symbol": "NATIONALUM"
+    },
+    {
+      "symbol": "CASTROLIND"
+    },
+    {
+      "symbol": "HDFCAMC"
+    },
+    {
+      "symbol": "TATAELXSI"
+    },
+    {
+      "symbol": "OFSS"
+    },
+    {
+      "symbol": "MAZDOCK"
+    },
+    {
+      "symbol": "CDSL"
+    },
+    {
+      "symbol": "CAMS"
+    },
+    {
+      "symbol": "NMDC"
+    },
+    {
+      "symbol": "SCHNEIDER"
+    },
+    {
+      "symbol": "NAM-INDIA"
+    },
+    {
+      "symbol": "ACE"
+    },
+    {
+      "symbol": "GRSE"
+    },
+    {
+      "symbol": "KPITTECH"
+    },
+    {
+      "symbol": "LTTS"
+    },
+    {
+      "symbol": "PAGEIND"
+    },
+    {
+      "symbol": "IRCTC"
+    },
+    {
+      "symbol": "ANANDRATHI"
+    },
+    {
+      "symbol": "NATCOPHARM"
+    },
+    {
+      "symbol": "IEX"
+    },
+    {
+      "symbol": "SONATSOFTW"
+    },
+    {
+      "symbol": "ZENTEC"
+    },
+    {
+      "symbol": "COLPAL"
+    },
+    {
+      "symbol": "TRITURBINE"
+    },
+    {
+      "symbol": "ECLERX"
+    },
+    {
+      "symbol": "MSUMI"
+    },
+    {
+      "symbol": "EMAMILTD"
+    },
+    {
+      "symbol": "BLS"
+    },
+    {
+      "symbol": "INDIAMART"
+    },
+    {
+      "symbol": "ABSLAMC"
+    },
+    {
+      "symbol": "JSWDULUX"
+    },
+    {
+      "symbol": "GILLETTE"
+    }
+  ]
+}

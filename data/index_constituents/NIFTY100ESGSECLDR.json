@@ -1,0 +1,190 @@
+{
+  "index": "NIFTY100ESGSECLDR",
+  "as_of": "2026-11-08",
+  "count": 61,
+  "constituents": [
+    {
+      "symbol": "NIFTY100 ESG SECTOR LEADERS"
+    },
+    {
+      "symbol": "ICICIBANK"
+    },
+    {
+      "symbol": "HDFCBANK"
+    },
+    {
+      "symbol": "BHARTIARTL"
+    },
+    {
+      "symbol": "RELIANCE"
+    },
+    {
+      "symbol": "M&M"
+    },
+    {
+      "symbol": "TITAN"
+    },
+    {
+      "symbol": "INFY"
+    },
+    {
+      "symbol": "CGPOWER"
+    },
+    {
+      "symbol": "HINDALCO"
+    },
+    {
+      "symbol": "CUMMINSIND"
+    },
+    {
+      "symbol": "AXISBANK"
+    },
+    {
+      "symbol": "MARUTI"
+    },
+    {
+      "symbol": "BAJFINANCE"
+    },
+    {
+      "symbol": "ETERNAL"
+    },
+    {
+      "symbol": "ADANIPORTS"
+    },
+    {
+      "symbol": "TATASTEEL"
+    },
+    {
+      "symbol": "HCLTECH"
+    },
+    {
+      "symbol": "ULTRACEMCO"
+    },
+    {
+      "symbol": "JIOFIN"
+    },
+    {
+      "symbol": "ABB"
+    },
+    {
+      "symbol": "POWERGRID"
+    },
+    {
+      "symbol": "SHRIRAMFIN"
+    },
+    {
+      "symbol": "NTPC"
+    },
+    {
+      "symbol": "TECHM"
+    },
+    {
+      "symbol": "TATAPOWER"
+    },
+    {
+      "symbol": "APOLLOHOSP"
+    },
+    {
+      "symbol": "BOSCHLTD"
+    },
+    {
+      "symbol": "ADANIENT"
+    },
+    {
+      "symbol": "HYUNDAI"
+    },
+    {
+      "symbol": "IOC"
+    },
+    {
+      "symbol": "HDFCLIFE"
+    },
+    {
+      "symbol": "GRASIM"
+    },
+    {
+      "symbol": "WIPRO"
+    },
+    {
+      "symbol": "SIEMENS"
+    },
+    {
+      "symbol": "CHOLAFIN"
+    },
+    {
+      "symbol": "BRITANNIA"
+    },
+    {
+      "symbol": "SBILIFE"
+    },
+    {
+      "symbol": "MAXHEALTH"
+    },
+    {
+      "symbol": "TVSMOTOR"
+    },
+    {
+      "symbol": "ASIANPAINT"
+    },
+    {
+      "symbol": "NESTLEIND"
+    },
+    {
+      "symbol": "DLF"
+    },
+    {
+      "symbol": "PFC"
+    },
+    {
+      "symbol": "LTM"
+    },
+    {
+      "symbol": "HINDUNILVR"
+    },
+    {
+      "symbol": "ADANIPOWER"
+    },
+    {
+      "symbol": "AMBUJACEM"
+    },
+    {
+      "symbol": "BPCL"
+    },
+    {
+      "symbol": "ADANIENSOL"
+    },
+    {
+      "symbol": "ADANIGREEN"
+    },
+    {
+      "symbol": "TRENT"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "HINDZINC"
+    },
+    {
+      "symbol": "GAIL"
+    },
+    {
+      "symbol": "HDFCAMC"
+    },
+    {
+      "symbol": "RECLTD"
+    },
+    {
+      "symbol": "DMART"
+    },
+    {
+      "symbol": "PIDILITIND"
+    },
+    {
+      "symbol": "GODREJCP"
+    },
+    {
+      "symbol": "SHREECEM"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "index": "NIFTY LOW VOL 50",
+  "as_of": "2026-11-08",
+  "count": 51,
+  "constituents": [
+    {
+      "symbol": "NIFTY LOW VOLATILITY 50"
+    },
+    {
+      "symbol": "ICICIBANK"
+    },
+    {
+      "symbol": "HDFCBANK"
+    },
+    {
+      "symbol": "BHARTIARTL"
+    },
+    {
+      "symbol": "RELIANCE"
+    },
+    {
+      "symbol": "TITAN"
+    },
+    {
+      "symbol": "SBIN"
+    },
+    {
+      "symbol": "LT"
+    },
+    {
+      "symbol": "TCS"
+    },
+    {
+      "symbol": "AXISBANK"
+    },
+    {
+      "symbol": "MARUTI"
+    },
+    {
+      "symbol": "KOTAKBANK"
+    },
+    {
+      "symbol": "DIVISLAB"
+    },
+    {
+      "symbol": "ONGC"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "HCLTECH"
+    },
+    {
+      "symbol": "ULTRACEMCO"
+    },
+    {
+      "symbol": "ITC"
+    },
+    {
+      "symbol": "POWERGRID"
+    },
+    {
+      "symbol": "SUNPHARMA"
+    },
+    {
+      "symbol": "HEROMOTOCO"
+    },
+    {
+      "symbol": "JSWSTEEL"
+    },
+    {
+      "symbol": "NTPC"
+    },
+    {
+      "symbol": "TECHM"
+    },
+    {
+      "symbol": "TATAPOWER"
+    },
+    {
+      "symbol": "APOLLOHOSP"
+    },
+    {
+      "symbol": "HDFCLIFE"
+    },
+    {
+      "symbol": "GRASIM"
+    },
+    {
+      "symbol": "WIPRO"
+    },
+    {
+      "symbol": "HAVELLS"
+    },
+    {
+      "symbol": "BRITANNIA"
+    },
+    {
+      "symbol": "MARICO"
+    },
+    {
+      "symbol": "SBILIFE"
+    },
+    {
+      "symbol": "ASIANPAINT"
+    },
+    {
+      "symbol": "NESTLEIND"
+    },
+    {
+      "symbol": "CIPLA"
+    },
+    {
+      "symbol": "HINDUNILVR"
+    },
+    {
+      "symbol": "ZYDUSLIFE"
+    },
+    {
+      "symbol": "COALINDIA"
+    },
+    {
+      "symbol": "DRREDDY"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "TATACONSUM"
+    },
+    {
+      "symbol": "BAJAJFINSV"
+    },
+    {
+      "symbol": "DMART"
+    },
+    {
+      "symbol": "PIDILITIND"
+    },
+    {
+      "symbol": "LUPIN"
+    },
+    {
+      "symbol": "GODREJCP"
+    },
+    {
+      "symbol": "PAGEIND"
+    },
+    {
+      "symbol": "ICICIGI"
+    },
+    {
+      "symbol": "SBICARD"
+    },
+    {
+      "symbol": "UNITDSPR"
+    }
+  ]
+}

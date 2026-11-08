@@ -1,0 +1,160 @@
+{
+  "index": "NIFTY500 LOWVOL50",
+  "as_of": "2026-11-08",
+  "count": 51,
+  "constituents": [
+    {
+      "symbol": "NIFTY500 LOW VOLATILITY 50"
+    },
+    {
+      "symbol": "BHARTIARTL"
+    },
+    {
+      "symbol": "SBIN"
+    },
+    {
+      "symbol": "TCS"
+    },
+    {
+      "symbol": "MARUTI"
+    },
+    {
+      "symbol": "DIVISLAB"
+    },
+    {
+      "symbol": "ONGC"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "ULTRACEMCO"
+    },
+    {
+      "symbol": "POWERGRID"
+    },
+    {
+      "symbol": "SUNPHARMA"
+    },
+    {
+      "symbol": "LICI"
+    },
+    {
+      "symbol": "NTPC"
+    },
+    {
+      "symbol": "TECHM"
+    },
+    {
+      "symbol": "TATAPOWER"
+    },
+    {
+      "symbol": "APOLLOHOSP"
+    },
+    {
+      "symbol": "IOC"
+    },
+    {
+      "symbol": "HDFCLIFE"
+    },
+    {
+      "symbol": "EICHERMOT"
+    },
+    {
+      "symbol": "WIPRO"
+    },
+    {
+      "symbol": "HAVELLS"
+    },
+    {
+      "symbol": "FEDERALBNK"
+    },
+    {
+      "symbol": "BRITANNIA"
+    },
+    {
+      "symbol": "MARICO"
+    },
+    {
+      "symbol": "PIIND"
+    },
+    {
+      "symbol": "TVSMOTOR"
+    },
+    {
+      "symbol": "ASIANPAINT"
+    },
+    {
+      "symbol": "CIPLA"
+    },
+    {
+      "symbol": "ZYDUSLIFE"
+    },
+    {
+      "symbol": "COALINDIA"
+    },
+    {
+      "symbol": "AMBUJACEM"
+    },
+    {
+      "symbol": "DRREDDY"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "CASTROLIND"
+    },
+    {
+      "symbol": "ICICILIFE"
+    },
+    {
+      "symbol": "PIDILITIND"
+    },
+    {
+      "symbol": "LUPIN"
+    },
+    {
+      "symbol": "DABUR"
+    },
+    {
+      "symbol": "GODREJCP"
+    },
+    {
+      "symbol": "PAGEIND"
+    },
+    {
+      "symbol": "ICICIGI"
+    },
+    {
+      "symbol": "IRCTC"
+    },
+    {
+      "symbol": "MFSL"
+    },
+    {
+      "symbol": "SBICARD"
+    },
+    {
+      "symbol": "BAJAJHFL"
+    },
+    {
+      "symbol": "UNITDSPR"
+    },
+    {
+      "symbol": "MRF"
+    },
+    {
+      "symbol": "STARHEALTH"
+    },
+    {
+      "symbol": "COLPAL"
+    },
+    {
+      "symbol": "TATATECH"
+    },
+    {
+      "symbol": "ACC"
+    }
+  ]
+}

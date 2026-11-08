@@ -1,0 +1,160 @@
+{
+  "index": "NIFTY500MOMENTM50",
+  "as_of": "2026-11-08",
+  "count": 51,
+  "constituents": [
+    {
+      "symbol": "NIFTY500 MOMENTUM 50"
+    },
+    {
+      "symbol": "SAILIFE"
+    },
+    {
+      "symbol": "BSE"
+    },
+    {
+      "symbol": "MCX"
+    },
+    {
+      "symbol": "GLENMARK"
+    },
+    {
+      "symbol": "CGPOWER"
+    },
+    {
+      "symbol": "HINDALCO"
+    },
+    {
+      "symbol": "CUMMINSIND"
+    },
+    {
+      "symbol": "APARINDS"
+    },
+    {
+      "symbol": "NETWEB"
+    },
+    {
+      "symbol": "THERMAX"
+    },
+    {
+      "symbol": "GVT&D"
+    },
+    {
+      "symbol": "BHEL"
+    },
+    {
+      "symbol": "POWERINDIA"
+    },
+    {
+      "symbol": "WELCORP"
+    },
+    {
+      "symbol": "ABB"
+    },
+    {
+      "symbol": "SYRMA"
+    },
+    {
+      "symbol": "SHRIRAMFIN"
+    },
+    {
+      "symbol": "ATHERENERG"
+    },
+    {
+      "symbol": "BHARATFORG"
+    },
+    {
+      "symbol": "IDEA"
+    },
+    {
+      "symbol": "LAURUSLABS"
+    },
+    {
+      "symbol": "POLYCAB"
+    },
+    {
+      "symbol": "SAIL"
+    },
+    {
+      "symbol": "FEDERALBNK"
+    },
+    {
+      "symbol": "GRANULES"
+    },
+    {
+      "symbol": "KIRLOSENG"
+    },
+    {
+      "symbol": "RRKABEL"
+    },
+    {
+      "symbol": "KEI"
+    },
+    {
+      "symbol": "HINDCOPPER"
+    },
+    {
+      "symbol": "MAHABANK"
+    },
+    {
+      "symbol": "GESHIP"
+    },
+    {
+      "symbol": "ADANIPOWER"
+    },
+    {
+      "symbol": "NAVINFLUOR"
+    },
+    {
+      "symbol": "ADANIENSOL"
+    },
+    {
+      "symbol": "NATIONALUM"
+    },
+    {
+      "symbol": "HONASA"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "FINCABLES"
+    },
+    {
+      "symbol": "KARURVYSYA"
+    },
+    {
+      "symbol": "ACUTAAS"
+    },
+    {
+      "symbol": "SCHNEIDER"
+    },
+    {
+      "symbol": "RBLBANK"
+    },
+    {
+      "symbol": "ABCAPITAL"
+    },
+    {
+      "symbol": "ANANDRATHI"
+    },
+    {
+      "symbol": "CRAFTSMAN"
+    },
+    {
+      "symbol": "NLCINDIA"
+    },
+    {
+      "symbol": "HFCL"
+    },
+    {
+      "symbol": "GMDCLTD"
+    },
+    {
+      "symbol": "BELRISE"
+    },
+    {
+      "symbol": "ABSLAMC"
+    }
+  ]
+}

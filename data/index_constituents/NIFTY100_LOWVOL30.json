@@ -1,0 +1,100 @@
+{
+  "index": "NIFTY100 LOWVOL30",
+  "as_of": "2026-11-08",
+  "count": 31,
+  "constituents": [
+    {
+      "symbol": "NIFTY100 LOW VOLATILITY 30"
+    },
+    {
+      "symbol": "ICICIBANK"
+    },
+    {
+      "symbol": "HDFCBANK"
+    },
+    {
+      "symbol": "BHARTIARTL"
+    },
+    {
+      "symbol": "RELIANCE"
+    },
+    {
+      "symbol": "TITAN"
+    },
+    {
+      "symbol": "SBIN"
+    },
+    {
+      "symbol": "LT"
+    },
+    {
+      "symbol": "TCS"
+    },
+    {
+      "symbol": "MARUTI"
+    },
+    {
+      "symbol": "KOTAKBANK"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "ULTRACEMCO"
+    },
+    {
+      "symbol": "ITC"
+    },
+    {
+      "symbol": "POWERGRID"
+    },
+    {
+      "symbol": "SUNPHARMA"
+    },
+    {
+      "symbol": "NTPC"
+    },
+    {
+      "symbol": "TATAPOWER"
+    },
+    {
+      "symbol": "APOLLOHOSP"
+    },
+    {
+      "symbol": "HDFCLIFE"
+    },
+    {
+      "symbol": "WIPRO"
+    },
+    {
+      "symbol": "BRITANNIA"
+    },
+    {
+      "symbol": "SBILIFE"
+    },
+    {
+      "symbol": "ASIANPAINT"
+    },
+    {
+      "symbol": "NESTLEIND"
+    },
+    {
+      "symbol": "CIPLA"
+    },
+    {
+      "symbol": "HINDUNILVR"
+    },
+    {
+      "symbol": "DRREDDY"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "BAJAJFINSV"
+    },
+    {
+      "symbol": "PIDILITIND"
+    }
+  ]
+}

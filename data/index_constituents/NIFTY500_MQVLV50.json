@@ -1,0 +1,160 @@
+{
+  "index": "NIFTY500 MQVLV50",
+  "as_of": "2026-11-08",
+  "count": 51,
+  "constituents": [
+    {
+      "symbol": "NIFTY500 MULTIFACTOR MQVLV 50"
+    },
+    {
+      "symbol": "SBIN"
+    },
+    {
+      "symbol": "TCS"
+    },
+    {
+      "symbol": "HINDALCO"
+    },
+    {
+      "symbol": "CUMMINSIND"
+    },
+    {
+      "symbol": "ONGC"
+    },
+    {
+      "symbol": "BAJAJ-AUTO"
+    },
+    {
+      "symbol": "ITC"
+    },
+    {
+      "symbol": "POWERGRID"
+    },
+    {
+      "symbol": "CANBK"
+    },
+    {
+      "symbol": "SUNPHARMA"
+    },
+    {
+      "symbol": "CHENNPETRO"
+    },
+    {
+      "symbol": "IOC"
+    },
+    {
+      "symbol": "POLYCAB"
+    },
+    {
+      "symbol": "REDINGTON"
+    },
+    {
+      "symbol": "BRITANNIA"
+    },
+    {
+      "symbol": "MARICO"
+    },
+    {
+      "symbol": "CIPLA"
+    },
+    {
+      "symbol": "TMPV"
+    },
+    {
+      "symbol": "BANKBARODA"
+    },
+    {
+      "symbol": "PFC"
+    },
+    {
+      "symbol": "ZYDUSLIFE"
+    },
+    {
+      "symbol": "COALINDIA"
+    },
+    {
+      "symbol": "BPCL"
+    },
+    {
+      "symbol": "NATIONALUM"
+    },
+    {
+      "symbol": "UNIONBANK"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "HINDPETRO"
+    },
+    {
+      "symbol": "CASTROLIND"
+    },
+    {
+      "symbol": "GAIL"
+    },
+    {
+      "symbol": "HDFCAMC"
+    },
+    {
+      "symbol": "LICHSGFIN"
+    },
+    {
+      "symbol": "RECLTD"
+    },
+    {
+      "symbol": "CAMS"
+    },
+    {
+      "symbol": "PIDILITIND"
+    },
+    {
+      "symbol": "LUPIN"
+    },
+    {
+      "symbol": "ASTERDM"
+    },
+    {
+      "symbol": "DABUR"
+    },
+    {
+      "symbol": "PAGEIND"
+    },
+    {
+      "symbol": "IRCTC"
+    },
+    {
+      "symbol": "ANANDRATHI"
+    },
+    {
+      "symbol": "IEX"
+    },
+    {
+      "symbol": "COLPAL"
+    },
+    {
+      "symbol": "ACC"
+    },
+    {
+      "symbol": "MSUMI"
+    },
+    {
+      "symbol": "EMAMILTD"
+    },
+    {
+      "symbol": "IRB"
+    },
+    {
+      "symbol": "INDIAMART"
+    },
+    {
+      "symbol": "ABSLAMC"
+    },
+    {
+      "symbol": "JSWDULUX"
+    },
+    {
+      "symbol": "GILLETTE"
+    }
+  ]
+}

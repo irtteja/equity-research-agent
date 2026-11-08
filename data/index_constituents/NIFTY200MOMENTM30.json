@@ -1,0 +1,100 @@
+{
+  "index": "NIFTY200MOMENTM30",
+  "as_of": "2026-11-08",
+  "count": 31,
+  "constituents": [
+    {
+      "symbol": "NIFTY200 MOMENTUM 30"
+    },
+    {
+      "symbol": "BSE"
+    },
+    {
+      "symbol": "MCX"
+    },
+    {
+      "symbol": "GLENMARK"
+    },
+    {
+      "symbol": "CGPOWER"
+    },
+    {
+      "symbol": "HINDALCO"
+    },
+    {
+      "symbol": "CUMMINSIND"
+    },
+    {
+      "symbol": "MOTHERSON"
+    },
+    {
+      "symbol": "GVT&D"
+    },
+    {
+      "symbol": "TATASTEEL"
+    },
+    {
+      "symbol": "BHEL"
+    },
+    {
+      "symbol": "POWERINDIA"
+    },
+    {
+      "symbol": "ABB"
+    },
+    {
+      "symbol": "SHRIRAMFIN"
+    },
+    {
+      "symbol": "BHARATFORG"
+    },
+    {
+      "symbol": "NTPC"
+    },
+    {
+      "symbol": "SOLARINDS"
+    },
+    {
+      "symbol": "IDEA"
+    },
+    {
+      "symbol": "LAURUSLABS"
+    },
+    {
+      "symbol": "POLYCAB"
+    },
+    {
+      "symbol": "SAIL"
+    },
+    {
+      "symbol": "VEDL"
+    },
+    {
+      "symbol": "FEDERALBNK"
+    },
+    {
+      "symbol": "KEI"
+    },
+    {
+      "symbol": "ADANIPOWER"
+    },
+    {
+      "symbol": "ADANIENSOL"
+    },
+    {
+      "symbol": "ADANIGREEN"
+    },
+    {
+      "symbol": "NATIONALUM"
+    },
+    {
+      "symbol": "TORNTPHARM"
+    },
+    {
+      "symbol": "LTF"
+    },
+    {
+      "symbol": "ABCAPITAL"
+    }
+  ]
+}
