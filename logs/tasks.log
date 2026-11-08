@@ -1630,3 +1630,11 @@ Progress: Sunday 06:10 IST heartbeat; graph ok (867 companies); no market action
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-08 01:31
+Task: kg-weekly
+Status: completed
+Progress: Rebuilt KG structural layers: 34809 nodes, 89046 edges (252 new nodes, 18493 new edges)
+Next: next weekly KG rebuild next Sunday
+Blockers: none
+============================================================
