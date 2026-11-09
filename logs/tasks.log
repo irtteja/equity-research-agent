@@ -1798,3 +1798,11 @@ Progress: market hours snapshot 10:11 IST — 38 nodes written, market OPEN
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-09 05:02
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 127,482 unprocessed — ContextAgent lagging
+============================================================
