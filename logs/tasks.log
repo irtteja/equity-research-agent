@@ -1990,3 +1990,11 @@ Progress: 02:10 IST (Nov 10). Overnight heartbeat. Graph ready. daily_monitor ra
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-09 21:02
+Task: nightly-2026-11-09
+Status: completed
+Progress: git pull (new ticker reports), context_agent (0 new nodes), trend_agent (0 new pairs)
+Next: await new XBRL data for next enrichment pass
+Blockers: none
+============================================================
