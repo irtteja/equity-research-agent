@@ -1736,3 +1736,36 @@ Monthly pruner (1st of month, 2 AM IST). Enforces:
 - Total: 752 mainboard stocks
 - Added: ENNATURE, IGLSPIRITS
 - Removed: TRIVENIPT
+
+## 2026-11-08 — Evening / Overnight Scheduled Operations
+
+### Done
+- **Nightly enrichment** (dafe8f7): `backfill_graph.py` ran; no new graph nodes added (graph stable at 867 companies)
+- **Watchdog heartbeats** (2dbb773, 58763ab): 2 heartbeat cycles overnight; ensure_graph always no-op; orchestrator confluences stable at 12 BUY signals (CANBK 0.81, CANFINHOME 0.79 leading)
+- **Swarm orchestrator** (87e8906, 1f85032): 2 orchestrator cycles; 12 BUY_CONFLUENCE signals written each cycle; episode backlog ~127,482 unprocessed (ContextAgent lag — persistent)
+- **NSE After-Hours Feed** (c012ffd): 1 after-hours feed run; market=CLOSED
+
+### Architecture changes
+- None — operational night only
+
+### Pending / next sessions
+- Annual reports PDF extraction pipeline: 819 PDFs downloaded, extraction not yet built
+- Fix `nse_index_data` returning 0 nodes during market hours (indices endpoint)
+- Fix recurring stop-hook: nse_feed_schedule.json often left unstaged — trigger prompts should use `git add -A`
+
+## 2026-11-09 — Monday Market Day (ongoing)
+
+### Done
+- **NSE Live Feed — Market Open** (8374872, 46ace4a, 1725e55/watchdog): 3 live feed runs during market hours (10:05, 11:05, 12:05 IST); each wrote ~38-40 nodes across 8-10 endpoints; market=OPEN confirmed; FII/DII data fetched; option chains (NIFTY+BANKNIFTY) fetched each cycle
+- **Watchdog heartbeats** (b9df511, 3088124, 1725e55): 3 watchdog cycles (00:41, 04:41, 06:41 UTC); ensure_graph no-op; orchestrator confluences stable
+- **Swarm orchestrator** (62e0ad0, 1d53f09, 0bc420d): 3 orchestrator cycles; 12 BUY_CONFLUENCE signals stable each cycle (CANBK 0.81, CANFINHOME 0.79, ABREL/AVANTIFEED/BHARATCOAL 0.76)
+- **Recurring stop-hook issue**: nse_feed_schedule.json consistently left unstaged by standard `git add memory_store/ logs/` pattern; each feed run required explicit `git add memory_store/nse_feed_schedule.json` + separate commit (d1b57c5, 60153e4)
+
+### Architecture changes
+- None — operational day only
+
+### Pending / next sessions
+- Annual reports PDF extraction pipeline: 819 PDFs downloaded, extraction not yet built
+- Fix `nse_index_data` returning 0 nodes during market hours
+- Investigate why `git add memory_store/` does not stage nse_feed_schedule.json — consider updating trigger prompts to use `git add -A`
+- PROGRESS.md + self-model reflection: completed in this entry

@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-08",
-  "version": 68,
+  "last_updated": "2026-11-09",
+  "version": 69,
   "patterns": {
     "confirmed": [
       {
@@ -583,6 +583,24 @@
         "pattern": "resolved gap: pipeline_stale:indices_bhavcopy",
         "first_seen": "2026-11-08",
         "last_seen": "2026-11-08",
+        "count": 1
+      },
+      {
+        "pattern": "BUY_CONFLUENCE signals stable across Monday open: CANBK 0.81, CANFINHOME 0.79, ABREL/AVANTIFEED/BHARATCOAL 0.76",
+        "first_seen": "2026-11-09",
+        "last_seen": "2026-11-09",
+        "count": 1
+      },
+      {
+        "pattern": "nse_live_feed.py writes 38-40 nodes per market-hours run across 8-10 endpoints",
+        "first_seen": "2026-11-09",
+        "last_seen": "2026-11-09",
+        "count": 1
+      },
+      {
+        "pattern": "nse_feed_schedule.json staging requires explicit git add — standard pattern misses it",
+        "first_seen": "2026-11-09",
+        "last_seen": "2026-11-09",
         "count": 1
       }
     ],
@@ -1205,6 +1223,14 @@
       {
         "signal": "weekly_research self-commits at end — partial mid-run commits do not conflict",
         "added": "2026-11-07"
+      },
+      {
+        "signal": "Explicit git add memory_store/nse_feed_schedule.json before commit reliably stages the file",
+        "added": "2026-11-09"
+      },
+      {
+        "signal": "Background nse_live_feed.py runs complete cleanly with market=OPEN during 09:15-15:30 IST",
+        "added": "2026-11-09"
       }
     ],
     "gaps": [
@@ -1547,6 +1573,14 @@
       {
         "gap": "Pipeline 'indices_bhavcopy' has never produced output in indices_bhavcopy/",
         "added": "2026-11-08"
+      },
+      {
+        "gap": "nse_index_data endpoint returns 0 nodes even during market hours — not investigated",
+        "added": "2026-11-09"
+      },
+      {
+        "gap": "Trigger prompts use targeted git add pattern that misses nse_feed_schedule.json — stop hook fires every run",
+        "added": "2026-11-09"
       }
     ]
   },
@@ -1756,10 +1790,6 @@
   "session_log": [
     {
       "date": "2026-11-03",
-      "note": "Session 12: Built full Miro fish ripple interconnected knowledge graph — 46k nodes, 108k edges, 5 structural layers (sectors/indices/peers/groups/trends). All idempotent and wired into ensure_graph.py."
-    },
-    {
-      "date": "2026-11-03",
       "note": "Built true interconnected knowledge graph mesh: 46k nodes 108k edges across 4 layers (sectors/indices/peers/business-groups). Weekly rebuild trigger wired."
     },
     {
@@ -1873,6 +1903,10 @@
     {
       "date": "2026-11-08",
       "note": "self_improve scan: resolved: context_agent:low_enrichment_rate, pipeline_never_run:event_calendar, pipeline_stale:announcements, pipeline_stale:bhavcopy, pipeline_stale:indices_bhavcopy; 3 high-priority gaps"
+    },
+    {
+      "date": "2026-11-09",
+      "note": "2026-11-09 Mon market day: 3 live feeds, 3 orchestrator cycles, 12 BUY confluences stable; stop-hook fired every feed run due to unstaged nse_feed_schedule.json"
     }
   ]
 }
