@@ -1,0 +1,220 @@
+{
+  "date": "2026-11-09",
+  "generated_at": "2026-11-09T11:06:23.404137",
+  "stats": {
+    "prices_written": 1027,
+    "value_signals": 5,
+    "date": "2026-11-09"
+  },
+  "value_signals": [
+    {
+      "ticker": "ABREL",
+      "close": 1079.2,
+      "near_low_pct": 8.46,
+      "trend_metric": "revenue",
+      "trend_delta": 336.87,
+      "streak": 2,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "BHARATCOAL",
+      "close": 31.62,
+      "near_low_pct": 9.34,
+      "trend_metric": "revenue",
+      "trend_delta": 23.01,
+      "streak": 3,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "CANFINHOME",
+      "close": 759.6,
+      "near_low_pct": 9.61,
+      "trend_metric": "revenue",
+      "trend_delta": 3.16,
+      "streak": 2,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "BLS",
+      "close": 222.83,
+      "near_low_pct": 9.69,
+      "trend_metric": "revenue",
+      "trend_delta": 9.33,
+      "streak": 2,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "close": 720.3,
+      "near_low_pct": 9.92,
+      "trend_metric": "revenue",
+      "trend_delta": 29.44,
+      "streak": 2,
+      "price_zone": "near_low"
+    }
+  ],
+  "movers_up": [
+    {
+      "ticker": "DATAPATTNS",
+      "pct": 8.67
+    },
+    {
+      "ticker": "QUESS",
+      "pct": 8.6
+    },
+    {
+      "ticker": "SUNSHINE",
+      "pct": 8.53
+    },
+    {
+      "ticker": "KPIGREEN",
+      "pct": 8.27
+    },
+    {
+      "ticker": "IREDA",
+      "pct": 7.47
+    },
+    {
+      "ticker": "SPARC",
+      "pct": 6.99
+    },
+    {
+      "ticker": "BAJAJCON",
+      "pct": 6.84
+    },
+    {
+      "ticker": "GLAXO",
+      "pct": 6.72
+    },
+    {
+      "ticker": "RADAAN",
+      "pct": 6.44
+    },
+    {
+      "ticker": "UNIONBANK",
+      "pct": 5.6
+    },
+    {
+      "ticker": "BONFIG",
+      "pct": 5.6
+    },
+    {
+      "ticker": "IRB",
+      "pct": 5.54
+    },
+    {
+      "ticker": "SANSERA",
+      "pct": 5.34
+    },
+    {
+      "ticker": "SAILIFE",
+      "pct": 5.28
+    },
+    {
+      "ticker": "PNB",
+      "pct": 5.27
+    },
+    {
+      "ticker": "SONATSOFTW",
+      "pct": 5.13
+    },
+    {
+      "ticker": "EXIDEIND",
+      "pct": 5.08
+    },
+    {
+      "ticker": "SAIPARENT",
+      "pct": 5.04
+    },
+    {
+      "ticker": "TIMETECHNO",
+      "pct": 4.92
+    },
+    {
+      "ticker": "EMAMILTD",
+      "pct": 4.88
+    }
+  ],
+  "movers_down": [
+    {
+      "ticker": "EBGNG",
+      "pct": -8.54
+    },
+    {
+      "ticker": "SMT",
+      "pct": -7.8
+    },
+    {
+      "ticker": "RRKABEL",
+      "pct": -7.4
+    },
+    {
+      "ticker": "RAIN",
+      "pct": -7.06
+    },
+    {
+      "ticker": "TDPOWERSYS",
+      "pct": -6.44
+    },
+    {
+      "ticker": "MONEYVIEW",
+      "pct": -6.13
+    },
+    {
+      "ticker": "FINCABLES",
+      "pct": -6.1
+    },
+    {
+      "ticker": "INDIA VIX",
+      "pct": -5.79
+    },
+    {
+      "ticker": "TTML",
+      "pct": -5.61
+    },
+    {
+      "ticker": "KWIL",
+      "pct": -5.22
+    },
+    {
+      "ticker": "RATEGAIN",
+      "pct": -5.19
+    },
+    {
+      "ticker": "SAMHI",
+      "pct": -5.16
+    },
+    {
+      "ticker": "AVALON",
+      "pct": -5.04
+    },
+    {
+      "ticker": "STLTECH",
+      "pct": -5.0
+    },
+    {
+      "ticker": "AUGMONT",
+      "pct": -5.0
+    },
+    {
+      "ticker": "JUBLFOOD",
+      "pct": -4.99
+    },
+    {
+      "ticker": "OMNI",
+      "pct": -4.99
+    },
+    {
+      "ticker": "IGLSPIRITS",
+      "pct": -4.99
+    },
+    {
+      "ticker": "AQYLON",
+      "pct": -4.99
+    },
+    {
+      "ticker": "ENNATURE",
+      "pct": -4.98
+    }
+  ]
+}
