@@ -1918,3 +1918,11 @@ Progress: prices=1027 value_signals=5
 Next: 
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-09 12:41
+Task: watchdog
+Status: completed
+Progress: after-hours heartbeat — daily_monitor ran at 16:11 IST (15 reports); after-hours feed ran at 17:19 IST (41 nodes); graph ready
+Next: next watchdog wake
+Blockers: none
+============================================================
