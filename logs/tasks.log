@@ -1982,3 +1982,11 @@ Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 148,042 unprocessed — ContextAgent lagging
 ============================================================
+
+[CHECKPOINT] 2026-11-09 20:40
+Task: watchdog
+Status: completed
+Progress: 02:10 IST (Nov 10). Overnight heartbeat. Graph ready. daily_monitor ran. Announcement ingest done (4 facts: ADANIENT acq, NEOGEN fire resolved, ALKEM JV, MPHASIS ESOP).
+Next: next watchdog wake
+Blockers: none
+============================================================
