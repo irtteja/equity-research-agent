@@ -1,15 +1,15 @@
 # AAVAS — AAVAS
-*— | 2026-11-05*
+*Financial Services | Finance | 2026-11-09*
 
 ---
 
 ## INVESTMENT THESIS
 
-AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.89). Valuation is fair (P/E 12.7x) — not expensive for the growth on offer.
+AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.89). Valuation is fair (P/E 12.8x) — not expensive for the growth on offer.
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 60% confidence / FORMING state
+- **Signal:** BUY / 59% confidence / FORMING state
 - **Key driver:** AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.89)
 - **Watch:** No material bear arguments at this time (bear score 0.00)
 
@@ -18,23 +18,23 @@ AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.8
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 60.0% |
+| Confidence | 58.7% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.51 |
+| Conviction Score | 0.48 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.00 |
+| Net Conviction | 0.60 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹1130.0 |
-| Change | 0.8% |
+| Close | ₹1135.1 |
+| Change | 0.1% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | in_line (rs_30: 0.0) |
+| Relative Strength | in_line (rs_30: 0.5) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -45,7 +45,7 @@ AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.8
 
 | Metric | Value | Context |
 |--------|-------|---------|
-| P/E | 12.7x | 3Y avg: — |
+| P/E | 12.8x | 3Y avg: — |
 | Valuation Score | 0.57 | 0=cheap, 1=expensive |
 | Verdict | **fair** | |
 | PAT Growth YoY | 6.0% | |
@@ -75,6 +75,8 @@ AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.8
 No material bear arguments identified.
 
 ℹ️ **Monitor:** [strong_buy_conviction] AAVAS high-conviction BUY with high business quality (conf=74%, quality=0.90)
+ℹ️ **Monitor:** [peer_pe_discount] AAVAS trades at 46% P/E discount to sector peers
+ℹ️ **Monitor:** [strong_buy_conviction] AAVAS high-conviction BUY with high business quality (conf=74%, quality=0.90)
 
 ## PEER CONTEXT
 
@@ -88,7 +90,9 @@ No material bear arguments identified.
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.38
+**Global Signal:** —  |  **Score:** 0.3
+
+**Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
 ## FUNDAMENTALS
 
@@ -104,4 +108,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-05 10:52 | Next review: +30d*
+*Confidence: 59% | Generated: 2026-11-09 10:44 | Next review: +30d*

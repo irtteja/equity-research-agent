@@ -1,5 +1,5 @@
 # 3MINDIA — 3MINDIA
-*— | 2026-11-05*
+*Diversified | Diversified | 2026-11-09*
 
 ---
 
@@ -9,7 +9,7 @@
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 60% confidence / FORMING state
+- **Signal:** BUY / 65% confidence / FORMING state
 - **Key driver:** 3MINDIA is 2.3% from 52W low with total_expenses improving 2 quarters (momentum 1.00)
 - **Watch:** No material bear arguments at this time (bear score 0.00)
 
@@ -18,23 +18,23 @@
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 60.0% |
+| Confidence | 64.8% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.51 |
+| Conviction Score | 0.47 |
 | Conviction Trend (7d) | → STABLE |
-| Sentiment | no_data (0.50) |
-| Net Conviction | 0.00 |
+| Sentiment | negative_news_flow (0.38) |
+| Net Conviction | 0.60 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹29150.0 |
-| Change | 0.9% |
+| Close | ₹27500.0 |
+| Change | -6.2% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | in_line (rs_30: 0.0) |
+| Relative Strength | strong_underperformer (rs_30: -5.7) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -45,7 +45,7 @@
 
 | Metric | Value | Context |
 |--------|-------|---------|
-| P/E | 56.8x | 3Y avg: — |
+| P/E | 53.6x | 3Y avg: — |
 | Valuation Score | 0.23 | 0=cheap, 1=expensive |
 | Verdict | **expensive** | |
 | PAT Growth YoY | 8.2% | |
@@ -75,6 +75,7 @@
 No material bear arguments identified.
 
 ℹ️ **Monitor:** [strong_buy_conviction] 3MINDIA high-conviction BUY with high business quality (conf=94%, quality=0.85)
+ℹ️ **Monitor:** [strong_buy_conviction] 3MINDIA high-conviction BUY with high business quality (conf=94%, quality=0.85)
 
 ## PEER CONTEXT
 
@@ -88,7 +89,7 @@ No material bear arguments identified.
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.38
+**Global Signal:** —  |  **Score:** 0.3
 
 ## FUNDAMENTALS
 
@@ -104,4 +105,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-05 10:52 | Next review: +30d*
+*Confidence: 65% | Generated: 2026-11-09 10:44 | Next review: +30d*

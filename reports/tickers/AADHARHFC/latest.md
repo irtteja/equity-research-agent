@@ -1,15 +1,15 @@
 # AADHARHFC — AADHARHFC
-*— | 2026-11-05*
+*Financial Services | Finance | 2026-11-09*
 
 ---
 
 ## INVESTMENT THESIS
 
-AADHARHFC is 4.1% from 52W low with total_expenses improving 2 quarters (momentum 1.00). Valuation is fair (P/E 15.9x) — not expensive for the growth on offer.
+AADHARHFC is 4.1% from 52W low with total_expenses improving 2 quarters (momentum 1.00). Valuation is fair (P/E 15.8x) — not expensive for the growth on offer.
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 60% confidence / FORMING state
+- **Signal:** BUY / 59% confidence / FORMING state
 - **Key driver:** AADHARHFC is 4.1% from 52W low with total_expenses improving 2 quarters (momentum 1.00)
 - **Watch:** No material bear arguments at this time (bear score 0.00)
 
@@ -18,23 +18,23 @@ AADHARHFC is 4.1% from 52W low with total_expenses improving 2 quarters (momentu
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 60.0% |
+| Confidence | 58.7% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.51 |
+| Conviction Score | 0.48 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.00 |
+| Net Conviction | 0.60 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹433.0 |
-| Change | 2.8% |
+| Close | ₹430.7 |
+| Change | -1.7% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | in_line (rs_30: 0.0) |
+| Relative Strength | in_line (rs_30: -0.5) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -45,7 +45,7 @@ AADHARHFC is 4.1% from 52W low with total_expenses improving 2 quarters (momentu
 
 | Metric | Value | Context |
 |--------|-------|---------|
-| P/E | 15.9x | 3Y avg: — |
+| P/E | 15.8x | 3Y avg: — |
 | Valuation Score | 0.51 | 0=cheap, 1=expensive |
 | Verdict | **fair** | |
 | PAT Growth YoY | -9.2% | |
@@ -75,6 +75,8 @@ AADHARHFC is 4.1% from 52W low with total_expenses improving 2 quarters (momentu
 No material bear arguments identified.
 
 ℹ️ **Monitor:** [strong_buy_conviction] AADHARHFC high-conviction BUY with high business quality (conf=89%, quality=0.80)
+ℹ️ **Monitor:** [peer_pe_discount] AADHARHFC trades at 28% P/E discount to sector peers
+ℹ️ **Monitor:** [strong_buy_conviction] AADHARHFC high-conviction BUY with high business quality (conf=89%, quality=0.80)
 
 ## PEER CONTEXT
 
@@ -88,7 +90,9 @@ No material bear arguments identified.
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.38
+**Global Signal:** —  |  **Score:** 0.3
+
+**Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
 ## FUNDAMENTALS
 
@@ -104,4 +108,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-05 10:52 | Next review: +30d*
+*Confidence: 59% | Generated: 2026-11-09 10:44 | Next review: +30d*
