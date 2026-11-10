@@ -2030,3 +2030,11 @@ Progress: 06:10 IST (2026-11-10). Pre-market heartbeat. Graph ready: 867 compani
 Next: next watchdog wake at 08:40 UTC (14:10 IST, mid-session)
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-10 01:05
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 3
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 148,042 unprocessed — ContextAgent lagging; No ConfluenceSignal nodes for today — first run or no signals met threshold; Bhavcopy stale — latest is 2026-11-06
+============================================================
