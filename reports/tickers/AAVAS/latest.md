@@ -1,5 +1,5 @@
 # AAVAS — AAVAS
-*Financial Services | Finance | 2026-11-09*
+*Financial Services | Finance | 2026-11-10*
 
 ---
 
@@ -9,32 +9,32 @@ AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.8
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 59% confidence / FORMING state
+- **Signal:** BUY / 60% confidence / FORMING state
 - **Key driver:** AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.89)
-- **Watch:** No material bear arguments at this time (bear score 0.00)
+- **Watch:** No material bear arguments at this time (bear score 0.01)
 
 ## SIGNAL & CONVICTION
 
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 58.7% |
+| Confidence | 59.5% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.48 |
+| Conviction Score | 0.51 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.60 |
+| Net Conviction | 0.57 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹1135.1 |
-| Change | 0.1% |
+| Close | ₹1137.6 |
+| Change | -0.5% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | in_line (rs_30: 0.5) |
+| Relative Strength | in_line (rs_30: 0.7) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -72,8 +72,10 @@ AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.8
 
 ## RISK REGISTER
 
-No material bear arguments identified.
+1. [LOW] Declining belief trajectory | 2 drops vs 0 rises in recent log
 
+ℹ️ **Monitor:** [strong_buy_conviction] AAVAS high-conviction BUY with high business quality (conf=74%, quality=0.90)
+ℹ️ **Monitor:** [peer_pe_discount] AAVAS trades at 46% P/E discount to sector peers
 ℹ️ **Monitor:** [strong_buy_conviction] AAVAS high-conviction BUY with high business quality (conf=74%, quality=0.90)
 ℹ️ **Monitor:** [peer_pe_discount] AAVAS trades at 46% P/E discount to sector peers
 ℹ️ **Monitor:** [strong_buy_conviction] AAVAS high-conviction BUY with high business quality (conf=74%, quality=0.90)
@@ -90,7 +92,7 @@ No material bear arguments identified.
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.38
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -108,4 +110,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 59% | Generated: 2026-11-09 10:44 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-10 10:39 | Next review: +30d*

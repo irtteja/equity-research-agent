@@ -1,16 +1,16 @@
 # AUBANK — AUBANK
-*Financial Services | Banks | 2026-11-09*
+*Financial Services | Banks | 2026-11-10*
 
 ---
 
 ## INVESTMENT THESIS
 
-AUBANK is 12.0% from 52W low with total_income improving 3 quarters (momentum 1.00).
+AUBANK is 11.7% from 52W low with total_income improving 3 quarters (momentum 1.00).
 
 ## EXECUTIVE SUMMARY
 
 - **Signal:** BUY / 60% confidence / FORMING state
-- **Key driver:** AUBANK is 12.0% from 52W low with total_income improving 3 quarters (momentum 1.00)
+- **Key driver:** AUBANK is 11.7% from 52W low with total_income improving 3 quarters (momentum 1.00)
 - **Watch:** No material bear arguments at this time (bear score 0.00)
 
 ## SIGNAL & CONVICTION
@@ -20,7 +20,7 @@ AUBANK is 12.0% from 52W low with total_income improving 3 quarters (momentum 1.
 | Signal | 🟢 **BUY** |
 | Confidence | 60.0% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.48 |
+| Conviction Score | 0.51 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
 | Net Conviction | 0.50 |
@@ -29,12 +29,12 @@ AUBANK is 12.0% from 52W low with total_income improving 3 quarters (momentum 1.
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹931.8 |
-| Change | -1.0% |
+| Close | ₹929.0 |
+| Change | 0.0% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | outperformer (rs_30: 3.0) |
+| Relative Strength | outperformer (rs_30: 2.7) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -88,7 +88,7 @@ No material bear arguments identified.
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.38
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -106,4 +106,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-09 10:44 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-10 10:39 | Next review: +30d*

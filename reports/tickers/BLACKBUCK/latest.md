@@ -1,16 +1,16 @@
 # BLACKBUCK — BLACKBUCK
-*Services | Transport Services | 2026-11-09*
+*Services | Transport Services | 2026-11-10*
 
 ---
 
 ## INVESTMENT THESIS
 
-BLACKBUCK is 12.3% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is stretched; needs fundamental delivery to justify the multiple.
+BLACKBUCK is 13.5% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is stretched; needs fundamental delivery to justify the multiple.
 
 ## EXECUTIVE SUMMARY
 
 - **Signal:** BUY / 60% confidence / FORMING state
-- **Key driver:** BLACKBUCK is 12.3% from 52W low with revenue improving 2 quarters (momentum 1.00)
+- **Key driver:** BLACKBUCK is 13.5% from 52W low with revenue improving 2 quarters (momentum 1.00)
 - **Watch:** No material bear arguments at this time (bear score 0.00)
 
 ## SIGNAL & CONVICTION
@@ -20,7 +20,7 @@ BLACKBUCK is 12.3% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Signal | 🟢 **BUY** |
 | Confidence | 60.0% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.48 |
+| Conviction Score | 0.51 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
 | Net Conviction | 0.50 |
@@ -29,12 +29,12 @@ BLACKBUCK is 12.3% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹557.2 |
-| Change | 3.0% |
+| Close | ₹563.1 |
+| Change | 4.1% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | outperformer (rs_30: 4.2) |
+| Relative Strength | strong_outperformer (rs_30: 5.3) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -45,7 +45,7 @@ BLACKBUCK is 12.3% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 | Metric | Value | Context |
 |--------|-------|---------|
-| P/E | 47.3x | 3Y avg: — |
+| P/E | 47.8x | 3Y avg: — |
 | Valuation Score | 0.20 | 0=cheap, 1=expensive |
 | Verdict | **expensive** | |
 | PAT Growth YoY | -1.8% | |
@@ -88,7 +88,7 @@ No material bear arguments identified.
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.38
 
 ## FUNDAMENTALS
 
@@ -104,4 +104,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-09 10:44 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-10 10:39 | Next review: +30d*

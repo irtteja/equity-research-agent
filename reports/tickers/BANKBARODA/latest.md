@@ -1,5 +1,5 @@
 # BANKBARODA — BANKBARODA
-*Financial Services | Banks | 2026-11-09*
+*Financial Services | Banks | 2026-11-10*
 
 ---
 
@@ -9,7 +9,7 @@ BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentu
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 60% confidence / FORMING state
+- **Signal:** BUY / 62% confidence / FORMING state
 - **Key driver:** BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentum 0.99)
 - **Watch:** No material bear arguments at this time (bear score 0.00)
 
@@ -18,23 +18,23 @@ BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentu
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 60.0% |
+| Confidence | 62.4% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.48 |
+| Conviction Score | 0.51 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.50 |
+| Net Conviction | 0.60 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹250.31 |
-| Change | 0.3% |
+| Close | ₹260.01 |
+| Change | 4.5% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | outperformer (rs_30: 2.0) |
+| Relative Strength | strong_outperformer (rs_30: 6.0) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -88,7 +88,7 @@ No material bear arguments identified.
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.38
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -106,4 +106,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-09 10:44 | Next review: +30d*
+*Confidence: 62% | Generated: 2026-11-10 10:39 | Next review: +30d*

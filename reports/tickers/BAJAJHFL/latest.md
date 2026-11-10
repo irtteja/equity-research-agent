@@ -1,16 +1,16 @@
 # BAJAJHFL — BAJAJHFL
-*Financial Services | Finance | 2026-11-09*
+*Financial Services | Finance | 2026-11-10*
 
 ---
 
 ## INVESTMENT THESIS
 
-BAJAJHFL is 10.1% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is fair (P/E 31.1x) — not expensive for the growth on offer.
+BAJAJHFL is 11.8% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is fair (P/E 31.6x) — not expensive for the growth on offer.
 
 ## EXECUTIVE SUMMARY
 
 - **Signal:** BUY / 60% confidence / FORMING state
-- **Key driver:** BAJAJHFL is 10.1% from 52W low with revenue improving 2 quarters (momentum 1.00)
+- **Key driver:** BAJAJHFL is 11.8% from 52W low with revenue improving 2 quarters (momentum 1.00)
 - **Watch:** No material bear arguments at this time (bear score 0.00)
 
 ## SIGNAL & CONVICTION
@@ -20,7 +20,7 @@ BAJAJHFL is 10.1% from 52W low with revenue improving 2 quarters (momentum 1.00)
 | Signal | 🟢 **BUY** |
 | Confidence | 60.0% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.48 |
+| Conviction Score | 0.51 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
 | Net Conviction | 0.50 |
@@ -29,12 +29,12 @@ BAJAJHFL is 10.1% from 52W low with revenue improving 2 quarters (momentum 1.00)
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹80.0 |
-| Change | -3.8% |
+| Close | ₹81.25 |
+| Change | -0.6% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | underperformer (rs_30: -2.2) |
+| Relative Strength | in_line (rs_30: -0.7) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -45,7 +45,7 @@ BAJAJHFL is 10.1% from 52W low with revenue improving 2 quarters (momentum 1.00)
 
 | Metric | Value | Context |
 |--------|-------|---------|
-| P/E | 31.1x | 3Y avg: — |
+| P/E | 31.6x | 3Y avg: — |
 | Valuation Score | 0.46 | 0=cheap, 1=expensive |
 | Verdict | **fair** | |
 | PAT Growth YoY | 5.8% | |
@@ -89,7 +89,7 @@ No material bear arguments identified.
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.38
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -107,4 +107,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-09 10:44 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-10 10:39 | Next review: +30d*
