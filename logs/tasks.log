@@ -2182,3 +2182,19 @@ Progress: daily_monitor done: 42 announcements, 16 reports, macro snapshot, self
 Next: bhavcopy fetch ~18:00-19:00 IST; fix nse_index_data; unblock context_agent
 Blockers: context_agent ModuleNotFoundError; bhavcopy not yet available; nse_index_data 0 nodes
 ============================================================
+
+[CHECKPOINT] 2026-11-10 10:41
+Task: watchdog-2026-11-10-1041
+Status: completed
+Progress: 16:11 IST post-close: daily_monitor already ran at 10:36 UTC (commit 871870f); graph 9169 nodes; 12 BUY confluences stable
+Next: bhavcopy fetch ~18:00-19:00 IST; next watchdog 12:40 UTC
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-10 10:41
+Task: watchdog
+Status: completed
+Progress: post-close watchdog 16:11 IST — daily_monitor already ran, graph healthy
+Next: next watchdog wake
+Blockers: none
+============================================================
