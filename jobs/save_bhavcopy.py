@@ -58,16 +58,17 @@ def fetch_and_save(dt: date = None) -> dict:
 
     # Validate: NSE serves previous day's data on market holidays.
     # Check TradDt matches requested date; if not, it's either a holiday or bhavcopy
-    # not yet published (NSE publishes ~4–5 PM IST after market close at 3:30 PM IST).
+    # not yet published (NSE publishes 4–8 PM IST after market close at 3:30 PM IST).
     if "TradDt" in df.columns and not df.empty:
         trade_dates = pd.to_datetime(df["TradDt"].iloc[0], errors="coerce")
         if trade_dates is not pd.NaT and trade_dates.date() != dt:
             from datetime import datetime, timezone, timedelta
             IST = timezone(timedelta(hours=5, minutes=30))
             ist_now = datetime.now(IST)
-            # Before 4:30 PM IST — bhavcopy not published yet, try again later
-            if ist_now.hour < 16 or (ist_now.hour == 16 and ist_now.minute < 30):
-                return {"date": dt.isoformat(), "status": "too_early", "data_date": str(trade_dates.date()), "retry_after": "16:30 IST"}
+            # Before 8 PM IST — bhavcopy may not be published yet; treat as too_early to allow retry
+            # NSE can delay up to 8 PM IST on some trading days; only label as holiday after that
+            if ist_now.hour < 20:
+                return {"date": dt.isoformat(), "status": "too_early", "data_date": str(trade_dates.date()), "retry_after": "20:00 IST"}
             return {"date": dt.isoformat(), "status": "holiday", "data_date": str(trade_dates.date())}
 
     # Filter: main board only (EQ + BE), no SME
