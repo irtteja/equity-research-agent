@@ -2214,3 +2214,11 @@ Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 2
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 141,259 unprocessed — ContextAgent lagging; Bhavcopy stale — latest is 2026-11-06
 ============================================================
+
+[CHECKPOINT] 2026-11-10 12:41
+Task: watchdog
+Status: completed
+Progress: 18:11 IST post-close: daily_monitor ran 10:36 UTC, bhavcopy not yet published (holiday false-positive — market was open, NSE delayed), graph ready
+Next: retry bhavcopy after 19:00 IST; next watchdog 14:40 UTC
+Blockers: bhavcopy holiday-detection logic incorrect for delayed NSE publishing
+============================================================
