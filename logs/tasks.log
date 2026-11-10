@@ -2078,3 +2078,11 @@ Progress: 12:10 IST (2026-11-10). Market OPEN. Live snapshot: 39 nodes (live_pri
 Next: next watchdog wake (08:40 UTC, 14:10 IST)
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-10 07:04
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 2
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 148,042 unprocessed — ContextAgent lagging; Bhavcopy stale — latest is 2026-11-06
+============================================================
