@@ -2094,3 +2094,11 @@ Progress: 14:10 IST (2026-11-10). Market OPEN — 80 min to close. Live snapshot
 Next: next watchdog wake (10:40 UTC, 16:10 IST post-close) — daily_monitor due
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-10 09:03
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 2
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 148,042 unprocessed — ContextAgent lagging; Bhavcopy stale — latest is 2026-11-06
+============================================================
