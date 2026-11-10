@@ -2278,3 +2278,11 @@ Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 2
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 141,259 unprocessed — ContextAgent lagging; Bhavcopy stale — latest is 2026-11-06
 ============================================================
+
+[CHECKPOINT] 2026-11-10 19:34
+Task: announcements-2026-11-10
+Status: completed
+Progress: 70 announcements for 49 symbols (holiday). 15 material. 7 CorporateFact nodes: BAJFINANCE pref allotment 5.7cr, MRF interim div+Q2, IIFL pref issue, COCHINSHIP Rs3 div+Q2, DEEPAKFERT subsidiary, MEDPLUS buyback, MARUTI Suzuki H1.
+Next: Nov 11 market day: live feed 09:15 IST
+Blockers: none
+============================================================
