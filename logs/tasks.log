@@ -2198,3 +2198,11 @@ Progress: post-close watchdog 16:11 IST — daily_monitor already ran, graph hea
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-10 11:03
+Task: equity-daily-monitor-2026-11-10-1102
+Status: partial
+Progress: ensure_graph: OK (867 companies, 267 trend summaries). daily_monitor: already ran 10:36 UTC. price_agent: timeout. bhavcopy equity: holiday/not-available. indices bhavcopy: NSE file not available yet.
+Next: retry bhavcopy after 18:00 IST (~12:30 UTC)
+Blockers: bhavcopy files not published until ~18:00 IST; price_agent_runner timeout
+============================================================
