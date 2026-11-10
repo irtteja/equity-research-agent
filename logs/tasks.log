@@ -2230,3 +2230,11 @@ Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 2
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 141,259 unprocessed — ContextAgent lagging; Bhavcopy stale — latest is 2026-11-06
 ============================================================
+
+[CHECKPOINT] 2026-11-10 14:42
+Task: watchdog
+Status: completed
+Progress: 20:11 IST — confirmed Nov 10 is trading holiday (Guru Nanak Jayanti). NSE tradeDate=09-Nov-2026. nse_live_feed market=OPEN was time-based (false positive). No bhavcopy for Nov 10. Signals based on Nov 9 data remain valid.
+Next: next watchdog 16:40 UTC; Nov 11 market day
+Blockers: none
+============================================================

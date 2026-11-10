@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-10",
-  "version": 70,
+  "version": 71,
   "patterns": {
     "confirmed": [
       {
@@ -916,6 +916,18 @@
         "first_seen": "2026-11-10",
         "last_seen": "2026-11-10",
         "count": 1
+      },
+      {
+        "pattern": "Nov 10 2026 is Guru Nanak Jayanti — NSE trading holiday; nse_live_feed time-based market=OPEN was a false positive all day",
+        "first_seen": "2026-11-10",
+        "last_seen": "2026-11-10",
+        "count": 1
+      },
+      {
+        "pattern": "nse_live_feed market detection must use NSE status API, not time-check alone — time-check is unreliable on market holidays",
+        "first_seen": "2026-11-10",
+        "last_seen": "2026-11-10",
+        "count": 1
       }
     ],
     "rejected": []
@@ -1635,6 +1647,14 @@
       {
         "gap": "bhavcopy stale — Nov 10 bhavcopy not yet fetched (available 18:00-19:00 IST)",
         "added": "2026-11-10"
+      },
+      {
+        "gap": "nse_live_feed market=OPEN detection is time-based — produces false positives on trading holidays; needs NSE status API cross-check",
+        "added": "2026-11-10"
+      },
+      {
+        "gap": "BUY confluence signals used Nov 9 price data throughout Nov 10 — signals remain valid but price nodes reflect prior close",
+        "added": "2026-11-10"
       }
     ]
   },
@@ -1866,10 +1886,6 @@
   "session_log": [
     {
       "date": "2026-11-03",
-      "note": "session 12: built full 5-layer interconnected knowledge graph mesh (sectors/indices/peers/groups); 46k nodes 108k edges"
-    },
-    {
-      "date": "2026-11-03",
       "note": "Diagnosed 0-results fetch: 3 root causes (file timing, NSE API down at 1am, push 403). Fixed git remote set-url on both results fetch triggers."
     },
     {
@@ -1983,6 +1999,10 @@
     {
       "date": "2026-11-10",
       "note": "2026-11-10 Tue full market day: 4 live feeds, 3 orchestrator cycles, daily monitor post-close — 12 BUY signals stable; global rally, VIX -5.8%, IIFL preferential issue notable"
+    },
+    {
+      "date": "2026-11-10",
+      "note": "2026-11-10 was a trading holiday (Guru Nanak Jayanti) — nse_live_feed incorrectly showed market=OPEN based on time; bhavcopy correctly returned holiday; no Nov 10 trade data"
     }
   ]
 }
