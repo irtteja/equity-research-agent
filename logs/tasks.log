@@ -2246,3 +2246,11 @@ Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 2
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 141,259 unprocessed — ContextAgent lagging; Bhavcopy stale — latest is 2026-11-06
 ============================================================
+
+[CHECKPOINT] 2026-11-10 16:43
+Task: watchdog-2026-11-10-2211
+Status: completed
+Progress: Watchdog at 22:11 IST: daily_monitor already ran today (commit 871870f). Holiday confirmed: Guru Nanak Jayanti. No bhavcopy. 12 BUY confluences stable.
+Next: Nov 11 first trading day: live feed resumes 09:15 IST
+Blockers: none
+============================================================
