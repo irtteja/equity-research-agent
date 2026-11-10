@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-09",
-  "version": 69,
+  "last_updated": "2026-11-10",
+  "version": 70,
   "patterns": {
     "confirmed": [
       {
@@ -602,6 +602,24 @@
         "first_seen": "2026-11-09",
         "last_seen": "2026-11-09",
         "count": 1
+      },
+      {
+        "pattern": "daily_monitor completes post-close with macro/FII/announcements/reports in one run",
+        "first_seen": "2026-11-10",
+        "last_seen": "2026-11-10",
+        "count": 1
+      },
+      {
+        "pattern": "nse_live_feed writes 41-42 nodes/run consistently across 10 endpoints during market hours",
+        "first_seen": "2026-11-10",
+        "last_seen": "2026-11-10",
+        "count": 1
+      },
+      {
+        "pattern": "BUY confluence set stable at 12 signals through full trading day (Nov 10)",
+        "first_seen": "2026-11-10",
+        "last_seen": "2026-11-10",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -885,6 +903,18 @@
         "pattern": "nse_index_data returns empty dict {} on weekends/after-hours for index quotes",
         "first_seen": "2026-11-07",
         "last_seen": "2026-11-07",
+        "count": 1
+      },
+      {
+        "pattern": "daily_monitor background task via tail pipe produces no visible output — foreground run works fine",
+        "first_seen": "2026-11-10",
+        "last_seen": "2026-11-10",
+        "count": 1
+      },
+      {
+        "pattern": "IIFL Finance preferential issue at INR 602 — promoter confidence signal worth tracking",
+        "first_seen": "2026-11-10",
+        "last_seen": "2026-11-10",
         "count": 1
       }
     ],
@@ -1231,6 +1261,14 @@
       {
         "signal": "Background nse_live_feed.py runs complete cleanly with market=OPEN during 09:15-15:30 IST",
         "added": "2026-11-09"
+      },
+      {
+        "signal": "BUY_CONFLUENCE scores stable intraday — no score drift during market hours",
+        "added": "2026-11-10"
+      },
+      {
+        "signal": "daily_monitor self-commits and pushes atomically at end of run",
+        "added": "2026-11-10"
       }
     ],
     "gaps": [
@@ -1581,6 +1619,22 @@
       {
         "gap": "Trigger prompts use targeted git add pattern that misses nse_feed_schedule.json — stop hook fires every run",
         "added": "2026-11-09"
+      },
+      {
+        "gap": "daily_monitor background+tail pattern silently hangs — must run in foreground",
+        "added": "2026-11-10"
+      },
+      {
+        "gap": "nse_index_data endpoint returns 0 nodes even during market hours — still unresolved",
+        "added": "2026-11-10"
+      },
+      {
+        "gap": "context_agent module not found as agents.context_agent — episode backlog 148k still unprocessed",
+        "added": "2026-11-10"
+      },
+      {
+        "gap": "bhavcopy stale — Nov 10 bhavcopy not yet fetched (available 18:00-19:00 IST)",
+        "added": "2026-11-10"
       }
     ]
   },
@@ -1673,6 +1727,12 @@
       "theme": "small finance bank",
       "note": "0.65 BUY confluence",
       "added": "2026-11-06"
+    },
+    {
+      "ticker": "IIFL",
+      "theme": "preferential issue INR 602/warrant — promoter+institutional buying signal",
+      "note": "board meeting Nov 10 — monitor post-issue price action",
+      "added": "2026-11-10"
     }
   ],
   "sector_notes": {
@@ -1768,6 +1828,10 @@
       {
         "note": "CANFINHOME + BAJAJHFL + AUBANK all in BUY confluence zone — housing finance under pressure",
         "date": "2026-11-06"
+      },
+      {
+        "note": "IIFL Finance preferential issue — institutional confidence in NBFC recovery post-RBI action",
+        "date": "2026-11-10"
       }
     ],
     "PSU Banks": [
@@ -1785,13 +1849,21 @@
         "note": "AXISBANK showing 0.70 confluence — lagging peers, potential catch-up candidate",
         "date": "2026-11-06"
       }
+    ],
+    "GLOBAL": [
+      {
+        "note": "strong risk-on Nov 10: US equities +2-3%, crude -2.5% — positive for India IT/auto, negative for OMCs",
+        "date": "2026-11-10"
+      }
+    ],
+    "AUTO": [
+      {
+        "note": "Maruti parent Suzuki H1 revenue +16.8% — healthy demand signal for MSIL",
+        "date": "2026-11-10"
+      }
     ]
   },
   "session_log": [
-    {
-      "date": "2026-11-03",
-      "note": "Built true interconnected knowledge graph mesh: 46k nodes 108k edges across 4 layers (sectors/indices/peers/business-groups). Weekly rebuild trigger wired."
-    },
     {
       "date": "2026-11-03",
       "note": "session 12: built full 5-layer interconnected knowledge graph mesh (sectors/indices/peers/groups); 46k nodes 108k edges"
@@ -1907,6 +1979,10 @@
     {
       "date": "2026-11-09",
       "note": "2026-11-09 Mon market day: 3 live feeds, 3 orchestrator cycles, 12 BUY confluences stable; stop-hook fired every feed run due to unstaged nse_feed_schedule.json"
+    },
+    {
+      "date": "2026-11-10",
+      "note": "2026-11-10 Tue full market day: 4 live feeds, 3 orchestrator cycles, daily monitor post-close — 12 BUY signals stable; global rally, VIX -5.8%, IIFL preferential issue notable"
     }
   ]
 }

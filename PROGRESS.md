@@ -1,5 +1,46 @@
 # Progress Log
 
+## 2026-11-10 — Full trading day: live feed, orchestrator, daily monitor post-close
+
+### Done
+- **Live feed**: 4 market-hours runs (09:04, 09:34, 09:40, 10:10 UTC / 14:34, 15:04, 15:10 IST); 41-42 nodes/run (10 endpoints). Indices endpoint still returning 0 nodes.
+- **Orchestrator**: 3 cycles (09:02, 09:04, 10:30 UTC) — 12 stable BUY confluences all day; scores unchanged from Nov 9
+- **Daily Brief (NSE)** at 10:30 UTC (16:00 IST):
+  - `fetch_results.py`: 0 companies scheduled
+  - `backfill_graph.py`: timed out (120s) — not completed
+  - `context_agent`: `ModuleNotFoundError: No module named 'agents'` — episode backlog 148k still unprocessed
+  - `trend_agent_runner.py`: 0 pairs to process
+  - `daily_monitor.py`: completed — 42 announces (49 symbols); macro snapshot; 16 research reports; self-commit `871870f`
+- **Notable announcements (Nov 10)**:
+  - **IIFL Finance**: board approved preferential issue + warrants at INR 602; institutional + promoter buying signal
+  - **Maruti/Suzuki**: parent H1 FY2026 revenue +16.8%, op profit -0.6%; demand healthy
+- **Macro**: global risk-on (Nikkei +2.87%, Nasdaq +2.74%, S&P +2.35%); Crude -2.5%; India VIX -5.79% → 17.36
+- **FII**: net +₹7,212 Cr (Nov 9); DII: net -₹7,172 Cr (Nov 9)
+- **Knowledge graph**: 9,169 nodes, 99,580 edges (up from ~7,881 nodes)
+- **Self-model reflection** (v70): confirmed daily_monitor foreground pattern; added IIFL to watchlist; noted global rally sector impacts
+- **BUY confluence set (stable all day)**: ABREL(0.77), BHARATCOAL(0.75), CANFINHOME(0.74), BLS(0.74), AVANTIFEED(0.73), AUBANK(0.69), CANBK(0.69), BAJAJHFL(0.68), BLACKBUCK(0.64), AXISBANK(0.63), CAPILLARY(0.61), AURIONPRO(0.61)
+
+### Key commits (Nov 10)
+- `871870f` — chore: daily monitor 2026-11-10
+- `01083c6` — live_feed: 2026-11-10-1510
+- `28952ed` — live_feed: 2026-11-10-1434
+- `c7da344` — orchestrator: 2026-11-10-0902
+- `eeefac3` — watchdog: 2026-11-10-0840
+- `c6a972d` — live_feed: 2026-11-10-0834
+
+### Architecture changes
+- None
+
+### Pending / next sessions
+- **Bhavcopy Nov 10**: save_bhavcopy.py for Nov 10 — files available ~18:00-19:00 IST; not yet fetched
+- **Fix nse_index_data**: endpoint consistently returns 0 nodes even during market hours
+- **Context agent**: `agents.context_agent` module path broken under `-I` flag; episode backlog 148k unprocessed
+- **Stalled agents**: context_agent, trend_agent, document_agent, announcement_agent
+- **Daily monitor background hang**: running via `tail -30` pipe silently hangs — must run directly in foreground
+- **Annual reports extraction pipeline**: 819 PDFs downloaded, extraction not yet built
+
+---
+
 ## 2026-11-06 — Full trading day: live feed, orchestrator, post-close backfill
 
 ### Done

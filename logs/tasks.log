@@ -2174,3 +2174,11 @@ Progress: Macro, FII/DII, 0 facts ingested, bhavcopy 0 rows, block/bulk deals
 Next: Review material announcements, update PROGRESS.md
 Blockers: structured_results, indices_bhavcopy, corp_events
 ============================================================
+
+[CHECKPOINT] 2026-11-10 10:40
+Task: daily-brief-2026-11-10
+Status: completed
+Progress: daily_monitor done: 42 announcements, 16 reports, macro snapshot, self-model updated, PROGRESS.md updated
+Next: bhavcopy fetch ~18:00-19:00 IST; fix nse_index_data; unblock context_agent
+Blockers: context_agent ModuleNotFoundError; bhavcopy not yet available; nse_index_data 0 nodes
+============================================================
