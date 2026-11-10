@@ -2286,3 +2286,11 @@ Progress: 70 announcements for 49 symbols (holiday). 15 material. 7 CorporateFac
 Next: Nov 11 market day: live feed 09:15 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-10 19:45
+Task: results-fetch-2026-11-10
+Status: completed
+Progress: XBRL results fetch: 0 companies scheduled (Nov 10 = Guru Nanak Jayanti holiday). Nothing to fetch.
+Next: Nov 11 results fetch will pick up any post-holiday filings
+Blockers: none
+============================================================
