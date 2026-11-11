@@ -2358,3 +2358,11 @@ Progress: No pending retry file found. 1AM run either completed or skipped on ho
 Next: Next XBRL run tonight
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-11 08:11 IST
+Task: watchdog
+Status: completed
+Progress: pre-market heartbeat 08:10 IST Nov 11; graph.db healthy (867 co, 2030 metrics, 267 trends); market opens ~09:15 IST
+Next: next watchdog wake; NSE live feed triggers start at market open
+Blockers: none
+============================================================
