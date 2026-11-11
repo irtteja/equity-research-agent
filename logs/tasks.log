@@ -2414,3 +2414,11 @@ Progress: market hours snapshot 14:15 IST; 39 nodes via live feed; market closes
 Next: next watchdog wake; daily_monitor after market close
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-11 09:02
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 2
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 141,259 unprocessed — ContextAgent lagging; Bhavcopy stale — latest is 2026-11-06
+============================================================
