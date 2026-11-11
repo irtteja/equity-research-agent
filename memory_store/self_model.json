@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-10",
-  "version": 71,
+  "last_updated": "2026-11-11",
+  "version": 72,
   "patterns": {
     "confirmed": [
       {
@@ -620,6 +620,36 @@
         "first_seen": "2026-11-10",
         "last_seen": "2026-11-10",
         "count": 1
+      },
+      {
+        "pattern": "daily_monitor must run foreground only",
+        "first_seen": "2026-11-11",
+        "last_seen": "2026-11-11",
+        "count": 1
+      },
+      {
+        "pattern": "nse_live_feed.py runs correctly post-market with 43 nodes",
+        "first_seen": "2026-11-11",
+        "last_seen": "2026-11-11",
+        "count": 1
+      },
+      {
+        "pattern": "orchestrator completes in <1s — extremely lightweight",
+        "first_seen": "2026-11-11",
+        "last_seen": "2026-11-11",
+        "count": 1
+      },
+      {
+        "pattern": "indices bhavcopy available from NSE after 20:00 IST",
+        "first_seen": "2026-11-11",
+        "last_seen": "2026-11-11",
+        "count": 1
+      },
+      {
+        "pattern": "MetricValue nodes: context_agent enriches these (not episodes table)",
+        "first_seen": "2026-11-11",
+        "last_seen": "2026-11-11",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -927,6 +957,18 @@
         "pattern": "nse_live_feed market detection must use NSE status API, not time-check alone — time-check is unreliable on market holidays",
         "first_seen": "2026-11-10",
         "last_seen": "2026-11-10",
+        "count": 1
+      },
+      {
+        "pattern": "episodes table xbrl_result 152k records not processed by context_agent — different pipeline needed",
+        "first_seen": "2026-11-11",
+        "last_seen": "2026-11-11",
+        "count": 1
+      },
+      {
+        "pattern": "BUY confluences stable 3+ days — price near 52W low but no catalyst observed yet",
+        "first_seen": "2026-11-11",
+        "last_seen": "2026-11-11",
         "count": 1
       }
     ],
@@ -1281,6 +1323,18 @@
       {
         "signal": "daily_monitor self-commits and pushes atomically at end of run",
         "added": "2026-11-10"
+      },
+      {
+        "signal": "git add -A catches nse_feed_schedule.json",
+        "added": "2026-11-11"
+      },
+      {
+        "signal": "bhavcopy retry after 20:00 IST reliably succeeds",
+        "added": "2026-11-11"
+      },
+      {
+        "signal": "orchestrator self-check detects stalled agents correctly",
+        "added": "2026-11-11"
       }
     ],
     "gaps": [
@@ -1655,6 +1709,18 @@
       {
         "gap": "BUY confluence signals used Nov 9 price data throughout Nov 10 — signals remain valid but price nodes reflect prior close",
         "added": "2026-11-10"
+      },
+      {
+        "gap": "price_agent_runner hangs post-market — index_constituents() non-responsive after 15:30 IST",
+        "added": "2026-11-11"
+      },
+      {
+        "gap": "xbrl episodes not consumed by any agent — 160k records unprocessed",
+        "added": "2026-11-11"
+      },
+      {
+        "gap": "annual reports PDF extraction pipeline not built — 819 PDFs downloaded",
+        "added": "2026-11-11"
       }
     ]
   },
@@ -1753,6 +1819,16 @@
       "theme": "preferential issue INR 602/warrant — promoter+institutional buying signal",
       "note": "board meeting Nov 10 — monitor post-issue price action",
       "added": "2026-11-10"
+    },
+    {
+      "ticker": "ABREL",
+      "reason": "BUY confluence 0.77 — highest score 3+ days",
+      "added": "2026-11-11"
+    },
+    {
+      "ticker": "BLS",
+      "reason": "BUY confluence 0.74 — fintech near 52W low",
+      "added": "2026-11-11"
     }
   ],
   "sector_notes": {
@@ -1881,13 +1957,33 @@
         "note": "Maruti parent Suzuki H1 revenue +16.8% — healthy demand signal for MSIL",
         "date": "2026-11-10"
       }
+    ],
+    "banking": [
+      {
+        "note": "AUBANK CANBK AXISBANK BAJAJHFL all in BUY confluence — sector-wide near 52W lows with income improving",
+        "date": "2026-11-11"
+      }
+    ],
+    "fintech": [
+      {
+        "note": "CAPILLARY AURIONPRO BLS in confluence — smaller cap fintech showing strength",
+        "date": "2026-11-11"
+      }
+    ],
+    "aquaculture": [
+      {
+        "note": "AVANTIFEED stable confluence 3+ days",
+        "date": "2026-11-11"
+      }
+    ],
+    "coal": [
+      {
+        "note": "BHARATCOAL 3-quarter revenue improvement strongest trend signal",
+        "date": "2026-11-11"
+      }
     ]
   },
   "session_log": [
-    {
-      "date": "2026-11-03",
-      "note": "Diagnosed 0-results fetch: 3 root causes (file timing, NSE API down at 1am, push 403). Fixed git remote set-url on both results fetch triggers."
-    },
     {
       "date": "2026-11-04",
       "note": "Session 14: discovered CCR proxy checks session sources only; updated all 11 non-persistent triggers with add_repo instruction; test fire in progress to verify"
@@ -2003,6 +2099,10 @@
     {
       "date": "2026-11-10",
       "note": "2026-11-10 was a trading holiday (Guru Nanak Jayanti) — nse_live_feed incorrectly showed market=OPEN based on time; bhavcopy correctly returned holiday; no Nov 10 trade data"
+    },
+    {
+      "date": "2026-11-11",
+      "note": "Nov 11 full trading day post-holiday: 7 live feeds, 5 orchestrator cycles, daily_monitor, both bhavcopies complete; 12 BUY confluences unchanged all day; clarified episodes vs MetricValue backlog distinction"
     }
   ]
 }

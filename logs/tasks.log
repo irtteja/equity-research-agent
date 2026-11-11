@@ -2590,3 +2590,19 @@ Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 160,215 unprocessed — ContextAgent lagging
 ============================================================
+
+[CHECKPOINT] 2026-11-11 16:42
+Task: watchdog_2026-11-11-2211
+Status: completed
+Progress: self-model reflection applied; all day jobs complete — 7 feeds, 5 orchestrators, daily_monitor, both bhavcopies
+Next: tomorrow: pre-market feed 09:15 IST; NSE daily brief; XBRL nightly still pending
+Blockers: none — clean EOD
+============================================================
+
+[CHECKPOINT] 2026-11-11 22:12
+Task: watchdog
+Status: completed
+Progress: EOD 22:11 IST — self-model reflection done, all day jobs complete
+Next: tomorrow pre-market 09:15 IST
+Blockers: none
+============================================================
