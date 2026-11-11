@@ -2566,3 +2566,19 @@ Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 160,215 unprocessed — ContextAgent lagging
 ============================================================
+
+[CHECKPOINT] 2026-11-11 14:42
+Task: watchdog_2026-11-11-2010
+Status: completed
+Progress: indices_bhavcopy: 146 rows saved; equity_bhavcopy: already exists; MetricValue enrichment: 2900/2900 done; episodes backlog (xbrl_result type) 160215 — different gap
+Next: NSE announcement fetch; nightly XBRL; self-model reflection
+Blockers: xbrl episodes not processed by context_agent (different pipeline needed)
+============================================================
+
+[CHECKPOINT] 2026-11-11 20:12
+Task: watchdog
+Status: completed
+Progress: 20:10 IST — indices bhavcopy saved, MetricValue all enriched
+Next: NSE announces + XBRL nightly
+Blockers: none
+============================================================
