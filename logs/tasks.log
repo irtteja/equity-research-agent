@@ -2638,3 +2638,11 @@ Progress: fetched 169 announcements for 102 symbols (Nov 10); triaged 36 materia
 Next: XBRL results for AVANTIFEED/COCHINSHIP/MRF/KALYANKJIL/MMTC pending ingestion
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-11 19:45
+Task: results-fetch-nightly-2026-11-11
+Status: completed
+Progress: calendar loaded 642 events; 0 companies scheduled for XBRL fetch on 2026-11-10; clean exit
+Next: 8am retry trigger will run; results for AVANTIFEED/COCHINSHIP/MRF/KALYANKJIL filed via NSE but not in calendar
+Blockers: none
+============================================================
