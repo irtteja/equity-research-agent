@@ -1,5 +1,39 @@
 # Progress Log
 
+## 2026-11-11 — Full trading day post-holiday: live feed, orchestrator, daily monitor, bhavcopy
+
+### Done
+- **Live feed**: 7 market-hours cycles (10:05–15:05 IST) — 39-43 nodes/run across 10 endpoints; market OPEN confirmed all day
+- **Orchestrator**: multiple cycles pre/intra/post-market — 12 stable BUY confluences all day unchanged from Nov 9
+- **NSE Daily Brief** (10:30 UTC / 16:00 IST):
+  - `fetch_results.py`: 0 companies scheduled
+  - `backfill_graph.py`: completed (C-series companies, MetricValue 2030→10326 nodes)
+  - `context_agent`: 2,500 episodes processed (154,686 backlog remaining — persistent gap)
+  - `trend_agent_runner.py`: 254 strong trends written
+  - `alert_agent_runner.py`: completed
+  - `orchestrator`: 12 BUY confluences confirmed at close
+- **daily_monitor.py** (16:10 IST watchdog): 16 research reports, 613 calendar events, graph 10,553 nodes / 128,331 edges; belief: 829 confirmed / 9,724 forming
+- **Bhavcopy** (16:37 IST): 749 equity rows saved → `memory_store/bhavcopy/2026-11-11.csv`; indices bhavcopy not yet published by NSE
+- **price_agent_runner**: failed — `index_constituents()` hangs post-market close; to run during market hours only
+- **Market**: NIFTY 50 closed 25,138 (+0.37%); NIFTY BANK +1.76%
+- **FII** (Nov 9 data): net +₹7,212 Cr — strong institutional demand continues
+- **Knowledge graph**: 17,819 nodes total (10,326 MetricValues, 4,095 PriceSnapshots, 1,137 CorporateEvents)
+
+### Key commits (Nov 11)
+- `a8c41bf` — watchdog: 2026-11-11-1610 daily_monitor done
+- `3de3043` — chore: daily monitor 2026-11-11
+- `f50063c` — daily: brief 2026-11-11
+- `b3e0d3a` — live_feed: 2026-11-11-1505 market OPEN — 43 nodes (closing run)
+- `43fe146` — orchestrator: 2026-11-11-1432 market OPEN — 12 BUY confluences stable
+
+### Pending / next session
+- Indices bhavcopy: retry after 20:00 IST (NSE After-Hours Feed trigger)
+- context_agent backlog: 154,686 episodes — needs dedicated bulk-processing session
+- price_agent: fix to skip post-market; use bhavcopy OHLCV after close instead
+- Annual reports PDF extraction pipeline: 819 PDFs downloaded, extraction not built
+- Stalled agents: trend_agent, document_agent, announcement_agent backlog building
+- BUY confluences unchanged 3+ days: watch for catalyst in ABREL, BHARATCOAL, CANFINHOME
+
 ## 2026-11-10 — Full trading day: live feed, orchestrator, daily monitor post-close
 
 ### Done

@@ -2518,3 +2518,19 @@ Progress: daily_monitor: 16 reports, 613 events, graph 10553 nodes 128331 edges;
 Next: bhavcopy after 20:00 IST; NSE after-hours feed; self-model reflection
 Blockers: daily_monitor completed_with_errors (non-fatal)
 ============================================================
+
+[CHECKPOINT] 2026-11-11 11:09
+Task: price_agent_daily
+Status: failed
+Progress: timed out in _fetch_prices — index_constituents() hanging post-market close
+Next: run during market hours or use bhavcopy OHLCV instead
+Blockers: NSE index_constituents() API non-responsive after 15:30 IST
+============================================================
+
+[CHECKPOINT] 2026-11-11 11:09
+Task: daily_monitor_1637
+Status: completed
+Progress: daily_monitor: already ran; price_agent: failed (timeout post-market); bhavcopy: 749 rows saved; indices_bhavcopy: NSE file not yet available
+Next: indices bhavcopy retry after 20:00 IST; price_agent to run during market hours only
+Blockers: price_agent hangs post-market; indices bhavcopy not published yet
+============================================================
