@@ -2342,3 +2342,11 @@ Progress: 06:10 IST Nov 11. Pre-market. All overnight jobs complete. 12 BUY conf
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-11 01:02
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 3
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 141,259 unprocessed — ContextAgent lagging; No ConfluenceSignal nodes for today — first run or no signals met threshold; Bhavcopy stale — latest is 2026-11-06
+============================================================
