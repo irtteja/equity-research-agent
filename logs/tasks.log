@@ -2630,3 +2630,11 @@ Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 160,215 unprocessed — ContextAgent lagging
 ============================================================
+
+[CHECKPOINT] 2026-11-11 19:38
+Task: announcements-fetch-2026-11-10
+Status: completed
+Progress: fetched 169 announcements for 102 symbols (Nov 10); triaged 36 material; analyzed 8 high-priority in-session; saved 12 facts + 9 events to memory_store
+Next: XBRL results for AVANTIFEED/COCHINSHIP/MRF/KALYANKJIL/MMTC pending ingestion
+Blockers: none
+============================================================

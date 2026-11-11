@@ -1,0 +1,11 @@
+[
+  {
+    "date": "2026-11-10",
+    "decision": "analyze",
+    "reason": "BUY confluence stock filing quarterly results \u2014 material for position assessment",
+    "headline": "Q2 FY27 financial results filed (Sep 30, 2026)",
+    "pdf_url": "",
+    "facts_extracted": 1,
+    "summary": "Avanti Feeds filed Q2 FY27 results on Nov 10. No financials in the announcement text \u2014 PDF contains actual numbers. Flag for XBRL ingestion."
+  }
+]

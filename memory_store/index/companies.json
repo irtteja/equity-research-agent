@@ -232,9 +232,9 @@
     "last_updated": "2026-11-04"
   },
   "BLS": {
-    "last_filing": "2026-11-03",
-    "last_ingested": "2026-11-04",
-    "last_updated": "2026-11-04"
+    "last_filing": "2026-11-10",
+    "last_ingested": "2026-11-11",
+    "last_updated": "2026-11-11"
   },
   "ALKYLAMINE": {
     "last_filing": "2026-11-03",
@@ -312,9 +312,9 @@
     "last_updated": "2026-11-07"
   },
   "MEDPLUS": {
-    "last_filing": "2026-11-07",
-    "last_ingested": "2026-11-07",
-    "last_updated": "2026-11-07"
+    "last_filing": "2026-11-10",
+    "last_ingested": "2026-11-11",
+    "last_updated": "2026-11-11"
   },
   "JYOTHYLAB": {
     "last_filing": "2026-11-07",
@@ -425,5 +425,35 @@
     "last_filing": "2026-11-08",
     "last_ingested": "2026-11-08",
     "last_updated": "2026-11-08"
+  },
+  "AVANTIFEED": {
+    "last_filing": "2026-11-10",
+    "last_ingested": "2026-11-11",
+    "last_updated": "2026-11-11"
+  },
+  "COCHINSHIP": {
+    "last_filing": "2026-11-10",
+    "last_ingested": "2026-11-11",
+    "last_updated": "2026-11-11"
+  },
+  "MRF": {
+    "last_filing": "2026-11-10",
+    "last_ingested": "2026-11-11",
+    "last_updated": "2026-11-11"
+  },
+  "IKS": {
+    "last_filing": "2026-11-10",
+    "last_ingested": "2026-11-11",
+    "last_updated": "2026-11-11"
+  },
+  "BAJFINANCE": {
+    "last_filing": "2026-11-10",
+    "last_ingested": "2026-11-11",
+    "last_updated": "2026-11-11"
+  },
+  "KALYANKJIL": {
+    "last_filing": "2026-11-10",
+    "last_ingested": "2026-11-11",
+    "last_updated": "2026-11-11"
   }
 }
