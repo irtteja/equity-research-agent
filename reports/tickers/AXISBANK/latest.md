@@ -1,5 +1,5 @@
 # AXISBANK — AXISBANK
-*Financial Services | Banks | 2026-11-10*
+*Financial Services | Banks | 2026-11-11*
 
 ---
 
@@ -20,7 +20,7 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 | Signal | 🟢 **BUY** |
 | Confidence | 60.0% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.51 |
+| Conviction Score | 0.50 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
 | Net Conviction | 0.45 |
@@ -88,7 +88,7 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.38
+**Global Signal:** —  |  **Score:** 0.3
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -106,4 +106,4 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-10 10:39 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-11 10:44 | Next review: +30d*

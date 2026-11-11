@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-11-10T10:39:48.498339",
+  "generated_at": "2026-11-11T10:44:43.079861",
   "graph": {
-    "nodes": 9169,
-    "edges": 99580,
-    "episodes": 141259,
+    "nodes": 10553,
+    "edges": 128331,
+    "episodes": 160212,
     "belief_states": {
-      "confirmed": 626,
-      "forming": 8543,
+      "confirmed": 829,
+      "forming": 9724,
       "contested": 0,
       "retracted": 0
     },
-    "belief_revisions": 347,
+    "belief_revisions": 582,
     "node_types": {
       "PriceSnapshot": 4095,
-      "MetricValue": 2030,
-      "CorporateEvent": 1137,
+      "MetricValue": 2900,
+      "CorporateEvent": 1186,
       "Company": 867,
-      "MarketMover": 282,
-      "TrendSummary": 267,
-      "LiveQuote": 95,
-      "ConfluenceSignal": 67,
-      "AlertEvent": 40,
-      "AnnualReportInsight": 40,
-      "RelativeStrength": 34,
-      "SentimentScore": 34,
-      "ValuationScore": 34,
-      "BearCase": 31,
+      "TrendSummary": 521,
+      "MarketMover": 348,
+      "LiveQuote": 111,
+      "ConfluenceSignal": 79,
+      "AnnualReportInsight": 60,
+      "AlertEvent": 52,
+      "RelativeStrength": 50,
+      "SentimentScore": 50,
+      "ValuationScore": 50,
+      "BearCase": 47,
       "BusinessQuality": 16,
       "CompositeRank": 16,
+      "OptionChainSnapshot": 16,
       "PeerComparison": 16,
-      "OptionChainSnapshot": 14,
-      "BulkDeal": 10,
+      "BulkDeal": 13,
+      "CorporateFact": 11,
       "FIIDIIDaily": 10,
-      "MarketStatus": 7,
-      "CorporateFact": 4,
-      "BusinessGroup": 3,
-      "GlobalMacro": 3,
-      "Index": 3,
-      "Industry": 3,
-      "MacroSector": 3,
-      "ParticipantOI": 3,
-      "Sector": 3,
-      "RiskReport": 2
+      "MarketStatus": 8,
+      "BusinessGroup": 4,
+      "GlobalMacro": 4,
+      "Index": 4,
+      "Industry": 4,
+      "MacroSector": 4,
+      "ParticipantOI": 4,
+      "Sector": 4,
+      "RiskReport": 3
     }
   },
   "screener": [
@@ -52,7 +52,7 @@
       "close": 31.13,
       "near_low": 7.64,
       "score": 0.757,
-      "conv": 0.689,
+      "conv": 0.717,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "confirmed"
@@ -64,7 +64,7 @@
       "close": 31.31,
       "near_low": 8.26,
       "score": 0.757,
-      "conv": 0.689,
+      "conv": 0.717,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "confirmed"
@@ -76,7 +76,7 @@
       "close": 31.56,
       "near_low": 9.13,
       "score": 0.757,
-      "conv": 0.689,
+      "conv": 0.717,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "confirmed"
@@ -88,7 +88,7 @@
       "close": 31.62,
       "near_low": 9.34,
       "score": 0.757,
-      "conv": 0.689,
+      "conv": 0.717,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "confirmed"
@@ -100,7 +100,7 @@
       "close": 31.13,
       "near_low": 7.64,
       "score": 0.751,
-      "conv": 0.689,
+      "conv": 0.717,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "confirmed"
@@ -112,7 +112,7 @@
       "close": 31.31,
       "near_low": 8.26,
       "score": 0.751,
-      "conv": 0.689,
+      "conv": 0.717,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "confirmed"
@@ -124,7 +124,7 @@
       "close": 31.56,
       "near_low": 9.13,
       "score": 0.751,
-      "conv": 0.689,
+      "conv": 0.717,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "confirmed"
@@ -136,7 +136,7 @@
       "close": 31.62,
       "near_low": 9.34,
       "score": 0.751,
-      "conv": 0.689,
+      "conv": 0.717,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "confirmed"
@@ -148,7 +148,7 @@
       "close": 216.85,
       "near_low": 6.74,
       "score": 0.739,
-      "conv": 0.689,
+      "conv": 0.717,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "confirmed"
@@ -160,7 +160,7 @@
       "close": 227.21,
       "near_low": 11.84,
       "score": 0.739,
-      "conv": 0.689,
+      "conv": 0.717,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "confirmed"
@@ -172,7 +172,7 @@
       "close": 224.6,
       "near_low": 10.56,
       "score": 0.739,
-      "conv": 0.689,
+      "conv": 0.717,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "confirmed"
@@ -184,7 +184,7 @@
       "close": 222.83,
       "near_low": 9.69,
       "score": 0.739,
-      "conv": 0.689,
+      "conv": 0.717,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "confirmed"
@@ -196,7 +196,7 @@
       "close": 216.85,
       "near_low": 6.74,
       "score": 0.716,
-      "conv": 0.689,
+      "conv": 0.717,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "confirmed"
@@ -208,7 +208,7 @@
       "close": 227.21,
       "near_low": 11.84,
       "score": 0.716,
-      "conv": 0.689,
+      "conv": 0.717,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "confirmed"
@@ -220,7 +220,7 @@
       "close": 224.6,
       "near_low": 10.56,
       "score": 0.716,
-      "conv": 0.689,
+      "conv": 0.717,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "confirmed"
@@ -232,7 +232,103 @@
       "close": 222.83,
       "near_low": 9.69,
       "score": 0.716,
-      "conv": 0.689,
+      "conv": 0.717,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 708.0,
+      "near_low": 8.04,
+      "score": 0.763,
+      "conv": 0.683,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 728.0,
+      "near_low": 11.09,
+      "score": 0.763,
+      "conv": 0.683,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 713.5,
+      "near_low": 8.88,
+      "score": 0.763,
+      "conv": 0.683,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 720.3,
+      "near_low": 9.92,
+      "score": 0.763,
+      "conv": 0.683,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 708.0,
+      "near_low": 8.04,
+      "score": 0.735,
+      "conv": 0.683,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 728.0,
+      "near_low": 11.09,
+      "score": 0.735,
+      "conv": 0.683,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 713.5,
+      "near_low": 8.88,
+      "score": 0.735,
+      "conv": 0.683,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 720.3,
+      "near_low": 9.92,
+      "score": 0.735,
+      "conv": 0.683,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "confirmed"
@@ -244,7 +340,7 @@
       "close": 29150.0,
       "near_low": 2.33,
       "score": 0.938,
-      "conv": 0.676,
+      "conv": 0.677,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "confirmed"
@@ -256,7 +352,7 @@
       "close": 29285.0,
       "near_low": 2.81,
       "score": 0.938,
-      "conv": 0.676,
+      "conv": 0.677,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "confirmed"
@@ -268,7 +364,7 @@
       "close": 27500.0,
       "near_low": 4.13,
       "score": 0.938,
-      "conv": 0.676,
+      "conv": 0.677,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "confirmed"
@@ -280,7 +376,7 @@
       "close": 28055.0,
       "near_low": 6.23,
       "score": 0.938,
-      "conv": 0.676,
+      "conv": 0.677,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "confirmed"
@@ -331,6 +427,294 @@
       "conv": 0.672,
       "rec": "BUY",
       "streak": 1,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "BHARATCOAL",
+      "sector": "Oil Gas & Consumable Fuels",
+      "industry": "Consumable Fuels",
+      "close": 31.13,
+      "near_low": 7.64,
+      "score": 0.751,
+      "conv": 0.669,
+      "rec": "BUY",
+      "streak": 3,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "BHARATCOAL",
+      "sector": "Oil Gas & Consumable Fuels",
+      "industry": "Consumable Fuels",
+      "close": 31.31,
+      "near_low": 8.26,
+      "score": 0.751,
+      "conv": 0.669,
+      "rec": "BUY",
+      "streak": 3,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "BHARATCOAL",
+      "sector": "Oil Gas & Consumable Fuels",
+      "industry": "Consumable Fuels",
+      "close": 31.56,
+      "near_low": 9.13,
+      "score": 0.751,
+      "conv": 0.669,
+      "rec": "BUY",
+      "streak": 3,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "BHARATCOAL",
+      "sector": "Oil Gas & Consumable Fuels",
+      "industry": "Consumable Fuels",
+      "close": 31.62,
+      "near_low": 9.34,
+      "score": 0.751,
+      "conv": 0.669,
+      "rec": "BUY",
+      "streak": 3,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "BLS",
+      "sector": "Consumer Services",
+      "industry": "Leisure Services",
+      "close": 216.85,
+      "near_low": 6.74,
+      "score": 0.739,
+      "conv": 0.669,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "BLS",
+      "sector": "Consumer Services",
+      "industry": "Leisure Services",
+      "close": 227.21,
+      "near_low": 11.84,
+      "score": 0.739,
+      "conv": 0.669,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "BLS",
+      "sector": "Consumer Services",
+      "industry": "Leisure Services",
+      "close": 224.6,
+      "near_low": 10.56,
+      "score": 0.739,
+      "conv": 0.669,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "BLS",
+      "sector": "Consumer Services",
+      "industry": "Leisure Services",
+      "close": 222.83,
+      "near_low": 9.69,
+      "score": 0.739,
+      "conv": 0.669,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "CAPILLARY",
+      "sector": "Information Technology",
+      "industry": "IT - Software",
+      "close": 507.5,
+      "near_low": 15.83,
+      "score": 0.614,
+      "conv": 0.669,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "CAPILLARY",
+      "sector": "Information Technology",
+      "industry": "IT - Software",
+      "close": 509.0,
+      "near_low": 16.17,
+      "score": 0.614,
+      "conv": 0.669,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "CAPILLARY",
+      "sector": "Information Technology",
+      "industry": "IT - Software",
+      "close": 509.0,
+      "near_low": 16.17,
+      "score": 0.614,
+      "conv": 0.669,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "CAPILLARY",
+      "sector": "Information Technology",
+      "industry": "IT - Software",
+      "close": 501.5,
+      "near_low": 14.46,
+      "score": 0.614,
+      "conv": 0.669,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "CAPILLARY",
+      "sector": "Information Technology",
+      "industry": "IT - Software",
+      "close": 507.5,
+      "near_low": 15.83,
+      "score": 0.614,
+      "conv": 0.669,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "CAPILLARY",
+      "sector": "Information Technology",
+      "industry": "IT - Software",
+      "close": 509.0,
+      "near_low": 16.17,
+      "score": 0.614,
+      "conv": 0.669,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "CAPILLARY",
+      "sector": "Information Technology",
+      "industry": "IT - Software",
+      "close": 509.0,
+      "near_low": 16.17,
+      "score": 0.614,
+      "conv": 0.669,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "CAPILLARY",
+      "sector": "Information Technology",
+      "industry": "IT - Software",
+      "close": 501.5,
+      "near_low": 14.46,
+      "score": 0.614,
+      "conv": 0.669,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 708.0,
+      "near_low": 8.04,
+      "score": 0.735,
+      "conv": 0.663,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 728.0,
+      "near_low": 11.09,
+      "score": 0.735,
+      "conv": 0.663,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 713.5,
+      "near_low": 8.88,
+      "score": 0.735,
+      "conv": 0.663,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 720.3,
+      "near_low": 9.92,
+      "score": 0.735,
+      "conv": 0.663,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 708.0,
+      "near_low": 8.04,
+      "score": 0.735,
+      "conv": 0.663,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 728.0,
+      "near_low": 11.09,
+      "score": 0.735,
+      "conv": 0.663,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 713.5,
+      "near_low": 8.88,
+      "score": 0.735,
+      "conv": 0.663,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 720.3,
+      "near_low": 9.92,
+      "score": 0.735,
+      "conv": 0.663,
+      "rec": "BUY",
+      "streak": 2,
       "belief_state": "confirmed"
     },
     {
@@ -478,49 +862,97 @@
       "belief_state": "forming"
     },
     {
-      "ticker": "CAPILLARY",
-      "sector": "Information Technology",
-      "industry": "IT - Software",
-      "close": 507.5,
-      "near_low": 15.83,
-      "score": 0.614,
-      "conv": 0.636,
+      "ticker": "BHARATCOAL",
+      "sector": "Oil Gas & Consumable Fuels",
+      "industry": "Consumable Fuels",
+      "close": 31.13,
+      "near_low": 7.64,
+      "score": 0.757,
+      "conv": 0.624,
+      "rec": "BUY",
+      "streak": 3,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "BHARATCOAL",
+      "sector": "Oil Gas & Consumable Fuels",
+      "industry": "Consumable Fuels",
+      "close": 31.31,
+      "near_low": 8.26,
+      "score": 0.757,
+      "conv": 0.624,
+      "rec": "BUY",
+      "streak": 3,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "BHARATCOAL",
+      "sector": "Oil Gas & Consumable Fuels",
+      "industry": "Consumable Fuels",
+      "close": 31.56,
+      "near_low": 9.13,
+      "score": 0.757,
+      "conv": 0.624,
+      "rec": "BUY",
+      "streak": 3,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "BHARATCOAL",
+      "sector": "Oil Gas & Consumable Fuels",
+      "industry": "Consumable Fuels",
+      "close": 31.62,
+      "near_low": 9.34,
+      "score": 0.757,
+      "conv": 0.624,
+      "rec": "BUY",
+      "streak": 3,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "BLS",
+      "sector": "Consumer Services",
+      "industry": "Leisure Services",
+      "close": 216.85,
+      "near_low": 6.74,
+      "score": 0.716,
+      "conv": 0.624,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
     },
     {
-      "ticker": "CAPILLARY",
-      "sector": "Information Technology",
-      "industry": "IT - Software",
-      "close": 509.0,
-      "near_low": 16.17,
-      "score": 0.614,
-      "conv": 0.636,
+      "ticker": "BLS",
+      "sector": "Consumer Services",
+      "industry": "Leisure Services",
+      "close": 227.21,
+      "near_low": 11.84,
+      "score": 0.716,
+      "conv": 0.624,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
     },
     {
-      "ticker": "CAPILLARY",
-      "sector": "Information Technology",
-      "industry": "IT - Software",
-      "close": 509.0,
-      "near_low": 16.17,
-      "score": 0.614,
-      "conv": 0.636,
+      "ticker": "BLS",
+      "sector": "Consumer Services",
+      "industry": "Leisure Services",
+      "close": 224.6,
+      "near_low": 10.56,
+      "score": 0.716,
+      "conv": 0.624,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
     },
     {
-      "ticker": "CAPILLARY",
-      "sector": "Information Technology",
-      "industry": "IT - Software",
-      "close": 501.5,
-      "near_low": 14.46,
-      "score": 0.614,
-      "conv": 0.636,
+      "ticker": "BLS",
+      "sector": "Consumer Services",
+      "industry": "Leisure Services",
+      "close": 222.83,
+      "near_low": 9.69,
+      "score": 0.716,
+      "conv": 0.624,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -766,54 +1198,6 @@
       "belief_state": "forming"
     },
     {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 708.0,
-      "near_low": 8.04,
-      "score": 0.763,
-      "conv": 0.624,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 728.0,
-      "near_low": 11.09,
-      "score": 0.763,
-      "conv": 0.624,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 713.5,
-      "near_low": 8.88,
-      "score": 0.763,
-      "conv": 0.624,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 720.3,
-      "near_low": 9.92,
-      "score": 0.763,
-      "conv": 0.624,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
       "ticker": "CANFINHOME",
       "sector": "Financial Services",
       "industry": "Finance",
@@ -856,54 +1240,6 @@
       "close": 759.6,
       "near_low": 9.61,
       "score": 0.744,
-      "conv": 0.624,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 708.0,
-      "near_low": 8.04,
-      "score": 0.735,
-      "conv": 0.624,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 728.0,
-      "near_low": 11.09,
-      "score": 0.735,
-      "conv": 0.624,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 713.5,
-      "near_low": 8.88,
-      "score": 0.735,
-      "conv": 0.624,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 720.3,
-      "near_low": 9.92,
-      "score": 0.735,
       "conv": 0.624,
       "rec": "BUY",
       "streak": 2,
@@ -1875,104 +2211,8 @@
       "industry": "Consumable Fuels",
       "close": 31.13,
       "near_low": 7.64,
-      "score": 0.757,
-      "conv": 0.603,
-      "rec": "BUY",
-      "streak": 3,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "BHARATCOAL",
-      "sector": "Oil Gas & Consumable Fuels",
-      "industry": "Consumable Fuels",
-      "close": 31.31,
-      "near_low": 8.26,
-      "score": 0.757,
-      "conv": 0.603,
-      "rec": "BUY",
-      "streak": 3,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "BHARATCOAL",
-      "sector": "Oil Gas & Consumable Fuels",
-      "industry": "Consumable Fuels",
-      "close": 31.56,
-      "near_low": 9.13,
-      "score": 0.757,
-      "conv": 0.603,
-      "rec": "BUY",
-      "streak": 3,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "BHARATCOAL",
-      "sector": "Oil Gas & Consumable Fuels",
-      "industry": "Consumable Fuels",
-      "close": 31.62,
-      "near_low": 9.34,
-      "score": 0.757,
-      "conv": 0.603,
-      "rec": "BUY",
-      "streak": 3,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "BLS",
-      "sector": "Consumer Services",
-      "industry": "Leisure Services",
-      "close": 216.85,
-      "near_low": 6.74,
-      "score": 0.716,
-      "conv": 0.603,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "BLS",
-      "sector": "Consumer Services",
-      "industry": "Leisure Services",
-      "close": 227.21,
-      "near_low": 11.84,
-      "score": 0.716,
-      "conv": 0.603,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "BLS",
-      "sector": "Consumer Services",
-      "industry": "Leisure Services",
-      "close": 224.6,
-      "near_low": 10.56,
-      "score": 0.716,
-      "conv": 0.603,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "BLS",
-      "sector": "Consumer Services",
-      "industry": "Leisure Services",
-      "close": 222.83,
-      "near_low": 9.69,
-      "score": 0.716,
-      "conv": 0.603,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "BHARATCOAL",
-      "sector": "Oil Gas & Consumable Fuels",
-      "industry": "Consumable Fuels",
-      "close": 31.13,
-      "near_low": 7.64,
       "score": 0.78,
-      "conv": 0.602,
+      "conv": 0.622,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -1984,7 +2224,7 @@
       "close": 31.31,
       "near_low": 8.26,
       "score": 0.78,
-      "conv": 0.602,
+      "conv": 0.622,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -1996,7 +2236,7 @@
       "close": 31.56,
       "near_low": 9.13,
       "score": 0.78,
-      "conv": 0.602,
+      "conv": 0.622,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -2008,7 +2248,7 @@
       "close": 31.62,
       "near_low": 9.34,
       "score": 0.78,
-      "conv": 0.602,
+      "conv": 0.622,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -2020,7 +2260,7 @@
       "close": 216.85,
       "near_low": 6.74,
       "score": 0.682,
-      "conv": 0.602,
+      "conv": 0.622,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2032,7 +2272,7 @@
       "close": 227.21,
       "near_low": 11.84,
       "score": 0.682,
-      "conv": 0.602,
+      "conv": 0.622,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2044,7 +2284,7 @@
       "close": 224.6,
       "near_low": 10.56,
       "score": 0.682,
-      "conv": 0.602,
+      "conv": 0.622,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2056,7 +2296,55 @@
       "close": 222.83,
       "near_low": 9.69,
       "score": 0.682,
-      "conv": 0.602,
+      "conv": 0.622,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "ABREL",
+      "sector": "Realty",
+      "industry": "Realty",
+      "close": 1062.5,
+      "near_low": 6.78,
+      "score": 0.774,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "ABREL",
+      "sector": "Realty",
+      "industry": "Realty",
+      "close": 1093.5,
+      "near_low": 9.9,
+      "score": 0.774,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "ABREL",
+      "sector": "Realty",
+      "industry": "Realty",
+      "close": 1083.3,
+      "near_low": 8.87,
+      "score": 0.774,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "ABREL",
+      "sector": "Realty",
+      "industry": "Realty",
+      "close": 1079.2,
+      "near_low": 8.46,
+      "score": 0.774,
+      "conv": 0.6,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2158,48 +2446,48 @@
       "belief_state": "forming"
     },
     {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 708.0,
-      "near_low": 8.04,
-      "score": 0.735,
+      "ticker": "CANFINHOME",
+      "sector": "Financial Services",
+      "industry": "Finance",
+      "close": 720.0,
+      "near_low": 3.9,
+      "score": 0.744,
       "conv": 0.6,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
     },
     {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 728.0,
-      "near_low": 11.09,
-      "score": 0.735,
+      "ticker": "CANFINHOME",
+      "sector": "Financial Services",
+      "industry": "Finance",
+      "close": 744.9,
+      "near_low": 7.49,
+      "score": 0.744,
       "conv": 0.6,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
     },
     {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 713.5,
-      "near_low": 8.88,
-      "score": 0.735,
+      "ticker": "CANFINHOME",
+      "sector": "Financial Services",
+      "industry": "Finance",
+      "close": 749.0,
+      "near_low": 8.08,
+      "score": 0.744,
       "conv": 0.6,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
     },
     {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 720.3,
-      "near_low": 9.92,
-      "score": 0.735,
+      "ticker": "CANFINHOME",
+      "sector": "Financial Services",
+      "industry": "Finance",
+      "close": 759.6,
+      "near_low": 9.61,
+      "score": 0.744,
       "conv": 0.6,
       "rec": "BUY",
       "streak": 2,
@@ -2299,6 +2587,198 @@
       "conv": 0.6,
       "rec": "BUY",
       "streak": 3,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AUBANK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 904.35,
+      "near_low": 8.74,
+      "score": 0.688,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 3,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AUBANK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 904.35,
+      "near_low": 8.74,
+      "score": 0.688,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 3,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AUBANK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 941.0,
+      "near_low": 13.15,
+      "score": 0.688,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 3,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AUBANK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 941.0,
+      "near_low": 13.15,
+      "score": 0.688,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 3,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AUBANK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 931.8,
+      "near_low": 12.04,
+      "score": 0.688,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 3,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AUBANK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 931.8,
+      "near_low": 12.04,
+      "score": 0.688,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 3,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AUBANK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 929.0,
+      "near_low": 11.71,
+      "score": 0.688,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 3,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AUBANK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 929.0,
+      "near_low": 11.71,
+      "score": 0.688,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 3,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "CANBK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 118.32,
+      "near_low": 3.22,
+      "score": 0.687,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "CANBK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 118.32,
+      "near_low": 3.22,
+      "score": 0.687,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "CANBK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 122.9,
+      "near_low": 7.21,
+      "score": 0.687,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "CANBK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 122.9,
+      "near_low": 7.21,
+      "score": 0.687,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "CANBK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 122.93,
+      "near_low": 7.24,
+      "score": 0.687,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "CANBK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 122.93,
+      "near_low": 7.24,
+      "score": 0.687,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "CANBK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 128.1,
+      "near_low": 11.75,
+      "score": 0.687,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "CANBK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 128.1,
+      "near_low": 11.75,
+      "score": 0.687,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
       "belief_state": "forming"
     },
     {
@@ -2440,6 +2920,102 @@
       "close": 81.25,
       "near_low": 11.84,
       "score": 0.684,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "BAJAJHFL",
+      "sector": "Financial Services",
+      "industry": "Finance",
+      "close": 81.78,
+      "near_low": 12.57,
+      "score": 0.684,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "BAJAJHFL",
+      "sector": "Financial Services",
+      "industry": "Finance",
+      "close": 83.05,
+      "near_low": 14.32,
+      "score": 0.684,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "BAJAJHFL",
+      "sector": "Financial Services",
+      "industry": "Finance",
+      "close": 80.0,
+      "near_low": 10.12,
+      "score": 0.684,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "BAJAJHFL",
+      "sector": "Financial Services",
+      "industry": "Finance",
+      "close": 81.25,
+      "near_low": 11.84,
+      "score": 0.684,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "BLACKBUCK",
+      "sector": "Services",
+      "industry": "Transport Services",
+      "close": 534.6,
+      "near_low": 7.78,
+      "score": 0.639,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "BLACKBUCK",
+      "sector": "Services",
+      "industry": "Transport Services",
+      "close": 541.5,
+      "near_low": 9.17,
+      "score": 0.639,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "BLACKBUCK",
+      "sector": "Services",
+      "industry": "Transport Services",
+      "close": 557.2,
+      "near_low": 12.34,
+      "score": 0.639,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "BLACKBUCK",
+      "sector": "Services",
+      "industry": "Transport Services",
+      "close": 563.1,
+      "near_low": 13.53,
+      "score": 0.639,
       "conv": 0.6,
       "rec": "BUY",
       "streak": 2,
@@ -2590,6 +3166,102 @@
       "belief_state": "forming"
     },
     {
+      "ticker": "AXISBANK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 1232.0,
+      "near_low": 7.1,
+      "score": 0.628,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AXISBANK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 1232.0,
+      "near_low": 7.1,
+      "score": 0.628,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AXISBANK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 1280.0,
+      "near_low": 11.28,
+      "score": 0.628,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AXISBANK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 1280.0,
+      "near_low": 11.28,
+      "score": 0.628,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AXISBANK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 1322.9,
+      "near_low": 15.0,
+      "score": 0.628,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AXISBANK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 1322.9,
+      "near_low": 15.0,
+      "score": 0.628,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AXISBANK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 1310.7,
+      "near_low": 13.94,
+      "score": 0.628,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AXISBANK",
+      "sector": "Financial Services",
+      "industry": "Banks",
+      "close": 1310.7,
+      "near_low": 13.94,
+      "score": 0.628,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
       "ticker": "AURIONPRO",
       "sector": "Information Technology",
       "industry": "IT - Software",
@@ -2633,6 +3305,150 @@
       "near_low": 14.54,
       "score": 0.612,
       "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AURIONPRO",
+      "sector": "Information Technology",
+      "industry": "IT - Software",
+      "close": 578.4,
+      "near_low": 12.47,
+      "score": 0.612,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AURIONPRO",
+      "sector": "Information Technology",
+      "industry": "IT - Software",
+      "close": 588.0,
+      "near_low": 14.34,
+      "score": 0.612,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AURIONPRO",
+      "sector": "Information Technology",
+      "industry": "IT - Software",
+      "close": 581.7,
+      "near_low": 13.12,
+      "score": 0.612,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AURIONPRO",
+      "sector": "Information Technology",
+      "industry": "IT - Software",
+      "close": 589.0,
+      "near_low": 14.54,
+      "score": 0.612,
+      "conv": 0.6,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 708.0,
+      "near_low": 8.04,
+      "score": 0.763,
+      "conv": 0.593,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 728.0,
+      "near_low": 11.09,
+      "score": 0.763,
+      "conv": 0.593,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 713.5,
+      "near_low": 8.88,
+      "score": 0.763,
+      "conv": 0.593,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 720.3,
+      "near_low": 9.92,
+      "score": 0.763,
+      "conv": 0.593,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 708.0,
+      "near_low": 8.04,
+      "score": 0.704,
+      "conv": 0.592,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 728.0,
+      "near_low": 11.09,
+      "score": 0.704,
+      "conv": 0.592,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 713.5,
+      "near_low": 8.88,
+      "score": 0.704,
+      "conv": 0.592,
+      "rec": "BUY",
+      "streak": 2,
+      "belief_state": "forming"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
+      "industry": "Food Products",
+      "close": 720.3,
+      "near_low": 9.92,
+      "score": 0.704,
+      "conv": 0.592,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2644,7 +3460,7 @@
       "close": 433.0,
       "near_low": 4.07,
       "score": 0.891,
-      "conv": 0.595,
+      "conv": 0.578,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "forming"
@@ -2656,7 +3472,7 @@
       "close": 438.25,
       "near_low": 5.34,
       "score": 0.891,
-      "conv": 0.595,
+      "conv": 0.578,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "forming"
@@ -2668,7 +3484,7 @@
       "close": 430.7,
       "near_low": 3.52,
       "score": 0.891,
-      "conv": 0.595,
+      "conv": 0.578,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "forming"
@@ -2680,7 +3496,7 @@
       "close": 432.5,
       "near_low": 3.95,
       "score": 0.891,
-      "conv": 0.595,
+      "conv": 0.578,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "forming"
@@ -2692,7 +3508,7 @@
       "close": 1130.0,
       "near_low": 7.08,
       "score": 0.743,
-      "conv": 0.595,
+      "conv": 0.578,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "forming"
@@ -2704,7 +3520,7 @@
       "close": 1129.0,
       "near_low": 6.98,
       "score": 0.743,
-      "conv": 0.595,
+      "conv": 0.578,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "forming"
@@ -2716,7 +3532,7 @@
       "close": 1135.1,
       "near_low": 7.56,
       "score": 0.743,
-      "conv": 0.595,
+      "conv": 0.578,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "forming"
@@ -2728,7 +3544,7 @@
       "close": 1137.6,
       "near_low": 7.8,
       "score": 0.743,
-      "conv": 0.595,
+      "conv": 0.578,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "forming"
@@ -2740,7 +3556,7 @@
       "close": 433.0,
       "near_low": 4.07,
       "score": 0.891,
-      "conv": 0.592,
+      "conv": 0.575,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "forming"
@@ -2752,7 +3568,7 @@
       "close": 438.25,
       "near_low": 5.34,
       "score": 0.891,
-      "conv": 0.592,
+      "conv": 0.575,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "forming"
@@ -2764,7 +3580,7 @@
       "close": 430.7,
       "near_low": 3.52,
       "score": 0.891,
-      "conv": 0.592,
+      "conv": 0.575,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "forming"
@@ -2776,7 +3592,7 @@
       "close": 432.5,
       "near_low": 3.95,
       "score": 0.891,
-      "conv": 0.592,
+      "conv": 0.575,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "forming"
@@ -2788,7 +3604,7 @@
       "close": 1130.0,
       "near_low": 7.08,
       "score": 0.743,
-      "conv": 0.592,
+      "conv": 0.575,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "forming"
@@ -2800,7 +3616,7 @@
       "close": 1129.0,
       "near_low": 6.98,
       "score": 0.743,
-      "conv": 0.592,
+      "conv": 0.575,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "forming"
@@ -2812,7 +3628,7 @@
       "close": 1135.1,
       "near_low": 7.56,
       "score": 0.743,
-      "conv": 0.592,
+      "conv": 0.575,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "forming"
@@ -2824,7 +3640,7 @@
       "close": 1137.6,
       "near_low": 7.8,
       "score": 0.743,
-      "conv": 0.592,
+      "conv": 0.575,
       "rec": "BUY",
       "streak": 1,
       "belief_state": "forming"
@@ -2836,7 +3652,7 @@
       "close": 118.32,
       "near_low": 3.22,
       "score": 0.807,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2848,7 +3664,7 @@
       "close": 118.32,
       "near_low": 3.22,
       "score": 0.807,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2860,7 +3676,7 @@
       "close": 122.9,
       "near_low": 7.21,
       "score": 0.807,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2872,7 +3688,7 @@
       "close": 122.9,
       "near_low": 7.21,
       "score": 0.807,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2884,7 +3700,7 @@
       "close": 122.93,
       "near_low": 7.24,
       "score": 0.807,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2896,7 +3712,7 @@
       "close": 122.93,
       "near_low": 7.24,
       "score": 0.807,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2908,7 +3724,7 @@
       "close": 128.1,
       "near_low": 11.75,
       "score": 0.807,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2920,7 +3736,7 @@
       "close": 128.1,
       "near_low": 11.75,
       "score": 0.807,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2932,7 +3748,7 @@
       "close": 720.0,
       "near_low": 3.9,
       "score": 0.785,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2944,7 +3760,7 @@
       "close": 744.9,
       "near_low": 7.49,
       "score": 0.785,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2956,7 +3772,7 @@
       "close": 749.0,
       "near_low": 8.08,
       "score": 0.785,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2968,7 +3784,7 @@
       "close": 759.6,
       "near_low": 9.61,
       "score": 0.785,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2980,7 +3796,7 @@
       "close": 1062.5,
       "near_low": 6.78,
       "score": 0.763,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -2992,7 +3808,7 @@
       "close": 1093.5,
       "near_low": 9.9,
       "score": 0.763,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3004,7 +3820,7 @@
       "close": 1083.3,
       "near_low": 8.87,
       "score": 0.763,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3016,55 +3832,7 @@
       "close": 1079.2,
       "near_low": 8.46,
       "score": 0.763,
-      "conv": 0.526,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 708.0,
-      "near_low": 8.04,
-      "score": 0.763,
-      "conv": 0.526,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 728.0,
-      "near_low": 11.09,
-      "score": 0.763,
-      "conv": 0.526,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 713.5,
-      "near_low": 8.88,
-      "score": 0.763,
-      "conv": 0.526,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 720.3,
-      "near_low": 9.92,
-      "score": 0.763,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3076,7 +3844,7 @@
       "close": 81.78,
       "near_low": 12.57,
       "score": 0.73,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3088,7 +3856,7 @@
       "close": 83.05,
       "near_low": 14.32,
       "score": 0.73,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3100,7 +3868,7 @@
       "close": 80.0,
       "near_low": 10.12,
       "score": 0.73,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3112,7 +3880,7 @@
       "close": 81.25,
       "near_low": 11.84,
       "score": 0.73,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3124,7 +3892,7 @@
       "close": 904.35,
       "near_low": 8.74,
       "score": 0.679,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -3136,7 +3904,7 @@
       "close": 904.35,
       "near_low": 8.74,
       "score": 0.679,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -3148,7 +3916,7 @@
       "close": 941.0,
       "near_low": 13.15,
       "score": 0.679,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -3160,7 +3928,7 @@
       "close": 941.0,
       "near_low": 13.15,
       "score": 0.679,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -3172,7 +3940,7 @@
       "close": 931.8,
       "near_low": 12.04,
       "score": 0.679,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -3184,7 +3952,7 @@
       "close": 931.8,
       "near_low": 12.04,
       "score": 0.679,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -3196,7 +3964,7 @@
       "close": 929.0,
       "near_low": 11.71,
       "score": 0.679,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -3208,7 +3976,7 @@
       "close": 929.0,
       "near_low": 11.71,
       "score": 0.679,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -3220,7 +3988,7 @@
       "close": 245.37,
       "near_low": 9.63,
       "score": 0.678,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3232,7 +4000,7 @@
       "close": 245.37,
       "near_low": 9.63,
       "score": 0.678,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3244,7 +4012,7 @@
       "close": 249.67,
       "near_low": 11.55,
       "score": 0.678,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3256,7 +4024,7 @@
       "close": 249.67,
       "near_low": 11.55,
       "score": 0.678,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3268,7 +4036,7 @@
       "close": 250.31,
       "near_low": 11.84,
       "score": 0.678,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3280,7 +4048,7 @@
       "close": 250.31,
       "near_low": 11.84,
       "score": 0.678,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3292,7 +4060,7 @@
       "close": 260.01,
       "near_low": 16.17,
       "score": 0.678,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3304,7 +4072,7 @@
       "close": 260.01,
       "near_low": 16.17,
       "score": 0.678,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3316,7 +4084,7 @@
       "close": 534.6,
       "near_low": 7.78,
       "score": 0.671,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3328,7 +4096,7 @@
       "close": 541.5,
       "near_low": 9.17,
       "score": 0.671,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3340,7 +4108,7 @@
       "close": 557.2,
       "near_low": 12.34,
       "score": 0.671,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3352,7 +4120,7 @@
       "close": 563.1,
       "near_low": 13.53,
       "score": 0.671,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3364,7 +4132,7 @@
       "close": 578.4,
       "near_low": 12.47,
       "score": 0.65,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3376,7 +4144,7 @@
       "close": 588.0,
       "near_low": 14.34,
       "score": 0.65,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3388,7 +4156,7 @@
       "close": 581.7,
       "near_low": 13.12,
       "score": 0.65,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3400,7 +4168,7 @@
       "close": 589.0,
       "near_low": 14.54,
       "score": 0.65,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3412,7 +4180,7 @@
       "close": 1232.0,
       "near_low": 7.1,
       "score": 0.6,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3424,7 +4192,7 @@
       "close": 1232.0,
       "near_low": 7.1,
       "score": 0.6,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3436,7 +4204,7 @@
       "close": 1280.0,
       "near_low": 11.28,
       "score": 0.6,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3448,7 +4216,7 @@
       "close": 1280.0,
       "near_low": 11.28,
       "score": 0.6,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3460,7 +4228,7 @@
       "close": 1322.9,
       "near_low": 15.0,
       "score": 0.6,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3472,7 +4240,7 @@
       "close": 1322.9,
       "near_low": 15.0,
       "score": 0.6,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3484,7 +4252,7 @@
       "close": 1310.7,
       "near_low": 13.94,
       "score": 0.6,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3496,7 +4264,7 @@
       "close": 1310.7,
       "near_low": 13.94,
       "score": 0.6,
-      "conv": 0.526,
+      "conv": 0.522,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3508,7 +4276,7 @@
       "close": 118.32,
       "near_low": 3.22,
       "score": 0.808,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3520,7 +4288,7 @@
       "close": 118.32,
       "near_low": 3.22,
       "score": 0.808,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3532,7 +4300,7 @@
       "close": 122.9,
       "near_low": 7.21,
       "score": 0.808,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3544,7 +4312,7 @@
       "close": 122.9,
       "near_low": 7.21,
       "score": 0.808,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3556,7 +4324,7 @@
       "close": 122.93,
       "near_low": 7.24,
       "score": 0.808,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3568,7 +4336,7 @@
       "close": 122.93,
       "near_low": 7.24,
       "score": 0.808,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3580,7 +4348,7 @@
       "close": 128.1,
       "near_low": 11.75,
       "score": 0.808,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3592,7 +4360,7 @@
       "close": 128.1,
       "near_low": 11.75,
       "score": 0.808,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3604,7 +4372,7 @@
       "close": 720.0,
       "near_low": 3.9,
       "score": 0.8,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3616,7 +4384,7 @@
       "close": 744.9,
       "near_low": 7.49,
       "score": 0.8,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3628,7 +4396,7 @@
       "close": 749.0,
       "near_low": 8.08,
       "score": 0.8,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3640,7 +4408,7 @@
       "close": 759.6,
       "near_low": 9.61,
       "score": 0.8,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3652,7 +4420,7 @@
       "close": 534.6,
       "near_low": 7.78,
       "score": 0.755,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3664,7 +4432,7 @@
       "close": 541.5,
       "near_low": 9.17,
       "score": 0.755,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3676,7 +4444,7 @@
       "close": 557.2,
       "near_low": 12.34,
       "score": 0.755,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3688,7 +4456,7 @@
       "close": 563.1,
       "near_low": 13.53,
       "score": 0.755,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3700,7 +4468,7 @@
       "close": 1062.5,
       "near_low": 6.78,
       "score": 0.736,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3712,7 +4480,7 @@
       "close": 1093.5,
       "near_low": 9.9,
       "score": 0.736,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3724,7 +4492,7 @@
       "close": 1083.3,
       "near_low": 8.87,
       "score": 0.736,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3736,55 +4504,7 @@
       "close": 1079.2,
       "near_low": 8.46,
       "score": 0.736,
-      "conv": 0.526,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 708.0,
-      "near_low": 8.04,
-      "score": 0.704,
-      "conv": 0.526,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 728.0,
-      "near_low": 11.09,
-      "score": 0.704,
-      "conv": 0.526,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 713.5,
-      "near_low": 8.88,
-      "score": 0.704,
-      "conv": 0.526,
-      "rec": "BUY",
-      "streak": 2,
-      "belief_state": "forming"
-    },
-    {
-      "ticker": "AVANTIFEED",
-      "sector": "Fast Moving Consumer Goods",
-      "industry": "Food Products",
-      "close": 720.3,
-      "near_low": 9.92,
-      "score": 0.704,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3796,7 +4516,7 @@
       "close": 1232.0,
       "near_low": 7.1,
       "score": 0.699,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3808,7 +4528,7 @@
       "close": 1232.0,
       "near_low": 7.1,
       "score": 0.699,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3820,7 +4540,7 @@
       "close": 1280.0,
       "near_low": 11.28,
       "score": 0.699,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3832,7 +4552,7 @@
       "close": 1280.0,
       "near_low": 11.28,
       "score": 0.699,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3844,7 +4564,7 @@
       "close": 1322.9,
       "near_low": 15.0,
       "score": 0.699,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3856,7 +4576,7 @@
       "close": 1322.9,
       "near_low": 15.0,
       "score": 0.699,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3868,7 +4588,7 @@
       "close": 1310.7,
       "near_low": 13.94,
       "score": 0.699,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3880,7 +4600,7 @@
       "close": 1310.7,
       "near_low": 13.94,
       "score": 0.699,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3892,7 +4612,7 @@
       "close": 245.37,
       "near_low": 9.63,
       "score": 0.686,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3904,7 +4624,7 @@
       "close": 245.37,
       "near_low": 9.63,
       "score": 0.686,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3916,7 +4636,7 @@
       "close": 249.67,
       "near_low": 11.55,
       "score": 0.686,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3928,7 +4648,7 @@
       "close": 249.67,
       "near_low": 11.55,
       "score": 0.686,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3940,7 +4660,7 @@
       "close": 250.31,
       "near_low": 11.84,
       "score": 0.686,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3952,7 +4672,7 @@
       "close": 250.31,
       "near_low": 11.84,
       "score": 0.686,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3964,7 +4684,7 @@
       "close": 260.01,
       "near_low": 16.17,
       "score": 0.686,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3976,7 +4696,7 @@
       "close": 260.01,
       "near_low": 16.17,
       "score": 0.686,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -3988,7 +4708,7 @@
       "close": 904.35,
       "near_low": 8.74,
       "score": 0.649,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -4000,7 +4720,7 @@
       "close": 904.35,
       "near_low": 8.74,
       "score": 0.649,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -4012,7 +4732,7 @@
       "close": 941.0,
       "near_low": 13.15,
       "score": 0.649,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -4024,7 +4744,7 @@
       "close": 941.0,
       "near_low": 13.15,
       "score": 0.649,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -4036,7 +4756,7 @@
       "close": 931.8,
       "near_low": 12.04,
       "score": 0.649,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -4048,7 +4768,7 @@
       "close": 931.8,
       "near_low": 12.04,
       "score": 0.649,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -4060,7 +4780,7 @@
       "close": 929.0,
       "near_low": 11.71,
       "score": 0.649,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -4072,7 +4792,7 @@
       "close": 929.0,
       "near_low": 11.71,
       "score": 0.649,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 3,
       "belief_state": "forming"
@@ -4084,7 +4804,7 @@
       "close": 81.78,
       "near_low": 12.57,
       "score": 0.618,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -4096,7 +4816,7 @@
       "close": 83.05,
       "near_low": 14.32,
       "score": 0.618,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -4108,7 +4828,7 @@
       "close": 80.0,
       "near_low": 10.12,
       "score": 0.618,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -4120,7 +4840,7 @@
       "close": 81.25,
       "near_low": 11.84,
       "score": 0.618,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -4132,7 +4852,7 @@
       "close": 578.4,
       "near_low": 12.47,
       "score": 0.618,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -4144,7 +4864,7 @@
       "close": 588.0,
       "near_low": 14.34,
       "score": 0.618,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -4156,7 +4876,7 @@
       "close": 581.7,
       "near_low": 13.12,
       "score": 0.618,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -4168,7 +4888,7 @@
       "close": 589.0,
       "near_low": 14.54,
       "score": 0.618,
-      "conv": 0.526,
+      "conv": 0.521,
       "rec": "BUY",
       "streak": 2,
       "belief_state": "forming"
@@ -4179,252 +4899,252 @@
       "ticker": "BHARATCOAL",
       "sector": "Oil Gas & Consumable Fuels",
       "rec": "BUY",
-      "conv": 0.689,
+      "conv": 0.717,
       "mom": 7.6,
       "streak": 3,
       "tone": "neutral",
-      "rat": "BHARATCOAL: conf=0.689, near_low=7.64%, streak=3Q"
+      "rat": "BHARATCOAL: conf=0.717, near_low=7.64%, streak=3Q"
     },
     {
       "ticker": "BHARATCOAL",
       "sector": "Oil Gas & Consumable Fuels",
       "rec": "BUY",
-      "conv": 0.689,
+      "conv": 0.717,
       "mom": 7.6,
       "streak": 3,
       "tone": "neutral",
-      "rat": "BHARATCOAL: conf=0.689, near_low=8.26%, streak=3Q"
+      "rat": "BHARATCOAL: conf=0.717, near_low=8.26%, streak=3Q"
     },
     {
       "ticker": "BHARATCOAL",
       "sector": "Oil Gas & Consumable Fuels",
       "rec": "BUY",
-      "conv": 0.689,
+      "conv": 0.717,
       "mom": 7.6,
       "streak": 3,
       "tone": "neutral",
-      "rat": "BHARATCOAL: conf=0.689, near_low=9.13%, streak=3Q"
+      "rat": "BHARATCOAL: conf=0.717, near_low=9.13%, streak=3Q"
     },
     {
       "ticker": "BHARATCOAL",
       "sector": "Oil Gas & Consumable Fuels",
       "rec": "BUY",
-      "conv": 0.689,
+      "conv": 0.717,
       "mom": 7.6,
       "streak": 3,
       "tone": "neutral",
-      "rat": "BHARATCOAL: conf=0.689, near_low=9.34%, streak=3Q"
+      "rat": "BHARATCOAL: conf=0.717, near_low=9.34%, streak=3Q"
     },
     {
       "ticker": "BHARATCOAL",
       "sector": "Oil Gas & Consumable Fuels",
       "rec": "BUY",
-      "conv": 0.689,
+      "conv": 0.717,
       "mom": 7.5,
       "streak": 3,
       "tone": "neutral",
-      "rat": "BHARATCOAL: conf=0.689, near_low=7.64%, streak=3Q"
+      "rat": "BHARATCOAL: conf=0.717, near_low=7.64%, streak=3Q"
     },
     {
       "ticker": "BHARATCOAL",
       "sector": "Oil Gas & Consumable Fuels",
       "rec": "BUY",
-      "conv": 0.689,
+      "conv": 0.717,
       "mom": 7.5,
       "streak": 3,
       "tone": "neutral",
-      "rat": "BHARATCOAL: conf=0.689, near_low=8.26%, streak=3Q"
+      "rat": "BHARATCOAL: conf=0.717, near_low=8.26%, streak=3Q"
     },
     {
       "ticker": "BHARATCOAL",
       "sector": "Oil Gas & Consumable Fuels",
       "rec": "BUY",
-      "conv": 0.689,
+      "conv": 0.717,
       "mom": 7.5,
       "streak": 3,
       "tone": "neutral",
-      "rat": "BHARATCOAL: conf=0.689, near_low=9.13%, streak=3Q"
+      "rat": "BHARATCOAL: conf=0.717, near_low=9.13%, streak=3Q"
     },
     {
       "ticker": "BHARATCOAL",
       "sector": "Oil Gas & Consumable Fuels",
       "rec": "BUY",
-      "conv": 0.689,
+      "conv": 0.717,
       "mom": 7.5,
       "streak": 3,
       "tone": "neutral",
-      "rat": "BHARATCOAL: conf=0.689, near_low=9.34%, streak=3Q"
+      "rat": "BHARATCOAL: conf=0.717, near_low=9.34%, streak=3Q"
     },
     {
       "ticker": "BLS",
       "sector": "Consumer Services",
       "rec": "BUY",
-      "conv": 0.689,
+      "conv": 0.717,
       "mom": 7.4,
       "streak": 2,
       "tone": "neutral",
-      "rat": "BLS: conf=0.689, near_low=6.74%, streak=2Q"
+      "rat": "BLS: conf=0.717, near_low=6.74%, streak=2Q"
     },
     {
       "ticker": "BLS",
       "sector": "Consumer Services",
       "rec": "BUY",
-      "conv": 0.689,
+      "conv": 0.717,
       "mom": 7.4,
       "streak": 2,
       "tone": "neutral",
-      "rat": "BLS: conf=0.689, near_low=11.84%, streak=2Q"
+      "rat": "BLS: conf=0.717, near_low=11.84%, streak=2Q"
     },
     {
       "ticker": "BLS",
       "sector": "Consumer Services",
       "rec": "BUY",
-      "conv": 0.689,
+      "conv": 0.717,
       "mom": 7.4,
       "streak": 2,
       "tone": "neutral",
-      "rat": "BLS: conf=0.689, near_low=10.56%, streak=2Q"
+      "rat": "BLS: conf=0.717, near_low=10.56%, streak=2Q"
     },
     {
       "ticker": "BLS",
       "sector": "Consumer Services",
       "rec": "BUY",
-      "conv": 0.689,
+      "conv": 0.717,
       "mom": 7.4,
       "streak": 2,
       "tone": "neutral",
-      "rat": "BLS: conf=0.689, near_low=9.69%, streak=2Q"
+      "rat": "BLS: conf=0.717, near_low=9.69%, streak=2Q"
     },
     {
       "ticker": "BLS",
       "sector": "Consumer Services",
       "rec": "BUY",
-      "conv": 0.689,
+      "conv": 0.717,
       "mom": 7.2,
       "streak": 2,
       "tone": "neutral",
-      "rat": "BLS: conf=0.689, near_low=6.74%, streak=2Q"
+      "rat": "BLS: conf=0.717, near_low=6.74%, streak=2Q"
     },
     {
       "ticker": "BLS",
       "sector": "Consumer Services",
       "rec": "BUY",
-      "conv": 0.689,
+      "conv": 0.717,
       "mom": 7.2,
       "streak": 2,
       "tone": "neutral",
-      "rat": "BLS: conf=0.689, near_low=11.84%, streak=2Q"
+      "rat": "BLS: conf=0.717, near_low=11.84%, streak=2Q"
     },
     {
       "ticker": "BLS",
       "sector": "Consumer Services",
       "rec": "BUY",
-      "conv": 0.689,
+      "conv": 0.717,
       "mom": 7.2,
       "streak": 2,
       "tone": "neutral",
-      "rat": "BLS: conf=0.689, near_low=10.56%, streak=2Q"
+      "rat": "BLS: conf=0.717, near_low=10.56%, streak=2Q"
     },
     {
       "ticker": "BLS",
       "sector": "Consumer Services",
       "rec": "BUY",
-      "conv": 0.689,
+      "conv": 0.717,
       "mom": 7.2,
       "streak": 2,
       "tone": "neutral",
-      "rat": "BLS: conf=0.689, near_low=9.69%, streak=2Q"
+      "rat": "BLS: conf=0.717, near_low=9.69%, streak=2Q"
     },
     {
-      "ticker": "3MINDIA",
-      "sector": "Diversified",
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
       "rec": "BUY",
-      "conv": 0.676,
-      "mom": 9.4,
-      "streak": 1,
+      "conv": 0.683,
+      "mom": 7.6,
+      "streak": 2,
       "tone": "neutral",
-      "rat": "3MINDIA: conf=0.676, near_low=2.33%, streak=1Q"
+      "rat": "AVANTIFEED: conf=0.683, near_low=8.04%, streak=2Q"
     },
     {
-      "ticker": "3MINDIA",
-      "sector": "Diversified",
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
       "rec": "BUY",
-      "conv": 0.676,
-      "mom": 9.4,
-      "streak": 1,
+      "conv": 0.683,
+      "mom": 7.6,
+      "streak": 2,
       "tone": "neutral",
-      "rat": "3MINDIA: conf=0.676, near_low=2.81%, streak=1Q"
+      "rat": "AVANTIFEED: conf=0.683, near_low=11.09%, streak=2Q"
     },
     {
-      "ticker": "3MINDIA",
-      "sector": "Diversified",
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
       "rec": "BUY",
-      "conv": 0.676,
-      "mom": 9.4,
-      "streak": 1,
+      "conv": 0.683,
+      "mom": 7.6,
+      "streak": 2,
       "tone": "neutral",
-      "rat": "3MINDIA: conf=0.676, near_low=4.13%, streak=1Q"
+      "rat": "AVANTIFEED: conf=0.683, near_low=8.88%, streak=2Q"
     },
     {
-      "ticker": "3MINDIA",
-      "sector": "Diversified",
+      "ticker": "AVANTIFEED",
+      "sector": "Fast Moving Consumer Goods",
       "rec": "BUY",
-      "conv": 0.676,
-      "mom": 9.4,
-      "streak": 1,
+      "conv": 0.683,
+      "mom": 7.6,
+      "streak": 2,
       "tone": "neutral",
-      "rat": "3MINDIA: conf=0.676, near_low=6.23%, streak=1Q"
+      "rat": "AVANTIFEED: conf=0.683, near_low=9.92%, streak=2Q"
     }
   ],
   "sectors": [
     {
       "s": "Financial Services",
       "pct": 91.7,
-      "sigs": 208,
+      "sigs": 240,
       "n": 119,
       "conf": 0.58
     },
     {
       "s": "Information Technology",
       "pct": 100.0,
-      "sigs": 28,
+      "sigs": 36,
       "n": 47,
-      "conf": 0.596
+      "conf": 0.607
     },
     {
       "s": "Fast Moving Consumer Goods",
       "pct": 100.0,
-      "sigs": 20,
+      "sigs": 24,
       "n": 47,
-      "conf": 0.58
+      "conf": 0.646
     },
     {
       "s": "Consumer Services",
       "pct": 100.0,
-      "sigs": 20,
+      "sigs": 24,
       "n": 47,
-      "conf": 0.644
+      "conf": 0.664
     },
     {
       "s": "Realty",
       "pct": 100.0,
-      "sigs": 20,
+      "sigs": 24,
       "n": 22,
-      "conf": 0.58
+      "conf": 0.582
     },
     {
       "s": "Services",
       "pct": 100.0,
-      "sigs": 20,
+      "sigs": 24,
       "n": 30,
-      "conf": 0.58
+      "conf": 0.582
     },
     {
       "s": "Oil Gas & Consumable Fuels",
       "pct": 100.0,
-      "sigs": 20,
+      "sigs": 24,
       "n": 20,
-      "conf": 0.644
+      "conf": 0.664
     },
     {
       "s": "Diversified",
@@ -4519,7 +5239,7 @@
     },
     {
       "s": "Unknown",
-      "pct": 62.8,
+      "pct": 61.1,
       "sigs": 0,
       "n": 10,
       "conf": 0
@@ -4541,317 +5261,317 @@
   ],
   "corp_feed": [
     {
-      "sym": "VIKASECO",
+      "sym": "PATANJALI",
+      "subj": "Patanjali Foods Limited has informed the Exchange about Board Meeting to be held on 14-Nov-2026 to inter-alia consider and approve the Unaudited Financial results of the Company for the Half Yearly en",
+      "cat": "BoardMeeting",
+      "t": "10:43"
+    },
+    {
+      "sym": "DEEDEV",
+      "subj": "DEE DEVELOPMENT ENGINEERS LIMITED has informed the Exchange about Board Meeting to be held on 14-Nov-2026 to inter-alia consider and approve the Unaudited Financial results of the Company for the Half",
+      "cat": "BoardMeeting",
+      "t": "10:43"
+    },
+    {
+      "sym": "GENCON",
+      "subj": "Generic Engineering Construction and Projects Limited has informed the Exchange about Board Meeting to be held on 14-Nov-2026 to inter-alia consider and approve the Unaudited Financial results of the ",
+      "cat": "BoardMeeting",
+      "t": "10:43"
+    },
+    {
+      "sym": "KELLTONTEC",
+      "subj": "Kellton Tech Solutions Limited has informed the Exchange about Board Meeting to be held on 14-Nov-2026 to consider and approve the Half Yearly Unaudited Financial results of the Company for the period",
+      "cat": "BoardMeeting",
+      "t": "10:43"
+    },
+    {
+      "sym": "MANORG",
+      "subj": "To consider and approve the financial results for the period ended September 30, 2026 and other business matters",
+      "cat": "BoardMeeting",
+      "t": "10:43"
+    },
+    {
+      "sym": "FILATFASH",
+      "subj": "Date: November 05, 2026To,The General Manager Listing Department,BSE Limited National Stock Exchange LimitedP.J. Towers, Dalal Street, Exchange Plaza, C-1, Block-G,Mumbai - 400 001 Bandra Kurla Comple",
+      "cat": "BoardMeeting",
+      "t": "10:43"
+    },
+    {
+      "sym": "SHAHINVEST",
+      "subj": "To Consider and Approve  the Standalone and Consolidated Unaudited Financial Results of the Company for the quarter and half-year ended September 30, 2026, along with the Limited Review Report",
+      "cat": "BoardMeeting",
+      "t": "10:43"
+    },
+    {
+      "sym": "DHAMPURSUG",
+      "subj": "DHAMPUR SUGAR MILLS LIMITED has informed the Exchange about Board Meeting to be held on 14-Nov-2026 to consider and approve the Quarterly Unaudited Financial results of the Company for the period ende",
+      "cat": "BoardMeeting",
+      "t": "10:43"
+    },
+    {
+      "sym": "RKEC",
       "subj": "To consider and approve the financial results for the period ended September 30, 2026",
       "cat": "BoardMeeting",
-      "t": "10:39"
+      "t": "10:43"
     },
     {
-      "sym": "JAIPURKURT",
-      "subj": "NANDANI CREATION LIMITED has informed the Exchange about Board Meeting to be held on 14-Nov-2026 to inter-alia consider and approve the Unaudited Financial results of the Company for the Quarterly end",
-      "cat": "BoardMeeting",
-      "t": "10:39"
-    },
-    {
-      "sym": "JSIPL",
-      "subj": "JINDAL SUPREME(INDIA)LIMITED has informed the Exchange about Board Meeting to be held on 14-Nov-2026 to consider and approve the Half Yearly Unaudited Financial results of the Company for the period e",
-      "cat": "BoardMeeting",
-      "t": "10:39"
-    },
-    {
-      "sym": "SAKUMA",
-      "subj": "SAKUMA EXPORTS LIMITED has informed the Exchange about Board Meeting to be held on 14-Nov-2026 to inter-alia consider and approve the Unaudited Financial results of the Company for the Quarterly ended",
-      "cat": "BoardMeeting",
-      "t": "10:39"
-    },
-    {
-      "sym": "ANNAPURNA",
-      "subj": "Annapurna Swadisht Limited has informed the Exchange about Board Meeting to be held on 14-Nov-2026 to inter-alia consider and approve the Unaudited Financial results of the Company for the Quarterly e",
-      "cat": "BoardMeeting",
-      "t": "10:39"
-    },
-    {
-      "sym": "UMESLTD",
-      "subj": "USHA MARTIN EDUCATION & SOLUTIONS LIMITED has informed the Exchange about Board Meeting to be held on 13-Nov-2026 to inter-alia consider and approve the Unaudited Financial results of the Company for ",
-      "cat": "BoardMeeting",
-      "t": "10:39"
-    },
-    {
-      "sym": "AKSHOPTFBR",
+      "sym": "ALGOQUANT",
       "subj": "To consider and approve the financial results for the period ended September 30, 2026",
       "cat": "BoardMeeting",
-      "t": "10:39"
+      "t": "10:43"
     },
     {
-      "sym": "PANSARI",
-      "subj": "PANSARI DEVELOPERS LIMITED has informed the Exchange about Board Meeting to be held on 13-Nov-2026 to inter-alia consider and approve the Unaudited Financial results of the Company for the Half Yearly",
+      "sym": "NDLVENTURE",
+      "subj": "NDL VENTURES LIMITED has informed the Exchange about Board Meeting to be held on 13-Nov-2026 to inter-alia consider and approve the Unaudited Financial results of the Company for the Quarterly ended S",
       "cat": "BoardMeeting",
-      "t": "10:39"
+      "t": "10:43"
     },
     {
-      "sym": "CELEBRITY",
-      "subj": "To consider and approve the un-audited financial results for the quarter and half year ended 30th September 2026",
+      "sym": "ADVANIHOTR",
+      "subj": "ADVANI HOTELS AND RESORTS (INDIA) LIMITED has informed the Exchange about Board Meeting to be held on 12-Nov-2026 to inter-alia consider and approve the Unaudited Financial results of the Company for ",
       "cat": "BoardMeeting",
-      "t": "10:39"
+      "t": "10:43"
     },
     {
-      "sym": "ONELIFECAP",
-      "subj": "ONELIFE CAPITAL ADVISORS LIMITED has informed the Exchange about Board Meeting to be held on 13-Nov-2026 to consider and approve the Quarterly Unaudited Financial results of the Company for the period",
-      "cat": "BoardMeeting",
-      "t": "10:39"
-    },
-    {
-      "sym": "KAYA",
-      "subj": "Resignation",
-      "cat": "Management",
-      "t": "10:39"
-    },
-    {
-      "sym": "SVPGLOB",
-      "subj": "Outcome of Board Meeting",
-      "cat": "Results",
-      "t": "10:39"
-    },
-    {
-      "sym": "WHIRLPOOL",
-      "subj": "Outcome of Board Meeting",
-      "cat": "Results",
-      "t": "10:39"
-    },
-    {
-      "sym": "OLECTRA",
-      "subj": "Outcome of Board Meeting",
-      "cat": "Results",
-      "t": "10:39"
-    },
-    {
-      "sym": "IIFLCAPS",
-      "subj": "Open Offer",
-      "cat": "Corporate_Action",
-      "t": "10:39"
-    },
-    {
-      "sym": "SUNTECK",
+      "sym": "IKS",
       "subj": "Acquisition",
       "cat": "Corporate_Action",
-      "t": "10:39"
+      "t": "10:43"
     },
     {
-      "sym": "MEDICO",
+      "sym": "ARSSINFRA",
       "subj": "Outcome of Board Meeting",
       "cat": "Results",
-      "t": "10:39"
+      "t": "10:43"
     },
     {
-      "sym": "VEEGALAND",
-      "subj": "Resignation of Director/KMP/SMP",
+      "sym": "SURAKSHA",
+      "subj": "Outcome of Board Meeting",
+      "cat": "Results",
+      "t": "10:43"
+    },
+    {
+      "sym": "KALYANKJIL",
+      "subj": "Outcome of Board Meeting",
+      "cat": "Results",
+      "t": "10:43"
+    },
+    {
+      "sym": "AVANTIFEED",
+      "subj": "Outcome of Board Meeting",
+      "cat": "Results",
+      "t": "10:43"
+    },
+    {
+      "sym": "PILANIINVS",
+      "subj": "Outcome of Board Meeting",
+      "cat": "Results",
+      "t": "10:43"
+    },
+    {
+      "sym": "QUADFUTURE",
+      "subj": "Outcome of Board Meeting",
+      "cat": "Results",
+      "t": "10:43"
+    },
+    {
+      "sym": "SIGNATURE",
+      "subj": "Resignation",
       "cat": "Management",
-      "t": "10:39"
+      "t": "10:43"
     },
     {
-      "sym": "GICRE",
+      "sym": "HUHTAMAKI",
       "subj": "Appointment",
       "cat": "Management",
-      "t": "10:39"
+      "t": "10:43"
     },
     {
-      "sym": "SUDARSHAN",
+      "sym": "SIGNATURE",
       "subj": "Resignation of Director/KMP/SMP",
       "cat": "Management",
-      "t": "10:39"
+      "t": "10:43"
     },
     {
-      "sym": "SUDARSHAN",
-      "subj": "Resignation",
-      "cat": "Management",
-      "t": "10:39"
+      "sym": "SIMPLEXINF",
+      "subj": "Outcome of Board Meeting",
+      "cat": "Results",
+      "t": "10:43"
     },
     {
-      "sym": "EPACKPEB",
-      "subj": "Resignation",
-      "cat": "Management",
-      "t": "10:39"
+      "sym": "CONSOFINVT",
+      "subj": "Outcome of Board Meeting",
+      "cat": "Results",
+      "t": "10:43"
     },
     {
-      "sym": "EPACKPEB",
-      "subj": "Resignation of Director/KMP/SMP",
-      "cat": "Management",
-      "t": "10:39"
-    },
-    {
-      "sym": "MAITHANALL",
-      "subj": "Resignation of Director/KMP/SMP",
-      "cat": "Management",
-      "t": "10:39"
-    },
-    {
-      "sym": "SCHAND",
-      "subj": "Change in Director(s)",
-      "cat": "Management",
-      "t": "10:39"
+      "sym": "MMTC",
+      "subj": "Outcome of Board Meeting",
+      "cat": "Results",
+      "t": "10:43"
     }
   ],
   "belief_log": [
     {
-      "dir": "\u2191",
-      "ticker": "CANBK",
-      "type": "ConfluenceSignal",
-      "from": 0.5,
-      "to": 0.53,
-      "reason": "new_price_data_supports_signal",
-      "ts": "2026-11-10 10:39:43"
-    },
-    {
-      "dir": "\u2191",
-      "ticker": "CANBK",
-      "type": "ConfluenceSignal",
-      "from": 0.5,
-      "to": 0.53,
-      "reason": "new_price_data_supports_signal",
-      "ts": "2026-11-10 10:39:43"
-    },
-    {
-      "dir": "\u2191",
-      "ticker": "CANBK",
-      "type": "ConfluenceSignal",
-      "from": 0.6,
-      "to": 0.624,
-      "reason": "new_price_data_supports_signal",
-      "ts": "2026-11-10 10:39:43"
-    },
-    {
-      "dir": "\u2191",
-      "ticker": "CANBK",
-      "type": "ConfluenceSignal",
-      "from": 0.6,
-      "to": 0.624,
-      "reason": "new_price_data_supports_signal",
-      "ts": "2026-11-10 10:39:43"
-    },
-    {
-      "dir": "\u2191",
-      "ticker": "CANBK",
-      "type": "ConfluenceSignal",
-      "from": 0.5,
-      "to": 0.53,
-      "reason": "new_price_data_supports_signal",
-      "ts": "2026-11-10 10:39:43"
+      "dir": "\u2193",
+      "ticker": "CAMS",
+      "type": "TrendSummary",
+      "from": 0.543,
+      "to": 0.536,
+      "reason": "temporal_decay",
+      "ts": "2026-11-11 10:44:30"
     },
     {
       "dir": "\u2193",
       "ticker": "CANBK",
       "type": "TrendSummary",
-      "from": 0.544,
-      "to": 0.538,
+      "from": 0.538,
+      "to": 0.532,
       "reason": "temporal_decay",
-      "ts": "2026-11-10 10:39:43"
+      "ts": "2026-11-11 10:44:30"
     },
     {
       "dir": "\u2193",
       "ticker": "CANBK",
       "type": "TrendSummary",
-      "from": 0.544,
-      "to": 0.538,
+      "from": 0.538,
+      "to": 0.532,
       "reason": "temporal_decay",
-      "ts": "2026-11-10 10:39:43"
+      "ts": "2026-11-11 10:44:30"
     },
     {
       "dir": "\u2193",
       "ticker": "CANBK",
       "type": "ConfluenceSignal",
-      "from": 0.53,
-      "to": 0.526,
+      "from": 0.526,
+      "to": 0.521,
       "reason": "temporal_decay",
-      "ts": "2026-11-10 10:39:43"
+      "ts": "2026-11-11 10:44:30"
     },
     {
       "dir": "\u2193",
       "ticker": "CANBK",
       "type": "ConfluenceSignal",
-      "from": 0.53,
-      "to": 0.526,
+      "from": 0.526,
+      "to": 0.522,
       "reason": "temporal_decay",
-      "ts": "2026-11-10 10:39:43"
-    },
-    {
-      "dir": "\u2191",
-      "ticker": "CANFINHOME",
-      "type": "ConfluenceSignal",
-      "from": 0.5,
-      "to": 0.53,
-      "reason": "new_price_data_supports_signal",
-      "ts": "2026-11-10 10:39:43"
-    },
-    {
-      "dir": "\u2191",
-      "ticker": "CANFINHOME",
-      "type": "ConfluenceSignal",
-      "from": 0.5,
-      "to": 0.53,
-      "reason": "new_price_data_supports_signal",
-      "ts": "2026-11-10 10:39:43"
-    },
-    {
-      "dir": "\u2191",
-      "ticker": "CANFINHOME",
-      "type": "ConfluenceSignal",
-      "from": 0.6,
-      "to": 0.624,
-      "reason": "new_price_data_supports_signal",
-      "ts": "2026-11-10 10:39:43"
-    },
-    {
-      "dir": "\u2191",
-      "ticker": "CANFINHOME",
-      "type": "ConfluenceSignal",
-      "from": 0.6,
-      "to": 0.624,
-      "reason": "new_price_data_supports_signal",
-      "ts": "2026-11-10 10:39:43"
-    },
-    {
-      "dir": "\u2191",
-      "ticker": "CANFINHOME",
-      "type": "ConfluenceSignal",
-      "from": 0.5,
-      "to": 0.53,
-      "reason": "new_price_data_supports_signal",
-      "ts": "2026-11-10 10:39:43"
+      "ts": "2026-11-11 10:44:30"
     },
     {
       "dir": "\u2193",
       "ticker": "CANFINHOME",
       "type": "TrendSummary",
-      "from": 0.544,
-      "to": 0.538,
+      "from": 0.538,
+      "to": 0.532,
       "reason": "temporal_decay",
-      "ts": "2026-11-10 10:39:43"
+      "ts": "2026-11-11 10:44:30"
+    },
+    {
+      "dir": "\u2193",
+      "ticker": "CANFINHOME",
+      "type": "ConfluenceSignal",
+      "from": 0.526,
+      "to": 0.521,
+      "reason": "temporal_decay",
+      "ts": "2026-11-11 10:44:30"
+    },
+    {
+      "dir": "\u2193",
+      "ticker": "CANFINHOME",
+      "type": "ConfluenceSignal",
+      "from": 0.526,
+      "to": 0.522,
+      "reason": "temporal_decay",
+      "ts": "2026-11-11 10:44:30"
+    },
+    {
+      "dir": "\u2193",
+      "ticker": "CANHLIFE",
+      "type": "TrendSummary",
+      "from": 0.538,
+      "to": 0.532,
+      "reason": "temporal_decay",
+      "ts": "2026-11-11 10:44:30"
+    },
+    {
+      "dir": "\u2193",
+      "ticker": "CANHLIFE",
+      "type": "TrendSummary",
+      "from": 0.538,
+      "to": 0.532,
+      "reason": "temporal_decay",
+      "ts": "2026-11-11 10:44:30"
+    },
+    {
+      "dir": "\u2193",
+      "ticker": "CANHLIFE",
+      "type": "TrendSummary",
+      "from": 0.538,
+      "to": 0.532,
+      "reason": "temporal_decay",
+      "ts": "2026-11-11 10:44:30"
+    },
+    {
+      "dir": "\u2193",
+      "ticker": "CAPILLARY",
+      "type": "TrendSummary",
+      "from": 0.543,
+      "to": 0.536,
+      "reason": "temporal_decay",
+      "ts": "2026-11-11 10:44:30"
+    },
+    {
+      "dir": "\u2193",
+      "ticker": "CAPILLARY",
+      "type": "CorporateEvent",
+      "from": 0.801,
+      "to": 0.75,
+      "reason": "temporal_decay",
+      "ts": "2026-11-11 10:44:30"
+    },
+    {
+      "dir": "\u2191",
+      "ticker": "CAPILLARY",
+      "type": "ConfluenceSignal",
+      "from": 0.636,
+      "to": 0.669,
+      "reason": "multi_type_support",
+      "ts": "2026-11-11 10:44:30"
+    },
+    {
+      "dir": "\u2191",
+      "ticker": "CAPILLARY",
+      "type": "ConfluenceSignal",
+      "from": 0.636,
+      "to": 0.669,
+      "reason": "multi_type_support",
+      "ts": "2026-11-11 10:44:30"
     }
   ],
   "conf_by_type": [
     {
       "type": "ConfluenceSignal",
-      "n": 67,
-      "conf": 0.594,
-      "confirmed": 6
+      "n": 79,
+      "conf": 0.604,
+      "confirmed": 14
     },
     {
       "type": "CorporateEvent",
-      "n": 1137,
-      "conf": 0.588,
-      "confirmed": 295
-    },
-    {
-      "type": "TrendSummary",
-      "n": 267,
-      "conf": 0.519,
-      "confirmed": 0
+      "n": 1186,
+      "conf": 0.586,
+      "confirmed": 307
     },
     {
       "type": "MetricValue",
-      "n": 2030,
-      "conf": 0.516,
-      "confirmed": 159
+      "n": 2900,
+      "conf": 0.524,
+      "confirmed": 342
+    },
+    {
+      "type": "TrendSummary",
+      "n": 521,
+      "conf": 0.514,
+      "confirmed": 0
     },
     {
       "type": "PriceSnapshot",
@@ -4863,27 +5583,37 @@
   "top_signals": [
     {
       "ticker": "BHARATCOAL",
-      "conf": 0.689,
+      "conf": 0.717,
       "state": "confirmed"
     },
     {
       "ticker": "BLS",
-      "conf": 0.689,
+      "conf": 0.717,
       "state": "confirmed"
     },
     {
       "ticker": "BHARATCOAL",
-      "conf": 0.689,
+      "conf": 0.717,
       "state": "confirmed"
     },
     {
       "ticker": "BLS",
-      "conf": 0.689,
+      "conf": 0.717,
+      "state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "conf": 0.683,
+      "state": "confirmed"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "conf": 0.683,
       "state": "confirmed"
     },
     {
       "ticker": "3MINDIA",
-      "conf": 0.676,
+      "conf": 0.677,
       "state": "confirmed"
     },
     {
@@ -4893,23 +5623,13 @@
     },
     {
       "ticker": "CAPILLARY",
-      "conf": 0.636,
-      "state": "forming"
+      "conf": 0.669,
+      "state": "confirmed"
     },
     {
       "ticker": "BHARATCOAL",
-      "conf": 0.636,
-      "state": "forming"
-    },
-    {
-      "ticker": "BLS",
-      "conf": 0.636,
-      "state": "forming"
-    },
-    {
-      "ticker": "CAPILLARY",
-      "conf": 0.636,
-      "state": "forming"
+      "conf": 0.669,
+      "state": "confirmed"
     }
   ],
   "fii_dii": [
@@ -4919,7 +5639,7 @@
       "buy_value": "20310.99",
       "sell_value": "13098.77",
       "net_value": "7212.22",
-      "ts": "2026-11-10T09:40:26.693821"
+      "ts": "2026-11-11T09:35:17.582930"
     },
     {
       "category": "DII",
@@ -4927,7 +5647,7 @@
       "buy_value": "12764.97",
       "sell_value": "19937.5",
       "net_value": "-7172.53",
-      "ts": "2026-11-10T09:40:26.691449"
+      "ts": "2026-11-11T09:35:17.580405"
     },
     {
       "category": "FII/FPI",
@@ -5019,7 +5739,7 @@
       "ticker": "AVANTIFEED",
       "composite_score": 0.6741,
       "quality_tier": "B",
-      "rank": 15,
+      "rank": 16,
       "conf": 0.704,
       "quality_score": 0.95,
       "peer_verdict": "insufficient_data",
@@ -5029,7 +5749,7 @@
       "ticker": "CANFINHOME",
       "composite_score": 0.6726,
       "quality_tier": "B",
-      "rank": 19,
+      "rank": 22,
       "conf": 0.744,
       "quality_score": 0.8,
       "peer_verdict": "mid_quartile",
@@ -5039,7 +5759,7 @@
       "ticker": "AURIONPRO",
       "composite_score": 0.6573,
       "quality_tier": "B",
-      "rank": 32,
+      "rank": 38,
       "conf": 0.612,
       "quality_score": 0.95,
       "peer_verdict": "mid_quartile",
@@ -5049,7 +5769,7 @@
       "ticker": "ABREL",
       "composite_score": 0.6494,
       "quality_tier": "B",
-      "rank": 35,
+      "rank": 41,
       "conf": 0.736,
       "quality_score": 0.8,
       "peer_verdict": "insufficient_data",
@@ -5059,7 +5779,7 @@
       "ticker": "BLACKBUCK",
       "composite_score": 0.6481,
       "quality_tier": "B",
-      "rank": 37,
+      "rank": 44,
       "conf": 0.639,
       "quality_score": 0.95,
       "peer_verdict": "insufficient_data",
@@ -5069,7 +5789,7 @@
       "ticker": "BAJAJHFL",
       "composite_score": 0.6472,
       "quality_tier": "B",
-      "rank": 38,
+      "rank": 45,
       "conf": 0.618,
       "quality_score": 0.9,
       "peer_verdict": "mid_quartile",
@@ -5079,7 +5799,7 @@
       "ticker": "BLS",
       "composite_score": 0.6403,
       "quality_tier": "B",
-      "rank": 40,
+      "rank": 47,
       "conf": 0.682,
       "quality_score": 0.85,
       "peer_verdict": "insufficient_data",
@@ -5089,7 +5809,7 @@
       "ticker": "AADHARHFC",
       "composite_score": 0.6314,
       "quality_tier": "B",
-      "rank": 44,
+      "rank": 51,
       "conf": 0.891,
       "quality_score": 0.8,
       "peer_verdict": "bottom_quartile",
@@ -5099,7 +5819,7 @@
       "ticker": "BHARATCOAL",
       "composite_score": 0.6304,
       "quality_tier": "B",
-      "rank": 46,
+      "rank": 54,
       "conf": 0.751,
       "quality_score": 0.7,
       "peer_verdict": "insufficient_data",
@@ -5109,7 +5829,7 @@
       "ticker": "CAPILLARY",
       "composite_score": 0.5581,
       "quality_tier": "B",
-      "rank": 52,
+      "rank": 61,
       "conf": 0.614,
       "quality_score": 0.95,
       "peer_verdict": "bottom_quartile",
@@ -5119,7 +5839,7 @@
       "ticker": "CANBK",
       "composite_score": 0.5548,
       "quality_tier": "B",
-      "rank": 56,
+      "rank": 67,
       "conf": 0.687,
       "quality_score": 0.5,
       "peer_verdict": "insufficient_data",
@@ -5129,7 +5849,7 @@
       "ticker": "BANKBARODA",
       "composite_score": 0.5512,
       "quality_tier": "B",
-      "rank": 62,
+      "rank": 73,
       "conf": 0.678,
       "quality_score": 0.5,
       "peer_verdict": "insufficient_data",
@@ -5139,7 +5859,7 @@
       "ticker": "AUBANK",
       "composite_score": 0.5396,
       "quality_tier": "C",
-      "rank": 63,
+      "rank": 74,
       "conf": 0.649,
       "quality_score": 0.5,
       "peer_verdict": "insufficient_data",
@@ -5149,7 +5869,7 @@
       "ticker": "AXISBANK",
       "composite_score": 0.52,
       "quality_tier": "C",
-      "rank": 67,
+      "rank": 79,
       "conf": 0.6,
       "quality_score": 0.5,
       "peer_verdict": "insufficient_data",

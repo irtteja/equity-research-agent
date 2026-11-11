@@ -2462,3 +2462,51 @@ Progress: fetch_results(0), context_agent(2500 eps), trend_agent(254 trends), al
 Next: bhavcopy after 20:00 IST; monitor backfill_graph bg task
 Blockers: context_agent backlog 154686 episodes
 ============================================================
+
+[CHECKPOINT] 2026-11-11 10:40
+Task: None
+Status: completed
+Progress: xbrl=3291 quarters, docs=0 facts; graph=36938n/128331e
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-11 10:43
+Task: daily-monitor-2026-11-11
+Status: in_progress
+Progress: step 5e: 0 analyst items enqueued
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-11 10:43
+Task: daily-monitor-2026-11-11
+Status: in_progress
+Progress: step 5f: {'announcements': 74, 'board_meetings': 12, 'saved': True, 'error': None}
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-11 10:44
+Task: daily-monitor-2026-11-11
+Status: in_progress
+Progress: step 5g: analysis+synthesis done
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-11 10:44
+Task: daily-monitor-2026-11-11
+Status: in_progress
+Progress: step 5h: meta done — enqueued=48
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-11 10:44
+Task: daily-monitor-2026-11-11
+Status: completed_with_errors
+Progress: Macro, FII/DII, 0 facts ingested, bhavcopy 0 rows, block/bulk deals
+Next: Review material announcements, update PROGRESS.md
+Blockers: structured_results, indices_bhavcopy, corp_events
+============================================================

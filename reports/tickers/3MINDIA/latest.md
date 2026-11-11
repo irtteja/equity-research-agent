@@ -1,5 +1,5 @@
 # 3MINDIA — 3MINDIA
-*Diversified | Diversified | 2026-11-10*
+*Diversified | Diversified | 2026-11-11*
 
 ---
 
@@ -18,12 +18,12 @@
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 67.6% |
+| Confidence | 67.7% |
 | Belief State | ✅ CONFIRMED |
-| Conviction Score | 0.50 |
+| Conviction Score | 0.49 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | negative_news_flow (0.38) |
-| Net Conviction | 0.65 |
+| Net Conviction | 0.68 |
 
 ## PRICE & TECHNICALS
 
@@ -77,6 +77,7 @@ No material bear arguments identified.
 ℹ️ **Monitor:** [strong_buy_conviction] 3MINDIA high-conviction BUY with high business quality (conf=94%, quality=0.85)
 ℹ️ **Monitor:** [strong_buy_conviction] 3MINDIA high-conviction BUY with high business quality (conf=94%, quality=0.85)
 ℹ️ **Monitor:** [strong_buy_conviction] 3MINDIA high-conviction BUY with high business quality (conf=94%, quality=0.85)
+ℹ️ **Monitor:** [strong_buy_conviction] 3MINDIA high-conviction BUY with high business quality (conf=94%, quality=0.85)
 
 ## PEER CONTEXT
 
@@ -90,7 +91,7 @@ No material bear arguments identified.
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.38
+**Global Signal:** —  |  **Score:** 0.3
 
 ## FUNDAMENTALS
 
@@ -106,4 +107,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 68% | Generated: 2026-11-10 10:39 | Next review: +30d*
+*Confidence: 68% | Generated: 2026-11-11 10:44 | Next review: +30d*
