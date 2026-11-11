@@ -2582,3 +2582,11 @@ Progress: 20:10 IST — indices bhavcopy saved, MetricValue all enriched
 Next: NSE announces + XBRL nightly
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-11 15:03
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 160,215 unprocessed — ContextAgent lagging
+============================================================
