@@ -2422,3 +2422,43 @@ Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 2
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 141,259 unprocessed — ContextAgent lagging; Bhavcopy stale — latest is 2026-11-06
 ============================================================
+
+[CHECKPOINT] 2026-11-11 10:35
+Task: None
+Status: completed
+Progress: trends_written=254 strong=254 workers=4 errors=0
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-11 10:36
+Task: None
+Status: completed
+Progress: alerts=0 critical=0 as_of=2026-11-11
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-11 10:36
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 2
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 156,481 unprocessed — ContextAgent lagging; Bhavcopy stale — latest is 2026-11-06
+============================================================
+
+[CHECKPOINT] 2026-11-11 10:36
+Task: None
+Status: completed
+Progress: fetch_results(0 fetched), backfill_graph(running bg), context_agent(2500 processed), trend_agent(254 trends), alert_agent(ok), orchestrator(12 BUY confluences)
+Next: await backfill_graph completion; bhavcopy available after 20:00 IST
+Blockers: context_agent backlog 154686 pending episodes
+============================================================
+
+[CHECKPOINT] 2026-11-11 10:36
+Task: daily_brief_2026-11-11
+Status: completed
+Progress: fetch_results(0), context_agent(2500 eps), trend_agent(254 trends), alert_agent(ok), orchestrator(12 BUY)
+Next: bhavcopy after 20:00 IST; monitor backfill_graph bg task
+Blockers: context_agent backlog 154686 episodes
+============================================================
