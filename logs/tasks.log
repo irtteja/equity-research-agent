@@ -2654,3 +2654,11 @@ Progress: 02:10 IST Nov 12 — post-midnight heartbeat; graph.db intact; announc
 Next: next watchdog wake ~04:10 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-11 21:02
+Task: nightly-2026-11-11
+Status: completed
+Progress: git pull (new ticker reports), context_agent (0), trend_agent (0)
+Next: await new XBRL data
+Blockers: none
+============================================================
