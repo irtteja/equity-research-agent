@@ -2646,3 +2646,11 @@ Progress: calendar loaded 642 events; 0 companies scheduled for XBRL fetch on 20
 Next: 8am retry trigger will run; results for AVANTIFEED/COCHINSHIP/MRF/KALYANKJIL filed via NSE but not in calendar
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-11 20:40
+Task: watchdog
+Status: completed
+Progress: 02:10 IST Nov 12 — post-midnight heartbeat; graph.db intact; announcements + nightly XBRL complete
+Next: next watchdog wake ~04:10 IST
+Blockers: none
+============================================================
