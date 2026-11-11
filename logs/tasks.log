@@ -2558,3 +2558,11 @@ Progress: heartbeat 18:10 IST — daily_monitor done, after-hours feed done
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-11 13:03
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 160,215 unprocessed — ContextAgent lagging
+============================================================
