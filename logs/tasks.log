@@ -2366,3 +2366,11 @@ Progress: pre-market heartbeat 08:10 IST Nov 11; graph.db healthy (867 co, 2030 
 Next: next watchdog wake; NSE live feed triggers start at market open
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-11 03:02
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 2
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 141,259 unprocessed — ContextAgent lagging; Bhavcopy stale — latest is 2026-11-06
+============================================================
