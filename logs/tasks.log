@@ -3038,3 +3038,11 @@ Progress: Context compacted and resumed. After-hours feed 04:18 committed (19813
 Next: Await pre-market triggers ~09:00 IST: NSE Daily Brief, NSE Live Feed
 Blockers: None
 ============================================================
+
+[CHECKPOINT] 2026-11-12 23:02
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 185,434 unprocessed — ContextAgent lagging
+============================================================
