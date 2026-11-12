@@ -2686,3 +2686,11 @@ Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 160,215 unprocessed — ContextAgent lagging
 ============================================================
+
+[CHECKPOINT] 2026-11-12 00:41
+Task: watchdog
+Status: completed
+Progress: 06:10 IST Nov 12 — pre-market heartbeat; graph intact; market opens 09:15
+Next: NSE live feed at market open
+Blockers: none
+============================================================
