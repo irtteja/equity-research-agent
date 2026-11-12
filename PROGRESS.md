@@ -1,6 +1,24 @@
 # Progress Log
 
-## 2026-11-12 — Full trading day: live feed, orchestrator, daily brief, daily monitor
+## 2026-11-13 — Pre-dawn resume after context compaction at 04:20 IST
+
+### Done
+- **Context compaction recovery**: session resumed cleanly at 04:20 IST; repo was clean after prior commit `1981320`
+- **After-hours feed 04:18 IST** (committed `1981320`): 42 nodes — top_movers(20), fii_dii(2), option_chains(2), market_status(1), bulk_deals(1), insider(0)
+- **Orchestrator**: 12 BUY confluences fully stable — ABREL(0.77), BHARATCOAL(0.75), CANFINHOME(0.74), BLS(0.74), AVANTIFEED(0.73), AUBANK(0.69), CANBK(0.69), BAJAJHFL(0.68), BLACKBUCK(0.64), AXISBANK(0.63), CAPILLARY(0.61), AURIONPRO(0.61)
+- **Self-model**: reflection applied (v72+)
+
+### Architecture changes
+- None
+
+### Pending / next sessions
+- Pre-market: NSE Live Feed (09:15 IST), NSE Daily Brief (pre-open)
+- Fix price_agent_runner: add post-market time guard
+- Fix context_agent import: `agents/` module missing
+- Episode backlog: 185,434 unprocessed — ContextAgent pipeline gap
+- Annual reports PDF extraction: 819 PDFs downloaded, pipeline not built
+
+## 2026-11-12 — Full trading day + overnight: live feed, bhavcopy, announcements analysis
 
 ### Done
 - **Live feed**: 6 market-hours cycles (10:05–15:05 IST) — 42 nodes/run; all 11 endpoints polled across day

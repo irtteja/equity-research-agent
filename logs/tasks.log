@@ -3022,3 +3022,19 @@ Progress: 04:10 IST heartbeat. Orchestrator: 12 BUY confluences stable. Episode 
 Next: pre-market triggers ~8am IST
 Blockers: episode backlog (ContextAgent stalled)
 ============================================================
+
+[CHECKPOINT] 2026-11-12 22:50
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 185,434 unprocessed — ContextAgent lagging
+============================================================
+
+[CHECKPOINT] 2026-11-12 22:50
+Task: None
+Status: completed
+Progress: Context compacted and resumed. After-hours feed 04:18 committed (1981320). Orchestrator: 12 BUY confluences stable. Repo clean.
+Next: Await pre-market triggers ~09:00 IST: NSE Daily Brief, NSE Live Feed
+Blockers: None
+============================================================

@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-11",
-  "version": 72,
+  "last_updated": "2026-11-12",
+  "version": 73,
   "patterns": {
     "confirmed": [
       {
@@ -649,6 +649,12 @@
         "pattern": "MetricValue nodes: context_agent enriches these (not episodes table)",
         "first_seen": "2026-11-11",
         "last_seen": "2026-11-11",
+        "count": 1
+      },
+      {
+        "pattern": "after-hours feed commits nse_feed_schedule.json — must explicit git add",
+        "first_seen": "2026-11-12",
+        "last_seen": "2026-11-12",
         "count": 1
       }
     ],
@@ -1335,6 +1341,10 @@
       {
         "signal": "orchestrator self-check detects stalled agents correctly",
         "added": "2026-11-11"
+      },
+      {
+        "signal": "orchestrator 12 BUY confluences fully stable overnight Nov 12-13",
+        "added": "2026-11-12"
       }
     ],
     "gaps": [
@@ -1986,10 +1996,6 @@
   "session_log": [
     {
       "date": "2026-11-04",
-      "note": "Session 14: discovered CCR proxy checks session sources only; updated all 11 non-persistent triggers with add_repo instruction; test fire in progress to verify"
-    },
-    {
-      "date": "2026-11-04",
       "note": "Session 15: confirmed add_repo unavailable in Default-env triggered sessions; cleaned all 11 trigger prompts; user must add repo to non-Default env to fix git push"
     },
     {
@@ -2103,6 +2109,10 @@
     {
       "date": "2026-11-11",
       "note": "Nov 11 full trading day post-holiday: 7 live feeds, 5 orchestrator cycles, daily_monitor, both bhavcopies complete; 12 BUY confluences unchanged all day; clarified episodes vs MetricValue backlog distinction"
+    },
+    {
+      "date": "2026-11-12",
+      "note": "context compaction resume at 04:20 IST Nov 13 — repo clean, 12 confluences stable, awaiting pre-market"
     }
   ]
 }
