@@ -2694,3 +2694,11 @@ Progress: 06:10 IST Nov 12 — pre-market heartbeat; graph intact; market opens 
 Next: NSE live feed at market open
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-12 01:02
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 2
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 160,215 unprocessed — ContextAgent lagging; No ConfluenceSignal nodes for today — first run or no signals met threshold
+============================================================
