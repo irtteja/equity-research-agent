@@ -2902,3 +2902,19 @@ Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 185,434 unprocessed — ContextAgent lagging
 ============================================================
+
+[CHECKPOINT] 2026-11-12 14:41
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 185,434 unprocessed — ContextAgent lagging
+============================================================
+
+[CHECKPOINT] 2026-11-12 14:41
+Task: watchdog-20:11-IST
+Status: completed
+Progress: bhavcopy saved (749 rows), indices bhavcopy saved (162 rows), after-hours live feed (42 nodes), orchestrator 12 BUY confluences stable. Daily_monitor already ran. Bhavcopy available after 20:00 IST as expected.
+Next: next watchdog / announcement fetch
+Blockers: episode backlog 185434 (ContextAgent stalled)
+============================================================
