@@ -2894,3 +2894,11 @@ Progress: post-market orchestrator ran — 12 BUY confluences stable, episode ba
 Next: next watchdog wake / after-hours feed / bhavcopy after 20:00 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-12 13:03
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 185,434 unprocessed — ContextAgent lagging
+============================================================
