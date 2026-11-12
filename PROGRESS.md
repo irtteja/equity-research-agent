@@ -1,5 +1,31 @@
 # Progress Log
 
+## 2026-11-12 — Full trading day: live feed, orchestrator, daily brief, daily monitor
+
+### Done
+- **Live feed**: 6 market-hours cycles (10:05–15:05 IST) — 42 nodes/run; all 11 endpoints polled across day
+- **Orchestrator**: multiple cycles throughout day — 12 stable BUY_CONFLUENCE signals unchanged since Nov 9
+  - Top: ABREL(0.77), BHARATCOAL(0.75), CANFINHOME(0.74), BLS(0.74), AVANTIFEED(0.73)
+- **NSE Daily Brief** (16:00 IST):
+  - `fetch_results.py`: 0 companies scheduled
+  - `backfill_graph.py`: completed — 4,095 PriceSnapshot, 521 TrendSummary, graph 11,748 nodes / 154,626 edges
+  - `trend_agent_runner.py`: ran — DBREALTY(+97.7%), GOLDIAM(+98.7%), EXIDEIND(+62.1%) up; FACT(-425.5%) down
+  - `alert_agent_runner.py`: completed
+  - `context_agent`: module `agents` not found — gap logged
+- **daily_monitor.py** (16:10 IST): 16 research reports; dashboard_data.json — 464 tickers, 23 sectors, 1,031 confirmed beliefs
+- **Bhavcopy** (16:32 IST): too_early — NSE publishes after ~18:00 IST; nightly feed will retry
+- **price_agent_runner**: timed out post-market (known bug — needs time-of-day guard)
+- **Knowledge graph**: 11,748 nodes (after backfill); belief 1,031 confirmed / 10,717 forming
+
+### Architecture changes
+- None today
+
+### Pending / next sessions
+- Fix price_agent_runner: add post-market time guard (skip if >15:30 IST)
+- Build `agents/` module with ContextAgent class (or point daily brief to correct module path)
+- Bhavcopy retry: nightly after-hours feed trigger should catch it
+- Episode backlog: 160k unprocessed — ContextAgent pipeline gap
+
 ## 2026-11-11 — Full trading day post-holiday: live feed, orchestrator, daily monitor, bhavcopy
 
 ### Done
