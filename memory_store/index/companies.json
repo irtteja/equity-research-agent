@@ -455,5 +455,40 @@
     "last_filing": "2026-11-10",
     "last_ingested": "2026-11-11",
     "last_updated": "2026-11-11"
+  },
+  "IIFLCAPS": {
+    "last_filing": "2026-11-12",
+    "last_ingested": "2026-11-12",
+    "last_updated": "2026-11-12"
+  },
+  "TATAPOWER": {
+    "last_filing": "2026-11-12",
+    "last_ingested": "2026-11-12",
+    "last_updated": "2026-11-12"
+  },
+  "HINDCOPPER": {
+    "last_filing": "2026-11-12",
+    "last_ingested": "2026-11-12",
+    "last_updated": "2026-11-12"
+  },
+  "CUPID": {
+    "last_filing": "2026-11-12",
+    "last_ingested": "2026-11-12",
+    "last_updated": "2026-11-12"
+  },
+  "GRSE": {
+    "last_filing": "2026-11-12",
+    "last_ingested": "2026-11-12",
+    "last_updated": "2026-11-12"
+  },
+  "TRITURBINE": {
+    "last_filing": "2026-11-12",
+    "last_ingested": "2026-11-12",
+    "last_updated": "2026-11-12"
+  },
+  "ADANIENT": {
+    "last_filing": "2026-11-12",
+    "last_ingested": "2026-11-12",
+    "last_updated": "2026-11-12"
   }
 }
