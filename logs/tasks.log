@@ -2918,3 +2918,11 @@ Progress: bhavcopy saved (749 rows), indices bhavcopy saved (162 rows), after-ho
 Next: next watchdog / announcement fetch
 Blockers: episode backlog 185434 (ContextAgent stalled)
 ============================================================
+
+[CHECKPOINT] 2026-11-12 15:03
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 185,434 unprocessed — ContextAgent lagging
+============================================================
