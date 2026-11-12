@@ -1,5 +1,5 @@
 # BANKBARODA — BANKBARODA
-*Financial Services | Banks | 2026-11-11*
+*Financial Services | Banks | 2026-11-12*
 
 ---
 
@@ -9,7 +9,7 @@ BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentu
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 62% confidence / FORMING state
+- **Signal:** BUY / 61% confidence / FORMING state
 - **Key driver:** BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentum 0.99)
 - **Watch:** No material bear arguments at this time (bear score 0.00)
 
@@ -18,9 +18,9 @@ BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentu
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 62.4% |
+| Confidence | 61.2% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.50 |
+| Conviction Score | 0.51 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
 | Net Conviction | 0.62 |
@@ -88,7 +88,7 @@ No material bear arguments identified.
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.38
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -106,4 +106,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 62% | Generated: 2026-11-11 10:44 | Next review: +30d*
+*Confidence: 61% | Generated: 2026-11-12 10:45 | Next review: +30d*

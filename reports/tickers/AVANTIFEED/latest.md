@@ -1,5 +1,5 @@
 # AVANTIFEED — AVANTIFEED
-*Fast Moving Consumer Goods | Food Products | 2026-11-11*
+*Fast Moving Consumer Goods | Food Products | 2026-11-12*
 
 ---
 
@@ -9,7 +9,7 @@ AVANTIFEED is 9.9% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 66% confidence / CONFIRMED state
+- **Signal:** BUY / 64% confidence / FORMING state
 - **Key driver:** AVANTIFEED is 9.9% from 52W low with revenue improving 2 quarters (momentum 1.00)
 - **Watch:** No material bear arguments at this time (bear score 0.00)
 
@@ -18,10 +18,10 @@ AVANTIFEED is 9.9% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 66.3% |
-| Belief State | ✅ CONFIRMED |
-| Conviction Score | 0.52 |
-| Conviction Trend (7d) | → STABLE |
+| Confidence | 63.6% |
+| Belief State | 🔵 FORMING |
+| Conviction Score | 0.53 |
+| Conviction Trend (7d) | ↗ RISING |
 | Sentiment | no_data (0.50) |
 | Net Conviction | 0.50 |
 
@@ -76,6 +76,7 @@ No material bear arguments identified.
 
 ℹ️ **Monitor:** [strong_buy_conviction] AVANTIFEED high-conviction BUY with high business quality (conf=74%, quality=0.95)
 ℹ️ **Monitor:** [strong_buy_conviction] AVANTIFEED high-conviction BUY with high business quality (conf=74%, quality=0.95)
+ℹ️ **Monitor:** [strong_buy_conviction] AVANTIFEED high-conviction BUY with high business quality (conf=74%, quality=0.95)
 ℹ️ **Monitor:** [strong_buy_conviction] AVANTIFEED high-conviction BUY with high business quality (conf=76%, quality=0.95)
 ℹ️ **Monitor:** [new_buy_signal] New BUY signal for AVANTIFEED
 
@@ -91,7 +92,7 @@ No material bear arguments identified.
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.38
 
 **Sector sensitivity:** Fast Moving Consumer Goods is sensitive to rural demand and input cost inflation.
 
@@ -109,4 +110,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 66% | Generated: 2026-11-11 10:44 | Next review: +30d*
+*Confidence: 64% | Generated: 2026-11-12 10:45 | Next review: +30d*

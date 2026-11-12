@@ -1,5 +1,5 @@
 # AUBANK — AUBANK
-*Financial Services | Banks | 2026-11-11*
+*Financial Services | Banks | 2026-11-12*
 
 ---
 
@@ -20,7 +20,7 @@ AUBANK is 11.7% from 52W low with total_income improving 3 quarters (momentum 1.
 | Signal | 🟢 **BUY** |
 | Confidence | 60.0% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.50 |
+| Conviction Score | 0.51 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
 | Net Conviction | 0.50 |
@@ -88,7 +88,7 @@ No material bear arguments identified.
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.38
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -106,4 +106,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-11 10:44 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-12 10:45 | Next review: +30d*
