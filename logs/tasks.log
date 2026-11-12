@@ -2966,3 +2966,11 @@ Progress: midnight heartbeat. 12 BUY confluences stable. Daily_monitor for Nov 1
 Next: pre-market triggers ~9am IST
 Blockers: episode backlog (ContextAgent stalled)
 ============================================================
+
+[CHECKPOINT] 2026-11-12 19:03
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 185,434 unprocessed — ContextAgent lagging
+============================================================
