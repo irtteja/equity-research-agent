@@ -2710,3 +2710,11 @@ Progress: no pending retry file — clean exit; nightly run had 0 scheduled comp
 Next: next nightly XBRL run
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-12 02:41
+Task: watchdog
+Status: completed
+Progress: 08:11 IST Nov 12 — pre-market heartbeat; graph intact; market opens 09:15
+Next: NSE live feed at market open
+Blockers: none
+============================================================
