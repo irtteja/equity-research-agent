@@ -2702,3 +2702,11 @@ Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 2
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 160,215 unprocessed — ContextAgent lagging; No ConfluenceSignal nodes for today — first run or no signals met threshold
 ============================================================
+
+[CHECKPOINT] 2026-11-12 02:10
+Task: results-fetch-retry-2026-11-12
+Status: completed
+Progress: no pending retry file — clean exit; nightly run had 0 scheduled companies
+Next: next nightly XBRL run
+Blockers: none
+============================================================
