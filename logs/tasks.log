@@ -3254,3 +3254,11 @@ Progress: 21:21 IST — after-hours feed 39 nodes. bhavcopy saved (749 eq, 151 i
 Next: XBRL retry ~21:30 IST, nightly announcement fetch, next watchdog ~23:21 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-13 15:51
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 195,897 unprocessed — ContextAgent lagging
+============================================================
