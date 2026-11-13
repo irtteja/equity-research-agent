@@ -3222,3 +3222,11 @@ Progress: daily_monitor done (16 reports). price_agent killed (post-market hang)
 Next: bhavcopy retry at 20:00+ IST
 Blockers: price_agent hangs post-market (index_constituents non-responsive)
 ============================================================
+
+[CHECKPOINT] 2026-11-13 11:03
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 195,897 unprocessed — ContextAgent lagging
+============================================================
