@@ -3102,3 +3102,11 @@ Progress: 10:10 IST market-hours heartbeat — live feed ran at 10:05 IST (bb12a
 Next: NSE Live Feed ~11:05 IST, Swarm Orchestrator next cycle
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-13 05:02
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 185,434 unprocessed — ContextAgent lagging
+============================================================
