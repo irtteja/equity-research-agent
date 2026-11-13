@@ -3374,3 +3374,11 @@ Progress: 2026-11-14 04:11 IST — after-hours feed 42 nodes (all 11 endpoints),
 Next: next watchdog ~06:11 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-13 22:48
+Task: nse_after_hours_feed
+Status: completed
+Progress: 2026-11-14 04:18 IST — 0 nodes (all endpoints on cooldown, last full run 04:11 IST)
+Next: next feed trigger
+Blockers: none
+============================================================
