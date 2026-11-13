@@ -3238,3 +3238,11 @@ Progress: 18:11 IST — after-hours feed 39 nodes. daily_monitor done. BUY(12) s
 Next: bhavcopy retry at 20:00 IST, next watchdog ~20:41 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-13 14:38
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 195,897 unprocessed — ContextAgent lagging
+============================================================
