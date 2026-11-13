@@ -3206,3 +3206,11 @@ Progress: Macro, FII/DII, 0 facts ingested, bhavcopy 0 rows, block/bulk deals
 Next: Review material announcements, update PROGRESS.md
 Blockers: structured_results, indices_bhavcopy, corp_events
 ============================================================
+
+[CHECKPOINT] 2026-11-13 10:41
+Task: watchdog
+Status: completed
+Progress: 16:10 IST post-close — daily_monitor done (16 reports), after-hours feed 41 nodes
+Next: next watchdog wake ~18:40 IST
+Blockers: none
+============================================================
