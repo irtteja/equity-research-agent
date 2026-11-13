@@ -3318,3 +3318,11 @@ Progress: 2026-11-14 00:10 IST — after-hours feed 39 nodes, orchestrator 12 BU
 Next: next watchdog ~02:10 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-13 19:35
+Task: nse_announcement_fetch
+Status: completed
+Progress: 2026-11-13 announcements already saved (107 symbols, 143 total). Analyzed 13 material items. Saved 3 insights: FLUOROCHEM acquisition, GRASIM Q2FY27 results, NATCOPHARM Q2FY27+dividend
+Next: tomorrow announcement fetch
+Blockers: fetch_announcements_parallel timeout on full 752-symbol universe (use saved file instead)
+============================================================
