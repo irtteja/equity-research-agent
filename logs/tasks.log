@@ -3214,3 +3214,11 @@ Progress: 16:10 IST post-close — daily_monitor done (16 reports), after-hours 
 Next: next watchdog wake ~18:40 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-13 11:03
+Task: equity-daily-monitor
+Status: completed
+Progress: daily_monitor done (16 reports). price_agent killed (post-market hang). bhavcopy too_early (retry 20:00 IST). indices_bhavcopy not yet published.
+Next: bhavcopy retry at 20:00+ IST
+Blockers: price_agent hangs post-market (index_constituents non-responsive)
+============================================================
