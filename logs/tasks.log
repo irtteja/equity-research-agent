@@ -3302,3 +3302,19 @@ Progress: 2026-11-13 23:19 IST — 42 nodes written, bulk_deals now available
 Next: next feed cycle
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-13 18:41
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 195,897 unprocessed — ContextAgent lagging
+============================================================
+
+[CHECKPOINT] 2026-11-13 18:41
+Task: watchdog
+Status: completed
+Progress: 2026-11-14 00:10 IST — after-hours feed 39 nodes, orchestrator 12 BUY stable
+Next: next watchdog ~02:10 IST
+Blockers: none
+============================================================

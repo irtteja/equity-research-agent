@@ -1,27 +1,27 @@
 {
   "live_prices": {
-    "last": 1794592169.5972915,
-    "count": 106,
+    "last": 1794595271.607502,
+    "count": 107,
     "errors": 0
   },
   "indices": {
-    "last": 1794592169.5972915,
-    "count": 106,
+    "last": 1794595271.607502,
+    "count": 107,
     "errors": 0
   },
   "top_movers": {
-    "last": 1794592169.5972915,
-    "count": 106,
+    "last": 1794595271.607502,
+    "count": 107,
     "errors": 0
   },
   "market_status": {
-    "last": 1794592169.5972915,
-    "count": 106,
+    "last": 1794595271.607502,
+    "count": 107,
     "errors": 0
   },
   "corp_events": {
-    "last": 1794592169.5972915,
-    "count": 105,
+    "last": 1794595271.607502,
+    "count": 106,
     "errors": 0
   },
   "board_meetings": {
@@ -30,8 +30,8 @@
     "errors": 0
   },
   "fii_dii": {
-    "last": 1794592169.5972915,
-    "count": 92,
+    "last": 1794595271.607502,
+    "count": 93,
     "errors": 0
   },
   "option_chains": {
