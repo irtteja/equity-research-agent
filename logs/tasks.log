@@ -3334,3 +3334,19 @@ Progress: 2026-11-13 XBRL — 0 companies scheduled, nothing to fetch
 Next: next nightly XBRL cycle
 Blockers: calendar loads from 2026-11-12.json — may need refresh
 ============================================================
+
+[CHECKPOINT] 2026-11-13 20:41
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 195,897 unprocessed — ContextAgent lagging
+============================================================
+
+[CHECKPOINT] 2026-11-13 20:41
+Task: watchdog
+Status: completed
+Progress: 2026-11-14 02:11 IST — after-hours feed 42 nodes, orchestrator 12 BUY stable
+Next: next watchdog ~04:11 IST
+Blockers: none
+============================================================
