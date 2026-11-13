@@ -1,5 +1,5 @@
 # 3MINDIA — 3MINDIA
-*Diversified | Diversified | 2026-11-12*
+*Diversified | Diversified | 2026-11-13*
 
 ---
 
@@ -11,19 +11,19 @@
 
 - **Signal:** BUY / 67% confidence / CONFIRMED state
 - **Key driver:** 3MINDIA is 2.3% from 52W low with total_expenses improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.00)
+- **Watch:** No material bear arguments at this time (bear score 0.10)
 
 ## SIGNAL & CONVICTION
 
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 67.3% |
+| Confidence | 66.7% |
 | Belief State | ✅ CONFIRMED |
-| Conviction Score | 0.50 |
+| Conviction Score | 0.49 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | negative_news_flow (0.38) |
-| Net Conviction | 0.68 |
+| Net Conviction | 0.58 |
 
 ## PRICE & TECHNICALS
 
@@ -72,12 +72,12 @@
 
 ## RISK REGISTER
 
-No material bear arguments identified.
+1. Declining belief trajectory | 6 drops vs 4 rises in recent log
 
 ℹ️ **Monitor:** [strong_buy_conviction] 3MINDIA high-conviction BUY with high business quality (conf=94%, quality=0.85)
 ⚠️ **Monitor:** [stale_signal] 3MINDIA BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [strong_buy_conviction] 3MINDIA high-conviction BUY with high business quality (conf=94%, quality=0.85)
-ℹ️ **Monitor:** [strong_buy_conviction] 3MINDIA high-conviction BUY with high business quality (conf=94%, quality=0.85)
+⚠️ **Monitor:** [stale_signal] 3MINDIA BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [strong_buy_conviction] 3MINDIA high-conviction BUY with high business quality (conf=94%, quality=0.85)
 
 ## PEER CONTEXT
@@ -92,7 +92,7 @@ No material bear arguments identified.
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.38
+**Global Signal:** —  |  **Score:** 0.3
 
 ## FUNDAMENTALS
 
@@ -108,4 +108,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 67% | Generated: 2026-11-12 10:45 | Next review: +30d*
+*Confidence: 67% | Generated: 2026-11-13 10:41 | Next review: +30d*

@@ -1,5 +1,5 @@
 # AADHARHFC — AADHARHFC
-*Financial Services | Finance | 2026-11-12*
+*Financial Services | Finance | 2026-11-13*
 
 ---
 
@@ -9,21 +9,21 @@ AADHARHFC is 4.1% from 52W low with total_expenses improving 2 quarters (momentu
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 56% confidence / FORMING state
+- **Signal:** BUY / 55% confidence / FORMING state
 - **Key driver:** AADHARHFC is 4.1% from 52W low with total_expenses improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.05)
+- **Watch:** No material bear arguments at this time (bear score 0.06)
 
 ## SIGNAL & CONVICTION
 
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 56.2% |
+| Confidence | 54.8% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.51 |
+| Conviction Score | 0.49 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.53 |
+| Net Conviction | 0.50 |
 
 ## PRICE & TECHNICALS
 
@@ -72,7 +72,7 @@ AADHARHFC is 4.1% from 52W low with total_expenses improving 2 quarters (momentu
 
 ## RISK REGISTER
 
-1. Declining belief trajectory | 6 drops vs 2 rises in recent log
+1. Declining belief trajectory | 8 drops vs 2 rises in recent log
 
 ℹ️ **Monitor:** [strong_buy_conviction] AADHARHFC high-conviction BUY with high business quality (conf=89%, quality=0.80)
 ℹ️ **Monitor:** [peer_pe_discount] AADHARHFC trades at 28% P/E discount to sector peers
@@ -92,7 +92,7 @@ AADHARHFC is 4.1% from 52W low with total_expenses improving 2 quarters (momentu
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.38
+**Global Signal:** —  |  **Score:** 0.3
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -110,4 +110,4 @@ AADHARHFC is 4.1% from 52W low with total_expenses improving 2 quarters (momentu
 | Promoter Holding | — |
 
 ---
-*Confidence: 56% | Generated: 2026-11-12 10:45 | Next review: +30d*
+*Confidence: 55% | Generated: 2026-11-13 10:41 | Next review: +30d*
