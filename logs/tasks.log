@@ -3086,3 +3086,11 @@ Progress: 08:10 IST pre-market heartbeat — 12 BUY confluences stable, graph 86
 Next: NSE Live Feed ~09:15 IST, NSE Daily Brief ~09:00 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-13 03:02
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 185,434 unprocessed — ContextAgent lagging
+============================================================
