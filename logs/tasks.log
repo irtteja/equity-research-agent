@@ -3358,3 +3358,19 @@ Progress: git pull (new ticker reports), context_agent (0), trend_agent (0)
 Next: await new XBRL data
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-13 22:42
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 195,897 unprocessed — ContextAgent lagging
+============================================================
+
+[CHECKPOINT] 2026-11-13 22:42
+Task: watchdog
+Status: completed
+Progress: 2026-11-14 04:11 IST — after-hours feed 42 nodes (all 11 endpoints), orchestrator 12 BUY stable
+Next: next watchdog ~06:11 IST
+Blockers: none
+============================================================
