@@ -3326,3 +3326,11 @@ Progress: 2026-11-13 announcements already saved (107 symbols, 143 total). Analy
 Next: tomorrow announcement fetch
 Blockers: fetch_announcements_parallel timeout on full 752-symbol universe (use saved file instead)
 ============================================================
+
+[CHECKPOINT] 2026-11-13 19:45
+Task: xbrl_fetch
+Status: completed
+Progress: 2026-11-13 XBRL — 0 companies scheduled, nothing to fetch
+Next: next nightly XBRL cycle
+Blockers: calendar loads from 2026-11-12.json — may need refresh
+============================================================
