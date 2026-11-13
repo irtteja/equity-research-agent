@@ -3294,3 +3294,11 @@ Progress: 2026-11-13 22:33 IST — 12 BUY confluences stable, 5 stalled agents, 
 Next: next orchestrator cycle
 Blockers: context_agent/trend_agent/price_agent stalled
 ============================================================
+
+[CHECKPOINT] 2026-11-13 17:49
+Task: nse_after_hours_feed
+Status: completed
+Progress: 2026-11-13 23:19 IST — 42 nodes written, bulk_deals now available
+Next: next feed cycle
+Blockers: none
+============================================================
