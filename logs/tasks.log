@@ -3406,3 +3406,11 @@ Progress: 2026-11-14 06:10 IST — after-hours feed 41 nodes, orchestrator 12 BU
 Next: next watchdog ~08:10 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-14 01:48
+Task: nse_after_hours_feed
+Status: completed
+Progress: 2026-11-14 07:18 IST — 42 nodes written across 10 endpoints
+Next: next feed trigger
+Blockers: none
+============================================================
