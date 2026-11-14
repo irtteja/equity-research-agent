@@ -3414,3 +3414,11 @@ Progress: 2026-11-14 07:18 IST — 42 nodes written across 10 endpoints
 Next: next feed trigger
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-14 02:11
+Task: xbrl_retry
+Status: completed
+Progress: 2026-11-14 07:40 IST — no pending retry file, nothing to do
+Next: next nightly XBRL cycle
+Blockers: none
+============================================================
