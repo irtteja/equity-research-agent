@@ -3422,3 +3422,11 @@ Progress: 2026-11-14 07:40 IST — no pending retry file, nothing to do
 Next: next nightly XBRL cycle
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-14 02:33
+Task: annual_reports_fetch
+Status: completed
+Progress: 0 downloaded, 818 already had, 1 error (KSCL: JSON parse error)
+Next: next weekly run
+Blockers: KSCL returns invalid JSON from NSE
+============================================================
