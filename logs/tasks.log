@@ -3390,3 +3390,19 @@ Progress: 856 tickers patched, 14 errors (NoneType), graph 12914 nodes 167379 ed
 Next: next weekly rebuild
 Blockers: 14 tickers returned None from NSE (likely delisted/suspended)
 ============================================================
+
+[CHECKPOINT] 2026-11-14 00:41
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 2
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 195,897 unprocessed — ContextAgent lagging; No ConfluenceSignal nodes for today — first run or no signals met threshold
+============================================================
+
+[CHECKPOINT] 2026-11-14 00:41
+Task: watchdog
+Status: completed
+Progress: 2026-11-14 06:10 IST — after-hours feed 41 nodes, orchestrator 12 BUY stable, graph now 12 macro sectors
+Next: next watchdog ~08:10 IST
+Blockers: none
+============================================================
