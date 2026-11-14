@@ -3382,3 +3382,11 @@ Progress: 2026-11-14 04:18 IST — 0 nodes (all endpoints on cooldown, last full
 Next: next feed trigger
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-14 00:21
+Task: weekly_sector_map_rebuild
+Status: completed
+Progress: 856 tickers patched, 14 errors (NoneType), graph 12914 nodes 167379 edges
+Next: next weekly rebuild
+Blockers: 14 tickers returned None from NSE (likely delisted/suspended)
+============================================================
