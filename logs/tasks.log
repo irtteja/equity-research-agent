@@ -3822,3 +3822,11 @@ Progress: 2026-11-16 02:11 IST — heartbeat; market closed; ensure_graph ok (94
 Next: next watchdog wake ~04:41 UTC / market open 03:45 UTC
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-15 21:01
+Task: nightly-2026-11-15
+Status: completed
+Progress: git pull (new results for HISARMETAL/INNOVANA/JINDALPOLY/JSIPL), context_agent (0), trend_agent (0)
+Next: await new XBRL data
+Blockers: none
+============================================================
