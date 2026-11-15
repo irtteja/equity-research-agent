@@ -3638,3 +3638,19 @@ Progress: build_knowledge_graph.py: 252 nodes, 18480 edges; graph.db 13025 nodes
 Next: run next Sunday
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-15 02:41
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 195,897 unprocessed — ContextAgent lagging
+============================================================
+
+[CHECKPOINT] 2026-11-15 02:41
+Task: watchdog
+Status: completed
+Progress: 08:10 IST Sun Nov 15 — ensure_graph no-op; orchestrator 12 BUY confluences stable; weekly_research already run this session (122 reports committed)
+Next: next watchdog wake
+Blockers: none
+============================================================
