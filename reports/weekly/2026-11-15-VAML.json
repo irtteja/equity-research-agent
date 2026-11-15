@@ -1,0 +1,81 @@
+{
+  "symbol": "VAML",
+  "date": "2026-11-15",
+  "quote": {
+    "symbol": "VAML",
+    "date": "13-Nov-2026 16:00:00",
+    "open": 382,
+    "high": 387,
+    "low": 377.8,
+    "close": 379.8,
+    "last": 379.8,
+    "prev_close": 382.4,
+    "change": -2.4,
+    "pct_change": -0.63,
+    "volume": 3093959,
+    "turnover": 1182634888.16,
+    "year_high": 537,
+    "year_low": 334
+  },
+  "financial_results": {
+    "symbol": "VAML",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "VAML",
+    "shareholding": [
+      {
+        "date": "12-Jun-2026",
+        "Promoter & Promoter Group": "  56.38"
+      },
+      {
+        "date": "12-Jun-2026",
+        "Public": "  43.46"
+      },
+      {
+        "date": "12-Jun-2026",
+        "Shares held by Employee Trusts": "   0.16"
+      },
+      {
+        "date": "12-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  56.38"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  43.46"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.16"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  56.38"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  43.46"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.16"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}
