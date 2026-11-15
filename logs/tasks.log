@@ -3630,3 +3630,11 @@ Progress: 34 Nifty50 reports generated and committed (415d784); job terminated m
 Next: reports usable; consider increasing timeout or splitting into batches
 Blockers: timeout SIGTERM — output was buffered, all files committed before termination
 ============================================================
+
+[CHECKPOINT] 2026-11-15 01:34
+Task: None
+Status: completed
+Progress: build_knowledge_graph.py: 252 nodes, 18480 edges; graph.db 13025 nodes 167379 edges; 874 companies
+Next: run next Sunday
+Blockers: none
+============================================================

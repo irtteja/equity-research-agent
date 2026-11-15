@@ -1,5 +1,27 @@
 # Progress Log
 
+## 2026-11-15 — Sunday: Weekly Research, KG Enrichment, Overnight Feeds
+
+### Done
+- **Weekly research — 122 reports** (415d784, 9b1eec2): `weekly_research.py` ran at ~01:00 IST Sun; generated 122 JSON reports covering full tracked universe (752 symbols). Job hit 480s timeout (exit 143) but all files written before SIGTERM. Committed in two batches: first 34 (415d784), remaining 88 (9b1eec2). Reports saved to `reports/weekly/2026-11-15-*.json`.
+- **Announcement fetch — bulk endpoint** (committed inline): Discovered `NSE.all_announcements()` bulk endpoint that fetches all NSE announcements in one call, bypassing the per-symbol timeout. Fetched 697 announcements for Nov 14 (Saturday) in <30s. 124 matched tracked universe; saved to `memory_store/announcements/2026-11-14.json`. Material items: ASHOKLEY dividend, DABUR mgmt change, BLS/INOXWIND director resignations, KAYNES/VIKRAMSOLR Q2FY27 results.
+- **BLS governance risk insight saved**: BLS (BUY_CONFLUENCE 0.74) filed Director/KMP resignation Nov 14. Insight saved to research.db. Flag: monitor for governance deterioration.
+- **Weekly KG enrichment**: `build_knowledge_graph.py` ran 07:00 IST; 252 nodes, 18,480 edges generated; graph.db now 13,025 nodes / 167,379 edges (874 companies). Completed cleanly in <90s.
+- **Overnight after-hours feeds**: Multiple runs Nov 13–14 — each writing 39–42 nodes from top_movers, fii_dii, option_chains, bulk_deals, insider. All endpoints cooldown-managed; 0-node runs at ~20:18 IST and ~04:18 IST were expected (all endpoints on cooldown from watchdog runs 7–8 min prior).
+- **Orchestrator cycles**: 12 BUY_CONFLUENCE signals stable throughout — ABREL(0.77), BHARATCOAL(0.75), CANFINHOME(0.74), BLS(0.74), AVANTIFEED(0.73), AUBANK(0.69), CANBK(0.69), BAJAJHFL(0.68), BLACKBUCK(0.64), AXISBANK(0.63), CAPILLARY(0.61), AURIONPRO(0.61). No changes since Nov 9.
+
+### Architecture changes
+- **NSE bulk announcement fetch pattern confirmed**: `NSE.all_announcements(from_date, to_date)` returns all announcements in one API call. Keys: `SYMBOL`, `COMPANY NAME`, `SUBJECT`, `DETAILS`, `BROADCAST DATE/TIME`. Replaces per-symbol parallel fetcher that timed out at 752-symbol universe. Correct import: `from memory.research_store import save_insight` (not `memory.research_db`).
+- **weekly_research.py SIGTERM pattern**: Job writes all report files before SIGTERM at 480s timeout. Standard recovery: commit all generated files after the job exits. No data loss.
+
+### Pending / next sessions
+- **Update `fetch_announcements.py`**: replace per-symbol loop with `NSE.all_announcements()` bulk call to fix the 120s timeout
+- Annual reports PDF extraction pipeline: 819 PDFs downloaded, extraction not built
+- Fix `context_agent` import path: `ModuleNotFoundError: No module named 'agents'`
+- Fix `price_agent_runner.py`: add post-market time guard
+- Episode backlog: ~195,897 unprocessed — ContextAgent pipeline gap
+- Fix indices endpoint: returns 0 nodes (known gap)
+
 ## 2026-11-13 — Pre-dawn resume after context compaction at 04:20 IST
 
 ### Done

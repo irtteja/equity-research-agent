@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-12",
-  "version": 73,
+  "last_updated": "2026-11-15",
+  "version": 74,
   "patterns": {
     "confirmed": [
       {
@@ -656,6 +656,30 @@
         "first_seen": "2026-11-12",
         "last_seen": "2026-11-12",
         "count": 1
+      },
+      {
+        "pattern": "NSE.all_announcements() bulk endpoint reliably fetches all announcements in one call — no per-symbol timeouts",
+        "first_seen": "2026-11-15",
+        "last_seen": "2026-11-15",
+        "count": 1
+      },
+      {
+        "pattern": "weekly_research.py writes all files before SIGTERM at 480s — safe to commit after timeout",
+        "first_seen": "2026-11-15",
+        "last_seen": "2026-11-15",
+        "count": 1
+      },
+      {
+        "pattern": "after-hours feed 0-node runs are expected when watchdog ran <10min prior (all endpoints on cooldown)",
+        "first_seen": "2026-11-15",
+        "last_seen": "2026-11-15",
+        "count": 1
+      },
+      {
+        "pattern": "12 BUY_CONFLUENCE signals stable since Nov 9 — no changes over 6-day period",
+        "first_seen": "2026-11-15",
+        "last_seen": "2026-11-15",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -975,6 +999,18 @@
         "pattern": "BUY confluences stable 3+ days — price near 52W low but no catalyst observed yet",
         "first_seen": "2026-11-11",
         "last_seen": "2026-11-11",
+        "count": 1
+      },
+      {
+        "pattern": "BLS director resignation (Nov 14) — governance risk signal for a top-confluence stock; monitor for follow-on",
+        "first_seen": "2026-11-15",
+        "last_seen": "2026-11-15",
+        "count": 1
+      },
+      {
+        "pattern": "KAYNES/VIKRAMSOLR Q2FY27 results filed Nov 14 — quality outcomes not yet analyzed",
+        "first_seen": "2026-11-15",
+        "last_seen": "2026-11-15",
         "count": 1
       }
     ],
@@ -1345,6 +1381,18 @@
       {
         "signal": "orchestrator 12 BUY confluences fully stable overnight Nov 12-13",
         "added": "2026-11-12"
+      },
+      {
+        "signal": "NSE.all_announcements() for bulk announcement fetch — replaces per-symbol approach",
+        "added": "2026-11-15"
+      },
+      {
+        "signal": "committing weekly research after SIGTERM recovers all output",
+        "added": "2026-11-15"
+      },
+      {
+        "signal": "git add memory_store/nse_feed_schedule.json explicitly ensures schedule file is committed",
+        "added": "2026-11-15"
       }
     ],
     "gaps": [
@@ -1731,6 +1779,22 @@
       {
         "gap": "annual reports PDF extraction pipeline not built — 819 PDFs downloaded",
         "added": "2026-11-11"
+      },
+      {
+        "gap": "fetch_announcements.py still uses old per-symbol loop — needs update to bulk endpoint",
+        "added": "2026-11-15"
+      },
+      {
+        "gap": "context_agent module missing (ModuleNotFoundError: agents) — episode backlog growing",
+        "added": "2026-11-15"
+      },
+      {
+        "gap": "indices endpoint returns 0 nodes — no index-level data in graph",
+        "added": "2026-11-15"
+      },
+      {
+        "gap": "annual reports PDF extraction pipeline not built despite 819 PDFs downloaded",
+        "added": "2026-11-15"
       }
     ]
   },
@@ -1991,13 +2055,15 @@
         "note": "BHARATCOAL 3-quarter revenue improvement strongest trend signal",
         "date": "2026-11-11"
       }
+    ],
+    "governance": [
+      {
+        "note": "BLS director resignation Nov 14 — flag on a 0.74 BUY_CONFLUENCE stock; track follow-on announcements",
+        "date": "2026-11-15"
+      }
     ]
   },
   "session_log": [
-    {
-      "date": "2026-11-04",
-      "note": "Session 15: confirmed add_repo unavailable in Default-env triggered sessions; cleaned all 11 trigger prompts; user must add repo to non-Default env to fix git push"
-    },
     {
       "date": "2026-11-04",
       "note": "Session 16: fixed git push 403 by creating push-enabled persistent session in Persistent-agent env; migrated all 11 triggers to it"
@@ -2113,6 +2179,10 @@
     {
       "date": "2026-11-12",
       "note": "context compaction resume at 04:20 IST Nov 13 — repo clean, 12 confluences stable, awaiting pre-market"
+    },
+    {
+      "date": "2026-11-15",
+      "note": "Weekly cycle complete: 122 research reports, KG enrichment, bulk announcement fetch pattern confirmed"
     }
   ]
 }
