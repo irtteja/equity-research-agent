@@ -3782,3 +3782,19 @@ Progress: 22:10 IST Sun Nov 15 — ensure_graph no-op; orchestrator 12 BUY confl
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-15 18:41
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 195,897 unprocessed — ContextAgent lagging
+============================================================
+
+[CHECKPOINT] 2026-11-15 18:41
+Task: watchdog
+Status: completed
+Progress: 00:10 IST Mon Nov 16 — ensure_graph no-op; orchestrator 12 BUY confluences stable; pre-market (Mon open 09:15 IST)
+Next: next watchdog wake
+Blockers: none
+============================================================
