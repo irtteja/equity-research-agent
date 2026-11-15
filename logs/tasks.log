@@ -3854,3 +3854,11 @@ Progress: 2026-11-16 04:10 IST — Monday pre-market heartbeat; market opens 09:
 Next: market open watchdog 09:15 IST / 03:45 UTC
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-15 23:02
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 200,651 unprocessed — ContextAgent lagging
+============================================================
