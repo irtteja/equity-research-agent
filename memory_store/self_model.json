@@ -1,6 +1,6 @@
 {
   "last_updated": "2026-11-15",
-  "version": 74,
+  "version": 75,
   "patterns": {
     "confirmed": [
       {
@@ -1795,6 +1795,14 @@
       {
         "gap": "annual reports PDF extraction pipeline not built despite 819 PDFs downloaded",
         "added": "2026-11-15"
+      },
+      {
+        "gap": "28 skip decisions contain strong financial keywords — possible false negatives (rules: newspaper publication, newspaper advertisement, link of recording)",
+        "added": "2026-11-15"
+      },
+      {
+        "gap": "7340/7340 TrendSummary nodes are >7 days old — TrendAgent needs a refresh run",
+        "added": "2026-11-15"
       }
     ]
   },
@@ -2066,10 +2074,6 @@
   "session_log": [
     {
       "date": "2026-11-04",
-      "note": "Session 16: fixed git push 403 by creating push-enabled persistent session in Persistent-agent env; migrated all 11 triggers to it"
-    },
-    {
-      "date": "2026-11-04",
       "note": "Session 17: vendored nselib into repo; verified watchdog push 58d3063 succeeded; fixed 15 files to use vendor path first"
     },
     {
@@ -2183,6 +2187,10 @@
     {
       "date": "2026-11-15",
       "note": "Weekly cycle complete: 122 research reports, KG enrichment, bulk announcement fetch pattern confirmed"
+    },
+    {
+      "date": "2026-11-15",
+      "note": "self_improve scan: 4 high-priority gaps"
     }
   ]
 }

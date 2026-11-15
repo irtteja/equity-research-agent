@@ -3654,3 +3654,19 @@ Progress: 08:10 IST Sun Nov 15 — ensure_graph no-op; orchestrator 12 BUY confl
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-15 03:39
+Task: None
+Status: completed
+Progress: trends_written=7340 strong=4351 workers=4 errors=0
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-15 03:39
+Task: self-improve-2026-11-15
+Status: completed
+Progress: self_improve: 3 passed, 11 gaps; trend_agent --reset: 8348 pairs, 7340 trends refreshed (4351 strong)
+Next: investigate triage_skip_financial_leak (28 false negatives), bhavcopy pipeline path mismatch
+Blockers: none
+============================================================
