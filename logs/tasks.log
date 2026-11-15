@@ -3622,3 +3622,11 @@ Progress: 2026-11-15 06:10 IST Sunday — after-hours feed 41 nodes, orchestrato
 Next: weekly_research completion + next watchdog ~08:10 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-15 00:50
+Task: weekly_research
+Status: partial (timeout at 480s)
+Progress: 34 Nifty50 reports generated and committed (415d784); job terminated mid-cleanup
+Next: reports usable; consider increasing timeout or splitting into batches
+Blockers: timeout SIGTERM — output was buffered, all files committed before termination
+============================================================
