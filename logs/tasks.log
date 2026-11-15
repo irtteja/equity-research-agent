@@ -3606,3 +3606,19 @@ Progress: 2026-11-15 04:10 IST — after-hours feed 41 nodes, orchestrator 12 BU
 Next: next watchdog ~06:10 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-15 00:41
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 2
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 195,897 unprocessed — ContextAgent lagging; No ConfluenceSignal nodes for today — first run or no signals met threshold
+============================================================
+
+[CHECKPOINT] 2026-11-15 00:44
+Task: watchdog
+Status: completed
+Progress: 2026-11-15 06:10 IST Sunday — after-hours feed 41 nodes, orchestrator 12 BUY stable, weekly_research.py launched in background
+Next: weekly_research completion + next watchdog ~08:10 IST
+Blockers: none
+============================================================
