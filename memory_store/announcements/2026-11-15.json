@@ -1,273 +1,415 @@
 {
-  "date": "2026-11-15",
-  "total": 118,
-  "tracked": 38,
-  "announcements": [
-    {
-      "symbol": "PFOCUS",
-      "company": "Prime Focus Limited",
-      "subject": "General Updates",
-      "details": "Investor Presentation Q2 & H1 FY 2027",
-      "datetime": "15-Nov-2026 23:18:56"
-    },
-    {
-      "symbol": "AARTIPHARM",
-      "company": "Aarti Pharmalabs Limited",
-      "subject": "General Updates",
-      "details": "Aarti Pharmalabs Limited has informed the Exchange about the sad demise of Promoter and Chairman Emeritus of the Company.",
-      "datetime": "15-Nov-2026 23:16:38"
-    },
-    {
-      "symbol": "AARTIIND",
-      "company": "Aarti Industries Limited",
-      "subject": "General Updates",
-      "details": "Aarti Industries Limited has informed the Exchange about the sad demise of Promoter and Chairman Emeritus of the Company.",
-      "datetime": "15-Nov-2026 22:59:14"
-    },
-    {
-      "symbol": "KTKBANK",
-      "company": "The Karnataka Bank Limited",
-      "subject": "Appointment",
-      "details": "The Karnataka Bank Limited has informed the Exchange regarding Appointment of  Mrs. Biji Sreekrishnavilas Sankaranarayanan as Managing Director & CEO on interim basis",
-      "datetime": "15-Nov-2026 22:42:28"
-    },
-    {
-      "symbol": "ZEEMEDIA",
-      "company": "Zee Media Corporation Limited",
-      "subject": "Copy of Newspaper Publication",
-      "details": "Zee Media Corporation Limited has informed the Exchange about Copy of Newspaper Publication of Un-audited Financial Results for the Quarter ended September 30, 2026",
-      "datetime": "15-Nov-2026 22:33:35"
-    },
-    {
-      "symbol": "THELEELA",
-      "company": "Leela Palaces Hotels & Resorts Limited",
-      "subject": "Shareholders meeting",
-      "details": "Leela Palaces Hotels & Resorts Limited has submitted the Exchange a copy Scrutinizers report of  Postal Ballot. Further, the company has informed the Exchange regarding voting results.",
-      "datetime": "15-Nov-2026 22:28:24"
-    },
-    {
-      "symbol": "KTKBANK",
-      "company": "The Karnataka Bank Limited",
-      "subject": "Cessation",
-      "details": "The Karnataka Bank Limited has informed the Exchange regarding Cessation of  Mr. Raghavendra Srinivas Bhat  as Managing Director & CEO",
-      "datetime": "15-Nov-2026 22:28:18"
-    },
-    {
-      "symbol": "HEXT",
-      "company": "Hexaware Technologies Limited",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "details": "Hexaware Technologies Limited has informed the Exchange about Schedule of meet",
-      "datetime": "15-Nov-2026 22:19:55"
-    },
-    {
-      "symbol": "KTKBANK",
-      "company": "The Karnataka Bank Limited",
-      "subject": "Appointment",
-      "details": "The Karnataka Bank Limited has informed the Exchange regarding Appointment of  Chief Compliance Officer of the Bank",
-      "datetime": "15-Nov-2026 22:16:54"
-    },
-    {
-      "symbol": "KAYNES",
-      "company": "Kaynes Technology India Limited",
-      "subject": "Press Release",
-      "details": "Kaynes Technology India Limited has informed the Exchange regarding a press release dated November 15, 2026, titled \"Kaynes Delivers H1 FY27: Rs 18,987 million Revenue with 18% YoY growth and Order book crosses INR 100,000+ million\".",
-      "datetime": "15-Nov-2026 21:59:05"
-    },
-    {
-      "symbol": "KAYNES",
-      "company": "Kaynes Technology India Limited",
-      "subject": "Investor Presentation",
-      "details": "Kaynes Technology India Limited has informed the Exchange about Investor Presentation",
-      "datetime": "15-Nov-2026 21:56:25"
-    },
-    {
-      "symbol": "URBANCO",
-      "company": "Urban Company Limited",
-      "subject": "Shareholders meeting",
-      "details": "Urban Company Limited has submitted the Exchange a copy Voting Results and Scrutinizers Report of the Postal Ballot Notice dated October 16, 2026",
-      "datetime": "15-Nov-2026 21:23:14"
-    },
-    {
-      "symbol": "ELLEN",
-      "company": "Ellenbarrie Industrial Gases Limited",
-      "subject": "Monitoring Agency Report",
-      "details": "Ellenbarrie Industrial Gases Limited has informed the exchange regarding Monitoring Agency Report for the quarter ended September 30, 2026",
-      "datetime": "15-Nov-2026 21:13:35"
-    },
-    {
-      "symbol": "JSLL",
-      "company": "Jeena Sikho Lifecare Limited",
-      "subject": "Investor Presentation",
-      "details": "Jeena Sikho Lifecare Limited has informed the Exchange about Investor Presentation",
-      "datetime": "15-Nov-2026 21:13:12"
-    },
-    {
-      "symbol": "MBAPL",
-      "company": "Madhya Bharat Agro Products Limited",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "details": "Madhya Bharat Agro Products Limited has informed the Exchange about Presentation",
-      "datetime": "15-Nov-2026 20:57:01"
-    },
-    {
-      "symbol": "ZENSARTECH",
-      "company": "Zensar Technologies Limited",
-      "subject": "Resignation of Director/KMP/SMP",
-      "details": "Zensar Technologies Limited has informed the Exchange about Resignation of Director/KMP/SMP",
-      "datetime": "15-Nov-2026 20:48:06"
-    },
-    {
-      "symbol": "GMRAIRPORT",
-      "company": "GMR AIRPORTS LIMITED",
-      "subject": "General Updates",
-      "details": "GMR AIRPORTS LIMITED has informed the Exchange about Monthly Traffic Updates",
-      "datetime": "15-Nov-2026 20:37:06"
-    },
-    {
-      "symbol": "IDFCFIRSTB",
-      "company": "IDFC First Bank Limited",
-      "subject": "General Updates",
-      "details": "IDFC First Bank Limited has informed the Exchange about Schedule of Analysts/ Institutional Investors meet - Intimation",
-      "datetime": "15-Nov-2026 19:49:27"
-    },
-    {
-      "symbol": "ZENSARTECH",
-      "company": "Zensar Technologies Limited",
-      "subject": "General Updates",
-      "details": "Zensar Technologies Limited has informed the Exchange about Cessation of Senior Management Personnel",
-      "datetime": "15-Nov-2026 19:47:59"
-    },
-    {
-      "symbol": "AXISCADES",
-      "company": "AXISCADES Technologies Limited",
-      "subject": "Copy of Newspaper Publication",
-      "details": "AXISCADES Technologies Limited has informed the Exchange about Copy of Newspaper Publication",
-      "datetime": "15-Nov-2026 18:19:01"
-    },
-    {
-      "symbol": "VIKRAMSOLR",
-      "company": "Vikram Solar Limited",
-      "subject": "Investor Presentation",
-      "details": "Vikram Solar Limited has informed the Exchange about Investor Presentation",
-      "datetime": "15-Nov-2026 17:04:48"
-    },
-    {
-      "symbol": "GAUDIUMIVF",
-      "company": "Gaudium IVF and Women Health Limited",
-      "subject": "Investor Presentation",
-      "details": "Gaudium IVF and Women Health Limited has informed the Exchange about Investor Presentation",
-      "datetime": "15-Nov-2026 15:55:23"
-    },
-    {
-      "symbol": "CEIGALL",
-      "company": "Ceigall India Limited",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "details": "Ceigall India Limited has informed the Exchange about Schedule of meet",
-      "datetime": "15-Nov-2026 15:45:55"
-    },
-    {
-      "symbol": "CMSINFO",
-      "company": "CMS Info Systems Limited",
-      "subject": "Copy of Newspaper Publication",
-      "details": "Please find enclosed herewith copy of newspaper publication on Un-Audited Financial Results (Standalone and Consolidated) for the quarter and half year ended September 30, 2026.",
-      "datetime": "15-Nov-2026 15:35:47"
-    },
-    {
-      "symbol": "SSRETAIL",
-      "company": "SS Retail Limited",
-      "subject": "Investor Presentation",
-      "details": "SS Retail Limited has informed the Exchange about Investor Presentation",
-      "datetime": "15-Nov-2026 14:36:30"
-    },
-    {
-      "symbol": "BALAJITELE",
-      "company": "Balaji Telefilms Limited",
-      "subject": "Copy of Newspaper Publication",
-      "details": "Balaji Telefilms Limited has informed the Exchange about Copy of Newspaper Publication",
-      "datetime": "15-Nov-2026 13:42:37"
-    },
-    {
-      "symbol": "SHREEJISPG",
-      "company": "Shreeji Shipping Global Limited",
-      "subject": "Copy of Newspaper Publication",
-      "details": "Please find enclosed herewith the copy of Newspaper Advertisements published in Financial Express- (in English) and Phulchhab - (in Gujarati) on November 15, 2026 with respect to publication of Unaudited Financial Results of the Company for the quarter and half year ended September 30, 2026 which we",
-      "datetime": "15-Nov-2026 12:25:51"
-    },
-    {
-      "symbol": "SENCO",
-      "company": "Senco Gold Limited",
-      "subject": "Copy of Newspaper Publication",
-      "details": "Senco Gold Limited has informed the Exchange about Copy of Newspaper Publication dated 15th November,2026",
-      "datetime": "15-Nov-2026 11:42:08"
-    },
-    {
-      "symbol": "SAMMAANCAP",
-      "company": "Sammaan Capital Limited",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "details": "We refer to our intimation dated November 11, 2026, informing about the conference call to be hosted by the Company on November 14, 2026 to discuss the financial results of the Company for the quarter and half-year ended September 30, 2026. In this connection, pursuant to the provisions of SEBI (Lis",
-      "datetime": "15-Nov-2026 11:39:50"
-    },
-    {
-      "symbol": "SANSERA",
-      "company": "Sansera Engineering Limited",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "details": "Sansera Engineering Limited has informed the Exchange about Schedule of meet",
-      "datetime": "15-Nov-2026 11:38:37"
-    },
-    {
-      "symbol": "SANSERA",
-      "company": "Sansera Engineering Limited",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "details": "Sansera Engineering Limited has informed the Exchange about Schedule of meet",
-      "datetime": "15-Nov-2026 11:37:23"
-    },
-    {
-      "symbol": "SONA",
-      "company": "Sonaselection India Limited",
-      "subject": "Copy of Newspaper Publication",
-      "details": "Sonaselection India Limited has informed the Exchange about Copy of Newspaper Publication",
-      "datetime": "15-Nov-2026 11:36:18"
-    },
-    {
-      "symbol": "INDOMIM",
-      "company": "INDO-MIM Limited",
-      "subject": "Copy of Newspaper Publication",
-      "details": "INDO-MIM Limited has informed the Exchange about the Submission of copy of Newspaper Advertisement published on November 15, 2026 pursuant to Regulation 47 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015.",
-      "datetime": "15-Nov-2026 11:24:16"
-    },
-    {
-      "symbol": "HINDALCO",
-      "company": "Hindalco Industries Limited",
-      "subject": "Sale or disposal",
-      "details": "Intimation regarding cessation of Novelis (China) Aluminum Products Co. Ltd. and Novelis (Shanghai) Aluminum Trading Co. Ltd, wholly-owned subsidiaries of Novelis Inc. a subsidiary of Hindalco Industries Limited [\"Company\"], as subsidiaries of the Company.",
-      "datetime": "15-Nov-2026 10:20:20"
-    },
-    {
-      "symbol": "WABAG",
-      "company": "VA Tech Wabag Limited",
-      "subject": "General Updates",
-      "details": "Request to the Physical Shareholders of the Company for conversion of Shareholding into Dematerialised mode",
-      "datetime": "15-Nov-2026 08:35:39"
-    },
-    {
-      "symbol": "WABAG",
-      "company": "VA Tech Wabag Limited",
-      "subject": "General Updates",
-      "details": "Request to the Shareholders of the Company for registering PAN, valid KYC details or changes / updation thereof",
-      "datetime": "15-Nov-2026 08:26:01"
-    },
-    {
-      "symbol": "SHAKTIPUMP",
-      "company": "Shakti Pumps (India) Limited",
-      "subject": "Monitoring Agency Report",
-      "details": "Shakti Pumps (India) Limited has submitted Monitoring Agency Reports for the quarter ended September 30, 2026.",
-      "datetime": "15-Nov-2026 01:40:54"
-    },
-    {
-      "symbol": "KAYNES",
-      "company": "Kaynes Technology India Limited",
-      "subject": "Agreements",
-      "details": "Kaynes Technology India Limited has informed the Exchange about Joint Venture Agreements",
-      "datetime": "15-Nov-2026 00:15:37"
-    }
-  ]
+  "date_range": {
+    "from": "2026-11-15",
+    "to": "2026-11-15"
+  },
+  "total_symbols": 752,
+  "symbols_with_announcements": 25,
+  "total_announcements": 32,
+  "errors": 0,
+  "announcements": {
+    "PFOCUS": [
+      {
+        "SYMBOL": "PFOCUS",
+        "COMPANY NAME": "Prime Focus Limited",
+        "SUBJECT": "General Updates",
+        "DETAILS": "Investor Presentation Q2 & H1 FY 2027",
+        "BROADCAST DATE/TIME": "15-Nov-2026 23:18:56",
+        "RECEIPT": "2026-11-15 23:18:56",
+        "DISSEMINATION": "15-Nov-2026 23:18:57",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/PFOCUS_15112026231832_InvestorPresentationsigned.pdf"
+      }
+    ],
+    "AARTIPHARM": [
+      {
+        "SYMBOL": "AARTIPHARM",
+        "COMPANY NAME": "Aarti Pharmalabs Limited",
+        "SUBJECT": "General Updates",
+        "DETAILS": "Aarti Pharmalabs Limited has informed the Exchange about the sad demise of Promoter and Chairman Emeritus of the Company.",
+        "BROADCAST DATE/TIME": "15-Nov-2026 23:16:38",
+        "RECEIPT": "2026-11-15 23:16:38",
+        "DISSEMINATION": "15-Nov-2026 23:16:40",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/AARTIPHARMA_15112026231554_SE_Intimation_Demise_Chairman_Emeritussigned.pdf"
+      }
+    ],
+    "AARTIIND": [
+      {
+        "SYMBOL": "AARTIIND",
+        "COMPANY NAME": "Aarti Industries Limited",
+        "SUBJECT": "General Updates",
+        "DETAILS": "Aarti Industries Limited has informed the Exchange about the sad demise of Promoter and Chairman Emeritus of the Company.",
+        "BROADCAST DATE/TIME": "15-Nov-2026 22:59:14",
+        "RECEIPT": "2026-11-15 22:59:14",
+        "DISSEMINATION": "15-Nov-2026 22:59:16",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/AARTIIND_15112026225831_AARTIIND_30.pdf"
+      }
+    ],
+    "KTKBANK": [
+      {
+        "SYMBOL": "KTKBANK",
+        "COMPANY NAME": "The Karnataka Bank Limited",
+        "SUBJECT": "Appointment",
+        "DETAILS": "The Karnataka Bank Limited has informed the Exchange regarding Appointment of  Mrs. Biji Sreekrishnavilas Sankaranarayanan as Managing Director & CEO on interim basis",
+        "BROADCAST DATE/TIME": "15-Nov-2026 22:42:28",
+        "RECEIPT": "2026-11-15 22:42:28",
+        "DISSEMINATION": "15-Nov-2026 22:42:29",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/KTKBANK_15112026223847_INTERIMMDSigned.pdf"
+      },
+      {
+        "SYMBOL": "KTKBANK",
+        "COMPANY NAME": "The Karnataka Bank Limited",
+        "SUBJECT": "Cessation",
+        "DETAILS": "The Karnataka Bank Limited has informed the Exchange regarding Cessation of  Mr. Raghavendra Srinivas Bhat  as Managing Director & CEO",
+        "BROADCAST DATE/TIME": "15-Nov-2026 22:28:18",
+        "RECEIPT": "2026-11-15 22:28:18",
+        "DISSEMINATION": "15-Nov-2026 22:28:19",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/KTKBANK_15112026222440_MDCESSATIONSigned.pdf"
+      },
+      {
+        "SYMBOL": "KTKBANK",
+        "COMPANY NAME": "The Karnataka Bank Limited",
+        "SUBJECT": "Appointment",
+        "DETAILS": "The Karnataka Bank Limited has informed the Exchange regarding Appointment of  Chief Compliance Officer of the Bank",
+        "BROADCAST DATE/TIME": "15-Nov-2026 22:16:54",
+        "RECEIPT": "2026-11-15 22:16:54",
+        "DISSEMINATION": "15-Nov-2026 22:16:56",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/KTKBANK_15112026221327_CCOSigned.pdf"
+      }
+    ],
+    "THELEELA": [
+      {
+        "SYMBOL": "THELEELA",
+        "COMPANY NAME": "Leela Palaces Hotels & Resorts Limited",
+        "SUBJECT": "Shareholders meeting",
+        "DETAILS": "Leela Palaces Hotels & Resorts Limited has submitted the Exchange a copy Scrutinizers report of  Postal Ballot. Further, the company has informed the Exchange regarding voting results.",
+        "BROADCAST DATE/TIME": "15-Nov-2026 22:28:24",
+        "RECEIPT": "2026-11-15 22:28:24",
+        "DISSEMINATION": "15-Nov-2026 22:28:26",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/THELEELA_15112026222802_SE_intimation_I_PB.pdf"
+      }
+    ],
+    "HEXT": [
+      {
+        "SYMBOL": "HEXT",
+        "COMPANY NAME": "Hexaware Technologies Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Hexaware Technologies Limited has informed the Exchange about Schedule of meet",
+        "BROADCAST DATE/TIME": "15-Nov-2026 22:19:55",
+        "RECEIPT": "2026-11-15 22:19:55",
+        "DISSEMINATION": "15-Nov-2026 22:19:56",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/HEXAWARETECH_15112026221944_Intimation_Investor_Conference_2026.pdf"
+      }
+    ],
+    "KAYNES": [
+      {
+        "SYMBOL": "KAYNES",
+        "COMPANY NAME": "Kaynes Technology India Limited",
+        "SUBJECT": "Press Release",
+        "DETAILS": "Kaynes Technology India Limited has informed the Exchange regarding a press release dated November 15, 2026, titled \"Kaynes Delivers H1 FY27: Rs 18,987 million Revenue with 18% YoY growth and Order book crosses INR 100,000+ million\".",
+        "BROADCAST DATE/TIME": "15-Nov-2026 21:59:05",
+        "RECEIPT": "2026-11-15 21:59:05",
+        "DISSEMINATION": "15-Nov-2026 21:59:06",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/KAYNESTECH_15112026215848_PressReleaseQ2FY27.pdf"
+      },
+      {
+        "SYMBOL": "KAYNES",
+        "COMPANY NAME": "Kaynes Technology India Limited",
+        "SUBJECT": "Investor Presentation",
+        "DETAILS": "Kaynes Technology India Limited has informed the Exchange about Investor Presentation",
+        "BROADCAST DATE/TIME": "15-Nov-2026 21:56:25",
+        "RECEIPT": "2026-11-15 21:56:25",
+        "DISSEMINATION": "15-Nov-2026 21:56:26",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/KAYNESTECH_15112026215600_IRpresentation.pdf"
+      },
+      {
+        "SYMBOL": "KAYNES",
+        "COMPANY NAME": "Kaynes Technology India Limited",
+        "SUBJECT": "Agreements",
+        "DETAILS": "Kaynes Technology India Limited has informed the Exchange about Joint Venture Agreements",
+        "BROADCAST DATE/TIME": "15-Nov-2026 00:15:37",
+        "RECEIPT": "2026-11-15 00:15:37",
+        "DISSEMINATION": "15-Nov-2026 00:15:38",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/KAYNESTECH_15112026001518_SEBI_Q2_2027_Final.pdf"
+      }
+    ],
+    "URBANCO": [
+      {
+        "SYMBOL": "URBANCO",
+        "COMPANY NAME": "Urban Company Limited",
+        "SUBJECT": "Shareholders meeting",
+        "DETAILS": "Urban Company Limited has submitted the Exchange a copy Voting Results and Scrutinizers Report of the Postal Ballot Notice dated October 16, 2026",
+        "BROADCAST DATE/TIME": "15-Nov-2026 21:23:14",
+        "RECEIPT": "2026-11-15 21:23:14",
+        "DISSEMINATION": "15-Nov-2026 21:23:15",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/URBANCO_15112026211807_UC_Postal_Ballot_Voting_Results_15112026.pdf"
+      }
+    ],
+    "ELLEN": [
+      {
+        "SYMBOL": "ELLEN",
+        "COMPANY NAME": "Ellenbarrie Industrial Gases Limited",
+        "SUBJECT": "Monitoring Agency Report",
+        "DETAILS": "Ellenbarrie Industrial Gases Limited has informed the exchange regarding Monitoring Agency Report for the quarter ended September 30, 2026",
+        "BROADCAST DATE/TIME": "15-Nov-2026 21:13:35",
+        "RECEIPT": "2026-11-15 21:13:35",
+        "DISSEMINATION": "15-Nov-2026 21:13:35",
+        "DIFFERENCE": "00:00:00",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/ELLENBARRIE2024_15112026211324_Announcement_Monitoring_Agency_Report_September_302026.pdf"
+      }
+    ],
+    "JSLL": [
+      {
+        "SYMBOL": "JSLL",
+        "COMPANY NAME": "Jeena Sikho Lifecare Limited",
+        "SUBJECT": "Investor Presentation",
+        "DETAILS": "Jeena Sikho Lifecare Limited has informed the Exchange about Investor Presentation",
+        "BROADCAST DATE/TIME": "15-Nov-2026 21:13:12",
+        "RECEIPT": "2026-11-15 21:13:12",
+        "DISSEMINATION": "15-Nov-2026 21:13:14",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/JEENASIKHO_15112026211302_Intimation_Investor_PPT-_Sign.pdf"
+      }
+    ],
+    "MBAPL": [
+      {
+        "SYMBOL": "MBAPL",
+        "COMPANY NAME": "Madhya Bharat Agro Products Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Madhya Bharat Agro Products Limited has informed the Exchange about Presentation",
+        "BROADCAST DATE/TIME": "15-Nov-2026 20:57:01",
+        "RECEIPT": "2026-11-15 20:57:01",
+        "DISSEMINATION": "15-Nov-2026 20:57:02",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/MBAPL_15112026205323_MBAPLNSEFINRESSEP26SIG.pdf"
+      }
+    ],
+    "ZENSARTECH": [
+      {
+        "SYMBOL": "ZENSARTECH",
+        "COMPANY NAME": "Zensar Technologies Limited",
+        "SUBJECT": "Resignation of Director/KMP/SMP",
+        "DETAILS": "Zensar Technologies Limited has informed the Exchange about Resignation of Director/KMP/SMP",
+        "BROADCAST DATE/TIME": "15-Nov-2026 20:48:06",
+        "RECEIPT": "2026-11-15 20:48:06",
+        "DISSEMINATION": "15-Nov-2026 20:48:06",
+        "DIFFERENCE": "00:00:00",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/ZENSARTECH_ROID_104915_KMP_Doc.zip"
+      },
+      {
+        "SYMBOL": "ZENSARTECH",
+        "COMPANY NAME": "Zensar Technologies Limited",
+        "SUBJECT": "General Updates",
+        "DETAILS": "Zensar Technologies Limited has informed the Exchange about Cessation of Senior Management Personnel",
+        "BROADCAST DATE/TIME": "15-Nov-2026 19:47:59",
+        "RECEIPT": "2026-11-15 19:47:59",
+        "DISSEMINATION": "15-Nov-2026 19:48:00",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/ZENSARTECH_15112026194718_SEintimationChangeinSMP.pdf"
+      }
+    ],
+    "GMRAIRPORT": [
+      {
+        "SYMBOL": "GMRAIRPORT",
+        "COMPANY NAME": "GMR AIRPORTS LIMITED",
+        "SUBJECT": "General Updates",
+        "DETAILS": "GMR AIRPORTS LIMITED has informed the Exchange about Monthly Traffic Updates",
+        "BROADCAST DATE/TIME": "15-Nov-2026 20:37:06",
+        "RECEIPT": "2026-11-15 20:37:06",
+        "DISSEMINATION": "15-Nov-2026 20:37:07",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/GMRINFRA_15112026203615_15112026-monthlytrafficdataOct.pdf"
+      }
+    ],
+    "IDFCFIRSTB": [
+      {
+        "SYMBOL": "IDFCFIRSTB",
+        "COMPANY NAME": "IDFC First Bank Limited",
+        "SUBJECT": "General Updates",
+        "DETAILS": "IDFC First Bank Limited has informed the Exchange about Schedule of Analysts/ Institutional Investors meet - Intimation",
+        "BROADCAST DATE/TIME": "15-Nov-2026 19:49:27",
+        "RECEIPT": "2026-11-15 19:49:27",
+        "DISSEMINATION": "15-Nov-2026 19:49:29",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/IDFCFIRSTB_15112026194653_IDFCFIRSTB_Investor_Meetings_15Nov2026.pdf"
+      }
+    ],
+    "AXISCADES": [
+      {
+        "SYMBOL": "AXISCADES",
+        "COMPANY NAME": "AXISCADES Technologies Limited",
+        "SUBJECT": "Copy of Newspaper Publication",
+        "DETAILS": "AXISCADES Technologies Limited has informed the Exchange about Copy of Newspaper Publication",
+        "BROADCAST DATE/TIME": "15-Nov-2026 18:19:01",
+        "RECEIPT": "2026-11-15 18:19:01",
+        "DISSEMINATION": "15-Nov-2026 18:19:02",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/AXISCADES_15112026181850_Newspaper15112026.pdf"
+      }
+    ],
+    "VIKRAMSOLR": [
+      {
+        "SYMBOL": "VIKRAMSOLR",
+        "COMPANY NAME": "Vikram Solar Limited",
+        "SUBJECT": "Investor Presentation",
+        "DETAILS": "Vikram Solar Limited has informed the Exchange about Investor Presentation",
+        "BROADCAST DATE/TIME": "15-Nov-2026 17:04:48",
+        "RECEIPT": "2026-11-15 17:04:48",
+        "DISSEMINATION": "15-Nov-2026 17:04:49",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/VSLCS_15112026170110_INVESTOREPRESENTATION15112026.pdf"
+      }
+    ],
+    "CEIGALL": [
+      {
+        "SYMBOL": "CEIGALL",
+        "COMPANY NAME": "Ceigall India Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Ceigall India Limited has informed the Exchange about Schedule of meet",
+        "BROADCAST DATE/TIME": "15-Nov-2026 15:45:55",
+        "RECEIPT": "2026-11-15 15:45:55",
+        "DISSEMINATION": "15-Nov-2026 15:45:56",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/ceigall_15112026154519_Intimation_investor_meet_19112026.pdf"
+      }
+    ],
+    "CMSINFO": [
+      {
+        "SYMBOL": "CMSINFO",
+        "COMPANY NAME": "CMS Info Systems Limited",
+        "SUBJECT": "Copy of Newspaper Publication",
+        "DETAILS": "Please find enclosed herewith copy of newspaper publication on Un-Audited Financial Results (Standalone and Consolidated) for the quarter and half year ended September 30, 2026.",
+        "BROADCAST DATE/TIME": "15-Nov-2026 15:35:47",
+        "RECEIPT": "2026-11-15 15:35:47",
+        "DISSEMINATION": "15-Nov-2026 15:35:48",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/CMSINFO_15112026153528_NewspaperPublicationSEIntimation.pdf"
+      }
+    ],
+    "SHREEJISPG": [
+      {
+        "SYMBOL": "SHREEJISPG",
+        "COMPANY NAME": "Shreeji Shipping Global Limited",
+        "SUBJECT": "Copy of Newspaper Publication",
+        "DETAILS": "Please find enclosed herewith the copy of Newspaper Advertisements published in Financial Express- (in English) and Phulchhab - (in Gujarati) on November 15, 2026 with respect to publication of Unaudited Financial Results of the Company for the quarter and half year ended September 30, 2026 which were considered, approved and taken on record by the Board of Directors in their meeting held on November 14, 2026.",
+        "BROADCAST DATE/TIME": "15-Nov-2026 12:25:51",
+        "RECEIPT": "2026-11-15 12:25:51",
+        "DISSEMINATION": "15-Nov-2026 12:25:52",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/SHREEJI_15112026122525_Newspaper_Advertisement.pdf"
+      }
+    ],
+    "SENCO": [
+      {
+        "SYMBOL": "SENCO",
+        "COMPANY NAME": "Senco Gold Limited",
+        "SUBJECT": "Copy of Newspaper Publication",
+        "DETAILS": "Senco Gold Limited has informed the Exchange about Copy of Newspaper Publication dated 15th November,2026",
+        "BROADCAST DATE/TIME": "15-Nov-2026 11:42:08",
+        "RECEIPT": "2026-11-15 11:42:08",
+        "DISSEMINATION": "15-Nov-2026 11:42:09",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/Sencogold_15112026114157_SE_Intimation.pdf"
+      }
+    ],
+    "SAMMAANCAP": [
+      {
+        "SYMBOL": "SAMMAANCAP",
+        "COMPANY NAME": "Sammaan Capital Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "We refer to our intimation dated November 11, 2026, informing about the conference call to be hosted by the Company on November 14, 2026 to discuss the financial results of the Company for the quarter and half-year ended September 30, 2026. In this connection, pursuant to the provisions of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, as amended, the Company has uploaded the audio recording of the conference call hosted by it on November 14, 2026, to discuss the financial results of the Company for the quarter and half-year ended September 30, 2026, on its website. For details refer attached PDF.",
+        "BROADCAST DATE/TIME": "15-Nov-2026 11:39:50",
+        "RECEIPT": "2026-11-15 11:39:50",
+        "DISSEMINATION": "15-Nov-2026 11:39:52",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/IHFL_15112026113849_SCL_intimation_Audio_recording_link_15November2026.pdf"
+      }
+    ],
+    "SANSERA": [
+      {
+        "SYMBOL": "SANSERA",
+        "COMPANY NAME": "Sansera Engineering Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Sansera Engineering Limited has informed the Exchange about Schedule of meet",
+        "BROADCAST DATE/TIME": "15-Nov-2026 11:38:37",
+        "RECEIPT": "2026-11-15 11:38:37",
+        "DISSEMINATION": "15-Nov-2026 11:38:38",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/SANSERA_15112026113824_Intimation15112026.pdf"
+      },
+      {
+        "SYMBOL": "SANSERA",
+        "COMPANY NAME": "Sansera Engineering Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Sansera Engineering Limited has informed the Exchange about Schedule of meet",
+        "BROADCAST DATE/TIME": "15-Nov-2026 11:37:23",
+        "RECEIPT": "2026-11-15 11:37:23",
+        "DISSEMINATION": "15-Nov-2026 11:37:25",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/SANSERA_15112026113714_Intimation.pdf"
+      }
+    ],
+    "HINDALCO": [
+      {
+        "SYMBOL": "HINDALCO",
+        "COMPANY NAME": "Hindalco Industries Limited",
+        "SUBJECT": "Sale or disposal",
+        "DETAILS": "Intimation regarding cessation of Novelis (China) Aluminum Products Co. Ltd. and Novelis (Shanghai) Aluminum Trading Co. Ltd, wholly-owned subsidiaries of Novelis Inc. a subsidiary of Hindalco Industries Limited [\"Company\"], as subsidiaries of the Company.",
+        "BROADCAST DATE/TIME": "15-Nov-2026 10:20:20",
+        "RECEIPT": "2026-11-15 10:20:20",
+        "DISSEMINATION": "15-Nov-2026 10:20:21",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/HINDALCOIND_15112026101130_Cessation_of_WOS_signed.pdf"
+      }
+    ],
+    "WABAG": [
+      {
+        "SYMBOL": "WABAG",
+        "COMPANY NAME": "VA Tech Wabag Limited",
+        "SUBJECT": "General Updates",
+        "DETAILS": "Request to the Physical Shareholders of the Company for conversion of Shareholding into Dematerialised mode",
+        "BROADCAST DATE/TIME": "15-Nov-2026 08:35:39",
+        "RECEIPT": "2026-11-15 08:35:39",
+        "DISSEMINATION": "15-Nov-2026 08:35:40",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/VATECH_15112026083043_SI_Physicalholders.pdf"
+      },
+      {
+        "SYMBOL": "WABAG",
+        "COMPANY NAME": "VA Tech Wabag Limited",
+        "SUBJECT": "General Updates",
+        "DETAILS": "Request to the Shareholders of the Company for registering PAN, valid KYC details or changes / updation thereof",
+        "BROADCAST DATE/TIME": "15-Nov-2026 08:26:01",
+        "RECEIPT": "2026-11-15 08:26:01",
+        "DISSEMINATION": "15-Nov-2026 08:26:02",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/VATECH_15112026082534_SE_KYCUpdate.pdf"
+      }
+    ],
+    "SHAKTIPUMP": [
+      {
+        "SYMBOL": "SHAKTIPUMP",
+        "COMPANY NAME": "Shakti Pumps (India) Limited",
+        "SUBJECT": "Monitoring Agency Report",
+        "DETAILS": "Shakti Pumps (India) Limited has submitted Monitoring Agency Reports for the quarter ended September 30, 2026.",
+        "BROADCAST DATE/TIME": "15-Nov-2026 01:40:54",
+        "RECEIPT": "2026-11-15 01:40:54",
+        "DISSEMINATION": "15-Nov-2026 01:40:55",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/SHAKTIPUMP_15112026014036_DisclosureunderReg32_6_Monitoringagencyreport.pdf"
+      }
+    ]
+  },
+  "error_symbols": {}
 }
