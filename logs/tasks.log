@@ -4078,3 +4078,11 @@ Progress: after-hours heartbeat 18:11 IST — daily_monitor done, indices bhavco
 Next: next watchdog ~20:11 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-16 13:04
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 199,097 unprocessed — ContextAgent lagging
+============================================================
