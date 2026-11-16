@@ -1,5 +1,28 @@
 # Progress Log
 
+## 2026-11-16 — Monday: First Live Market Day, Daily Pipeline, Context Agent Fix
+
+### Done
+- **Full market-hours live feed coverage**: NSE Live Feed ran every ~60 min from 10:05 IST through 15:05 IST — 6 live snapshots, each 39–41 nodes (live_prices 16, top_movers 20, option_chains 2, fii_dii 2, market_status 1). Commits: fd27887 through f9b9572.
+- **12 BUY_CONFLUENCE stable all day**: ABREL(0.77), BHARATCOAL(0.75), CANFINHOME(0.74), BLS(0.74), AVANTIFEED(0.73), AUBANK(0.69), CANBK(0.69), BAJAJHFL(0.68), BLACKBUCK(0.64), AXISBANK(0.63), CAPILLARY(0.61), AURIONPRO(0.61). No change from Nov 9.
+- **Context agent working** (4eb2521): Fixed by running with `sys.path.insert(0, '.')` under `-I` flag. Processed 500 episodes, created 134 edges. Previously failing with `ModuleNotFoundError: No module named 'agents'`.
+- **Daily pipeline complete**: fetch_results (0 scheduled), context_agent 500 eps/134 edges, trend_agent updated, daily_monitor 16 reports, graph exported: 13,741 nodes / 175,535 edges, 1,440 confirmed beliefs, 23 sectors.
+- **Equity bhavcopy saved**: 749 rows for 2026-11-16 (`memory_store/bhavcopy/2026-11-16.csv`).
+- **Indices bhavcopy**: NSE file not yet available at 16:31 IST (normal delay — will retry).
+- **New trigger discovered**: `equity-daily-monitor` (trig_015rY84hYFGqWUfmUTvyVWNU) — runs at ~16:31 IST, includes price_agent, bhavcopy jobs. price_agent timed out (runs outside market hours).
+
+### Architecture changes
+- **Context agent sys.path fix confirmed**: `-I` flag isolates sys.path; must add `sys.path.insert(0, '.')` before importing local modules. Now processes episodes successfully.
+- **daily_monitor self-commits**: `jobs/daily_monitor.py` runs its own `git add/commit/push` internally. Pull after it completes to sync.
+
+### Pending / next sessions
+- **Update `fetch_announcements.py`**: replace per-symbol loop with `NSE.all_announcements()` bulk call
+- **Annual reports PDF extraction pipeline**: 819 PDFs, extraction not built
+- **Fix `price_agent_runner.py`**: add post-market time guard (currently times out when run after close)
+- **Fix indices bhavcopy retry**: retry `save_indices_bhavcopy.py` later in the evening when NSE publishes the file
+- **Fix `backfill_graph.py` timeout**: times out at 120s — needs chunking or optimization
+- **Reduce episode backlog**: 200,151+ unprocessed (ran 500 today — need bulk processing)
+
 ## 2026-11-15 — Sunday: Weekly Research, KG Enrichment, Overnight Feeds
 
 ### Done

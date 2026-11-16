@@ -4054,3 +4054,11 @@ Progress: post-close heartbeat 16:10 IST — market closed, daily_monitor alread
 Next: after-hours feed, nightly XBRL, next watchdog ~18:11 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-16 11:03
+Task: equity-daily-monitor
+Status: completed
+Progress: bhavcopy saved 749 rows, indices bhavcopy not yet available, price_agent timed out (post-market), PROGRESS.md updated
+Next: retry indices bhavcopy later, after-hours feed, nightly XBRL
+Blockers: price_agent needs market-hours guard, indices file delayed
+============================================================
