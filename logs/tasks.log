@@ -4038,3 +4038,11 @@ Progress: Macro, FII/DII, 0 facts ingested, bhavcopy 0 rows, block/bulk deals
 Next: Review material announcements, update PROGRESS.md
 Blockers: structured_results, indices_bhavcopy, corp_events
 ============================================================
+
+[CHECKPOINT] 2026-11-16 10:37
+Task: daily_brief
+Status: completed
+Progress: daily pipeline done — fetch_results (0 scheduled), context_agent 500 eps/134 edges, trend_agent updated, daily_monitor 16 reports, graph 13741 nodes/175535 edges, dashboard exported
+Next: after-hours feed, nightly XBRL fetch
+Blockers: backfill_graph timed out (known)
+============================================================
