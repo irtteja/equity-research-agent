@@ -1,5 +1,5 @@
 # AUBANK — AUBANK
-*Financial Services | Banks | 2026-11-13*
+*Financial Services | Banks | 2026-11-16*
 
 ---
 
@@ -11,7 +11,7 @@ AUBANK is 11.7% from 52W low with total_income improving 3 quarters (momentum 1.
 
 - **Signal:** BUY / 60% confidence / FORMING state
 - **Key driver:** AUBANK is 11.7% from 52W low with total_income improving 3 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.02)
+- **Watch:** No material bear arguments at this time (bear score 0.04)
 
 ## SIGNAL & CONVICTION
 
@@ -20,10 +20,10 @@ AUBANK is 11.7% from 52W low with total_income improving 3 quarters (momentum 1.
 | Signal | 🟢 **BUY** |
 | Confidence | 60.0% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.50 |
+| Conviction Score | 0.49 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.48 |
+| Net Conviction | 0.46 |
 
 ## PRICE & TECHNICALS
 
@@ -72,8 +72,9 @@ AUBANK is 11.7% from 52W low with total_income improving 3 quarters (momentum 1.
 
 ## RISK REGISTER
 
-1. [LOW] Declining belief trajectory | 6 drops vs 4 rises in recent log
+1. Declining belief trajectory | 10 drops vs 0 rises in recent log
 
+⚠️ **Monitor:** [stale_signal] AUBANK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] AUBANK BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [new_buy_signal] New BUY signal for AUBANK
 
@@ -107,4 +108,4 @@ AUBANK is 11.7% from 52W low with total_income improving 3 quarters (momentum 1.
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-13 10:41 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-16 10:37 | Next review: +30d*

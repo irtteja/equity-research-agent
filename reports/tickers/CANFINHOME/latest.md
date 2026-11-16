@@ -1,5 +1,5 @@
 # CANFINHOME — CANFINHOME
-*Financial Services | Finance | 2026-11-13*
+*Financial Services | Finance | 2026-11-16*
 
 ---
 
@@ -9,21 +9,21 @@ CANFINHOME is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 60% confidence / FORMING state
+- **Signal:** BUY / 50% confidence / FORMING state
 - **Key driver:** CANFINHOME is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.02)
+- **Watch:** No material bear arguments at this time (bear score 0.04)
 
 ## SIGNAL & CONVICTION
 
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 60.0% |
+| Confidence | 50.0% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.50 |
+| Conviction Score | 0.49 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.48 |
+| Net Conviction | 0.46 |
 
 ## PRICE & TECHNICALS
 
@@ -72,7 +72,7 @@ CANFINHOME is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ## RISK REGISTER
 
-1. [LOW] Declining belief trajectory | 6 drops vs 4 rises in recent log
+1. Declining belief trajectory | 10 drops vs 0 rises in recent log
 
 ℹ️ **Monitor:** [strong_buy_conviction] CANFINHOME high-conviction BUY with high business quality (conf=74%, quality=0.80)
 ℹ️ **Monitor:** [peer_pe_discount] CANFINHOME trades at 56% P/E discount to sector peers
@@ -110,4 +110,4 @@ CANFINHOME is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-13 10:41 | Next review: +30d*
+*Confidence: 50% | Generated: 2026-11-16 10:37 | Next review: +30d*

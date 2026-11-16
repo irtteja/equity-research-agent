@@ -1,5 +1,5 @@
 # AAVAS — AAVAS
-*Financial Services | Finance | 2026-11-13*
+*Financial Services | Finance | 2026-11-16*
 
 ---
 
@@ -9,21 +9,21 @@ AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.8
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 55% confidence / FORMING state
+- **Signal:** BUY / 53% confidence / FORMING state
 - **Key driver:** AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.89)
-- **Watch:** No material bear arguments at this time (bear score 0.06)
+- **Watch:** No material bear arguments at this time (bear score 0.07)
 
 ## SIGNAL & CONVICTION
 
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 54.8% |
+| Confidence | 53.4% |
 | Belief State | 🔵 FORMING |
 | Conviction Score | 0.49 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.50 |
+| Net Conviction | 0.48 |
 
 ## PRICE & TECHNICALS
 
@@ -110,4 +110,4 @@ AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.8
 | Promoter Holding | — |
 
 ---
-*Confidence: 55% | Generated: 2026-11-13 10:41 | Next review: +30d*
+*Confidence: 53% | Generated: 2026-11-16 10:37 | Next review: +30d*

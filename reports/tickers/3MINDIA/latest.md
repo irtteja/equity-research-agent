@@ -1,5 +1,5 @@
 # 3MINDIA — 3MINDIA
-*Diversified | Diversified | 2026-11-13*
+*Diversified | Diversified | 2026-11-16*
 
 ---
 
@@ -9,7 +9,7 @@
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 67% confidence / CONFIRMED state
+- **Signal:** BUY / 65% confidence / CONFIRMED state
 - **Key driver:** 3MINDIA is 2.3% from 52W low with total_expenses improving 2 quarters (momentum 1.00)
 - **Watch:** No material bear arguments at this time (bear score 0.10)
 
@@ -18,12 +18,12 @@
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 66.7% |
+| Confidence | 65.2% |
 | Belief State | ✅ CONFIRMED |
-| Conviction Score | 0.49 |
+| Conviction Score | 0.48 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | negative_news_flow (0.38) |
-| Net Conviction | 0.58 |
+| Net Conviction | 0.57 |
 
 ## PRICE & TECHNICALS
 
@@ -108,4 +108,4 @@
 | Promoter Holding | — |
 
 ---
-*Confidence: 67% | Generated: 2026-11-13 10:41 | Next review: +30d*
+*Confidence: 65% | Generated: 2026-11-16 10:37 | Next review: +30d*

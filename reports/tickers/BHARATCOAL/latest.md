@@ -1,5 +1,5 @@
 # BHARATCOAL — BHARATCOAL
-*Oil Gas & Consumable Fuels | Consumable Fuels | 2026-11-13*
+*Oil Gas & Consumable Fuels | Consumable Fuels | 2026-11-16*
 
 ---
 
@@ -20,7 +20,7 @@ BHARATCOAL is 9.3% from 52W low with revenue improving 3 quarters (momentum 1.00
 | Signal | 🟢 **BUY** |
 | Confidence | 63.6% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.53 |
+| Conviction Score | 0.52 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
 | Net Conviction | 0.50 |
@@ -77,7 +77,7 @@ No material bear arguments identified.
 ℹ️ **Monitor:** [strong_buy_conviction] BHARATCOAL high-conviction BUY with high business quality (conf=75%, quality=0.70)
 ⚠️ **Monitor:** [stale_signal] BHARATCOAL BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [strong_buy_conviction] BHARATCOAL high-conviction BUY with high business quality (conf=75%, quality=0.70)
-ℹ️ **Monitor:** [strong_buy_conviction] BHARATCOAL high-conviction BUY with high business quality (conf=75%, quality=0.70)
+⚠️ **Monitor:** [stale_signal] BHARATCOAL BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [strong_buy_conviction] BHARATCOAL high-conviction BUY with high business quality (conf=75%, quality=0.70)
 
 ## PEER CONTEXT
@@ -110,4 +110,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 64% | Generated: 2026-11-13 10:41 | Next review: +30d*
+*Confidence: 64% | Generated: 2026-11-16 10:37 | Next review: +30d*

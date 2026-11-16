@@ -1,5 +1,5 @@
 # BLS — BLS
-*Consumer Services | Leisure Services | 2026-11-13*
+*Consumer Services | Leisure Services | 2026-11-16*
 
 ---
 
@@ -20,9 +20,9 @@ BLS is 9.7% from 52W low with revenue improving 2 quarters (momentum 1.00). Valu
 | Signal | 🟢 **BUY** |
 | Confidence | 63.6% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.53 |
+| Conviction Score | 0.50 |
 | Conviction Trend (7d) | → STABLE |
-| Sentiment | no_data (0.50) |
+| Sentiment | negative_news_flow (0.38) |
 | Net Conviction | 0.50 |
 
 ## PRICE & TECHNICALS
@@ -77,7 +77,7 @@ No material bear arguments identified.
 ℹ️ **Monitor:** [strong_buy_conviction] BLS high-conviction BUY with high business quality (conf=74%, quality=0.85)
 ⚠️ **Monitor:** [stale_signal] BLS BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [strong_buy_conviction] BLS high-conviction BUY with high business quality (conf=74%, quality=0.85)
-ℹ️ **Monitor:** [strong_buy_conviction] BLS high-conviction BUY with high business quality (conf=74%, quality=0.85)
+⚠️ **Monitor:** [stale_signal] BLS BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [strong_buy_conviction] BLS high-conviction BUY with high business quality (conf=74%, quality=0.85)
 
 ## PEER CONTEXT
@@ -108,4 +108,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 64% | Generated: 2026-11-13 10:41 | Next review: +30d*
+*Confidence: 64% | Generated: 2026-11-16 10:37 | Next review: +30d*
