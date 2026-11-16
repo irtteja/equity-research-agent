@@ -4134,3 +4134,11 @@ Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 199,097 unprocessed — ContextAgent lagging
 ============================================================
+
+[CHECKPOINT] 2026-11-16 19:46
+Task: results-fetch-nightly
+Status: completed
+Progress: 0 companies scheduled for 2026-11-15 — nothing to fetch
+Next: 8am retry trigger
+Blockers: none
+============================================================
