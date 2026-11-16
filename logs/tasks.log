@@ -4062,3 +4062,11 @@ Progress: bhavcopy saved 749 rows, indices bhavcopy not yet available, price_age
 Next: retry indices bhavcopy later, after-hours feed, nightly XBRL
 Blockers: price_agent needs market-hours guard, indices file delayed
 ============================================================
+
+[CHECKPOINT] 2026-11-16 11:04
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 199,097 unprocessed — ContextAgent lagging
+============================================================
