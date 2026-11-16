@@ -4142,3 +4142,11 @@ Progress: 0 companies scheduled for 2026-11-15 — nothing to fetch
 Next: 8am retry trigger
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-16 20:41
+Task: watchdog
+Status: completed
+Progress: night heartbeat 02:11 IST Tue Nov 17 — market closed, all nightly jobs done
+Next: next watchdog ~04:11 IST
+Blockers: none
+============================================================
