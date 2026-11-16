@@ -4046,3 +4046,11 @@ Progress: daily pipeline done — fetch_results (0 scheduled), context_agent 500
 Next: after-hours feed, nightly XBRL fetch
 Blockers: backfill_graph timed out (known)
 ============================================================
+
+[CHECKPOINT] 2026-11-16 10:41
+Task: watchdog
+Status: completed
+Progress: post-close heartbeat 16:10 IST — market closed, daily_monitor already ran (34f3683), graph 941 companies
+Next: after-hours feed, nightly XBRL, next watchdog ~18:11 IST
+Blockers: none
+============================================================
