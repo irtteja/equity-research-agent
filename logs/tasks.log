@@ -4334,3 +4334,11 @@ Progress: post-market 16:11 IST — daily_monitor completed: 16 research reports
 Next: next watchdog wake ~18:11 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-17 16:33
+Task: equity-daily-monitor
+Status: completed
+Progress: daily_monitor already done (16:11), price_agent=timeout, bhavcopy=749 rows saved, indices_bhavcopy=not ready yet, PROGRESS.md updated
+Next: watchdog 18:11 IST will retry indices bhavcopy
+Blockers: price_agent times out post-market; indices file not ready at 16:31
+============================================================

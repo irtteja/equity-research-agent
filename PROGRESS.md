@@ -1,5 +1,27 @@
 # Progress Log
 
+## 2026-11-17 — Tuesday: Full Market Day, Daily Pipeline, Bhavcopy
+
+### Done
+- **Live feed**: 3 runs during market hours (10:12, 14:05, 15:05 IST) — 41–46 nodes/run, bulk_deals active
+- **Orchestrator**: 12 BUY_CONFLUENCE stable all day (ABREL 0.77 … AURIONPRO 0.61). Commits: 1545521
+- **Daily brief pipeline** (10:31 trigger): context_agent 5000 eps/3060 edges, trend_agent 234 trends/87 strong
+- **daily_monitor** (16:11 IST via watchdog): 16 research reports, graph 14155 nodes/183286 edges, 1385 confirmed beliefs, 5 new generated tools auto-created
+- **Equity bhavcopy saved**: 749 rows for 2026-11-17 (`memory_store/bhavcopy/2026-11-17.csv`)
+- **Indices bhavcopy**: NSE file not ready at 16:31 IST — normal delay, watchdog retries at ~18:11 IST
+- **price_agent_runner**: timed out (known — runs outside market hours without guard)
+
+### Architecture changes
+- None today
+
+### Pending / next sessions
+- **Fix `price_agent_runner.py`**: add post-market time guard (times out when run after close)
+- **Fix indices bhavcopy retry**: retry `save_indices_bhavcopy.py` at ~18:11 IST watchdog
+- **Fix `backfill_graph.py` timeout**: times out at 110s — needs chunking or optimization
+- **Reduce episode backlog**: ~194,097 unprocessed — need bulk processing strategy
+- **Annual reports PDF extraction pipeline**: 819 PDFs, extraction not built
+- **Fix stalled agents**: price_agent, document_agent, announcement_agent, context_agent (partially working)
+
 ## 2026-11-16 — Monday: First Live Market Day, Daily Pipeline, Context Agent Fix
 
 ### Done
