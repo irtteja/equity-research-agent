@@ -4406,3 +4406,11 @@ Progress: midnight heartbeat 00:11 IST Nov 18 — all 2026-11-17 jobs done: dail
 Next: next watchdog wake ~02:11 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-17 19:03
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 196,035 unprocessed — ContextAgent lagging
+============================================================
