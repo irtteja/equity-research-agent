@@ -4262,3 +4262,27 @@ Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 199,097 unprocessed — ContextAgent lagging
 ============================================================
+
+[CHECKPOINT] 2026-11-17 10:34
+Task: None
+Status: completed
+Progress: trends_written=234 strong=87 workers=4 errors=0
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-17 10:34
+Task: None
+Status: completed
+Progress: alerts=0 critical=0 as_of=2026-11-17
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-17 16:04
+Task: daily_brief
+Status: completed
+Progress: fetch_results=clean(no results due), backfill_graph=timeout(known issue), context_agent=5000 episodes processed/3060 edges, trend_agent=234 trends/87 strong, alert_agent=ok
+Next: watchdog at 18:10 IST
+Blockers: backfill_graph times out at 110s — needs chunking
+============================================================
