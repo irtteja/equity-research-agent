@@ -1,5 +1,5 @@
 # AURIONPRO — AURIONPRO
-*Information Technology | IT - Software | 2026-11-16*
+*Information Technology | IT - Software | 2026-11-17*
 
 ---
 
@@ -11,7 +11,7 @@ AURIONPRO is 14.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 - **Signal:** BUY / 60% confidence / FORMING state
 - **Key driver:** AURIONPRO is 14.5% from 52W low with revenue improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.04)
+- **Watch:** No material bear arguments at this time (bear score 0.05)
 
 ## SIGNAL & CONVICTION
 
@@ -20,10 +20,10 @@ AURIONPRO is 14.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Signal | 🟢 **BUY** |
 | Confidence | 60.0% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.49 |
+| Conviction Score | 0.48 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.46 |
+| Net Conviction | 0.45 |
 
 ## PRICE & TECHNICALS
 
@@ -92,7 +92,7 @@ AURIONPRO is 14.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.22
 
 **Sector sensitivity:** Information Technology is sensitive to USD/INR (revenue in USD) and US economic conditions.
 
@@ -110,4 +110,4 @@ AURIONPRO is 14.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-16 10:37 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-17 10:42 | Next review: +30d*

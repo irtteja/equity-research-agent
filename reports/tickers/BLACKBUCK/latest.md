@@ -1,5 +1,5 @@
 # BLACKBUCK — BLACKBUCK
-*Services | Transport Services | 2026-11-16*
+*Services | Transport Services | 2026-11-17*
 
 ---
 
@@ -11,7 +11,7 @@ BLACKBUCK is 13.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 - **Signal:** BUY / 60% confidence / FORMING state
 - **Key driver:** BLACKBUCK is 13.5% from 52W low with revenue improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.04)
+- **Watch:** No material bear arguments at this time (bear score 0.05)
 
 ## SIGNAL & CONVICTION
 
@@ -20,10 +20,10 @@ BLACKBUCK is 13.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Signal | 🟢 **BUY** |
 | Confidence | 60.0% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.49 |
+| Conviction Score | 0.48 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.46 |
+| Net Conviction | 0.45 |
 
 ## PRICE & TECHNICALS
 
@@ -76,6 +76,7 @@ BLACKBUCK is 13.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ⚠️ **Monitor:** [stale_signal] BLACKBUCK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] BLACKBUCK BUY signal not refreshed in >7 days
+⚠️ **Monitor:** [stale_signal] BLACKBUCK BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [new_buy_signal] New BUY signal for BLACKBUCK
 
 ## PEER CONTEXT
@@ -90,7 +91,7 @@ BLACKBUCK is 13.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.22
 
 ## FUNDAMENTALS
 
@@ -106,4 +107,4 @@ BLACKBUCK is 13.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-16 10:37 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-17 10:42 | Next review: +30d*

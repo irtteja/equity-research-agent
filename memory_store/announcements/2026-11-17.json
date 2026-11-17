@@ -1,0 +1,1159 @@
+{
+  "date_range": {
+    "from": "2026-11-17",
+    "to": "2026-11-17"
+  },
+  "total_symbols": 752,
+  "symbols_with_announcements": 78,
+  "total_announcements": 90,
+  "errors": 0,
+  "announcements": {
+    "BOSCHLTD": [
+      {
+        "SYMBOL": "BOSCHLTD",
+        "COMPANY NAME": "Bosch Limited",
+        "SUBJECT": "Copy of Newspaper Publication",
+        "DETAILS": "Bosch Limited has informed the Exchange about Copy of Newspaper Publication of notice of postal ballot Nov 2026",
+        "BROADCAST DATE/TIME": "17-Nov-2026 16:10:37",
+        "RECEIPT": "2026-11-17 16:10:37",
+        "DISSEMINATION": "17-Nov-2026 16:10:38",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/BOSCHLTD2024_17112026161011_LettertoexchangenewspaperADNov26.pdf"
+      }
+    ],
+    "PHOENIXLTD": [
+      {
+        "SYMBOL": "PHOENIXLTD",
+        "COMPANY NAME": "The Phoenix Mills Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "The Phoenix Mills Limited has informed the Exchange about Outcome of Interaction with Analyst/Institutional Investor",
+        "BROADCAST DATE/TIME": "17-Nov-2026 16:08:59",
+        "RECEIPT": "2026-11-17 16:08:59",
+        "DISSEMINATION": "17-Nov-2026 16:09:00",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/PHOENIXLTD5_17112026160848_PMLAnalystsInvestormeetoutcome17112026_CLSA_SD.pdf"
+      }
+    ],
+    "MOIL": [
+      {
+        "SYMBOL": "MOIL",
+        "COMPANY NAME": "MOIL Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "MOIL Limited has informed the Exchange about Schedule of meet",
+        "BROADCAST DATE/TIME": "17-Nov-2026 16:07:33",
+        "RECEIPT": "2026-11-17 16:07:33",
+        "DISSEMINATION": "17-Nov-2026 16:07:33",
+        "DIFFERENCE": "00:00:00",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/MOIL_17112026160718_Intimation.pdf"
+      }
+    ],
+    "JUBLINGREA": [
+      {
+        "SYMBOL": "JUBLINGREA",
+        "COMPANY NAME": "Jubilant Ingrevia Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Jubilant Ingrevia Limited has informed the Exchange about Schedule of meet",
+        "BROADCAST DATE/TIME": "17-Nov-2026 16:07:05",
+        "RECEIPT": "2026-11-17 16:07:05",
+        "DISSEMINATION": "17-Nov-2026 16:07:06",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/JUBLINGREA_17112026160652_Intimation_of_Investor_Meet.pdf"
+      }
+    ],
+    "HDFCBANK": [
+      {
+        "SYMBOL": "HDFCBANK",
+        "COMPANY NAME": "HDFC Bank Limited",
+        "SUBJECT": "Updates",
+        "DETAILS": "HDFC Bank Limited has informed the Exchange regarding 'Grant of stock options under Employee Stock Option Scheme (ESOS   Plan H-2024) and Grant of Restricted Stock Units under Employees  Stock Incentive Master Scheme   2022'.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 15:54:23",
+        "RECEIPT": "2026-11-17 15:54:23",
+        "DISSEMINATION": "17-Nov-2026 15:54:24",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/HDFCBANK3_17112026155359_SE_Intimation_grant_of_ESOP_17112026.pdf"
+      },
+      {
+        "SYMBOL": "HDFCBANK",
+        "COMPANY NAME": "HDFC Bank Limited",
+        "SUBJECT": "ESOP/ESOS/ESPS",
+        "DETAILS": "HDFC Bank Limited has informed the Exchange regarding Allotment of 1412278  Shares.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 13:59:06",
+        "RECEIPT": "2026-11-17 13:59:06",
+        "DISSEMINATION": "17-Nov-2026 13:59:07",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/HDFCBANK3_17112026135613_SELetterESOP17112026.pdf"
+      }
+    ],
+    "HCC": [
+      {
+        "SYMBOL": "HCC",
+        "COMPANY NAME": "Hindustan Construction Company Limited",
+        "SUBJECT": "Resignation of Director/KMP/SMP",
+        "DETAILS": "Hindustan Construction Company Limited has informed the Exchange about Resignation of Director/KMP/SMP",
+        "BROADCAST DATE/TIME": "17-Nov-2026 15:50:29",
+        "RECEIPT": "2026-11-17 15:50:29",
+        "DISSEMINATION": "17-Nov-2026 15:50:30",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/HCC_ROID_104962_KMP_Doc.zip"
+      },
+      {
+        "SYMBOL": "HCC",
+        "COMPANY NAME": "Hindustan Construction Company Limited",
+        "SUBJECT": "Change in Management",
+        "DETAILS": "Hindustan Construction Company Limited has informed the Exchange about change in Management   Change in Senior Management Personnel ( SMP )",
+        "BROADCAST DATE/TIME": "17-Nov-2026 15:45:44",
+        "RECEIPT": "2026-11-17 15:45:44",
+        "DISSEMINATION": "17-Nov-2026 15:45:44",
+        "DIFFERENCE": "00:00:00",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/HCC_17112026154429_Exchange.pdf"
+      }
+    ],
+    "ASHOKLEY": [
+      {
+        "SYMBOL": "ASHOKLEY",
+        "COMPANY NAME": "Ashok Leyland Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Ashok Leyland Limited has informed the Exchange about Schedule of meet",
+        "BROADCAST DATE/TIME": "17-Nov-2026 15:44:55",
+        "RECEIPT": "2026-11-17 15:44:55",
+        "DISSEMINATION": "17-Nov-2026 15:44:56",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/ASHOKLEYLAND_17112026154429_46ALInvestormeetNov202026.pdf"
+      }
+    ],
+    "INTELLECT": [
+      {
+        "SYMBOL": "INTELLECT",
+        "COMPANY NAME": "Intellect Design Arena Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Intellect Design Arena Limited has informed the Exchange about Schedule of meet",
+        "BROADCAST DATE/TIME": "17-Nov-2026 15:43:45",
+        "RECEIPT": "2026-11-17 15:43:45",
+        "DISSEMINATION": "17-Nov-2026 15:43:45",
+        "DIFFERENCE": "00:00:00",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/INTELLECT_17112026154146_Intimation.pdf"
+      }
+    ],
+    "KARURVYSYA": [
+      {
+        "SYMBOL": "KARURVYSYA",
+        "COMPANY NAME": "Karur Vysya Bank Limited",
+        "SUBJECT": "Updates",
+        "DETAILS": "Karur Vysya Bank Limited has informed the Exchange regarding 'opening of new branches'.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 15:42:50",
+        "RECEIPT": "2026-11-17 15:42:50",
+        "DISSEMINATION": "17-Nov-2026 15:42:51",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/KARURVYSYA_17112026154225_Intimation_DSC.pdf"
+      }
+    ],
+    "LICI": [
+      {
+        "SYMBOL": "LICI",
+        "COMPANY NAME": "Life Insurance Corporation Of India",
+        "SUBJECT": "General Updates",
+        "DETAILS": "Life Insurance Corporation Of India has informed the Exchange about the update on Analyst/Investor Meet on November 17, 2026.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 15:34:54",
+        "RECEIPT": "2026-11-17 15:34:54",
+        "DISSEMINATION": "17-Nov-2026 15:34:56",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/LIC_BOARD_17112026153444_Final_Disc_Update_Invest_Meet_171126.pdf"
+      }
+    ],
+    "TATAPOWER": [
+      {
+        "SYMBOL": "TATAPOWER",
+        "COMPANY NAME": "Tata Power Company Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Tata Power Company Limited has informed the Exchange about Transcript",
+        "BROADCAST DATE/TIME": "17-Nov-2026 15:31:35",
+        "RECEIPT": "2026-11-17 15:31:35",
+        "DISSEMINATION": "17-Nov-2026 15:31:36",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/KSTPCL_17112026152929_Q2_FY27_Earning_Call_Transcript.pdf"
+      },
+      {
+        "SYMBOL": "TATAPOWER",
+        "COMPANY NAME": "Tata Power Company Limited",
+        "SUBJECT": "Copy of Newspaper Publication",
+        "DETAILS": "Tata Power Company Limited has informed the Exchange about Copy of Newspaper Publication",
+        "BROADCAST DATE/TIME": "17-Nov-2026 15:21:01",
+        "RECEIPT": "2026-11-17 15:21:01",
+        "DISSEMINATION": "17-Nov-2026 15:21:02",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/KSTPCL_17112026152051_final.pdf"
+      }
+    ],
+    "GLAXO": [
+      {
+        "SYMBOL": "GLAXO",
+        "COMPANY NAME": "GlaxoSmithKline Pharmaceuticals Limited",
+        "SUBJECT": "Shareholders meeting",
+        "DETAILS": "GlaxoSmithKline Pharmaceuticals Limited has informed the Exchange regarding Notice of Postal Ballot",
+        "BROADCAST DATE/TIME": "17-Nov-2026 15:20:00",
+        "RECEIPT": "2026-11-17 15:20:00",
+        "DISSEMINATION": "17-Nov-2026 15:20:01",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/GLAXO1924_17112026151952_PostalBallotNoticeRegulation.pdf"
+      }
+    ],
+    "PNBHOUSING": [
+      {
+        "SYMBOL": "PNBHOUSING",
+        "COMPANY NAME": "PNB Housing Finance Limited",
+        "SUBJECT": "ESOP/ESOS/ESPS",
+        "DETAILS": "PNB Housing Finance Limited has informed the Exchange regarding Allotment of 169961  Shares.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 15:12:09",
+        "RECEIPT": "2026-11-17 15:12:09",
+        "DISSEMINATION": "17-Nov-2026 15:12:11",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/PNBHOUSING_17112026150954_Regulation_30_Allotment_of_Equity_Shares__Nov_26_sd.pdf"
+      }
+    ],
+    "AMAGI": [
+      {
+        "SYMBOL": "AMAGI",
+        "COMPANY NAME": "Amagi Media Labs Limited",
+        "SUBJECT": "Press Release",
+        "DETAILS": "Amagi Media Labs Limited has informed the Exchange regarding a press release dated November 17, 2026, titled \"Amagi to Power Live Newscasts For Spectrum News.\".",
+        "BROADCAST DATE/TIME": "17-Nov-2026 15:00:13",
+        "RECEIPT": "2026-11-17 15:00:13",
+        "DISSEMINATION": "17-Nov-2026 15:00:14",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/AMAGI_17112026150001_PressReleaseSpectrum.pdf"
+      }
+    ],
+    "TATACHEM": [
+      {
+        "SYMBOL": "TATACHEM",
+        "COMPANY NAME": "Tata Chemicals Limited",
+        "SUBJECT": "Copy of Newspaper Publication",
+        "DETAILS": "Tata Chemicals Limited has informed the Exchange about Copy of Newspaper Publication",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:59:38",
+        "RECEIPT": "2026-11-17 14:59:38",
+        "DISSEMINATION": "17-Nov-2026 14:59:40",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/TATACHEMYS_17112026145909_SEintimationsigned.pdf"
+      },
+      {
+        "SYMBOL": "TATACHEM",
+        "COMPANY NAME": "Tata Chemicals Limited",
+        "SUBJECT": "News Verification",
+        "DETAILS": "The Exchange has sought clarification from Tata Chemicals Limited with respect to recent news item captioned Tata Sons IPO soon? Tata Chemicals, Tata Investment Corp shares rally up to 9% after RBI nudge to comply with listing norms.  The response from the Company is attached.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 12:43:19",
+        "RECEIPT": "2026-11-17 12:43:19",
+        "DISSEMINATION": "17-Nov-2026 12:43:21",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/TATACHEMYS_17112026124101_NSE_Letter_signed.pdf"
+      },
+      {
+        "SYMBOL": "TATACHEM",
+        "COMPANY NAME": "Tata Chemicals Limited",
+        "SUBJECT": "News Verification",
+        "DETAILS": "The Exchange has sought clarification from Tata Chemicals Limited with respect to recent news item captioned Tata Sons IPO soon? Tata Chemicals, Tata Investment Corp shares rally up to 9% after RBI nudge to comply with listing norms.  The response from the Company is awaited.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 11:04:46",
+        "RECEIPT": "2026-11-17 11:04:46",
+        "DISSEMINATION": "17-Nov-2026 11:04:47",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "-"
+      }
+    ],
+    "INFY": [
+      {
+        "SYMBOL": "INFY",
+        "COMPANY NAME": "Infosys Limited",
+        "SUBJECT": "Updates",
+        "DETAILS": "Infosys Limited has informed the Exchange regarding 'Infosys Positioned as a Leader in the 2026 Gartner\u00ae Magic Quadrant  for Public Cloud Optimization and Transformation Services for the Fourth Consecutive Year'.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:58:50",
+        "RECEIPT": "2026-11-17 14:58:50",
+        "DISSEMINATION": "17-Nov-2026 14:58:51",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/Infosys_17112026145826_PR_17112026.pdf"
+      }
+    ],
+    "ACE": [
+      {
+        "SYMBOL": "ACE",
+        "COMPANY NAME": "Action Construction Equipment Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Action Construction Equipment Limited has informed the Exchange about Transcript",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:56:33",
+        "RECEIPT": "2026-11-17 14:56:33",
+        "DISSEMINATION": "17-Nov-2026 14:56:34",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/ACE_17112026145618_TRANSCRIPTQ2FY2027.pdf"
+      }
+    ],
+    "SCHAEFFLER": [
+      {
+        "SYMBOL": "SCHAEFFLER",
+        "COMPANY NAME": "Schaeffler India Limited",
+        "SUBJECT": "Updates",
+        "DETAILS": "Schaeffler India Limited has informed the Exchange regarding 'Machine readable copy of Unaudited consolidated financial results of Schaeffler India Limited (the  Holding Company ) for quarter ended September 30, 2026'. apart from this, there is no change in the Financial Results filed on October 27, 2026",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:55:31",
+        "RECEIPT": "2026-11-17 14:55:31",
+        "DISSEMINATION": "17-Nov-2026 14:55:32",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/SCHAEFFLERUSER1_17112026145509_SIL_Reg_33_LR_Results_Consolidated_Q32026.pdf"
+      },
+      {
+        "SYMBOL": "SCHAEFFLER",
+        "COMPANY NAME": "Schaeffler India Limited",
+        "SUBJECT": "Updates",
+        "DETAILS": "Schaeffler India Limited has informed the Exchange regarding 'Machine readable copy of unaudited standalone financial results of Schaeffler India Limited (the  Company ) for the quarter ended September 30, 2026'. Apart from this, there is no change in the financial results filed on October 27, 2026.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:53:01",
+        "RECEIPT": "2026-11-17 14:53:01",
+        "DISSEMINATION": "17-Nov-2026 14:53:01",
+        "DIFFERENCE": "00:00:00",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/SCHAEFFLERUSER1_17112026145249_SIL_Reg_33_LR_Results_Standalone_Q32026.pdf"
+      }
+    ],
+    "EDELWEISS": [
+      {
+        "SYMBOL": "EDELWEISS",
+        "COMPANY NAME": "Edelweiss Financial Services Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Edelweiss Financial Services Limited has informed the Exchange about Transcript",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:45:42",
+        "RECEIPT": "2026-11-17 14:45:42",
+        "DISSEMINATION": "17-Nov-2026 14:45:44",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/EDELWEISS_17112026144506_Transcript.pdf"
+      }
+    ],
+    "LGEINDIA": [
+      {
+        "SYMBOL": "LGEINDIA",
+        "COMPANY NAME": "LG Electronics India Limited",
+        "SUBJECT": "Copy of Newspaper Publication",
+        "DETAILS": "LG Electronics India Limited has informed the Exchange about Copy of Newspaper Publication",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:44:25",
+        "RECEIPT": "2026-11-17 14:44:25",
+        "DISSEMINATION": "17-Nov-2026 14:44:26",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/LGEINDIA_17112026144019_Newspaper_Publication_dated_17th_November_2026.pdf"
+      }
+    ],
+    "SOUTHBANK": [
+      {
+        "SYMBOL": "SOUTHBANK",
+        "COMPANY NAME": "The South Indian Bank Limited",
+        "SUBJECT": "Commencement of commercial production/operations",
+        "DETAILS": "The South Indian Bank Limited has informed the Exchange about Opening of New Branch - Intimation under Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:41:24",
+        "RECEIPT": "2026-11-17 14:41:24",
+        "DISSEMINATION": "17-Nov-2026 14:41:26",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/SOUTHBANK_17112026144044_SD_STT_BRANCHOPENING_17NOV2026.pdf"
+      }
+    ],
+    "AZAD": [
+      {
+        "SYMBOL": "AZAD",
+        "COMPANY NAME": "Azad Engineering Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Meeting with Investors/Analysts (Participants)",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:41:08",
+        "RECEIPT": "2026-11-17 14:41:08",
+        "DISSEMINATION": "17-Nov-2026 14:41:09",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/AZAD2356_17112026144029_Covering.pdf"
+      }
+    ],
+    "REFEX": [
+      {
+        "SYMBOL": "REFEX",
+        "COMPANY NAME": "Refex Industries Limited",
+        "SUBJECT": "Bagging/Receiving of orders/contracts",
+        "DETAILS": "Refex Industries Limited ( RIL ) bags contract for utilization of Pond Ash from a Major Power Producer Company",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:40:46",
+        "RECEIPT": "2026-11-17 14:40:46",
+        "DISSEMINATION": "17-Nov-2026 14:40:47",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/REFEX2002_17112026143522_RIL_order_Pond_Ash_NTECL17112026.pdf"
+      }
+    ],
+    "INDIAGLYCO": [
+      {
+        "SYMBOL": "INDIAGLYCO",
+        "COMPANY NAME": "India Glycols Limited",
+        "SUBJECT": "Press Release",
+        "DETAILS": "India Glycols Limited has informed the Exchange regarding a press release dated November 17, 2026, titled \"Press Release on Financial Results\".",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:40:38",
+        "RECEIPT": "2026-11-17 14:40:38",
+        "DISSEMINATION": "17-Nov-2026 14:40:39",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/INDIAGLYCO_17112026144027_PressReleaseF.pdf"
+      }
+    ],
+    "ULTRACEMCO": [
+      {
+        "SYMBOL": "ULTRACEMCO",
+        "COMPANY NAME": "UltraTech Cement Limited",
+        "SUBJECT": "Copy of Newspaper Publication",
+        "DETAILS": "UltraTech Cement Limited has informed the Exchange about Copy of Newspaper Publication",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:40:03",
+        "RECEIPT": "2026-11-17 14:40:03",
+        "DISSEMINATION": "17-Nov-2026 14:40:05",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/ULTRACEMCO_17112026143809_SEIntimation17112026.pdf"
+      }
+    ],
+    "INDUSINDBK": [
+      {
+        "SYMBOL": "INDUSINDBK",
+        "COMPANY NAME": "IndusInd Bank Limited",
+        "SUBJECT": "Copy of Newspaper Publication",
+        "DETAILS": "IndusInd Bank Limited has informed the Exchange about Copy of Newspaper Publication",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:33:58",
+        "RECEIPT": "2026-11-17 14:33:58",
+        "DISSEMINATION": "17-Nov-2026 14:33:59",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/INDUSINDBK1_17112026143321_FinalUpload.pdf"
+      },
+      {
+        "SYMBOL": "INDUSINDBK",
+        "COMPANY NAME": "IndusInd Bank Limited",
+        "SUBJECT": "Press Release",
+        "DETAILS": "IndusInd Bank Limited has informed the Exchange regarding a press release dated November 17, 2026, titled \"Mastercard Move and IndusInd Bank collaborate to enhance outbound cross-border payments from India\".",
+        "BROADCAST DATE/TIME": "17-Nov-2026 10:30:28",
+        "RECEIPT": "2026-11-17 10:30:28",
+        "DISSEMINATION": "17-Nov-2026 10:30:29",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/INDUSINDBK1_17112026102634_FinalUpload.pdf"
+      }
+    ],
+    "HINDZINC": [
+      {
+        "SYMBOL": "HINDZINC",
+        "COMPANY NAME": "Hindustan Zinc Limited",
+        "SUBJECT": "Press Release",
+        "DETAILS": "Hindustan Zinc Limited has informed the Exchange regarding a press release dated November 17, 2026, titled \"Hindustan Zinc to be World s Largest Zinc & Silver Producer with Rs. 80,000 crore expansion\".",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:32:32",
+        "RECEIPT": "2026-11-17 14:32:32",
+        "DISSEMINATION": "17-Nov-2026 14:32:33",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/HINDZINCNSE_17112026143223_FinalSEIntimation.pdf"
+      }
+    ],
+    "JAIBALAJI": [
+      {
+        "SYMBOL": "JAIBALAJI",
+        "COMPANY NAME": "Jai Balaji Industries Limited",
+        "SUBJECT": "Investor Presentation",
+        "DETAILS": "Jai Balaji Industries Limited has informed the Exchange about Investor Presentation",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:25:34",
+        "RECEIPT": "2026-11-17 14:25:34",
+        "DISSEMINATION": "17-Nov-2026 14:25:35",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/JAIBALAJI_17112026142520_InvestorPresentationSigned.pdf"
+      }
+    ],
+    "EICHERMOT": [
+      {
+        "SYMBOL": "EICHERMOT",
+        "COMPANY NAME": "Eicher Motors Limited",
+        "SUBJECT": "ESOP/ESOS/ESPS",
+        "DETAILS": "Eicher Motors Limited has informed the Exchange regarding Grant of 105 Options.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:21:29",
+        "RECEIPT": "2026-11-17 14:21:29",
+        "DISSEMINATION": "17-Nov-2026 14:21:31",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/EICHERMOT_17112026141949_EMLGrantofRSUNovember172026Signed.pdf"
+      }
+    ],
+    "LUPIN": [
+      {
+        "SYMBOL": "LUPIN",
+        "COMPANY NAME": "Lupin Limited",
+        "SUBJECT": "Copy of Newspaper Publication",
+        "DETAILS": "Lupin Limited has informed the Exchange about Newspaper Publication regarding the Notice of Postal Ballot and Remote E-Voting.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:15:01",
+        "RECEIPT": "2026-11-17 14:15:01",
+        "DISSEMINATION": "17-Nov-2026 14:15:02",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/Lupin2_17112026141227_SE_Intimation_Newspaper_Advt.pdf"
+      }
+    ],
+    "RVNL": [
+      {
+        "SYMBOL": "RVNL",
+        "COMPANY NAME": "Rail Vikas Nigam Limited",
+        "SUBJECT": "Investor Presentation",
+        "DETAILS": "Rail Vikas Nigam Limited has informed the Exchange about Investor Presentation",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:12:10",
+        "RECEIPT": "2026-11-17 14:12:10",
+        "DISSEMINATION": "17-Nov-2026 14:12:11",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/RVNL_17112026141058_PresentationQ2FR.pdf"
+      }
+    ],
+    "TRENT": [
+      {
+        "SYMBOL": "TRENT",
+        "COMPANY NAME": "Trent Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Trent Limited has informed the Exchange about Intimation of schedule of Analyst / Institutional Investors Meetings",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:06:22",
+        "RECEIPT": "2026-11-17 14:06:22",
+        "DISSEMINATION": "17-Nov-2026 14:06:23",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/TRENT_17112026140114_Investor_Analyst_Meeting_17112026.pdf"
+      }
+    ],
+    "CAPLIPOINT": [
+      {
+        "SYMBOL": "CAPLIPOINT",
+        "COMPANY NAME": "Caplin Point Laboratories Limited",
+        "SUBJECT": "General Updates",
+        "DETAILS": "Caplin Point Laboratories Limited has informed the Exchange about Classification of US FDA Inspection at the facility of Caplin Steriles Limited (Company's Subsidiary) as OAI",
+        "BROADCAST DATE/TIME": "17-Nov-2026 14:04:59",
+        "RECEIPT": "2026-11-17 14:04:59",
+        "DISSEMINATION": "17-Nov-2026 14:05:00",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/CAPLINPOINT_17112026135959_Stock_Exchange_intimation_of_USFDA_Audit.pdf"
+      }
+    ],
+    "TORNTPOWER": [
+      {
+        "SYMBOL": "TORNTPOWER",
+        "COMPANY NAME": "Torrent Power Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Torrent Power Limited has informed the Exchange about Schedule of meet",
+        "BROADCAST DATE/TIME": "17-Nov-2026 13:39:19",
+        "RECEIPT": "2026-11-17 13:39:19",
+        "DISSEMINATION": "17-Nov-2026 13:39:20",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/TORNTPOWER_17112026133906_Investor_Calls_November_2026.pdf"
+      }
+    ],
+    "JYOTHYLAB": [
+      {
+        "SYMBOL": "JYOTHYLAB",
+        "COMPANY NAME": "Jyothy Labs Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Jyothy Labs Limited has informed the Exchange about Schedule of meet",
+        "BROADCAST DATE/TIME": "17-Nov-2026 13:36:51",
+        "RECEIPT": "2026-11-17 13:36:51",
+        "DISSEMINATION": "17-Nov-2026 13:36:52",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/JYOTHYLAB_17112026133616_SEIntimation_Locus_Investment_Group.pdf"
+      }
+    ],
+    "ABFRL": [
+      {
+        "SYMBOL": "ABFRL",
+        "COMPANY NAME": "Aditya Birla Fashion and Retail Limited",
+        "SUBJECT": "Copy of Newspaper Publication",
+        "DETAILS": "Aditya Birla Fashion and Retail Limited has informed the Exchange about Newspaper advertisement regarding Special Window for re-lodgement of transfer requests of physical shares",
+        "BROADCAST DATE/TIME": "17-Nov-2026 13:35:29",
+        "RECEIPT": "2026-11-17 13:35:29",
+        "DISSEMINATION": "17-Nov-2026 13:35:30",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/ABFRL_17112026133510_SE.pdf"
+      }
+    ],
+    "NH": [
+      {
+        "SYMBOL": "NH",
+        "COMPANY NAME": "Narayana Hrudayalaya Ltd.",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Narayana Hrudayalaya Ltd. has informed the Exchange about Schedule of meet of investors to be held on November 18, 2026",
+        "BROADCAST DATE/TIME": "17-Nov-2026 13:32:27",
+        "RECEIPT": "2026-11-17 13:32:27",
+        "DISSEMINATION": "17-Nov-2026 13:32:28",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/Narayana_17112026133015_SE-_Investors_meeting_Novemeber_17_2026.pdf"
+      },
+      {
+        "SYMBOL": "NH",
+        "COMPANY NAME": "Narayana Hrudayalaya Ltd.",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Narayana Hrudayalaya Ltd. has informed the Exchange about Schedule of meet of investors to be held on November 19, 2026",
+        "BROADCAST DATE/TIME": "17-Nov-2026 13:32:27",
+        "RECEIPT": "2026-11-17 13:32:27",
+        "DISSEMINATION": "17-Nov-2026 13:32:28",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/Narayana_17112026133152_SE-_Investors_meeting_Novemeber_17_2026.pdf"
+      }
+    ],
+    "ECLERX": [
+      {
+        "SYMBOL": "ECLERX",
+        "COMPANY NAME": "eClerx Services Limited",
+        "SUBJECT": "Shareholders meeting",
+        "DETAILS": "eClerx Services Limited has informed the Exchange regarding Notice of Postal Ballot",
+        "BROADCAST DATE/TIME": "17-Nov-2026 13:26:52",
+        "RECEIPT": "2026-11-17 13:26:52",
+        "DISSEMINATION": "17-Nov-2026 13:26:53",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/ECLERX_17112026132624_BSENSEPostalBallotNotice.pdf"
+      }
+    ],
+    "EQUITASBNK": [
+      {
+        "SYMBOL": "EQUITASBNK",
+        "COMPANY NAME": "Equitas Small Finance Bank Limited",
+        "SUBJECT": "General Updates",
+        "DETAILS": "Equitas Small Finance Bank Limited has informed the Exchanges about the Investor conference to be attended by the representatives of the Bank",
+        "BROADCAST DATE/TIME": "17-Nov-2026 13:23:28",
+        "RECEIPT": "2026-11-17 13:23:28",
+        "DISSEMINATION": "17-Nov-2026 13:23:29",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/EQUITASBNK_17112026132318_Investorconferencefinal.pdf"
+      },
+      {
+        "SYMBOL": "EQUITASBNK",
+        "COMPANY NAME": "Equitas Small Finance Bank Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Equitas Small Finance Bank Limited has informed the Exchange about Transcript",
+        "BROADCAST DATE/TIME": "17-Nov-2026 11:01:00",
+        "RECEIPT": "2026-11-17 11:01:00",
+        "DISSEMINATION": "17-Nov-2026 11:01:01",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/EQUITASBNK_17112026110051_Transcriptforupload.pdf"
+      }
+    ],
+    "SHREEJISPG": [
+      {
+        "SYMBOL": "SHREEJISPG",
+        "COMPANY NAME": "Shreeji Shipping Global Limited",
+        "SUBJECT": "Copy of Newspaper Publication",
+        "DETAILS": "Regulations, 2015, we hereby submit copies of the newspaper advertisement published in relation to the Notice of Postal Ballot. The advertisement was published in the following newspaper on Tuesday, November 17, 2026 in Financial Express- (in English) and Phulchhab- (in Gujarati)The said advertisement contains the details regarding the Postal Ballot and the resolution(s) proposed as set out in the Postal Ballot Notice.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 13:12:15",
+        "RECEIPT": "2026-11-17 13:12:15",
+        "DISSEMINATION": "17-Nov-2026 13:12:16",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/SHREEJI_17112026131051_Newspaper_Advertisement_17-11-2026.pdf"
+      }
+    ],
+    "OFSS": [
+      {
+        "SYMBOL": "OFSS",
+        "COMPANY NAME": "Oracle Financial Services Software Limited",
+        "SUBJECT": "Updates",
+        "DETAILS": "Oracle Financial Services Software Limited has informed the Exchange regarding 'Shifting of the Corporate Office of the Registrar and Share Transfer Agent ( RTA )'.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 13:11:05",
+        "RECEIPT": "2026-11-17 13:11:05",
+        "DISSEMINATION": "17-Nov-2026 13:11:07",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/OFSS_17112026131018_IntimationtoSENewRTAaddresssd.pdf"
+      }
+    ],
+    "ICICILIFE": [
+      {
+        "SYMBOL": "ICICILIFE",
+        "COMPANY NAME": "ICICI Life Insurance Limited",
+        "SUBJECT": "ESOP/ESOS/ESPS",
+        "DETAILS": "ICICI Life Insurance Limited has informed the Exchange regarding Allotment of 18453  equity shares under the Employees Stock Option Scheme (2005) and the Employees Stock Unit Scheme (2023).",
+        "BROADCAST DATE/TIME": "17-Nov-2026 13:05:51",
+        "RECEIPT": "2026-11-17 13:05:51",
+        "DISSEMINATION": "17-Nov-2026 13:05:52",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/ICICIPRULI_17112026130313_SE_Intimation_Nov_17_2026.pdf"
+      }
+    ],
+    "OLAELEC": [
+      {
+        "SYMBOL": "OLAELEC",
+        "COMPANY NAME": "Ola Electric Mobility Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Ola Electric Mobility Limited has informed the Exchange about Transcript",
+        "BROADCAST DATE/TIME": "17-Nov-2026 13:04:46",
+        "RECEIPT": "2026-11-17 13:04:46",
+        "DISSEMINATION": "17-Nov-2026 13:04:47",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/OLAELECTRIC_17112026130433_SEintimationtranscriptearningscall.pdf"
+      }
+    ],
+    "TATAINVEST": [
+      {
+        "SYMBOL": "TATAINVEST",
+        "COMPANY NAME": "Tata Investment Corporation Limited",
+        "SUBJECT": "News Verification",
+        "DETAILS": "The Exchange has sought clarification from Tata Investment Corporation Limited with respect to recent news item captioned Tata Sons IPO soon? Tata Chemicals, Tata Investment Corp shares rally up to 9% after RBI nudge to comply with listing norms.  The response from the Company is attached.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 12:59:00",
+        "RECEIPT": "2026-11-17 12:59:00",
+        "DISSEMINATION": "17-Nov-2026 12:59:01",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/TATAINVEST_17112026125845_NSE_Letter.pdf"
+      },
+      {
+        "SYMBOL": "TATAINVEST",
+        "COMPANY NAME": "Tata Investment Corporation Limited",
+        "SUBJECT": "News Verification",
+        "DETAILS": "The Exchange has sought clarification from Tata Investment Corporation Limited with respect to recent news item captioned Tata Sons IPO soon? Tata Chemicals, Tata Investment Corp shares rally up to 9% after RBI nudge to comply with listing norms.  The response from the Company is awaited.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 11:04:31",
+        "RECEIPT": "2026-11-17 11:04:31",
+        "DISSEMINATION": "17-Nov-2026 11:04:32",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "-"
+      }
+    ],
+    "TEJASNET": [
+      {
+        "SYMBOL": "TEJASNET",
+        "COMPANY NAME": "Tejas Networks Limited",
+        "SUBJECT": "Copy of Newspaper Publication",
+        "DETAILS": "Tejas Networks Limited has informed the Exchange about Copy of Newspaper Publication regarding \"Notice to Shareholders - Special Window for Transfer and Dematerialization of Physical Securities\"",
+        "BROADCAST DATE/TIME": "17-Nov-2026 12:58:28",
+        "RECEIPT": "2026-11-17 12:58:28",
+        "DISSEMINATION": "17-Nov-2026 12:58:28",
+        "DIFFERENCE": "00:00:00",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/TEJASNET_17112026125814_NP_Publication_Relodgement.pdf"
+      }
+    ],
+    "GILLETTE": [
+      {
+        "SYMBOL": "GILLETTE",
+        "COMPANY NAME": "Gillette India Limited",
+        "SUBJECT": "General Updates",
+        "DETAILS": "Gillette India Limited has informed the Exchange about the disclosure under Regulation 30 of SEBI (LODR) Regulations, 2015",
+        "BROADCAST DATE/TIME": "17-Nov-2026 12:55:28",
+        "RECEIPT": "2026-11-17 12:55:28",
+        "DISSEMINATION": "17-Nov-2026 12:55:29",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/GILLETTE_17112026125204_SELetterReg3017112026.pdf"
+      }
+    ],
+    "NEWGEN": [
+      {
+        "SYMBOL": "NEWGEN",
+        "COMPANY NAME": "Newgen Software Technologies Limited",
+        "SUBJECT": "Bagging/Receiving of orders/contracts",
+        "DETAILS": "Newgen Software Technologies Limited has informed the Exchange about the Company has received and accepted a Letter of Award received from a customer located at Ghana, West Africa, for implementation of the automation credit management solutions on the Newgen Platform and related support services",
+        "BROADCAST DATE/TIME": "17-Nov-2026 12:53:26",
+        "RECEIPT": "2026-11-17 12:53:26",
+        "DISSEMINATION": "17-Nov-2026 12:53:27",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/NEWGEN2_17112026125241_Stock_Exchange_Material_disclosure__17112026.pdf"
+      }
+    ],
+    "LTFOODS": [
+      {
+        "SYMBOL": "LTFOODS",
+        "COMPANY NAME": "LT Foods Limited",
+        "SUBJECT": "Press Release",
+        "DETAILS": "LT Foods Limited has informed the Exchange regarding a press release dated November 17, 2026, titled \"Please find enclosed herewith copy of Press Release on   LT Foods makes Basmati rice the hero of every meal with DAAWAT\u00ae Delight s new campaign\".",
+        "BROADCAST DATE/TIME": "17-Nov-2026 12:52:47",
+        "RECEIPT": "2026-11-17 12:52:47",
+        "DISSEMINATION": "17-Nov-2026 12:52:48",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/532783_17112026125226_Intimation.pdf"
+      }
+    ],
+    "RKFORGE": [
+      {
+        "SYMBOL": "RKFORGE",
+        "COMPANY NAME": "Ramkrishna Forgings Limited",
+        "SUBJECT": "General Updates",
+        "DETAILS": "Ramkrishna Forgings Limited has informed the Exchange about Transfer Of Equity Shares Pursuant To RKF Limited Employee Stock Option Scheme 2023",
+        "BROADCAST DATE/TIME": "17-Nov-2026 12:49:30",
+        "RECEIPT": "2026-11-17 12:49:30",
+        "DISSEMINATION": "17-Nov-2026 12:49:30",
+        "DIFFERENCE": "00:00:00",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/RKFORGE_17112026124901_ESOPAllotment17November2026.pdf"
+      }
+    ],
+    "THANGAMAYL": [
+      {
+        "SYMBOL": "THANGAMAYL",
+        "COMPANY NAME": "Thangamayil Jewellery Limited",
+        "SUBJECT": "Shareholders meeting",
+        "DETAILS": "Thangamayil Jewellery Limited has informed the Exchange regarding Notice of Postal Ballot",
+        "BROADCAST DATE/TIME": "17-Nov-2026 12:44:55",
+        "RECEIPT": "2026-11-17 12:44:55",
+        "DISSEMINATION": "17-Nov-2026 12:44:56",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/THANGAMAYL_17112026124344_Covering_Letter_Postal_Ballot.pdf"
+      }
+    ],
+    "GODREJCP": [
+      {
+        "SYMBOL": "GODREJCP",
+        "COMPANY NAME": "Godrej Consumer Products Limited",
+        "SUBJECT": "General Updates",
+        "DETAILS": "Godrej Consumer Products Limited has informed the Exchange about General Updates - Copy of Newspaper Publication",
+        "BROADCAST DATE/TIME": "17-Nov-2026 12:29:45",
+        "RECEIPT": "2026-11-17 12:29:45",
+        "DISSEMINATION": "17-Nov-2026 12:29:46",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/GODREJCP_17112026122843_SE_Intimation_-_Name_Change_SignedF.pdf"
+      }
+    ],
+    "MAPMYINDIA": [
+      {
+        "SYMBOL": "MAPMYINDIA",
+        "COMPANY NAME": "C.E. Info Systems Limited",
+        "SUBJECT": "Press Release (Revised)",
+        "DETAILS": "C.E. Info Systems Limited has informed the Exchange regarding a revised press release dated November 17, 2026, titled \"Submission of revised Press Release\".",
+        "BROADCAST DATE/TIME": "17-Nov-2026 12:23:32",
+        "RECEIPT": "2026-11-17 12:23:32",
+        "DISSEMINATION": "17-Nov-2026 12:23:33",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/MAPMYINDIA_17112026122319_MMI_Arattai_Revised_PR_17_Nov_2026.pdf"
+      },
+      {
+        "SYMBOL": "MAPMYINDIA",
+        "COMPANY NAME": "C.E. Info Systems Limited",
+        "SUBJECT": "Press Release",
+        "DETAILS": "C.E. Info Systems Limited has informed the Exchange regarding a press release dated November 17, 2026, titled \"C.E. Info Systems Limited announcing integration of MapmyIndia Mappls with Arattai to enable its users to seamlessly navigate to chat-shared locations\".",
+        "BROADCAST DATE/TIME": "17-Nov-2026 11:59:32",
+        "RECEIPT": "2026-11-17 11:59:32",
+        "DISSEMINATION": "17-Nov-2026 11:59:33",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/MAPMYINDIA_17112026115924_MMI_Arattai_PR-17_Nov_2026.pdf"
+      }
+    ],
+    "BALKRISIND": [
+      {
+        "SYMBOL": "BALKRISIND",
+        "COMPANY NAME": "Balkrishna Industries Limited",
+        "SUBJECT": "General Updates",
+        "DETAILS": "Balkrishna Industries Limited has informed the Exchange about General Updates",
+        "BROADCAST DATE/TIME": "17-Nov-2026 12:19:20",
+        "RECEIPT": "2026-11-17 12:19:20",
+        "DISSEMINATION": "17-Nov-2026 12:19:20",
+        "DIFFERENCE": "00:00:00",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/BALKRISIND_17112026121837_Letter_to_Stock_Exchange_Signed.pdf"
+      }
+    ],
+    "SHADOWFAX": [
+      {
+        "SYMBOL": "SHADOWFAX",
+        "COMPANY NAME": "Shadowfax Technologies Limited",
+        "SUBJECT": "Options to purchase securities",
+        "DETAILS": "Shadowfax Technologies Limited has informed the Exchange about Increase in ESOP Pool and Grant of Employee Stock Options under Shadowfax Technologies Limited- Employee Stock Option Plan - 2016",
+        "BROADCAST DATE/TIME": "17-Nov-2026 12:18:37",
+        "RECEIPT": "2026-11-17 12:18:37",
+        "DISSEMINATION": "17-Nov-2026 12:18:38",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/9900590024_17112026121746_Reg_30_disclosure.pdf"
+      }
+    ],
+    "KTKBANK": [
+      {
+        "SYMBOL": "KTKBANK",
+        "COMPANY NAME": "The Karnataka Bank Limited",
+        "SUBJECT": "Strikes/Lockouts/Disturbances",
+        "DETAILS": "The Karnataka Bank Limited has informed the Exchange about strikes/lockouts/disturbances",
+        "BROADCAST DATE/TIME": "17-Nov-2026 12:14:40",
+        "RECEIPT": "2026-11-17 12:14:40",
+        "DISSEMINATION": "17-Nov-2026 12:14:42",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/KTKBANK_17112026121343_Strike_Deferral_Signed.pdf"
+      }
+    ],
+    "TTKPRESTIG": [
+      {
+        "SYMBOL": "TTKPRESTIG",
+        "COMPANY NAME": "TTK Prestige Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "TTK Prestige Limited has informed the Exchange about Outcome",
+        "BROADCAST DATE/TIME": "17-Nov-2026 12:10:09",
+        "RECEIPT": "2026-11-17 12:10:09",
+        "DISSEMINATION": "17-Nov-2026 12:10:10",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/TTKPRESTIG1_17112026120534_Outcome_Avendus_Call_Signed.pdf"
+      }
+    ],
+    "HEGAM": [
+      {
+        "SYMBOL": "HEGAM",
+        "COMPANY NAME": "HEG Advanced Materials Limited",
+        "SUBJECT": "Copy of Newspaper Publication",
+        "DETAILS": "HEG Advanced Materials Limited has informed the Exchange about Copy of Newspaper Publication on the subject i.e. a)  Special Window for Transfer & Dematerialisation of Physical shares  b) Request for KYC updation (including PAN, Bank Account details, Contact Information & Nomination details) published today i.e. 17th November 2026 in the following newspapers:1. Business Standard (All Editions) in English2. Nava Bharat (Bhopal Edition) in Hindi",
+        "BROADCAST DATE/TIME": "17-Nov-2026 12:08:24",
+        "RECEIPT": "2026-11-17 12:08:24",
+        "DISSEMINATION": "17-Nov-2026 12:08:25",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/HEGAM_17112026120704_SE_intimation_Newspaperadvt_17112026_signed.pdf"
+      }
+    ],
+    "EMBDL": [
+      {
+        "SYMBOL": "EMBDL",
+        "COMPANY NAME": "Embassy Developments Limited",
+        "SUBJECT": "Press Release",
+        "DETAILS": "Press Release - \"Embassy Developments Unveils Embassy ONE Residences - an Exclusive Collection of 59 Ultra-Luxury Managed Residences\".",
+        "BROADCAST DATE/TIME": "17-Nov-2026 11:56:39",
+        "RECEIPT": "2026-11-17 11:56:39",
+        "DISSEMINATION": "17-Nov-2026 11:56:40",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/EMBDL_17112026115355_EDL_Press_Release_17112026.pdf"
+      }
+    ],
+    "UNIONBANK": [
+      {
+        "SYMBOL": "UNIONBANK",
+        "COMPANY NAME": "Union Bank of India",
+        "SUBJECT": "General Updates",
+        "DETAILS": "Union Bank of India has informed the Exchange about General Updates",
+        "BROADCAST DATE/TIME": "17-Nov-2026 11:51:08",
+        "RECEIPT": "2026-11-17 11:51:08",
+        "DISSEMINATION": "17-Nov-2026 11:51:09",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/UNIONBANK_17112026115051_Disclosure_19_20Nov2026.pdf"
+      }
+    ],
+    "AETHER": [
+      {
+        "SYMBOL": "AETHER",
+        "COMPANY NAME": "Aether Industries Limited",
+        "SUBJECT": "Press Release",
+        "DETAILS": "In accordance with Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, read with the applicable SEBI circulars, we wish to inform you that Aether Industries Limited has today entered into a Facility Development and Supply Agreement with Baker Petrolite LLC, a Baker Hughes Company, as attached.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 11:42:12",
+        "RECEIPT": "2026-11-17 11:42:12",
+        "DISSEMINATION": "17-Nov-2026 11:42:13",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/AETHER_17112026114202_47.pdf"
+      }
+    ],
+    "RATEGAIN": [
+      {
+        "SYMBOL": "RATEGAIN",
+        "COMPANY NAME": "Rategain Travel Technologies Limited",
+        "SUBJECT": "Press Release",
+        "DETAILS": "Rategain Travel Technologies Limited has informed the Exchange regarding a press release dated November 17, 2026, titled \"Press Release on  Quicklease Car Rental Partners with RateGain to Strengthen CompetitivePricing Intelligence Across Its Fleet \".",
+        "BROADCAST DATE/TIME": "17-Nov-2026 11:22:35",
+        "RECEIPT": "2026-11-17 11:22:35",
+        "DISSEMINATION": "17-Nov-2026 11:22:36",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/RATEGAIN_17112026112222_RG_PR_17112026.pdf"
+      }
+    ],
+    "VMM": [
+      {
+        "SYMBOL": "VMM",
+        "COMPANY NAME": "Vishal Mega Mart Limited",
+        "SUBJECT": "Shareholders meeting",
+        "DETAILS": "Vishal Mega Mart Limited has informed the Exchange regarding Notice of Postal Ballot",
+        "BROADCAST DATE/TIME": "17-Nov-2026 11:21:16",
+        "RECEIPT": "2026-11-17 11:21:16",
+        "DISSEMINATION": "17-Nov-2026 11:21:17",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/VMMP2024_17112026111828_Disclosure_Postal_Ballot_Notice_Nov_2026.pdf"
+      }
+    ],
+    "HAVELLS": [
+      {
+        "SYMBOL": "HAVELLS",
+        "COMPANY NAME": "Havells India Limited",
+        "SUBJECT": "Press Release",
+        "DETAILS": "Havells India Limited has informed the Exchange regarding a press release dated November 17, 2026, titled \"Havells Reinvents the Ceiling Fan Category with India's First Super Hi-Speed BLDC+ Fan, Silent Air Max with Dual Control, and Agentic AI Fan\".",
+        "BROADCAST DATE/TIME": "17-Nov-2026 11:11:07",
+        "RECEIPT": "2026-11-17 11:11:07",
+        "DISSEMINATION": "17-Nov-2026 11:11:08",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/HAVELLS1_17112026110926_signed_PressRelease_17Nov2026_StockEx.pdf"
+      }
+    ],
+    "APOLLO": [
+      {
+        "SYMBOL": "APOLLO",
+        "COMPANY NAME": "Apollo Micro Systems Limited",
+        "SUBJECT": "General Updates",
+        "DETAILS": "Apollo Micro Systems Limited has informed the Exchange about General Updates",
+        "BROADCAST DATE/TIME": "17-Nov-2026 11:07:17",
+        "RECEIPT": "2026-11-17 11:07:17",
+        "DISSEMINATION": "17-Nov-2026 11:07:19",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/APOLLO_17112026110659_AMS_Updates.pdf"
+      }
+    ],
+    "TMCV": [
+      {
+        "SYMBOL": "TMCV",
+        "COMPANY NAME": "Tata Motors Limited",
+        "SUBJECT": "News Verification",
+        "DETAILS": "The Exchange has sought clarification from Tata Motors Limited with respect to recent news item captioned Tata Sons IPO soon? Tata Chemicals, Tata Investment Corp shares rally up to 9% after RBI nudge to comply with listing norms.  The response from the Company is awaited.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 11:04:39",
+        "RECEIPT": "2026-11-17 11:04:39",
+        "DISSEMINATION": "17-Nov-2026 11:04:40",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "-"
+      }
+    ],
+    "TCS": [
+      {
+        "SYMBOL": "TCS",
+        "COMPANY NAME": "Tata Consultancy Services Limited",
+        "SUBJECT": "Updates",
+        "DETAILS": "Tata Consultancy Services Limited has informed the Exchange regarding 'Press Release-HFS Research ranks TCS as a leader in agentic application management services'.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 11:00:09",
+        "RECEIPT": "2026-11-17 11:00:09",
+        "DISSEMINATION": "17-Nov-2026 11:00:10",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/TCS_CORPCS_17112026105152_PR_17Nov26_signed.pdf"
+      }
+    ],
+    "KSB": [
+      {
+        "SYMBOL": "KSB",
+        "COMPANY NAME": "Ksb Limited",
+        "SUBJECT": "Investor Presentation",
+        "DETAILS": "Ksb Limited has informed the Exchange about Investor Presentation",
+        "BROADCAST DATE/TIME": "17-Nov-2026 10:58:33",
+        "RECEIPT": "2026-11-17 10:58:33",
+        "DISSEMINATION": "17-Nov-2026 10:58:35",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/KSB_17112026105750_investor_meet_17th_nov_2026_Final_signed.pdf"
+      }
+    ],
+    "ADANIPOWER": [
+      {
+        "SYMBOL": "ADANIPOWER",
+        "COMPANY NAME": "Adani Power Limited",
+        "SUBJECT": "Investor Presentation",
+        "DETAILS": "Adani Power Limited has informed the Exchange about Investor Presentation",
+        "BROADCAST DATE/TIME": "17-Nov-2026 10:57:31",
+        "RECEIPT": "2026-11-17 10:57:31",
+        "DISSEMINATION": "17-Nov-2026 10:57:32",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/ADANIPOWER_17112026105723_APLInvestorPresentationUSD17112026.pdf"
+      },
+      {
+        "SYMBOL": "ADANIPOWER",
+        "COMPANY NAME": "Adani Power Limited",
+        "SUBJECT": "Investor Presentation",
+        "DETAILS": "Adani Power Limited has informed the Exchange about Investor Presentation",
+        "BROADCAST DATE/TIME": "17-Nov-2026 10:56:36",
+        "RECEIPT": "2026-11-17 10:56:36",
+        "DISSEMINATION": "17-Nov-2026 10:56:37",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/ADANIPOWER_17112026105620_APLInvestorPresentationINR17112026.pdf"
+      }
+    ],
+    "FIVESTAR": [
+      {
+        "SYMBOL": "FIVESTAR",
+        "COMPANY NAME": "Five-Star Business Finance Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Intimation of Schedule of Investor/Analyst meetings under the SEBI (Listing Obligations and Disclosure Requirements), Regulations 2015",
+        "BROADCAST DATE/TIME": "17-Nov-2026 10:43:16",
+        "RECEIPT": "2026-11-17 10:43:16",
+        "DISSEMINATION": "17-Nov-2026 10:43:18",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/FIVESTAR_17112026104246_IntimationonScheduleofInvestorcallNovember182026.pdf"
+      }
+    ],
+    "SJS": [
+      {
+        "SYMBOL": "SJS",
+        "COMPANY NAME": "S.J.S. Enterprises Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "S.J.S. Enterprises Limited has informed the Exchange about Schedule of meet",
+        "BROADCAST DATE/TIME": "17-Nov-2026 10:38:48",
+        "RECEIPT": "2026-11-17 10:38:48",
+        "DISSEMINATION": "17-Nov-2026 10:38:49",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/SJS_17112026103835_ElaraLondonConference24112026.pdf"
+      }
+    ],
+    "YESBANK": [
+      {
+        "SYMBOL": "YESBANK",
+        "COMPANY NAME": "Yes Bank Limited",
+        "SUBJECT": "News Verification",
+        "DETAILS": "The Exchange has sought clarification from Yes Bank Limited with respect to recent news item captioned YES Bank denies 32 crore cyber fraud report, says no government accounts affected.  The response from the Company is attached.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 10:15:08",
+        "RECEIPT": "2026-11-17 10:15:08",
+        "DISSEMINATION": "17-Nov-2026 10:15:09",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/YESBANK_17112026101124_NSE_Response_signed.pdf"
+      }
+    ],
+    "FIRSTCRY": [
+      {
+        "SYMBOL": "FIRSTCRY",
+        "COMPANY NAME": "Brainbees Solutions Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Brainbees Solutions Limited has submitted to the Exchange the Corrigendum to the Investor Presentation earlier submitted by the Company through letter dated November14, 2026, bearing reference no. FC/SE/2026-27/59",
+        "BROADCAST DATE/TIME": "17-Nov-2026 10:11:26",
+        "RECEIPT": "2026-11-17 10:11:26",
+        "DISSEMINATION": "17-Nov-2026 10:11:27",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/BRAINBEES_17112026101109_InvestorPresentation17112026__.pdf"
+      }
+    ],
+    "GOLDIAM": [
+      {
+        "SYMBOL": "GOLDIAM",
+        "COMPANY NAME": "Goldiam International Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Goldiam International Limited has informed the Exchange about Transcript",
+        "BROADCAST DATE/TIME": "17-Nov-2026 09:47:27",
+        "RECEIPT": "2026-11-17 09:47:27",
+        "DISSEMINATION": "17-Nov-2026 09:47:28",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/GOLDIAM_17112026094720_Intimation_of_Earnings_call_transcript-13-11-2026.pdf"
+      }
+    ],
+    "POWERMECH": [
+      {
+        "SYMBOL": "POWERMECH",
+        "COMPANY NAME": "Power Mech Projects Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Power Mech Projects Limited has informed the Exchange about Transcript",
+        "BROADCAST DATE/TIME": "17-Nov-2026 09:26:18",
+        "RECEIPT": "2026-11-17 09:26:18",
+        "DISSEMINATION": "17-Nov-2026 09:26:19",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/POWERMECH_17112026092607_CL_Trascript.pdf"
+      }
+    ],
+    "ATHERENERG": [
+      {
+        "SYMBOL": "ATHERENERG",
+        "COMPANY NAME": "Ather Energy Limited",
+        "SUBJECT": "Allotment of Securities",
+        "DETAILS": "Ather Energy Limited has informed the Exchange regarding allotment of 2,27,882 equity shares of face value of INR 1/- each to eligible ESOP holders who have exercised their stock options under Ather Energy ESOP 2025 Plan.",
+        "BROADCAST DATE/TIME": "17-Nov-2026 08:57:12",
+        "RECEIPT": "2026-11-17 08:57:12",
+        "DISSEMINATION": "17-Nov-2026 08:57:14",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/ATHERENERGY_17112026085620_SEintimationESOP.pdf"
+      }
+    ],
+    "CYIENT": [
+      {
+        "SYMBOL": "CYIENT",
+        "COMPANY NAME": "Cyient Limited",
+        "SUBJECT": "Change in Management",
+        "DETAILS": "Cyient Limited has informed the Exchange about Change in Senior Management Personnel",
+        "BROADCAST DATE/TIME": "17-Nov-2026 08:41:33",
+        "RECEIPT": "2026-11-17 08:41:33",
+        "DISSEMINATION": "17-Nov-2026 08:41:34",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/CYIENT_17112026083916_Disclosure_CHROSigned.pdf"
+      }
+    ],
+    "BAJFINANCE": [
+      {
+        "SYMBOL": "BAJFINANCE",
+        "COMPANY NAME": "Bajaj Finance Limited",
+        "SUBJECT": "Allotment of Securities",
+        "DETAILS": "Bajaj Finance Limited has informed the Exchange regarding allotment of 114146341 securities pursuant to Qualified Institution Placement at its meeting held on November 17, 2026",
+        "BROADCAST DATE/TIME": "17-Nov-2026 08:25:32",
+        "RECEIPT": "2026-11-17 08:25:32",
+        "DISSEMINATION": "17-Nov-2026 08:25:34",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/BAJFINANCE_17112026082518_BSENSE_Intimationofallotment.pdf"
+      }
+    ],
+    "SIGMAADV": [
+      {
+        "SYMBOL": "SIGMAADV",
+        "COMPANY NAME": "SIGMA ADVANCED SYSTEMS LIMITED",
+        "SUBJECT": "Press Release",
+        "DETAILS": "SIGMA ADVANCED SYSTEMS LIMITED has informed the Exchange regarding a press release dated November 17, 2026, titled \"Announcement under Regulation 30 (LODR) - Press Release - Sigma Advanced Systems and EM&E Group, Spain, Announce Strategic Joint Venture to Advance Indigenous Defence Manufacturing in India.\".",
+        "BROADCAST DATE/TIME": "17-Nov-2026 07:05:56",
+        "RECEIPT": "2026-11-17 07:05:56",
+        "DISSEMINATION": "17-Nov-2026 07:05:57",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/MEGASOFT_17112026070328_Disclosure_Reg_30_-_20261117-signed.pdf"
+      }
+    ]
+  },
+  "error_symbols": {}
+}

@@ -1,17 +1,17 @@
 # AXISBANK — AXISBANK
-*Financial Services | Banks | 2026-11-16*
+*Financial Services | Banks | 2026-11-17*
 
 ---
 
 ## INVESTMENT THESIS
 
-AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 1.00).
+AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 1.00). Bear arguments are limited but warrant monitoring.
 
 ## EXECUTIVE SUMMARY
 
 - **Signal:** BUY / 60% confidence / FORMING state
 - **Key driver:** AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.09)
+- **Watch:** [LOW] Price within 10% of 52W high | 7.6% below 52W high of ₹1418.3
 
 ## SIGNAL & CONVICTION
 
@@ -20,10 +20,10 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 | Signal | 🟢 **BUY** |
 | Confidence | 60.0% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.49 |
+| Conviction Score | 0.48 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.41 |
+| Net Conviction | 0.40 |
 
 ## PRICE & TECHNICALS
 
@@ -77,6 +77,7 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 
 ⚠️ **Monitor:** [stale_signal] AXISBANK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] AXISBANK BUY signal not refreshed in >7 days
+⚠️ **Monitor:** [stale_signal] AXISBANK BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [new_buy_signal] New BUY signal for AXISBANK
 
 ## PEER CONTEXT
@@ -91,7 +92,7 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.22
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -109,4 +110,4 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-16 10:37 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-17 10:42 | Next review: +30d*

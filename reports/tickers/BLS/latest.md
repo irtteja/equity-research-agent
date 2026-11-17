@@ -1,5 +1,5 @@
 # BLS — BLS
-*Consumer Services | Leisure Services | 2026-11-16*
+*Consumer Services | Leisure Services | 2026-11-17*
 
 ---
 
@@ -11,7 +11,7 @@ BLS is 9.7% from 52W low with revenue improving 2 quarters (momentum 1.00). Valu
 
 - **Signal:** BUY / 64% confidence / FORMING state
 - **Key driver:** BLS is 9.7% from 52W low with revenue improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.00)
+- **Watch:** No material bear arguments at this time (bear score 0.10)
 
 ## SIGNAL & CONVICTION
 
@@ -20,10 +20,10 @@ BLS is 9.7% from 52W low with revenue improving 2 quarters (momentum 1.00). Valu
 | Signal | 🟢 **BUY** |
 | Confidence | 63.6% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.50 |
+| Conviction Score | 0.48 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | negative_news_flow (0.38) |
-| Net Conviction | 0.50 |
+| Net Conviction | 0.40 |
 
 ## PRICE & TECHNICALS
 
@@ -72,7 +72,7 @@ BLS is 9.7% from 52W low with revenue improving 2 quarters (momentum 1.00). Valu
 
 ## RISK REGISTER
 
-No material bear arguments identified.
+1. Declining belief trajectory | 8 drops vs 2 rises in recent log
 
 ℹ️ **Monitor:** [strong_buy_conviction] BLS high-conviction BUY with high business quality (conf=74%, quality=0.85)
 ⚠️ **Monitor:** [stale_signal] BLS BUY signal not refreshed in >7 days
@@ -92,7 +92,7 @@ No material bear arguments identified.
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.22
 
 ## FUNDAMENTALS
 
@@ -108,4 +108,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 64% | Generated: 2026-11-16 10:37 | Next review: +30d*
+*Confidence: 64% | Generated: 2026-11-17 10:42 | Next review: +30d*

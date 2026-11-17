@@ -4286,3 +4286,43 @@ Progress: fetch_results=clean(no results due), backfill_graph=timeout(known issu
 Next: watchdog at 18:10 IST
 Blockers: backfill_graph times out at 110s — needs chunking
 ============================================================
+
+[CHECKPOINT] 2026-11-17 10:41
+Task: daily-monitor-2026-11-17
+Status: in_progress
+Progress: step 5e: 0 analyst items enqueued
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-17 10:42
+Task: daily-monitor-2026-11-17
+Status: in_progress
+Progress: step 5f: {'announcements': 282, 'board_meetings': 5, 'saved': True, 'error': None}
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-17 10:42
+Task: daily-monitor-2026-11-17
+Status: in_progress
+Progress: step 5g: analysis+synthesis done
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-17 10:42
+Task: daily-monitor-2026-11-17
+Status: in_progress
+Progress: step 5h: meta done — enqueued=121
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-17 10:42
+Task: daily-monitor-2026-11-17
+Status: completed_with_errors
+Progress: Macro, FII/DII, 0 facts ingested, bhavcopy 0 rows, block/bulk deals
+Next: Review material announcements, update PROGRESS.md
+Blockers: structured_results, indices_bhavcopy, corp_events
+============================================================
