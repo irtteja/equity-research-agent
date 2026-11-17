@@ -4342,3 +4342,11 @@ Progress: daily_monitor already done (16:11), price_agent=timeout, bhavcopy=749 
 Next: watchdog 18:11 IST will retry indices bhavcopy
 Blockers: price_agent times out post-market; indices file not ready at 16:31
 ============================================================
+
+[CHECKPOINT] 2026-11-17 11:04
+Task: None
+Status: completed
+Progress: Confluences: 12 (buy=12, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 196,035 unprocessed — ContextAgent lagging
+============================================================
