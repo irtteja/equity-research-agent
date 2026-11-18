@@ -4750,3 +4750,11 @@ Progress: XBRL nightly fetch: 17 calendar events from 2026-11-17, 0 companies sc
 Next: next scheduled run tomorrow night; watch for Q2FY27 result season picks
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-19 02:11
+Task: watchdog
+Status: completed
+Progress: overnight heartbeat 02:11 IST Nov 19 — all overnight triggers done (announcements 20 analyzed, XBRL 0 scheduled), 9 BUY_CONFLUENCE stable, graph 941 cos/14545 nodes
+Next: next watchdog wake ~04:11 IST
+Blockers: none
+============================================================
