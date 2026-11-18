@@ -1,5 +1,29 @@
 # Progress Log
 
+## 2026-11-18 — Wednesday: Full Market Day + Post-Close Pipeline
+
+### Done
+- **Live feed**: 7 runs during market hours (07:18, 10:05, 11:05, 12:05, 13:05, 14:05, 15:07 IST) — 41 nodes/run, market OPEN all day. Commits: f3a0fe7…ca810b1
+- **Orchestrator**: 12 BUY_CONFLUENCE stable all day (ABREL 0.774…AURIONPRO 0.612). Commits: f3a0fe7, 365b06d, 97d79ef, 542d55b, ac3e138
+- **NSE Daily Brief** (16:00 IST): context_agent 4722 eps/3371 edges, trend_agent 54 trends/19 strong (FIRSTCRY ebit +162.6%, DBREALTY pat +97.7%, GENUSPOWER ebit +34.7%). Commit: 11eda1a
+- **daily_monitor** (16:11 IST via watchdog): 16 research reports, graph 14545 nodes/191480 edges. Commit: e7556ba
+- **Equity bhavcopy saved**: 749 rows for 2026-11-18 (`memory_store/bhavcopy/2026-11-18.csv`)
+- **Indices bhavcopy**: NSE archive not yet available at 16:31 IST — expected delay, after-hours feed should retry
+- **price_agent_runner**: timed out (known — runs outside market hours without guard)
+
+### Architecture changes
+- None today
+
+### Pending / next sessions
+- **Retry indices bhavcopy**: NSE archive delayed; retry in after-hours feed or next watchdog
+- **Fix `price_agent_runner.py`**: add post-market time guard (times out when run after close)
+- **Fix `backfill_graph.py` timeout**: times out at ~120s — needs chunking or optimization
+- **Reduce episode backlog**: ~191,313 unprocessed — need bulk processing strategy
+- **Annual reports PDF extraction pipeline**: 819 PDFs, extraction not built
+- **Fix stalled agents**: price_agent, document_agent, announcement_agent
+
+---
+
 ## 2026-11-17 — Tuesday: Full Market Day, Daily Pipeline, Bhavcopy
 
 ### Done

@@ -4638,3 +4638,11 @@ Progress: Macro, FII/DII, 0 facts ingested, bhavcopy 0 rows, block/bulk deals
 Next: Review material announcements, update PROGRESS.md
 Blockers: structured_results, indices_bhavcopy, corp_events
 ============================================================
+
+[CHECKPOINT] 2026-11-18 16:34
+Task: equity-daily-monitor
+Status: completed
+Progress: equity bhavcopy saved 749 rows; indices bhavcopy download_failed (NSE archive not yet available); daily_monitor 16 reports; price_agent running in background
+Next: retry indices bhavcopy in after-hours feed; price_agent will complete
+Blockers: NSE indices archive delayed post-close
+============================================================
