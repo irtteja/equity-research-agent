@@ -4662,3 +4662,11 @@ Progress: Confluences: 9 (buy=9, sell=0) | Gaps: 1
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 194,995 unprocessed — ContextAgent lagging
 ============================================================
+
+[CHECKPOINT] 2026-11-18 18:11
+Task: watchdog
+Status: completed
+Progress: post-close heartbeat 18:11 IST — daily_monitor ran (16 reports), after-hours feed done (42 nodes), indices bhavcopy 153 rows, 9 BUY_CONFLUENCE signals, equity bhavcopy 749 rows, price_agent 1026 snapshots/4 value signals
+Next: next watchdog wake ~20:11 IST
+Blockers: none
+============================================================
