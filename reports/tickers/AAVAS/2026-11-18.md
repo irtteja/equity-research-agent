@@ -9,16 +9,16 @@ AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.8
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 52% confidence / FORMING state
+- **Signal:** BUY / 51% confidence / FORMING state
 - **Key driver:** AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.89)
-- **Watch:** No material bear arguments at this time (bear score 0.07)
+- **Watch:** No material bear arguments at this time (bear score 0.06)
 
 ## SIGNAL & CONVICTION
 
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 51.6% |
+| Confidence | 51.0% |
 | Belief State | 🔵 FORMING |
 | Conviction Score | 0.47 |
 | Conviction Trend (7d) | → STABLE |
@@ -110,4 +110,4 @@ AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.8
 | Promoter Holding | — |
 
 ---
-*Confidence: 52% | Generated: 2026-11-18 10:42 | Next review: +30d*
+*Confidence: 51% | Generated: 2026-11-18 11:02 | Next review: +30d*

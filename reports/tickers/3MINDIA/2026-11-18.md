@@ -9,7 +9,7 @@
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 63% confidence / FORMING state
+- **Signal:** BUY / 62% confidence / FORMING state
 - **Key driver:** 3MINDIA is 2.3% from 52W low with total_expenses improving 2 quarters (momentum 1.00)
 - **Watch:** No material bear arguments at this time (bear score 0.10)
 
@@ -18,12 +18,12 @@
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 63.0% |
+| Confidence | 62.3% |
 | Belief State | 🔵 FORMING |
 | Conviction Score | 0.46 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | negative_news_flow (0.38) |
-| Net Conviction | 0.54 |
+| Net Conviction | 0.53 |
 
 ## PRICE & TECHNICALS
 
@@ -108,4 +108,4 @@
 | Promoter Holding | — |
 
 ---
-*Confidence: 63% | Generated: 2026-11-18 10:42 | Next review: +30d*
+*Confidence: 62% | Generated: 2026-11-18 11:02 | Next review: +30d*

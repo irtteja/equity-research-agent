@@ -20,10 +20,10 @@ BAJAJHFL is 11.8% from 52W low with revenue improving 2 quarters (momentum 1.00)
 | Signal | 🟢 **BUY** |
 | Confidence | 60.0% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.48 |
+| Conviction Score | 0.47 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.45 |
+| Net Conviction | 0.55 |
 
 ## PRICE & TECHNICALS
 
@@ -110,4 +110,4 @@ BAJAJHFL is 11.8% from 52W low with revenue improving 2 quarters (momentum 1.00)
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-18 10:42 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-18 11:02 | Next review: +30d*

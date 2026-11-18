@@ -9,21 +9,21 @@ CAPILLARY is 14.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 64% confidence / FORMING state
+- **Signal:** BUY / 67% confidence / CONFIRMED state
 - **Key driver:** CAPILLARY is 14.5% from 52W low with revenue improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.00)
+- **Watch:** No material bear arguments at this time (bear score 0.10)
 
 ## SIGNAL & CONVICTION
 
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 63.6% |
-| Belief State | 🔵 FORMING |
-| Conviction Score | 0.50 |
+| Confidence | 66.9% |
+| Belief State | ✅ CONFIRMED |
+| Conviction Score | 0.51 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.50 |
+| Net Conviction | 0.54 |
 
 ## PRICE & TECHNICALS
 
@@ -72,7 +72,7 @@ CAPILLARY is 14.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ## RISK REGISTER
 
-No material bear arguments identified.
+1. Declining belief trajectory | 7 drops vs 3 rises in recent log
 
 ℹ️ **Monitor:** [new_buy_signal] New BUY signal for CAPILLARY
 
@@ -106,4 +106,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 64% | Generated: 2026-11-18 10:42 | Next review: +30d*
+*Confidence: 67% | Generated: 2026-11-18 11:02 | Next review: +30d*

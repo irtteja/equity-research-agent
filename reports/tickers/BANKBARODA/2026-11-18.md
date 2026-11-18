@@ -9,7 +9,7 @@ BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentu
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 55% confidence / FORMING state
+- **Signal:** BUY / 53% confidence / FORMING state
 - **Key driver:** BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentum 0.99)
 - **Watch:** No material bear arguments at this time (bear score 0.05)
 
@@ -18,12 +18,12 @@ BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentu
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 54.5% |
+| Confidence | 53.4% |
 | Belief State | 🔵 FORMING |
 | Conviction Score | 0.47 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.51 |
+| Net Conviction | 0.49 |
 
 ## PRICE & TECHNICALS
 
@@ -110,4 +110,4 @@ BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentu
 | Promoter Holding | — |
 
 ---
-*Confidence: 55% | Generated: 2026-11-18 10:42 | Next review: +30d*
+*Confidence: 53% | Generated: 2026-11-18 11:02 | Next review: +30d*

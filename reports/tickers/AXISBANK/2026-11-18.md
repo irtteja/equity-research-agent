@@ -5,13 +5,13 @@
 
 ## INVESTMENT THESIS
 
-AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 1.00). Bear arguments are limited but warrant monitoring.
+AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 1.00).
 
 ## EXECUTIVE SUMMARY
 
 - **Signal:** BUY / 60% confidence / FORMING state
 - **Key driver:** AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 1.00)
-- **Watch:** [LOW] Price within 10% of 52W high | 7.6% below 52W high of ₹1418.3
+- **Watch:** No material bear arguments at this time (bear score 0.10)
 
 ## SIGNAL & CONVICTION
 
@@ -20,10 +20,10 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 | Signal | 🟢 **BUY** |
 | Confidence | 60.0% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.48 |
+| Conviction Score | 0.47 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.40 |
+| Net Conviction | 0.50 |
 
 ## PRICE & TECHNICALS
 
@@ -111,4 +111,4 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-18 10:42 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-18 11:02 | Next review: +30d*

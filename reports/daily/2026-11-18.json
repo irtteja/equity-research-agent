@@ -1,12 +1,12 @@
 {
   "event_calendar": {
-    "total": 14,
-    "results_events": 9,
+    "total": 15,
+    "results_events": 10,
     "file": "/home/user/equity-research-agent/memory_store/event_calendar/2026-11-18.json"
   },
   "macro": {
     "date": "2026-11-18",
-    "timestamp": "2026-11-18T10:41:23.204960",
+    "timestamp": "2026-11-18T11:02:10.874317",
     "global_indices": {
       "S&P 500": {
         "symbol": "^GSPC",
@@ -45,17 +45,17 @@
       },
       "DAX": {
         "symbol": "^GDAXI",
-        "last": 26093.56,
+        "last": 26098.0,
         "prev_close": 26045.37,
-        "change": 48.19,
-        "change_pct": 0.19
+        "change": 52.63,
+        "change_pct": 0.2
       },
       "FTSE 100": {
         "symbol": "^FTSE",
-        "last": 10665.52,
+        "last": 10657.2,
         "prev_close": 10689.9,
-        "change": -24.38,
-        "change_pct": -0.23
+        "change": -32.7,
+        "change_pct": -0.31
       },
       "Shanghai": {
         "symbol": "000001.SS",
@@ -89,45 +89,45 @@
     "commodities": {
       "Crude WTI": {
         "symbol": "CL=F",
-        "last": 83.3,
+        "last": 83.21,
         "prev_close": 86.01,
-        "change": -2.71,
-        "change_pct": -3.15
+        "change": -2.8,
+        "change_pct": -3.26
       },
       "Crude Brent": {
         "symbol": "BZ=F",
-        "last": 89.43,
+        "last": 89.35,
         "prev_close": 93.14,
-        "change": -3.71,
-        "change_pct": -3.98
+        "change": -3.79,
+        "change_pct": -4.07
       },
       "Gold": {
         "symbol": "GC=F",
-        "last": 3773.0,
+        "last": 3771.8,
         "prev_close": 3864.2,
-        "change": -91.2,
-        "change_pct": -2.36
+        "change": -92.4,
+        "change_pct": -2.39
       },
       "Silver": {
         "symbol": "SI=F",
-        "last": 45.69,
+        "last": 45.71,
         "prev_close": 47.29,
-        "change": -1.59,
-        "change_pct": -3.36
+        "change": -1.58,
+        "change_pct": -3.34
       },
       "Natural Gas": {
         "symbol": "NG=F",
         "last": 3.19,
         "prev_close": 3.21,
-        "change": -0.01,
-        "change_pct": -0.31
+        "change": -0.02,
+        "change_pct": -0.62
       },
       "Copper": {
         "symbol": "HG=F",
         "last": 5.75,
         "prev_close": 5.98,
-        "change": -0.23,
-        "change_pct": -3.85
+        "change": -0.22,
+        "change_pct": -3.68
       }
     },
     "currencies": {
@@ -161,10 +161,10 @@
       },
       "DXY": {
         "symbol": "DX-Y.NYB",
-        "last": 103.74,
+        "last": 103.76,
         "prev_close": 103.49,
-        "change": 0.25,
-        "change_pct": 0.24
+        "change": 0.27,
+        "change_pct": 0.26
       },
       "EUR/USD": {
         "symbol": "EURUSD=X",
@@ -183,7 +183,7 @@
     }
   },
   "fii_dii": {
-    "timestamp": "2026-11-18T10:41:29.950078",
+    "timestamp": "2026-11-18T11:02:19.186130",
     "fii_dii": [
       {
         "buyValue": "14903.8",
@@ -203,8 +203,8 @@
   },
   "ingestion": {
     "fetch_errors": 0,
-    "total_announcements": 75,
-    "symbols_active": 69,
+    "total_announcements": 82,
+    "symbols_active": 76,
     "rule_deep": 0,
     "rule_light": 0,
     "rule_skip": 0,
@@ -227,7 +227,7 @@
     "error": "NSE file not available: https://nsearchives.nseindia.com/content/indices/ind_close_all_18112026.csv"
   },
   "deals": {
-    "timestamp": "2026-11-18T10:41:35.820404",
+    "timestamp": "2026-11-18T11:02:23.363391",
     "block_deals": [
       {
         "Date": "17-NOV-2026",
@@ -2014,8 +2014,8 @@
     "corpaction_deleted": 0,
     "trend_summary_dupes_deleted": 0,
     "price_snapshots_remaining": 4095,
-    "trend_summary_remaining": 603,
-    "total_nodes": 19054
+    "trend_summary_remaining": 555,
+    "total_nodes": 14543
   },
   "delivery_bhavcopy": {
     "date": "2026-11-17",
@@ -2028,17 +2028,16 @@
     "graph_nodes": 0
   },
   "participant_oi": {
-    "date": "2026-11-17",
-    "participants": 4,
-    "graph_node": "partoi-2026-11-17"
+    "status": "already_stored",
+    "date": "2026-11-17"
   },
   "fii_dii_store": {
     "status": "no flow data to store"
   },
   "analyst_enqueued": 0,
   "corp_events": {
-    "announcements": 91,
-    "board_meetings": 4,
+    "announcements": 92,
+    "board_meetings": 5,
     "saved": true,
     "error": null
   },
@@ -2102,7 +2101,7 @@
       "skipped": 0,
       "errors": 0,
       "tickers": 20,
-      "duration_s": 23.98
+      "duration_s": 7.86
     },
     "composite_ranker": {
       "ok": 163,
@@ -2273,9 +2272,9 @@
         "AXISBANK",
         "AXISBANK"
       ],
-      "duration_s": 0.01
+      "duration_s": 0.02
     },
-    "duration_s": 24.4
+    "duration_s": 8.2
   },
   "swarm_synthesis": {
     "analyst": {
@@ -2294,50 +2293,47 @@
     },
     "devil_advocate": {
       "analyzed": 16,
-      "buy_held": 0,
-      "downgraded": 16
+      "buy_held": 4,
+      "downgraded": 12
     },
     "risk": {
-      "overall_risk": "high",
-      "flags_total": 45,
-      "low_quality": 44,
+      "overall_risk": "medium",
+      "flags_total": 14,
+      "low_quality": 13,
       "illiquid": 0
     },
     "alert_engine": {
-      "fired": 12,
-      "skipped": 0,
+      "fired": 0,
+      "skipped": 12,
       "errors": 0,
-      "per_type": {
-        "strong_buy_conviction": 8,
-        "peer_pe_discount": 4
-      },
+      "per_type": {},
       "tickers_scanned": 16
     },
-    "duration_s": 0.8
+    "duration_s": 0.6
   },
   "meta_cognition": {
     "coverage_rebuild": {
-      "rows": 5345
+      "rows": 5346
     },
     "meta_cognition": {
-      "ts": "2026-11-18T10:42:08.496824",
-      "graph_nodes": 19156,
+      "ts": "2026-11-18T11:02:36.698859",
+      "graph_nodes": 14545,
       "coverage_gaps": 100,
       "stale_types": 5,
       "total_gaps": 144,
       "enqueued": 123,
       "agent_problems": 0,
-      "unused_nselib": 43,
+      "unused_nselib": 38,
       "errors": []
     },
     "graph_dynamics": {
       "tickers": 200,
-      "learned": 5040,
+      "learned": 173,
       "revisions": 0,
       "edges_formed": 0,
-      "compressed": 11082,
+      "compressed": 49,
       "retracted": 0,
-      "pruned_merged": 4646,
+      "pruned_merged": 0,
       "pruned_deleted": 0
     },
     "global_macro": {
@@ -2365,7 +2361,7 @@
         }
       ],
       "usdinr": 93.44,
-      "crude": 83.34,
+      "crude": 83.24,
       "us10y": 5.103,
       "sp500_chg": -1.026
     },
@@ -2391,6 +2387,6 @@
     "research_reports": {
       "generated": 16
     },
-    "duration_s": 18.2
+    "duration_s": 7.7
   }
 }

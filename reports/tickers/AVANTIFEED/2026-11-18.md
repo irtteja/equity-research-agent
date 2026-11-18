@@ -9,7 +9,7 @@ AVANTIFEED is 9.9% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 64% confidence / FORMING state
+- **Signal:** BUY / 67% confidence / CONFIRMED state
 - **Key driver:** AVANTIFEED is 9.9% from 52W low with revenue improving 2 quarters (momentum 1.00)
 - **Watch:** No material bear arguments at this time (bear score 0.10)
 
@@ -18,12 +18,12 @@ AVANTIFEED is 9.9% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 63.6% |
-| Belief State | 🔵 FORMING |
+| Confidence | 66.9% |
+| Belief State | ✅ CONFIRMED |
 | Conviction Score | 0.51 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.40 |
+| Net Conviction | 0.54 |
 
 ## PRICE & TECHNICALS
 
@@ -72,7 +72,7 @@ AVANTIFEED is 9.9% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ## RISK REGISTER
 
-1. Declining belief trajectory | 9 drops vs 1 rises in recent log
+1. Declining belief trajectory | 10 drops vs 0 rises in recent log
 
 ℹ️ **Monitor:** [strong_buy_conviction] AVANTIFEED high-conviction BUY with high business quality (conf=74%, quality=0.95)
 ⚠️ **Monitor:** [stale_signal] AVANTIFEED BUY signal not refreshed in >7 days
@@ -110,4 +110,4 @@ AVANTIFEED is 9.9% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Promoter Holding | — |
 
 ---
-*Confidence: 64% | Generated: 2026-11-18 10:42 | Next review: +30d*
+*Confidence: 67% | Generated: 2026-11-18 11:02 | Next review: +30d*

@@ -4598,3 +4598,43 @@ Progress: post-close watchdog 16:11 IST — daily_monitor ran: 16 reports, graph
 Next: next watchdog wake ~18:11 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-18 11:02
+Task: daily-monitor-2026-11-18
+Status: in_progress
+Progress: step 5e: 0 analyst items enqueued
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-18 11:02
+Task: daily-monitor-2026-11-18
+Status: in_progress
+Progress: step 5f: {'announcements': 92, 'board_meetings': 5, 'saved': True, 'error': None}
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-18 11:02
+Task: daily-monitor-2026-11-18
+Status: in_progress
+Progress: step 5g: analysis+synthesis done
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-18 11:02
+Task: daily-monitor-2026-11-18
+Status: in_progress
+Progress: step 5h: meta done — enqueued=123
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-18 11:02
+Task: daily-monitor-2026-11-18
+Status: completed_with_errors
+Progress: Macro, FII/DII, 0 facts ingested, bhavcopy 0 rows, block/bulk deals
+Next: Review material announcements, update PROGRESS.md
+Blockers: structured_results, indices_bhavcopy, corp_events
+============================================================

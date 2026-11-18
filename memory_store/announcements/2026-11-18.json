@@ -4,10 +4,101 @@
     "to": "2026-11-18"
   },
   "total_symbols": 752,
-  "symbols_with_announcements": 69,
-  "total_announcements": 75,
+  "symbols_with_announcements": 76,
+  "total_announcements": 82,
   "errors": 0,
   "announcements": {
+    "PWL": [
+      {
+        "SYMBOL": "PWL",
+        "COMPANY NAME": "Physicswallah Limited",
+        "SUBJECT": "Press Release",
+        "DETAILS": "Physicswallah Limited has informed the Exchange regarding a press release titlted \"Physicswallah FY30 Ambition\".",
+        "BROADCAST DATE/TIME": "18-Nov-2026 16:31:47",
+        "RECEIPT": "2026-11-18 16:31:47",
+        "DISSEMINATION": "18-Nov-2026 16:31:48",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/NEAPSPW_18112026163010_press_release_intimation.pdf"
+      }
+    ],
+    "TATACONSUM": [
+      {
+        "SYMBOL": "TATACONSUM",
+        "COMPANY NAME": "TATA CONSUMER PRODUCTS LIMITED",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "TATA CONSUMER PRODUCTS LIMITED has informed the Exchange about Schedule of meet",
+        "BROADCAST DATE/TIME": "18-Nov-2026 16:28:32",
+        "RECEIPT": "2026-11-18 16:28:32",
+        "DISSEMINATION": "18-Nov-2026 16:28:34",
+        "DIFFERENCE": "00:00:02",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/Sukhvinder_18112026162410_TCPL_Analystmeeting_18112026.pdf"
+      }
+    ],
+    "TITAGARH": [
+      {
+        "SYMBOL": "TITAGARH",
+        "COMPANY NAME": "TITAGARH RAIL SYSTEMS LIMITED",
+        "SUBJECT": "Bagging/Receiving of orders/contracts",
+        "DETAILS": "TITAGARH RAIL SYSTEMS LIMITED has informed the Exchange about Bagging/Receiving of orders/contracts",
+        "BROADCAST DATE/TIME": "18-Nov-2026 16:28:12",
+        "RECEIPT": "2026-11-18 16:28:12",
+        "DISSEMINATION": "18-Nov-2026 16:28:13",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/TWL_18112026162803_DisclosuretoSELOA18112026.pdf"
+      }
+    ],
+    "HAPPYFORGE": [
+      {
+        "SYMBOL": "HAPPYFORGE",
+        "COMPANY NAME": "Happy Forgings Limited",
+        "SUBJECT": "Updates",
+        "DETAILS": "Happy Forgings Limited has informed the Exchange regarding ''Disclosure  pursuant to 7 (2) (b) of the SEBI (prohibition of Insider Trading) Regulation,2015\"",
+        "BROADCAST DATE/TIME": "18-Nov-2026 16:25:29",
+        "RECEIPT": "2026-11-18 16:25:29",
+        "DISSEMINATION": "18-Nov-2026 16:25:30",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/9876964720_18112026162342_PITINTIMATION18112026.pdf"
+      }
+    ],
+    "ESCORTS": [
+      {
+        "SYMBOL": "ESCORTS",
+        "COMPANY NAME": "Escorts Kubota Limited",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "Escorts Kubota Limited has informed the Exchange about Schedule of Analyst/ Investor Meet",
+        "BROADCAST DATE/TIME": "18-Nov-2026 16:22:27",
+        "RECEIPT": "2026-11-18 16:22:27",
+        "DISSEMINATION": "18-Nov-2026 16:22:28",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/ESCORTS2_18112026162117_EKL_2026_11_18_Intimation_Investor_Meet_Signed.pdf"
+      }
+    ],
+    "SBIN": [
+      {
+        "SYMBOL": "SBIN",
+        "COMPANY NAME": "State Bank of India",
+        "SUBJECT": "Analysts/Institutional Investor Meet/Con. Call Updates",
+        "DETAILS": "State Bank Of India has informed the Exchange about outcome of the investors meet",
+        "BROADCAST DATE/TIME": "18-Nov-2026 16:22:02",
+        "RECEIPT": "2026-11-18 16:22:02",
+        "DISSEMINATION": "18-Nov-2026 16:22:03",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/SBIN1_18112026162054_MeetOutcome18112026_dsc.pdf"
+      }
+    ],
+    "ICICILIFE": [
+      {
+        "SYMBOL": "ICICILIFE",
+        "COMPANY NAME": "ICICI Life Insurance Limited",
+        "SUBJECT": "Updates",
+        "DETAILS": "ICICI Life Insurance Limited has informed the Exchange regarding change in Corporate Office Address of Registrars to an Issue and Share Transfer Agent of the Company, with effect from December 1, 2026.",
+        "BROADCAST DATE/TIME": "18-Nov-2026 16:17:07",
+        "RECEIPT": "2026-11-18 16:17:07",
+        "DISSEMINATION": "18-Nov-2026 16:17:08",
+        "DIFFERENCE": "00:00:01",
+        "ATTACHMENT": "https://nsearchives.nseindia.in/corporate/ICICIPRULI_18112026161633_SE_Intimation_Change_in_Corporate_office_of_RTA.pdf"
+      }
+    ],
     "SANSERA": [
       {
         "SYMBOL": "SANSERA",
