@@ -4646,3 +4646,11 @@ Progress: equity bhavcopy saved 749 rows; indices bhavcopy download_failed (NSE 
 Next: retry indices bhavcopy in after-hours feed; price_agent will complete
 Blockers: NSE indices archive delayed post-close
 ============================================================
+
+[CHECKPOINT] 2026-11-18 11:04
+Task: None
+Status: completed
+Progress: prices=1026 value_signals=4
+Next: 
+Blockers: none
+============================================================
