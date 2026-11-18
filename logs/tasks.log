@@ -4758,3 +4758,11 @@ Progress: overnight heartbeat 02:11 IST Nov 19 — all overnight triggers done (
 Next: next watchdog wake ~04:11 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-18 21:02
+Task: nightly-2026-11-18
+Status: completed
+Progress: git pull (new ticker reports), context_agent (0), trend_agent (0)
+Next: await new XBRL data
+Blockers: none
+============================================================
