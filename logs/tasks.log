@@ -4734,3 +4734,11 @@ Progress: context compaction resume at 00:35 IST Nov 19 — self-model reflectio
 Next: next watchdog ~02:11 IST; XBRL nightly and NSE announcement fetch pending
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-18 19:34
+Task: nse-announcements-20261117
+Status: completed
+Progress: Fetched 206 announcements for 2026-11-17 (165 symbols). Triaged 45 material items. In-session analysis of 20 key announcements: 11 deep / 9 skim. 25 facts saved. Key events: BAJFINANCE QIP 114M shares, BHARATFORG merger, PRESTIGE 2 acquisitions, PVRINOX CRISIL positive outlook, EDELWEISS rating upgrade, GALLANTT promoter creep, ACMESOLAR BESS commissioning, CGPOWER KMP change, ASHOKA NHAI L1.
+Next: XBRL nightly results fetch pending; next watchdog ~02:11 IST
+Blockers: none
+============================================================

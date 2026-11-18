@@ -32,9 +32,9 @@
     "last_updated": "2026-11-04"
   },
   "PRESTIGE": {
-    "last_filing": "2026-11-07",
-    "last_ingested": "2026-11-07",
-    "last_updated": "2026-11-07"
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
   },
   "HINDZINC": {
     "last_filing": "2026-11-03",
@@ -187,9 +187,9 @@
     "last_updated": "2026-11-04"
   },
   "FIRSTCRY": {
-    "last_filing": "2026-11-03",
-    "last_ingested": "2026-11-04",
-    "last_updated": "2026-11-04"
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
   },
   "KSB": {
     "last_filing": "2026-11-03",
@@ -207,9 +207,9 @@
     "last_updated": "2026-11-04"
   },
   "IONEXCHANG": {
-    "last_filing": "2026-11-03",
-    "last_ingested": "2026-11-04",
-    "last_updated": "2026-11-04"
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
   },
   "EMBDL": {
     "last_filing": "2026-11-03",
@@ -447,9 +447,9 @@
     "last_updated": "2026-11-11"
   },
   "BAJFINANCE": {
-    "last_filing": "2026-11-10",
-    "last_ingested": "2026-11-11",
-    "last_updated": "2026-11-11"
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
   },
   "KALYANKJIL": {
     "last_filing": "2026-11-10",
@@ -490,5 +490,85 @@
     "last_filing": "2026-11-12",
     "last_ingested": "2026-11-12",
     "last_updated": "2026-11-12"
+  },
+  "BHARATFORG": {
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
+  },
+  "AXISCADES": {
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
+  },
+  "PVRINOX": {
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
+  },
+  "EDELWEISS": {
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
+  },
+  "IOB": {
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
+  },
+  "GALLANTT": {
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
+  },
+  "ACMESOLAR": {
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
+  },
+  "CGPOWER": {
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
+  },
+  "KTKBANK": {
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
+  },
+  "CHOLAFIN": {
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
+  },
+  "ASHOKA": {
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
+  },
+  "NEWGEN": {
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
+  },
+  "REFEX": {
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
+  },
+  "SPLPETRO": {
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
+  },
+  "HEROMOTOCO": {
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
+  },
+  "GODREJPROP": {
+    "last_filing": "2026-11-17",
+    "last_ingested": "2026-11-18",
+    "last_updated": "2026-11-18"
   }
 }

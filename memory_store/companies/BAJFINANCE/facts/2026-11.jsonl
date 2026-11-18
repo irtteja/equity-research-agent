@@ -1,1 +1,3 @@
 {"fact": "Bajaj Finance allotted 5,74,25,740 equity shares via preferential issue on Nov 10, 2026", "type": "equity_allotment", "materiality": "high"}
+{"tag": "shares_issued_qip", "text": "Bajaj Finance allotted 114,146,341 equity shares via QIP on 2026-11-17", "raw": {"value": 114146341, "unit": "shares", "period": "2026-11-17"}}
+{"tag": "capital_raise_event", "text": "Bajaj Finance completed Qualified Institutional Placement; dilution event for existing shareholders", "raw": {"value": null}}

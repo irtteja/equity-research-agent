@@ -1,3 +1,5 @@
 {"type": "event", "key": "acquisition", "value": "Prestige Estates Projects Limited has informed the Exchange about Acquisition of 100% stake in Gloind Vintage Infra Private Limited.", "raw": {"date": "03-Nov-2026 19:47:08", "industry": "Construction"}}
 "PRESTIGE acquired 100% stake in Allure Developers Private Limited on 2026-11-06"
 "Filing under Regulation 30 SEBI LODR"
+{"tag": "acquisition_stake", "text": "Prestige Estates acquired additional stake in Prestige Vaishnavi Projects on 2026-11-17 (subsidiary deepening)", "raw": {"value": null}}
+{"tag": "acquisition_stake", "text": "Prestige Estates acquired 50% stake in Advent Convention and Hotels International Private Limited on 2026-11-17", "raw": {"value": 50, "unit": "percent", "period": "2026-11-17"}}
