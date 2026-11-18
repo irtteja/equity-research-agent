@@ -1,5 +1,5 @@
 # AVANTIFEED — AVANTIFEED
-*Fast Moving Consumer Goods | Food Products | 2026-11-17*
+*Fast Moving Consumer Goods | Food Products | 2026-11-18*
 
 ---
 
@@ -72,7 +72,7 @@ AVANTIFEED is 9.9% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ## RISK REGISTER
 
-1. Declining belief trajectory | 8 drops vs 2 rises in recent log
+1. Declining belief trajectory | 9 drops vs 1 rises in recent log
 
 ℹ️ **Monitor:** [strong_buy_conviction] AVANTIFEED high-conviction BUY with high business quality (conf=74%, quality=0.95)
 ⚠️ **Monitor:** [stale_signal] AVANTIFEED BUY signal not refreshed in >7 days
@@ -110,4 +110,4 @@ AVANTIFEED is 9.9% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Promoter Holding | — |
 
 ---
-*Confidence: 64% | Generated: 2026-11-17 10:42 | Next review: +30d*
+*Confidence: 64% | Generated: 2026-11-18 10:42 | Next review: +30d*

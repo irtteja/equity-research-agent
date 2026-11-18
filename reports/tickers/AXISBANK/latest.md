@@ -1,5 +1,5 @@
 # AXISBANK — AXISBANK
-*Financial Services | Banks | 2026-11-17*
+*Financial Services | Banks | 2026-11-18*
 
 ---
 
@@ -78,6 +78,7 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 ⚠️ **Monitor:** [stale_signal] AXISBANK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] AXISBANK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] AXISBANK BUY signal not refreshed in >7 days
+⚠️ **Monitor:** [stale_signal] AXISBANK BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [new_buy_signal] New BUY signal for AXISBANK
 
 ## PEER CONTEXT
@@ -110,4 +111,4 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-17 10:42 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-18 10:42 | Next review: +30d*

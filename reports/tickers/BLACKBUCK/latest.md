@@ -1,5 +1,5 @@
 # BLACKBUCK — BLACKBUCK
-*Services | Transport Services | 2026-11-17*
+*Services | Transport Services | 2026-11-18*
 
 ---
 
@@ -77,6 +77,7 @@ BLACKBUCK is 13.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 ⚠️ **Monitor:** [stale_signal] BLACKBUCK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] BLACKBUCK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] BLACKBUCK BUY signal not refreshed in >7 days
+⚠️ **Monitor:** [stale_signal] BLACKBUCK BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [new_buy_signal] New BUY signal for BLACKBUCK
 
 ## PEER CONTEXT
@@ -107,4 +108,4 @@ BLACKBUCK is 13.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-17 10:42 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-18 10:42 | Next review: +30d*

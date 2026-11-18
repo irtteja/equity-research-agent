@@ -1,5 +1,5 @@
 # CANBK — CANBK
-*Financial Services | Banks | 2026-11-17*
+*Financial Services | Banks | 2026-11-18*
 
 ---
 
@@ -11,7 +11,7 @@ CANBK is 11.8% from 52W low with total_income improving 2 quarters (momentum 1.0
 
 - **Signal:** BUY / 60% confidence / FORMING state
 - **Key driver:** CANBK is 11.8% from 52W low with total_income improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.04)
+- **Watch:** No material bear arguments at this time (bear score 0.06)
 
 ## SIGNAL & CONVICTION
 
@@ -23,7 +23,7 @@ CANBK is 11.8% from 52W low with total_income improving 2 quarters (momentum 1.0
 | Conviction Score | 0.48 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.46 |
+| Net Conviction | 0.44 |
 
 ## PRICE & TECHNICALS
 
@@ -77,6 +77,7 @@ CANBK is 11.8% from 52W low with total_income improving 2 quarters (momentum 1.0
 ⚠️ **Monitor:** [stale_signal] CANBK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] CANBK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] CANBK BUY signal not refreshed in >7 days
+⚠️ **Monitor:** [stale_signal] CANBK BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [new_buy_signal] New BUY signal for CANBK
 
 ## PEER CONTEXT
@@ -109,4 +110,4 @@ CANBK is 11.8% from 52W low with total_income improving 2 quarters (momentum 1.0
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-17 10:42 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-18 10:42 | Next review: +30d*

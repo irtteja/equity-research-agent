@@ -1,5 +1,5 @@
 # CAPILLARY — CAPILLARY
-*Information Technology | IT - Software | 2026-11-17*
+*Information Technology | IT - Software | 2026-11-18*
 
 ---
 
@@ -106,4 +106,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 64% | Generated: 2026-11-17 10:42 | Next review: +30d*
+*Confidence: 64% | Generated: 2026-11-18 10:42 | Next review: +30d*

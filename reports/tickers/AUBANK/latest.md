@@ -1,5 +1,5 @@
 # AUBANK — AUBANK
-*Financial Services | Banks | 2026-11-17*
+*Financial Services | Banks | 2026-11-18*
 
 ---
 
@@ -77,6 +77,7 @@ AUBANK is 11.7% from 52W low with total_income improving 3 quarters (momentum 1.
 ⚠️ **Monitor:** [stale_signal] AUBANK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] AUBANK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] AUBANK BUY signal not refreshed in >7 days
+⚠️ **Monitor:** [stale_signal] AUBANK BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [new_buy_signal] New BUY signal for AUBANK
 
 ## PEER CONTEXT
@@ -109,4 +110,4 @@ AUBANK is 11.7% from 52W low with total_income improving 3 quarters (momentum 1.
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-17 10:42 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-18 10:42 | Next review: +30d*

@@ -1,5 +1,5 @@
 # BANKBARODA — BANKBARODA
-*Financial Services | Banks | 2026-11-17*
+*Financial Services | Banks | 2026-11-18*
 
 ---
 
@@ -9,7 +9,7 @@ BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentu
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 56% confidence / FORMING state
+- **Signal:** BUY / 55% confidence / FORMING state
 - **Key driver:** BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentum 0.99)
 - **Watch:** No material bear arguments at this time (bear score 0.05)
 
@@ -18,12 +18,12 @@ BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentu
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 56.0% |
+| Confidence | 54.5% |
 | Belief State | 🔵 FORMING |
 | Conviction Score | 0.47 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.53 |
+| Net Conviction | 0.51 |
 
 ## PRICE & TECHNICALS
 
@@ -77,6 +77,7 @@ BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentu
 ⚠️ **Monitor:** [stale_signal] BANKBARODA BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] BANKBARODA BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] BANKBARODA BUY signal not refreshed in >7 days
+⚠️ **Monitor:** [stale_signal] BANKBARODA BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [new_buy_signal] New BUY signal for BANKBARODA
 
 ## PEER CONTEXT
@@ -109,4 +110,4 @@ BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentu
 | Promoter Holding | — |
 
 ---
-*Confidence: 56% | Generated: 2026-11-17 10:42 | Next review: +30d*
+*Confidence: 55% | Generated: 2026-11-18 10:42 | Next review: +30d*

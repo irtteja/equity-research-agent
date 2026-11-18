@@ -1,5 +1,5 @@
 # AURIONPRO — AURIONPRO
-*Information Technology | IT - Software | 2026-11-17*
+*Information Technology | IT - Software | 2026-11-18*
 
 ---
 
@@ -110,4 +110,4 @@ AURIONPRO is 14.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-17 10:42 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-18 10:42 | Next review: +30d*
