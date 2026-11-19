@@ -4974,3 +4974,11 @@ Progress: post-close heartbeat; daily_monitor already ran; all end-of-day jobs c
 Next: next watchdog wake (~22:11 IST), XBRL nightly, NSE announcement fetch
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-19 15:03
+Task: None
+Status: completed
+Progress: Confluences: 9 (buy=9, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 194,943 unprocessed — ContextAgent lagging
+============================================================
