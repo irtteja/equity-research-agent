@@ -5014,3 +5014,11 @@ Progress: Confluences: 9 (buy=9, sell=0) | Gaps: 1
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 194,943 unprocessed — ContextAgent lagging
 ============================================================
+
+[CHECKPOINT] 2026-11-20 01:16
+Task: results-xbrl-20261120-0115
+Status: completed
+Progress: XBRL nightly fetch; 0 results scheduled for 2026-11-18; no-op
+Next: next nightly XBRL fetch
+Blockers: none
+============================================================
