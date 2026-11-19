@@ -4822,3 +4822,11 @@ Progress: pre-market heartbeat 08:10 IST; graph.db ready (941 companies, 4710 me
 Next: next watchdog 10:10 IST (market hours)
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-19 03:02
+Task: None
+Status: completed
+Progress: Confluences: 9 (buy=9, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 194,995 unprocessed — ContextAgent lagging
+============================================================
