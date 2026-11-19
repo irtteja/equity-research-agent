@@ -4942,3 +4942,11 @@ Progress: price_agent timed out (known); equity bhavcopy 749 rows saved; indices
 Next: after-hours feed should retry indices bhavcopy at ~17:15 IST
 Blockers: price_agent no post-market time guard; NSE indices archive delayed post-close
 ============================================================
+
+[CHECKPOINT] 2026-11-19 11:04
+Task: None
+Status: completed
+Progress: Confluences: 9 (buy=9, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 194,943 unprocessed — ContextAgent lagging
+============================================================
