@@ -1,40 +1,40 @@
 # AAVAS — AAVAS
-*Financial Services | Finance | 2026-11-18*
+*Financial Services | Finance | 2026-11-19*
 
 ---
 
 ## INVESTMENT THESIS
 
-AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.89). Valuation is fair (P/E 12.8x) — not expensive for the growth on offer.
+AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.89). Valuation is fair (P/E 12.6x) — not expensive for the growth on offer.
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 51% confidence / FORMING state
+- **Signal:** BUY / 53% confidence / FORMING state
 - **Key driver:** AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.89)
-- **Watch:** No material bear arguments at this time (bear score 0.06)
+- **Watch:** No material bear arguments at this time (bear score 0.05)
 
 ## SIGNAL & CONVICTION
 
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 51.0% |
+| Confidence | 52.6% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.47 |
+| Conviction Score | 0.49 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.45 |
+| Net Conviction | 0.46 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹1137.6 |
-| Change | -0.5% |
+| Close | ₹1121.0 |
+| Change | -0.4% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | in_line (rs_30: 0.7) |
+| Relative Strength | in_line (rs_30: -0.8) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -45,7 +45,7 @@ AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.8
 
 | Metric | Value | Context |
 |--------|-------|---------|
-| P/E | 12.8x | 3Y avg: — |
+| P/E | 12.6x | 3Y avg: — |
 | Valuation Score | 0.57 | 0=cheap, 1=expensive |
 | Verdict | **fair** | |
 | PAT Growth YoY | 6.0% | |
@@ -92,7 +92,7 @@ AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.8
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.22
+**Global Signal:** —  |  **Score:** 0.3
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -110,4 +110,4 @@ AAVAS is 7.1% from 52W low with finance_costs improving 2 quarters (momentum 0.8
 | Promoter Holding | — |
 
 ---
-*Confidence: 51% | Generated: 2026-11-18 11:02 | Next review: +30d*
+*Confidence: 53% | Generated: 2026-11-19 10:42 | Next review: +30d*

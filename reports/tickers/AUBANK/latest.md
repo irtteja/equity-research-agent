@@ -1,5 +1,5 @@
 # AUBANK — AUBANK
-*Financial Services | Banks | 2026-11-18*
+*Financial Services | Banks | 2026-11-19*
 
 ---
 
@@ -9,32 +9,32 @@ AUBANK is 11.7% from 52W low with total_income improving 3 quarters (momentum 1.
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 60% confidence / FORMING state
+- **Signal:** BUY / 62% confidence / FORMING state
 - **Key driver:** AUBANK is 11.7% from 52W low with total_income improving 3 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.05)
+- **Watch:** No material bear arguments at this time (bear score 0.04)
 
 ## SIGNAL & CONVICTION
 
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 60.0% |
+| Confidence | 62.4% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.47 |
+| Conviction Score | 0.50 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.55 |
+| Net Conviction | 0.56 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹929.0 |
-| Change | 0.0% |
+| Close | ₹977.0 |
+| Change | -1.6% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | outperformer (rs_30: 2.7) |
+| Relative Strength | strong_outperformer (rs_30: 8.0) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -78,7 +78,7 @@ AUBANK is 11.7% from 52W low with total_income improving 3 quarters (momentum 1.
 ⚠️ **Monitor:** [stale_signal] AUBANK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] AUBANK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] AUBANK BUY signal not refreshed in >7 days
-ℹ️ **Monitor:** [new_buy_signal] New BUY signal for AUBANK
+⚠️ **Monitor:** [stale_signal] AUBANK BUY signal not refreshed in >7 days
 
 ## PEER CONTEXT
 
@@ -92,7 +92,7 @@ AUBANK is 11.7% from 52W low with total_income improving 3 quarters (momentum 1.
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.22
+**Global Signal:** —  |  **Score:** 0.3
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -110,4 +110,4 @@ AUBANK is 11.7% from 52W low with total_income improving 3 quarters (momentum 1.
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-18 11:02 | Next review: +30d*
+*Confidence: 62% | Generated: 2026-11-19 10:42 | Next review: +30d*

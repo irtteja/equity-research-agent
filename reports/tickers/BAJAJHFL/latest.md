@@ -1,17 +1,17 @@
 # BAJAJHFL — BAJAJHFL
-*Financial Services | Finance | 2026-11-18*
+*Financial Services | Finance | 2026-11-19*
 
 ---
 
 ## INVESTMENT THESIS
 
-BAJAJHFL is 11.8% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is fair (P/E 31.6x) — not expensive for the growth on offer.
+BAJAJHFL is 11.7% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is fair (P/E 31.6x) — not expensive for the growth on offer.
 
 ## EXECUTIVE SUMMARY
 
 - **Signal:** BUY / 60% confidence / FORMING state
-- **Key driver:** BAJAJHFL is 11.8% from 52W low with revenue improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.05)
+- **Key driver:** BAJAJHFL is 11.7% from 52W low with revenue improving 2 quarters (momentum 1.00)
+- **Watch:** No material bear arguments at this time (bear score 0.04)
 
 ## SIGNAL & CONVICTION
 
@@ -20,21 +20,21 @@ BAJAJHFL is 11.8% from 52W low with revenue improving 2 quarters (momentum 1.00)
 | Signal | 🟢 **BUY** |
 | Confidence | 60.0% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.47 |
+| Conviction Score | 0.50 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.55 |
+| Net Conviction | 0.46 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹81.25 |
-| Change | -0.6% |
+| Close | ₹81.14 |
+| Change | -2.1% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | in_line (rs_30: -0.7) |
+| Relative Strength | in_line (rs_30: -0.8) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -78,7 +78,7 @@ BAJAJHFL is 11.8% from 52W low with revenue improving 2 quarters (momentum 1.00)
 ⚠️ **Monitor:** [stale_signal] BAJAJHFL BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] BAJAJHFL BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] BAJAJHFL BUY signal not refreshed in >7 days
-ℹ️ **Monitor:** [strong_buy_conviction] BAJAJHFL high-conviction BUY with high business quality (conf=73%, quality=0.90)
+⚠️ **Monitor:** [stale_signal] BAJAJHFL BUY signal not refreshed in >7 days
 
 ## PEER CONTEXT
 
@@ -92,7 +92,7 @@ BAJAJHFL is 11.8% from 52W low with revenue improving 2 quarters (momentum 1.00)
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.22
+**Global Signal:** —  |  **Score:** 0.3
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -110,4 +110,4 @@ BAJAJHFL is 11.8% from 52W low with revenue improving 2 quarters (momentum 1.00)
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-18 11:02 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-19 10:42 | Next review: +30d*

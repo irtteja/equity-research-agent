@@ -1,5 +1,5 @@
 # ABREL — ABREL
-*Realty | Realty | 2026-11-18*
+*Realty | Realty | 2026-11-19*
 
 ---
 
@@ -9,32 +9,32 @@ ABREL is 8.5% from 52W low with revenue improving 2 quarters (momentum 1.00).
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 60% confidence / FORMING state
+- **Signal:** BUY / 62% confidence / FORMING state
 - **Key driver:** ABREL is 8.5% from 52W low with revenue improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.05)
+- **Watch:** No material bear arguments at this time (bear score 0.04)
 
 ## SIGNAL & CONVICTION
 
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 60.0% |
+| Confidence | 62.4% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.47 |
+| Conviction Score | 0.50 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.55 |
+| Net Conviction | 0.56 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹1079.2 |
-| Change | -0.6% |
+| Close | ₹1238.0 |
+| Change | -1.8% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | outperformer (rs_30: 1.6) |
+| Relative Strength | strong_outperformer (rs_30: 16.5) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -92,7 +92,7 @@ ABREL is 8.5% from 52W low with revenue improving 2 quarters (momentum 1.00).
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.22
+**Global Signal:** —  |  **Score:** 0.3
 
 **Sector sensitivity:** Realty is sensitive to interest rates, home loan availability.
 
@@ -110,4 +110,4 @@ ABREL is 8.5% from 52W low with revenue improving 2 quarters (momentum 1.00).
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-18 11:02 | Next review: +30d*
+*Confidence: 62% | Generated: 2026-11-19 10:42 | Next review: +30d*

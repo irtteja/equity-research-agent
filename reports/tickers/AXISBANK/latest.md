@@ -1,40 +1,40 @@
 # AXISBANK — AXISBANK
-*Financial Services | Banks | 2026-11-18*
+*Financial Services | Banks | 2026-11-19*
 
 ---
 
 ## INVESTMENT THESIS
 
-AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 1.00).
+AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 1.00). Bear arguments are limited but warrant monitoring.
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 60% confidence / FORMING state
+- **Signal:** BUY / 62% confidence / FORMING state
 - **Key driver:** AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.10)
+- **Watch:** Price near 52W high — limited upside, breakout risk | 4.1% below 52W high of ₹1418.3
 
 ## SIGNAL & CONVICTION
 
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 60.0% |
+| Confidence | 62.4% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.47 |
+| Conviction Score | 0.50 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.50 |
+| Net Conviction | 0.44 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹1310.7 |
-| Change | -0.3% |
+| Close | ₹1360.0 |
+| Change | -0.7% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | strong_outperformer (rs_30: 6.4) |
+| Relative Strength | strong_outperformer (rs_30: 10.4) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -72,14 +72,14 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 
 ## RISK REGISTER
 
-1. [LOW] Price within 10% of 52W high | 7.6% below 52W high of ₹1418.3
+1. Price near 52W high — limited upside, breakout risk | 4.1% below 52W high of ₹1418.3
 2. Declining belief trajectory | 10 drops vs 0 rises in recent log
 
 ⚠️ **Monitor:** [stale_signal] AXISBANK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] AXISBANK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] AXISBANK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] AXISBANK BUY signal not refreshed in >7 days
-ℹ️ **Monitor:** [new_buy_signal] New BUY signal for AXISBANK
+⚠️ **Monitor:** [stale_signal] AXISBANK BUY signal not refreshed in >7 days
 
 ## PEER CONTEXT
 
@@ -93,7 +93,7 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.22
+**Global Signal:** —  |  **Score:** 0.3
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -111,4 +111,4 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-18 11:02 | Next review: +30d*
+*Confidence: 62% | Generated: 2026-11-19 10:42 | Next review: +30d*

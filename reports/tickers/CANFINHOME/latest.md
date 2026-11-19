@@ -1,17 +1,17 @@
 # CANFINHOME — CANFINHOME
-*Financial Services | Finance | 2026-11-18*
+*Financial Services | Finance | 2026-11-19*
 
 ---
 
 ## INVESTMENT THESIS
 
-CANFINHOME is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is fair (P/E 8.8x) — not expensive for the growth on offer.
+CANFINHOME is 11.4% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is fair (P/E 8.9x) — not expensive for the growth on offer.
 
 ## EXECUTIVE SUMMARY
 
 - **Signal:** BUY / 60% confidence / FORMING state
-- **Key driver:** CANFINHOME is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.06)
+- **Key driver:** CANFINHOME is 11.4% from 52W low with revenue improving 2 quarters (momentum 1.00)
+- **Watch:** No material bear arguments at this time (bear score 0.04)
 
 ## SIGNAL & CONVICTION
 
@@ -20,21 +20,21 @@ CANFINHOME is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Signal | 🟢 **BUY** |
 | Confidence | 60.0% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.47 |
+| Conviction Score | 0.50 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.54 |
+| Net Conviction | 0.46 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹759.6 |
-| Change | -0.5% |
+| Close | ₹772.1 |
+| Change | -1.9% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | strong_outperformer (rs_30: 5.5) |
+| Relative Strength | strong_outperformer (rs_30: 7.2) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -45,7 +45,7 @@ CANFINHOME is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 | Metric | Value | Context |
 |--------|-------|---------|
-| P/E | 8.8x | 3Y avg: — |
+| P/E | 8.9x | 3Y avg: — |
 | Valuation Score | 0.57 | 0=cheap, 1=expensive |
 | Verdict | **fair** | |
 | PAT Growth YoY | 2.5% | |
@@ -74,11 +74,11 @@ CANFINHOME is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 1. Declining belief trajectory | 10 drops vs 0 rises in recent log
 
-ℹ️ **Monitor:** [strong_buy_conviction] CANFINHOME high-conviction BUY with high business quality (conf=74%, quality=0.80)
 ℹ️ **Monitor:** [peer_pe_discount] CANFINHOME trades at 56% P/E discount to sector peers
 ⚠️ **Monitor:** [stale_signal] CANFINHOME BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [strong_buy_conviction] CANFINHOME high-conviction BUY with high business quality (conf=74%, quality=0.80)
 ℹ️ **Monitor:** [peer_pe_discount] CANFINHOME trades at 56% P/E discount to sector peers
+⚠️ **Monitor:** [stale_signal] CANFINHOME BUY signal not refreshed in >7 days
 
 ## PEER CONTEXT
 
@@ -92,7 +92,7 @@ CANFINHOME is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.22
+**Global Signal:** —  |  **Score:** 0.3
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -110,4 +110,4 @@ CANFINHOME is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-18 11:02 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-19 10:42 | Next review: +30d*

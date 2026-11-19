@@ -1,16 +1,16 @@
 # AVANTIFEED — AVANTIFEED
-*Fast Moving Consumer Goods | Food Products | 2026-11-18*
+*Fast Moving Consumer Goods | Food Products | 2026-11-19*
 
 ---
 
 ## INVESTMENT THESIS
 
-AVANTIFEED is 9.9% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is stretched; needs fundamental delivery to justify the multiple.
+AVANTIFEED is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is stretched; needs fundamental delivery to justify the multiple.
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 67% confidence / CONFIRMED state
-- **Key driver:** AVANTIFEED is 9.9% from 52W low with revenue improving 2 quarters (momentum 1.00)
+- **Signal:** BUY / 64% confidence / FORMING state
+- **Key driver:** AVANTIFEED is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00)
 - **Watch:** No material bear arguments at this time (bear score 0.10)
 
 ## SIGNAL & CONVICTION
@@ -18,23 +18,23 @@ AVANTIFEED is 9.9% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 66.9% |
-| Belief State | ✅ CONFIRMED |
-| Conviction Score | 0.51 |
+| Confidence | 63.6% |
+| Belief State | 🔵 FORMING |
+| Conviction Score | 0.53 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.54 |
+| Net Conviction | 0.40 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹720.3 |
+| Close | ₹718.35 |
 | Change | -1.3% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | outperformer (rs_30: 1.7) |
+| Relative Strength | outperformer (rs_30: 1.5) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -45,7 +45,7 @@ AVANTIFEED is 9.9% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 | Metric | Value | Context |
 |--------|-------|---------|
-| P/E | 19.6x | 3Y avg: — |
+| P/E | 19.5x | 3Y avg: — |
 | Valuation Score | 0.27 | 0=cheap, 1=expensive |
 | Verdict | **expensive** | |
 | PAT Growth YoY | -16.2% | |
@@ -92,7 +92,7 @@ AVANTIFEED is 9.9% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.22
+**Global Signal:** —  |  **Score:** 0.3
 
 **Sector sensitivity:** Fast Moving Consumer Goods is sensitive to rural demand and input cost inflation.
 
@@ -110,4 +110,4 @@ AVANTIFEED is 9.9% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Promoter Holding | — |
 
 ---
-*Confidence: 67% | Generated: 2026-11-18 11:02 | Next review: +30d*
+*Confidence: 64% | Generated: 2026-11-19 10:42 | Next review: +30d*

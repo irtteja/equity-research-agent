@@ -1,17 +1,17 @@
 # AURIONPRO — AURIONPRO
-*Information Technology | IT - Software | 2026-11-18*
+*Information Technology | IT - Software | 2026-11-19*
 
 ---
 
 ## INVESTMENT THESIS
 
-AURIONPRO is 14.5% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is cheap relative to history (P/E 14.4x), offering a margin of safety.
+AURIONPRO is 7.9% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is cheap relative to history (P/E 13.6x), offering a margin of safety.
 
 ## EXECUTIVE SUMMARY
 
 - **Signal:** BUY / 60% confidence / FORMING state
-- **Key driver:** AURIONPRO is 14.5% from 52W low with revenue improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.05)
+- **Key driver:** AURIONPRO is 7.9% from 52W low with revenue improving 2 quarters (momentum 1.00)
+- **Watch:** No material bear arguments at this time (bear score 0.04)
 
 ## SIGNAL & CONVICTION
 
@@ -20,21 +20,21 @@ AURIONPRO is 14.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Signal | 🟢 **BUY** |
 | Confidence | 60.0% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.47 |
+| Conviction Score | 0.50 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.55 |
+| Net Conviction | 0.46 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹589.0 |
-| Change | 0.3% |
+| Close | ₹555.0 |
+| Change | -1.4% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | outperformer (rs_30: 1.8) |
+| Relative Strength | underperformer (rs_30: -4.0) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -45,7 +45,7 @@ AURIONPRO is 14.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 | Metric | Value | Context |
 |--------|-------|---------|
-| P/E | 14.4x | 3Y avg: — |
+| P/E | 13.6x | 3Y avg: — |
 | Valuation Score | 0.47 | 0=cheap, 1=expensive |
 | Verdict | **cheap** | |
 | PAT Growth YoY | 11.5% | |
@@ -74,11 +74,11 @@ AURIONPRO is 14.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 1. Declining belief trajectory | 10 drops vs 0 rises in recent log
 
-ℹ️ **Monitor:** [peer_pe_discount] AURIONPRO trades at 84% P/E discount to sector peers
+ℹ️ **Monitor:** [strong_buy_conviction] AURIONPRO high-conviction BUY with high business quality (conf=79%, quality=0.95)
+ℹ️ **Monitor:** [peer_pe_discount] AURIONPRO trades at 71% P/E discount to sector peers
 ⚠️ **Monitor:** [stale_signal] AURIONPRO BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [peer_pe_discount] AURIONPRO trades at 84% P/E discount to sector peers
 ⚠️ **Monitor:** [stale_signal] AURIONPRO BUY signal not refreshed in >7 days
-ℹ️ **Monitor:** [peer_pe_discount] AURIONPRO trades at 84% P/E discount to sector peers
 
 ## PEER CONTEXT
 
@@ -92,7 +92,7 @@ AURIONPRO is 14.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.22
+**Global Signal:** —  |  **Score:** 0.3
 
 **Sector sensitivity:** Information Technology is sensitive to USD/INR (revenue in USD) and US economic conditions.
 
@@ -110,4 +110,4 @@ AURIONPRO is 14.5% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-18 11:02 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-19 10:42 | Next review: +30d*

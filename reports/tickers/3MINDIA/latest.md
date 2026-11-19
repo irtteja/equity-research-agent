@@ -1,5 +1,5 @@
 # 3MINDIA — 3MINDIA
-*Diversified | Diversified | 2026-11-18*
+*Diversified | Diversified | 2026-11-19*
 
 ---
 
@@ -9,7 +9,7 @@
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 62% confidence / FORMING state
+- **Signal:** BUY / 63% confidence / FORMING state
 - **Key driver:** 3MINDIA is 2.3% from 52W low with total_expenses improving 2 quarters (momentum 1.00)
 - **Watch:** No material bear arguments at this time (bear score 0.10)
 
@@ -18,23 +18,23 @@
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 62.3% |
+| Confidence | 63.2% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.46 |
+| Conviction Score | 0.48 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | negative_news_flow (0.38) |
-| Net Conviction | 0.53 |
+| Net Conviction | 0.52 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹28055.0 |
-| Change | -1.4% |
+| Close | ₹27700.0 |
+| Change | -0.7% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | underperformer (rs_30: -3.8) |
+| Relative Strength | underperformer (rs_30: -5.0) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -45,7 +45,7 @@
 
 | Metric | Value | Context |
 |--------|-------|---------|
-| P/E | 54.7x | 3Y avg: — |
+| P/E | 54.0x | 3Y avg: — |
 | Valuation Score | 0.23 | 0=cheap, 1=expensive |
 | Verdict | **expensive** | |
 | PAT Growth YoY | 8.2% | |
@@ -92,7 +92,7 @@
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.22
+**Global Signal:** —  |  **Score:** 0.3
 
 ## FUNDAMENTALS
 
@@ -108,4 +108,4 @@
 | Promoter Holding | — |
 
 ---
-*Confidence: 62% | Generated: 2026-11-18 11:02 | Next review: +30d*
+*Confidence: 63% | Generated: 2026-11-19 10:42 | Next review: +30d*

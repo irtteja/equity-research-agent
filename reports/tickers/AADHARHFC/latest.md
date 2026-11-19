@@ -1,40 +1,40 @@
 # AADHARHFC — AADHARHFC
-*Financial Services | Finance | 2026-11-18*
+*Financial Services | Finance | 2026-11-19*
 
 ---
 
 ## INVESTMENT THESIS
 
-AADHARHFC is 4.1% from 52W low with total_expenses improving 2 quarters (momentum 1.00). Valuation is fair (P/E 15.8x) — not expensive for the growth on offer.
+AADHARHFC is 4.1% from 52W low with total_expenses improving 2 quarters (momentum 1.00). Valuation is fair (P/E 15.5x) — not expensive for the growth on offer.
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 51% confidence / FORMING state
+- **Signal:** BUY / 53% confidence / FORMING state
 - **Key driver:** AADHARHFC is 4.1% from 52W low with total_expenses improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.06)
+- **Watch:** No material bear arguments at this time (bear score 0.05)
 
 ## SIGNAL & CONVICTION
 
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 51.0% |
+| Confidence | 52.6% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.47 |
+| Conviction Score | 0.49 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.45 |
+| Net Conviction | 0.46 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹432.5 |
-| Change | -0.8% |
+| Close | ₹421.9 |
+| Change | -2.4% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | in_line (rs_30: -0.1) |
+| Relative Strength | underperformer (rs_30: -2.6) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -45,7 +45,7 @@ AADHARHFC is 4.1% from 52W low with total_expenses improving 2 quarters (momentu
 
 | Metric | Value | Context |
 |--------|-------|---------|
-| P/E | 15.8x | 3Y avg: — |
+| P/E | 15.5x | 3Y avg: — |
 | Valuation Score | 0.51 | 0=cheap, 1=expensive |
 | Verdict | **fair** | |
 | PAT Growth YoY | -9.2% | |
@@ -92,7 +92,7 @@ AADHARHFC is 4.1% from 52W low with total_expenses improving 2 quarters (momentu
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.22
+**Global Signal:** —  |  **Score:** 0.3
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -110,4 +110,4 @@ AADHARHFC is 4.1% from 52W low with total_expenses improving 2 quarters (momentu
 | Promoter Holding | — |
 
 ---
-*Confidence: 51% | Generated: 2026-11-18 11:02 | Next review: +30d*
+*Confidence: 53% | Generated: 2026-11-19 10:42 | Next review: +30d*

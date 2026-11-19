@@ -1,16 +1,16 @@
 # BLS — BLS
-*Consumer Services | Leisure Services | 2026-11-18*
+*Consumer Services | Leisure Services | 2026-11-19*
 
 ---
 
 ## INVESTMENT THESIS
 
-BLS is 9.7% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is fair (P/E 13.0x) — not expensive for the growth on offer.
+BLS is 13.7% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is fair (P/E 13.5x) — not expensive for the growth on offer.
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 67% confidence / CONFIRMED state
-- **Key driver:** BLS is 9.7% from 52W low with revenue improving 2 quarters (momentum 1.00)
+- **Signal:** BUY / 64% confidence / FORMING state
+- **Key driver:** BLS is 13.7% from 52W low with revenue improving 2 quarters (momentum 1.00)
 - **Watch:** No material bear arguments at this time (bear score 0.10)
 
 ## SIGNAL & CONVICTION
@@ -18,23 +18,23 @@ BLS is 9.7% from 52W low with revenue improving 2 quarters (momentum 1.00). Valu
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 66.9% |
-| Belief State | ✅ CONFIRMED |
-| Conviction Score | 0.49 |
+| Confidence | 63.6% |
+| Belief State | 🔵 FORMING |
+| Conviction Score | 0.51 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | negative_news_flow (0.38) |
-| Net Conviction | 0.54 |
+| Net Conviction | 0.40 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹222.83 |
-| Change | -1.0% |
+| Close | ₹230.98 |
+| Change | 1.4% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | outperformer (rs_30: 2.8) |
+| Relative Strength | strong_outperformer (rs_30: 6.5) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -45,7 +45,7 @@ BLS is 9.7% from 52W low with revenue improving 2 quarters (momentum 1.00). Valu
 
 | Metric | Value | Context |
 |--------|-------|---------|
-| P/E | 13.0x | 3Y avg: — |
+| P/E | 13.5x | 3Y avg: — |
 | Valuation Score | 0.56 | 0=cheap, 1=expensive |
 | Verdict | **fair** | |
 | PAT Growth YoY | 7.9% | |
@@ -74,11 +74,11 @@ BLS is 9.7% from 52W low with revenue improving 2 quarters (momentum 1.00). Valu
 
 1. Declining belief trajectory | 10 drops vs 0 rises in recent log
 
-ℹ️ **Monitor:** [strong_buy_conviction] BLS high-conviction BUY with high business quality (conf=74%, quality=0.85)
 ⚠️ **Monitor:** [stale_signal] BLS BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [strong_buy_conviction] BLS high-conviction BUY with high business quality (conf=74%, quality=0.85)
 ⚠️ **Monitor:** [stale_signal] BLS BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [strong_buy_conviction] BLS high-conviction BUY with high business quality (conf=74%, quality=0.85)
+⚠️ **Monitor:** [stale_signal] BLS BUY signal not refreshed in >7 days
 
 ## PEER CONTEXT
 
@@ -92,7 +92,7 @@ BLS is 9.7% from 52W low with revenue improving 2 quarters (momentum 1.00). Valu
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.22
+**Global Signal:** —  |  **Score:** 0.3
 
 ## FUNDAMENTALS
 
@@ -108,4 +108,4 @@ BLS is 9.7% from 52W low with revenue improving 2 quarters (momentum 1.00). Valu
 | Promoter Holding | — |
 
 ---
-*Confidence: 67% | Generated: 2026-11-18 11:02 | Next review: +30d*
+*Confidence: 64% | Generated: 2026-11-19 10:42 | Next review: +30d*
