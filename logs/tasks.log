@@ -5022,3 +5022,11 @@ Progress: XBRL nightly fetch; 0 results scheduled for 2026-11-18; no-op
 Next: next nightly XBRL fetch
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 02:10
+Task: watchdog-20261120-0210
+Status: completed
+Progress: overnight heartbeat; daily_monitor ran 2026-11-19; all jobs complete
+Next: next watchdog wake (~04:10 IST Nov 20)
+Blockers: none
+============================================================
