@@ -5030,3 +5030,11 @@ Progress: overnight heartbeat; daily_monitor ran 2026-11-19; all jobs complete
 Next: next watchdog wake (~04:10 IST Nov 20)
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-19 21:02
+Task: nightly-2026-11-19
+Status: completed
+Progress: git pull (new ticker reports), context_agent (0), trend_agent (0)
+Next: await new XBRL data
+Blockers: none
+============================================================
