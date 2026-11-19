@@ -4934,3 +4934,11 @@ Progress: post-close — daily_monitor ran, 17 reports, graph 15931 nodes/198338
 Next: after-hours feed, results XBRL nightly, NSE announcement fetch
 Blockers: backfill_graph timeout; structured_results import error; bhavcopy too early
 ============================================================
+
+[CHECKPOINT] 2026-11-19 16:33
+Task: equity-daily-monitor-20261119
+Status: completed_with_errors
+Progress: price_agent timed out (known); equity bhavcopy 749 rows saved; indices bhavcopy download_failed (NSE archive not yet available 16:31 IST)
+Next: after-hours feed should retry indices bhavcopy at ~17:15 IST
+Blockers: price_agent no post-market time guard; NSE indices archive delayed post-close
+============================================================
