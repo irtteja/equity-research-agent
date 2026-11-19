@@ -4814,3 +4814,11 @@ Progress: retry pass ran: no _pending_retry.json found (XBRL nightly found 0 com
 Next: none
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-19 02:40
+Task: watchdog-20261119-0810
+Status: completed
+Progress: pre-market heartbeat 08:10 IST; graph.db ready (941 companies, 4710 metrics); market opens 09:15
+Next: next watchdog 10:10 IST (market hours)
+Blockers: none
+============================================================
