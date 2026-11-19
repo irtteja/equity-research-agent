@@ -4806,3 +4806,11 @@ Progress: Confluences: 9 (buy=9, sell=0) | Gaps: 2
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 194,995 unprocessed — ContextAgent lagging; No ConfluenceSignal nodes for today — first run or no signals met threshold
 ============================================================
+
+[CHECKPOINT] 2026-11-19 02:12
+Task: results-retry-20261119
+Status: completed
+Progress: retry pass ran: no _pending_retry.json found (XBRL nightly found 0 companies)
+Next: none
+Blockers: none
+============================================================
