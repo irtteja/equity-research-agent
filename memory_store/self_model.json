@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-18",
-  "version": 76,
+  "last_updated": "2026-11-19",
+  "version": 77,
   "patterns": {
     "confirmed": [
       {
@@ -704,6 +704,30 @@
         "first_seen": "2026-11-18",
         "last_seen": "2026-11-18",
         "count": 1
+      },
+      {
+        "pattern": "BUY_CONFLUENCE signals stable 12 consecutive orchestrator scans — identical 9-signal list for >24h (BLACKBUCK 0.90 → BLS 0.63)",
+        "first_seen": "2026-11-19",
+        "last_seen": "2026-11-19",
+        "count": 1
+      },
+      {
+        "pattern": "daily_monitor auto-commits via internal git — watchdog only needs to log checkpoint post-run",
+        "first_seen": "2026-11-19",
+        "last_seen": "2026-11-19",
+        "count": 1
+      },
+      {
+        "pattern": "context_agent processes ~3425 episodes/run when backlog is large — incremental progress on 194k backlog",
+        "first_seen": "2026-11-19",
+        "last_seen": "2026-11-19",
+        "count": 1
+      },
+      {
+        "pattern": "devil_advocate consistently downgrades 14/17 BUY signals — high-quality filter for signal universe",
+        "first_seen": "2026-11-19",
+        "last_seen": "2026-11-19",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -1047,6 +1071,24 @@
         "pattern": "Episode backlog growing: 194,995 unprocessed — ContextAgent bulk processing strategy needed",
         "first_seen": "2026-11-18",
         "last_seen": "2026-11-18",
+        "count": 1
+      },
+      {
+        "pattern": "valuation_agent: only 1 of 17 signal tickers rated cheap — market not offering deep value in confluence set",
+        "first_seen": "2026-11-19",
+        "last_seen": "2026-11-19",
+        "count": 1
+      },
+      {
+        "pattern": "macro signal risk_off (score 0.30) while NIFTY +1.14% — divergence between macro score and intraday price action",
+        "first_seen": "2026-11-19",
+        "last_seen": "2026-11-19",
+        "count": 1
+      },
+      {
+        "pattern": "triage ERROR str object has no attribute get for JSWSTEEL/ABCAPITAL/BOSCHLTD/HINDALCO/IIFLCAPS — announcement triage schema mismatch",
+        "first_seen": "2026-11-19",
+        "last_seen": "2026-11-19",
         "count": 1
       }
     ],
@@ -1441,6 +1483,14 @@
       {
         "signal": "daily_monitor: 16 research reports, graph 14545 nodes/191480 edges — full pipeline stable",
         "added": "2026-11-18"
+      },
+      {
+        "signal": "BUY_CONFLUENCE scanner stable across 12 scans — reliable persistence signal",
+        "added": "2026-11-19"
+      },
+      {
+        "signal": "daily_monitor full pipeline: 17 reports + 5 new tools + coverage gap analysis — consistent output",
+        "added": "2026-11-19"
       }
     ],
     "gaps": [
@@ -1867,6 +1917,18 @@
       {
         "gap": "stalled agents: price_agent, document_agent, announcement_agent stalled; context_agent partially working",
         "added": "2026-11-18"
+      },
+      {
+        "gap": "fetch_results.py import error (fetch_symbol) — structured results step silently fails on result-day companies",
+        "added": "2026-11-19"
+      },
+      {
+        "gap": "NSE indices bhavcopy not available at daily_monitor run time — download_failed/too_early consistently",
+        "added": "2026-11-19"
+      },
+      {
+        "gap": "announcement triage schema mismatch — 5 large-cap companies (JSWSTEEL, BOSCHLTD, HINDALCO) not triaged",
+        "added": "2026-11-19"
       }
     ]
   },
@@ -2074,6 +2136,10 @@
       {
         "note": "IIFL Finance preferential issue — institutional confidence in NBFC recovery post-RBI action",
         "date": "2026-11-10"
+      },
+      {
+        "note": "CANFINHOME 5th (0.70), BAJAJHFL 6th (0.69) — both near 52W low with improving fundamentals",
+        "date": "2026-11-19"
       }
     ],
     "PSU Banks": [
@@ -2157,13 +2223,21 @@
         "note": "CANFINHOME 0.70, BAJAJHFL 0.69 in BUY_CONFLUENCE — housing finance sector visible",
         "date": "2026-11-18"
       }
+    ],
+    "Logistics/Tech": [
+      {
+        "note": "BLACKBUCK holds top BUY_CONFLUENCE rank (0.90) — 3.8% from 52W low, revenue improving 2 qtrs",
+        "date": "2026-11-19"
+      }
+    ],
+    "Energy/Coal": [
+      {
+        "note": "BHARATCOAL 2nd (0.84) — 6% from 52W low, revenue improving 3 qtrs",
+        "date": "2026-11-19"
+      }
     ]
   },
   "session_log": [
-    {
-      "date": "2026-11-04",
-      "note": "Price agent expanded to 753 stocks. Daily monitor ran. Push 403 from persistent session container needs env-level repo auth fix."
-    },
     {
       "date": "2026-11-04",
       "note": "backfill_graph completed with 600s timeout (872 tickers, 31424 nodes); agents/workers audit clean — vendor sweep 100% complete"
@@ -2279,6 +2353,10 @@
     {
       "date": "2026-11-18",
       "note": "2026-11-18 full market day: 7 live feeds, 5 post-close orchestrator runs stable at 9 BUY_CONFLUENCE, bhavcopy 749 equity/153 indices, daily_monitor 16 reports, graph 14545/191480"
+    },
+    {
+      "date": "2026-11-19",
+      "note": "2026-11-19 full market day: 9 BUY_CONFLUENCE stable 12 scans, 6 live feeds, 17 reports, graph 15931/198338, 5 new tools, devil_advocate held 3/17"
     }
   ]
 }

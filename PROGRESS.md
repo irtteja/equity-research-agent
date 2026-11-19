@@ -1,5 +1,33 @@
 # Progress Log
 
+## 2026-11-19 — Thursday: Full Market Day + Post-Close Pipeline
+
+### Done
+- **Results XBRL retry** (07:40 IST): no pending retries — clean exit. Commit: `ae58964`
+- **Pre-market watchdog** (08:10 IST): heartbeat checkpoint. Commit: `501c43b`
+- **Orchestrator** (08:32, 10:32, 12:32, 14:32 IST): 9 BUY_CONFLUENCE stable all 4 runs — 12th consecutive stable scan. BLACKBUCK(0.90)→BLS(0.63). Commits: `9bb63e9`, `b0420e7`, `1f58726`, `1535c8d`
+- **Live feed** (10:05, 11:04, 12:05, 13:05, 14:05, 15:06 IST): 43 nodes/11 endpoints each run — market OPEN. Commits: `9cba9a9`, `13a793a`, `27cb2c4`, `4f271c2`, `e54187e`, `a070d79`
+- **Market-hours watchdog** (10:10, 12:11, 14:10 IST): live snapshots committed. Commits: `c195463`, `2958d0c`, `05650c1`
+- **NSE Daily Brief** (16:00 IST): context_agent 3425 eps/2406 edges; trend_agent nothing; alert_agent clean. Commit: `829ef9e`
+- **daily_monitor** (16:11 IST via watchdog): 17 research reports, graph 15931 nodes/198338 edges, 5 new tools synthesized (ingest_insider_trading_pit, ingest_integrated_filing_rss, ingest_large_deals_snapshot, ingest_latency_statistics, ingest_list_etf), 141 coverage gaps identified/120 enqueued. Commit: `d046f6d`
+- **Macro snapshot**: NIFTY50 +1.14% @ 25514, SENSEX +1.21% @ 83021. FII net +5867cr (buy), DII net -3160cr (sell). Crude Brent -2.36% @ 89.78. VIX 15.8. Macro signal: risk_off (score 0.30)
+- **Valuation**: 17 signal tickers — 1 cheap, 6 fair, 5 expensive, 5 insufficient data. Devil's advocate: 14/17 BUY signals downgraded; 3 held. 20 warnings from alert engine (0 critical)
+
+### Architecture changes
+- 5 new generated tools auto-created by tool_synthesizer in daily_monitor
+
+### Pending / next sessions
+- **After-hours feed**: fires post-close — bhavcopy, announcements
+- **Bhavcopy NSE indices**: not yet available at run time (too_early / download_failed) — retry in after-hours feed
+- **Fix `fetch_results.py` import**: `cannot import name 'fetch_symbol'` — structured_results step fails
+- **Fix `backfill_graph.py` timeout**: consistently times out at 115s — needs chunking/optimization
+- **Fix triage error**: `'str' object has no attribute 'get'` for JSWSTEEL/ABCAPITAL/BOSCHLTD/HINDALCO/IIFLCAPS in announcement triage
+- **Reduce episode backlog**: ~194,995 unprocessed — need bulk processing strategy (context_agent processed 3425 today)
+- **Annual reports PDF extraction pipeline**: 819 PDFs, extraction not built
+- **Fix stalled agents**: document_agent, announcement_agent
+
+---
+
 ## 2026-11-18 — Wednesday: Full Market Day + Post-Close Pipeline
 
 ### Done

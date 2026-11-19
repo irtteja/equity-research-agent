@@ -4926,3 +4926,11 @@ Progress: Macro, FII/DII, 0 facts ingested, bhavcopy 0 rows, block/bulk deals
 Next: Review material announcements, update PROGRESS.md
 Blockers: structured_results, indices_bhavcopy, corp_events
 ============================================================
+
+[CHECKPOINT] 2026-11-19 16:12
+Task: watchdog-20261119-1611
+Status: completed
+Progress: post-close — daily_monitor ran, 17 reports, graph 15931 nodes/198338 edges, 5 new tools synthesized
+Next: after-hours feed, results XBRL nightly, NSE announcement fetch
+Blockers: backfill_graph timeout; structured_results import error; bhavcopy too early
+============================================================
