@@ -5478,3 +5478,11 @@ Progress: git pull (new ticker reports), context_agent (0), trend_agent (0)
 Next: await new XBRL data
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 22:41
+Task: watchdog-20261121-0410
+Status: completed
+Progress: 04:10 IST Nov 21 (Saturday) early morning heartbeat: graph 941 co, all overnight jobs complete, weekend quiet period continues
+Next: Next watchdog ~06:10 IST; Saturday — no market, no daily_monitor needed
+Blockers: none
+============================================================
