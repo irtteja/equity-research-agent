@@ -5486,3 +5486,11 @@ Progress: 04:10 IST Nov 21 (Saturday) early morning heartbeat: graph 941 co, all
 Next: Next watchdog ~06:10 IST; Saturday — no market, no daily_monitor needed
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 22:48
+Task: live_feed-20261121-0417
+Status: completed
+Progress: 44 nodes: top_movers 20, market_status 1, fii_dii 2, option_chains 2, bulk_deals 2; market CLOSED Saturday
+Next: Next after-hours feed ~07:17 IST
+Blockers: none
+============================================================
