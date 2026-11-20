@@ -5350,3 +5350,11 @@ Progress: After-hours: 44 nodes (live_prices 17, top_movers 20, market_status 1,
 Next: overnight scans; NSE daily announcements
 Blockers: indices endpoint still 0 nodes; insider on cooldown
 ============================================================
+
+[CHECKPOINT] 2026-11-20 12:41
+Task: watchdog-20261120-1811
+Status: completed
+Progress: After-hours heartbeat at 18:11 IST. daily_monitor confirmed ran. Graph ready. Full Nov 20 coverage complete: 22 orchestrator scans, 6 live feeds, equity bhavcopy 749 rows, indices bhavcopy 153 rows, 1026 price nodes.
+Next: overnight scans from ~20:00 IST; NSE announcements trigger; next market day Mon Nov 23 09:15 IST
+Blockers: none active
+============================================================
