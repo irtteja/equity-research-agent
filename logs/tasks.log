@@ -5070,3 +5070,19 @@ Progress: pre-market heartbeat; market opens ~09:15 IST; graph stable
 Next: next watchdog wake (~08:11 IST Nov 20)
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 01:03
+Task: None
+Status: completed
+Progress: Confluences: 9 (buy=9, sell=0) | Gaps: 2
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 194,943 unprocessed — ContextAgent lagging; No ConfluenceSignal nodes for today — first run or no signals met threshold
+============================================================
+
+[CHECKPOINT] 2026-11-20 01:04
+Task: orchestrator-20261120-0632
+Status: completed
+Progress: 9 BUY_CONFLUENCE signals stable (17th consecutive scan). BLACKBUCK(0.84), BHARATCOAL(0.84), AURIONPRO(0.80), AVANTIFEED(0.76), BSOFT(0.69), BLS(0.68), CANFINHOME(0.68), BAJAJHFL(0.66), CAPILLARY(0.62). Market opens in ~2h45m.
+Next: Next orchestrator run in 2h. Market open scan at 09:15 IST.
+Blockers: none
+============================================================
