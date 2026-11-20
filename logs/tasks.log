@@ -5094,3 +5094,11 @@ Progress: 43 nodes written across 11 endpoints. Market closed. 17 live_prices, 2
 Next: Next feed run scheduled. Market opens 09:15 IST.
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 02:11
+Task: results-retry-20261120-0740
+Status: completed
+Progress: No pending retry file. 0 companies in retry list (1 AM pass found 0 scheduled). Clean no-op.
+Next: Next results fetch scheduled for 2026-11-21 nightly.
+Blockers: none
+============================================================
