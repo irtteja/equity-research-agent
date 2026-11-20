@@ -5134,3 +5134,11 @@ Progress: 43 nodes written. Market OPEN. 17 live_prices (signal tickers), 20 top
 Next: Next market-hours feed poll scheduled.
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 04:41
+Task: watchdog-20261120-1010
+Status: completed
+Progress: Market OPEN (10:10 IST). Graph ready: 941 companies. Market-hours feed ran at 10:05 IST (43 nodes). 18 consecutive stable scans. Stale prices counter will reset with next orchestrator cycle.
+Next: Next watchdog at 12:10 IST. Live feed and orchestrator polling continues.
+Blockers: none
+============================================================
