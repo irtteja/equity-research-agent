@@ -5342,3 +5342,11 @@ Progress: 22nd scan (1st post-close): 8 BUY_CONFLUENCE (CAPILLARY dropped; score
 Next: overnight scans; NSE daily announcements trigger; bhavcopy retry ~17:15 IST
 Blockers: stale prices in graph.db (5121 pre-price_agent nodes); 4 agents stalled; episode backlog 195840
 ============================================================
+
+[CHECKPOINT] 2026-11-20 11:49
+Task: live_feed-20261120-1718
+Status: completed
+Progress: After-hours: 44 nodes (live_prices 17, top_movers 20, market_status 1, fii_dii 2, option_chains 2, bulk_deals 2). indices_bhavcopy: 153 rows saved (available at 17:18 IST as expected).
+Next: overnight scans; NSE daily announcements
+Blockers: indices endpoint still 0 nodes; insider on cooldown
+============================================================
