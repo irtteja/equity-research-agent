@@ -5374,3 +5374,11 @@ Progress: 23rd scan (evening): 8 BUY_CONFLUENCE stable. Same list as post-close:
 Next: overnight scans; NSE daily announcements; next market day Mon Nov 23
 Blockers: stale prices (5121); 4 agents stalled; episode backlog 195840
 ============================================================
+
+[CHECKPOINT] 2026-11-20 14:41
+Task: watchdog-20261120-2010
+Status: completed
+Progress: Evening heartbeat at 20:10 IST. daily_monitor confirmed ran (16:10 IST). 23 orchestrator scans complete. Graph: 7100 price nodes, 555 trend nodes. 8 BUY_CONFLUENCE stable.
+Next: overnight scans; NSE daily announcements; next market day Mon Nov 23 09:15 IST
+Blockers: none active
+============================================================
