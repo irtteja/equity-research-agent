@@ -5142,3 +5142,19 @@ Progress: Market OPEN (10:10 IST). Graph ready: 941 companies. Market-hours feed
 Next: Next watchdog at 12:10 IST. Live feed and orchestrator polling continues.
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 05:03
+Task: None
+Status: completed
+Progress: Confluences: 9 (buy=9, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 194,943 unprocessed — ContextAgent lagging
+============================================================
+
+[CHECKPOINT] 2026-11-20 05:03
+Task: orchestrator-20261120-1032
+Status: completed
+Progress: 9 BUY_CONFLUENCE signals stable (19th consecutive scan). Market OPEN. Stale prices counter still 5121 — live feed not updating graph price nodes (known gap: nse_live_feed.py writes to memory_store but not to graph.db price nodes).
+Next: Next scan in 30min. Known gap: graph price nodes not updated by live feed — signals still use pre-close prices.
+Blockers: none
+============================================================
