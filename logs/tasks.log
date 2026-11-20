@@ -5302,3 +5302,11 @@ Progress: Macro, FII/DII, 0 facts ingested, bhavcopy 0 rows, block/bulk deals
 Next: Review material announcements, update PROGRESS.md
 Blockers: structured_results, indices_bhavcopy, corp_events
 ============================================================
+
+[CHECKPOINT] 2026-11-20 10:42
+Task: watchdog-20261120-1610
+Status: completed
+Progress: Post-close watchdog: daily_monitor ran — 17 reports, 5 new tools, 3477 learned, 123 gap tasks enqueued. Graph: 17243 nodes, 204565 edges. Macro: risk_off 0.22. FII net +7411cr, DII net -1357cr. 9 BUY_CONFLUENCE stable.
+Next: overnight triggers: live_feed, orchestrator; tomorrow market open 09:15 IST
+Blockers: fetch_results import error; bhavcopy too_early; triage schema mismatch; 5 agents stalled
+============================================================
