@@ -5174,3 +5174,11 @@ Progress: 43 nodes written across 11 endpoints. Market OPEN. 20 top_movers, 2 fi
 Next: Next market-hours poll scheduled.
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 06:41
+Task: watchdog-20261120-1211
+Status: completed
+Progress: Market OPEN (12:11 IST). Graph ready: 941 companies. Live feed active, 19 consecutive stable scans. 3h19m until close at 15:30 IST.
+Next: Next watchdog at 14:11 IST. Market closes 15:30 IST, daily_monitor to run after.
+Blockers: none
+============================================================
