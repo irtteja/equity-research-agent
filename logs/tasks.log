@@ -5198,3 +5198,11 @@ Progress: 9 BUY_CONFLUENCE signals stable (20th consecutive scan). Market OPEN. 
 Next: Next scan in 30min. Market closes 15:30 IST.
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 07:35
+Task: live_feed-20261120-1305
+Status: completed
+Progress: 43 nodes written across 9 endpoints. Market OPEN. 20 top_movers, 2 fii_dii, 2 option_chains, 1 bulk_deals. 2h25m until close.
+Next: Next market-hours poll scheduled.
+Blockers: none
+============================================================
