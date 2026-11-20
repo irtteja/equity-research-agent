@@ -5430,3 +5430,11 @@ Progress: 25th scan: 8 BUY_CONFLUENCE stable — BLACKBUCK(0.90) BHARATCOAL(0.85
 Next: Next orchestrator ~23:03 IST; weekend quiet period
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 17:49
+Task: live_feed-20261120-2318
+Status: completed
+Progress: 44 nodes: live_prices 17, top_movers 20, market_status 1, fii_dii 2, option_chains 2, bulk_deals 2; corp_events/board/delivery/insider all 0 (after-hours)
+Next: Next after-hours feed ~01:18 IST; weekend quiet
+Blockers: none
+============================================================
