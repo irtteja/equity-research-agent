@@ -5310,3 +5310,19 @@ Progress: Post-close watchdog: daily_monitor ran — 17 reports, 5 new tools, 34
 Next: overnight triggers: live_feed, orchestrator; tomorrow market open 09:15 IST
 Blockers: fetch_results import error; bhavcopy too_early; triage schema mismatch; 5 agents stalled
 ============================================================
+
+[CHECKPOINT] 2026-11-20 11:03
+Task: None
+Status: completed
+Progress: prices=1026 value_signals=5
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-20 11:03
+Task: daily_monitor-20261120-1631
+Status: completed
+Progress: price_agent: 1026 PriceSnapshot nodes, 5 value signals. equity_bhavcopy: 749 rows saved. indices_bhavcopy: download_failed (not yet posted at 16:31 IST — expected ~17:15 IST). daily_monitor already ran at 16:10.
+Next: retry indices bhavcopy after 17:15 IST; overnight live_feed; orchestrator scans
+Blockers: NSE indices bhavcopy not available until ~17:15 IST
+============================================================

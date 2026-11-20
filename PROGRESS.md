@@ -1,5 +1,32 @@
 # Progress Log
 
+## 2026-11-20 — Friday: Full Market Day + Post-Close Pipeline
+
+### Done
+- **Orchestrator** (06:32, 08:32, 10:32, 12:32, 14:33 IST): 9 BUY_CONFLUENCE stable across 21 consecutive scans. BLACKBUCK(0.84) BHARATCOAL(0.84) AURIONPRO(0.80) AVANTIFEED(0.76) BSOFT(0.69) BLS(0.68) CANFINHOME(0.68) BAJAJHFL(0.66) CAPILLARY(0.62). Commits: `910abbe` `ab78e87` `ba7ab9b` `927d25a` `87feb6c`
+- **Live feed** (10:05, 11:05, 12:05, 13:05, 14:05, 15:05 IST): 43-44 nodes/11 endpoints — market OPEN. 2 bulk deals captured at 14:05 and 15:05 IST. Commits: `453f90b` `d9bf15c` `5b0c8d6` `235f72f` `3d4e2de` `01798c7`
+- **Watchdog** (08:10, 10:10, 12:11, 14:10, 16:10 IST): heartbeat + post-close daily_monitor trigger. Commits: `6bb57f1` `74bcb7f` `719ae8f` `93d06fc` `98a66d9`
+- **daily_monitor** (16:10 IST): 17 research reports, graph 17243 nodes/204565 edges, 5 new tools, 123 gap tasks enqueued, devil_advocate 4 BUY held/13 downgraded, alert engine 13 fired. Commit: `7456a62`
+- **NSE Daily Brief** (16:00 IST): context_agent 3108 eps/2168 edges. Commit: `291b24b`
+- **price_agent** (16:31 IST): 1026 PriceSnapshot nodes, 5 value signals. Commit: see below
+- **equity_bhavcopy** (16:31 IST): 749 rows saved to `memory_store/bhavcopy/2026-11-20.csv`
+- **indices_bhavcopy**: download_failed at 16:31 IST — expected available ~17:15 IST (known pattern)
+- **Macro snapshot (Nov 20)**: US mkts -2–5%, Nikkei -5.06%, Natural gas +9.79%, Crude Brent -4.36% @ 87.97, Gold -2.75% @ 3584. VIX 17.33 (+7.5%). Macro: risk_off (score 0.22). FII net +₹7411cr; DII net -₹1357cr.
+
+### Architecture changes
+- 5 new generated tools: ingest_live_analysis_variations, ingest_live_variations_gainers, ingest_margin_trading_disclosure, ingest_market_activity_report, ingest_market_summary
+- context_agent processed 3108+3108 episodes today — incremental backlog reduction underway
+
+### Pending / next sessions
+- **Retry indices bhavcopy**: available ~17:15 IST — after-hours feed should capture it
+- **Fix `fetch_results.py` import**: `cannot import name 'fetch_symbol'` — structured_results step fails on result-day companies
+- **Fix `backfill_graph.py` timeout**: consistently times out — needs chunking
+- **Fix triage error**: `'str' object has no attribute 'get'` for ABCAPITAL/M&M/HINDALCO/SHAREINDIA/BOSCHLTD/PRESTIGE
+- **Episode backlog**: ~191,835 remaining — need bulk processing strategy
+- **Annual reports PDF extraction**: 819 PDFs, pipeline not built
+
+---
+
 ## 2026-11-19 — Thursday: Full Market Day + Post-Close Pipeline
 
 ### Done

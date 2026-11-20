@@ -1,0 +1,220 @@
+{
+  "date": "2026-11-20",
+  "generated_at": "2026-11-20T11:03:12.149894",
+  "stats": {
+    "prices_written": 1026,
+    "value_signals": 5,
+    "date": "2026-11-20"
+  },
+  "value_signals": [
+    {
+      "ticker": "BLACKBUCK",
+      "close": 515.3,
+      "near_low_pct": 3.89,
+      "trend_metric": "revenue",
+      "trend_delta": 15.26,
+      "streak": 2,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "BHARATCOAL",
+      "close": 30.5,
+      "near_low_pct": 5.46,
+      "trend_metric": "revenue",
+      "trend_delta": 23.01,
+      "streak": 3,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "AURIONPRO",
+      "close": 550.0,
+      "near_low_pct": 6.95,
+      "trend_metric": "revenue",
+      "trend_delta": 15.89,
+      "streak": 2,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "AVANTIFEED",
+      "close": 716.0,
+      "near_low_pct": 9.26,
+      "trend_metric": "revenue",
+      "trend_delta": 29.44,
+      "streak": 2,
+      "price_zone": "near_low"
+    },
+    {
+      "ticker": "BLS",
+      "close": 223.4,
+      "near_low_pct": 9.97,
+      "trend_metric": "revenue",
+      "trend_delta": 9.33,
+      "streak": 2,
+      "price_zone": "near_low"
+    }
+  ],
+  "movers_up": [
+    {
+      "ticker": "INDUSINDBK",
+      "pct": 8.59
+    },
+    {
+      "ticker": "INDIA VIX",
+      "pct": 7.54
+    },
+    {
+      "ticker": "SGMART",
+      "pct": 7.19
+    },
+    {
+      "ticker": "EIHOTEL",
+      "pct": 7.18
+    },
+    {
+      "ticker": "TIPSFILMS",
+      "pct": 6.69
+    },
+    {
+      "ticker": "CUB",
+      "pct": 6.25
+    },
+    {
+      "ticker": "SAMBHAAV",
+      "pct": 5.31
+    },
+    {
+      "ticker": "APOLLOHOSP",
+      "pct": 5.29
+    },
+    {
+      "ticker": "THYROCARE",
+      "pct": 5.18
+    },
+    {
+      "ticker": "ASTERDM",
+      "pct": 5.17
+    },
+    {
+      "ticker": "RUNWALENTR",
+      "pct": 5.0
+    },
+    {
+      "ticker": "NAVA",
+      "pct": 4.78
+    },
+    {
+      "ticker": "AXISBANK",
+      "pct": 4.72
+    },
+    {
+      "ticker": "GRADIENTE",
+      "pct": 4.61
+    },
+    {
+      "ticker": "QUINT",
+      "pct": 4.44
+    },
+    {
+      "ticker": "WELSPUNLIV",
+      "pct": 4.21
+    },
+    {
+      "ticker": "UNIONBANK",
+      "pct": 4.21
+    },
+    {
+      "ticker": "PERSISTENT",
+      "pct": 4.15
+    },
+    {
+      "ticker": "GERMAN",
+      "pct": 3.94
+    },
+    {
+      "ticker": "MAXHEALTH",
+      "pct": 3.88
+    }
+  ],
+  "movers_down": [
+    {
+      "ticker": "EBGNG",
+      "pct": -8.82
+    },
+    {
+      "ticker": "AYE",
+      "pct": -7.89
+    },
+    {
+      "ticker": "SHILPAMED",
+      "pct": -6.74
+    },
+    {
+      "ticker": "SKYGOLD",
+      "pct": -6.62
+    },
+    {
+      "ticker": "IIFLCAPS",
+      "pct": -6.43
+    },
+    {
+      "ticker": "MTARTECH",
+      "pct": -5.84
+    },
+    {
+      "ticker": "ACEVECTOR",
+      "pct": -5.74
+    },
+    {
+      "ticker": "MKJEWELS",
+      "pct": -5.44
+    },
+    {
+      "ticker": "PNGSREVA",
+      "pct": -5.16
+    },
+    {
+      "ticker": "PFOCUS",
+      "pct": -5.07
+    },
+    {
+      "ticker": "STLTECH",
+      "pct": -5.0
+    },
+    {
+      "ticker": "MMWL",
+      "pct": -4.97
+    },
+    {
+      "ticker": "TVVISION",
+      "pct": -4.94
+    },
+    {
+      "ticker": "AQYLON",
+      "pct": -4.92
+    },
+    {
+      "ticker": "SKYWAYS",
+      "pct": -4.84
+    },
+    {
+      "ticker": "APOLLO",
+      "pct": -4.77
+    },
+    {
+      "ticker": "QPOWER",
+      "pct": -4.76
+    },
+    {
+      "ticker": "IIFL",
+      "pct": -4.72
+    },
+    {
+      "ticker": "OMPOWER",
+      "pct": -4.71
+    },
+    {
+      "ticker": "UTLSOLAR",
+      "pct": -4.64
+    }
+  ]
+}
