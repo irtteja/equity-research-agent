@@ -5126,3 +5126,11 @@ Progress: 9 BUY_CONFLUENCE signals stable (18th consecutive scan). All scores un
 Next: Next scan post-open. Prices will update at 09:15 IST.
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 04:35
+Task: live_feed-20261120-1005
+Status: completed
+Progress: 43 nodes written. Market OPEN. 17 live_prices (signal tickers), 20 top_movers, 2 fii_dii, 2 option_chains, 1 bulk_deals.
+Next: Next market-hours feed poll scheduled.
+Blockers: none
+============================================================
