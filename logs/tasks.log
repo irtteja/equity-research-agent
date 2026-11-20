@@ -5446,3 +5446,11 @@ Progress: 00:10 IST Nov 21 heartbeat: graph 941 co, daily_monitor ran 16:31 IST 
 Next: Next watchdog ~02:10 IST; weekend: no market action
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 19:33
+Task: announcements-20261119
+Status: completed
+Progress: 218 announcements fetched for Nov 19 (170 symbols), 31 material events triaged, 8 key insights saved (IKS merger, EMBDL/JKCEMENT/PAYTM/ANANDRATHI/ADVENZYMES/STYLAMIND acquisitions)
+Next: Next announcement fetch tomorrow night for Nov 20
+Blockers: none
+============================================================
