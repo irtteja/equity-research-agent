@@ -5182,3 +5182,19 @@ Progress: Market OPEN (12:11 IST). Graph ready: 941 companies. Live feed active,
 Next: Next watchdog at 14:11 IST. Market closes 15:30 IST, daily_monitor to run after.
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 07:03
+Task: None
+Status: completed
+Progress: Confluences: 9 (buy=9, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 194,943 unprocessed — ContextAgent lagging
+============================================================
+
+[CHECKPOINT] 2026-11-20 07:03
+Task: orchestrator-20261120-1232
+Status: completed
+Progress: 9 BUY_CONFLUENCE signals stable (20th consecutive scan). Market OPEN. Scores identical to all prior scans since Nov 19.
+Next: Next scan in 30min. Market closes 15:30 IST.
+Blockers: none
+============================================================
