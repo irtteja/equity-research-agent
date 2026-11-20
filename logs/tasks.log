@@ -5326,3 +5326,19 @@ Progress: price_agent: 1026 PriceSnapshot nodes, 5 value signals. equity_bhavcop
 Next: retry indices bhavcopy after 17:15 IST; overnight live_feed; orchestrator scans
 Blockers: NSE indices bhavcopy not available until ~17:15 IST
 ============================================================
+
+[CHECKPOINT] 2026-11-20 11:04
+Task: None
+Status: completed
+Progress: Confluences: 8 (buy=8, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 195,840 unprocessed — ContextAgent lagging
+============================================================
+
+[CHECKPOINT] 2026-11-20 11:04
+Task: orchestrator-20261120-1633
+Status: completed
+Progress: 22nd scan (1st post-close): 8 BUY_CONFLUENCE (CAPILLARY dropped; scores updated from price_agent 1026 nodes). BLACKBUCK(0.90) BHARATCOAL(0.85) AURIONPRO(0.81) AVANTIFEED(0.75) BLS(0.73) CANFINHOME(0.69) BAJAJHFL(0.66) BSOFT(0.63).
+Next: overnight scans; NSE daily announcements trigger; bhavcopy retry ~17:15 IST
+Blockers: stale prices in graph.db (5121 pre-price_agent nodes); 4 agents stalled; episode backlog 195840
+============================================================
