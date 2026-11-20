@@ -5382,3 +5382,11 @@ Progress: Evening heartbeat at 20:10 IST. daily_monitor confirmed ran (16:10 IST
 Next: overnight scans; NSE daily announcements; next market day Mon Nov 23 09:15 IST
 Blockers: none active
 ============================================================
+
+[CHECKPOINT] 2026-11-20 14:49
+Task: live_feed-20261120-2018
+Status: completed
+Progress: After-hours: 44 nodes (live_prices 17, top_movers 20, market_status 1, fii_dii 2, option_chains 2, bulk_deals 2). Insider on cooldown (2812s).
+Next: overnight after-hours feeds; orchestrator scans; NSE announcements
+Blockers: insider cooldown; corp_events/delivery/indices 0 nodes
+============================================================
