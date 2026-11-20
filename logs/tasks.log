@@ -5222,3 +5222,19 @@ Progress: Market OPEN (14:10 IST). 1h20m until close at 15:30 IST. Graph ready. 
 Next: Next watchdog fires at 16:10 IST (after close). daily_monitor should run after 16:00 IST.
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 09:04
+Task: None
+Status: completed
+Progress: Confluences: 9 (buy=9, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 194,943 unprocessed — ContextAgent lagging
+============================================================
+
+[CHECKPOINT] 2026-11-20 09:04
+Task: orchestrator-20261120-1433
+Status: completed
+Progress: 21st consecutive scan: 9 BUY_CONFLUENCE stable (BLACKBUCK 0.84, BHARATCOAL 0.84, AURIONPRO 0.80, AVANTIFEED 0.76, BSOFT 0.69, BLS 0.68, CANFINHOME 0.68, BAJAJHFL 0.66, CAPILLARY 0.62). Market closes ~57min.
+Next: live_feed at 15:05 IST, daily_monitor after 16:00 IST close
+Blockers: stale prices in graph.db; 5 agents stalled; episode backlog 194943
+============================================================
