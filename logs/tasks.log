@@ -5158,3 +5158,11 @@ Progress: 9 BUY_CONFLUENCE signals stable (19th consecutive scan). Market OPEN. 
 Next: Next scan in 30min. Known gap: graph price nodes not updated by live feed — signals still use pre-close prices.
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 05:36
+Task: live_feed-20261120-1105
+Status: completed
+Progress: 43 nodes written across 9 endpoints. Market OPEN. 20 top_movers, 2 fii_dii, 2 option_chains, 1 bulk_deals. Delivery/insider on cooldown.
+Next: Next market-hours poll scheduled.
+Blockers: none
+============================================================
