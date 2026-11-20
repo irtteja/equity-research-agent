@@ -5110,3 +5110,19 @@ Progress: Pre-market heartbeat. 08:10 IST, market opens in ~65 min. Graph ready:
 Next: Market opens 09:15 IST. Live feed and orchestrator will trigger at open.
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 03:02
+Task: None
+Status: completed
+Progress: Confluences: 9 (buy=9, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 194,943 unprocessed — ContextAgent lagging
+============================================================
+
+[CHECKPOINT] 2026-11-20 03:02
+Task: orchestrator-20261120-0832
+Status: completed
+Progress: 9 BUY_CONFLUENCE signals stable (18th consecutive scan). All scores unchanged. Market opens in 43 min.
+Next: Next scan post-open. Prices will update at 09:15 IST.
+Blockers: none
+============================================================
