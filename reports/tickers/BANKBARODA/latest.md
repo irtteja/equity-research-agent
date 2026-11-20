@@ -1,5 +1,5 @@
 # BANKBARODA — BANKBARODA
-*Financial Services | Banks | 2026-11-19*
+*Financial Services | Banks | 2026-11-20*
 
 ---
 
@@ -18,23 +18,23 @@ BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentu
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 54.5% |
+| Confidence | 55.1% |
 | Belief State | 🔵 FORMING |
 | Conviction Score | 0.49 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.50 |
+| Net Conviction | 0.52 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹274.5 |
-| Change | -0.1% |
+| Close | ₹285.9 |
+| Change | 4.2% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | strong_outperformer (rs_30: 11.9) |
+| Relative Strength | strong_outperformer (rs_30: 16.5) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -72,7 +72,7 @@ BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentu
 
 ## RISK REGISTER
 
-1. Declining belief trajectory | 10 drops vs 0 rises in recent log
+1. Declining belief trajectory | 6 drops vs 4 rises in recent log
 
 ⚠️ **Monitor:** [stale_signal] BANKBARODA BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] BANKBARODA BUY signal not refreshed in >7 days
@@ -92,7 +92,7 @@ BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentu
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.22
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -110,4 +110,4 @@ BANKBARODA is 11.8% from 52W low with total_income improving 2 quarters (momentu
 | Promoter Holding | — |
 
 ---
-*Confidence: 55% | Generated: 2026-11-19 10:42 | Next review: +30d*
+*Confidence: 55% | Generated: 2026-11-20 10:42 | Next review: +30d*

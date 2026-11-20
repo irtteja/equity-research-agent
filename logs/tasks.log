@@ -5262,3 +5262,43 @@ Progress: fetch_results: 0 scheduled (no-op). backfill_graph: timeout again (kno
 Next: backfill_graph needs chunking fix; episode backlog reducing (was 194943, 3108 processed)
 Blockers: backfill_graph times out consistently; episode backlog still large
 ============================================================
+
+[CHECKPOINT] 2026-11-20 10:41
+Task: daily-monitor-2026-11-20
+Status: in_progress
+Progress: step 5e: 0 analyst items enqueued
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-20 10:41
+Task: daily-monitor-2026-11-20
+Status: in_progress
+Progress: step 5f: {'announcements': 127, 'board_meetings': 5, 'saved': True, 'error': None}
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-20 10:41
+Task: daily-monitor-2026-11-20
+Status: in_progress
+Progress: step 5g: analysis+synthesis done
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-20 10:42
+Task: daily-monitor-2026-11-20
+Status: in_progress
+Progress: step 5h: meta done — enqueued=123
+Next: 
+Blockers: none
+============================================================
+
+[CHECKPOINT] 2026-11-20 10:42
+Task: daily-monitor-2026-11-20
+Status: completed_with_errors
+Progress: Macro, FII/DII, 0 facts ingested, bhavcopy 0 rows, block/bulk deals
+Next: Review material announcements, update PROGRESS.md
+Blockers: structured_results, indices_bhavcopy, corp_events
+============================================================

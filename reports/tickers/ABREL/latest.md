@@ -1,5 +1,5 @@
 # ABREL — ABREL
-*Realty | Realty | 2026-11-19*
+*Realty | Realty | 2026-11-20*
 
 ---
 
@@ -9,32 +9,32 @@ ABREL is 8.5% from 52W low with revenue improving 2 quarters (momentum 1.00).
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 62% confidence / FORMING state
+- **Signal:** BUY / 65% confidence / FORMING state
 - **Key driver:** ABREL is 8.5% from 52W low with revenue improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.04)
+- **Watch:** No material bear arguments at this time (bear score 0.00)
 
 ## SIGNAL & CONVICTION
 
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 62.4% |
+| Confidence | 64.7% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.50 |
+| Conviction Score | 0.49 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.56 |
+| Net Conviction | 0.62 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹1238.0 |
+| Close | ₹1221.0 |
 | Change | -1.8% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | strong_outperformer (rs_30: 16.5) |
+| Relative Strength | strong_outperformer (rs_30: 14.9) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -72,7 +72,7 @@ ABREL is 8.5% from 52W low with revenue improving 2 quarters (momentum 1.00).
 
 ## RISK REGISTER
 
-1. Declining belief trajectory | 10 drops vs 0 rises in recent log
+No material bear arguments identified.
 
 ℹ️ **Monitor:** [strong_buy_conviction] ABREL high-conviction BUY with high business quality (conf=77%, quality=0.80)
 ⚠️ **Monitor:** [stale_signal] ABREL BUY signal not refreshed in >7 days
@@ -92,7 +92,7 @@ ABREL is 8.5% from 52W low with revenue improving 2 quarters (momentum 1.00).
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.22
 
 **Sector sensitivity:** Realty is sensitive to interest rates, home loan availability.
 
@@ -110,4 +110,4 @@ ABREL is 8.5% from 52W low with revenue improving 2 quarters (momentum 1.00).
 | Promoter Holding | — |
 
 ---
-*Confidence: 62% | Generated: 2026-11-19 10:42 | Next review: +30d*
+*Confidence: 65% | Generated: 2026-11-20 10:42 | Next review: +30d*

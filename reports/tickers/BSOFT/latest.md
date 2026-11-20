@@ -1,16 +1,16 @@
 # BSOFT — BSOFT
-*Information Technology | IT - Software | 2026-11-19*
+*Information Technology | IT - Software | 2026-11-20*
 
 ---
 
 ## INVESTMENT THESIS
 
-BSOFT is 12.7% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is fair (P/E 12.9x) — not expensive for the growth on offer.
+BSOFT is 11.6% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is fair (P/E 12.8x) — not expensive for the growth on offer.
 
 ## EXECUTIVE SUMMARY
 
 - **Signal:** BUY / 64% confidence / FORMING state
-- **Key driver:** BSOFT is 12.7% from 52W low with revenue improving 2 quarters (momentum 1.00)
+- **Key driver:** BSOFT is 11.6% from 52W low with revenue improving 2 quarters (momentum 1.00)
 - **Watch:** No material bear arguments at this time (bear score 0.00)
 
 ## SIGNAL & CONVICTION
@@ -29,12 +29,12 @@ BSOFT is 12.7% from 52W low with revenue improving 2 quarters (momentum 1.00). V
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹301.0 |
-| Change | -1.1% |
+| Close | ₹298.1 |
+| Change | -1.2% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | strong_underperformer (rs_30: -5.9) |
+| Relative Strength | strong_underperformer (rs_30: -6.8) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -45,7 +45,7 @@ BSOFT is 12.7% from 52W low with revenue improving 2 quarters (momentum 1.00). V
 
 | Metric | Value | Context |
 |--------|-------|---------|
-| P/E | 12.9x | 3Y avg: — |
+| P/E | 12.8x | 3Y avg: — |
 | Valuation Score | 0.39 | 0=cheap, 1=expensive |
 | Verdict | **fair** | |
 | PAT Growth YoY | 0.0% | |
@@ -75,6 +75,7 @@ BSOFT is 12.7% from 52W low with revenue improving 2 quarters (momentum 1.00). V
 No material bear arguments identified.
 
 ℹ️ **Monitor:** [peer_pe_discount] BSOFT trades at 74% P/E discount to sector peers
+ℹ️ **Monitor:** [peer_pe_discount] BSOFT trades at 74% P/E discount to sector peers
 ℹ️ **Monitor:** [new_buy_signal] New BUY signal for BSOFT
 
 ## PEER CONTEXT
@@ -89,7 +90,7 @@ No material bear arguments identified.
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.22
 
 **Sector sensitivity:** Information Technology is sensitive to USD/INR (revenue in USD) and US economic conditions.
 
@@ -107,4 +108,4 @@ No material bear arguments identified.
 | Promoter Holding | — |
 
 ---
-*Confidence: 64% | Generated: 2026-11-19 10:42 | Next review: +30d*
+*Confidence: 64% | Generated: 2026-11-20 10:42 | Next review: +30d*

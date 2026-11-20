@@ -1,17 +1,17 @@
 # CAPILLARY — CAPILLARY
-*Information Technology | IT - Software | 2026-11-19*
+*Information Technology | IT - Software | 2026-11-20*
 
 ---
 
 ## INVESTMENT THESIS
 
-CAPILLARY is 13.2% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is stretched; needs fundamental delivery to justify the multiple.
+CAPILLARY is 14.2% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is stretched; needs fundamental delivery to justify the multiple.
 
 ## EXECUTIVE SUMMARY
 
 - **Signal:** BUY / 64% confidence / FORMING state
-- **Key driver:** CAPILLARY is 13.2% from 52W low with revenue improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.10)
+- **Key driver:** CAPILLARY is 14.2% from 52W low with revenue improving 2 quarters (momentum 1.00)
+- **Watch:** No material bear arguments at this time (bear score 0.00)
 
 ## SIGNAL & CONVICTION
 
@@ -20,21 +20,21 @@ CAPILLARY is 13.2% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Signal | 🟢 **BUY** |
 | Confidence | 63.6% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.53 |
+| Conviction Score | 0.52 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.40 |
+| Net Conviction | 0.50 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹496.0 |
-| Change | -1.3% |
+| Close | ₹500.2 |
+| Change | 0.3% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | underperformer (rs_30: -2.3) |
+| Relative Strength | underperformer (rs_30: -1.4) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -45,7 +45,7 @@ CAPILLARY is 13.2% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 | Metric | Value | Context |
 |--------|-------|---------|
-| P/E | 85.2x | 3Y avg: — |
+| P/E | 86.0x | 3Y avg: — |
 | Valuation Score | 0.48 | 0=cheap, 1=expensive |
 | Verdict | **expensive** | |
 | PAT Growth YoY | 329.5% | |
@@ -72,7 +72,7 @@ CAPILLARY is 13.2% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ## RISK REGISTER
 
-1. Declining belief trajectory | 7 drops vs 3 rises in recent log
+No material bear arguments identified.
 
 ℹ️ **Monitor:** [new_buy_signal] New BUY signal for CAPILLARY
 
@@ -88,7 +88,7 @@ CAPILLARY is 13.2% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.22
 
 **Sector sensitivity:** Information Technology is sensitive to USD/INR (revenue in USD) and US economic conditions.
 
@@ -106,4 +106,4 @@ CAPILLARY is 13.2% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Promoter Holding | — |
 
 ---
-*Confidence: 64% | Generated: 2026-11-19 10:42 | Next review: +30d*
+*Confidence: 64% | Generated: 2026-11-20 10:42 | Next review: +30d*

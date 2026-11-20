@@ -1,5 +1,5 @@
 # AXISBANK — AXISBANK
-*Financial Services | Banks | 2026-11-19*
+*Financial Services | Banks | 2026-11-20*
 
 ---
 
@@ -9,32 +9,32 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 62% confidence / FORMING state
+- **Signal:** BUY / 65% confidence / FORMING state
 - **Key driver:** AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 1.00)
-- **Watch:** Price near 52W high — limited upside, breakout risk | 4.1% below 52W high of ₹1418.3
+- **Watch:** Price near 52W high — limited upside, breakout risk | 2.6% below 52W high of ₹1418.3
 
 ## SIGNAL & CONVICTION
 
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 62.4% |
+| Confidence | 64.7% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.50 |
+| Conviction Score | 0.49 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.44 |
+| Net Conviction | 0.50 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹1360.0 |
-| Change | -0.7% |
+| Close | ₹1380.8 |
+| Change | 1.5% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | strong_outperformer (rs_30: 10.4) |
+| Relative Strength | strong_outperformer (rs_30: 12.1) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -72,8 +72,7 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 
 ## RISK REGISTER
 
-1. Price near 52W high — limited upside, breakout risk | 4.1% below 52W high of ₹1418.3
-2. Declining belief trajectory | 10 drops vs 0 rises in recent log
+1. Price near 52W high — limited upside, breakout risk | 2.6% below 52W high of ₹1418.3
 
 ⚠️ **Monitor:** [stale_signal] AXISBANK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] AXISBANK BUY signal not refreshed in >7 days
@@ -93,7 +92,7 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.22
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -111,4 +110,4 @@ AXISBANK is 13.9% from 52W low with total_income improving 2 quarters (momentum 
 | Promoter Holding | — |
 
 ---
-*Confidence: 62% | Generated: 2026-11-19 10:42 | Next review: +30d*
+*Confidence: 65% | Generated: 2026-11-20 10:42 | Next review: +30d*

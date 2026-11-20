@@ -1,0 +1,1891 @@
+{
+  "event_calendar": {
+    "total": 19,
+    "results_events": 11,
+    "file": "/home/user/equity-research-agent/memory_store/event_calendar/2026-11-20.json"
+  },
+  "macro": {
+    "date": "2026-11-20",
+    "timestamp": "2026-11-20T10:40:59.003705",
+    "global_indices": {
+      "S&P 500": {
+        "symbol": "^GSPC",
+        "last": 7175.83,
+        "prev_close": 7323.63,
+        "change": -147.8,
+        "change_pct": -2.02
+      },
+      "Nasdaq": {
+        "symbol": "^IXIC",
+        "last": 23879.2,
+        "prev_close": 24429.88,
+        "change": -550.68,
+        "change_pct": -2.25
+      },
+      "Dow Jones": {
+        "symbol": "^DJI",
+        "last": 49097.06,
+        "prev_close": 50198.17,
+        "change": -1101.11,
+        "change_pct": -2.19
+      },
+      "Nikkei 225": {
+        "symbol": "^N225",
+        "last": 56436.65,
+        "prev_close": 59444.21,
+        "change": -3007.56,
+        "change_pct": -5.06
+      },
+      "Hang Seng": {
+        "symbol": "^HSI",
+        "last": 22410.8,
+        "prev_close": 22841.62,
+        "change": -430.82,
+        "change_pct": -1.89
+      },
+      "DAX": {
+        "symbol": "^GDAXI",
+        "last": 25073.77,
+        "prev_close": 25463.81,
+        "change": -390.04,
+        "change_pct": -1.53
+      },
+      "FTSE 100": {
+        "symbol": "^FTSE",
+        "last": 10403.01,
+        "prev_close": 10452.7,
+        "change": -49.69,
+        "change_pct": -0.48
+      },
+      "Shanghai": {
+        "symbol": "000001.SS",
+        "last": 3533.79,
+        "prev_close": 3577.62,
+        "change": -43.82,
+        "change_pct": -1.22
+      },
+      "NIFTY 50": {
+        "symbol": "^NSEI",
+        "last": 25800.6,
+        "prev_close": 25514.3,
+        "change": 286.3,
+        "change_pct": 1.12
+      },
+      "SENSEX": {
+        "symbol": "^BSESN",
+        "last": 83919.71,
+        "prev_close": 83021.75,
+        "change": 897.96,
+        "change_pct": 1.08
+      },
+      "NIFTY BANK": {
+        "symbol": "^NSEBANK",
+        "last": 64635.2,
+        "prev_close": 63063.0,
+        "change": 1572.2,
+        "change_pct": 2.49
+      }
+    },
+    "commodities": {
+      "Crude WTI": {
+        "symbol": "CL=F",
+        "last": 81.17,
+        "prev_close": 83.21,
+        "change": -2.04,
+        "change_pct": -2.45
+      },
+      "Crude Brent": {
+        "symbol": "BZ=F",
+        "last": 87.97,
+        "prev_close": 91.98,
+        "change": -4.01,
+        "change_pct": -4.36
+      },
+      "Gold": {
+        "symbol": "GC=F",
+        "last": 3584.3,
+        "prev_close": 3685.5,
+        "change": -101.2,
+        "change_pct": -2.75
+      },
+      "Silver": {
+        "symbol": "SI=F",
+        "last": 42.42,
+        "prev_close": 44.32,
+        "change": -1.9,
+        "change_pct": -4.29
+      },
+      "Natural Gas": {
+        "symbol": "NG=F",
+        "last": 3.59,
+        "prev_close": 3.27,
+        "change": 0.32,
+        "change_pct": 9.79
+      },
+      "Copper": {
+        "symbol": "HG=F",
+        "last": 5.57,
+        "prev_close": 5.62,
+        "change": -0.06,
+        "change_pct": -1.07
+      }
+    },
+    "currencies": {
+      "USD/INR": {
+        "symbol": "USDINR=X",
+        "last": 92.66,
+        "prev_close": 93.47,
+        "change": -0.81,
+        "change_pct": -0.87
+      },
+      "EUR/INR": {
+        "symbol": "EURINR=X",
+        "last": 101.62,
+        "prev_close": 102.47,
+        "change": -0.85,
+        "change_pct": -0.83
+      },
+      "GBP/INR": {
+        "symbol": "GBPINR=X",
+        "last": 121.42,
+        "prev_close": 122.87,
+        "change": -1.45,
+        "change_pct": -1.18
+      },
+      "JPY/INR": {
+        "symbol": "JPYINR=X",
+        "last": 0.58,
+        "prev_close": 0.59,
+        "change": -0.0,
+        "change_pct": -0.0
+      },
+      "DXY": {
+        "symbol": "DX-Y.NYB",
+        "last": 103.88,
+        "prev_close": 103.9,
+        "change": -0.02,
+        "change_pct": -0.02
+      },
+      "EUR/USD": {
+        "symbol": "EURUSD=X",
+        "last": 1.1,
+        "prev_close": 1.1,
+        "change": -0.0,
+        "change_pct": -0.0
+      }
+    },
+    "india_vix": {
+      "last": 17.33,
+      "change_pct": 7.54,
+      "prev_close": 16.11,
+      "year_high": 28.91,
+      "year_low": 8.72
+    }
+  },
+  "fii_dii": {
+    "timestamp": "2026-11-20T10:41:07.530094",
+    "fii_dii": [
+      {
+        "buyValue": "17651.5",
+        "category": "DII",
+        "date": "19-Nov-2026",
+        "netValue": "-1356.57",
+        "sellValue": "19008.07"
+      },
+      {
+        "buyValue": "20706.95",
+        "category": "FII/FPI",
+        "date": "19-Nov-2026",
+        "netValue": "7411.41",
+        "sellValue": "13295.54"
+      }
+    ]
+  },
+  "ingestion": {
+    "fetch_errors": 0,
+    "total_announcements": 85,
+    "symbols_active": 73,
+    "rule_deep": 0,
+    "rule_light": 0,
+    "rule_skip": 0,
+    "ready_for_analysis": 0,
+    "prep_errors": 6,
+    "prep_items": []
+  },
+  "structured_results": {
+    "error": "cannot import name 'fetch_symbol' from 'jobs.fetch_results' (/home/user/equity-research-agent/jobs/fetch_results.py)"
+  },
+  "bhavcopy": {
+    "date": "2026-11-20",
+    "status": "too_early",
+    "data_date": "2026-11-19",
+    "retry_after": "20:00 IST"
+  },
+  "indices_bhavcopy": {
+    "date": "2026-11-20",
+    "status": "download_failed",
+    "error": "NSE file not available: https://nsearchives.nseindia.com/content/indices/ind_close_all_20112026.csv"
+  },
+  "deals": {
+    "timestamp": "2026-11-20T10:41:13.413151",
+    "block_deals": [
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "IIFLCAPS",
+        "Security Name": "IIFL CAPITAL SERVICES LTD",
+        "Client Name": "FIH MAURITIUS INVESTMENTS LTD",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "44000000",
+        "Trade Price / Wght. Avg. Price": "350.00"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "IIFLCAPS",
+        "Security Name": "IIFL CAPITAL SERVICES LTD",
+        "Client Name": "KALKI FAMILY PRIVATE TRUST",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "1000000",
+        "Trade Price / Wght. Avg. Price": "350.00"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "IIFLCAPS",
+        "Security Name": "IIFL CAPITAL SERVICES LTD",
+        "Client Name": "VENKATRAMAN R",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "8700000",
+        "Trade Price / Wght. Avg. Price": "350.00"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "IIFLCAPS",
+        "Security Name": "IIFL CAPITAL SERVICES LTD",
+        "Client Name": "ARDENT IMPEX PVT LTD",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "2000000",
+        "Trade Price / Wght. Avg. Price": "350.00"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "IIFLCAPS",
+        "Security Name": "IIFL CAPITAL SERVICES LTD",
+        "Client Name": "NIRMAL BHANWARLAL JAIN",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "32300000",
+        "Trade Price / Wght. Avg. Price": "350.00"
+      }
+    ],
+    "bulk_deals": [
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "ARIS",
+        "Security Name": "Arisinfra Solutions Ltd",
+        "Client Name": "SIDDHARTH BHASKAR SHAH",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "475000",
+        "Trade Price / Wght. Avg. Price": "158.03",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "QICAP MARKETS LLP",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "1406045",
+        "Trade Price / Wght. Avg. Price": "58.46",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "2681433",
+        "Trade Price / Wght. Avg. Price": "58.82",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "MICROCURVES TRADING PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "5324675",
+        "Trade Price / Wght. Avg. Price": "58.77",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "MARWADI SHARES AND FINANCE LTD.",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "1142034",
+        "Trade Price / Wght. Avg. Price": "58.75",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "JUNOMONETA FINSOL PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "3065227",
+        "Trade Price / Wght. Avg. Price": "58.74",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "CLT RESEARCH TECH PRIVATE LTD",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "2038877",
+        "Trade Price / Wght. Avg. Price": "58.71",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "4578751",
+        "Trade Price / Wght. Avg. Price": "58.69",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "IMC INDIA SECURITIES PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "1631290",
+        "Trade Price / Wght. Avg. Price": "58.68",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "QE SECURITIES LLP",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "2880156",
+        "Trade Price / Wght. Avg. Price": "58.52",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "HRTI PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "1144306",
+        "Trade Price / Wght. Avg. Price": "289.97",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "JUMP TRADING FINANCIAL INDIA PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "1367811",
+        "Trade Price / Wght. Avg. Price": "291.01",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "JUNOMONETA FINSOL PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "1076321",
+        "Trade Price / Wght. Avg. Price": "291.84",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "PLUTUS WEALTH MANAGEMENT LLP",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "2973398",
+        "Trade Price / Wght. Avg. Price": "292.60",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "MICROCURVES TRADING PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "1382772",
+        "Trade Price / Wght. Avg. Price": "290.84",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "MATHISYS QUANTCAP LLP",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "332611",
+        "Trade Price / Wght. Avg. Price": "292.41",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "QE SECURITIES LLP",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "2939359",
+        "Trade Price / Wght. Avg. Price": "291.57",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "IRAGE BROKING SERVICES LLP",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "591008",
+        "Trade Price / Wght. Avg. Price": "295.97",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "1448289",
+        "Trade Price / Wght. Avg. Price": "292.47",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "584488",
+        "Trade Price / Wght. Avg. Price": "295.82",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "CLT RESEARCH TECH PRIVATE LTD",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "491448",
+        "Trade Price / Wght. Avg. Price": "291.57",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "HJS SECURITIES PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "333181",
+        "Trade Price / Wght. Avg. Price": "289.34",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "ELIXIR WEALTH MANAGEMENT PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "689425",
+        "Trade Price / Wght. Avg. Price": "292.33",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "DIPAN MEHTA COMMODITIES PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "362743",
+        "Trade Price / Wght. Avg. Price": "294.85",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "IMC INDIA SECURITIES PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "462186",
+        "Trade Price / Wght. Avg. Price": "293.92",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "MARWADI SHARES AND FINANCE LTD.",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "580881",
+        "Trade Price / Wght. Avg. Price": "287.28",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "DELAPLEX",
+        "Security Name": "Delaplex Limited",
+        "Client Name": "JR SEAMLESS PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "48600",
+        "Trade Price / Wght. Avg. Price": "98.30",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "GLOBUSSPR",
+        "Security Name": "Globus Spirits Limited",
+        "Client Name": "JUNOMONETA FINSOL PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "172464",
+        "Trade Price / Wght. Avg. Price": "793.27",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "GLOBUSSPR",
+        "Security Name": "Globus Spirits Limited",
+        "Client Name": "MICROCURVES TRADING PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "184885",
+        "Trade Price / Wght. Avg. Price": "799.95",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "GLOBUSSPR",
+        "Security Name": "Globus Spirits Limited",
+        "Client Name": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "201600",
+        "Trade Price / Wght. Avg. Price": "791.72",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "GSMFOILS",
+        "Security Name": "GSM Foils Limited",
+        "Client Name": "HI GROWTH CORPORATE SERVICES PVT LTD",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "39500",
+        "Trade Price / Wght. Avg. Price": "45.55",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "IBLFL",
+        "Security Name": "IBL Finance Limited",
+        "Client Name": "PIYUSH MANSUKHBHAI PATEL HUF",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "146000",
+        "Trade Price / Wght. Avg. Price": "58.05",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "IIFLCAPS",
+        "Security Name": "IIFL CAPITAL SERVICES LTD",
+        "Client Name": "FIH MAURITIUS INVESTMENTS LTD",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "44000000",
+        "Trade Price / Wght. Avg. Price": "350.00",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "IPL",
+        "Security Name": "India Pesticides Limited",
+        "Client Name": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "1403461",
+        "Trade Price / Wght. Avg. Price": "125.34",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "IPL",
+        "Security Name": "India Pesticides Limited",
+        "Client Name": "IRAGE BROKING SERVICES LLP",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "759892",
+        "Trade Price / Wght. Avg. Price": "124.98",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "IPL",
+        "Security Name": "India Pesticides Limited",
+        "Client Name": "J4S FINANCIAL SOLUTIONS LLP",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "592239",
+        "Trade Price / Wght. Avg. Price": "125.05",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "LIBERTSHOE",
+        "Security Name": "Liberty Shoes Ltd",
+        "Client Name": "ANKITA VISHAL SHAH",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "227678",
+        "Trade Price / Wght. Avg. Price": "251.36",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "MARKOLINES",
+        "Security Name": "Markolines Pavement Tec L",
+        "Client Name": "VISTAAR TRADING SERVICE PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "148356",
+        "Trade Price / Wght. Avg. Price": "168.61",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "MARUSHIKA",
+        "Security Name": "Marushika Technology Ltd",
+        "Client Name": "CAPACIOUS WEALTH MANAGEMENT LLP",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "66000",
+        "Trade Price / Wght. Avg. Price": "130.48",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "PROPSHOP",
+        "Security Name": "Propshop Events and Exh L",
+        "Client Name": "SAJJAN KUMAR PATWARI",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "146000",
+        "Trade Price / Wght. Avg. Price": "70.20",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "RATNAVEER",
+        "Security Name": "Ratnaveer Precision Eng L",
+        "Client Name": "INFINITE DERIVATIVES LLP",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "607000",
+        "Trade Price / Wght. Avg. Price": "369.02",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "SHANKESH",
+        "Security Name": "Shankesh Jewellers Ltd",
+        "Client Name": "SANJAY POPATLAL JAIN",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "1887550",
+        "Trade Price / Wght. Avg. Price": "83.53",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "SUNSHINE",
+        "Security Name": "Sunshine Pictures Limited",
+        "Client Name": "ARIHANT CAPITAL MARKETS LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "276646",
+        "Trade Price / Wght. Avg. Price": "499.68",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "TINNARUBR",
+        "Security Name": "Tinna Rubber and Infr Ltd",
+        "Client Name": "ELIXIR WEALTH MANAGEMENT PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "126323",
+        "Trade Price / Wght. Avg. Price": "942.00",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "TINNARUBR",
+        "Security Name": "Tinna Rubber and Infr Ltd",
+        "Client Name": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "159518",
+        "Trade Price / Wght. Avg. Price": "945.10",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "TINNARUBR",
+        "Security Name": "Tinna Rubber and Infr Ltd",
+        "Client Name": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "149953",
+        "Trade Price / Wght. Avg. Price": "942.76",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "TINNARUBR",
+        "Security Name": "Tinna Rubber and Infr Ltd",
+        "Client Name": "QE SECURITIES LLP",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "167570",
+        "Trade Price / Wght. Avg. Price": "945.28",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "TINNARUBR",
+        "Security Name": "Tinna Rubber and Infr Ltd",
+        "Client Name": "MICROCURVES TRADING PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "147536",
+        "Trade Price / Wght. Avg. Price": "950.55",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "TINNARUBR",
+        "Security Name": "Tinna Rubber and Infr Ltd",
+        "Client Name": "JUNOMONETA FINSOL PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "150030",
+        "Trade Price / Wght. Avg. Price": "947.58",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "V2RETAIL",
+        "Security Name": "V2 Retail Limited",
+        "Client Name": "HRTI PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "4643859",
+        "Trade Price / Wght. Avg. Price": "147.41",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "V2RETAIL",
+        "Security Name": "V2 Retail Limited",
+        "Client Name": "MICROCURVES TRADING PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "2171077",
+        "Trade Price / Wght. Avg. Price": "150.87",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "V2RETAIL",
+        "Security Name": "V2 Retail Limited",
+        "Client Name": "JUNOMONETA FINSOL PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "2106850",
+        "Trade Price / Wght. Avg. Price": "148.02",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "V2RETAIL",
+        "Security Name": "V2 Retail Limited",
+        "Client Name": "PLUTUS WEALTH MANAGEMENT LLP",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "2045722",
+        "Trade Price / Wght. Avg. Price": "149.14",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "V2RETAIL",
+        "Security Name": "V2 Retail Limited",
+        "Client Name": "QE SECURITIES LLP",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "4663305",
+        "Trade Price / Wght. Avg. Price": "146.22",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "V2RETAIL",
+        "Security Name": "V2 Retail Limited",
+        "Client Name": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "3174724",
+        "Trade Price / Wght. Avg. Price": "147.04",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "WEWIN",
+        "Security Name": "WE WIN LIMITED",
+        "Client Name": "ORION STOCKS LTD",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "6589",
+        "Trade Price / Wght. Avg. Price": "44.20",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "YATRA",
+        "Security Name": "Yatra Online Limited",
+        "Client Name": "QE SECURITIES LLP",
+        "Buy/Sell": "BUY",
+        "Quantity Traded": "886518",
+        "Trade Price / Wght. Avg. Price": "90.48",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "AKIKO",
+        "Security Name": "Akiko Global Services L",
+        "Client Name": "NEIGHBOURHOOD INVESTMENT PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "166800",
+        "Trade Price / Wght. Avg. Price": "390.00",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "IMC INDIA SECURITIES PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "1123667",
+        "Trade Price / Wght. Avg. Price": "58.80",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "QICAP MARKETS LLP",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "1406045",
+        "Trade Price / Wght. Avg. Price": "58.51",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "2681433",
+        "Trade Price / Wght. Avg. Price": "58.86",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "4578751",
+        "Trade Price / Wght. Avg. Price": "58.75",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "QE SECURITIES LLP",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "2907507",
+        "Trade Price / Wght. Avg. Price": "58.74",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "CLT RESEARCH TECH PRIVATE LTD",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "2038877",
+        "Trade Price / Wght. Avg. Price": "58.75",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "JUNOMONETA FINSOL PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "3066791",
+        "Trade Price / Wght. Avg. Price": "58.79",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "MARWADI SHARES AND FINANCE LTD.",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "1142034",
+        "Trade Price / Wght. Avg. Price": "58.80",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLKASHYAP",
+        "Security Name": "B. L. Kashyap and Sons Li",
+        "Client Name": "MICROCURVES TRADING PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "5324675",
+        "Trade Price / Wght. Avg. Price": "58.86",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "ELIXIR WEALTH MANAGEMENT PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "678389",
+        "Trade Price / Wght. Avg. Price": "293.40",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "PLUTUS WEALTH MANAGEMENT LLP",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "2973398",
+        "Trade Price / Wght. Avg. Price": "292.75",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "584488",
+        "Trade Price / Wght. Avg. Price": "295.99",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "MICROCURVES TRADING PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "1382772",
+        "Trade Price / Wght. Avg. Price": "291.19",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "JUNOMONETA FINSOL PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "1077941",
+        "Trade Price / Wght. Avg. Price": "291.98",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "HJS SECURITIES PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "306364",
+        "Trade Price / Wght. Avg. Price": "290.30",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "JUMP TRADING FINANCIAL INDIA PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "1367811",
+        "Trade Price / Wght. Avg. Price": "292.26",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "HRTI PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "1132248",
+        "Trade Price / Wght. Avg. Price": "291.27",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "MATHISYS QUANTCAP LLP",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "343422",
+        "Trade Price / Wght. Avg. Price": "291.84",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "1449502",
+        "Trade Price / Wght. Avg. Price": "292.62",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "CLT RESEARCH TECH PRIVATE LTD",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "491448",
+        "Trade Price / Wght. Avg. Price": "291.79",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "QE SECURITIES LLP",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "2934910",
+        "Trade Price / Wght. Avg. Price": "291.96",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "DIPAN MEHTA COMMODITIES PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "354943",
+        "Trade Price / Wght. Avg. Price": "296.05",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "MARWADI SHARES AND FINANCE LTD.",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "580881",
+        "Trade Price / Wght. Avg. Price": "293.41",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "IRAGE BROKING SERVICES LLP",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "477552",
+        "Trade Price / Wght. Avg. Price": "293.65",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "BLSPOLY",
+        "Security Name": "BLS Polymers Limited",
+        "Client Name": "IMC INDIA SECURITIES PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "482316",
+        "Trade Price / Wght. Avg. Price": "292.84",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "GLOBUSSPR",
+        "Security Name": "Globus Spirits Limited",
+        "Client Name": "JUNOMONETA FINSOL PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "172699",
+        "Trade Price / Wght. Avg. Price": "793.82",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "GLOBUSSPR",
+        "Security Name": "Globus Spirits Limited",
+        "Client Name": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "201600",
+        "Trade Price / Wght. Avg. Price": "792.14",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "GLOBUSSPR",
+        "Security Name": "Globus Spirits Limited",
+        "Client Name": "MICROCURVES TRADING PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "184885",
+        "Trade Price / Wght. Avg. Price": "800.78",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "GSMFOILS",
+        "Security Name": "GSM Foils Limited",
+        "Client Name": "HI GROWTH CORPORATE SERVICES PVT LTD",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "78500",
+        "Trade Price / Wght. Avg. Price": "45.57",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "IBLFL",
+        "Security Name": "IBL Finance Limited",
+        "Client Name": "MARKET-HUB STOCK BROKING PVT. LTD.",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "148000",
+        "Trade Price / Wght. Avg. Price": "58.13",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "IIFLCAPS",
+        "Security Name": "IIFL CAPITAL SERVICES LTD",
+        "Client Name": "ARDENT IMPEX PVT LTD",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "2000000",
+        "Trade Price / Wght. Avg. Price": "350.00",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "IIFLCAPS",
+        "Security Name": "IIFL CAPITAL SERVICES LTD",
+        "Client Name": "VENKATRAMAN R",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "8700000",
+        "Trade Price / Wght. Avg. Price": "350.00",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "IIFLCAPS",
+        "Security Name": "IIFL CAPITAL SERVICES LTD",
+        "Client Name": "NIRMAL BHANWARLAL JAIN",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "32300000",
+        "Trade Price / Wght. Avg. Price": "350.00",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "IPL",
+        "Security Name": "India Pesticides Limited",
+        "Client Name": "J4S FINANCIAL SOLUTIONS LLP",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "594831",
+        "Trade Price / Wght. Avg. Price": "125.24",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "IPL",
+        "Security Name": "India Pesticides Limited",
+        "Client Name": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "1403461",
+        "Trade Price / Wght. Avg. Price": "125.45",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "IPL",
+        "Security Name": "India Pesticides Limited",
+        "Client Name": "IRAGE BROKING SERVICES LLP",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "758685",
+        "Trade Price / Wght. Avg. Price": "125.11",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "LIBERTSHOE",
+        "Security Name": "Liberty Shoes Ltd",
+        "Client Name": "ANKITA VISHAL SHAH",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "154633",
+        "Trade Price / Wght. Avg. Price": "252.83",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "MARKOLINES",
+        "Security Name": "Markolines Pavement Tec L",
+        "Client Name": "VISTAAR TRADING SERVICE PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "127370",
+        "Trade Price / Wght. Avg. Price": "167.90",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "MEDIASSIST",
+        "Security Name": "Medi Assist Health Ser L",
+        "Client Name": "WASATCH ADVISORS INC A/C WASATCH EMERGING INDIA FUND",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "386856",
+        "Trade Price / Wght. Avg. Price": "280.10",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "PROPSHOP",
+        "Security Name": "Propshop Events and Exh L",
+        "Client Name": "DIXIT KUMAR RANKA",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "100000",
+        "Trade Price / Wght. Avg. Price": "70.00",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "RATNAVEER",
+        "Security Name": "Ratnaveer Precision Eng L",
+        "Client Name": "FINDELTA FINSERVE LLP",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "607000",
+        "Trade Price / Wght. Avg. Price": "369.02",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "SHANKESH",
+        "Security Name": "Shankesh Jewellers Ltd",
+        "Client Name": "NECTA BLOOM VCC - NECTA BLOOM ONE",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "806480",
+        "Trade Price / Wght. Avg. Price": "83.50",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "SKYTECH",
+        "Security Name": "Skytech Infinite Platfm L",
+        "Client Name": "VINAYAK HIREMATH",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "76800",
+        "Trade Price / Wght. Avg. Price": "23.40",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "STYLEBAAZA",
+        "Security Name": "Baazar Style Retail Ltd",
+        "Client Name": "BHAGWAN PRASAD",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "1450000",
+        "Trade Price / Wght. Avg. Price": "533.45",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "SUNSHINE",
+        "Security Name": "Sunshine Pictures Limited",
+        "Client Name": "ARIHANT CAPITAL MARKETS LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "142934",
+        "Trade Price / Wght. Avg. Price": "506.79",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "TINNARUBR",
+        "Security Name": "Tinna Rubber and Infr Ltd",
+        "Client Name": "ELIXIR WEALTH MANAGEMENT PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "126323",
+        "Trade Price / Wght. Avg. Price": "943.02",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "TINNARUBR",
+        "Security Name": "Tinna Rubber and Infr Ltd",
+        "Client Name": "JUNOMONETA FINSOL PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "150070",
+        "Trade Price / Wght. Avg. Price": "948.27",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "TINNARUBR",
+        "Security Name": "Tinna Rubber and Infr Ltd",
+        "Client Name": "MICROCURVES TRADING PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "147536",
+        "Trade Price / Wght. Avg. Price": "951.26",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "TINNARUBR",
+        "Security Name": "Tinna Rubber and Infr Ltd",
+        "Client Name": "QE SECURITIES LLP",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "172643",
+        "Trade Price / Wght. Avg. Price": "947.75",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "TINNARUBR",
+        "Security Name": "Tinna Rubber and Infr Ltd",
+        "Client Name": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "150175",
+        "Trade Price / Wght. Avg. Price": "943.25",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "TINNARUBR",
+        "Security Name": "Tinna Rubber and Infr Ltd",
+        "Client Name": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "159518",
+        "Trade Price / Wght. Avg. Price": "945.28",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "V2RETAIL",
+        "Security Name": "V2 Retail Limited",
+        "Client Name": "PLUTUS WEALTH MANAGEMENT LLP",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "2045722",
+        "Trade Price / Wght. Avg. Price": "149.17",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "V2RETAIL",
+        "Security Name": "V2 Retail Limited",
+        "Client Name": "JUNOMONETA FINSOL PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "2103982",
+        "Trade Price / Wght. Avg. Price": "148.03",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "V2RETAIL",
+        "Security Name": "V2 Retail Limited",
+        "Client Name": "QE SECURITIES LLP",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "4730028",
+        "Trade Price / Wght. Avg. Price": "146.08",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "V2RETAIL",
+        "Security Name": "V2 Retail Limited",
+        "Client Name": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "3174973",
+        "Trade Price / Wght. Avg. Price": "147.31",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "V2RETAIL",
+        "Security Name": "V2 Retail Limited",
+        "Client Name": "HRTI PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "4253834",
+        "Trade Price / Wght. Avg. Price": "146.66",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "V2RETAIL",
+        "Security Name": "V2 Retail Limited",
+        "Client Name": "MICROCURVES TRADING PRIVATE LIMITED",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "2171077",
+        "Trade Price / Wght. Avg. Price": "150.97",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "VALUE360",
+        "Security Name": "Value 360 Communication L",
+        "Client Name": "CRAFT EMERGING MARKET FUND PCC- ELITE CAPITAL FUND",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "99600",
+        "Trade Price / Wght. Avg. Price": "85.40",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "VALUE360",
+        "Security Name": "Value 360 Communication L",
+        "Client Name": "CRAFT EMERGING MARKET FUND PCC-ARBITRAGE STRATEGY FUND",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "108000",
+        "Trade Price / Wght. Avg. Price": "85.00",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "VALUE360",
+        "Security Name": "Value 360 Communication L",
+        "Client Name": "CRAFT EMERGING MARKET FUND PCC-CITADEL CAPITAL FUND",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "192000",
+        "Trade Price / Wght. Avg. Price": "85.02",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "WEWIN",
+        "Security Name": "WE WIN LIMITED",
+        "Client Name": "ORION STOCKS LTD",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "52349",
+        "Trade Price / Wght. Avg. Price": "44.03",
+        "Remarks": "-"
+      },
+      {
+        "Date": "19-NOV-2026",
+        "Symbol": "YATRA",
+        "Security Name": "Yatra Online Limited",
+        "Client Name": "QE SECURITIES LLP",
+        "Buy/Sell": "SELL",
+        "Quantity Traded": "918002",
+        "Trade Price / Wght. Avg. Price": "90.68",
+        "Remarks": "-"
+      }
+    ]
+  },
+  "graph_cleanup": {
+    "price_snapshots_deleted": 0,
+    "price_cutoff": "2026-08-22",
+    "delivery_deleted": 0,
+    "partoi_deleted": 0,
+    "surv_deleted": 0,
+    "insider_deleted": 0,
+    "pledge_deleted": 0,
+    "sast_deleted": 0,
+    "corpaction_deleted": 0,
+    "trend_summary_dupes_deleted": 0,
+    "price_snapshots_remaining": 6074,
+    "trend_summary_remaining": 555,
+    "total_nodes": 20108
+  },
+  "delivery_bhavcopy": {
+    "date": "2026-11-19",
+    "total_rows": 0,
+    "graph_nodes": 0
+  },
+  "surveillance": {
+    "date": "2026-11-20",
+    "total_flags": 0,
+    "graph_nodes": 0
+  },
+  "participant_oi": {
+    "date": "2026-11-19",
+    "participants": 4,
+    "graph_node": "partoi-2026-11-19"
+  },
+  "fii_dii_store": {
+    "status": "no flow data to store"
+  },
+  "analyst_enqueued": 0,
+  "corp_events": {
+    "announcements": 127,
+    "board_meetings": 5,
+    "saved": true,
+    "error": null
+  },
+  "swarm_analysis": {
+    "context_queue": {
+      "processed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "reason": "no agents for queue 'context_queue'"
+    },
+    "trend_queue": {
+      "processed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "reason": "no agents for queue 'trend_queue'"
+    },
+    "document_queue": {
+      "processed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "reason": "no agents for queue 'document_queue'"
+    },
+    "technical": {
+      "tickers": 17,
+      "ok": 0,
+      "skipped": 17,
+      "error": 0,
+      "signals": {},
+      "duration": 0.3
+    },
+    "valuation": {
+      "tickers": 17,
+      "ok": 17,
+      "skipped": 0,
+      "error": 0,
+      "verdicts": {
+        "expensive": 5,
+        "fair": 6,
+        "insufficient_data": 5,
+        "cheap": 1
+      },
+      "duration": 0.1
+    },
+    "peer_comparison": {
+      "ok": 17,
+      "fail": 0
+    },
+    "business_quality": {
+      "ok": 17,
+      "fail": 0
+    },
+    "concall_analysis": {
+      "ok": 0,
+      "skipped": 0,
+      "errors": 0,
+      "tickers": 0,
+      "duration_s": 0.0
+    },
+    "annual_report_analysis": {
+      "ok": 20,
+      "skipped": 0,
+      "errors": 0,
+      "tickers": 20,
+      "duration_s": 23.92
+    },
+    "composite_ranker": {
+      "ok": 182,
+      "errors": 0,
+      "surveillance_excluded": [],
+      "tickers": [
+        "BLACKBUCK",
+        "3MINDIA",
+        "3MINDIA",
+        "AURIONPRO",
+        "AURIONPRO",
+        "BLACKBUCK",
+        "BLACKBUCK",
+        "AURIONPRO",
+        "AVANTIFEED",
+        "AVANTIFEED",
+        "AAVAS",
+        "AAVAS",
+        "AVANTIFEED",
+        "AVANTIFEED",
+        "CANFINHOME",
+        "BLACKBUCK",
+        "BAJAJHFL",
+        "BAJAJHFL",
+        "AVANTIFEED",
+        "CANFINHOME",
+        "CANFINHOME",
+        "BSOFT",
+        "BSOFT",
+        "AVANTIFEED",
+        "AVANTIFEED",
+        "AVANTIFEED",
+        "AVANTIFEED",
+        "AVANTIFEED",
+        "AVANTIFEED",
+        "AVANTIFEED",
+        "AVANTIFEED",
+        "AVANTIFEED",
+        "BSOFT",
+        "BAJAJHFL",
+        "AVANTIFEED",
+        "BAJAJHFL",
+        "BAJAJHFL",
+        "BAJAJHFL",
+        "BAJAJHFL",
+        "BAJAJHFL",
+        "BAJAJHFL",
+        "BAJAJHFL",
+        "BAJAJHFL",
+        "BAJAJHFL",
+        "CANFINHOME",
+        "CANFINHOME",
+        "CANFINHOME",
+        "CANFINHOME",
+        "CANFINHOME",
+        "CANFINHOME",
+        "CANFINHOME",
+        "CANFINHOME",
+        "CANFINHOME",
+        "AURIONPRO",
+        "AURIONPRO",
+        "CAPILLARY",
+        "BHARATCOAL",
+        "BHARATCOAL",
+        "BHARATCOAL",
+        "ABREL",
+        "ABREL",
+        "ABREL",
+        "ABREL",
+        "ABREL",
+        "ABREL",
+        "ABREL",
+        "ABREL",
+        "ABREL",
+        "ABREL",
+        "BLS",
+        "BLS",
+        "BLS",
+        "BLS",
+        "BLS",
+        "BLS",
+        "BLS",
+        "BLS",
+        "BLS",
+        "BAJAJHFL",
+        "BAJAJHFL",
+        "CAPILLARY",
+        "CAPILLARY",
+        "BLACKBUCK",
+        "BLACKBUCK",
+        "ABREL",
+        "ABREL",
+        "AURIONPRO",
+        "CAPILLARY",
+        "CAPILLARY",
+        "CAPILLARY",
+        "CAPILLARY",
+        "CAPILLARY",
+        "CAPILLARY",
+        "CAPILLARY",
+        "CAPILLARY",
+        "CAPILLARY",
+        "AURIONPRO",
+        "AURIONPRO",
+        "AURIONPRO",
+        "AURIONPRO",
+        "AURIONPRO",
+        "AURIONPRO",
+        "AURIONPRO",
+        "AURIONPRO",
+        "AURIONPRO",
+        "BLS",
+        "BLS",
+        "CANFINHOME",
+        "ABREL",
+        "CANFINHOME",
+        "CANFINHOME",
+        "BLACKBUCK",
+        "BLACKBUCK",
+        "BLACKBUCK",
+        "BLACKBUCK",
+        "BLACKBUCK",
+        "BLACKBUCK",
+        "BLACKBUCK",
+        "BLACKBUCK",
+        "BLACKBUCK",
+        "BAJAJHFL",
+        "BHARATCOAL",
+        "BLS",
+        "BLS",
+        "BLS",
+        "BHARATCOAL",
+        "BHARATCOAL",
+        "AADHARHFC",
+        "AADHARHFC",
+        "BHARATCOAL",
+        "BHARATCOAL",
+        "BHARATCOAL",
+        "BHARATCOAL",
+        "BHARATCOAL",
+        "BHARATCOAL",
+        "BHARATCOAL",
+        "BHARATCOAL",
+        "BHARATCOAL",
+        "BLS",
+        "CANBK",
+        "CANBK",
+        "CANBK",
+        "AXISBANK",
+        "AUBANK",
+        "AUBANK",
+        "AUBANK",
+        "AUBANK",
+        "AUBANK",
+        "AUBANK",
+        "AUBANK",
+        "AUBANK",
+        "AUBANK",
+        "AUBANK",
+        "CANBK",
+        "CANBK",
+        "CANBK",
+        "CANBK",
+        "CANBK",
+        "CANBK",
+        "CANBK",
+        "CANBK",
+        "CANBK",
+        "CANBK",
+        "BANKBARODA",
+        "AUBANK",
+        "AUBANK",
+        "BANKBARODA",
+        "BANKBARODA",
+        "BANKBARODA",
+        "AUBANK",
+        "AXISBANK",
+        "AXISBANK",
+        "AXISBANK",
+        "AXISBANK",
+        "AXISBANK",
+        "AXISBANK",
+        "AXISBANK",
+        "AXISBANK",
+        "AXISBANK",
+        "AXISBANK",
+        "AXISBANK",
+        "AXISBANK"
+      ],
+      "duration_s": 0.02
+    },
+    "duration_s": 24.4
+  },
+  "swarm_synthesis": {
+    "analyst": {
+      "ok": 50,
+      "fail": 0
+    },
+    "sectors": {
+      "analyzed": 22
+    },
+    "alerts": {
+      "alerts_generated": 20,
+      "alerts_written": 20,
+      "critical": 0,
+      "warning": 20,
+      "info": 0
+    },
+    "devil_advocate": {
+      "analyzed": 17,
+      "buy_held": 4,
+      "downgraded": 13
+    },
+    "risk": {
+      "overall_risk": "medium",
+      "flags_total": 6,
+      "low_quality": 5,
+      "illiquid": 0
+    },
+    "alert_engine": {
+      "fired": 13,
+      "skipped": 0,
+      "errors": 0,
+      "per_type": {
+        "strong_buy_conviction": 8,
+        "peer_pe_discount": 5
+      },
+      "tickers_scanned": 17
+    },
+    "duration_s": 0.8
+  },
+  "meta_cognition": {
+    "coverage_rebuild": {
+      "rows": 5464
+    },
+    "meta_cognition": {
+      "ts": "2026-11-20T10:41:45.487059",
+      "graph_nodes": 20229,
+      "coverage_gaps": 100,
+      "stale_types": 5,
+      "total_gaps": 144,
+      "enqueued": 123,
+      "agent_problems": 0,
+      "unused_nselib": 28,
+      "errors": []
+    },
+    "graph_dynamics": {
+      "tickers": 200,
+      "learned": 3477,
+      "revisions": 0,
+      "edges_formed": 0,
+      "compressed": 5842,
+      "retracted": 0,
+      "pruned_merged": 3021,
+      "pruned_deleted": 0
+    },
+    "global_macro": {
+      "macro_score": 0.22,
+      "signal": "risk_off",
+      "verdict": "macro_negative",
+      "factors": [
+        {
+          "factor": "USD/INR",
+          "value": 92.66,
+          "impact": "bearish",
+          "reason": "Rupee weak at 92.66 (>84.5) \u2014 FII outflows likely"
+        },
+        {
+          "factor": "US 10Y",
+          "value": 5.052,
+          "impact": "bearish",
+          "reason": "US 10Y at 5.05% (>4.5%) \u2014 EM outflow risk"
+        },
+        {
+          "factor": "S&P 500",
+          "value": -2.018,
+          "impact": "bearish",
+          "reason": "S&P 500 down -2.02% \u2014 risk-off, FII outflows"
+        }
+      ],
+      "usdinr": 92.66,
+      "crude": 81.27,
+      "us10y": 5.052,
+      "sp500_chg": -2.018
+    },
+    "news_sentiment": {
+      "scored": 17,
+      "bullish": 0,
+      "bearish": 3
+    },
+    "conviction": {
+      "recorded": 17,
+      "strong_buy": 0,
+      "buy": 0,
+      "hold": 17,
+      "sell": 0
+    },
+    "tool_synthesis": {
+      "created": 5,
+      "attempted": 5
+    },
+    "relative_strength": {
+      "computed": 17
+    },
+    "research_reports": {
+      "generated": 17
+    },
+    "duration_s": 19.0
+  }
+}

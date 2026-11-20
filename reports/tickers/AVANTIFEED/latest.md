@@ -1,17 +1,17 @@
 # AVANTIFEED — AVANTIFEED
-*Fast Moving Consumer Goods | Food Products | 2026-11-19*
+*Fast Moving Consumer Goods | Food Products | 2026-11-20*
 
 ---
 
 ## INVESTMENT THESIS
 
-AVANTIFEED is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is stretched; needs fundamental delivery to justify the multiple.
+AVANTIFEED is 9.1% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is stretched; needs fundamental delivery to justify the multiple.
 
 ## EXECUTIVE SUMMARY
 
 - **Signal:** BUY / 64% confidence / FORMING state
-- **Key driver:** AVANTIFEED is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.10)
+- **Key driver:** AVANTIFEED is 9.1% from 52W low with revenue improving 2 quarters (momentum 1.00)
+- **Watch:** No material bear arguments at this time (bear score 0.00)
 
 ## SIGNAL & CONVICTION
 
@@ -20,21 +20,21 @@ AVANTIFEED is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Signal | 🟢 **BUY** |
 | Confidence | 63.6% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.53 |
+| Conviction Score | 0.52 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.40 |
+| Net Conviction | 0.50 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹718.35 |
-| Change | -1.3% |
+| Close | ₹714.8 |
+| Change | -0.4% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | outperformer (rs_30: 1.5) |
+| Relative Strength | in_line (rs_30: 1.0) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -45,7 +45,7 @@ AVANTIFEED is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 | Metric | Value | Context |
 |--------|-------|---------|
-| P/E | 19.5x | 3Y avg: — |
+| P/E | 19.4x | 3Y avg: — |
 | Valuation Score | 0.27 | 0=cheap, 1=expensive |
 | Verdict | **expensive** | |
 | PAT Growth YoY | -16.2% | |
@@ -72,9 +72,9 @@ AVANTIFEED is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ## RISK REGISTER
 
-1. Declining belief trajectory | 10 drops vs 0 rises in recent log
+No material bear arguments identified.
 
-ℹ️ **Monitor:** [strong_buy_conviction] AVANTIFEED high-conviction BUY with high business quality (conf=74%, quality=0.95)
+ℹ️ **Monitor:** [strong_buy_conviction] AVANTIFEED high-conviction BUY with high business quality (conf=76%, quality=0.95)
 ⚠️ **Monitor:** [stale_signal] AVANTIFEED BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [strong_buy_conviction] AVANTIFEED high-conviction BUY with high business quality (conf=74%, quality=0.95)
 ⚠️ **Monitor:** [stale_signal] AVANTIFEED BUY signal not refreshed in >7 days
@@ -92,7 +92,7 @@ AVANTIFEED is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.22
 
 **Sector sensitivity:** Fast Moving Consumer Goods is sensitive to rural demand and input cost inflation.
 
@@ -110,4 +110,4 @@ AVANTIFEED is 9.6% from 52W low with revenue improving 2 quarters (momentum 1.00
 | Promoter Holding | — |
 
 ---
-*Confidence: 64% | Generated: 2026-11-19 10:42 | Next review: +30d*
+*Confidence: 64% | Generated: 2026-11-20 10:42 | Next review: +30d*

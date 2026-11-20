@@ -1,17 +1,17 @@
 # BLACKBUCK — BLACKBUCK
-*Services | Transport Services | 2026-11-19*
+*Services | Transport Services | 2026-11-20*
 
 ---
 
 ## INVESTMENT THESIS
 
-BLACKBUCK is 3.8% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is stretched; needs fundamental delivery to justify the multiple.
+BLACKBUCK is 5.8% from 52W low with revenue improving 2 quarters (momentum 1.00). Valuation is stretched; needs fundamental delivery to justify the multiple.
 
 ## EXECUTIVE SUMMARY
 
 - **Signal:** BUY / 60% confidence / FORMING state
-- **Key driver:** BLACKBUCK is 3.8% from 52W low with revenue improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.04)
+- **Key driver:** BLACKBUCK is 5.8% from 52W low with revenue improving 2 quarters (momentum 1.00)
+- **Watch:** No material bear arguments at this time (bear score 0.00)
 
 ## SIGNAL & CONVICTION
 
@@ -20,21 +20,21 @@ BLACKBUCK is 3.8% from 52W low with revenue improving 2 quarters (momentum 1.00)
 | Signal | 🟢 **BUY** |
 | Confidence | 60.0% |
 | Belief State | 🔵 FORMING |
-| Conviction Score | 0.50 |
+| Conviction Score | 0.49 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.46 |
+| Net Conviction | 0.50 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹515.0 |
-| Change | -3.4% |
+| Close | ₹524.8 |
+| Change | 1.9% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | underperformer (rs_30: -3.7) |
+| Relative Strength | underperformer (rs_30: -1.8) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -45,7 +45,7 @@ BLACKBUCK is 3.8% from 52W low with revenue improving 2 quarters (momentum 1.00)
 
 | Metric | Value | Context |
 |--------|-------|---------|
-| P/E | 43.7x | 3Y avg: — |
+| P/E | 44.5x | 3Y avg: — |
 | Valuation Score | 0.22 | 0=cheap, 1=expensive |
 | Verdict | **expensive** | |
 | PAT Growth YoY | -1.8% | |
@@ -72,11 +72,11 @@ BLACKBUCK is 3.8% from 52W low with revenue improving 2 quarters (momentum 1.00)
 
 ## RISK REGISTER
 
-1. Declining belief trajectory | 10 drops vs 0 rises in recent log
+No material bear arguments identified.
 
+ℹ️ **Monitor:** [strong_buy_conviction] BLACKBUCK high-conviction BUY with high business quality (conf=84%, quality=0.95)
+⚠️ **Monitor:** [stale_signal] BLACKBUCK BUY signal not refreshed in >7 days
 ℹ️ **Monitor:** [strong_buy_conviction] BLACKBUCK high-conviction BUY with high business quality (conf=90%, quality=0.95)
-⚠️ **Monitor:** [stale_signal] BLACKBUCK BUY signal not refreshed in >7 days
-⚠️ **Monitor:** [stale_signal] BLACKBUCK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] BLACKBUCK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] BLACKBUCK BUY signal not refreshed in >7 days
 
@@ -92,7 +92,7 @@ BLACKBUCK is 3.8% from 52W low with revenue improving 2 quarters (momentum 1.00)
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.22
 
 ## FUNDAMENTALS
 
@@ -108,4 +108,4 @@ BLACKBUCK is 3.8% from 52W low with revenue improving 2 quarters (momentum 1.00)
 | Promoter Holding | — |
 
 ---
-*Confidence: 60% | Generated: 2026-11-19 10:42 | Next review: +30d*
+*Confidence: 60% | Generated: 2026-11-20 10:42 | Next review: +30d*

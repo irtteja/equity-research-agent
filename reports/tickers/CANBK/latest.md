@@ -1,5 +1,5 @@
 # CANBK — CANBK
-*Financial Services | Banks | 2026-11-19*
+*Financial Services | Banks | 2026-11-20*
 
 ---
 
@@ -9,32 +9,32 @@ CANBK is 11.8% from 52W low with total_income improving 2 quarters (momentum 1.0
 
 ## EXECUTIVE SUMMARY
 
-- **Signal:** BUY / 62% confidence / FORMING state
+- **Signal:** BUY / 65% confidence / FORMING state
 - **Key driver:** CANBK is 11.8% from 52W low with total_income improving 2 quarters (momentum 1.00)
-- **Watch:** No material bear arguments at this time (bear score 0.04)
+- **Watch:** No material bear arguments at this time (bear score 0.00)
 
 ## SIGNAL & CONVICTION
 
 | Metric | Value |
 |--------|-------|
 | Signal | 🟢 **BUY** |
-| Confidence | 62.4% |
+| Confidence | 64.7% |
 | Belief State | 🔵 FORMING |
 | Conviction Score | 0.49 |
 | Conviction Trend (7d) | → STABLE |
 | Sentiment | no_data (0.50) |
-| Net Conviction | 0.56 |
+| Net Conviction | 0.62 |
 
 ## PRICE & TECHNICALS
 
 | Metric | Value |
 |--------|-------|
-| Close | ₹133.4 |
-| Change | -0.5% |
+| Close | ₹136.03 |
+| Change | 2.0% |
 | 52W High | ₹— |
 | 52W Low | ₹— |
 | 52W Position | — |
-| Relative Strength | strong_outperformer (rs_30: 12.8) |
+| Relative Strength | strong_outperformer (rs_30: 15.0) |
 | Volume vs Avg | — |
 | RSI (14) | — |
 | MACD Hist | — |
@@ -72,7 +72,7 @@ CANBK is 11.8% from 52W low with total_income improving 2 quarters (momentum 1.0
 
 ## RISK REGISTER
 
-1. Declining belief trajectory | 10 drops vs 0 rises in recent log
+No material bear arguments identified.
 
 ⚠️ **Monitor:** [stale_signal] CANBK BUY signal not refreshed in >7 days
 ⚠️ **Monitor:** [stale_signal] CANBK BUY signal not refreshed in >7 days
@@ -92,7 +92,7 @@ CANBK is 11.8% from 52W low with total_income improving 2 quarters (momentum 1.0
 
 ## MACRO CONTEXT
 
-**Global Signal:** —  |  **Score:** 0.3
+**Global Signal:** —  |  **Score:** 0.22
 
 **Sector sensitivity:** Financial Services is sensitive to interest rates and credit cycle.
 
@@ -110,4 +110,4 @@ CANBK is 11.8% from 52W low with total_income improving 2 quarters (momentum 1.0
 | Promoter Holding | — |
 
 ---
-*Confidence: 62% | Generated: 2026-11-19 10:42 | Next review: +30d*
+*Confidence: 65% | Generated: 2026-11-20 10:42 | Next review: +30d*
