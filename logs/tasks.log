@@ -5358,3 +5358,19 @@ Progress: After-hours heartbeat at 18:11 IST. daily_monitor confirmed ran. Graph
 Next: overnight scans from ~20:00 IST; NSE announcements trigger; next market day Mon Nov 23 09:15 IST
 Blockers: none active
 ============================================================
+
+[CHECKPOINT] 2026-11-20 13:03
+Task: None
+Status: completed
+Progress: Confluences: 8 (buy=8, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 195,840 unprocessed — ContextAgent lagging
+============================================================
+
+[CHECKPOINT] 2026-11-20 13:03
+Task: orchestrator-20261120-1833
+Status: completed
+Progress: 23rd scan (evening): 8 BUY_CONFLUENCE stable. Same list as post-close: BLACKBUCK(0.90) BHARATCOAL(0.85) AURIONPRO(0.81) AVANTIFEED(0.75) BLS(0.73) CANFINHOME(0.69) BAJAJHFL(0.66) BSOFT(0.63).
+Next: overnight scans; NSE daily announcements; next market day Mon Nov 23
+Blockers: stale prices (5121); 4 agents stalled; episode backlog 195840
+============================================================
