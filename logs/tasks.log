@@ -5462,3 +5462,11 @@ Progress: 0 companies scheduled for results on 2026-11-19 calendar; nothing to f
 Next: Next nightly results fetch tomorrow
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 20:40
+Task: watchdog-20261121-0210
+Status: completed
+Progress: 02:10 IST Nov 21 overnight heartbeat: graph 941 co, all Nov 20 jobs complete (daily_monitor, 25 orchestrator scans, announcements Nov 19 ingested, XBRL no-op), systems nominal
+Next: Next watchdog ~04:10 IST; weekend quiet
+Blockers: none
+============================================================
