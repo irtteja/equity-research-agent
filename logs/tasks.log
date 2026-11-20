@@ -5102,3 +5102,11 @@ Progress: No pending retry file. 0 companies in retry list (1 AM pass found 0 sc
 Next: Next results fetch scheduled for 2026-11-21 nightly.
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 02:40
+Task: watchdog-20261120-0810
+Status: completed
+Progress: Pre-market heartbeat. 08:10 IST, market opens in ~65 min. Graph ready: 941 companies, 4814 metrics, 555 trends. 9 BUY_CONFLUENCE signals stable (17th consecutive scan as of 06:32 IST).
+Next: Market opens 09:15 IST. Live feed and orchestrator will trigger at open.
+Blockers: none
+============================================================
