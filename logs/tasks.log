@@ -5390,3 +5390,19 @@ Progress: After-hours: 44 nodes (live_prices 17, top_movers 20, market_status 1,
 Next: overnight after-hours feeds; orchestrator scans; NSE announcements
 Blockers: insider cooldown; corp_events/delivery/indices 0 nodes
 ============================================================
+
+[CHECKPOINT] 2026-11-20 15:06
+Task: None
+Status: completed
+Progress: Confluences: 8 (buy=8, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 195,840 unprocessed — ContextAgent lagging
+============================================================
+
+[CHECKPOINT] 2026-11-20 15:06
+Task: orchestrator-20261120-2033
+Status: completed
+Progress: 24th scan: 8 BUY_CONFLUENCE stable — BLACKBUCK(0.90) BHARATCOAL(0.85) AURIONPRO(0.81) AVANTIFEED(0.75) BLS(0.73) CANFINHOME(0.69) BAJAJHFL(0.66) BSOFT(0.63)
+Next: Next orchestrator ~21:03 IST; weekend quiet period begins
+Blockers: none
+============================================================
