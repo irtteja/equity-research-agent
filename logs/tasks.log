@@ -5414,3 +5414,19 @@ Progress: 22:10 IST heartbeat: graph 941 co, daily_monitor ran 16:31 IST, 24 orc
 Next: Next watchdog ~00:10 IST Nov 21; weekend quiet begins
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 17:03
+Task: None
+Status: completed
+Progress: Confluences: 8 (buy=8, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 195,840 unprocessed — ContextAgent lagging
+============================================================
+
+[CHECKPOINT] 2026-11-20 17:03
+Task: orchestrator-20261120-2232
+Status: completed
+Progress: 25th scan: 8 BUY_CONFLUENCE stable — BLACKBUCK(0.90) BHARATCOAL(0.85) AURIONPRO(0.81) AVANTIFEED(0.75) BLS(0.73) CANFINHOME(0.69) BAJAJHFL(0.66) BSOFT(0.63)
+Next: Next orchestrator ~23:03 IST; weekend quiet period
+Blockers: none
+============================================================
