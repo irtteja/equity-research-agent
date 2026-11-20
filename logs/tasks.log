@@ -5238,3 +5238,11 @@ Progress: 21st consecutive scan: 9 BUY_CONFLUENCE stable (BLACKBUCK 0.84, BHARAT
 Next: live_feed at 15:05 IST, daily_monitor after 16:00 IST close
 Blockers: stale prices in graph.db; 5 agents stalled; episode backlog 194943
 ============================================================
+
+[CHECKPOINT] 2026-11-20 09:35
+Task: live_feed-20261120-1505
+Status: completed
+Progress: 44 nodes: live_prices(17) top_movers(20) market_status(1) fii_dii(2) option_chains(2) bulk_deals(2). 25min to close.
+Next: live_feed at 15:35 IST (after-hours), daily_monitor after 16:00 IST
+Blockers: indices/corp_events/delivery/insider returned 0 nodes
+============================================================
