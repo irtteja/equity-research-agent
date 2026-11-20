@@ -5166,3 +5166,11 @@ Progress: 43 nodes written across 9 endpoints. Market OPEN. 20 top_movers, 2 fii
 Next: Next market-hours poll scheduled.
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-20 06:36
+Task: live_feed-20261120-1205
+Status: completed
+Progress: 43 nodes written across 11 endpoints. Market OPEN. 20 top_movers, 2 fii_dii, 2 option_chains, 1 bulk_deals.
+Next: Next market-hours poll scheduled.
+Blockers: none
+============================================================
