@@ -5630,3 +5630,11 @@ Progress: Sunday 02:10 IST — heartbeat; weekly_research already run (140 repor
 Next: next watchdog wake (04:10 IST)
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-21 22:40
+Task: watchdog-20261122-0410
+Status: completed
+Progress: Sunday 04:10 IST — heartbeat; weekly_research done (140 reports); repo at 2b92cb1; graph.db ready
+Next: next watchdog wake (06:10 IST)
+Blockers: none
+============================================================
