@@ -5526,3 +5526,11 @@ Progress: No pending retry file — 0 companies in retry queue (original run had
 Next: Next nightly results fetch Nov 21
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-21 02:32
+Task: annual-reports-20261121
+Status: completed
+Progress: 820/885 tickers have annual report index.json (prior runs); fetch timed out at 110s (known issue — bulk download is slow); 18GB disk free; PDFs gitignored
+Next: Next weekly fetch will pick up remaining ~65 tickers (idempotent)
+Blockers: fetch_annual_reports.py times out at 110s — needs chunking or parallel batching
+============================================================
