@@ -5494,3 +5494,11 @@ Progress: 44 nodes: top_movers 20, market_status 1, fii_dii 2, option_chains 2, 
 Next: Next after-hours feed ~07:17 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-21 00:20
+Task: sector-rebuild-20261121
+Status: completed
+Progress: Sector map rebuilt (10 NoneType errors on illiquid tickers, negligible); graph rebuilt: 254 new nodes, 19988 edges; graph.db now 18503 nodes, 207099 edges
+Next: Next weekly rebuild in 7 days
+Blockers: none
+============================================================
