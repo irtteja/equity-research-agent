@@ -5502,3 +5502,11 @@ Progress: Sector map rebuilt (10 NoneType errors on illiquid tickers, negligible
 Next: Next weekly rebuild in 7 days
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-21 00:40
+Task: watchdog-20261121-0610
+Status: completed
+Progress: 06:10 IST Saturday heartbeat: graph 941 co, 12 macro sectors (expanded from weekly rebuild), weekly sector map rebuilt (1e8bc6c), systems nominal
+Next: Next watchdog ~08:10 IST; Saturday weekend quiet
+Blockers: none
+============================================================
