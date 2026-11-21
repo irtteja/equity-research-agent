@@ -5574,3 +5574,11 @@ Progress: Saturday 16:10 IST — weekend heartbeat; graph.db ready (941 companie
 Next: next watchdog wake (18:10 IST)
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-21 12:40
+Task: watchdog-20261121-1810
+Status: completed
+Progress: Saturday 18:10 IST — weekend heartbeat; graph.db ready (941 companies, 12 macro sectors); repo up to date at 6ce0a5a
+Next: next watchdog wake (20:10 IST)
+Blockers: none
+============================================================
