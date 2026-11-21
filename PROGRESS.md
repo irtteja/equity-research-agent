@@ -1,5 +1,29 @@
 # Progress Log
 
+## 2026-11-21 — Saturday: Weekly Jobs + Overnight Maintenance
+
+### Done
+- **Watchdog** (00:10, 02:10, 04:10, 06:10, 08:10 IST): overnight/weekend heartbeats. All healthy. Commits: prior session
+- **Live feed** (23:18 Nov20, 04:17, 07:18 IST): 44 nodes after-hours / weekend. Commits: prior session
+- **Weekly sector rebuild** (04:30 IST): graph.db rebuilt — 18,503 nodes / 207,099 edges. MacroSectors expanded 6→12. 10 minor NoneType errors on illiquid tickers (CYBERMEDIA, GRADIENTE, HFCL etc.) — known, non-critical. Commits: prior session
+- **Annual reports fetch** (08:00 IST): timed out at ~110s (exit code 143). 820/885 index.json files present (KWIL added this run). Remaining ~65 tickers will be caught on next weekly run. `e9ad382`
+- **8 BUY_CONFLUENCE signals** stable post-close Nov20: BLACKBUCK(0.90) BHARATCOAL(0.85) AURIONPRO(0.81) AVANTIFEED(0.75) BLS(0.73) CANFINHOME(0.69) BAJAJHFL(0.66) BSOFT(0.63)
+
+### Architecture changes
+- Knowledge graph expanded significantly: 18,503 nodes / 207,099 edges (up from ~17,243 / 204,565)
+- MacroSectors: 12 categories (up from 6) — Banking & Financial, Technology & IT, Pharma & Healthcare, Auto & Mobility, Energy & Power, Consumer & Retail, Infrastructure & Real Estate, Materials & Commodities, Defence & Aerospace, Media & Telecom, Chemicals & Agrochemicals, Diversified
+
+### Pending / next sessions
+- **Fix `fetch_annual_reports.py` timeout**: needs chunking (~200 tickers/run with resume) — same pattern as backfill_graph
+- **Fix `fetch_results.py` import**: `cannot import name 'fetch_symbol'` — results pipeline broken
+- **Fix `backfill_graph.py` timeout**: needs chunking
+- **Episode backlog**: ~191,835 remaining — bulk processing strategy needed
+- **Annual reports PDF extraction**: 820 PDFs present, extraction pipeline not built
+- **Fix stalled agents**: document_agent, announcement_agent, context_agent, trend_agent
+- **Fix stale prices in graph.db**: nse_live_feed.py doesn't update price nodes during market hours
+
+---
+
 ## 2026-11-20 — Friday: Full Market Day + Post-Close Pipeline
 
 ### Done

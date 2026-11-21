@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-19",
-  "version": 77,
+  "last_updated": "2026-11-21",
+  "version": 78,
   "patterns": {
     "confirmed": [
       {
@@ -728,6 +728,24 @@
         "first_seen": "2026-11-19",
         "last_seen": "2026-11-19",
         "count": 1
+      },
+      {
+        "pattern": "fetch_annual_reports.py times out at ~110s for 885 tickers — same as backfill_graph pattern",
+        "first_seen": "2026-11-21",
+        "last_seen": "2026-11-21",
+        "count": 1
+      },
+      {
+        "pattern": "sector_map rebuild takes ~150s — must run as background task",
+        "first_seen": "2026-11-21",
+        "last_seen": "2026-11-21",
+        "count": 1
+      },
+      {
+        "pattern": "MacroSector expansion: 6→12 categories improves sector classification coverage",
+        "first_seen": "2026-11-21",
+        "last_seen": "2026-11-21",
+        "count": 1
       }
     ],
     "uncertain": [
@@ -1089,6 +1107,12 @@
         "pattern": "triage ERROR str object has no attribute get for JSWSTEEL/ABCAPITAL/BOSCHLTD/HINDALCO/IIFLCAPS — announcement triage schema mismatch",
         "first_seen": "2026-11-19",
         "last_seen": "2026-11-19",
+        "count": 1
+      },
+      {
+        "pattern": "annual report index.json files are idempotent across runs — only net-new tickers add rows",
+        "first_seen": "2026-11-21",
+        "last_seen": "2026-11-21",
         "count": 1
       }
     ],
@@ -1491,6 +1515,18 @@
       {
         "signal": "daily_monitor full pipeline: 17 reports + 5 new tools + coverage gap analysis — consistent output",
         "added": "2026-11-19"
+      },
+      {
+        "signal": "BUY_CONFLUENCE stable at 8 signals post-close Nov20 and into weekend",
+        "added": "2026-11-21"
+      },
+      {
+        "signal": "graph.db rebuild successful: 18503 nodes / 207099 edges",
+        "added": "2026-11-21"
+      },
+      {
+        "signal": "weekend watchdog heartbeats confirming system health",
+        "added": "2026-11-21"
       }
     ],
     "gaps": [
@@ -1929,6 +1965,26 @@
       {
         "gap": "announcement triage schema mismatch — 5 large-cap companies (JSWSTEEL, BOSCHLTD, HINDALCO) not triaged",
         "added": "2026-11-19"
+      },
+      {
+        "gap": "fetch_annual_reports.py and backfill_graph.py both need chunked/batched execution",
+        "added": "2026-11-21"
+      },
+      {
+        "gap": "fetch_results.py import broken — structured_results step silently failing",
+        "added": "2026-11-21"
+      },
+      {
+        "gap": "stalled agents (document_agent, announcement_agent) persist across sessions",
+        "added": "2026-11-21"
+      },
+      {
+        "gap": "episode backlog ~191835 — bulk processing never attempted",
+        "added": "2026-11-21"
+      },
+      {
+        "gap": "annual reports PDF extraction pipeline not built despite 820 PDFs present",
+        "added": "2026-11-21"
       }
     ]
   },
@@ -2235,13 +2291,15 @@
         "note": "BHARATCOAL 2nd (0.84) — 6% from 52W low, revenue improving 3 qtrs",
         "date": "2026-11-19"
       }
+    ],
+    "MacroSectors": [
+      {
+        "note": "12 categories now — Banking & Financial, Technology & IT, Pharma & Healthcare, Auto & Mobility, Energy & Power, Consumer & Retail, Infrastructure & Real Estate, Materials & Commodities, Defence & Aerospace, Media & Telecom, Chemicals & Agrochemicals, Diversified",
+        "date": "2026-11-21"
+      }
     ]
   },
   "session_log": [
-    {
-      "date": "2026-11-04",
-      "note": "backfill_graph completed with 600s timeout (872 tickers, 31424 nodes); agents/workers audit clean — vendor sweep 100% complete"
-    },
     {
       "date": "2026-11-04",
       "note": "Completed living knowledge graph: Bayesian belief engine + 6-op dynamics cycle (learn/relearn/unlearn/prune/compress/form_edges) wired into orchestrator meta-phase"
@@ -2357,6 +2415,10 @@
     {
       "date": "2026-11-19",
       "note": "2026-11-19 full market day: 9 BUY_CONFLUENCE stable 12 scans, 6 live feeds, 17 reports, graph 15931/198338, 5 new tools, devil_advocate held 3/17"
+    },
+    {
+      "date": "2026-11-21",
+      "note": "Saturday weekend maintenance — sector rebuild, annual reports partial fetch (820/885), 8 BUY_CONFLUENCE stable"
     }
   ]
 }
