@@ -1,0 +1,113 @@
+{
+  "symbol": "ATHERENERG",
+  "date": "2026-11-21",
+  "quote": {
+    "symbol": "ATHERENERG",
+    "date": "20-Nov-2026 16:00:00",
+    "open": 1919,
+    "high": 1972.4,
+    "low": 1913.3,
+    "close": 1935.4,
+    "last": 1935.4,
+    "prev_close": 1924.9,
+    "change": 10.5,
+    "pct_change": 0.55,
+    "volume": 1752211,
+    "turnover": 3410380835.63,
+    "year_high": 2021.5,
+    "year_low": 589
+  },
+  "financial_results": {
+    "symbol": "ATHERENERG",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "ATHERENERG",
+    "shareholding": [
+      {
+        "date": "31-Dec-2025",
+        "Promoter & Promoter Group": "  40.86"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Public": "  59.14"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Dec-2025",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Promoter & Promoter Group": "  40.77"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Public": "  59.23"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "31-Mar-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Promoter & Promoter Group": "  40.72"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Public": "  59.28"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Jun-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "20-Jul-2026",
+        "Promoter & Promoter Group": "  39.58"
+      },
+      {
+        "date": "20-Jul-2026",
+        "Public": "  60.42"
+      },
+      {
+        "date": "20-Jul-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "20-Jul-2026",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Promoter & Promoter Group": "  42.33"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Public": "  57.67"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Shares held by Employee Trusts": "   0.00"
+      },
+      {
+        "date": "30-Sep-2026",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

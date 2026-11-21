@@ -1,0 +1,113 @@
+{
+  "symbol": "MCX",
+  "date": "2026-11-21",
+  "quote": {
+    "symbol": "MCX",
+    "date": "20-Nov-2026 16:00:00",
+    "open": 3599,
+    "high": 3605,
+    "low": 3497,
+    "close": 3535,
+    "last": 3535,
+    "prev_close": 3645,
+    "change": -110,
+    "pct_change": -3.02,
+    "volume": 3010523,
+    "turnover": 10641084911.49,
+    "year_high": 3774,
+    "year_low": 1929.9
+  },
+  "financial_results": {
+    "symbol": "MCX",
+    "period": "Quarterly",
+    "results": []
+  },
+  "shareholding": {
+    "symbol": "MCX",
+    "shareholding": [
+      {
+        "date": "30-Jun-2017",
+        "Promoter & Promoter Group": "   0.00"
+      },
+      {
+        "date": "30-Jun-2017",
+        "Public": "  99.72"
+      },
+      {
+        "date": "30-Jun-2017",
+        "Shares held by Employee Trusts": "   0.28"
+      },
+      {
+        "date": "30-Jun-2017",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Mar-2018",
+        "Promoter & Promoter Group": "   0.00"
+      },
+      {
+        "date": "31-Mar-2018",
+        "Public": "  99.74"
+      },
+      {
+        "date": "31-Mar-2018",
+        "Shares held by Employee Trusts": "   0.26"
+      },
+      {
+        "date": "31-Mar-2018",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Jun-2018",
+        "Promoter & Promoter Group": "   0.00"
+      },
+      {
+        "date": "30-Jun-2018",
+        "Public": "  99.74"
+      },
+      {
+        "date": "30-Jun-2018",
+        "Shares held by Employee Trusts": "   0.26"
+      },
+      {
+        "date": "30-Jun-2018",
+        "Total": " 100.00"
+      },
+      {
+        "date": "30-Sep-2018",
+        "Promoter & Promoter Group": "   0.00"
+      },
+      {
+        "date": "30-Sep-2018",
+        "Public": "  99.74"
+      },
+      {
+        "date": "30-Sep-2018",
+        "Shares held by Employee Trusts": "   0.26"
+      },
+      {
+        "date": "30-Sep-2018",
+        "Total": " 100.00"
+      },
+      {
+        "date": "31-Dec-2018",
+        "Promoter & Promoter Group": "   0.00"
+      },
+      {
+        "date": "31-Dec-2018",
+        "Public": "  99.74"
+      },
+      {
+        "date": "31-Dec-2018",
+        "Shares held by Employee Trusts": "   0.26"
+      },
+      {
+        "date": "31-Dec-2018",
+        "Total": " 100.00"
+      }
+    ]
+  },
+  "technicals": {
+    "error": "'BBU_20_2.0'"
+  }
+}

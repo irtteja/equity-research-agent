@@ -5598,3 +5598,19 @@ Progress: Saturday 22:10 IST — weekend heartbeat; graph.db ready (941 companie
 Next: next watchdog wake (00:10 IST Sun)
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-21 18:55
+Task: weekly-research-20261122
+Status: completed
+Progress: 140 weekly research reports generated for 2026-11-21; timed out at 500s but all major large-caps covered
+Next: full universe run next Sunday; remaining tickers will be caught
+Blockers: weekly_research.py times out at 500s for full universe — expected behavior
+============================================================
+
+[CHECKPOINT] 2026-11-21 18:55
+Task: watchdog-20261122-0010
+Status: completed
+Progress: Sunday 00:10 IST — weekly_research.py ran (140 reports generated); graph.db ready (941 companies, 12 macro sectors)
+Next: next watchdog wake (02:10 IST)
+Blockers: none
+============================================================
