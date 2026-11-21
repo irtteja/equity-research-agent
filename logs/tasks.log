@@ -5518,3 +5518,11 @@ Progress: 44 nodes: top_movers 20, market_status 1, fii_dii 2, option_chains 2, 
 Next: Next after-hours feed ~10:18 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-21 02:11
+Task: fetch_results-retry-20261121
+Status: completed
+Progress: No pending retry file — 0 companies in retry queue (original run had no scheduled companies)
+Next: Next nightly results fetch Nov 21
+Blockers: none
+============================================================
