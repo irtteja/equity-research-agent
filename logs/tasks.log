@@ -5534,3 +5534,11 @@ Progress: 820/885 tickers have annual report index.json (prior runs); fetch time
 Next: Next weekly fetch will pick up remaining ~65 tickers (idempotent)
 Blockers: fetch_annual_reports.py times out at 110s — needs chunking or parallel batching
 ============================================================
+
+[CHECKPOINT] 2026-11-21 02:41
+Task: watchdog-20261121-0810
+Status: completed
+Progress: Saturday 08:10 IST — weekend heartbeat; graph.db ready (941 companies, 12 macro sectors); repo up to date at b2b959f
+Next: next watchdog wake (10:40 IST)
+Blockers: none
+============================================================
