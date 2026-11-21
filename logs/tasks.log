@@ -5510,3 +5510,11 @@ Progress: 06:10 IST Saturday heartbeat: graph 941 co, 12 macro sectors (expanded
 Next: Next watchdog ~08:10 IST; Saturday weekend quiet
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-21 01:48
+Task: live_feed-20261121-0718
+Status: completed
+Progress: 44 nodes: top_movers 20, market_status 1, fii_dii 2, option_chains 2, insider 0, bulk_deals 2; market CLOSED Saturday
+Next: Next after-hours feed ~10:18 IST
+Blockers: none
+============================================================
