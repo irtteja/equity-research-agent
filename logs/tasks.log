@@ -5614,3 +5614,11 @@ Progress: Sunday 00:10 IST — weekly_research.py ran (140 reports generated); g
 Next: next watchdog wake (02:10 IST)
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-21 19:33
+Task: announcements-20261120
+Status: completed
+Progress: Fetched 188 announcements for 148 symbols (2026-11-20); 49 material; 54 insights saved to research.db
+Next: Next fetch: 2026-11-21 (Saturday, likely minimal)
+Blockers: none
+============================================================
