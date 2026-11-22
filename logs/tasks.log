@@ -5670,3 +5670,11 @@ Progress: Sunday 10:11 IST heartbeat — graph ready (941 companies, 12 macro se
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-22 12:10
+Task: watchdog-20261122-1211
+Status: completed
+Progress: Sunday 12:11 IST heartbeat — graph ready (941 companies, 12 macro sectors), market closed, no pending jobs
+Next: next watchdog wake
+Blockers: none
+============================================================
