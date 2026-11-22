@@ -5638,3 +5638,11 @@ Progress: Sunday 04:10 IST — heartbeat; weekly_research done (140 reports); re
 Next: next watchdog wake (06:10 IST)
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-22 06:10
+Task: watchdog-20261122-0610
+Status: completed
+Progress: Sunday 06:10 IST heartbeat — graph ready (941 companies, 12 macro sectors), weekly_research already run today, market closed
+Next: next watchdog wake
+Blockers: none
+============================================================
