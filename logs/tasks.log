@@ -5654,3 +5654,11 @@ Progress: Rebuilt KG structural layers: 941 companies, 4913 metrics, 555 trends,
 Next: 
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-22 08:10
+Task: watchdog-20261122-0810
+Status: completed
+Progress: Sunday 08:10 IST heartbeat — graph ready (941 companies, 12 macro sectors), weekly_research already run today, pulled upstream updates (tracked_universe.json refresh)
+Next: next watchdog wake
+Blockers: none
+============================================================
