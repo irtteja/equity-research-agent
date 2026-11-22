@@ -5758,3 +5758,11 @@ Progress: heartbeat — 02:10 IST Mon Nov 23, outside market hours; graph.db int
 Next: next watchdog wake ~04:10 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-22 21:01
+Task: nightly-2026-11-22
+Status: completed
+Progress: git pull (announcements/2026-11-21.json + feed schedule), context_agent (0), trend_agent (0)
+Next: await new XBRL data
+Blockers: none
+============================================================
