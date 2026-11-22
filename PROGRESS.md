@@ -2058,3 +2058,7 @@ Monthly pruner (1st of month, 2 AM IST). Enforces:
 - Fix `nse_index_data` returning 0 nodes during market hours
 - Investigate why `git add memory_store/` does not stage nse_feed_schedule.json — consider updating trigger prompts to use `git add -A`
 - PROGRESS.md + self-model reflection: completed in this entry
+
+## 2026-11-22 — Universe Update
+- Total: 750 mainboard stocks
+- Removed: ENNATURE, IGLSPIRITS
