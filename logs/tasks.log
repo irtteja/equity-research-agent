@@ -5662,3 +5662,11 @@ Progress: Sunday 08:10 IST heartbeat — graph ready (941 companies, 12 macro se
 Next: next watchdog wake
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-22 10:11
+Task: watchdog-20261122-1011
+Status: completed
+Progress: Sunday 10:11 IST heartbeat — graph ready (941 companies, 12 macro sectors), weekly_research already run today, pulled upstream (results/_index.json + self_model.json updates)
+Next: next watchdog wake
+Blockers: none
+============================================================
