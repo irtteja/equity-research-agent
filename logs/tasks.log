@@ -5766,3 +5766,11 @@ Progress: git pull (announcements/2026-11-21.json + feed schedule), context_agen
 Next: await new XBRL data
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-22 21:03
+Task: None
+Status: completed
+Progress: Confluences: 8 (buy=8, sell=0) | Gaps: 1
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 195,840 unprocessed — ContextAgent lagging
+============================================================
