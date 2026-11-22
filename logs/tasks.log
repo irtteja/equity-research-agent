@@ -5734,3 +5734,11 @@ Progress: Confluences: 8 (buy=8, sell=0) | Gaps: 2
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 195,840 unprocessed — ContextAgent lagging; No ConfluenceSignal nodes for today — first run or no signals met threshold
 ============================================================
+
+[CHECKPOINT] 2026-11-23 01:05
+Task: ann-fetch-20261121-0105
+Status: completed
+Progress: Fetched 56 announcements for 2026-11-21 (Saturday); triaged 6 material: GREAVESCOT(litigation), WELSPUNLIV(board), SHAKTIPUMP(investment 30.24cr in WOS), HEROMOTOCO(IT matter), COALINDIA(mgmt change), EMBDL(board committee); saved 6 insights to research.db
+Next: next announcement fetch trigger
+Blockers: none
+============================================================
