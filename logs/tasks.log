@@ -5750,3 +5750,11 @@ Progress: XBRL nightly fetch ran; calendar had 19 events from 2026-11-20 but 0 c
 Next: next nightly trigger
 Blockers: none (no results on Saturday)
 ============================================================
+
+[CHECKPOINT] 2026-11-23 02:10
+Task: watchdog-20261123-0210
+Status: completed
+Progress: heartbeat — 02:10 IST Mon Nov 23, outside market hours; graph.db intact (941 companies, 4913 metrics, 555 trends); no market action required
+Next: next watchdog wake ~04:10 IST
+Blockers: none
+============================================================
