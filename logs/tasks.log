@@ -5742,3 +5742,11 @@ Progress: Fetched 56 announcements for 2026-11-21 (Saturday); triaged 6 material
 Next: next announcement fetch trigger
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-23 01:16
+Task: results-fetch-20261122-xbrl
+Status: completed
+Progress: XBRL nightly fetch ran; calendar had 19 events from 2026-11-20 but 0 companies scheduled for results on 2026-11-21 (Saturday). Nothing fetched. No import error triggered.
+Next: next nightly trigger
+Blockers: none (no results on Saturday)
+============================================================
