@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-21",
-  "version": 78,
+  "last_updated": "2026-11-22",
+  "version": 81,
   "patterns": {
     "confirmed": [
       {
@@ -745,6 +745,12 @@
         "pattern": "MacroSector expansion: 6→12 categories improves sector classification coverage",
         "first_seen": "2026-11-21",
         "last_seen": "2026-11-21",
+        "count": 1
+      },
+      {
+        "pattern": "resolved gap: trend_agent:stale_trends",
+        "first_seen": "2026-11-22",
+        "last_seen": "2026-11-22",
         "count": 1
       }
     ],
@@ -1985,6 +1991,34 @@
       {
         "gap": "annual reports PDF extraction pipeline not built despite 820 PDFs present",
         "added": "2026-11-21"
+      },
+      {
+        "gap": "Rule 'link of recording' fires skip 100% of the time (38 decisions) [escalated: seen in 3 consecutive scans]",
+        "added": "2026-11-22"
+      },
+      {
+        "gap": "Rule 'newspaper advertisement' fires skip 100% of the time (13 decisions) [escalated: seen in 3 consecutive scans]",
+        "added": "2026-11-22"
+      },
+      {
+        "gap": "Rule 'newspaper publication' fires skip 100% of the time (149 decisions) [escalated: seen in 3 consecutive scans]",
+        "added": "2026-11-22"
+      },
+      {
+        "gap": "Rule 'schedule of meet' fires skip 100% of the time (155 decisions) [escalated: seen in 3 consecutive scans]",
+        "added": "2026-11-22"
+      },
+      {
+        "gap": "Rule 'skip_category' fires skip 100% of the time (44 decisions) [escalated: seen in 3 consecutive scans]",
+        "added": "2026-11-22"
+      },
+      {
+        "gap": "Rule 'monitoring agency report' fires skip 100% of the time (20 decisions) [escalated: seen in 3 consecutive scans]",
+        "added": "2026-11-22"
+      },
+      {
+        "gap": "29 skip decisions contain strong financial keywords — possible false negatives (rules: newspaper publication, newspaper advertisement, link of recording)",
+        "added": "2026-11-22"
       }
     ]
   },
@@ -2302,14 +2336,6 @@
   "session_log": [
     {
       "date": "2026-11-04",
-      "note": "Completed living knowledge graph: Bayesian belief engine + 6-op dynamics cycle (learn/relearn/unlearn/prune/compress/form_edges) wired into orchestrator meta-phase"
-    },
-    {
-      "date": "2026-11-04",
-      "note": "wired living graph belief states into dashboard Graph tab; 870 revisions seeded; 318 confirmed nodes"
-    },
-    {
-      "date": "2026-11-04",
       "note": "Session 23: live-wired 168-ticker screener to dashboard v5; fork agents completed technical/valuation/alert/devil-advocate/macro stack; daily_monitor auto-exports on each cycle"
     },
     {
@@ -2419,6 +2445,14 @@
     {
       "date": "2026-11-21",
       "note": "Saturday weekend maintenance — sector rebuild, annual reports partial fetch (820/885), 8 BUY_CONFLUENCE stable"
+    },
+    {
+      "date": "2026-11-22",
+      "note": "E2E test run"
+    },
+    {
+      "date": "2026-11-22",
+      "note": "self_improve scan: resolved: trend_agent:stale_trends; 9 high-priority gaps"
     }
   ]
 }
