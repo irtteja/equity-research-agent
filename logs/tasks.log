@@ -5790,3 +5790,11 @@ Progress: Confluences: 8 (buy=8, sell=0) | Gaps: 1
 Next: Run again in 30min; wire dashboard to live confluence nodes
 Blockers: Episode backlog: 195,840 unprocessed — ContextAgent lagging
 ============================================================
+
+[CHECKPOINT] 2026-11-23 06:11
+Task: watchdog-20261123-0610
+Status: completed
+Progress: heartbeat — 06:10 IST Mon Nov 23, pre-market; graph.db intact (941 companies); market opens ~09:15 IST
+Next: next watchdog wake ~08:10 IST
+Blockers: none
+============================================================
