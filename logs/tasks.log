@@ -5798,3 +5798,11 @@ Progress: heartbeat — 06:10 IST Mon Nov 23, pre-market; graph.db intact (941 c
 Next: next watchdog wake ~08:10 IST
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-23 01:02
+Task: None
+Status: completed
+Progress: Confluences: 8 (buy=8, sell=0) | Gaps: 2
+Next: Run again in 30min; wire dashboard to live confluence nodes
+Blockers: Episode backlog: 195,840 unprocessed — ContextAgent lagging; No ConfluenceSignal nodes for today — first run or no signals met threshold
+============================================================
