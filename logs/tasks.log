@@ -5814,3 +5814,11 @@ Progress: XBRL retry pass ran; no pending retry file found — 1am run had nothi
 Next: next nightly trigger
 Blockers: none
 ============================================================
+
+[CHECKPOINT] 2026-11-23 08:10
+Task: watchdog-20261123-0810
+Status: completed
+Progress: heartbeat — 08:10 IST Mon Nov 23, pre-market; graph.db intact (941 companies); market opens ~09:15 IST (~65 min)
+Next: next watchdog wake ~10:10 IST (market hours)
+Blockers: none
+============================================================
